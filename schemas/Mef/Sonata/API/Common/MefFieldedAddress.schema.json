@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefFieldedAddress.schema.json",
+    "title": "MefFieldedAddress",
+    "definitions": {
+      "MefFieldedAddress": {
+        "$id": "#MefFieldedAddress",
+        "type": "object",
+        "required": [
+          "city",
+          "country",
+          "streetName"
+          ],
+        "description": "Contact data for a person or organization that is involved in a given context. It is specified by the Seller (e.g. Seller Contact Information) or by the Buyer. \nReference: MEF 80 (Sn 8.1.9)",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "The city that the address is in"
+          },
+          "country": {
+            "type": "string",
+            "description": "Country that the address is in"
+          },
+          "geographicSubAddress": {
+            "$ref": "MefSubAddress.schema.json#MefSubAddress"
+          },
+          "locality": {
+            "type": "string",
+            "description": "The locality that the address is in"
+          },
+          "postcode": {
+            "type": "string",
+            "description": "Descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also known as zip code)"
+          },
+          "postcodeExtension": {
+            "type": "string",
+            "description": "An extension of a postal code. E.g. the part following the dash in an american urban property address"
+          },
+          "stateOrProvince": {
+            "type": "string",
+            "description": "The State or Province that the address is in"
+          },
+          "streetName": {
+            "type": "string",
+            "description": "Name of the street or other street type"
+          },
+          "streetNr": {
+            "type": "string",
+            "description": "Number identifying a specific property on a public street. It may be combined with streetNrLast for ranged addresses."
+          },
+          "streetNrLast": {
+            "type": "string",
+            "description": "Last number in a range of street numbers allocated to a property"
+          },
+          "streetNrLastSuffix": {
+            "type": "string",
+            "description": "Last street number suffix for a ranged address"
+          },
+          "streetNrSuffix": {
+            "type": "string",
+            "description": "The first street number suffix"
+          },
+          "streetSuffix": {
+            "type": "string",
+            "description": "A modifier denoting a relative direction"
+          },
+          "streetType": {
+            "type": "string",
+            "description": "Alley, avenue, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf"
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "PartyInteraction.schema.json",
+    "title": "PartyInteraction",
+    "definitions": {
+        "PartyInteraction": {
+            "$id": "#PartyInteraction",
+            "type": "object",
+            "properties": {
+                "interactionDate": {
+                    "$ref": "../Common/TimePeriod.schema.json#TimePeriod",
+                    "description": "The period during which the interaction took place. Start and end will be different in case of a call or a store visit. They will be the same (or only one will appear) in case of a message or other momentary interactions."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the interaction"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the interaction (opened, inProgress, completed)"
+                },
+                "statusChangeDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Last time the status changed"
+                },
+                "creationDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the interaction is created in the system"
+                },
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty"
+                    }
+                },
+                "attachment": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/AttachmentRefOrValue.schema.json#AttachmentRefOrValue"
+                    }
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/Note.schema.json#Note"
+                    }
+                },
+                "interactionItem": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "InteractionItem.schema.json#InteractionItem"
+                    }
+                },
+                "interactionRelationship": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "InteractionRelationship.schema.json#InteractionRelationship"
+                    }
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../Common/Entity.schema.json#Entity"
+                }
+            ]
+        }
+    }
+}

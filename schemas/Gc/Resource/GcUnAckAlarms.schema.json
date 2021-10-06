@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcUnAckAlarms.schema.json",
+    "title": "GcUnAckAlarms",
+    "definitions": {
+        "GcUnAckAlarms": {
+            "$id": "#GcUnAckAlarms",
+            "description": "Task resource for unacknowledge alarms operation",
+            "type": "object",
+            "properties": {
+                "ackSystemId": {
+                    "description": "Name of the unacknowledging system",
+                    "type": "string"
+                },
+                "ackUserId": {
+                    "description": "Name of the unacknowledging user",
+                    "type": "string"
+                },
+                "alarmPattern": {
+                    "description": "Alarm patterns to match target alarms. An alarm will match if all of the sttributes in any of the patterns compare equal to those attributes of the alarm.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Resource/Alarm.schema.json#Alarm"
+                    }
+                }
+            }
+        }
+    }
+}

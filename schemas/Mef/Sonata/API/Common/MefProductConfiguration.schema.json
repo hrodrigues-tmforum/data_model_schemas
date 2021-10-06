@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "MefProductConfigurationConfiguration.schema.json",
+  "title": "MefProductConfiguration",
+  "definitions": {
+    "MefProductConfiguration": {
+      "$id": "#MefProductConfiguration",
+      "type": "object",
+      "description": "MEF Product payload",
+      "properties": {
+          "@schemaLocation": {
+            "type": "string",
+            "format": "uri",
+            "description": "A URI to the JSON schema file that defines the Product Specification for the product that is the subject of the Request."
+          },
+          "@type": {
+            "type": "string",
+            "description": "The name of the type, defined in the JSON schema specified above, for the product that is the subject of the Request. The named type must be a subclass of MEFProductConfiguration."
+          }
+        }
+      }
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "TestEnvironmentProvisioningExecution.schema.json",
+    "title": "TestEnvironmentProvisioningExecution",
+    "definitions": {
+        "TestEnvironmentProvisioningExecution": {
+            "$id": "#TestEnvironmentProvisioningExecution",
+            "type": "object",
+            "description": "REST resource for test environment provisioning lifecycle",
+            "required": [
+                "testEnvironmentAllocationExecution"
+            ],
+            "properties": {
+                "provisioningArtifact": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/ProvisioningArtifactRef.schema.json#ProvisioningArtifactRef"
+                    }
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcExecution.schema.json#GcExecution"
+                }
+            ]
+        }
+    }
+}

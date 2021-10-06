@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcEntityCategory.schema.json",
+    "title": "GcEntityCategory",
+    "definitions": {
+        "GcEntityCategory": {
+            "$id": "#GcEntityCategory",
+            "description": "The (entity) category resource is used to group entity catalog items in logical containers. Categories can contain other categories.\nResource IDs for categories are strings and are defined by the catalog application.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the category"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                }
+            ]
+        }
+    }
+}

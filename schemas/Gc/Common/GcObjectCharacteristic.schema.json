@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcObjectCharacteristic.schema.json",
+    "title": "GcObjectCharacteristic",
+    "definitions": {
+        "GcObjectCharacteristic": {
+            "$id": "#GcObjectCharacteristic",
+            "description": "A characteristic which value is a Object.",
+            "required": [
+                "value"
+            ],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "object",
+                    "description": "Value of the characteristic"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "GcCharacteristicValue.schema.json#GcCharacteristicValue"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "RelatedPlaceRefOrValue.schema.json",
+  "title": "RelatedPlaceRefOrValue",
+  "definitions": {
+    "RelatedPlaceRefOrValue": {
+      "$id": "#RelatedPlaceRefOrValue",
+      "description": "Related Entity reference. A related place defines a place described by reference or by value linked to a specific entity. The polymorphic attributes @type, @schemaLocation & @referredType are related to the place entity and not the RelatedPlaceRefOrValue class itself",
+      "type": "object",
+      "properties": {},
+      "allOf": [
+        {
+          "$ref": "../../Gc/Common/GcRelatedPlaceRefOrValue.schema.json#GcRelatedPlaceRefOrValue"
+        }
+      ],
+      "oneOf": [
+        {
+          "$ref": "PlaceRef.schema.json#/PlaceRef"
+        },
+        {
+          "$ref": "GeographicAddressValue.schema.json#/GeographicAddressValue"
+        },
+        {
+          "$ref": "GeoJsonLineStringValue.schema.json#/GeoJsonLineString"
+        },
+        {
+          "$ref": "GeoJsonMultiLineStringValue.schema.json#/GeoJsonMultiLineString"
+        },
+        {
+          "$ref": "GeoJsonMultiPointValue.schema.json#/GeoJsonMultiPoint"
+        },
+        {
+          "$ref": "GeoJsonPointValue.schema.json#/GeoJsonPoint"
+        },
+        {
+          "$ref": "GeoJsonPolygonValue.schema.json#/GeoJsonPolygon"
+        }
+      ]
+    }
+  }
+}

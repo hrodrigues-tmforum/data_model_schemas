@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "ProductRelationship.schema.json",
+    "title": "ProductRelationship",
+    "definitions": {
+        "ProductRelationship": {
+            "$id": "#ProductRelationship",
+            "description": "Used to describe relationship between product.",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Product/GcProductRelationship.schema.json#GcProductRelationship"
+                },
+                {
+                    "$ref": "../../Core/EntityRef.schema.json#EntityRef"
+                },
+                {
+                    "$ref": "../../Core/SchemaContext.schema.json#SchemaContext"
+                }
+            ]
+        }
+    }
+}

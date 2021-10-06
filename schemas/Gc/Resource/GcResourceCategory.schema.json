@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcResourceCategory.schema.json",
+    "title": "GcResourceCategory",
+    "definitions": {
+        "GcResourceCategory": {
+            "$id": "#GcResourceCategory",
+            "description": "The (resource) category resource is used to group resource candidates in logical containers. Categories can contain other categories.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the category"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

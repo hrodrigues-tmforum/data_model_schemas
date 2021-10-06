@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "TestSuiteResult.schema.json",
+    "title": "TestSuiteResult",
+    "definitions": {
+        "TestSuiteResult": {
+            "$id": "#TestSuiteResult",
+            "type": "object",
+            "description": "A managed test case result resource",
+            "required": [
+                "testSuiteResultDefinition",
+                "testExecution"
+            ],
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../Resource/ResourceEntity.schema.json#ResourceEntity"
+                }
+            ]
+        }
+    }
+}

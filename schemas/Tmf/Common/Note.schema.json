@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Note.schema.json",
+    "title": "Note",
+    "definitions": {
+        "Note": {
+            "$id": "#Note",
+            "description": "Extra information about a given entity",
+            "type": "object",
+            "properties": {
+                "author": {
+                    "type": "string",
+                    "description": "Author of the note",
+                    "examples": [
+                        "Mr. N. Bene",
+                        "Mr Pontus"
+                    ]
+                },
+                "date": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date of the note",
+                    "example": "2020-11-20T08:00:00Z"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcNote.schema.json#GcNote"
+                },
+                {
+                    "$ref": "../../Core/SchemaContext.schema.json#SchemaContext"
+                }
+            ]
+        }
+    }
+}

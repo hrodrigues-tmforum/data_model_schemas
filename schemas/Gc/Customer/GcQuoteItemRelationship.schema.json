@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcQuoteItemRelationship.schema.json",
+    "title": "GcQuoteItemRelationship",
+    "definitions": {
+        "GcQuoteItemRelationship": {
+            "$id": "#GcQuoteItemRelationship",
+            "description": "Used to describe relationship between quote item. These relationship could have an impact on pricing and conditions",
+            "type": "object",
+            "required": [
+                "id",
+                "relationshipType"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Id of the related quote item (must be in the same quote)"
+                },
+                "relationshipType": {
+                    "type": "string",
+                    "description": "Relationship type as relies on, bundles, etc..."
+                }
+            }
+        }
+    }
+}

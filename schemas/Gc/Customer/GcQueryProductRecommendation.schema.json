@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcQueryProductRecommendation.schema.json",
+    "title": "GcQueryProductRecommendation",
+    "definitions": {
+        "GcQueryProductRecommendation": {
+            "$id": "#GcQueryProductRecommendation",
+            "description": "Recommendation API is used to recommend offering quickly based on the history and real-time context of customer. It is a real-time and personalized recommendation API. It is usually provided by e-commerce or BSS, CRM system in omni-channel.",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

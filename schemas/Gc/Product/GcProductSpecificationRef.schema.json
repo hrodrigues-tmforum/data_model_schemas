@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductSpecificationRef.schema.json",
+    "title": "GcProductSpecificationRef",
+    "definitions": {
+        "GcProductSpecificationRef": {
+            "$id": "#GcProductSpecificationeRef",
+            "description": "ProductSpecification reference. A product Specification represents entities that are orderable from the provider of the catalog.",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Reference.schema.json#Reference"
+                }
+            ]
+        }
+    }
+}

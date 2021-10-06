@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefQuotePrice.schema.json",
+    "title": "MefQuotePrice",
+    "definitions": {
+      "MefQuotePrice": {
+        "$id": "#MefQuotePrice",
+        "description": "Description of price and discount awarded",
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "readOnly": true,
+            "description": "Description of the quote/quote item price"
+          },
+          "name": {
+            "type": "string",
+            "readOnly": true,
+            "description": "Name of the quote /quote item price"
+          },
+          "recurringChargePeriod": {
+            "$ref": "../API/Common/MefChargePeriod.schema.json#MefChargePeriod",
+            "description": "Used for recurring charge to indicate period (month, week, etc..)"
+          },
+          "unitOfMeasure": {
+            "type": "string",
+            "readOnly": true,
+            "description": "Unit of Measure if price depending on it (Gb, SMS volume, etc..)"
+          },
+          "price": {
+            "$ref": "../API/Common/MefPrice.schema.json#MefPrice"
+          }        },
+        "allOf": [
+            {
+                "$ref": "../../../Gc/Customer/GcQuotePrice.schema.json#GcQuotePrice"
+              }
+        ]
+      }
+    }
+  }
+  

@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "CommentAlarms.schema.json",
+    "title": "CommentAlarms",
+    "definitions": {
+        "CommentAlarms": {
+            "$id": "#CommentAlarms",
+            "description": "Task resource for comment alarms operation",
+            "type": "object",
+            "properties": {
+                "state": {
+                    "description": "Current state of the operation task",
+                    "type": "string",
+                    "enum": [
+                        "acknowledged",
+                        "terminatedWithError",
+                        "inProgress",
+                        "done",
+                        "cancel",
+                        "canceled"
+                    ]
+                },
+                "commentedAlarm": {
+                    "description": "The successfully commented alarms",
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Resource/AlarmRefOrValue.schema.json#AlarmRefOrValue"
+                    }
+                }
+            }
+        }
+    }
+}

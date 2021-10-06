@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcStringCharacteristic.schema.json",
+    "title": "GcStringCharacteristic",
+    "definitions": {
+        "GcStringCharacteristic": {
+            "$id": "#GcStringCharacteristic",
+            "description": "A characteristic which value is a String.",
+            "required": [
+                "value"
+            ],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string",
+                    "description": "Value of the characteristic"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "GcCharacteristicValue.schema.json#GcCharacteristicValue"
+                }
+            ]
+        }
+    }
+}

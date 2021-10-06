@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcCancelServiceOrder.schema.json",
+    "title": "GcCancelServiceOrder",
+    "definitions": {
+        "GcCancelServiceOrder": {
+            "$id": "#GcCancelServiceOrder",
+            "description": "Request for cancellation an existing Service order",
+            "type": "object",
+            "properties": {
+                "serviceOrder": {
+                    "$ref": "../Service/ServiceOrderRef.schema.json#ServiceOrderRef"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Product/GcCancelOrder.schema.json#GcCancelOrder"
+                }
+            ]
+        }
+    }
+}

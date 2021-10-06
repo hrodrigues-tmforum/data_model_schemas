@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcCharacteristic.schema.json",
+    "title": "GcCharacteristic",
+    "definitions": {
+        "GcCharacteristic": {
+            "$id": "#GcCharacteristic",
+            "description": "Describes a given characteristic of an object or entity through a name/value pair.",
+            "type": "object",
+            "required": [
+                "name"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the characteristic"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Extensible.schema.json#/Extensible"
+                }
+            ]
+        }
+    }
+}

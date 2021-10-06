@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductOfferingQualification.schema.json",
+    "title": "GcProductOfferingQualification",
+    "definitions": {
+        "GcProductOfferingQualification": {
+            "$id": "#GcProductOfferingQualification",
+            "description": "ProductOfferingQualification is used to perform a commercial eligibility. It allows to retrieve a list of productOffering that are commercially available in the context of the interaction (defined be place, channel, party, product).",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

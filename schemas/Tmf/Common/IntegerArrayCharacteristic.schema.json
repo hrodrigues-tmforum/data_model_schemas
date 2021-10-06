@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "IntegerArrayCharacteristic.schema.json",
+    "title": "IntegerArrayCharacteristic",
+    "definitions": {
+        "IntegerArrayCharacteristic": {
+            "$id": "#IntegerArrayCharacteristic",
+            "description": "A characteristic which value is an array of Integer(s).",
+            "required": [
+                "value"
+            ],
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "Characteristic.schema.json#Characteristic"
+                }
+            ]
+        }
+    }
+}

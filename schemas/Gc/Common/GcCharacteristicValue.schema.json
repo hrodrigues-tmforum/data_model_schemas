@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcCharacteristicValue.schema.json",
+    "$version": "5.0",
+    "title": "GcCharacteristicValue",
+    "definitions": {
+        "GcCharacteristicValue": {
+            "type": "object",
+            "$id": "#GcCharacteristicValue",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Extensible.schema.json#/Extensible"
+                }
+            ]
+        }
+    }
+}

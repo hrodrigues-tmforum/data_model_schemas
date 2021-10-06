@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcServiceCandidate.schema.json",
+    "title": "GcServiceCandidate",
+    "definitions": {
+        "GcServiceCandidate": {
+            "$id": "#GcServiceCandidate",
+            "description": "ServiceCandidate is an entity that makes a service specification available to a catalog. A\nServiceCandidate and its associated service specification may be published - made visible - in any number of service catalogs, or in none. One service specification can be composed of other service specifications.",
+            "type": "object",
+            "properties": {
+                "lifecycleStatus": {
+                    "type": "string",
+                    "description": "Used to indicate the current lifecycle status of the service candidate."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name given to this REST resource"
+                },
+                "serviceSpecification": {
+                    "description": "The service specification implied by this candidate",
+                    "$ref": "../Service/ServiceSpecificationRef.schema.json#/definitions/ServiceSpecificationRef"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcPerformanceIndicatorGroupSpecification.schema.json",
+    "title": "GcPerformanceIndicatorGroupSpecification",
+    "definitions": {
+        "GcPerformanceIndicatorGroupSpecification": {
+            "$id": "#GcPerformanceIndicatorGroupSpecification",
+            "description": "",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "Name of Group specification",
+                    "type": "string"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                }
+            ]
+        }
+    }
+}

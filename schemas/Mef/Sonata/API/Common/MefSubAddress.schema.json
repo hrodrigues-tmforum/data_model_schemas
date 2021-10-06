@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefSubAddress.schema.json",
+    "title": "MefSubAddress",
+    "definitions": {
+      "MefSubAddress": {
+        "$id": "#MefSubAddress",
+        "type": "object",
+        "description": "Additional fields used to specify an address, as detailed as possible.",
+        "properties": {
+            "buildingName": {
+                "type": "string",
+                "description": "Allows for identification of places that require building name  as part of addressing information\n"
+              },
+              "id": {
+                "type": "string",
+                "description": "Unique Identifier of the subAddress"
+              },
+              "levelNumber": {
+                "type": "string",
+                "description": "Used where a level type may be repeated e.g. BASEMENT 1, BASEMENT 2"
+              },
+              "levelType": {
+                "type": "string",
+                "description": "Describes level types within a building"
+              },
+              "privateStreetName": {
+                "type": "string",
+                "description": "\"Private streets internal to a property (e.g. a university) may have internal names that are not recorded by the land title office"
+              },
+              "privateStreetNumber": {
+                "type": "string",
+                "description": "Private streets numbers internal to a private street"
+              },
+              "subUnit": {
+                "type": "array",
+                "description": "Representation of a MEFSubUnit It is used for describing subunit within a subaddress  e.g.BERTH, FLAT, PIER, SUITE, SHOP, TOWER, UNIT, WHARF.",
+                "items": {
+                  "$ref": "MefSubUnit.schema.json#MefSubUnit"
+                }
+              }
+        }
+      }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcCommentAlarms.schema.json",
+    "title": "GcCommentAlarms",
+    "definitions": {
+        "GcCommentAlarms": {
+            "$id": "#GcCommentAlarms",
+            "description": "Task resource for comment alarms operation",
+            "type": "object",
+            "properties": {
+                "comment": {
+                    "$ref": "../Common/Comment.schema.json#Comment"
+                },
+                "alarmPattern": {
+                    "description": "Alarm patterns to match target alarms. An alarm will match if all of the sttributes in any of the patterns compare equal to those attributes of the alarm.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Resource/Alarm.schema.json#Alarm"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductOfferingPrice.schema.json",
+    "title": "GcProductOfferingPrice",
+    "definitions": {
+        "GcProductOfferingPrice": {
+            "$id": "#GcProductOfferingPrice",
+            "description": "Is based on both the basic cost to develop and produce products and the enterprises policy on revenue targets. This price may be further revised through discounting (a Product Offering Price that reflects an alteration). The price, applied for a productOffering may also be influenced by the productOfferingTerm, the customer selected, eg: a productOffering can be offered with multiple terms, like commitment periods for the contract. The price may be influenced by this productOfferingTerm. A productOffering may be cheaper with a 24 month commitment than with a 12 month commitment.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the productOfferingPrice"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                }
+            ]
+        }
+    }
+}

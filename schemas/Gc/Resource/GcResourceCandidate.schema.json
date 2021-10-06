@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcResourceCandidate.schema.json",
+    "title": "GcResourceCandidate",
+    "definitions": {
+        "GcResourceCandidate": {
+            "$id": "#GcResourceCandidate",
+            "description": "ResourceCandidate is an entity that makes a resource specification available to a catalog. A ResourceCandidate and its associated resource specification may be published - made visible - in any number of resource catalogs, or in none.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name given to this REST resource"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

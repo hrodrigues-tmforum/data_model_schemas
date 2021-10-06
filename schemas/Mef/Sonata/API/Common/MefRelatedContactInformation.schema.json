@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefRelatedContactInformation.schema.json",
+    "title": "MefRelatedContactInformation",
+    "definitions": {
+      "MefRelatedContactInformation": {
+        "$id": "#MefRelatedContactInformation",
+        "type": "object",
+        "required": [
+            "emailAddress",
+            "name",
+            "number",
+            "role"
+          ],
+        "description": "Contact data for a person or organization that is involved in a given context. It is specified by the Seller (e.g. Seller Contact Information) or by the Buyer. \nReference: MEF 80 (Sn 8.1.9)",
+        "properties": {
+            "emailAddress": {
+                "type": "string",
+                "description": "Email address"
+              },
+              "name": {
+                "type": "string",
+                "description": "Name of the contact"
+              },
+              "number": {
+                "type": "string",
+                "description": "Phone number"
+              },
+              "numberExtension": {
+                "type": "string",
+                "description": "Phone number extension"
+              },
+              "organization": {
+                "type": "string",
+                "description": "The organization or company that the contact belongs to"
+              },
+              "role": {
+                "type": "string",
+                "description": "A role the party plays in a given context."
+              },
+              "postalAddress": {
+                "$ref": "../Common/MefFieldedAddress.schema.json#MefFieldedAddress",
+                "description": "Identifies the postal address of the person or office to be contacted."
+              }
+        }
+      }
+    }
+}

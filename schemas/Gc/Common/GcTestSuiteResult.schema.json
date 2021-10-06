@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcTestSuiteResult.schema.json",
+    "title": "GcTestSuiteResult",
+    "definitions": {
+        "GcTestSuiteResult": {
+            "$id": "#GcTestSuiteResult",
+            "description": "A managed test case result resource",
+            "type": "object",
+            "properties": {
+                "testExecution": {
+                    "$ref": "../Common/TestSuiteExecutionRefOrValue.schema.json#TestSuiteExecutionRefOrValue"
+                },
+                "testSuiteResultDefinition": {
+                    "$ref": "../Common/TestSuiteResultDefinition.schema.json#TestSuiteResultDefinition"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "ProductOfferingRef.schema.json",
+    "title": "ProductOfferingRef",
+    "definitions": {
+        "ProductOfferingRef": {
+            "$id": "#ProductOfferingRef",
+            "description": "ProductOffering reference. A product offering represents entities that are orderable from the provider of the catalog, this resource includes pricing information.",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Product/GcProductOfferingRef.schema.json#GcProductOfferingRef"
+                },
+                {
+                    "$ref": "../../Core/EntityRef.schema.json#EntityRef"
+                },
+                {
+                    "$ref": "../../Core/SchemaContext.schema.json#SchemaContext"
+                }
+            ]
+        }
+    }
+}

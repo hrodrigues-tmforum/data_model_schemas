@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcClearAlarms.schema.json",
+    "title": "GcClearAlarms",
+    "definitions": {
+        "GcClearAlarms": {
+            "$id": "#GcClearAlarms",
+            "description": "Task resource for clear alarms operation",
+            "type": "object",
+            "properties": {
+                "alarmClearedTime": {
+                    "description": "Time of the alarm clearing",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "alarmPattern": {
+                    "description": "Alarm patterns to match target alarms. An alarm will match if all of the sttributes in any of the patterns compare equal to those attributes of the alarm.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Resource/Alarm.schema.json#Alarm"
+                    }
+                },
+                "clearSystemId": {
+                    "description": "Name of the clearing system",
+                    "type": "string"
+                },
+                "clearUserId": {
+                    "description": "Name of the clearing user",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

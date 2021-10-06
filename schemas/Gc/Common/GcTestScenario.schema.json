@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcTestScenario.schema.json",
+    "title": "GcTestScenario",
+    "definitions": {
+        "GcTestScenario": {
+            "$id": "#GcTestScenario",
+            "description": "A managed test scenario resource",
+            "type": "object",
+            "properties": {
+                "testScenarioDefinition": {
+                    "$ref": "../Common/TestScenarioDefinition.schema.json#TestScenarioDefinition"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcManagedArtifact.schema.json#GcManagedArtifact"
+                }
+            ]
+        }
+    }
+}

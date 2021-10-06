@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcNote.schema.json",
+    "title": "GcNote",
+    "definitions": {
+        "GcNote": {
+            "$id": "#GcNote",
+            "description": "Extra information about a given entity",
+            "required": [
+                "id",
+                "text"
+            ],
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of the note within its containing entity"
+                },
+                "text": {
+                    "type": "string",
+                    "description": "Text of the note"
+                }
+            }
+        }
+    }
+}

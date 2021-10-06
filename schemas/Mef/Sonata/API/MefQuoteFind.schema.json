@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefQuoteFind.schema.json",
+    "title": "MefQuoteFind",
+    "definitions": {
+      "MefQuoteFind": {
+        "$id": "#MefQuoteFind",
+        "type": "object",
+        "required" : ["id", "state"],
+        "description": "This class represent a single list item for the response of `listQuote` operation",
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "unique identifier - attributed by quoting system"
+              },
+              "effectiveQuoteCompletionDate": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Date when the quote has been completed",
+                "readOnly": true
+              },
+              "expectedQuoteCompletionDate": {
+                "type": "string",
+                "format": "date-time",
+                "description": "This is expected date - from quote supplier - to be able to send back  a response for this quote",
+                "readOnly": true
+              },
+              "externalId": {
+                "type": "string",
+                "description": "ID given by the consumer and only understandable by him (to facilitate his searches afterwards)"
+              },
+              "projectId": {
+                "type": "string",
+                "description": "An identifier that is used to group Quotes that represent a unit of functionality that is important to a Buyer. A Project can be used to relate multiple Quotes together."
+              },
+              "creationDate": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Date and time when the quote was created"
+              },
+              "requestedQuoteCompletionDate": {
+                "type": "string",
+                "format": "date-time",
+                "description": "This is requested date - from quote requester - to get a complete response for this quote"
+              },
+              "quoteLevel": {
+                "$ref": "MefSellerQuoteLevel.schema.json#MefSellerQuoteLevel",
+                "description": "An indication of whether the Seller’s Quote Response is Budgetary, Firm – Subject to Feasibility Check, or Firm. The Seller Quote Level is provided by the Seller when responding to a Quote request. This represents the lowest Quote Item Level of all Quote Items included in the Quote.",
+                "readOnly": true
+              },
+              "state": {
+                "$ref": "MefQuoteStateType.schema.json#MefQuoteStateType",
+                "description": "State of the quote : described in the state-machine diagram"
+              }, 
+              "stateChange": {
+                "type": "array",
+                "description": "State change for the quote",
+                "items": {
+                  "$ref": "MefQuoteStateChange.schema.json#MefQuoteStateChange"
+                }
+              }
+        }
+      }
+    }
+  }
+  

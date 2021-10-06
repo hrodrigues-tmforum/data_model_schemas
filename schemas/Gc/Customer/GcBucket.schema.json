@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcBucket.schema.json",
+    "title": "GcBucket",
+    "definitions": {
+        "GcBucket": {
+            "$id": "#GcBucket",
+            "description": "A bucket (called UsageVolumProduct in the SID Model) represents and tracks a quantity of usage (remaining or consumed). It could be either a quantity or an amount in a currency. It can represent a fixed number of SMS,MMS, call minutes, quantity of data and so on",
+            "type": "object",
+            "properties": {
+                "usageType": {
+                    "type": "string",
+                    "description": "defines the type of the underlying Balance eg data,voice, any currency eg EUR, USD etc"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

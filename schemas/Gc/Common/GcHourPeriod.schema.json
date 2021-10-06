@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcHourPeriod.schema.json",
+    "title": "GcHourPeriod",
+    "definitions": {
+        "GcHourPeriod": {
+            "$id": "#GcHourPeriod",
+            "description": "Used to describe a Hour period.",
+            "type": "object",
+            "properties": {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcServiceTest.schema.json",
+    "title": "GcServiceTest",
+    "definitions": {
+        "GcServiceTest": {
+            "$id": "#GcServiceTest",
+            "description": "A service test is an entity that exists for a controlled test invocation on a service. The service \ntest is executed according to a schedule and contains service test configuration parameters that are to be \napplied at execution time, and service test measures that result.",
+            "type": "object",
+            "properties": {
+                "relatedService": {
+                    "description": "The actual service being tested",
+                    "$ref": "../Service/ServiceRef.schema.json#ServiceRef"
+                },
+                "testSpecification": {
+                    "description": "The specification for this test",
+                    "$ref": "../Service/ServiceTestSpecificationRef.schema.json#ServiceTestSpecificationRef"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the service test"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                }
+            ]
+        }
+    }
+}

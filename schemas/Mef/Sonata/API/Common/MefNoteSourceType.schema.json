@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefNoteSourceType.schema.json",
+    "title": "MefNoteSourceType",
+    "definitions": {
+      "MefNoteSourceType": {
+        "$id": "#MefNoteSourceType",
+        "type": "string",
+        "description": "Indicates if the note is from Buyer or Seller.",
+        "enum": [
+          "buyer",
+          "seller"
+        ]
+      }
+    }
+  }
+  

@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcTestEnvironmentAllocationExecution.schema.json",
+    "title": "GcTestEnvironmentAllocationExecution",
+    "definitions": {
+        "GcTestEnvironmentAllocationExecution": {
+            "$id": "#GcTestEnvironmentAllocationExecution",
+            "description": "REST resource for test environment allocation lifecycle",
+            "type": "object",
+            "properties": {
+                "resourceManagerUrl": {
+                    "type": "string",
+                    "format": "uri",
+                    "example": "https://myserver.com/resourceManager"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcExecution.schema.json#GcExecution"
+                }
+            ]
+        }
+    }
+}

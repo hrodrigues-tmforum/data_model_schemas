@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcAdjustBalance.schema.json",
+    "title": "GcAdjustBalance",
+    "definitions": {
+        "GcAdjustBalance": {
+            "$id": "#GcAdjustBalance",
+            "description": "The AdjustBalance resource allows adjustments to be made to the original BalanceTopup eg increment the amount, alter the recharge periodicity",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Customer/GcBalanceAction.schema.json#GcBalanceAction"
+                }
+            ]
+        }
+    }
+}

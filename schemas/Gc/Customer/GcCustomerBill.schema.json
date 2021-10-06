@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcCustomerBill.schema.json",
+    "title": "GcCustomerBill",
+    "definitions": {
+        "GcCustomerBill": {
+            "$id": "#GcCustomerBill",
+            "description": "The customer bill. Can be a regular recurring bill or an extra bill on demand by the customer or the csp.",
+            "type": "object",
+            "properties": {
+                "billDocument": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/AttachmentRefOrValue.schema.json#AttachmentRefOrValue"
+                    }
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcPartyPrivacyProfileSpecification.schema.json",
+    "title": "GcPartyPrivacyProfileSpecification",
+    "definitions": {
+        "GcPartyPrivacyProfileSpecification": {
+            "$id": "#GcPartyPrivacyProfileSpecification",
+            "description": "Party Privacy Profile Specification serves as a template for creating Privacy Profiles. The specification defines characteristics for the profile. For example there might be a profile specification for residential customers, and a different specification for partners.",
+            "type": "object",
+            "properties": {
+                "partyPrivacyProfileSpecCharacteristic": {
+                    "type": "array",
+                    "description": "List of characteristics of the specification, whose values would typically be supplied when the profile is instantiated",
+                    "items": {
+                        "$ref": "../EngagedParty/PartyPrivacyProfileSpecificationCharacteristic.schema.json#PartyPrivacyProfileSpecificationCharacteristic"
+                    }
+                }
+            }
+        }
+    }
+}

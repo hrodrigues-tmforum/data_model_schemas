@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcContactMedium.schema.json",
+    "title": "GcContactMedium",
+    "definitions": {
+        "GcContactMedium": {
+            "$id": "#GcContactMedium",
+            "description": "Indicates the contact medium that could be used to contact the party.",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Extensible.schema.json#Extensible"
+                }
+            ]
+        }
+    }
+}

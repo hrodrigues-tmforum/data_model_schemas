@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcCustomerBillOnDemand.schema.json",
+    "title": "GcCustomerBillOnDemand",
+    "definitions": {
+        "GcCustomerBillOnDemand": {
+            "$id": "#GcCustomerBillOnDemand",
+            "description": "This resource is used to manage the creation request of a customer bill in real-time (on demand).",
+            "type": "object",
+            "properties": {}
+        }
+    }
+}

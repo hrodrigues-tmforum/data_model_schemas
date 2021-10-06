@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcTransferBalance.schema.json",
+    "title": "GcTransferBalance",
+    "definitions": {
+        "GcTransferBalance": {
+            "$id": "#GcTransferBalance",
+            "description": "The TransferBalance resource is a detailed description of credit transfer operation requested between two buckets (reference to products owned by customers and consuming credit when using a service).",
+            "type": "object",
+            "properties": {
+                "receiver": {
+                    "$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty",
+                    "description": "Identifier for the user/customer/entity that receives the transfer when it is required to indicate additional customer hierarchy information regarding the entity receiving the balance transfer Structure including at least attributes \u201crole\u201d and \u201cname\u201d"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Customer/GcBalanceAction.schema.json#GcBalanceAction"
+                }
+            ]
+        }
+    }
+}

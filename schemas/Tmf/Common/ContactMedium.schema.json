@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "ContactMedium.schema.json",
+    "title": "ContactMedium",
+    "definitions": {
+        "ContactMedium": {
+            "$id": "#ContactMedium",
+            "description": "Indicates the contact medium that could be used to contact the party.",
+            "type": "object",
+            "properties": {
+                "contactMediumIdentifier": {
+                    "type": "string",
+                    "description": "Identifier for this contact medium."
+                },
+                "preferred": {
+                    "type": "boolean",
+                    "description": "If true, indicates that is the preferred contact medium"
+                },
+                "contactType": {
+                    "type": "string",
+                    "description": "Type of the contact medium to qualifiy it like pro email / personal email. This is not used to define the contact medium used."
+                },
+                "validFor": {
+                    "$ref": "../../Core/TimePeriod.schema.json#TimePeriod",
+                    "description": "The time period that the contact medium is valid for"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcContactMedium.schema.json#GcContactMedium"
+                },
+                {
+                    "$ref": "../../Core/SchemaContext.schema.json#SchemaContext"
+                }
+            ]
+        }
+    }
+}

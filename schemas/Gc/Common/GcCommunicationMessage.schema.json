@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcCommunicationMessage.schema.json",
+    "title": "GcCommunicationMessage",
+    "definitions": {
+        "GcCommunicationMessage": {
+            "$id": "#GcCommunicationMessage",
+            "description": "Communication message means a notification approach in the format of a message which can be dispatched (sent) to the certain user by the system with the content which can be felt and understood by the recipient. The user can be either a final customer or a customer service agent. The message can reach the customer in different interaction channels, including: email, short message, mobile app notification (push).",
+            "type": "object",
+            "properties": {
+                "content": {
+                    "type": "string",
+                    "description": "The content of the communication message"
+                },
+                "messageType": {
+                    "type": "string",
+                    "description": "The type of message, such as: SMS, Email, Mobile app push notification"
+                },
+                "receiver": {
+                    "type": "array",
+                    "description": "The receiver(s) of this message",
+                    "items": {
+                        "$ref": "../Common/Receiver.schema.json#Receiver"
+                    }
+                },
+                "sender": {
+                    "$ref": "../Common/Sender.schema.json#Sender",
+                    "description": "The sender of this message"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

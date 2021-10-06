@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "GeoJsonMultiPointValue.schema.json",
+  "title": "GeoJsonMultiPointValue",
+  "definitions": {
+    "GeoJsonMultiPoint": {
+      "$id": "#GeoJsonMultiPoint",
+      "description": "Container for GeoJSON MultiPoint: A collection of Points",
+      "required": [
+        "geoJson"
+      ],
+      "properties": {
+        "geoJson": {
+          "$ref": "../Common/MultiPoint.schema.json#MultiPoint"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "../Common/GeographicLocationValue.schema.json#GeographicLocationValue"
+        }
+      ],
+      "type": "object"
+    }
+  }
+}

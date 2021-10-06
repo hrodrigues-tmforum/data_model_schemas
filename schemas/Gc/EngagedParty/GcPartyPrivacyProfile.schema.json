@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcPartyPrivacyProfile.schema.json",
+    "title": "GcPartyPrivacyProfile",
+    "definitions": {
+        "GcPartyPrivacyProfile": {
+            "$id": "#GcPartyPrivacyProfile",
+            "description": "A Party Privacy Profile represents the set of Privacy settings defined for a Party",
+            "type": "object",
+            "properties": {
+                "agreedByParty": {
+                    "$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty",
+                    "description": "The party who agreed to the privacy profile. Not necessarily the party to whom the profile applies."
+                },
+                "partyPrivacyProfileCharacteristic": {
+                    "type": "array",
+                    "description": "List of characteristics of the privacy profile",
+                    "items": {
+                        "$ref": "../EngagedParty/PartyPrivacyProfileCharacteristic.schema.json#PartyPrivacyProfileCharacteristic"
+                    }
+                },
+                "partyPrivacyProfileSpecification": {
+                    "$ref": "../EngagedParty/PartyPrivacyProfileSpecificationRef.schema.json#PartyPrivacyProfileSpecificationRef",
+                    "description": "The specification from which this profile was instantiated"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

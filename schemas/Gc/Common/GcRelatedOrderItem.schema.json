@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcRelatedOrderItem.schema.json",
+    "title": "GcRelatedOrderItem",
+    "definitions": {
+        "GcRelatedOrderItem": {
+            "$id": "#GcRelatedOrderItem",
+            "type": "object",
+            "description": "Reference of a Order item that has been executed previously.",
+            "required": [
+                "orderItemId",
+                "orderId",
+                "role"
+            ],
+            "properties": {
+                "role": {
+                    "type": "string",
+                    "description": "Role played by the  Order"
+                },
+                "orderId": {
+                    "type": "string",
+                    "description": "Unique identifier of a related  Order."
+                },
+                "orderItemId": {
+                    "type": "string",
+                    "description": "Id of an item of a prduct order"
+                }
+            }
+        }
+    }
+}

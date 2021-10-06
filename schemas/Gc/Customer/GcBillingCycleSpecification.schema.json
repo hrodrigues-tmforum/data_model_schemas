@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcBillingCycleSpecification.schema.json",
+    "title": "GcBillingCycleSpecification",
+    "definitions": {
+        "GcBillingCycleSpecification": {
+            "$id": "#GcBillingCycleSpecification",
+            "description": "A detailed description of when to initiate a billing cycle and the various sub steps of a billing cycle.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "A short descriptive name"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

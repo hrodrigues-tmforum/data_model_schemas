@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "AgreementItemRef.schema.json",
+    "title": "AgreementItemRef",
+    "definitions": {
+        "AgreementItemRef": {
+            "$id": "#AgreementItemRef",
+            "type": "object",
+            "description": "It's a Agreement item that has been executed previously.",
+            "properties": {
+                "agreementName": {
+                    "type": "string",
+                    "description": "Name of the related entity."
+                },
+                "agreementHref": {
+                    "type": "string",
+                    "description": "Reference of the related entity."
+                },
+                "@referredType": {
+                    "type": "string",
+                    "description": "The actual type of the target instance when needed for disambiguation."
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/EngagedParty/GcAgreementItemRef.schema.json#GcAgreementItemRef"
+                },
+                {
+                    "$ref": "../../Core/SchemaContext.schema.json#SchemaContext"
+                }
+            ]
+        }
+    }
+}

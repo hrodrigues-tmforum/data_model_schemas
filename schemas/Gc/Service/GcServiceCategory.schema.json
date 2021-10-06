@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcServiceCategory.schema.json",
+    "title": "GcServiceCategory",
+    "definitions": {
+        "GcServiceCategory": {
+            "$id": "#GcServiceCategory",
+            "description": "The (service) category resource is used to group service candidates in logical containers. Categories can contain other categories.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the category"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                }
+            ]
+        }
+    }
+}

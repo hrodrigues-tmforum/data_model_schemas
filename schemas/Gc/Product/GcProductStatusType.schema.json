@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductStatusType.schema.json",
+    "title": "GcProductStatusType",
+    "definitions": {
+        "GcProductStatusType": {
+            "$id": "#GcProductStatusType",
+            "type": "string",
+            "description": "Possible core values for the status of the product",
+            "enum": [
+                "active",
+                "terminated"
+            ]
+        }
+    }
+}

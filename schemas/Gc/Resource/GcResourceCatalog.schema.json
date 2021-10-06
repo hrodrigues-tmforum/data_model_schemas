@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcResourceCatalog.schema.json",
+    "title": "GcResourceCatalog",
+    "definitions": {
+        "GcResourceCatalog": {
+            "$id": "#GcResourceCatalog",
+            "description": "The root entity for resource catalog management.\nA resource catalog is a group of resource specifications made available through resource candidates that an organization provides to the consumers (internal consumers like its employees or B2B customers or B2C customers).",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the catalog"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

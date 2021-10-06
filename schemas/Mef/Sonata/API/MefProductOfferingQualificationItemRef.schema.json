@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "MefProductOfferingQualificationItemRef.schema.json",
+  "title": "MefProductOfferingQualificationItemRef",
+  "definitions": {
+    "MefProductOfferingQualificationItemRef": {
+      "$id": "#MefProductOfferingQualificationItemRef",
+      "type": "object",
+      "description": "A quote items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.",
+      "properties": {
+        "productOfferingQualificationHref": {
+          "type": "string",
+          "description": "Reference of the related entity."
+        },
+        "alternateProductProposalId": {
+          "type": "string",
+          "description": "A unique identifier for this Alternate Product Proposal assigned by the Seller."
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "../../../Gc/Product/GcProductOfferingQualificationItemRef.schema.json#GcProductOfferingQualificationItemRef"
+        }
+      ]
+    }
+  }
+}

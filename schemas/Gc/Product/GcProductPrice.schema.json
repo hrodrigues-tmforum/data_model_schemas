@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductPrice.schema.json",
+    "title": "GcProductPrice",
+    "definitions": {
+        "GcProductPrice": {
+            "$id": "#GcProductPrice",
+            "description": "Description of price and discount awarded",
+            "type": "object",
+            "required": [
+                "priceType",
+                "price"
+            ],
+            "properties": {
+                "priceType": {
+                    "type": "string",
+                    "description": "indicate if the price is for recurrent or no-recurrent charge"
+                },
+                "price": {
+                    "$ref": "../Customer/GcPrice.schema.json#GcPrice"
+                }
+            }
+        }
+    }
+}

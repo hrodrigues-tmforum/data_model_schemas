@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcRefund.schema.json",
+    "title": "GcRefund",
+    "definitions": {
+        "GcRefund": {
+            "$id": "#GcRefund",
+            "description": "The Refund resource represents a performed Refund. It contains both information about the refund and the payment method used to perform it.",
+            "type": "object",
+            "properties": {
+                "account": {
+                    "$ref": "../EngagedParty/AccountRef.schema.json#AccountRef"
+                },
+                "paymentMethod": {
+                    "$ref": "../Customer/PaymentMethodRefOrValue.schema.json#PaymentMethodRefOrValue"
+                },
+                "totalAmount": {
+                    "$ref": "../Common/Money.schema.json#Money",
+                    "description": "Amount to be paid (including taxes)"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

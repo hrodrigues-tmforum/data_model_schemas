@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcQuoteItemStateType.schema.json",
+    "title": "GcQuoteItemStateType",
+    "definitions": {
+        "GcQuoteItemStateType": {
+            "$id": "#GcQuoteItemStateType",
+            "type": "string",
+            "description": "Possible values for the state of the quote",
+            "enum": [
+                "acknowledged",
+                "declined",
+                "pending",
+                "inProgress",
+                "approved"
+            ]
+        }
+    }
+}

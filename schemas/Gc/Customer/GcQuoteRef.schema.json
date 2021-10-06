@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcQuoteRef.schema.json",
+    "title": "GcQuoteRef",
+    "definitions": {
+        "GcQuoteRef": {
+            "$id": "#GcQuoteRef",
+            "description": "Quote reference. It's a Quote that has been executed previously.",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Reference.schema.json#Reference"
+                }
+            ]
+        }
+    }
+}

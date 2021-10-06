@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcNonFunctionalTestResult.schema.json",
+    "title": "GcNonFunctionalTestResult",
+    "definitions": {
+        "GcNonFunctionalTestResult": {
+            "$id": "#GcNonFunctionalTestResult",
+            "description": "A managed non-functional test result resource",
+            "type": "object",
+            "properties": {
+                "nonFunctionalTestResultDefinition": {
+                    "$ref": "../Common/NonFunctionalTestResultDefinition.schema.json#NonFunctionalTestResultDefinition"
+                },
+                "testExecution": {
+                    "$ref": "../Common/NonFunctionalTestExecutionRefOrValue.schema.json#NonFunctionalTestExecutionRefOrValue"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

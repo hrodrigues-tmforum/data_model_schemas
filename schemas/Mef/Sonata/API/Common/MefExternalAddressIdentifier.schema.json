@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefExternalAddressIdentifier.schema.json",
+    "$version":"5.0",
+    "title": "MefExternalAddressIdentifier",
+    "definitions": {
+      "MefExternalAddressIdentifier": {
+        "$id": "#MefExternalAddressIdentifier",
+        "type": "object",
+        "required": [
+            "externalReferenceId",
+            "externalReferenceType"
+          ],
+          "description": "A unique identifier controlled by a generally accepted independent administrative authority that specifies a fixed geographical location. \nReference: MEF 79 (Sn 8.9.4)",
+          "properties": {
+            "externalReferenceId": {
+                "type": "string",
+                "description": "A reference to an address by id"
+              },
+              "externalReferenceType": {
+                "type": "string",
+                "description": "The type of the reference. For North American providers this would normally be CLLI (Common Language Location Identifier) code"
+              }
+        }
+      }
+    }
+  }
+  

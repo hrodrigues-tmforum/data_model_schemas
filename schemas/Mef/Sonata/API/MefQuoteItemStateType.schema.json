@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "MefQuoteItemStateType.schema.json",
+  "title": "MefQuoteItemStateType",
+  "definitions": {
+    "MefQuoteItemStateType": {
+      "$id": "#MefQuoteItemStateType",
+      "type": "string",
+      "description": "Possible values for the state of the quote item",
+      "enum": [
+        "approved.answered",
+        "approved.orderable",
+        "approved.orderableAlternate",
+        "inProgress",
+        "inProgress.draft",
+        "acknowledged",
+        "rejected",
+        "rejected.insufficientInformationProvided",
+        "rejected.unableToProvide"
+      ]
+    }
+  }
+}

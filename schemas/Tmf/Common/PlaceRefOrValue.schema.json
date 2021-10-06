@@ -1,0 +1,29 @@
+ {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "PlaceRefOrValue.schema.json",
+    "title": "PlaceRefOrValue",
+    "definitions": {
+      "PlaceRefOrValue": {
+        "$id": "#PlaceRefOrValue",
+        "description": "A place described by reference or by value. The polymorphic attributes @type, @schemaLocation & @referredType are related to the place entity and not the PlaceRefOrValue class itself",
+        "type": "object",
+        "properties": {
+        },
+
+        "allOf": [
+            {
+                "$ref": "../../Gc/Common/GcPlaceRefOrValue.schema.json#GcPlaceRefOrValue"
+              }
+        ],
+        "oneOf": [
+            {
+              "$ref": "PlaceRef.schema.json#/PlaceRef"
+            },
+            {
+              "$ref": "GeographicAddressValue.schema.json#/GeographicAddressValue"
+            }
+          ]
+      }
+    }
+  }
+  

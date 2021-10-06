@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "MefSellerQuoteLevel.schema.json",
+  "title": "MefSellerQuoteLevel",
+  "definitions": {
+    "MefSellerQuoteLevel": {
+      "$id": "#MefSellerQuoteLevel",
+      "type": "string",
+      "readOnly": true,
+      "description": "An indication of whether the Seller’s Quote Response is Budgetary, Firm – Subject to Feasibility Check, or Firm. The Seller Quote Level is provided by the Seller when responding to a Quote request.  This represents the lowest Quote Item Level of all Quote Items included in the Quote.",
+      "enum": [
+        "budgetary",
+        "firmSubjectToFeasibilityCheck",
+        "firm"
+      ]
+    }
+  }
+}

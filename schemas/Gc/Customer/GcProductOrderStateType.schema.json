@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductOrderStateType.schema.json",
+    "title": "GcProductOrderStateType",
+    "definitions": {
+      "GcProductOrderStateType": {
+        "$id": "#GcProductOrderStateType",
+        "type": "string",
+        "description": "Possible values for the state of the order",
+        "enum": [
+          "acknowledged",
+          "rejected",
+          "inProgress",
+          "cancelled",
+          "completed",
+          "failed"
+        ]
+      }
+    }
+  }
+  

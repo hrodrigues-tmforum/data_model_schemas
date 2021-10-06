@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcGeographicSubAddress.schema.json",
+    "title": "GcGeographicSubAddress",
+    "definitions": {
+        "GcGeographicSubAddress": {
+            "$id": "#GcGeographicSubAddress",
+            "description": "Representation of a GeographicSubAddress \nIt is used for addressing within a property in an urban area (country properties are often defined differently). It may refer to a building, a building cluster, or a floor of a multistory building.",
+            "type": "object",
+            "properties": {
+                "levelNumber": {
+                    "type": "string",
+                    "description": "used where a level type may be repeated e.g. BASEMENT 1, BASEMENT 2"
+                },
+                "levelType": {
+                    "type": "string",
+                    "description": "describes level types within a building"
+                },
+                "privateStreetName": {
+                    "type": "string",
+                    "description": "private streets internal to a property (e.g. a university) may have internal names that are not recorded by the land title office."
+                },
+                "privateStreetNumber": {
+                    "type": "string",
+                    "description": "private streets numbers internal to a private street"
+                },
+                "subAddressType": {
+                    "type": "string",
+                    "description": "Type of subAddress : it can be a subunit or a private street"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

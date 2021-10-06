@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcMonitor.schema.json",
+    "title": "GcMonitor",
+    "definitions": {
+        "GcMonitor": {
+            "$id": "#GcMonitor",
+            "description": "Monitoring of resources",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcEntityCatalogItem.schema.json",
+    "title": "GcEntityCatalogItem",
+    "definitions": {
+        "GcEntityCatalogItem": {
+            "$id": "#GcEntityCatalogItem",
+            "description": "An EntityCatalogItem is an entity that allows any ProductOffering, ServiceCandidate, ResourceCandidate, or even any object inheriting from RootEntity, to be available to a catalog. The CatalogSpecification and Policy of the catalog governs the content of the EntityCatalogItem. This API addresses only EntitySpecification items extended from RootEntity as EntityCatalogItem.\nThe EntityCatalogItem resource (JSON format) represents a set of characteristics that define the values given by the EntityCatalogItem.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name given to this REST resource"
+                },
+                "specification": {
+                    "description": "The specification implied by this candidate",
+                    "$ref": "../Common/EntitySpecificationRef.schema.json#/definitions/EntitySpecificationRef"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                }
+            ]
+        }
+    }
+}

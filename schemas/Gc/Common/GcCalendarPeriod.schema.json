@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcCalendarPeriod.schema.json",
+    "title": "GcCalendarPeriod",
+    "definitions": {
+        "GcCalendarPeriod": {
+            "$id": "#GcCalendarPeriod",
+            "description": "Used to describe a calendar period.",
+            "type": "object",
+            "required": [
+                "status"
+            ],
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "description": "Indication of the availability of the caledar period (e.g.: available, booked, etc.)"
+                  }
+            }
+        }
+    }
+}

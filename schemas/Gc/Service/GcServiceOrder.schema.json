@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcServiceOrder.schema.json",
+    "title": "GcServiceOrder",
+    "definitions": {
+        "GcServiceOrder": {
+            "$id": "#GcServiceOrder",
+            "description": "",
+            "type": "object",
+            "properties": {
+                "serviceOrderItem": {
+                    "type": "array",
+                    "description": "A list of service order items to be processed by this order",
+                    "items": {
+                        "$ref": "../Service/ServiceOrderItem.schema.json#/definitions/ServiceOrderItem"
+                    }
+                },
+                "state": {
+                    "description": "State of the order: described in the state-machine diagram",
+                    "$ref": "../Service/ServiceOrderStateType.schema.json#/definitions/ServiceOrderStateType"
+                },
+                "orderDate": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

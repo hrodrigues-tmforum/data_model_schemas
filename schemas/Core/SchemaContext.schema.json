@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "SchemaContext.schema.json",
+  "title": "SchemaContext",
+  "definitions": {
+    "SchemaContext": {
+      "$id": "#SchemaContext",
+      "type": "object",
+      "description": "SchemaContext schema for use in TMForum Open-APIs",
+      "properties": {
+        "@schemaLocation": {
+          "type": "string",
+          "format": "uri",
+          "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
+        },
+        "@baseType": {
+          "type": "string",
+          "description": "When sub-classing, this defines the super-class"
+        },
+          "@type": {
+          "type": "string",
+          "description": "When sub-classing, this defines the sub-class Extensible name"
+        }
+      }
+    }
+  }
+}

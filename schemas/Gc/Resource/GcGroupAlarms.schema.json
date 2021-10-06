@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcGroupAlarms.schema.json",
+    "title": "GcGroupAlarms",
+    "definitions": {
+        "GcGroupAlarms": {
+            "$id": "#GcGroupAlarms",
+            "description": "Task resource for group alarms operation",
+            "type": "object",
+            "properties": {
+                "alarmChangedTime": {
+                    "description": "Time of the correlation",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "correlatedAlarm": {
+                    "description": "Correlated alarms",
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Resource/AlarmRefOrValue.schema.json#AlarmRefOrValue"
+                    }
+                },
+                "parentAlarm": {
+                    "description": "Root cause alarm",
+                    "$ref": "../Resource/AlarmRefOrValue.schema.json#AlarmRefOrValue"
+                },
+                "sourceSystemId": {
+                    "description": "Source system identifier",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

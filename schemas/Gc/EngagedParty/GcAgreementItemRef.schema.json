@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcAgreementItemRef.schema.json",
+    "title": "GcAgreementItemRef",
+    "definitions": {
+        "GcAgreementItemRef": {
+            "$id": "#GcAgreementItemRef",
+            "type": "object",
+            "description": "Reference of an Agreement item.",
+            "required": [
+                "agreementId",
+                "agreementItemId"
+            ],
+            "properties": {
+                "agreementId": {
+                    "type": "string",
+                    "description": "Unique identifier of a related entity."
+                },
+                "agreementItemId": {
+                    "type": "string",
+                    "description": "Id of an item of a Agreement"
+                }
+            }
+        }
+    }
+}

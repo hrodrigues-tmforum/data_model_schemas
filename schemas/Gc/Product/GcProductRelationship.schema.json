@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductRelationship.schema.json",
+    "title": "GcProductRelationship",
+    "definitions": {
+        "GcProductRelationship": {
+            "$id": "#GcProductRelationship",
+            "description": "Used to describe relationship between product.",
+            "type": "object",
+            "required": [
+                "id",
+                "relationshipType"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Id of the related product"
+                },
+                "relationshipType": {
+                    "type": "string",
+                    "description": "Relationship type as relies on, bundles, etc..."
+                }
+            }
+        }
+    }
+}

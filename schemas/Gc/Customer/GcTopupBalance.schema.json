@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcTopupBalance.schema.json",
+    "title": "GcTopupBalance",
+    "definitions": {
+        "GcTopupBalance": {
+            "$id": "#GcTopupBalance",
+            "description": "Represents a detailed description of a recharge operation requested over a bucket (defined by a specific product or reference to a product (i.e.: a commercial id such as an msisidn) and a service type)",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Customer/GcBalanceAction.schema.json#GcBalanceAction"
+                }
+            ]
+        }
+    }
+}

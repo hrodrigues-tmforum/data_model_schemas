@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcOrderPrice.schema.json",
+    "title": "GcOrderPrice",
+    "definitions": {
+        "GcOrderPrice": {
+            "$id": "#GcOrderPrice",
+            "description": "An amount, usually of money, that represents the actual price paid by the Customer for this item or this order",
+            "type": "object",
+            "required": [
+                "priceType",
+                "price"
+            ],
+            "properties": {
+                "priceType": {
+                    "type": "string",
+                    "description": "indicate if the price is for recurrent or no-recurrent charge"
+                },
+                "price": {
+                    "$ref": "../Customer/GcPrice.schema.json#GcPrice"
+                }
+            }
+        }
+    }
+}

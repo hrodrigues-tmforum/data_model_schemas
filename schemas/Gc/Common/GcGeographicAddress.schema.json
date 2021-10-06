@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcGeographicAddress.schema.json",
+    "title": "GcGeographicAddress",
+    "definitions": {
+        "GcGeographicAddress": {
+            "$id": "#GcGeographicAddress",
+            "description": "Structured textual way of describing how to find a Property in an urban area (country properties are often defined differently).\nNote : Address corresponds to SID UrbanPropertyAddress",
+            "type": "object",
+            "properties": {
+                "city": {
+                    "type": "string",
+                    "description": "City that the address is in"
+                },
+                "country": {
+                    "type": "string",
+                    "description": "Country that the address is in"
+                },
+                "geographicSubAddress": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/GeographicSubAddress.schema.json#GeographicSubAddress"
+                    }
+                },
+                "postcode": {
+                    "type": "string",
+                    "description": "descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also know as zipcode)"
+                },
+                "stateOrProvince": {
+                    "type": "string",
+                    "description": "the State or Province that the address is in"
+                },
+                "streetName": {
+                    "type": "string",
+                    "description": "Name of the street or other street type"
+                },
+                "streetNr": {
+                    "type": "string",
+                    "description": "Number identifying a specific property on a public street. It may be combined with streetNrLast for ranged addresses"
+                },
+                "streetType": {
+                    "type": "string",
+                    "description": "alley, avenue, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf "
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcPlace.schema.json#GcPlace"
+                }
+            ]
+        }
+    }
+}

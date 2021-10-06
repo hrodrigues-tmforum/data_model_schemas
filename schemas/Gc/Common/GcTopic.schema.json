@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcTopic.schema.json",
+    "title": "GcTopic",
+    "definitions": {
+        "GcTopic": {
+            "$id": "#GcTopic",
+            "description": "Is a event channel provided by the Event Streaming API",
+            "type": "object",
+            "properties": {
+                "contentQuery": {
+                    "type": "string",
+                    "description": "is the filter that will be applied on the content of the Event."
+                },
+                "headerQuery": {
+                    "type": "string",
+                    "description": "is the filter that will be applied on the Event header properties."
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

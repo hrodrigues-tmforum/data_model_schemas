@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GeographicAddress.schema.json",
+    "title": "GeographicAddress",
+    "definitions": {
+        "GeographicAddress": {
+            "$id": "#GeographicAddress",
+            "description": "Structured textual way of describing how to find a Property in an urban area (country properties are often defined differently).\nNote : Address corresponds to SID UrbanPropertyAddress",
+            "type": "object",
+            "properties": {
+                "locality": {
+                    "type": "string",
+                    "description": "An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi rural in nature. [ANZLIC-STREET], or a suburb, a bounded locality within a city, town or shire principally of urban character [ANZLICSTREET]"
+                },
+                "streetNrLast": {
+                    "type": "string",
+                    "description": "Last number in a range of street numbers allocated to a property"
+                },
+                "streetNrLastSuffix": {
+                    "type": "string",
+                    "description": "Last street number suffix for a ranged address"
+                },
+                "streetNrSuffix": {
+                    "type": "string",
+                    "description": "the first street number suffix"
+                },
+                "streetSuffix": {
+                    "type": "string",
+                    "description": "A modifier denoting a relative direction"
+                },
+                "geographicLocation": {
+                    "$ref": "GeographicLocationRefOrValue.schema.json#GeographicLocationRefOrValue"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcPlace.schema.json#GcPlace"
+                }
+            ]
+        }
+    }
+}

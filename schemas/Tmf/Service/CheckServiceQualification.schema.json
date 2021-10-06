@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "CheckServiceQualification.schema.json",
+    "title": "CheckServiceQualification",
+    "definitions": {
+        "CheckServiceQualification": {
+            "$id": "#CheckServiceQualification",
+            "type": "object",
+            "description": "CheckServiceQualification is used to perform a technical eligibility on service configuration(s). It allows to retrieve services that are technically available in the context of the interaction (place, party, service characteristics, ...).",
+            "properties": {
+                "provideAlternative": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "When the value is TRUE means that alternative solutions should be provided"
+                },
+                "provideUnavailabilityReason": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "When the value is TRUE means that unavailability reason are expected for non available service."
+                },
+                "qualificationResult": {
+                    "description": "Qualification result for this serviceQualification. It could be:  qualified (all qualification item are qualified), alternate (At least one item alternate and no item with  unqualified), unqualified (At least one item unqualified)",
+                    "type": "string"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Service/GcServiceQualification.schema.json#GcServiceQualification"
+                }
+            ]
+        }
+    }
+}

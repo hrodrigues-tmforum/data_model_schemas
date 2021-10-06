@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "ResourceRef.schema.json",
+    "title": "ResourceRef",
+    "definitions": {
+        "ResourceRef": {
+            "$id": "#ResourceRef",
+            "description": "Resource reference, for when Resource is used by other entities.",
+            "type": "object",
+            "properties": {
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Resource/GcResourceRef.schema.json#GcResourceRef"
+                },
+                {
+                    "$ref": "../../Core/EntityRef.schema.json#EntityRef"
+                },
+                {
+                    "$ref": "../../Core/SchemaContext.schema.json#SchemaContext"
+                }
+            ]
+        }
+    }
+}

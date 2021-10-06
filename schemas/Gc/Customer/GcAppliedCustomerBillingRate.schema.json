@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcAppliedCustomerBillingRate.schema.json",
+    "title": "GcAppliedCustomerBillingRate",
+    "definitions": {
+        "GcAppliedCustomerBillingRate": {
+            "$id": "#GcAppliedCustomerBillingRate",
+            "description": "A customer bill displays applied billing rates created before or during the billing process.",
+            "type": "object",
+            "properties": {
+                "isBilled": {
+                    "type": "boolean",
+                    "description": "If isBilled = true then bill should be provided, if false then billingAccount should be provided"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

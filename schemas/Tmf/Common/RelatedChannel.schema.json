@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "RelatedChannel.schema.json",
+    "title": "RelatedChannel",
+    "definitions": {
+      "RelatedChannel": {
+        "$id": "#RelatedChannel",
+        "description": "Related channel to another entity. May be online web, mobile app, social ,etc.",
+        "type": "object",
+        "properties": {
+            "href": {
+                "type": "string",
+                "description": "Hyperlink reference"
+              }
+        },
+        "allOf": [
+            {
+                "$ref": "../../Gc/Common/GcRelatedChannel.schema.json#GcRelatedChannel"
+              },
+              {
+                "$ref": "../../Core/SchemaContext.schema.json#SchemaContext"
+              }
+        ]
+      }
+    }
+  }

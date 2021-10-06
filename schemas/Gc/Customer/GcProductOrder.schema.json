@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductOrder.schema.json",
+    "title": "GcProductOrder",
+    "definitions": {
+        "GcProductOrder": {
+            "$id": "#GcProductOrder",
+            "type": "object",
+            "required": [
+                "ProductOrderItem",
+                "creationDate",
+                "state",
+                "completionDate"
+            ],
+            "description": "Generic Contect schema for ProductOrder.",
+            "properties": {
+                "creationDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the ProductOrder was created"
+                },
+                "state": {
+                    "$ref": "../Customer/GcProductOrderStateType.schema.json#GcProductOrderStateType",
+                    "description": "Tracks the lifecycle status of the product order, such as Acknowledged, Rejected, InProgress, Pending and so on."
+                },
+                "completionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the ProductOrder was completed"
+                 },
+                "ProductOrderItem": {
+                    "type": "array",
+                    "description": "A ProductOrder items describe an action to be performed on a productOffering or a product.",
+                    "items": {
+                        "$ref": "GcProductOrderItem.schema.json#GcProductOrderItem"
+                    },
+                    "minItems": 1
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json#Entity"
+                }
+            ]
+        }
+    }
+}

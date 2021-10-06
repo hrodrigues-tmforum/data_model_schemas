@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GeographicSite.schema.json",
+    "title": "GeographicSite",
+    "definitions": {
+        "GeographicSite": {
+            "$id": "#GeographicSite",
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "A code that may be used for some addressing schemes eg: [ANSI T1.253-1999]"
+                },
+                "creationDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the GeographicSite was created"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Text describing additional information regarding the site"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "The condition of the GeographicSite, such as planned, underConstruction, cancelled, active, inactive, former"
+                },
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty"
+                    }
+                },
+                "externalIdentifier": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/ExternalIdentifier.schema.json#ExternalIdentifier"
+                    }
+                },
+                "calendar": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/CalendarPeriod.schema.json#CalendarPeriod"
+                    }
+                },
+                "place": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "PlaceRefOrValue.schema.json#/definitions/PlaceRefOrValue"
+                    }
+                },
+                "siteRelationship": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/GeographicSiteRelationship.schema.json#GeographicSiteRelationship"
+                    }
+                }
+            },
+            "allOf": [
+            {
+                    "$ref": "../../Gc/Common/GcGeographicSite.schema.json#GcGeographicSite"
+                }
+            ]
+        }
+    }
+}

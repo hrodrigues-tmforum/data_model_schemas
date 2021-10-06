@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcOrganization.schema.json",
+    "title": "GcOrganization",
+    "definitions": {
+        "GcOrganization": {
+            "$id": "#GcOrganization",
+            "description": "Organization represents a group of people identified by shared interests or purpose. Examples include business, department and enterprise. Because of the complex nature of many businesses, both organizations and organization units are represented by the same data.",
+            "type": "object",
+            "properties": {
+                "tradingName": {
+                    "type": "string",
+                    "description": "Name that the organization (unit) trades under"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/EngagedParty/GcParty.schema.json#GcParty"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcEntity.schema.json#GcEntity"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcPrice.schema.json",
+    "title": "GcPrice",
+    "definitions": {
+        "GcPrice": {
+            "$id": "#GcPrice",
+            "description": "Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price and Price Alteration.",
+            "type": "object",
+            "properties": {}
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "MefQuoteItem.schema.json",
+  "title": "MefQuoteItem",
+  "definitions": {
+    "MefQuoteItem": {
+      "$id": "#MefQuoteItem",
+      "type": "object",
+      "description": "A quote items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.",
+      "properties": {
+        "subjectToFeasibilityCheck": {
+          "type": "boolean",
+          "description": "For a Firm Quote Level indicates if the pricing requires a Feasibility Check. The Seller indicates if the Quote Item requires a Feasibility Check.  This is not used for a Budgetary Quote Level.",
+          "readOnly": true
+        },
+        "quoteItemInstallationInterval": {
+          "$ref": "../API/Common/MefDuration.schema.json#MefDuration",
+          "description": "Quote Item Installation Interval that the Seller can commit to.",
+          "readOnly": true
+        },
+        "quoteItemPrice": {
+          "type": "array",
+          "items": {
+            "$ref": "MefQuotePrice.schema.json#MefQuotePrice"
+          },
+          "description": "Price for this quote item",
+          "readOnly": true
+        },
+        "quoteItemTerm": {
+          "$ref": "../API/Common/MefItemTerm.schema.json#MefItemTerm",
+          "description": "Quote Item Term that the Seller can commit to.",
+          "readOnly": true
+        },
+        "state": {
+          "$ref": "MefQuoteItemStateType.schema.json#MefQuoteItemStateType",
+          "description": "Possible values for the status of a QuoteItem.",
+          "readOnly": true
+        },
+        "terminationError": {
+          "type": "array",
+          "items": {
+            "$ref": "../API/Common/MefTerminationError.schema.json#MefTerminationError"
+          },
+          "description": "When the Seller cannot process the Quote Item Request, the Seller returns a text-based list of reasons here. If the `QuoteItem.state=rejected.insufficientInformationProvided`, the Seller MUST specify the `terminationError` attribute.",
+          "readOnly": true
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "../../../Gc/Customer/GcQuoteItem.schema.json#GcQuoteItem"
+        },
+        {
+          "$ref": "../API/MefQuoteItem_Common.schema.json#MefQuoteItem_Common"
+        }
+      ]
+    }
+  }
+}

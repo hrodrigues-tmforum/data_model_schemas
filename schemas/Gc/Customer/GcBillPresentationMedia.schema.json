@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcBillPresentationMedia.schema.json",
+    "title": "GcBillPresentationMedia",
+    "definitions": {
+        "GcBillPresentationMedia": {
+            "$id": "#GcBillPresentationMedia",
+            "description": "A mean of communicating a bill, supported by the associated bill format. For example, post mail, email, web page.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "A short descriptive name"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

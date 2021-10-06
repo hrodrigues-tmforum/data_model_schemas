@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "EntityRef.schema.json",
+  "title": "EntityRef",
+  "definitions": {
+    "EntityRef": {
+      "$id": "#EntityRef",
+      "description": "Entity reference schema to be use for all entityRef class.",
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri",
+          "description": "Hyperlink reference"
+        }
+      }
+    }
+  }
+}

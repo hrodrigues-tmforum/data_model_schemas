@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "ProductOfferingQualificationRef.schema.json",
+    "title": "ProductOfferingQualificationRef",
+    "definitions": {
+        "ProductOfferingQualificationRef": {
+            "$id": "#ProductOfferingQualificationRef",
+            "type": "object",
+            "description": "A productOfferingQualification that has been executed previously",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Product/GcProductOfferingQualificationRef.schema.json#GcProductOfferingQualificationRef"
+                },
+                {
+                    "$ref": "../../Core/EntityRef.schema.json#EntityRef"
+                },
+                {
+                    "$ref": "../../Core/SchemaContext.schema.json#SchemaContext"
+                }
+            ]
+        }
+    }
+}

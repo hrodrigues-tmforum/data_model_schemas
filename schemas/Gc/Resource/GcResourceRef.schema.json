@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcResourceRef.schema.json",
+    "title": "GcResourceRef",
+    "definitions": {
+        "GcResourceRef": {
+            "$id": "#GcResourceRef",
+            "description": "Resource reference",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Reference.schema.json#Reference"
+                }
+            ]
+        }
+    }
+}

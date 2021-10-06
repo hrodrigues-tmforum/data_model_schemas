@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcRule.schema.json",
+    "title": "GcRule",
+    "definitions": {
+        "GcRule": {
+            "$id": "#GcRule",
+            "description": "",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of the rule."
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcEntity.schema.json#GcEntity"
+                }
+            ]
+        }
+    }
+}

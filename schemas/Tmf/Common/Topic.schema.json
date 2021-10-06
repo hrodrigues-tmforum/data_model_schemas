@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Topic.schema.json",
+    "title": "Topic",
+    "definitions": {
+        "Topic": {
+            "$id": "#Topic",
+            "description": "Is a event channel provided by the Event Streaming API",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "use to identify grouping of events, per domain, per event types, per access control-right and so on."
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../Common/Entity.schema.json#Entity"
+                }
+            ]
+        }
+    }
+}

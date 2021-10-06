@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefFormattedAddress.schema.json",
+    "$version":"5.0",
+    "title": "MefFormattedAddress",
+    "definitions": {
+      "MefFormattedAddress": {
+        "$id": "#MefFormattedAddress",
+        "type": "object",
+        "required": [
+            "addrLine1",
+            "city",
+            "country"
+          ],
+          "description": "A type of Address that has discrete fields for each type of boundary or identifier with the exception of street and more specific location details, which are combined into a maximum of two strings based on local postal addressing conventions.",
+          "properties": {
+            "addrLine1": {
+                "type": "string",
+                "description": "The first address line in a formatted address"
+              },
+              "addrLine2": {
+                "type": "string",
+                "description": "The second address line in a formatted address"
+              },
+              "city": {
+                "type": "string",
+                "description": "The city that the address is in"
+              },
+              "country": {
+                "type": "string",
+                "description": "Country that the address is in"
+              },
+              "locality": {
+                "type": "string",
+                "description": "An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi rural in nature"
+              },
+              "postcode": {
+                "type": "string",
+                "description": "Descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also known as ZIP code)"
+              },
+              "postcodeExtension": {
+                "type": "string",
+                "description": "An extension of a postal code. E.g. the part following the dash in an US urban property address"
+              },
+              "stateOrProvince": {
+                "type": "string",
+                "description": "The State or Province that the address is in"
+              }
+        }
+      }
+    }
+  }
+  

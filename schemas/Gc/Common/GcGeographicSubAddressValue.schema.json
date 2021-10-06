@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcGeographicSubAddressValue.schema.json",
+    "title": "GcGeographicSubAddressValue",
+    "definitions": {
+      "GcGeographicSubAddressValue": {
+        "$id": "#GcGeographicSubAddressValue",
+        "type": "object",
+        "description": "Structured textual way of describing how to find a Property in an urban area (country properties are often defined differently).\nNote : Address corresponds to SID UrbanPropertyAddress",
+        "properties": { 
+        },
+        "allOf": [
+                {
+                    "$ref": "../../Core/Extensible.schema.json#Extensible"
+                }
+            ]
+      }
+    }
+  }

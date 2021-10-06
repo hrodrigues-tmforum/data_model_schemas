@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "MefProductActionType.schema.json",
+  "title": "MefProductActionType",
+  "definitions": {
+    "MefProductActionType": {
+      "$id": "#MefProductActionType",
+      "description": "Action to be applied to this portion of the Quote to the product referred by this Quote Item.
+      | ProductActionType | MEF 80     |
+      |------------------ | ---------- |
+      | add               | INSTALL    |
+      | modify            | CHANGE     |
+      | delete            | DISCONNECT |",
+      "type": "string",
+      "enum": [
+        "add",
+        "modify",
+        "delete"
+      ]
+    }
+  }
+}

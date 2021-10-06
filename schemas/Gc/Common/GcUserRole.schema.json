@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcUserRole.schema.json",
+    "title": "GcUserRole",
+    "definitions": {
+        "GcUserRole": {
+            "$id": "#GcUserRole",
+            "description": "A UserRole defines access levels to operate over a given function that can be included in an asset.",
+            "type": "object",
+            "properties": {
+                "entitlement": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Common/Entitlement.schema.json#Entitlement"
+                    }
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

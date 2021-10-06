@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcBillingAccountRef.schema.json",
+    "title": "GcBillingAccountRef",
+    "definitions": {
+        "GcBillingAccountRef": {
+            "$id": "#GcBillingAccountRef",
+            "description": "BillingAccount reference. A BillingAccount is a detailed description of a bill structure.",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Core/Reference.schema.json#Reference"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcBillFormat.schema.json",
+    "title": "GcBillFormat",
+    "definitions": {
+        "GcBillFormat": {
+            "$id": "#GcBillFormat",
+            "description": "A detailed description of the way in which a bill is presented.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "A short descriptive name"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

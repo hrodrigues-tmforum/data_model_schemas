@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcProductOffering.schema.json",
+    "title": "GcProductOffering",
+    "definitions": {
+        "GcProductOffering": {
+            "$id": "#GcProductOffering",
+            "description": "Represents entities that are orderable from the provider of the catalog, this resource includes pricing information.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the productOffering"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                }
+            ]
+        }
+    }
+}

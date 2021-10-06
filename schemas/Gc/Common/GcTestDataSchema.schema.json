@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcTestDataSchema.schema.json",
+    "title": "GcTestDataSchema",
+    "definitions": {
+        "GcTestDataSchema": {
+            "$id": "#GcTestDataSchema",
+            "description": "A managed test data schema resource",
+            "type": "object",
+            "properties": {
+                "testDataSchemaDefinition": {
+                    "$ref": "../Common/TestDataSchemaDefinition.schema.json#TestDataSchemaDefinition"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcManagedArtifact.schema.json#GcManagedArtifact"
+                }
+            ]
+        }
+    }
+}

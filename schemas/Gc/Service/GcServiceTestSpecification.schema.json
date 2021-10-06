@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcServiceTestSpecification.schema.json",
+    "title": "GcServiceTestSpecification",
+    "definitions": {
+        "GcServiceTestSpecification": {
+            "$id": "#GcServiceTestSpecification",
+            "description": "The service test specification describes the service test in terms of parameters to be configured and \nmeasures to be taken.",
+            "type": "object",
+            "properties": {
+                "relatedServiceSpecification": {
+                    "type": "array",
+                    "description": "The related service specification may relate to more than one service specification.",
+                    "items": {
+                        "$ref": "../Service/ServiceSpecificationRef.schema.json#ServiceSpecificationRef"
+                    }
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcEntitySpecification.schema.json#GcEntitySpecification"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcAiContractViolation.schema.json",
+    "title": "GcAiContractViolation",
+    "definitions": {
+        "GcAiContractViolation": {
+            "$id": "#GcAiContractViolation",
+            "description": "",
+            "type": "object",
+            "properties": {
+                "aiContract": {
+                    "$ref": "../Common/EntityRef.schema.json#EntityRef"
+                },
+                "violation": {
+                    "$ref": "../EngagedParty/Violation.schema.json#Violation"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}

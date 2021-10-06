@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://datamodel.tmforum.org/MefPlace.schema.json",
+    "$version":"5.0",
+    "title": "MefPlace",
+    "definitions": {
+      "MefPlace": {
+        "$id": "#MefPlace",
+        "type": "object",
+        "description": "A place defined by value",
+        "allOf": [
+          {
+            "$ref": "../../../../Gc/Common/GcPlace.schema.json#/GcPlace"
+          }  
+        ],
+        "oneOf": [
+          {
+            "$ref": "MefFormattedAddress.schema.json#/MefFormattedAddress"
+          },
+          {
+            "$ref": "MefFieldedAddress.schema.json#/MefFieldedAddress"
+          }
+        ]
+      }
+    }
+  }

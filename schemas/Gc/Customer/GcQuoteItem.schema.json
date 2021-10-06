@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcQuoteItem.schema.json",
+    "title": "GcQuoteItem",
+    "definitions": {
+        "GcQuoteItem": {
+            "$id": "#GcQuoteItem",
+            "type": "object",
+            "required": [
+                "action",
+                "id",
+                "quoteItemPrice",
+                "state"
+            ],
+            "description": "A quote items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.",
+            "properties": {
+                "action": {
+                    "type": "string",
+                    "description": "Action to be performed on this quote item (add, modify, remove, etc.)"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of the quote item (generally it is a sequence number 01, 02, 03, ...)"
+                },
+                "quoteItemPrice": {
+                    "type": "array",
+                    "description": "Price for this quote item",
+                    "items": {
+                        "$ref": "../Customer/GcQuotePrice.schema.json#GcQuotePrice"
+                    }
+                },
+                "state": {
+                    "$ref": "../Customer/GcQuoteStateType.schema.json#GcQuoteStateType",
+                    "description": "State of the quote item : described in the state machine diagram"
+                }
+            }
+        }
+    }
+}

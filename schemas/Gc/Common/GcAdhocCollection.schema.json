@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcAdhocCollection.schema.json",
+    "title": "GcAdhocCollection",
+    "definitions": {
+        "GcAdhocCollection": {
+            "$id": "#GcAdhocCollection",
+            "description": "",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcManagementJob.schema.json#GcManagementJob"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcAddressable.schema.json#GcAddressable"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcExtensible.schema.json#GcExtensible"
+                }
+            ]
+        }
+    }
+}

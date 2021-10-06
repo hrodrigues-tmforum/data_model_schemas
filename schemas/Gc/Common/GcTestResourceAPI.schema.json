@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcTestResourceAPI.schema.json",
+    "title": "GcTestResourceAPI",
+    "definitions": {
+        "GcTestResourceAPI": {
+            "$id": "#GcTestResourceAPI",
+            "description": "A managed test resource API resource",
+            "type": "object",
+            "properties": {
+                "testResourceAPIDefinition": {
+                    "$ref": "../Common/TestResourceAPIDefinition.schema.json#TestResourceAPIDefinition"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/Common/GcManagedArtifact.schema.json#GcManagedArtifact"
+                }
+            ]
+        }
+    }
+}

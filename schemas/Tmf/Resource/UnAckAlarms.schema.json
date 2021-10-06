@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "UnAckAlarms.schema.json",
+    "title": "UnAckAlarms",
+    "definitions": {
+        "UnAckAlarms": {
+            "$id": "#UnAckAlarms",
+            "description": "Task resource for unacknowledge alarms operation",
+            "type": "object",
+            "properties": {
+                "state": {
+                    "description": "Current state of the operation task",
+                    "type": "string",
+                    "enum": [
+                        "acknowledged",
+                        "terminatedWithError",
+                        "inProgress",
+                        "done",
+                        "cancel",
+                        "canceled"
+                    ]
+                },
+                "ackTime": {
+                    "description": "Time of the unacknowledgement",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "unAckedAlarm": {
+                    "description": "The successfully unacknowledged alarms",
+                    "type": "array",
+                    "items": {
+                        "$ref": "../Resource/AlarmRefOrValue.schema.json#AlarmRefOrValue"
+                    }
+                }
+            }
+        }
+    }
+}

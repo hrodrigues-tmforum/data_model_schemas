@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcIndividual.schema.json",
+    "title": "GcIndividual",
+    "definitions": {
+        "GcIndividual": {
+            "$id": "#GcIndividual",
+            "description": "Individual represents a single human being (a man, woman or child). The individual can be a customer, an employee or any other person that the organization needs to store information about.",
+            "type": "object",
+            "properties": {
+                "familyName": {
+                    "type": "string",
+                    "description": "Contains the non-chosen or inherited name. Also known as last name in the Western context"
+                },
+                "givenName": {
+                    "type": "string",
+                    "description": "First name of the individual"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Gc/EngagedParty/GcParty.schema.json#GcParty"
+                },
+                {
+                    "$ref": "../../Gc/Common/GcEntity.schema.json#GcEntity"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "MefEndOfTermAction.schema.json",
+  "title": "MefEndOfTermAction",
+  "definitions": {
+    "MefEndOfTermAction": {
+      "$id": "#MefEndOfTermAction",
+      "type": "string",
+      "readOnly": true,
+      "description": "The action the Seller will take once the term expires.",
+      "enum": [
+        "roll",
+        "autoDisconnect",
+        "autoRenew"
+      ]
+    }
+  }
+}

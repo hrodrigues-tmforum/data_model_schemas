@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "MefTerminationError.schema.json",
+    "title": "MefTerminationError",
+    "definitions": {
+      "MefTerminationError": {
+        "$id": "#MefTerminationError",
+        "description": "This indicates an error that caused an Item to be terminated.",
+        "readOnly" : true,
+        "type": "object",
+        "properties": {
+            "value": {
+                "type": "string",
+                "description": "Text to describe the termination error - for example: incomplete information provided"
+              }
+        }
+      }
+    }
+  }

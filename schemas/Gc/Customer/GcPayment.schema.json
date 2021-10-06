@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "GcPayment.schema.json",
+    "title": "GcPayment",
+    "definitions": {
+        "GcPayment": {
+            "$id": "#GcPayment",
+            "description": "The Payment resource represents a performed payment. It contains both information about the payment and the payment method used to perform it.",
+            "type": "object",
+            "properties": {
+                "account": {
+                    "$ref": "../EngagedParty/AccountRef.schema.json#AccountRef"
+                },
+                "paymentMethod": {
+                    "$ref": "../Customer/PaymentMethodRefOrValue.schema.json#PaymentMethodRefOrValue"
+                },
+                "totalAmount": {
+                    "$ref": "../Common/Money.schema.json#Money",
+                    "description": "Amount to be paid (including taxes)"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "../../Core/Entity.schema.json"
+                }
+            ]
+        }
+    }
+}
