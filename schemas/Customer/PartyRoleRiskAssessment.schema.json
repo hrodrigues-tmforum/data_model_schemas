@@ -12,13 +12,13 @@
             ],
             "properties": {
                 "partyRole": {
-                    "$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty",
+                    "$ref": "../EngagedParty/RelatedParty.schema.json#RelatedPartyRef",
                     "description": "The party role for which the assessment is to be carried out, must be supplied as input to the task, with the attribute id populated"
                 }
             },
             "allOf": [
                 {
-                    "$ref": "RiskAssessment.schema.json#RiskAssessment"
+                    "$ref": "Entity.schema.json#Entity"
                 }
             ]
         }

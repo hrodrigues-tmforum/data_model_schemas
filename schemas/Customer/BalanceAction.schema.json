@@ -15,7 +15,7 @@
                 "href": {
                     "type": "string",
                     "description": "A reference to the resource"
-        		},
+		},
                 "reason": {
                     "type": "string",
                     "description": "Text describing the reason for the action/task"
@@ -28,10 +28,10 @@
                     "description": "Indicator for the channel used to request the transfer operation. Structure including at least attribute name",
                     "$ref": "../Common/ChannelRef.schema.json#ChannelRef"
                 },
-                "amount": {
+		"amount": {
                     "description": "Indicate the amount on the bucket. This is always a postive value. If part of an AdjustBalance then the adjustType will indicate if the amount is to be credited or debited",
                     "$ref": "../Common/Quantity.schema.json#Quantity"
-                },
+		},
                 "usageType": {
                     "type": "string",
                     "description": "defines the type of the underlying Balance eg data,voice, any currency eg EUR, USD etc"
@@ -40,7 +40,7 @@
 	            "type": "array",
                     "description": "A reference to the bucket impacted by the request or the value itself.",
                     "items": { 
-        		       "$ref": "ImpactedBucket.schema.json#ImpactedBucket"
+		       "$ref": "ImpactedBucket.schema.json#ImpactedBucket"
 		    }
                 }, 
                  "bucket": {
@@ -62,7 +62,7 @@
                     "description": "Date when the deduction was confirmed in the server"
                 },
                 "logicalResource": {
-                    "$ref": "../Resource/LogicalResourceRef.schema.json#LogicalResourceRef",
+                    "$ref": "LogicalResourceRef.schema.json#LogicalResourceRef",
                     "description": "A reference to the logical resource that can be used to identify the bucket balance for example where product ids are not unique."
                 },
                 "product": {

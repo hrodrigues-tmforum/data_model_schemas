@@ -12,6 +12,10 @@
           "type": "string",
           "description": "An operator that when applied on a value specifies whether a \nthreshold is crossed or ceased to be crossed. This operator is used to compare with the conformanceTargetLower if used."
         },
+        "conformanceComparatorExact": {
+          "type": "boolean",
+          "description": "An operator that when applied on a value specifies whether it \nis the same target value or not. This operator is used to compare with the conformanceTargetExact if used."
+        },
         "conformanceComparatorUpper": {
           "type": "string",
           "description": "An operator that when applied on a value specifies whether a \nthreshold is crossed or ceased to be crossed. This operator is used to compare with the conformanceTargetUpper if used."

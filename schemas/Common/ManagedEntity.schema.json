@@ -5,16 +5,23 @@
   "definitions": {
     "ManagedEntity": {
       "$id": "#ManagedEntity",
-      "description": "ManagedEntity represents an entity that describes the common set of attributes shared by all concrete entities (e.g. Resource, Service, ..) in the Entity Inventory. A ManagedEntity may concern a simple concept, such as a logical point of communication, or a complex concept, such as an Application or System ",
+      "description": "ManagedEntity represents an entity that describes the common set of attributes shared by all concrete entities (e.g. Resource, Service, ..) in the Entity Inventory.",
       "type": "object",
+      "required": ["name"],
       "properties": {
         "description": {
           "type": "string",
           "description": "free-text description of the entity"
         },
-        "validFor": {
-          "$ref": "../Common/TimePeriod.schema.json#TimePeriod", 
-          "description": "The period for which this REST resource is valid"
+        "startDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "A date time( DateTime). The date from which the entity is effective"
+        },
+        "endDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "A date time( DateTime). The date till the entity is effective"
         },
         "isBundle": {
           "type": "boolean",
@@ -24,19 +31,14 @@
           "type": "boolean",
           "description": "isExternal determines whether an entity represents an external entity in the inventory."
         },
-        "lastUpdate": {
-          "type": "string", 
-          "format": "date-time", 
-          "description": "Date and time of the last update of this REST resource"
-        }, 
-        "lifecycleStatus": {
-          "type": "string", 
-          "description": "Used to indicate the current lifecycle status of this managed entity"
+        "status": {
+          "type": "string",
+          "description": "The life cycle state of the entity."
         },
         "statusChangeDate": {
           "type": "string",
           "format": "date-time",
-          "description": "A date time( DateTime). The date that the entity status changed to the current one"
+          "description": "A date time( DateTime). The date that the entity status changed"
         },
         "name": {
           "type": "string",

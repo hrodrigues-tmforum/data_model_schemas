@@ -5,16 +5,17 @@
     "definitions": {
         "SoftwareRef": {
             "$id": "#SoftwareRef",
-            "description": "Software Ref",
             "type": "object",
             "properties": {
-                "version": {
-                    "description": "Descriptive name for the resource graph.",
-                    "type": "string"
+                 "softwareVersion": {
+                    "type": "string",
+                    "description": "software version"
                 }
             },
             "allOf": [
-                {"$ref": "../Common/Entity.schema.json#/EntityRef"}
+                {
+                    "$ref": "../Common/EntityRef.schema.json#EntityRef"
+                }
             ]
         }
     }

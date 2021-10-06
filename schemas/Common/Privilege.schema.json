@@ -18,10 +18,6 @@
                 "manageableAsset": {
                     "$ref": "../Common/EntityRef.schema.json#EntityRef"
                 },
-                "managedAssetGroup": {
-                    "$ref": "../Common/AssetGroup.schema.json#AssetGroup",
-                    "description": "List (explicit or implied) of entities managed by this privilege."
-                },
                 "function": {
                     "type": "string",
                     "description": "Specific function that can be managed over a given asset."

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ProductOfferingPriceAlteration.schema.json",
+  "title": "ProductOfferingPriceAlteration",
+  "definitions": {
+    "ProductOfferingPriceAlteration": {
+      "$id": "#ProductOfferingPriceAlteration",
+      "description": "A discount is a reduction in price. It could be a flat fee such as 10 dollars or a percentage, such as 50% off. A discount always applies to, and thus is associated with, one or more other ProdOfferPrices. So a discount would be 10 dollars off the installation fee or 50% off the per-minute rate.",
+      "type": "object",
+      "properties": {
+        "applicationDuration": {
+          "$ref": "../Common/Duration.schema.json#/definitions/Duration",
+          "description": "The period for which the productOfferingPriceAlteration is applicable"
+        },
+        "percentage": {
+          "type": "number",
+          "format": "float",
+          "description": "Percentage to apply (such as a Discount)"
+        },
+        "priority": {
+          "type": "integer",
+          "description": "Priority level for applying this alteration among all the defined alterations on the order item price"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "../Product/ProductOfferingPrice.schema.json#/definitions/ProductOfferingPrice"
+        }
+      ]
+    }
+  }
+}

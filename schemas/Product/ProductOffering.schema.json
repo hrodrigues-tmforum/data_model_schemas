@@ -100,7 +100,7 @@
         "productOfferingPrice": {
           "type": "array",
           "items": {
-            "$ref": "../Product/ProductOfferingPriceRef.schema.json#ProductOfferingPriceRef"
+            "$ref": "../Product/ProductOfferingPriceRefOrValue.schema.json#/definitions/ProductOfferingPriceRefOrValue"
           },
           "description": "An amount, usually of money, that is asked for or allowed when a ProductOffering is bought, rented, or leased. The price is valid for a defined period of time and may not represent the actual price paid by a customer."
         },
@@ -132,6 +132,13 @@
           },
           "description": "A type of ProductOffering that belongs to a grouping of ProductOfferings made available to the market. It inherits of all attributes of ProductOffering."
         },
+        "productOfferingRelationship": {
+          "type": "array",
+          "items": {
+            "$ref": "../Product/ProductOfferingRelationship.schema.json#/definitions/ProductOfferingRelationship"
+          },
+          "description": "A relationship between this product offering and other product offerings."
+        },
         "prodSpecCharValueUse": {
           "type": "array",
           "items": {
@@ -142,10 +149,10 @@
       },
       "allOf": [
         {
-          "$ref": "../Common/Addressable.schema.json#Addressable"
+          "$ref": "../Common/Addressable.schema.json#/definitions/Addressable"
         },
         {
-          "$ref": "../Common/Extensible.schema.json#Extensible"
+          "$ref": "../Common/Extensible.schema.json#/definitions/Extensible"
         }
       ]
     }

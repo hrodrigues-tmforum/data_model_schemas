@@ -8,11 +8,16 @@
       "description": "A ServiceOrderErrorMessage represents an error that causes a status change in a service order.",
       "type": "object",
       "properties": {
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date when the error happened"
+        },
         "serviceOrderItem": {
           "type": "array",
-          "description": "A list of order items corresponded to this error",
+          "description": "A list of order item references corresponded to this error",
           "items": {
-             "$ref": "../Service/ServiceOrderItem.schema.json#/definitions/ServiceOrderItem"
+              "$ref": "../Service/ServiceOrderItemRef.schema.json#/definitions/ServiceOrderItemRef"
           }
         } 
       },

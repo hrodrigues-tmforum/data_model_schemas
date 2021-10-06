@@ -29,19 +29,19 @@
                     "description": "Identifier of an instance of the resource. Required to be unique within the resource type.  Used in URIs as the identifier for specific instances of a type."
                 },
                 "administrativeState": {
-                    "$ref": "../Resource/ResourceAdministrativeStateType.schema.json#ResourceAdministrativeStateType",
+                    "$ref": "ResourceAdministrativeStateType.schema.json#ResourceAdministrativeStateType",
                     "description": "Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on."
                 },
                 "operationalState": {
-                    "$ref": "../Resource/ResourceOperationalStateType.schema.json#ResourceOperationalStateType",
+                    "$ref": "ResourceOperationalStateType.schema.json#ResourceOperationalStateType",
                     "description": "Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on."
                 },
                 "resourceStatus": {
-                    "$ref": "../Resource/ResourceStatusType.schema.json#ResourceStatusType",
+                    "$ref": "ResourceStatusType.schema.json#ResourceStatusType",
                     "description": "Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on."
                 },
                 "usageState": {
-                    "$ref": "../Resource/ResourceUsageStateType.schema.json#ResourceUsageStateType",
+                    "$ref": "ResourceUsageStateType.schema.json#ResourceUsageStateType",
                     "description": "Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on."
                 },
                 "name": {
@@ -55,18 +55,18 @@
                     }
                 },
                 "place": {
-                    "$ref": "../Common/RelatedPlaceRefOrValue.schema.json#RelatedPlaceRefOrValue"
+                    "$ref": "RelatedPlaceRefOrValue.schema.json#RelatedPlaceRefOrValue"
                 },
                 "relatedParty": {
                     "type": "array",
                     "items": {
-                        "$ref": "../EngagedParty/RelatedParty.schema.json#/definitions/RelatedParty"
+                        "$ref": "RelatedParty.schema.json#/definitions/RelatedParty"
                     }
                 },
                 "resourceRelationship": {
                     "type": "array",
                     "items": {
-                        "$ref": "../Resource/ResourceRelationship.schema.json#/definitions/ResourceRelationship"
+                        "$ref": "ResourceRelationship.schema.json#/definitions/ResourceRelationship"
                     }
                 },
                 "resourceCharacteristic": {
@@ -82,7 +82,7 @@
                     }
                 },
                 "resourceSpecification": {
-                    "$ref": "../Resource/ResourceSpecificationRef.schema.json#/definitions/ResourceSpecificationRef"
+                    "$ref": "ResourceSpecificationRef.schema.json#/definitions/ResourceSpecificationRef"
                 },
                 "startOperatingDate": {
                     "type": "string",
@@ -97,7 +97,7 @@
                     "description": "Configuration features",
                     "type": "array",
                     "items": {
-                        "$ref": "../Common/Feature.schema.json#/definitions/Feature"
+                        "$ref": "Feature.schema.json#/definitions/Feature"
                     }
                 }
             },

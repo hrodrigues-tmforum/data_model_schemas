@@ -43,7 +43,7 @@
       },
       "allOf": [
         {
-          "$ref": "../Common/Extensible.schema.json#/definitions/Extensible"
+          "$ref": "../Common/Entity.schema.json#Entity"
         }
       ]
     }

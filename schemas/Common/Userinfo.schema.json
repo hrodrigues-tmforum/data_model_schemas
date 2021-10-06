@@ -4,9 +4,6 @@
   "title": "Userinfo",
   "definitions": {
     "Userinfo": {
-      "$id": "#Userinfo",
-      "description": "TBD need to add description to entity",
-      "type": "object",
       "properties": {
         "address": {
           "description": "Structure including the End-User's preferred postal address",

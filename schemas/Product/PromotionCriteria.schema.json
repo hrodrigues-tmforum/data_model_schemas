@@ -6,7 +6,7 @@
     "PromotionCriteria": {
       "$id": "#PromotionCriteria",
       "type": "object",
-      "description": "Set of criteria to be followed by all parties.",
+      "description": "Criteria of the promotion.",
       "properties": {
         "@baseType": {
           "type": "string",
@@ -22,11 +22,11 @@
         },
         "criteriaOperator": {
           "type": "string",
-          "description": "Logic operator of this criteria instruction: '=' or '>' or '<' or '>=' or '<=' or '<>'."
+          "description": "The logic expression including parameter and operator. includeing:=,&gt;,&lt;,&gt;=,&lt;=,&lt;&gt;"
         },
-        "criteriaParameter": {
+        "criteriaPara": {
           "type": "string",
-          "description": "The parameter (factor) of the criteria.The basic factors are abstracted from these data sources.There are several detail parameters."
+          "description": "The parameter (factor) of the criteria.The basic factors are abstracted from these data sources.There are several detail parameters ."
         },
         "criteriaValue": {
           "type": "string",
@@ -38,8 +38,9 @@
         }
       },
       "required": [
+        "id",
         "criteriaOperator",
-        "criteriaParameter",
+        "criteriaPara",
         "criteriaValue"
       ]
     }

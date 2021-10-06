@@ -1,108 +1,94 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "Customer360.schema.json",
-	"title": "Customer360",
+	"$id": "Customer.schema.json",
+	"title": "Customer",
 	"definitions": {
 		"Customer360": {
 			"$id": "#Customer",
 			"type": "object",
 			"properties": {
-				"href": {
-					"description": "Url used to reference the customer.",
-					"type": "string"
+				"Customer": {
+					"$ref": "../Customer/Customer.schema.json#Customer"
 				},
-				"customerId": {
-					"description": "ID of Referred Customer.",
-					"type": "string"
-				},
-				"customerRef": {
-					"description": "Customer Reference.",
-					"type": "string"
-				},
-				"account": {
+				"UsageSpecification": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360AccountVO.schema.json#Customer360AccountVO"
+						"$ref": "../Product/UsageSpecification.schema.json#UsageSpecification"
 					}
 				},
-				"agreement": {
+				"Quote": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360AgreementVO.schema.json#Customer360AgreementVO"
+						"$ref": "../Customer/Quote.schema.json#Quote"
 					}
 				},
-				"appointment": {
+				"PartyInteraction": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360AppointmentVO.schema.json#Customer360AppointmentVO"
+						"$ref": "../EngagedParty/PartyInteraction.schema.json#PartyInteraction"
 					}
 				},
-				"customerBill": {
+				"AccumulatedBalance": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360CustomerBillVO.schema.json#Customer360CustomerBillVO"
+						"$ref": "../Customer/AccumulatedBalance.schema.json#AccumulatedBalance"
 					}
 				},
-				"loyaltyBalance": {
+				"Appointment": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360LoyaltyBalanceVO.schema.json#Customer360LoyaltyBalanceVO"
+					"$ref": "../Customer/Appointment.schema.json#Appointment"
+					}
+
+				},
+				"CustomerBill": {
+					"type": "array",
+					"items": {
+						"$ref": "../Customer/CustomerBill.schema.json#CustomerBill"
 					}
 				},
-				"interactionItem": {
+				"BillFormat": {
+					"$ref": "../Customer/BillFormat.schema.json#BillFormat"
+				},
+				"Product": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360PartyInteractionVO.schema.json#Customer360PartyInteractionVO"
+						"$ref": "../Product/Product.schema.json#Product"
+					},
+					"minItems": 1
+				},
+				"Agreement": {
+					"type": "array",
+					"items": {
+						"$ref": "../EngagedParty/Agrement.schema.json#Agreement"
+					}, 
+					"minItems":1
+				},
+				"Promotion": {
+					"type": "array",
+					"items": {
+						"$ref": "../Product/Promotion.schema.json#Promotion"
 					}
 				},
-				"productValue": {
+				"LoyaltyBalance": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360ProductValueVO.schema.json#Customer360ProductValueVO"
+						"$ref": "../Product/LoyaltyBalance.schema.json#LoyaltyBalance"
 					}
 				},
-				"promotion": {
+				"ServiceProblem": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360PromotionVO.schema.json#Customer360PromotionVO"
-					}
-				},
-				"productOrder": {
-					"type": "array",
-					"items": {
-						"$ref": "../Customer360/Customer360ProductOrderVO.schema.json#Customer360ProductOrderVO"
-					}
-				},
-				"quote": {
-					"type": "array",
-					"items": {
-						"$ref": "../Customer360/Customer360QuoteVO.schema.json#Customer360QuoteVO"
-					}
-				},
-				"serviceProblem": {
-					"type": "array",
-					"items": {
-						"$ref": "../Customer360/Customer360ServiceProblemVO.schema.json#Customer360ServiceProblemVO"
-					}
-				},
-				"troubleTicket": {
-					"type": "array",
-					"items": {
-						"$ref": "../Customer360/Customer360TroubleTicketVO.schema.json#Customer360TroubleTicketVO"
-					}
-				},
-				"recommendation": {
-					"type": "array",
-					"items": {
-						"$ref": "../Customer360/Customer360RecommendationVO.schema.json#Customer360RecommendationVO"
+						"$ref": "../Service/ServiceProblem.schema.json#ServiceProblem"
 					}
 				}
 			},
 			"allOf": [
 				{
-					"$ref": "../Customer/Customer.schema.json#Customer"
+					"$ref": "../Common/Entity.schema.json#Entity"
 				}
-			]
+			],
+			"required":["BillFormat, Customer"]
 		}
 	}
 }

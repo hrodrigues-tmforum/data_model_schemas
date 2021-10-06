@@ -8,7 +8,7 @@
       "type": "object",
       "description": "The problem information for Middle B which is abstracted in the service layer from the issued event information by First B",
       "properties": {
-        "affectedLocation": {
+        "place": {
           "type": "array",
           "description": "A list of the locations affected by the problem. At least one of affectedResource, affectedService or affectedLocation should be present.",
           "items": {

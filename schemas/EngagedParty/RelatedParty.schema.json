@@ -5,7 +5,7 @@
   "definitions": {
     "RelatedParty": {
       "$id": "#RelatedParty",
-      "description": "Related Entity reference. A related party defines party or party role linked to a specific entity.",
+      "description": "Related Party reference. A related party defines party or party role linked to a specific entity.",
       "type": "object",
       "required": [
         "id",

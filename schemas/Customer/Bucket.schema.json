@@ -45,28 +45,21 @@
                 },
                 "product": {
                     "type": "array",
-        		    "items": {
-                               "description": "a reference to the Product(s) associated to the BucketReserve",
-                               "$ref": "../Product/ProductRef.schema.json#ProductRef"
-        		    }
+		    "items":{
+                       "description": "a reference to the Product(s) associated to the BucketReserve",
+                       "$ref": "../Product/ProductRef.schema.json#ProductRef"
+		    }
                 },
                 "logicalResource": {
                     "type": "array",
-        		    "items": {
-                        "$ref": "../Resource/LogicalResourceRef.schema.json#LogicalResourceRef",
-                        "description": "A reference to an array of logical resource that can be used to identify the bucket balance for example where product ids are not unique.Enables the devices to be shared by multiple users"
+		    "items":{
+                    "$ref": "../Resource/LogicalResourceRef.schema.json#LogicalResourceRef",
+                    "description": "A reference to an array of logical resource that can be used to identify the bucket balance for example where product ids are not unique.Enables the devices to be shared by multiple users"
                     } 
-        		},
+		},
                 "reservedValue": {
-                    "description": "Indicate the amount reserved on the bucket; should be the sum of all the valid (i.e. confirmed and not consumed or expired) amounts in the reserveBalance request array",
+                    "description": "Indicate the amount reserved on the bucket",
                     "$ref": "../Common/Quantity.schema.json#Quantity"
-                },
-                "reserveBalance": {
-                    "type": "array",
-        		    "items": {
-                        "$ref": "../Customer/ReserveBalanceRef.schema.json#ReserveBalanceRef",
-                        "description": "A reference to an array of outstanding reservation requests against this bucket (i.e. confirmed and not consumed or expired)"
-                    } 
                 },
                 "remainingValue": {
                     "description": "Indicate the amount on the bucket",
@@ -85,11 +78,11 @@
                     "$ref": "../Common/TimePeriod.schema.json#TimePeriod"
                 }
             },
-    	    "allOf" :[
+	    "allOf" :[
                 {
                     "$ref": "../Common/Entity.schema.json#Entity"
                 } 
-    	    ]
+	    ]
         }
     }
 }

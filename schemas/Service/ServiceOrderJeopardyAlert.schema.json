@@ -10,9 +10,9 @@
       "properties": {
         "serviceOrderItem": {
           "type": "array",
-          "description": "A list of order items corresponded to this alert",
+          "description": "A list of order item references corresponded to this alert",
           "items": {
-             "$ref": "../Service/ServiceOrderItem.schema.json#/definitions/ServiceOrderItem"
+             "$ref": "../Service/ServiceOrderItemRef.schema.json#/definitions/ServiceOrderItemRef"
           }
         } 
       },

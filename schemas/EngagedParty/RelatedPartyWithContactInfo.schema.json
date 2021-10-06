@@ -8,7 +8,7 @@
       "type": "object",
       "description": "Related party specialization that includes contact information",
       "properties": {
-        "contactMedium": {
+        "contact": {
           "type": "array",
           "items": {
             "$ref": "../Common/ContactMedium.schema.json#ContactMedium"

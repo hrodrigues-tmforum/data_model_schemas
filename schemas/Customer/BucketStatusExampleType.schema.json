@@ -9,8 +9,8 @@
             "description": "Possible values for the bucket status are (for example active,suspended,expired)",
             "enum": [
                 "active",
-        		"suspended",
-        		"expired"
+		"suspended",
+		"expired"
             ]
         }
     }

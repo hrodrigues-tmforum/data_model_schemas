@@ -15,7 +15,7 @@
                 "value": {
                     "type": "number",
                     "format": "float",
-                    "description": "A signed floating point number, the meaning of the sign is according to the context of the API that uses this Data type"
+                    "description": "A positive floating point number"
                 }
             }
         }
