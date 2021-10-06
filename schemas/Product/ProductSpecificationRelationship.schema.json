@@ -8,6 +8,14 @@
       "description": "A migration, substitution, dependency or exclusivity relationship between/among product specifications.",
       "type": "object",
       "properties": {
+        "href": {
+          "type": "string",
+          "description": "Reference of the productSpecification"
+        },
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the productSpecification"
+        },
         "relationshipType": {
           "type": "string",
           "description": "Type of relationship such as migration, substitution, dependency, exclusivity"
@@ -19,7 +27,7 @@
       },
       "allOf": [
         {
-          "$ref": "../Common/EntityRef.schema.json#/definitions/EntityRef"
+          "$ref": "../Common/Extensible.schema.json#Extensible"
         }
       ]
     }

@@ -54,7 +54,7 @@
         },
         "state": {
           "type": "string",
-          "description": "The actual state the service test is in. Recommended states are found in ExecutionStateType schema possible values include acknowledged, rejected, pending, inProgress, cancelled, completed and failed"
+          "description": "The actual state the service test is in"
         },
         "testMeasure": {
           "type": "array",

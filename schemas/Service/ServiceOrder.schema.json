@@ -127,11 +127,8 @@
                     }
                 },
                 "errorMessage": {
-                    "type": "array",
-                    "description": "the error(s) cause an order status change",
-                    "items": {
-                        "$ref": "../Service/ServiceOrderErrorMessage.schema.json#/definitions/ServiceOrderErrorMessage"
-                    }
+                    "description": "the error message if the order closed by an error",
+                    "$ref": "../Service/ServiceOrderErrorMessage.schema.json#/definitions/ServiceOrderErrorMessage"
                 }
             },
             "allOf": [

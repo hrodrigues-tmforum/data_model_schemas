@@ -9,7 +9,7 @@
       "type": "object",
       "properties": {
         "code": {
-          "type": "string",
+          "type": "integer",
           "description": "error code"
         },
         "reason": {
@@ -19,10 +19,6 @@
         "message": {
           "type": "string",
           "description": "More details and corrective actions related to the error"
-        },
-        "status": {
-            "type": "string",
-            "description": "error code extension like sys-ABC-2001"
         },
         "referenceError": {
           "type": "string",

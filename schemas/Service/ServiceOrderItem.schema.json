@@ -40,13 +40,6 @@
                         "$ref": "../Service/ServiceOrderItemRelationship.schema.json#/definitions/ServiceOrderItemRelationship"
                     }
                 },
-                "errorMessage": {
-                    "type": "array",
-                    "description": "the error(s) cause an order item status change",
-                    "items": {
-                        "$ref": "../Service/ServiceOrderItemErrorMessage.schema.json#/definitions/ServiceOrderItemErrorMessage"
-                    }
-                },
                 "serviceOrderItem": {
                     "type": "array",
                     "description": "A list of order items embedded to this order item",
