@@ -8,17 +8,9 @@
       "type": "object",
       "description": "Describes a non-composite relationship between product offering prices. For example one price might be an discount alteration for another price.",
       "properties": {
-        "href": {
+        "role": {
           "type": "string",
-          "description": "hyperlink reference of the associated product offering price"
-        },
-        "id": {
-          "type": "string",
-          "description": "Unique identifier of the associated product offering price"
-        },
-        "name": {
-          "type": "string",
-          "description": "Name of the associated product offering price"
+          "description": "The association role for the source product offering price"
         },
         "relationshipType": {
           "type": "string",
@@ -27,7 +19,7 @@
       },
       "allOf": [
         {
-          "$ref": "../Common/Extensible.schema.json#Extensible"
+          "$ref": "../Common/EntityRef.schema.json#/definitions/EntityRef"
         }
       ]
     }

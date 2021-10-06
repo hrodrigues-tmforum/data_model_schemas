@@ -7,10 +7,9 @@
       "$id": "#Characteristic",
       "description": "Describes a given characteristic of an object or entity through a name/value pair.",
       "type": "object",
-      "discriminator": "@type",       
       "required": [
         "name",
-        "@type"
+        "value"
       ],
       "properties": {
         "id": {
@@ -24,6 +23,10 @@
         "valueType": {
           "type": "string",
           "description": "Data type of the value of the characteristic"
+        },
+        "value": {
+          "$ref": "../Common/Any.schema.json#Any",
+          "description": "The value of the characteristic"
         },
         "characteristicRelationship": {
           "type": "array",

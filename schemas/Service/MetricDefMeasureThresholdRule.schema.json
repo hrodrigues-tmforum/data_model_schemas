@@ -16,6 +16,10 @@
           "type": "string",
           "description": "An operator that when applied on a value specifies whether a \nthreshold is crossed or ceased to be crossed. This operator is used to compare with the conformanceTargetUpper if used."
         },
+        "conformanceComparatorExact": {
+          "type": "boolean",
+          "description": "An operator that when applied on a value specifies whether the \nvalue is the same or not. This operator is used to compare with the conformanceTargetExact if used."
+        },        
         "conformanceTargetExact": {
           "type": "string",
           "description": "To cater for values that are not numerical test metrics (e.g. a DSL line can be Synchronised or Unsynchronised. If the latter, the test should result in a rule violation). The allowed value can contain a REGEX expression."

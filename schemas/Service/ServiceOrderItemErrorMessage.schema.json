@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ServiceOrderItemErrorMessage.schema.json",
+  "title": "ServiceOrderItemErrorMessage",
+  "definitions": {
+    "ServiceOrderItemErrorMessage": {
+      "$id": "#ServiceOrderItemErrorMessage",
+      "description": "AServiceOrderItemErrorMessage represents an error that causes a status change in a service order item.",
+      "type": "object",
+      "properties": {
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date when the error happened"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "../Common/ErrorMessage.schema.json#/definitions/ErrorMessage"
+        }
+      ]
+    }
+  }
+}

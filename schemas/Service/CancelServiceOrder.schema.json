@@ -11,6 +11,14 @@
             "properties": {
                 "serviceOrder": {
                         "$ref": "../Service/ServiceOrderRef.schema.json#ServiceOrderRef"
+                },
+                "completionMessage": {
+                    "type": "string",
+                    "description": "an optional message describing the completion of the task if it is done as expected or it is denied for a reason (like order in an state of PoNR)."
+                },
+                "errorMessage": {
+                    "$ref": "../Common/ErrorMessage.schema.json#/definitions/ErrorMessage",
+                    "description": "the error(s) cause the termination of cancelServiceOrder (in TerminatedWithError state)"
                 }
             },
             "allOf": [
