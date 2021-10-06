@@ -8,7 +8,10 @@
 	      "description": "A bank account debit method of payment. This could be extended to add any required authorization fields to allow recurring payments",
 	      "type": "object",
 	      "required": [
-	        "@type"
+	        "@type",
+			"accountNumber",
+			"owner",
+			"bank"
 	      ],
 	      "properties": {
 	        "accountNumber": {

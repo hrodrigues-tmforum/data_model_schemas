@@ -22,16 +22,20 @@
                         "$ref": "GraphRelationship.schema.json#GraphRelationship"
                     }
                 },
+                "contained": {
+                    "type": "boolean",
+                    "description": "True if this graph contains embedded edges & vertices, false for seperate edge/vertex collections."
+                },
                 "vertex": {
                     "type": "array",
                     "items": {
-                        "$ref": "VertexRefOrValue.schema.json#VertexRefOrValue"
+                        "$ref": "VertexContained.schema.json#VertexContained"
                     }
                 },
                 "edge": {
                     "type": "array",
                     "items": {
-                        "$ref": "EdgeRefOrValue.schema.json#EdgeRefOrValue"
+                        "$ref": "EdgeContained.schema.json#EdgeContained"
                     }
                 }
             },

@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Intent.schema.json",
+  "title": "Intent",
+  "definitions": {
+    "Intent": {
+      "$id": "#Intent",
+      "description": "",
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "The description of the intent."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the intent."
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "../Common/Entity.schema.json#Entity"
+        }
+      ]
+    }
+  }
+}

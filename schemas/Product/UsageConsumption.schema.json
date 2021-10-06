@@ -41,6 +41,13 @@
 						"$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty"
 					}
 				},
+				"partyAccount": {
+				    "type": "array",
+                    "description": "A reference to the account that owns the bucket",
+                    "items": {
+                        "$ref": "../EngagedParty/PartyAccountRef.schema.json#PartyAccountRef"
+                    }
+                },
 				"bucketRefOrValue": {
 					"type": "array",
 					"description": "Bucket(s) included in the offer or option subscribed.",
@@ -59,7 +66,7 @@
 					"type": "array",
 					"items": {
 						"description": "a reference to the Service(s) associated to the request",
-						"$ref": "../Service/ServiceRef.schema.json#ServiceRef"
+						"$ref": "../Service/UsageConsumptionServiceRef.schema.json#UsageConsumptionServiceRef"
 					}
 				},
 				"logicalResource": {

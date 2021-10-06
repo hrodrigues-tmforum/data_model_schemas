@@ -15,6 +15,10 @@
                 "manageableAsset": {
                     "$ref": "../Common/EntityRef.schema.json#EntityRef"
                 },
+                "managedAssetGroup": {
+                    "$ref": "../Common/AssetGroup.schema.json#AssetGroup",
+                    "description": "List (explicit or implied) of entities managed by this user role assignment."
+                },
                 "userRole": {
                     "$ref": "../Common/UserRoleRef.schema.json#UserRoleRef"
                 }

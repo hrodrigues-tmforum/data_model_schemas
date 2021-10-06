@@ -30,13 +30,13 @@
                     "description": "Hyperlink reference to the vertex specification containing the target characteristic"
                 }, 
                 "validFor": {
-                    "$ref": "../Common/TimePeriod.schema.json#TimePeriod",
+                    "$ref": "TimePeriod.schema.json#TimePeriod",
                     "description": "The period for which the object is valid"
                 }
             },
             "allOf": [
                 {
-                    "$ref": "../Common/Extensible.schema.json#Extensible"
+                    "$ref": "Extensible.schema.json#Extensible"
                 }
             ]
         }

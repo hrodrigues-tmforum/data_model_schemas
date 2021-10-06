@@ -8,7 +8,10 @@
 	      "description": "A voucher method of payment.",
 	      "type": "object",
 	      "required": [
-	        "@type"
+	        "@type",
+			"code",
+			"value",
+			"expirationDate"
 	      ],
 	      "properties": {
 	        "code": {

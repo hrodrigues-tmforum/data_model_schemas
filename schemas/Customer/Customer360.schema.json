@@ -11,9 +11,13 @@
 					"description": "Url used to reference the customer.",
 					"type": "string"
 				},
-				"customer": {
-					"type": "object",
-					"$ref": "../Customer360/Customer360CustomerVO.schema.json#Customer360CustomerVO"
+				"customerId": {
+					"description": "ID of Referred Customer.",
+					"type": "string"
+				},
+				"customerRef": {
+					"description": "Customer Reference.",
+					"type": "string"
 				},
 				"account": {
 					"type": "array",
@@ -48,7 +52,7 @@
 				"interactionItem": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360InteractionItemVO.schema.json#Customer360InteractionItemVO"
+						"$ref": "../Customer360/Customer360PartyInteractionVO.schema.json#Customer360PartyInteractionVO"
 					}
 				},
 				"productValue": {
@@ -87,10 +91,10 @@
 						"$ref": "../Customer360/Customer360TroubleTicketVO.schema.json#Customer360TroubleTicketVO"
 					}
 				},
-				"usageSpecification": {
+				"recommendation": {
 					"type": "array",
 					"items": {
-						"$ref": "../Customer360/Customer360UsageSpecificationVO.schema.json#Customer360UsageSpecificationVO"
+						"$ref": "../Customer360/Customer360RecommendationVO.schema.json#Customer360RecommendationVO"
 					}
 				}
 			},

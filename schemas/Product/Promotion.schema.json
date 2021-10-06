@@ -65,10 +65,7 @@
             "$ref": "../Common/AttachmentRefOrValue.schema.json#AttachmentRefOrValue"
           }
         }
-      },
-      "required": [
-        "name"
-      ]
+      }
     }
   }
 }

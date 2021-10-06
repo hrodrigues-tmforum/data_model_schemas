@@ -54,7 +54,7 @@
 					"type": "array",
 					"items": {
 						"description": "a reference to the Service(s) associated to the request",
-						"$ref": "../Service/ServiceRef.schema.json#ServiceRef"
+						"$ref": "../Service/UsageConsumptionServiceRef.schema.json#UsageConsumptionServiceRef"
 					}
 				},
 				"logicalResource": {

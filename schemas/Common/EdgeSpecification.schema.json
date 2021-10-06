@@ -21,7 +21,7 @@
                     "description": "Edge Specification version"
                 }, 
                 "validFor": {
-                    "$ref": "../Common/TimePeriod.schema.json#TimePeriod", 
+                    "$ref": "TimePeriod.schema.json#TimePeriod", 
                     "description": "The period for which this REST resource is valid"
                 }, 
                 "lastUpdate": {
@@ -36,7 +36,7 @@
                 "relatedParty": {
                     "type": "array", 
                     "items": {
-                        "$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty"
+                        "$ref": "RelatedParty.schema.json#RelatedParty"
                     },
                     "description": "A related party defines party or party role linked to a specific entity."
                 }, 
@@ -50,11 +50,11 @@
             },
             "allOf": [
                 {
-                    "$ref": "../Common/Extensible.schema.json#Extensible"
+                    "$ref": "Extensible.schema.json#Extensible"
 
                 },
                 {
-                    "$ref": "../Common/Addressable.schema.json#Addressable"
+                    "$ref": "Addressable.schema.json#Addressable"
                 }
             ]
         }

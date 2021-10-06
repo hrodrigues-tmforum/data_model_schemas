@@ -3,7 +3,7 @@
   "$id": "EntityRefOrValue.schema.json",
   "title": "EntityRefOrValue",
   "definitions": {
-    "EntityRef": {
+    "EntityRefOrValue": {
       "$id": "#EntityRefOrValue",
       "description": "Entity reference schema to be use for all entityRef class OrValue to provide information via POST",
       "type": "object",

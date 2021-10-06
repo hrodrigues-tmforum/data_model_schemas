@@ -8,7 +8,10 @@
 	      "description": "A bank transfer method of payment.",
 	      "type": "object",
 	      "required": [
-	        "@type"
+	        "@type",
+          "accountNumber",
+			    "owner",
+			    "bank"
 	      ],
 	      "properties": {
           "accountNumber": {

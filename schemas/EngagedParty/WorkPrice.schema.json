@@ -31,6 +31,9 @@
                 "priceType": {
                     "$ref": "../Customer/PriceType.schema.json#/definitions/PriceType"
                 },
+                "productOfferingPrice": {
+                  "$ref": "../Product/ProductOfferingPriceRef.schema.json#ProductOfferingPriceRef"
+                },
                 "recurringChargePeriod": {
                     "type": "string",
                     "description": "Could be month, week..."
@@ -42,7 +45,7 @@
             },
             "allOf": [
                 {
-                    "$ref": "../Common/Entity.schema.json#/definitions/Entity"
+                    "$ref": "../Common/Entity.schema.json#/definitions/Extensible"
                 }
             ]
         }

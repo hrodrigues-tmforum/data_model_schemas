@@ -29,7 +29,7 @@
             "$ref": "GraphRef.schema.json#GraphRef"
           }
         },
-        "graph": {
+        "graphResult": {
           "description": "The created topology graph",
           "$ref": "GraphRef.schema.json#GraphRef"
         }

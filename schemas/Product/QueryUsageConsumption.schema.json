@@ -30,7 +30,14 @@
 					"items": {
 						"$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty"
 					}
-				}
+				},
+				"partyAccount": {
+				    "type": "array",
+                    "description": "A reference to the account that owns the bucket",
+                    "items": {
+                        "$ref": "../EngagedParty/PartyAccountRef.schema.json#PartyAccountRef"
+                    }
+                }
             },
             "allOf": [{
 				"$ref": "../Common/Entity.schema.json#Entity"
