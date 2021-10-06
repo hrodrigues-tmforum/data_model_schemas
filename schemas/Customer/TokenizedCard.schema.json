@@ -8,9 +8,7 @@
 	      "description": "A Tokenized Card method of payment.",
 	      "type": "object",
 	      "required": [
-	        "@type",
-			"lastFourDigits",
-			"expirationDate"
+	        "@type"
 	      ],
 	      "properties": {
 	        "brand": {

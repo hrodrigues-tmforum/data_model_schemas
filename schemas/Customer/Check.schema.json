@@ -8,12 +8,7 @@
 	      "description": "A check method of payment.",
 	      "type": "object",
 	      "required": [
-	        "@type",
-			"checkId",
-			"drawer",
-			"payee",
-			"signedDate",
-			"bank"
+	        "@type"
 	      ],
 	      "properties": {
 	        "checkId": {

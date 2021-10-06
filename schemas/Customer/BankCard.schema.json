@@ -8,11 +8,7 @@
 	      "description": "A bank card method of payment.",
 	      "type": "object",
 	      "required": [
-	        "@type",
-          "cardNumber",
-          "brand",
-          "expirationDate",
-          "nameOnCard"
+	        "@type"
 	      ],
 	      "properties": {
 	        "brand": {

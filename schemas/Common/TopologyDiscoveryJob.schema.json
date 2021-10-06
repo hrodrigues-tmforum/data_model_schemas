@@ -35,21 +35,9 @@
              }
           }
         },
-        "graphTemplate": {
-          "description": "Attributes of the created Graph",
-          "allOf": [
-            {
-              "$ref": "Graph.schema.json#Graph"
-            }
-          ]
-        },
-        "graphResult": {
-          "description": "The discovered topology graph",
-          "allOf": [
-            {
-              "$ref": "GraphRef.schema.json#GraphRef"
-            }
-          ]
+        "graph": {
+          "description": "The created topology graph",
+          "$ref": "GraphRef.schema.json#GraphRef"
         }
       },
       "allOf": [

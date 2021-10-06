@@ -4,31 +4,10 @@
   "title": "ChangeRequest",
   "definitions": {
     "ChangeRequest": {
-      "type": "object",
+      "$id": "#ChangeRequest",
       "description": "Change Request is a type of request which can be used for the management and control of Change Management \nprocess between a customer and a service provider or between a service provider and a partner and vice versa.",
+      "type": "object",
       "properties": {
-        "href": {
-          "type": "string",
-          "format": "uri",
-          "description": "Hyperlink to access a change request"
-        },
-        "id": {
-          "type": "string",
-          "description": "Identifier of a Change Request. It is created on repository side (a Change Management system)"
-        },
-        "@baseType": {
-          "type": "string",
-          "description": "When sub-classing, this defines the super-class"
-        },
-        "@schemaLocation": {
-          "$ref": "Uri.schema.json#/definitions/Uri",
-          "description": "A URI to a JSON-Schema file that defines additional attributes and relationships"
-        },
-        
-        "@type": {
-          "type": "string",
-          "description": "When sub-classing, this defines the sub-class Extensible name"
-        },
         "actualEndTime": {
           "type": "string",
           "format": "date-time",
@@ -39,27 +18,9 @@
           "format": "date-time",
           "description": "Date and time when the change implementation actually started"
         },
-        "attachment": {
-          "type": "array",
-          "items": {
-            "$ref": "AttachmentRefOrValue.schema.json#/definitions/AttachmentRefOrValue"
-          },
-          "description": "The attachments of the communication message (when it is email type)"
-        },
         "budget": {
-          "$ref": "Money.schema.json#/definitions/Money"
-        },
-        "changeRelationship": {
-          "type": "array",
-          "items": {
-            "$ref": "ChangeRequestRelationship.schema.json#/definitions/ChangeRequestRelationship"
-          }
-        },
-        "changeRequestCharacteristic": {
-          "type": "array",
-          "items": {
-            "$ref": "Characteristic.schema.json#/definitions/Characteristic"
-          }
+          "type": "string",
+          "description": "The budget reserved for the change"
         },
         "channel": {
           "type": "string",
@@ -70,40 +31,29 @@
           "format": "date-time",
           "description": "Date and time when the change request is confirmed to be completed"
         },
+        "currency": {
+          "type": "string",
+          "description": "The used currency related with cost"
+        },
         "description": {
           "type": "string",
           "description": "Description of the change request"
         },
-        "externalReference": {
-          "type": "array",
-          "items": {
-            "$ref": "ExternalReference.schema.json#/definitions/ExternalReference"
-          }
+        "externalId": {
+          "type": "string",
+          "description": "ID given by the requestor to facilitate the relationship set up and subsequent searches"
+        },
+        "href": {
+          "type": "string",
+          "description": "Hyperlink to access a change request"
+        },
+        "id": {
+          "type": "string",
+          "description": "Identifier of a Change Request. It is created on repository side (a Change Management system)"
         },
         "impact": {
           "type": "string",
           "description": "Indicates the impact of this change"
-        },
-        "impactEntity": {
-          "type": "array",
-          "items": {
-            "$ref": "RelatedEntity.schema.json#/definitions/RelatedEntity"
-          }
-        },
-        "lastUpdateDate": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Date and time when the change request was updated"
-        },
-        "location": {
-          "$ref": "RelatedPlaceRefOrValue.schema.json#/definitions/RelatedPlaceRefOrValue",
-          "description": "A list of places (Place [*]). Used to define a place useful for the service (for example a geographical place whre the service is installed)"
-        },
-        "note": {
-          "type": "array",
-          "items": {
-            "$ref": "Note.schema.json#/definitions/Note"
-          }
         },
         "plannedEndTime": {
           "type": "string",
@@ -119,19 +69,6 @@
           "type": "string",
           "description": "Used by consumers to prioritize a change request in Change Management system"
         },
-        "problemTicket": {
-          "type": "array",
-          "items": {
-            "$ref": "ServiceProblemRef.schema.json#/definitions/ServiceProblemRef"
-          }
-        },
-        "relatedParty": {
-          "type": "array",
-          "items": {
-            "$ref": "RelatedParty.schema.json#/definitions/RelatedParty"
-          },
-          "description": "The parties involved in the change request"
-        },
         "requestDate": {
           "type": "string",
           "format": "date-time",
@@ -140,9 +77,6 @@
         "requestType": {
           "type": "string",
           "description": "Indicates the type of the change request"
-        },
-        "resolution": {
-          "$ref": "Resolution.schema.json#/definitions/Resolution"
         },
         "risk": {
           "type": "string",
@@ -161,49 +95,89 @@
           "format": "date-time",
           "description": "Date and time that the schedule is made"
         },
-        "sla": {
+        "status": {
+          "type": "string",
+          "description": "Status of the change request and its sub-state"
+        },
+        "attachment": {
           "type": "array",
           "items": {
-            "$ref": "SLARef.schema.json#/definitions/SLARef"
+            "$ref": "../Common/Attachment.schema.json#Attachment"
+          },
+          "description": "The attachments of the communication message (when it is email type)"
+        },
+        "workLog": {
+          "$ref": "../Common/WorkLog.schema.json#WorkLog"
+        },
+        "incident": {
+          "type": "array",
+          "items": {
+            "$ref": "../Common/Incident.schema.json#Incident"
           }
         },
-        "specification": {
-          "$ref": "EntitySpecificationRef.schema.json#/definitions/EntitySpecificationRef"
+        "changeRequestSpecification": {
+          "$ref": "../Common/ChangeRequestSpecification.schema.json#ChangeRequestSpecification"
         },
-        "status": {
-          "$ref": "ChangeRequestStatusType.schema.json#/definitions/ChangeRequestStatusType"
+        "impactEntity": {
+          "type": "array",
+          "items": {
+            "$ref": "../Common/ImpactEntityRef.schema.json#ImpactEntityRef"
+          }
         },
-        "statusChangeDate": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Date and time when the change request status was changed"
-        },
-        "statusChangeReason": {
-          "type": "string",
-          "description": "Reason of the status change"
+        "changeRequestCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "../Common/ChangeRequestCharacteristic.schema.json#ChangeRequestCharacteristic"
+          }
         },
         "targetEntity": {
           "type": "array",
           "items": {
-            "$ref": "RelatedEntity.schema.json#/definitions/RelatedEntity"
+            "$ref": "../Common/TargetEntityRef.schema.json#TargetEntityRef"
           }
         },
-        "troubleTicket": {
+        "relatedParty": {
           "type": "array",
           "items": {
-            "$ref": "TroubleTicketRef.schema.json#/definitions/TroubleTicketRef"
+            "$ref": "../EngagedParty/RelatedParty.schema.json#RelatedParty"
+          },
+          "description": "The parties involved in the change request"
+        },
+        "resolution": {
+          "$ref": "../Common/Resolution.schema.json#Resolution"
+        },
+        "sla": {
+          "type": "array",
+          "items": {
+            "$ref": "../EngagedParty/SLARef.schema.json#SLARef"
           }
         },
-        "workLog": {
+        "relateChangeRequest": {
           "type": "array",
           "items": {
-            "$ref": "WorkLog.schema.json#/definitions/WorkLog"
+            "$ref": "../Common/RelatedChangeRequestRef.schema.json#RelatedChangeRequestRef"
           }
+        },
+        "category": {
+          "type": "array",
+          "items": {
+            "$ref": "../Product/CategoryRef.schema.json#CategoryRef"
+          }
+        },
+        "note": {
+          "type": "array",
+          "items": {
+            "$ref": "../Common/Note.schema.json#Note"
+          }
+        },
+        "location": {
+          "$ref": "../Common/GeographicAddressRef.schema.json#GeographicAddressRef",
+          "description": "The place at which the change request occurred"
         }
       },
       "allOf": [
         {
-          "$ref": "Entity.schema.json#/Entity"
+          "$ref": "../Common/Entity.schema.json#Entity"
         }
       ]
     }

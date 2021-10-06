@@ -8,10 +8,7 @@
 	      "description": "A digital wallet method of payment.",
 	      "type": "object",
 	      "required": [
-	        "@type",
-			"service",
-			"walletId",
-			"walletUrl"
+	        "@type"
 	      ],
 	      "properties": {
 	        "service": {

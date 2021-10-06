@@ -8,14 +8,7 @@
       "description": "Direct Debit is a fully automated payment instrument which is generally used for recurrent payments. It allows a creditor to initiate the payment order. In doing so, it exempts the debtor from having to send a separate payment order at each due date",
       "type": "object",
       "required": [
-        "@type",
-        "mandateId",
-        "mandateType",
-        "accountNumber",
-        "firstDebitDate",
-        "lastDebitDate",
-        "owner",
-        "bank"
+        "@type"
       ],
       "properties": {
           "mandateId":{
@@ -95,7 +88,7 @@
           "owner": {
               "type": "string",
               "description": "The owner of the bank account. This is also the account name.",
-              "examples": ["Dominic Joe Plumbing Ltd"]
+              "examples": ["Dom Joe Plumbing Ltd"]
           }, 
           "bank": {
               "type": "string",
