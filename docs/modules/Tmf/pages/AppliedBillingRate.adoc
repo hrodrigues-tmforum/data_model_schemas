@@ -10,6 +10,7 @@ This schema is part of Customer
 
 An applied billing rate presented on a bill. It is created before or during the billing process
 
+None
 
 [#data_model]
 == Data model

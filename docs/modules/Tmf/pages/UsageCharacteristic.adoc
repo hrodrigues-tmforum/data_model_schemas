@@ -10,6 +10,7 @@ This schema is part of Product
 
 Provides the value of a given characteristic
 
+None
 
 [#data_model]
 == Data model

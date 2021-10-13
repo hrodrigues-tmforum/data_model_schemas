@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Rule reference. Rule is a common pattern or Template for the SLA parameters, metrics, and thresholds
 
+None
 
 [#data_model]
 == Data model

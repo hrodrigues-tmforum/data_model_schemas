@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A part of the Service Level Agreement representing quality aspect of the agrrement for a product offering and corresponding products/services
 
+None
 
 [#data_model]
 == Data model

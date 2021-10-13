@@ -10,6 +10,7 @@ This schema is part of Customer
 
 action to be performed on the product
 
+None
 
 [#data_model]
 == Data model

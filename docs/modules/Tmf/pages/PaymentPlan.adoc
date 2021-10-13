@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Defines a plan for payment (when a party wants to spread his payments)
 
+None
 
 [#data_model]
 == Data model

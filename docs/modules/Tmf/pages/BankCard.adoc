@@ -10,6 +10,7 @@ This schema is part of Customer
 
 A bank card method of payment.
 
+None
 
 [#data_model]
 == Data model

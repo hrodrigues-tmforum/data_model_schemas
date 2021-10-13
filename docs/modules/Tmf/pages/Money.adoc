@@ -10,6 +10,7 @@ This schema is part of Common
 
 A base / value business entity used to represent money
 
+None
 
 [#data_model]
 == Data model

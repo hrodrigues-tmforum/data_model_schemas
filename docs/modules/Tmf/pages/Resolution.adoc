@@ -10,6 +10,7 @@ This schema is part of Common
 
 The way one or more change request has been implementation through a direct remedy or task
 
+None
 
 [#data_model]
 == Data model

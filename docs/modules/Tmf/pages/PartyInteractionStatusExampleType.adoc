@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Possible values for the status of party interaction (for example: open,inProgress,completed)
 
+None
 
 [#data_model]
 == Data model

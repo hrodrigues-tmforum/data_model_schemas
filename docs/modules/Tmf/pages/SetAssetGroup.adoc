@@ -10,6 +10,7 @@ This schema is part of Common
 
 Defines a group of assets (entities) to which access can be controlled, using a predefined name that implies a list of entity types
 
+None
 
 [#data_model]
 == Data model

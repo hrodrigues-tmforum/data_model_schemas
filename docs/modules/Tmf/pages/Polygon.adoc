@@ -10,6 +10,7 @@ This schema is part of Common
 
 An array of linear rings
 
+None
 
 [#data_model]
 == Data model

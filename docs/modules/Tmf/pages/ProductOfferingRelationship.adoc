@@ -10,6 +10,7 @@ This schema is part of Product
 
 A relationship between two product Offerings.
 
+None
 
 [#data_model]
 == Data model

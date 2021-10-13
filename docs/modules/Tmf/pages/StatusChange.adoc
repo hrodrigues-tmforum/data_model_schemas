@@ -10,6 +10,7 @@ This schema is part of Common
 
 Holds the status notification reasons and associated date the status changed, populated by the server
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Resource
 
 The amount of ResourceCapacityDemand applied to a CapacityAmount.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 This is enumeration for Administrative state
 
+None
 
 [#data_model]
 == Data model

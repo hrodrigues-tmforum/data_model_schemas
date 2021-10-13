@@ -10,6 +10,7 @@ This schema is part of Common
 
 Base Extensible schema for use in TMForum Open-APIs
 
+None
 
 [#data_model]
 == Data model

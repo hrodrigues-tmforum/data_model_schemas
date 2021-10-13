@@ -11,6 +11,7 @@ This schema is part of Common
 Name/value pairs, used to extra characterized the Area (e.g. if a standard
 code set has been defined for the GeographicArea type, etc.)
 
+None
 
 [#data_model]
 == Data model

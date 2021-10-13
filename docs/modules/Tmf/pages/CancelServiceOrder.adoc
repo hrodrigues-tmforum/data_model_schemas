@@ -10,6 +10,7 @@ This schema is part of Service
 
 Request for cancellation an existing Service order
 
+None
 
 [#data_model]
 == Data model

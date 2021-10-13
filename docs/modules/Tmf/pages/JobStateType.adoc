@@ -10,6 +10,7 @@ This schema is part of Common
 
 Valid values for the state of a batch job (e.g. catalog import)
 
+None
 
 [#data_model]
 == Data model

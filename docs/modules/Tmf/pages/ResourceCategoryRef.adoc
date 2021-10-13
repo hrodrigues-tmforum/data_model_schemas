@@ -10,6 +10,7 @@ This schema is part of Resource
 
 The (resource) category resource is used to group resource candidates in logical containers. Categories can contain other categories.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 is a list of name value pairs that define the document characteristics.
 
+None
 
 [#data_model]
 == Data model

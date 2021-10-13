@@ -10,6 +10,7 @@ This schema is part of Product
 
 Possible values for the status of the Usage
 
+None
 
 [#data_model]
 == Data model

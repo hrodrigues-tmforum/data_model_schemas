@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A characteristic for an instantiated party profile, where the value indicates the allowed use of the characteristic
 
+None
 
 [#data_model]
 == Data model

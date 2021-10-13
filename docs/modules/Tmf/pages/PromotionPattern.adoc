@@ -10,6 +10,7 @@ This schema is part of Product
 
 Detailed pattern of the promotion.The pattern decides the conditions of promotion and the benefit of the promotion to be given to the eligible customer.
 
+None
 
 [#data_model]
 == Data model

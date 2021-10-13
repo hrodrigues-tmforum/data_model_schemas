@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Account reference. A account may be a party account or a financial account.
 
+None
 
 [#data_model]
 == Data model

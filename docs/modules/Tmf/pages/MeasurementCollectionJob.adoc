@@ -10,6 +10,7 @@ This schema is part of Common
 
 Used to control the periodic collection of performance indicators, implemented as a sub-entity of the PM Measurement Job.
 
+None
 
 [#data_model]
 == Data model

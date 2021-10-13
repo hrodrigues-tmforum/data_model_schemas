@@ -10,6 +10,7 @@ This schema is part of Common
 
 represents an Error
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Customer
 
 This resource reflects the risk assessment
 
+None
 
 [#data_model]
 == Data model

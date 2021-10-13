@@ -10,6 +10,7 @@ This schema is part of Common
 
 An aggregation, migration, substitution, dependency or exclusivity relationship between/among Characteristic specifications. The specification characteristic is embedded within the specification whose ID and href are in this entity, and identified by its ID.
 
+None
 
 [#data_model]
 == Data model

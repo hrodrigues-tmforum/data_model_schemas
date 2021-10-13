@@ -10,6 +10,7 @@ This schema is part of Common
 
 Possible values for the reporting period
 
+None
 
 [#data_model]
 == Data model

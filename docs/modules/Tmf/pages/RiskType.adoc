@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Types of risk that can be assessed
 
+None
 
 [#data_model]
 == Data model

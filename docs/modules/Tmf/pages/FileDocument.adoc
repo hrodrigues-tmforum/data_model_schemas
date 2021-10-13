@@ -10,6 +10,7 @@ This schema is part of Common
 
 A document accompanying an entity
 
+None
 
 [#data_model]
 == Data model

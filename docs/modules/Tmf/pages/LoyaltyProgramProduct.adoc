@@ -10,6 +10,7 @@ This schema is part of Product
 
 An instance of a loyalty program specification, linked to a specified loyalty member.
 
+None
 
 [#data_model]
 == Data model

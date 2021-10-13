@@ -10,6 +10,7 @@ This schema is part of Common
 
 Container for GeoJSON MultiPoint: A collection of Points
 
+None
 
 [#data_model]
 == Data model

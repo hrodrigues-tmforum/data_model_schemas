@@ -10,6 +10,7 @@ This schema is part of Common
 
 This class defines a characteristic specification.
 
+None
 
 [#data_model]
 == Data model

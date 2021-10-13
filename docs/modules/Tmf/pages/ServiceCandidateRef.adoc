@@ -10,6 +10,7 @@ This schema is part of Service
 
 ServiceCandidate reference. ServiceCandidate is an entity that makes a ServiceSpecification available to a catalog.
 
+None
 
 [#data_model]
 == Data model

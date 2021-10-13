@@ -10,6 +10,7 @@ This schema is part of Service
 
 Reason for eligibility result if the ServiceQualification result is no (meaning the Service is not available)
 
+None
 
 [#data_model]
 == Data model

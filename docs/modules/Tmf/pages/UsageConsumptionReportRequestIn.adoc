@@ -10,6 +10,7 @@ This schema is part of Product
 
 An UsageConsumptionReportRequest allows to manage the calculation request of an usage consumption report
 
+None
 
 [#data_model]
 == Data model

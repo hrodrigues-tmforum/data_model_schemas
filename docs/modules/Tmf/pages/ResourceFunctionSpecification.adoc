@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Specifies a function as a behavior to transform inputs of any nature into outputs of any nature independently from the way it is provided, for example a Medium to Large Enterprise Firewall.
 
+None
 
 [#data_model]
 == Data model

@@ -11,6 +11,7 @@ This schema is part of Common
 Representation of a GeographicSubAddress 
 It is used for addressing within a property in an urban area (country properties are often defined differently). It may refer to a building, a building cluster, or a floor of a multistory building.
 
+None
 
 [#data_model]
 == Data model

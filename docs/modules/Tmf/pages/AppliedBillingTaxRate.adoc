@@ -10,6 +10,7 @@ This schema is part of Customer
 
 The applied billing tax rate represents taxes applied billing rate it refers to. It is calculated during the billing process.
 
+None
 
 [#data_model]
 == Data model

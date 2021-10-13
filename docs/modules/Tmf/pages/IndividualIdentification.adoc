@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Represents our registration of information used as proof of identity by an individual (passport, national identity card, drivers license, social security number, birth certificate)
 
+None
 
 [#data_model]
 == Data model

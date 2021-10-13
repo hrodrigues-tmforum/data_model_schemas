@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 action to be performed on the shipping order item
 
+None
 
 [#data_model]
 == Data model

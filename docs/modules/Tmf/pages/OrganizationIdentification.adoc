@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Represents our registration of information used as proof of identity by an organization
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Product
 
 Valid values for the lifecycle state of the service
 
+None
 
 [#data_model]
 == Data model

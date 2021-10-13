@@ -10,6 +10,7 @@ This schema is part of Common
 
 An item typically included in a request or response
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Service
 
 Define the patterns of impact (optional), such as other service characteristics- Used when defining impact through another pattern than the pre-defined attributes
 
+None
 
 [#data_model]
 == Data model

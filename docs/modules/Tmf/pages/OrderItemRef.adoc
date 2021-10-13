@@ -10,6 +10,7 @@ This schema is part of Common
 
 ProductOrder (ProductOrder) .The product order which the recommendation is related with.
 
+None
 
 [#data_model]
 == Data model

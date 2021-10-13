@@ -10,6 +10,7 @@ This schema is part of Common
 
 This class defines the characteristic features of an edge specification. Every EdgeSpecification has a variety of important attributes, methods, constraints, and relationships, which distinguish an edge specification from other edge specifications.
 
+None
 
 [#data_model]
 == Data model

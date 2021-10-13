@@ -10,6 +10,7 @@ This schema is part of Common
 
 MEntity represents an entity that describes the common set of attributes shared by all concrete entities (e.g. Resource, Service, ..) in the Entity Inventory.
 
+None
 
 [#data_model]
 == Data model

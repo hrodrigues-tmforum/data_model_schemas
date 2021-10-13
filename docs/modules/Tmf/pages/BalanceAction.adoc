@@ -10,6 +10,7 @@ This schema is part of Customer
 
 an abstract resource. example extensions are TopupBalance, AdjustBalance
 
+None
 
 [#data_model]
 == Data model

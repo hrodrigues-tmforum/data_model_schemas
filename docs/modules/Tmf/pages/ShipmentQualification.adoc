@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 ShipmentQualification is used to perform a validation on shipment parameters and options, in relation to a specific carrier.
 
+None
 
 [#data_model]
 == Data model

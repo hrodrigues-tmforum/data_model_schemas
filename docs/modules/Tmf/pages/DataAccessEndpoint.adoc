@@ -10,6 +10,7 @@ This schema is part of Resource
 
 This is the endpoint exposed by the IoT Device to authorized users.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Related channel to another entity. May be online web, mobile app, social ,etc.
 
+None
 
 [#data_model]
 == Data model

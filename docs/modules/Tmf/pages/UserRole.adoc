@@ -10,6 +10,7 @@ This schema is part of Common
 
 A UserRole defines access levels to operate over a given function that can be included in an asset.
 
+None
 
 [#data_model]
 == Data model

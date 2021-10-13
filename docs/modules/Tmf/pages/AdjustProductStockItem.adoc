@@ -10,6 +10,7 @@ This schema is part of Resource
 
 A list of AdjustProductStock items. Every item is a ProductStock adjustement request.
 
+None
 
 [#data_model]
 == Data model

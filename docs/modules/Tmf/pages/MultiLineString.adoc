@@ -10,6 +10,7 @@ This schema is part of Common
 
 A collection of distinct LineStrings
 
+None
 
 [#data_model]
 == Data model

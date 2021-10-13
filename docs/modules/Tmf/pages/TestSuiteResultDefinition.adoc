@@ -10,6 +10,7 @@ This schema is part of Common
 
 Test suite result definition
 
+None
 
 [#data_model]
 == Data model

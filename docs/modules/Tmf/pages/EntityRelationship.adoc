@@ -10,6 +10,7 @@ This schema is part of Common
 
 A uni-directionmal relationship from this entity to a target entity instance
 
+None
 
 [#data_model]
 == Data model

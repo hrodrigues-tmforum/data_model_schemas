@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Instructions and details for the carrier
 
+None
 
 [#data_model]
 == Data model

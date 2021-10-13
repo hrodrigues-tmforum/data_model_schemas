@@ -10,6 +10,7 @@ This schema is part of Common
 
 A JeopardyAlert represents a predicted exception during a process that may cause a risk to complete successfully the process.
 
+None
 
 [#data_model]
 == Data model

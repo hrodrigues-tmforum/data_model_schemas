@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Definition of the nature of a Work Unit. For example, could be wiring, equipment installation, etc.
 
+None
 
 [#data_model]
 == Data model

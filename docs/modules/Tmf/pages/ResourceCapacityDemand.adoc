@@ -10,6 +10,7 @@ This schema is part of Resource
 
 the amount of capacity that is planned to be consumed or has been consumed.
 
+None
 
 [#data_model]
 == Data model

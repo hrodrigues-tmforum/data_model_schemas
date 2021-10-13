@@ -10,6 +10,7 @@ This schema is part of Resource
 
 AlternateProductStock is used to log and execute Alternate about product  stock availability
 
+None
 
 [#data_model]
 == Data model

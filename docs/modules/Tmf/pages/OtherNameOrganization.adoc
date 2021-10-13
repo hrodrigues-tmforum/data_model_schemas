@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Keeps track of other names, for example the old name of an organization.
 
+None
 
 [#data_model]
 == Data model

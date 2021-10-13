@@ -10,6 +10,7 @@ This schema is part of Product
 
 Criteria of the promotion.
 
+None
 
 [#data_model]
 == Data model

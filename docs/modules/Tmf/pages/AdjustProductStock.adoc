@@ -10,6 +10,7 @@ This schema is part of Resource
 
 AdjustProductStock is used to log and execute on or several Product Stock level change
 
+None
 
 [#data_model]
 == Data model

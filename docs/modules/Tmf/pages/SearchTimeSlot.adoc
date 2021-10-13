@@ -10,6 +10,7 @@ This schema is part of Customer
 
 This task resource is used to retrieve available time slots. One of this available time slot is after used to create or reschedule an appointment
 
+None
 
 [#data_model]
 == Data model

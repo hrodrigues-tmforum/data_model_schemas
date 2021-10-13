@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A PartyPrivacyRoleSpecification represents a specification of a role defined in the context of a given privacy spesification, such as Customer, User.
 
+None
 
 [#data_model]
 == Data model

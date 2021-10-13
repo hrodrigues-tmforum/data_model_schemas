@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Service Level Agreement
 
+None
 
 [#data_model]
 == Data model

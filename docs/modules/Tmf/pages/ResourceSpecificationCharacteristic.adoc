@@ -11,6 +11,7 @@ This schema is part of Resource
 This class defines the characteristic features of a resource specification. Every ResourceSpecification has a variety of important attributes, methods, constraints, and
 relationships, which distinguish a resource specification from other resource specifications.
 
+None
 
 [#data_model]
 == Data model

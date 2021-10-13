@@ -10,6 +10,7 @@ This schema is part of Common
 
 An amount in a given unit
 
+None
 
 [#data_model]
 == Data model

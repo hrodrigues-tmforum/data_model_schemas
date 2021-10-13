@@ -11,6 +11,7 @@ This schema is part of Service
 An Applied Consequence defines the action (prescribed action or notification) to take when a 
 MeasureThresholdRuleViolation occurs.
 
+None
 
 [#data_model]
 == Data model

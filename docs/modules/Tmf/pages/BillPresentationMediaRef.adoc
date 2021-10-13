@@ -10,6 +10,7 @@ This schema is part of Customer
 
 PresentationMedia reference. A mean of communicating a bill, supported by the associated bill format. For example, post mail, email, web page.
 
+None
 
 [#data_model]
 == Data model

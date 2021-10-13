@@ -10,6 +10,7 @@ This schema is part of Common
 
 External reference of the individual or reference in other system
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Specify if the output file(s) are to be packed.
 
+None
 
 [#data_model]
 == Data model

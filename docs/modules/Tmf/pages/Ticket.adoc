@@ -10,6 +10,7 @@ This schema is part of Common
 
 A trouble ticket represents a record used for reporting and managing the resolution of resource problems
 
+None
 
 [#data_model]
 == Data model

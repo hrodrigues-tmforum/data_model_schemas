@@ -10,6 +10,7 @@ This schema is part of Product
 
 In the context of a product order or a product offering qualification, this data structure captures the product information useful to order or qualified  an existing subscribed product or to a new one. This is a subset of relevant product attributes for ordering and qualification
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Product
 
 A new product offering price being created by value or a reference to an existing product offering price that alreasy created. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the product offering price and not to this ReforValue structure
 
+None
 
 [#data_model]
 == Data model

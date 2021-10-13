@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Possible values for the state of the order
 
+None
 
 [#data_model]
 == Data model

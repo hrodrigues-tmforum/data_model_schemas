@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A template document that can be used for an agreement between parties on offered product/service level quality
 
+None
 
 [#data_model]
 == Data model

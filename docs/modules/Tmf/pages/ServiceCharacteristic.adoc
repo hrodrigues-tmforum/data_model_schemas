@@ -10,6 +10,7 @@ This schema is part of Service
 
 is a list of name value pairs that define the service characteristics
 
+None
 
 [#data_model]
 == Data model

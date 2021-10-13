@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Valid values for the lifecycle state of the organization
 
+None
 
 [#data_model]
 == Data model

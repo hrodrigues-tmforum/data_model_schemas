@@ -10,6 +10,7 @@ This schema is part of Common
 
 An identified part of the reservation. A reservation is decomposed into one or more reservation items.
 
+None
 
 [#data_model]
 == Data model

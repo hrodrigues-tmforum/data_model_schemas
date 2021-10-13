@@ -10,6 +10,7 @@ This schema is part of Common
 
 It could be a serviceQualification or a productOfferingQualification that has been executed previously and captured in the productOrder to provide eligibility information
 
+None
 
 [#data_model]
 == Data model

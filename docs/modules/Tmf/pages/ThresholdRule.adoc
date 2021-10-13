@@ -10,6 +10,7 @@ This schema is part of Common
 
 ThresholdRule A base entity for concrete definition of thresholds.This datatype  is  abstract
 
+None
 
 [#data_model]
 == Data model

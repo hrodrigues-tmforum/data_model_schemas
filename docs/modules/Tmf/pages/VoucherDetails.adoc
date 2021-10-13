@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Detailed information of a voucher
 
+None
 
 [#data_model]
 == Data model

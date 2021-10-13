@@ -11,6 +11,7 @@ This schema is part of EngagedParty
 CheckShipmentQualification is used to validate the eligibility of specific 
 shipments.
 
+None
 
 [#data_model]
 == Data model

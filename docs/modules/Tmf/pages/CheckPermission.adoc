@@ -10,6 +10,7 @@ This schema is part of Common
 
 The CheckPermission task entity verifies that the security principal in context can carry out the action. If permission is granted, 200 is returned, if denied, 403 is returned. If party role or user is present in input, these are used, otherwise the security principal is deduced from the HTTP Authorization header.
 
+None
 
 [#data_model]
 == Data model

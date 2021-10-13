@@ -10,6 +10,7 @@ This schema is part of Product
 
 Describes a non-composite relationship between product offering prices. For example one price might be an discount alteration for another price.
 
+None
 
 [#data_model]
 == Data model

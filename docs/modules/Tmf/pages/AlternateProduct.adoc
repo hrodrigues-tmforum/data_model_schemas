@@ -10,6 +10,7 @@ This schema is part of Product
 
 In the context of a product offering qualification, this data structure is useful to describe alternate product than can be proposed
 
+None
 
 [#data_model]
 == Data model

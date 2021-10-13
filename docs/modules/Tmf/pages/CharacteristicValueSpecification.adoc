@@ -10,6 +10,7 @@ This schema is part of Common
 
 specification of a value (number or text or an object) that can be assigned to a Characteristic.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Resource
 
 The specification of how to populate the alarm fields when generating a threshold crossing alarm
 
+None
 
 [#data_model]
 == Data model

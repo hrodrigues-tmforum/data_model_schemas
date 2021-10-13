@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Logic resource is a type of resource that describes the common set of attributes shared by all concrete logical resources (e.g. TPE, MSISDN, IP Addresses) in the inventory.
 
+None
 
 [#data_model]
 == Data model

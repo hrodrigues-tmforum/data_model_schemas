@@ -10,6 +10,7 @@ This schema is part of Common
 
 The channel to which the resource reference to. e.g. channel for selling product offerings, channel for opening a trouble ticket etc..
 
+None
 
 [#data_model]
 == Data model

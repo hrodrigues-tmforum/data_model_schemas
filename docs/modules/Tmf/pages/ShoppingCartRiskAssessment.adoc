@@ -10,6 +10,7 @@ This schema is part of Customer
 
 This is a task resource allowing assessment of the risks associated with a shopping cart - presumably created by a party role and containing one or more product offerings
 
+None
 
 [#data_model]
 == Data model

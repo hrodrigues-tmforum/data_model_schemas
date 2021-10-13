@@ -10,6 +10,7 @@ This schema is part of Customer
 
 link to the resource that holds bucket balance information
 
+None
 
 [#data_model]
 == Data model

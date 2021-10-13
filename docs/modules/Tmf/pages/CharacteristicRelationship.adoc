@@ -10,6 +10,7 @@ This schema is part of Common
 
 Another Characteristic that is related to the current Characteristic;
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Customer
 
 a resource used by the ImpactedBucket resource to capture the impact of a ImpactedBucket
 
+None
 
 [#data_model]
 == Data model

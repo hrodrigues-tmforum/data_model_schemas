@@ -10,6 +10,7 @@ This schema is part of Service
 
 In the context of a service order and depending on the action requested (add/modify/delete/noChange) this data structure captures the configuration to apply to an existing subscribed service or to a new one
 
+None
 
 [#data_model]
 == Data model

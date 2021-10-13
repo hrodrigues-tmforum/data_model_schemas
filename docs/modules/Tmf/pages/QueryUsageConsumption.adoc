@@ -10,6 +10,7 @@ This schema is part of Product
 
 An QueryUsageConsumption allows to manage the calculation request of an usage consumption
 
+None
 
 [#data_model]
 == Data model

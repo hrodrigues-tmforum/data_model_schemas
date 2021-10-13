@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Possible values for the bucket status are (for example active,suspended,expired)
 
+None
 
 [#data_model]
 == Data model

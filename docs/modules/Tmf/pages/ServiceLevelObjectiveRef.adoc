@@ -10,6 +10,7 @@ This schema is part of Service
 
 A set of Service Level Objectives that are contained in the Service Level Specification.
 
+None
 
 [#data_model]
 == Data model

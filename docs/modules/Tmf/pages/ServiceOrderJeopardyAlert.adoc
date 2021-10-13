@@ -10,6 +10,7 @@ This schema is part of Service
 
 A ServiceOrderJeopardyAlert represents a predicted exception during a service order processing that would brings risk to complete successfully the ordetr.
 
+None
 
 [#data_model]
 == Data model

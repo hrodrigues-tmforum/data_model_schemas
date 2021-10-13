@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Describes the type of price (ex: oneTime, recurring, etc)
 
+None
 
 [#data_model]
 == Data model

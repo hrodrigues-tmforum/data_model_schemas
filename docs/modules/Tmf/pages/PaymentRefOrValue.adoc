@@ -10,6 +10,7 @@ This schema is part of Customer
 
 link to the resource information about the payment operation
 
+None
 
 [#data_model]
 == Data model

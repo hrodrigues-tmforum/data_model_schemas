@@ -10,6 +10,7 @@ This schema is part of Common
 
 Place reference. Place defines the places where the products are sold or delivered.
 
+None
 
 [#data_model]
 == Data model

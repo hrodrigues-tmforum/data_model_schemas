@@ -10,6 +10,7 @@ This schema is part of Common
 
 This resource is used to manage address validation request and response
 
+None
 
 [#data_model]
 == Data model

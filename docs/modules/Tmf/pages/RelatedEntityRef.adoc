@@ -10,6 +10,7 @@ This schema is part of Common
 
 A reference to an entity, where the type of the entity is not known in advance.
 
+None
 
 [#data_model]
 == Data model

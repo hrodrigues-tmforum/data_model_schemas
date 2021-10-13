@@ -10,6 +10,7 @@ This schema is part of Common
 
 A trouble ticket is a record of an issue that is created, tracked, and managed by a trouble ticket management system
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Customer
 
 The ReserveBalance resource allows adjustments to be made to the original BalanceTopup eg increment the amount, alter the recharge periodicity
 
+None
 
 [#data_model]
 == Data model

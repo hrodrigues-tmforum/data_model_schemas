@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A WorkQualificationItem relates to a specific unit of work being checked in a qualification operation.
 
+None
 
 [#data_model]
 == Data model

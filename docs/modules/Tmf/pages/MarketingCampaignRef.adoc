@@ -10,6 +10,7 @@ This schema is part of MarketingSales
 
 MarketingCampaign reference. Marketing campaign represents the carrier-initiated marketing activity which aims at the better recognition about its brand and offerings by the market
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 RelatedParty reference. A related party defines party or party role linked to a specific entity.
 
+None
 
 [#data_model]
 == Data model

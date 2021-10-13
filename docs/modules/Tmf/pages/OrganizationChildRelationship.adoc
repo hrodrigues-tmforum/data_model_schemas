@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Child references of an organization in a structure of organizations.
 
+None
 
 [#data_model]
 == Data model
