@@ -20,5 +20,5 @@ The data model is defined as shown below:
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:PartyRef.adoc[]
-This schema extends: xref:4.0.0@schemas:EngagedParty:Party.adoc[]
+This schema extends: xref:v4.1@schemas:EngagedParty:PartyRef.adoc[]
+This schema extends: xref:v4.1@schemas:EngagedParty:Party.adoc[]

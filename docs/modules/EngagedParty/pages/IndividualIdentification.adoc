@@ -46,12 +46,12 @@ type: string
 === validFor
 description: The period for which the identification information is valid.
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === attachment
-$ref of: xref:4.0.0@schemas:EngagedParty:AttachmentRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:AttachmentRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:EngagedParty:Entity.adoc[]

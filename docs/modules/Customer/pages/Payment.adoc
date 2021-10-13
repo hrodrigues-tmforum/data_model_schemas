@@ -76,23 +76,23 @@ type: string
 === amount
 description: Amount to be paid (net of taxes)
 
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.1@schemas:Customer:Money.adoc[]
 
 
 === taxAmount
 description: Tax applied
 
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.1@schemas:Customer:Money.adoc[]
 
 
 === totalAmount
 description: Amount to be paid (including taxes)
 
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.1@schemas:Customer:Money.adoc[]
 
 
 === channel
-$ref of: xref:4.0.0@schemas:Customer:ChannelRef.adoc[]
+$ref of: xref:v4.1@schemas:Customer:ChannelRef.adoc[]
 
 
 === paymentItem
@@ -104,16 +104,16 @@ type: array
 
 
 === paymentMethod
-$ref of: xref:4.0.0@schemas:Customer:PaymentMethodRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Customer:PaymentMethodRefOrValue.adoc[]
 
 
 === account
-$ref of: xref:4.0.0@schemas:Customer:AccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Customer:AccountRef.adoc[]
 
 
 === pointOfInteraction
-$ref of: xref:4.0.0@schemas:Customer:PointOfInteraction.adoc[]
+$ref of: xref:v4.1@schemas:Customer:PointOfInteraction.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Customer:Entity.adoc[]

@@ -32,7 +32,7 @@ type: string
 
 
 === loyaltyProgramProduct
-$ref of: xref:4.0.0@schemas:Product:LoyaltyProgramProductRef.adoc[]
+$ref of: xref:v4.1@schemas:Product:LoyaltyProgramProductRef.adoc[]
 
 
 = All Of 

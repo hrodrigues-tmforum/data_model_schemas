@@ -24,10 +24,10 @@ type: string
 
 
 === reportingPeriod
-$ref of: xref:4.0.0@schemas:Common:.adoc[]
+$ref of: xref:v4.1@schemas:Common:.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:ManagementJob.adoc[]
-This schema extends: xref:4.0.0@schemas:Common:Addressable.adoc[]
-This schema extends: xref:4.0.0@schemas:Common:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Common:ManagementJob.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Addressable.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Extensible.adoc[]

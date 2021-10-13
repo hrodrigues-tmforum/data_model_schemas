@@ -22,13 +22,13 @@ The data model is defined as shown below:
 === agreementPeriod
 description: The time period during which the Agreement is in effect.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === completionDate
 description: Date at which the agreement is completed
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === description
@@ -92,7 +92,7 @@ type: string
 
 
 === agreementSpecification
-$ref of: xref:4.0.0@schemas:Tmf:AgreementSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:AgreementSpecificationRef.adoc[]
 
 
 === agreementItem
@@ -116,4 +116,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

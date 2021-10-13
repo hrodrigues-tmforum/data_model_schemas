@@ -52,25 +52,25 @@ type: string
 === administrativeState
 description: Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on.
 
-$ref of: xref:4.0.0@schemas:Resource:ResourceAdministrativeStateType.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ResourceAdministrativeStateType.adoc[]
 
 
 === operationalState
 description: Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on.
 
-$ref of: xref:4.0.0@schemas:Resource:ResourceOperationalStateType.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ResourceOperationalStateType.adoc[]
 
 
 === resourceStatus
 description: Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on.
 
-$ref of: xref:4.0.0@schemas:Resource:ResourceStatusType.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ResourceStatusType.adoc[]
 
 
 === usageState
 description: Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on.
 
-$ref of: xref:4.0.0@schemas:Resource:ResourceUsageStateType.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ResourceUsageStateType.adoc[]
 
 
 === name
@@ -84,7 +84,7 @@ type: array
 
 
 === place
-$ref of: xref:4.0.0@schemas:Resource:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Resource:RelatedPlaceRefOrValue.adoc[]
 
 
 === relatedParty
@@ -104,7 +104,7 @@ type: array
 
 
 === resourceSpecification
-$ref of: xref:4.0.0@schemas:Resource:ResourceSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ResourceSpecificationRef.adoc[]
 
 
 === startOperatingDate
@@ -126,4 +126,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Resource:Entity.adoc[]

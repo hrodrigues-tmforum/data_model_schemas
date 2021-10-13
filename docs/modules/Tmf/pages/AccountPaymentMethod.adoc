@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === billedAccount
-$ref of: xref:4.0.0@schemas:Tmf:AccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:AccountRef.adoc[]
 
 
 === @type
@@ -28,4 +28,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:PaymentMethod.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:PaymentMethod.adoc[]

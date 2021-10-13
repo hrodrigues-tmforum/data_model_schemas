@@ -52,12 +52,12 @@ type: string
 
 
 === attachment
-$ref of: xref:4.0.0@schemas:EngagedParty:AttachmentRef.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:AttachmentRef.adoc[]
 
 
 === rule
-$ref of: xref:4.0.0@schemas:EngagedParty:RuleRef.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:RuleRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:EngagedParty:Entity.adoc[]

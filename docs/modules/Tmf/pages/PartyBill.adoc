@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === amountDue
 description: Amount due for this bill expressed in the given currency
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Money.adoc[]
 
 
 === billDate
@@ -34,7 +34,7 @@ type: string
 === billingPeriod
 description: Billing period of the bill (used for onCycle bill only)
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === billNo
@@ -82,7 +82,7 @@ type: string
 === remainingAmount
 description: Remaining amount to be paid for this bill expressed in the given currency
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Money.adoc[]
 
 
 === runType
@@ -100,13 +100,13 @@ type: string
 === taxExcludedAmount
 description: Total tax excluded amount expressed in the given currency
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Money.adoc[]
 
 
 === taxIncludedAmount
 description: Total tax included amount expressed in the given
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Money.adoc[]
 
 
 === billDocument
@@ -122,7 +122,7 @@ type: array
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === taxItem
@@ -130,7 +130,7 @@ type: array
 
 
 === paymentMethod
-$ref of: xref:4.0.0@schemas:Tmf:PaymentMethodRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:PaymentMethodRef.adoc[]
 
 
 === relatedParty
@@ -138,8 +138,8 @@ type: array
 
 
 === financialAccount
-$ref of: xref:4.0.0@schemas:Tmf:FinancialAccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:FinancialAccountRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

@@ -38,7 +38,7 @@ type: string
 
 
 === comment
-$ref of: xref:4.0.0@schemas:Tmf:Comment.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Comment.adoc[]
 
 
 === alarmPattern

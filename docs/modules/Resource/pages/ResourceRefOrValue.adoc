@@ -20,5 +20,5 @@ The data model is defined as shown below:
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:ResourceRef.adoc[]
-This schema extends: xref:4.0.0@schemas:Resource:Resource.adoc[]
+This schema extends: xref:v4.1@schemas:Resource:ResourceRef.adoc[]
+This schema extends: xref:v4.1@schemas:Resource:Resource.adoc[]

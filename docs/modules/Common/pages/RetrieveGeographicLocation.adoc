@@ -40,12 +40,12 @@ type: string
 
 
 === geographicLocation
-$ref of: xref:4.0.0@schemas:Common:GeographicLocation.adoc[]
+$ref of: xref:v4.1@schemas:Common:GeographicLocation.adoc[]
 
 
 === thing
-$ref of: xref:4.0.0@schemas:Common:Object.adoc[]
+$ref of: xref:v4.1@schemas:Common:Object.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

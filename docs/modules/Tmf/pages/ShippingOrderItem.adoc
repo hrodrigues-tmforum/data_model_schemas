@@ -28,19 +28,19 @@ type: string
 === action
 description: The action to be carried out on the Product. Can be: add, modify, delete, noChange
 
-$ref of: xref:4.0.0@schemas:Tmf:ShippingOrderItemActionType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ShippingOrderItemActionType.adoc[]
 
 
 === productOrderItem
 description: The product order item for which the shipping order is created, if supplied as input the attribute id must be populated
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOrderItemRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductOrderItemRef.adoc[]
 
 
 === product
 description: The product for which the shipping order is created, if supplied as input the attribute id must be populated
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductRef.adoc[]
 
 
 === relatedParty
@@ -64,44 +64,44 @@ type: string
 === shippingInstruction
 description: Shipping instructions, usually relevant for the carrier.
 
-$ref of: xref:4.0.0@schemas:Tmf:ShippingInstruction.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ShippingInstruction.adoc[]
 
 
 === shippingOrderItemOffering
 description: Each shipping order item can have a corresponding product offer in the product catalog.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === productOffering
 description: Item has a corresponding offering in the product catalog.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === shipment
 description: A set of goods to be shipped
 
-$ref of: xref:4.0.0@schemas:Tmf:ShipmentRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ShipmentRefOrValue.adoc[]
 
 
 === shippingOrderItemPrice
 description: Shipping Order Item price. The price of shipping this item. It depends if there is a ShippingOrder level price or per each individual item.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductPrice.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductPrice.adoc[]
 
 
 === placeFrom
 description: Source location of the item. E.g. warehouse or shop location
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
 
 
 === placeTo
 description: Destination of the item. E.g. customer home address. 
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

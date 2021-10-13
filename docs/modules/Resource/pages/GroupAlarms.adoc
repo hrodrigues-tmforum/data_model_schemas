@@ -52,7 +52,7 @@ type: string
 === parentAlarm
 description: Root cause alarm
 
-$ref of: xref:4.0.0@schemas:Resource:AlarmRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Resource:AlarmRefOrValue.adoc[]
 
 
 === correlatedAlarm

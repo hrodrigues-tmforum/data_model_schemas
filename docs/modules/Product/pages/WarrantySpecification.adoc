@@ -32,7 +32,7 @@ type: array
 
 
 === warrantyDuration
-$ref of: xref:4.0.0@schemas:Product:Quantity.adoc[]
+$ref of: xref:v4.1@schemas:Product:Quantity.adoc[]
 
 
 === warrantySpecRelationship
@@ -44,4 +44,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:EntitySpecification.adoc[]
+This schema extends: xref:v4.1@schemas:Product:EntitySpecification.adoc[]

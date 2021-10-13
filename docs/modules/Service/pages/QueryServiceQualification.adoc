@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === searchCriteria
 description: Search structure to retrieve eligible service specification
 
-$ref of: xref:4.0.0@schemas:Service:ServiceQualificationItem.adoc[]
+$ref of: xref:v4.1@schemas:Service:ServiceQualificationItem.adoc[]
 
 
 === serviceQualificationItem
@@ -38,4 +38,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:ServiceQualification.adoc[]
+This schema extends: xref:v4.1@schemas:Service:ServiceQualification.adoc[]

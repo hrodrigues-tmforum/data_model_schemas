@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === resource
 description: A POI is a Physical POI or a Remote POI, as a resource.
 
-$ref of: xref:4.0.0@schemas:Tmf:ResourceRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ResourceRef.adoc[]
 
 
 === modeOfEntry
@@ -44,4 +44,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

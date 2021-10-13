@@ -44,7 +44,7 @@ type: string
 
 
 === existsDuring
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === name
@@ -62,7 +62,7 @@ type: string
 === status
 description: Status of the organization
 
-$ref of: xref:4.0.0@schemas:Tmf:OrganizationStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:OrganizationStateType.adoc[]
 
 
 === otherName
@@ -78,9 +78,9 @@ type: array
 
 
 === organizationParentRelationship
-$ref of: xref:4.0.0@schemas:Tmf:OrganizationParentRelationship.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:OrganizationParentRelationship.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Party.adoc[]
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Party.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

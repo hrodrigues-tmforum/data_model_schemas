@@ -70,7 +70,7 @@ type: array
 === state
 description: State of the ProcessFlow: described in the state machine diagram.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProcessFlowStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProcessFlowStateType.adoc[]
 
 
 === taskFlow
@@ -80,4 +80,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

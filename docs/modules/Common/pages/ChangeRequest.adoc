@@ -153,7 +153,7 @@ type: array
 
 
 === workLog
-$ref of: xref:4.0.0@schemas:Common:WorkLog.adoc[]
+$ref of: xref:v4.1@schemas:Common:WorkLog.adoc[]
 
 
 === incident
@@ -161,7 +161,7 @@ type: array
 
 
 === changeRequestSpecification
-$ref of: xref:4.0.0@schemas:Common:ChangeRequestSpecification.adoc[]
+$ref of: xref:v4.1@schemas:Common:ChangeRequestSpecification.adoc[]
 
 
 === impactEntity
@@ -183,7 +183,7 @@ type: array
 
 
 === resolution
-$ref of: xref:4.0.0@schemas:Common:Resolution.adoc[]
+$ref of: xref:v4.1@schemas:Common:Resolution.adoc[]
 
 
 === sla
@@ -205,8 +205,8 @@ type: array
 === location
 description: The place at which the change request occurred
 
-$ref of: xref:4.0.0@schemas:Common:GeographicAddressRef.adoc[]
+$ref of: xref:v4.1@schemas:Common:GeographicAddressRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

@@ -140,7 +140,7 @@ type: string
 === state
 description: State of the order: described in the state-machine diagram
 
-$ref of: xref:4.0.0@schemas:Tmf:ServiceOrderStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ServiceOrderStateType.adoc[]
 
 
 === milestone
@@ -158,8 +158,8 @@ type: array
 === errorMessage
 description: the error message if the order closed by an error
 
-$ref of: xref:4.0.0@schemas:Tmf:ServiceOrderErrorMessage.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ServiceOrderErrorMessage.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

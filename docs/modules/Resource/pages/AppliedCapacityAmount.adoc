@@ -34,8 +34,8 @@ type: array
 === resourceCapacityDemand
 description: he amount of capacity that is planned to be consumed or has been consumed.
 
-$ref of: xref:4.0.0@schemas:Resource:ResourceCapacityDemand.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ResourceCapacityDemand.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Resource:Extensible.adoc[]

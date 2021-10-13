@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === address
 description: Structure including the End-User&#x27;s preferred postal address
 
-$ref of: xref:4.0.0@schemas:Common:GeographicAddress.adoc[]
+$ref of: xref:v4.1@schemas:Common:GeographicAddress.adoc[]
 
 
 === birthdate
@@ -146,4 +146,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

@@ -20,15 +20,15 @@ The data model is defined as shown below:
 
 
 === action
-$ref of: xref:4.0.0@schemas:Tmf:OrderItemActionType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:OrderItemActionType.adoc[]
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:AppointmentRef.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === description
@@ -52,7 +52,7 @@ type: array
 
 
 === note
-$ref of: xref:4.0.0@schemas:Tmf:Note.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Note.adoc[]
 
 
 === orderItem
@@ -68,11 +68,11 @@ type: array
 
 
 === state
-$ref of: xref:4.0.0@schemas:Tmf:WorkOrderItemStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:WorkOrderItemStateType.adoc[]
 
 
 === work
-$ref of: xref:4.0.0@schemas:Tmf:WorkRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:WorkRefOrValue.adoc[]
 
 
 === workOrderItem
@@ -84,4 +84,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

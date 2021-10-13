@@ -20,15 +20,15 @@ The data model is defined as shown below:
 
 
 === action
-$ref of: xref:4.0.0@schemas:Tmf:ReservationItemActionType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ReservationItemActionType.adoc[]
 
 
 === appliedCapacity
-$ref of: xref:4.0.0@schemas:Tmf:Capacity.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Capacity.adoc[]
 
 
 === capacityDemand
-$ref of: xref:4.0.0@schemas:Tmf:Capacity.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Capacity.adoc[]
 
 
 === id
@@ -52,11 +52,11 @@ type: array
 === reservationPeriod
 description: Period of time for which the target entity is to be in a reserved state
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === state
-$ref of: xref:4.0.0@schemas:Tmf:ReservationItemStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ReservationItemStateType.adoc[]
 
 
 === stateChangeDate
@@ -72,8 +72,8 @@ type: string
 
 
 === validFor
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

@@ -68,7 +68,7 @@ type: array
 === validFor
 description: The period of time for which this characteristic specification is valid.
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 = All Of 

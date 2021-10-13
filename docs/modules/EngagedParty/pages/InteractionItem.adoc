@@ -28,7 +28,7 @@ type: string
 === itemDate
 description: Moment this item is referred
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === reason
@@ -52,7 +52,7 @@ type: string
 === item
 description: RelatedEntity defines a reference to any entity. It uses polymorphism in order to let the API client know how to treat the element, as the entity type is not known beforehand.
 
-$ref of: xref:4.0.0@schemas:EngagedParty:RelatedEntity.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:RelatedEntity.adoc[]
 
 
 === channel
@@ -74,4 +74,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:EngagedParty:Entity.adoc[]

@@ -20,12 +20,12 @@ The data model is defined as shown below:
 
 
 === productSpecification
-$ref of: xref:4.0.0@schemas:Product:WarrantyProductSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Product:WarrantyProductSpecificationRef.adoc[]
 
 
 === warranty
-$ref of: xref:4.0.0@schemas:Product:WarrantyRef.adoc[]
+$ref of: xref:v4.1@schemas:Product:WarrantyRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Product.adoc[]
+This schema extends: xref:v4.1@schemas:Product:Product.adoc[]

@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === calendarEvent
 description: A calendar event reference (CalendarEventRef). The appointment is associated with a calendar event (an happening at a point of time) associated to a calendar entry.
 
-$ref of: xref:4.0.0@schemas:Tmf:CalendarEventRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:CalendarEventRef.adoc[]
 
 
 === category
@@ -68,14 +68,14 @@ type: string
 
 
 === status
-$ref of: xref:4.0.0@schemas:Tmf:AppointmentStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:AppointmentStateType.adoc[]
 
 
 === validFor
 description: A time period (TimePeriod). Appointment beginning date time and end date time.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

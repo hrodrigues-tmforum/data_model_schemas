@@ -32,7 +32,7 @@ type: string
 
 
 === productOfferingPrice
-$ref of: xref:4.0.0@schemas:Customer:ProductOfferingPriceRef.adoc[]
+$ref of: xref:v4.1@schemas:Customer:ProductOfferingPriceRef.adoc[]
 
 
 === priceType
@@ -54,11 +54,11 @@ type: string
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Customer:BillingAccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Customer:BillingAccountRef.adoc[]
 
 
 === price
-$ref of: xref:4.0.0@schemas:Customer:Price.adoc[]
+$ref of: xref:v4.1@schemas:Customer:Price.adoc[]
 
 
 === priceAlteration
@@ -66,4 +66,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Customer:Entity.adoc[]

@@ -20,11 +20,11 @@ The data model is defined as shown below:
 
 
 === abstractEnvironment
-$ref of: xref:4.0.0@schemas:Common:AbstractEnvironmentRef.adoc[]
+$ref of: xref:v4.1@schemas:Common:AbstractEnvironmentRef.adoc[]
 
 
 === testScenario
-$ref of: xref:4.0.0@schemas:Common:TestScenarioRef.adoc[]
+$ref of: xref:v4.1@schemas:Common:TestScenarioRef.adoc[]
 
 
 === concreteResourceMapping
@@ -36,4 +36,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Execution.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Execution.adoc[]

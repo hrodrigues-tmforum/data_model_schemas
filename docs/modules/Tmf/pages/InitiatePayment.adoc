@@ -52,13 +52,13 @@ type: string
 === authorizedPayment 
 description: Related authorized payment to this operation.
 
-$ref of: xref:4.0.0@schemas:Tmf:AuthorizePaymentRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:AuthorizePaymentRef.adoc[]
 
 
 === initiatedPayment 
 description: Related payment to this operation.
 
-$ref of: xref:4.0.0@schemas:Tmf:PaymentRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:PaymentRefOrValue.adoc[]
 
 
 = All Of 

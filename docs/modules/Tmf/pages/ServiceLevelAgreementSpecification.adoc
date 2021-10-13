@@ -52,7 +52,7 @@ type: string
 === validFor
 description: The period for which the agreement specification is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === version
@@ -64,7 +64,7 @@ type: string
 === category
 description: The category of product/services that are in scope of this SLA
 
-$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:EntityRef.adoc[]
 
 
 === specCharacteristic
@@ -76,7 +76,7 @@ type: array
 === template
 description: the template document correponding with this SLA specifiction
 
-$ref of: xref:4.0.0@schemas:Tmf:ServiceLevelAgreementTemplate.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ServiceLevelAgreementTemplate.adoc[]
 
 
 === itemSpecification
@@ -116,4 +116,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

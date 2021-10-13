@@ -34,14 +34,14 @@ type: string
 === alternateProduct
 description: Alternate product proposal
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
 === alternateProductOffering
 description: Alternate product offering proposal
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

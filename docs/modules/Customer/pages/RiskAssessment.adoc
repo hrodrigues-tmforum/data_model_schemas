@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === place
 description: The place for which the risk is assessed, this is optional input to the task
 
-$ref of: xref:4.0.0@schemas:Customer:RelatedPlace.adoc[]
+$ref of: xref:v4.1@schemas:Customer:RelatedPlace.adoc[]
 
 
 === characteristic
@@ -40,9 +40,9 @@ type: string
 === riskAssessmentResult
 description: The result of the risk assessment, output from the task
 
-$ref of: xref:4.0.0@schemas:Customer:RiskAssessmentResult.adoc[]
+$ref of: xref:v4.1@schemas:Customer:RiskAssessmentResult.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Addressable.adoc[]
-This schema extends: xref:4.0.0@schemas:Customer:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Customer:Addressable.adoc[]
+This schema extends: xref:v4.1@schemas:Customer:Extensible.adoc[]

@@ -20,9 +20,9 @@ The data model is defined as shown below:
 
 
 === testSuite
-$ref of: xref:4.0.0@schemas:Tmf:TestSuiteRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TestSuiteRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:TestExecution.adoc[]
-This schema extends: xref:4.0.0@schemas:Tmf:TestExecutionRef.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:TestExecution.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:TestExecutionRef.adoc[]

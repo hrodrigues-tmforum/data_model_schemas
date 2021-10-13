@@ -28,8 +28,8 @@ type: string
 === targetProductSchema
 description: A target product schema reference. The reference object to the schema and type of target product which is described by product specification.
 
-$ref of: xref:4.0.0@schemas:Product:TargetProductSchema.adoc[]
+$ref of: xref:v4.1@schemas:Product:TargetProductSchema.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:EntityRef.adoc[]
+This schema extends: xref:v4.1@schemas:Product:EntityRef.adoc[]

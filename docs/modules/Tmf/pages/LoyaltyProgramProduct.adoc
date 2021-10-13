@@ -58,18 +58,18 @@ type: array
 === loyaltyProgramProductSpec
 type: object
 
-$ref of: xref:4.0.0@schemas:Tmf:LoyaltyProgramProductSpecRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:LoyaltyProgramProductSpecRef.adoc[]
 
 
 === loyaltyAccount
 type: object
 
-$ref of: xref:4.0.0@schemas:Tmf:LoyaltyAccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:LoyaltyAccountRef.adoc[]
 
 
 === validFor
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

@@ -52,8 +52,8 @@ type: string
 === state
 description: Tracks the lifecycle status of the cancellation request, such as Acknowledged, Rejected, InProgress, Pending and so on.
 
-$ref of: xref:4.0.0@schemas:Product:TaskStateType.adoc[]
+$ref of: xref:v4.1@schemas:Product:TaskStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Product:Entity.adoc[]

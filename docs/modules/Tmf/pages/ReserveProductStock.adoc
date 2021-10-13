@@ -46,7 +46,7 @@ type: string
 === reserveProductStockState
 description: State of the ReserveProductStock (acknowledged, inProgress, failed, done, cancelled)
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TaskStateType.adoc[]
 
 
 === reserveProductStockItem
@@ -82,14 +82,14 @@ type: array
 === validFor
 description: Reservation validity period
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === place
 description: Used to define a place where the product stock must be reserved
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

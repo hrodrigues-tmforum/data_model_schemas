@@ -40,7 +40,7 @@ type: string
 === completionDate
 description: Date at which the agreement is completed
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === statementOfIntent
@@ -82,7 +82,7 @@ type: string
 === agreementSpecification
 description: reference to the corresponding specification for this SLA
 
-$ref of: xref:4.0.0@schemas:EngagedParty:AgreementSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:AgreementSpecificationRef.adoc[]
 
 
 === agreementItem
@@ -142,8 +142,8 @@ type: array
 === validFor
 description: The period for which the SLA is valid  (A period of time, either as a deadline (endDateTime only) a startDateTime only, or both)
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:EngagedParty:Entity.adoc[]

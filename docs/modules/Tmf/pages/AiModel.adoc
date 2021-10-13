@@ -28,18 +28,18 @@ type: array
 === gpu
 description: Reference to GPU in Inventory
 
-$ref of: xref:4.0.0@schemas:Tmf:ResourceRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ResourceRef.adoc[]
 
 
 === trainingData
 description: Reference to training data set
 
-$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:EntityRef.adoc[]
 
 
 === aiModelSpecification
-$ref of: xref:4.0.0@schemas:Tmf:AiModelSpecification.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:AiModelSpecification.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Service.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Service.adoc[]

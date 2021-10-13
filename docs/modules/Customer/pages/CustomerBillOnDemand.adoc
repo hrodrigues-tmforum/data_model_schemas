@@ -40,15 +40,15 @@ type: string
 === state
 description: State of the request to produce an off cycle bill: Possible values are: inProgress, rejected, done, terminatedWithError.
 
-$ref of: xref:4.0.0@schemas:Customer:CustomerBillOnDemandStateType.adoc[]
+$ref of: xref:v4.1@schemas:Customer:CustomerBillOnDemandStateType.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Customer:BillingAccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Customer:BillingAccountRef.adoc[]
 
 
 === customerBill
-$ref of: xref:4.0.0@schemas:Customer:CustomerBillRef.adoc[]
+$ref of: xref:v4.1@schemas:Customer:CustomerBillRef.adoc[]
 
 
 === description
@@ -64,7 +64,7 @@ type: string
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.1@schemas:Customer:RelatedParty.adoc[]
 
 
 = All Of 

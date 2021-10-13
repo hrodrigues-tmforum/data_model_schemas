@@ -34,7 +34,7 @@ type: string
 === value
 description: The value of the voucher.
 
-$ref of: xref:4.0.0@schemas:Customer:Quantity.adoc[]
+$ref of: xref:v4.1@schemas:Customer:Quantity.adoc[]
 
 
 === discount
@@ -60,4 +60,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:PaymentMethod.adoc[]
+This schema extends: xref:v4.1@schemas:Customer:PaymentMethod.adoc[]

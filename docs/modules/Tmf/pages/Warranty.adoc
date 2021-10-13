@@ -50,7 +50,7 @@ type: string
 
 
 === state
-$ref of: xref:4.0.0@schemas:Tmf:WarrantyStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:WarrantyStateType.adoc[]
 
 
 === statusChangeDate
@@ -60,7 +60,7 @@ type: string
 
 
 === validFor
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === warranty
@@ -76,8 +76,8 @@ type: array
 
 
 === warrantySpecification
-$ref of: xref:4.0.0@schemas:Tmf:WarrantySpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:WarrantySpecificationRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:MEntity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:MEntity.adoc[]

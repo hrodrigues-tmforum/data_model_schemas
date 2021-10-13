@@ -65,7 +65,7 @@ type: array
 === targetShipmentSchema
 description: Pointer to a schema that defines the target shipment
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TargetShipmentSchema.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:TargetShipmentSchema.adoc[]
 
 
 === attachment
@@ -90,7 +90,7 @@ type: array
 === validFor
 description: The period for which this REST resource is valid
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === shipmentSpecRelationship
@@ -101,4 +101,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:EngagedParty:Entity.adoc[]

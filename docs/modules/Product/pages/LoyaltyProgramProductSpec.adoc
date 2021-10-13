@@ -66,7 +66,7 @@ type: string
 
 
 === validFor
-$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Product:TimePeriod.adoc[]
 
 
 = All Of 

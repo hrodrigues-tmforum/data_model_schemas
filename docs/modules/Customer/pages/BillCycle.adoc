@@ -80,14 +80,14 @@ type: string
 
 
 === BillCycleSpecification
-$ref of: xref:4.0.0@schemas:Customer:BillCycleSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Customer:BillCycleSpecificationRef.adoc[]
 
 
 === validFor
 description: The period for which the billing cycle is valid (expressed in a formal formatted way)
 
-$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Customer:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Customer:Entity.adoc[]

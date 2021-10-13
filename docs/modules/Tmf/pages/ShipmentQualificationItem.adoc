@@ -40,7 +40,7 @@ type: string
 === shipment
 description: Shipment structure that allows to identify the Shipment&#x27;s composition, the Shipment Specification and the Shipment Characteristics.
 
-$ref of: xref:4.0.0@schemas:Tmf:ShipmentRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ShipmentRefOrValue.adoc[]
 
 
 === eligibilityUnavailabilityReason
@@ -48,4 +48,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

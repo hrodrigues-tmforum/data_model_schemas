@@ -43,7 +43,7 @@ description: It refers to the entity which is impacted by the promotion action.
  • When the Promotion type is 2: Discount, it is the product offering; 
  • When the Promotion type is 3: Reduction, it is the product offering also.
 
-$ref of: xref:4.0.0@schemas:Product:EntityRef.adoc[]
+$ref of: xref:v4.1@schemas:Product:EntityRef.adoc[]
 
 
 === actionType

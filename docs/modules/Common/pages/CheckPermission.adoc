@@ -22,19 +22,19 @@ The data model is defined as shown below:
 === entitlement
 description: Input: the action and function whose permission is being tested
 
-$ref of: xref:4.0.0@schemas:Common:Entitlement.adoc[]
+$ref of: xref:v4.1@schemas:Common:Entitlement.adoc[]
 
 
 === partyRole
 description: Input: The party role whose permission is being tested, this is preferable to user, since permissions can apply to party roles even when they are not logged into a software system, such as on an IVR, or in a voice call to a service rep
 
-$ref of: xref:4.0.0@schemas:Common:PartyRoleRef.adoc[]
+$ref of: xref:v4.1@schemas:Common:PartyRoleRef.adoc[]
 
 
 === user
 description: Input: Information about the security principal whose permission is being tested. Ignored if partyRole is supplied
 
-$ref of: xref:4.0.0@schemas:Common:UserinfoRef.adoc[]
+$ref of: xref:v4.1@schemas:Common:UserinfoRef.adoc[]
 
 
 === characteristic
@@ -50,4 +50,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

@@ -40,8 +40,8 @@ type: array
 === parentProblem
 description: The parent problem to which the problems are to be grouped
 
-$ref of: xref:4.0.0@schemas:Service:ServiceProblemRef.adoc[]
+$ref of: xref:v4.1@schemas:Service:ServiceProblemRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Service:Entity.adoc[]

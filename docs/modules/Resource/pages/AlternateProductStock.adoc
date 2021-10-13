@@ -34,26 +34,26 @@ type: string
 === alternateQuantity
 description: Alternate quantity available
 
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.1@schemas:Resource:Quantity.adoc[]
 
 
 === alternatePlace
 description: Alternate place where product stock is available
 
-$ref of: xref:4.0.0@schemas:Resource:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Resource:PlaceRefOrValue.adoc[]
 
 
 === alternateStock
 description: Alternate product stock available
 
-$ref of: xref:4.0.0@schemas:Resource:ProductStockRef.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ProductStockRef.adoc[]
 
 
 === alternateProduct
 description: Alternat product available
 
-$ref of: xref:4.0.0@schemas:Resource:ProductRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ProductRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Resource:Extensible.adoc[]

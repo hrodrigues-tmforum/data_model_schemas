@@ -93,7 +93,7 @@ type: string
 
 
 === geographicLocation
-$ref of: xref:4.0.0@schemas:Common:GeographicLocationRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Common:GeographicLocationRefOrValue.adoc[]
 
 
 === geographicSubAddress
@@ -101,4 +101,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Place.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Place.adoc[]

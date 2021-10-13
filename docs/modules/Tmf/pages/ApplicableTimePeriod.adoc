@@ -29,7 +29,7 @@ type: string
 description: The period of time for which the schedule is applicable. 
 Instance values are mutually exclusive with daysOfWeek values.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === rangeInterval
@@ -40,8 +40,8 @@ type: string
 
 
 === validFor
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

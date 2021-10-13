@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === threshold
-$ref of: xref:4.0.0@schemas:Resource:ThresholdRef.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ThresholdRef.adoc[]
 
 
 === direction

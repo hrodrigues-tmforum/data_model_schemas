@@ -40,7 +40,7 @@ type: string
 === resourceFunction
 description: Reference to the Resource Function that needs to be migrated
 
-$ref of: xref:4.0.0@schemas:Resource:ResourceFunctionRef.adoc[]
+$ref of: xref:v4.1@schemas:Resource:ResourceFunctionRef.adoc[]
 
 
 === cause
@@ -86,7 +86,7 @@ type: string
 
 
 === place
-$ref of: xref:4.0.0@schemas:Resource:PlaceRef.adoc[]
+$ref of: xref:v4.1@schemas:Resource:PlaceRef.adoc[]
 
 
 === characteristics
@@ -98,8 +98,8 @@ type: array
 === state
 description: Tracks the lifecycle status of the migrate request.
 
-$ref of: xref:4.0.0@schemas:Resource:TaskStateType.adoc[]
+$ref of: xref:v4.1@schemas:Resource:TaskStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Resource:Entity.adoc[]

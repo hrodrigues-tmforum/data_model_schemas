@@ -34,7 +34,7 @@ type: string
 === status
 description: Status of the topolology discover job
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TaskStateType.adoc[]
 
 
 === topologyProvider
@@ -46,8 +46,8 @@ type: array
 === graph
 description: The created topology graph
 
-$ref of: xref:4.0.0@schemas:Tmf:GraphRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:GraphRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

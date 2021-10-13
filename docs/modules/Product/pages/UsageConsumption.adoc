@@ -46,13 +46,13 @@ type: string
 === state
 description: State of the report report defined in the state engine
 
-$ref of: xref:4.0.0@schemas:Product:TaskStateType.adoc[]
+$ref of: xref:v4.1@schemas:Product:TaskStateType.adoc[]
 
 
 === validPeriod
 description: Validity period
 
-$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Product:TimePeriod.adoc[]
 
 
 === relatedParty
@@ -86,4 +86,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Product:Entity.adoc[]

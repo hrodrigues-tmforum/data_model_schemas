@@ -38,7 +38,7 @@ type: string
 
 
 === arpuAmount
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Money.adoc[]
 
 
 === dataCreationTimestamp
@@ -60,4 +60,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

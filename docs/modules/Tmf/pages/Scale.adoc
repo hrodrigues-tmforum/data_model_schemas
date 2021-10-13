@@ -40,7 +40,7 @@ type: string
 === resourceFunction
 description: Reference to the Resource Function that needs to be scaled
 
-$ref of: xref:4.0.0@schemas:Tmf:ResourceFunctionRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ResourceFunctionRef.adoc[]
 
 
 === scaleType
@@ -70,8 +70,8 @@ type: array
 === state
 description: Tracks the lifecycle status of the migrate request.
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TaskStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

@@ -28,7 +28,7 @@ type: array
 === channel
 description: The channel that origin the trouble ticket
 
-$ref of: xref:4.0.0@schemas:Tmf:ChannelRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ChannelRef.adoc[]
 
 
 === creationDate
@@ -125,7 +125,7 @@ type: string
 === status
 description: The current status of the trouble ticket
 
-$ref of: xref:4.0.0@schemas:Tmf:TroubleTicketStatusType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TroubleTicketStatusType.adoc[]
 
 
 === statusChange
@@ -159,4 +159,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

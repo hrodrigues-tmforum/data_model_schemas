@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === entity
 description: The entity being referred to
 
-$ref of: xref:4.0.0@schemas:Common:EntityRef.adoc[]
+$ref of: xref:v4.1@schemas:Common:EntityRef.adoc[]
 
 
 === role
@@ -40,12 +40,12 @@ type: string
 === validFor
 description: The period for which the entityRelationship is valid
 
-$ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Common:TimePeriod.adoc[]
 
 
 === associationSpec
-$ref of: xref:4.0.0@schemas:Common:AssociationSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Common:AssociationSpecificationRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Extensible.adoc[]

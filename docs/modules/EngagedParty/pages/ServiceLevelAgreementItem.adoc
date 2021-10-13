@@ -30,7 +30,7 @@ description: The product offering referred by this agreement item
 
 type: string
 
-$ref of: xref:4.0.0@schemas:EngagedParty:ProductOfferingRef.adoc[]
+$ref of: xref:v4.1@schemas:EngagedParty:ProductOfferingRef.adoc[]
 
 
 === termOrCondition
@@ -74,4 +74,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:EngagedParty:Extensible.adoc[]

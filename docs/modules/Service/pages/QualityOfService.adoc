@@ -28,20 +28,20 @@ type: string
 === validFor
 description: A valid duration of this object
 
-$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Service:TimePeriod.adoc[]
 
 
 === serviceLevelObjective
 description: corresponding service level objective
 
-$ref of: xref:4.0.0@schemas:Service:ServiceLevelObjectiveRef.adoc[]
+$ref of: xref:v4.1@schemas:Service:ServiceLevelObjectiveRef.adoc[]
 
 
 === serviceLevelSpecification
 description: correponding service level specification
 
-$ref of: xref:4.0.0@schemas:Service:ServiceLevelSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Service:ServiceLevelSpecificationRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Service:Extensible.adoc[]

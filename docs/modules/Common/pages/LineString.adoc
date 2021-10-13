@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === type
 
 === coordinates
-$ref of: xref:4.0.0@schemas:Common:GeoJSON.adoc[]
+$ref of: xref:v4.1@schemas:Common:GeoJSON.adoc[]
 
 
 = All Of 

@@ -32,11 +32,11 @@ type: string
 
 
 === productOfferingPrice
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingPriceRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductOfferingPriceRef.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === priceType
@@ -62,8 +62,8 @@ type: array
 
 
 === price
-$ref of: xref:4.0.0@schemas:Tmf:Price.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Price.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

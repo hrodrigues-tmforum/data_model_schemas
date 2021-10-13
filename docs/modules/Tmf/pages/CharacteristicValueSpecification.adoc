@@ -34,7 +34,7 @@ type: boolean
 === value
 description: A discrete value that the characteristic can take on, or the actual value of the characteristic
 
-$ref of: xref:4.0.0@schemas:Tmf:Any.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Any.adoc[]
 
 
 === unitOfMeasure
@@ -46,7 +46,7 @@ type: string
 === validFor
 description: The period of time for which a value is applicable.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === valueFrom
@@ -74,4 +74,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

@@ -44,7 +44,7 @@ type: string
 
 
 === status
-$ref of: xref:4.0.0@schemas:Tmf:SalesLeadStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:SalesLeadStateType.adoc[]
 
 
 === statusChangeDate
@@ -84,39 +84,39 @@ type: string
 
 
 === priority
-$ref of: xref:4.0.0@schemas:Tmf:SalesLeadPriorityType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:SalesLeadPriorityType.adoc[]
 
 
 === estimatedRevenue
 description: Estimation of the revenue if the salesLead turns into a sale.
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:Money.adoc[]
 
 
 === validFor
 description: The period for which the salesLead is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === marketingCampaign
 description: Campaign represents the carrier-initiated marketing activity which aims at the better recognition about its brand and offerings by the market.
 
-$ref of: xref:4.0.0@schemas:Tmf:MarketingCampaignRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:MarketingCampaignRef.adoc[]
 
 
 === marketSegment
 description: MarketSegment reference. A Market Segment is a grouping of Parties, GeographicAreas, SalesChannels, and so forth. MarketSegments are the target of MarketingCampaigns, ProductOfferings, ProductPromotions, ProductPlacements, and ProductPrograms from both internal and external (Competitors, and other Providers) perspective.
 
-$ref of: xref:4.0.0@schemas:Tmf:MarketSegmentRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:MarketSegmentRef.adoc[]
 
 
 === channel
-$ref of: xref:4.0.0@schemas:Tmf:ChannelRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ChannelRef.adoc[]
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === relatedParty
@@ -128,19 +128,19 @@ type: array
 
 
 === productSpecification
-$ref of: xref:4.0.0@schemas:Tmf:ProductSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductSpecificationRef.adoc[]
 
 
 === category
-$ref of: xref:4.0.0@schemas:Tmf:CategoryRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:CategoryRef.adoc[]
 
 
 === salesOpportunity
-$ref of: xref:4.0.0@schemas:Tmf:SalesOpportunityRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:SalesOpportunityRef.adoc[]
 
 
 === product
-$ref of: xref:4.0.0@schemas:Tmf:ProductRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ProductRef.adoc[]
 
 
 === note
@@ -148,4 +148,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

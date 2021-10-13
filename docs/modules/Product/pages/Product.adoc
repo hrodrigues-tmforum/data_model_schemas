@@ -24,7 +24,7 @@ type: array
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Product:BillingAccountRef.adoc[]
+$ref of: xref:v4.1@schemas:Product:BillingAccountRef.adoc[]
 
 
 === description
@@ -74,7 +74,7 @@ type: array
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Product:ProductOfferingRef.adoc[]
+$ref of: xref:v4.1@schemas:Product:ProductOfferingRef.adoc[]
 
 
 === productOrderItem
@@ -100,7 +100,7 @@ type: string
 
 
 === productSpecification
-$ref of: xref:4.0.0@schemas:Product:ProductSpecificationRef.adoc[]
+$ref of: xref:v4.1@schemas:Product:ProductSpecificationRef.adoc[]
 
 
 === productTerm
@@ -132,7 +132,7 @@ type: string
 === status
 description: Is the lifecycle status of the product.
 
-$ref of: xref:4.0.0@schemas:Product:ProductStatusType.adoc[]
+$ref of: xref:v4.1@schemas:Product:ProductStatusType.adoc[]
 
 
 === terminationDate
@@ -142,4 +142,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Product:Entity.adoc[]

@@ -64,7 +64,7 @@ type: string
 === validFor
 description: Date interval in which the payment method is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
 === @type
@@ -76,13 +76,13 @@ type: string
 === relatedParty
 description: Reference to the customer or party that owns that payment method or can use it.
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:RelatedParty.adoc[]
 
 
 === relatedPlace
 description: Reference to a place for billing or delivery address, if different to that of the related party.
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedPlace.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:RelatedPlace.adoc[]
 
 
 === account
@@ -92,4 +92,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

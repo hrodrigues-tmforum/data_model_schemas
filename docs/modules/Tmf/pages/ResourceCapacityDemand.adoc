@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === applicableTimePeriod
-$ref of: xref:4.0.0@schemas:Tmf:ApplicableTimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ApplicableTimePeriod.adoc[]
 
 
 === capacityDemandAmount
@@ -31,17 +31,17 @@ type: string
 
 
 === place
-$ref of: xref:4.0.0@schemas:Tmf:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:PlaceRefOrValue.adoc[]
 
 
 === resource
-$ref of: xref:4.0.0@schemas:Tmf:ResourceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ResourceRefOrValue.adoc[]
 
 
 === resourcePool
 description: manages resource capacity with the resource state.
 
-$ref of: xref:4.0.0@schemas:Tmf:ResourcePool.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:ResourcePool.adoc[]
 
 
 === resourceValueOffset
@@ -51,4 +51,4 @@ type: integer
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

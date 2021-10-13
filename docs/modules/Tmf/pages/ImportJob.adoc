@@ -64,7 +64,7 @@ type: string
 === status
 description: Status of the import job (not started, running, succeeded, failed)
 
-$ref of: xref:4.0.0@schemas:Tmf:JobStateType.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:JobStateType.adoc[]
 
 
 === url
@@ -74,4 +74,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

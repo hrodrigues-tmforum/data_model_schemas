@@ -20,8 +20,8 @@ The data model is defined as shown below:
 
 
 === testCase
-$ref of: xref:4.0.0@schemas:Tmf:TestCaseRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:TestCaseRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:TestExecution.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:TestExecution.adoc[]

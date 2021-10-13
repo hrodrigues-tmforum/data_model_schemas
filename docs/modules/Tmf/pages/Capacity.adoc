@@ -28,20 +28,20 @@ type: array
 === capacityAmount
 description: quantity that defines the Capacity.
 
-$ref of: xref:4.0.0@schemas:Tmf:CapacityAmount.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:CapacityAmount.adoc[]
 
 
 === capacitySpec
 description: capacity specification.
 
-$ref of: xref:4.0.0@schemas:Tmf:CapacitySpecRef.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:CapacitySpecRef.adoc[]
 
 
 === place
 description: Used to define a place useful for the resource. 
 Used to indicate reserved resources.
 
-$ref of: xref:4.0.0@schemas:Tmf:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Tmf:PlaceRefOrValue.adoc[]
 
 
 === plannedOrActualCapacity
@@ -57,4 +57,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

@@ -76,7 +76,7 @@ type: array
 === state
 description: State of the taskFlow: described in the state machine diagram.
 
-$ref of: xref:4.0.0@schemas:Common:TaskFlowStateType.adoc[]
+$ref of: xref:v4.1@schemas:Common:TaskFlowStateType.adoc[]
 
 
 === taskFlowRelationship
@@ -92,4 +92,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

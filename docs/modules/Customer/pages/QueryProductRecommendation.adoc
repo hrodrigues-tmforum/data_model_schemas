@@ -56,7 +56,7 @@ type: string
 === validFor
 description: The period in which the queryProductRecommendation is valid
 
-$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+$ref of: xref:v4.1@schemas:Customer:TimePeriod.adoc[]
 
 
 === productOrder
@@ -70,7 +70,7 @@ type: array
 === place
 description: The place which the queryProductRecommendation is related to
 
-$ref of: xref:4.0.0@schemas:Customer:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.1@schemas:Customer:RelatedPlaceRefOrValue.adoc[]
 
 
 === channel
@@ -90,7 +90,7 @@ type: array
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.1@schemas:Customer:RelatedParty.adoc[]
 
 
 === recommendationItem
@@ -100,8 +100,8 @@ type: array
 === state
 description: State of the queryProductRecommendation defined in the state engine
 
-$ref of: xref:4.0.0@schemas:Customer:TaskStateType.adoc[]
+$ref of: xref:v4.1@schemas:Customer:TaskStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.1@schemas:Customer:Entity.adoc[]
