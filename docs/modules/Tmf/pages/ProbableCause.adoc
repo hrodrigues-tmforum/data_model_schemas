@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 This resource represents Probable Cause values defined in ITU-T X.733 and 3GPP TS 32.111-2 Annex B.
 
 

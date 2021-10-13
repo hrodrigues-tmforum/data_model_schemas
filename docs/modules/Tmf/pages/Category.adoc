@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other categories and/or product offerings, resource or service candidates.
 
 

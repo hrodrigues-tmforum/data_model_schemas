@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 The settlement is about transferring money receiving by a CSP to a partner. The settlement is notified to the partner with a settlement note advice containing details in settlement lines.
 
 

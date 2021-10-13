@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 A bank card method of payment.
 
 

@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 Lists the possible severities that can be allocated to an Alarm. The values are consistent with ITU-T Recommendation X.733.
 Once an alarm has been cleared, its perceived severity is set to &#x27;cleared&#x27; and can no longer be set.
 

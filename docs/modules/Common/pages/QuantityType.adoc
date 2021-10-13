@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Representation of a quantity of something. I can also be used to represent a quantity range
 
 

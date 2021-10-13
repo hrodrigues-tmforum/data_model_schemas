@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 Identifies the details of the threshold that has been crossed.
 
 

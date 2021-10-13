@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 BundledProductOffering Reference. A type of ProductOffering that belongs to a grouping of ProductOfferings made available to the market. It inherits of all attributes of ProductOffering.
 
 

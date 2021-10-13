@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 AdjustProductStock is used to log and execute on or several Product Stock level change
 
 

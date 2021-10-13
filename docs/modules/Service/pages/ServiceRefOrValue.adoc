@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 A Service to be created defined by value or existing defined by reference. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the Service entity and not the RelatedServiceRefOrValue class itself
 
 

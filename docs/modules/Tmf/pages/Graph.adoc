@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Graph is a directed graph representing edges connecting vertices.
 
 

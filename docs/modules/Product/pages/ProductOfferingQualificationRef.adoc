@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 It&#x27;s a productOfferingQualification that has been executed previously
 
 

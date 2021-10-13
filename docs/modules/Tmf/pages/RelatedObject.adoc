@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Defines objects linked with trouble ticket.
 
 

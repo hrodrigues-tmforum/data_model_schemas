@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 This is a task resource allowing assessment of the risks associated with a product offering. For example, the risk associated with iPhone X will probably be higher than the risk for a battery
 
 

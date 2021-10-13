@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Entity reference schema to be use for all entityRef class OrValue to provide information via POST
 
 

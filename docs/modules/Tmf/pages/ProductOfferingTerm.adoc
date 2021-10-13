@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 A condition under which a ProductOffering is made available to Customers. For instance, a productOffering can be offered with multiple commitment periods.
 
 

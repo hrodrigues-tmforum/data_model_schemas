@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 A partnership represents a formalized collaboration between various parties, each party playing a role in the partnership. The parties playing a role in the partnership represented by the Partner entity. The structure of a partnership is specified by a PartnershipSpecification which contain all the information for the setup of the partnership, including the list of identified roles and the agreement that should apply.
 
 

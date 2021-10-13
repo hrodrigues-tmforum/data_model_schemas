@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 Contains the conditions and benefits of the promotion toan eligible party
 
 

@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 The Balance Deduct task resource is a detailed description of deduction operation. If balanceReserve Resource ID is contained in the deduct request message, the reserved balance will be performed deduct operation (if part of the reserved balance is deducted, the remain amount will be released); if balanceReserve Resource ID is not contained in the deduct request message, the balance will be deducted directly.
 
 

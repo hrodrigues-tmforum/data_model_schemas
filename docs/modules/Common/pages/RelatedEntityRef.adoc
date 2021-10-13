@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 A reference to an entity, where the type of the entity is not known in advance.
 
 

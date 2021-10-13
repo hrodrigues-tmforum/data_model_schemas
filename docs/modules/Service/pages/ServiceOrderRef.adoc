@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 Service Order reference. Useful to understand the which was the Service order through which the service was instantiated in the service inventory
 
 

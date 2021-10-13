@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 Some consequences for the provider of the Service are resulted when the service level objective
 does not meet.
 

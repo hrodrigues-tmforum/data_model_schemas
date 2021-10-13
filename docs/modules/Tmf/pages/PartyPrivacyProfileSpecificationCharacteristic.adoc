@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 A characteristic of the party privacy profile, whose value(s) would be supplied at runtime. For example, email address
 
 

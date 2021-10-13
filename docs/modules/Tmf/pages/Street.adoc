@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 A street is a road in a city or locality that has buildings that are usually close together along one or both sides
 
 

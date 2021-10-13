@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 A trouble ticket represents a record used for reporting and managing the resolution of resource problems
 
 

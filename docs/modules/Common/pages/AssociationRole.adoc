@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 This embedded object represents the role and type of each entity involved in a relationship.
 
 

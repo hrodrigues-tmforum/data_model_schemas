@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Used when an API throws an Error, typically with a HTTP error response-code (3xx, 4xx, 5xx)
 
 

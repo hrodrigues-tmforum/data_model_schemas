@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 Categorizes the alarm (X.733 8.1.1, 3GPP TS 32.111-2 Annex A)
 
 

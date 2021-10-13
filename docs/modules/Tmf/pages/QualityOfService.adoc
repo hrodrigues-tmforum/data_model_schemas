@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 This object represents expected quality of service in terms of quality key index (KQI or KPI) with their associated service level objective and specification
 
 

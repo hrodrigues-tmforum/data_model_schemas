@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Container for a GeoJSON Point: A single position
 
 

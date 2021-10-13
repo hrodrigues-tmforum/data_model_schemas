@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 A payment method using an internal account that could be billed directly to perform the payment
 
 
