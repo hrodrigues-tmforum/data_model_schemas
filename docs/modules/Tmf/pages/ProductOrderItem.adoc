@@ -95,5 +95,7 @@ description: State of the order item : described in the state machine diagram
 $ref of: xref:v4.1@schemas:Tmf:ProductOrderItemStateType.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

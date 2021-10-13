@@ -61,5 +61,7 @@ description: The actual certificate contents, if such is supplied by the issuing
 $ref of: xref:v4.1@schemas:Tmf:AttachmentRefOrValue.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

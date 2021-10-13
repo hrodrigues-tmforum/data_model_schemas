@@ -121,5 +121,7 @@ description: Used to provide information about any other entity with relation to
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:BalanceAction.adoc[]

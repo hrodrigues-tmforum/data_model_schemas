@@ -37,5 +37,7 @@ description: he amount of capacity that is planned to be consumed or has been co
 $ref of: xref:v4.1@schemas:Resource:ResourceCapacityDemand.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Resource:Extensible.adoc[]

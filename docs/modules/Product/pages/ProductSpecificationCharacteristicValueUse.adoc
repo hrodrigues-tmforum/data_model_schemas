@@ -73,5 +73,7 @@ description: A ProductSpecification is a detailed description of a tangible or i
 $ref of: xref:v4.1@schemas:Product:ProductSpecificationRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Product:Extensible.adoc[]

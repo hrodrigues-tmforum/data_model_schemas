@@ -85,5 +85,7 @@ description: A preconfigured value that describes a reserve type which determine
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:BalanceAction.adoc[]

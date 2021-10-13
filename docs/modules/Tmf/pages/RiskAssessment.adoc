@@ -43,6 +43,8 @@ description: The result of the risk assessment, output from the task
 $ref of: xref:v4.1@schemas:Tmf:RiskAssessmentResult.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Addressable.adoc[]
 This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

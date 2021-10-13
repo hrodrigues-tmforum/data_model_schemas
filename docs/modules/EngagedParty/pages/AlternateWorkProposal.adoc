@@ -35,5 +35,7 @@ description: Identifier of an alternate work proposal
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:EngagedParty:Extensible.adoc[]

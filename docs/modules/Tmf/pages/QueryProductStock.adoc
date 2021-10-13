@@ -85,5 +85,7 @@ description: A list of related party references (RelatedParty [*]). A related pa
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

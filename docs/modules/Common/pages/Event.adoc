@@ -99,5 +99,7 @@ description: The event linked to the involved resource object
 $ref of: xref:v4.1@schemas:Common:Any.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

@@ -55,4 +55,6 @@ description: Related payment to this operation.
 $ref of: xref:v4.1@schemas:Tmf:PaymentRefOrValue.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+

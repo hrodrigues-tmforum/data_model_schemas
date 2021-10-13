@@ -35,5 +35,7 @@ description: The list of products indirectly referred by this agreement item (si
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

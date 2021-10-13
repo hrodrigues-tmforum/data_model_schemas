@@ -49,4 +49,6 @@ type: string
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

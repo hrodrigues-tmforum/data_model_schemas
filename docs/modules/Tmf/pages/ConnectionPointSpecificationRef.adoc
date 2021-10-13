@@ -25,5 +25,7 @@ description: Connection point specification version
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:EntityRef.adoc[]

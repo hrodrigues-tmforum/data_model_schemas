@@ -31,5 +31,7 @@ description: Used to define a set of attributes, each of which can be assigned t
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:CharacteristicSpecificationBase.adoc[]

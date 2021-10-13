@@ -37,5 +37,7 @@ description: The period of time during which the term or condition of the agreem
 $ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

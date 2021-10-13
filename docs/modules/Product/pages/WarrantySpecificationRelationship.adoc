@@ -37,5 +37,7 @@ description: The association role for this entity specification
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Product:Entity.adoc[]

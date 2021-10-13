@@ -81,5 +81,7 @@ description: This data structure captures the product information.
 $ref of: xref:v4.1@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

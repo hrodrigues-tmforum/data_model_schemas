@@ -82,5 +82,7 @@ $ref of: xref:v4.1@schemas:Product:ProductOfferingRef.adoc[]
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Product:Entity.adoc[]

@@ -49,5 +49,7 @@ description: Size unit (in bytes by default)
 type: integer
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

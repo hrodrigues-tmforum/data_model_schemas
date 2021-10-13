@@ -79,5 +79,7 @@ description: Tag value: [usage]: the usage is always rated outside a usage bundl
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

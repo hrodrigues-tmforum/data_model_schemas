@@ -23,6 +23,8 @@ The data model is defined as shown below:
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:EngagedParty:Party.adoc[]
 This schema extends: xref:v4.1@schemas:EngagedParty:PartyRef.adoc[]

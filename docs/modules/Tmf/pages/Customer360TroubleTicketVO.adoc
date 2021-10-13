@@ -128,5 +128,7 @@ description: represent a business type of the trouble ticket e.g. incident, comp
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

@@ -97,5 +97,7 @@ description: A list of service spec char relationships (ServiceSpecCharRelations
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Service:Entity.adoc[]

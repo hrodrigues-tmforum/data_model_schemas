@@ -31,5 +31,7 @@ description: An aggregation, migration, substitution, dependency or exclusivity 
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Product:CharacteristicSpecificationBase.adoc[]

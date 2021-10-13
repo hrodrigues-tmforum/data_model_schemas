@@ -73,5 +73,7 @@ description: a strucuture used to describe a price alteration
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Customer:Entity.adoc[]

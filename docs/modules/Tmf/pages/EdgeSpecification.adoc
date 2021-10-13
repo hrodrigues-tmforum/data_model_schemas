@@ -68,6 +68,8 @@ description: A characteristic quality or distinctive feature of an EdgeSpecifica
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]
 This schema extends: xref:v4.1@schemas:Tmf:Addressable.adoc[]

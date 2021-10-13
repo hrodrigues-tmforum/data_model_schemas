@@ -170,5 +170,7 @@ description: Attachments that may be of relevance to this shipment, such as ship
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

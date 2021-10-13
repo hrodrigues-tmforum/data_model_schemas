@@ -145,5 +145,7 @@ description: The period for which the SLA is valid  (A period of time, either as
 $ref of: xref:v4.1@schemas:Tmf:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

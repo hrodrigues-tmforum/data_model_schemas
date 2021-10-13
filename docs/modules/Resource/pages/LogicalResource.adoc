@@ -25,5 +25,7 @@ description: the value of the logical resource. E.g &#x27;0746712345&#x27; for  
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Resource:Resource.adoc[]

@@ -31,5 +31,7 @@ description: A list of (typically) high criticality characteristics whose chosen
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:EngagedParty:Agreement.adoc[]

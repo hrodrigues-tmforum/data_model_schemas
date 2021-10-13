@@ -37,5 +37,7 @@ description: The entity being referred to
 $ref of: xref:v4.1@schemas:Common:EntityRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Common:Extensible.adoc[]

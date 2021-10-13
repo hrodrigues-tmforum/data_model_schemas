@@ -43,5 +43,7 @@ description: URI of documentation describing the error
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Common:Extensible.adoc[]

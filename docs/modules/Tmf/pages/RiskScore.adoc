@@ -31,5 +31,7 @@ description: The name of the risk
 $ref of: xref:v4.1@schemas:Tmf:RiskType.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

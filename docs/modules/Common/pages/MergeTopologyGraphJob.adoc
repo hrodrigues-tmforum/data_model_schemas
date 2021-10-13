@@ -49,5 +49,7 @@ description: The created topology graph
 $ref of: xref:v4.1@schemas:Common:GraphRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

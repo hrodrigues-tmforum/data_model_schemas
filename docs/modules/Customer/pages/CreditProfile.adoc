@@ -43,5 +43,7 @@ description: The period for which the profile is valid
 $ref of: xref:v4.1@schemas:Customer:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Customer:Entity.adoc[]

@@ -23,5 +23,7 @@ The data model is defined as shown below:
 $ref of: xref:v4.1@schemas:Tmf:ResourceReservationRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:CancelReservation.adoc[]

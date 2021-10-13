@@ -31,5 +31,7 @@ description: The connection point (SAP) of the associated resource function (opt
 $ref of: xref:v4.1@schemas:Resource:ConnectionPointRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Resource:EntityRef.adoc[]

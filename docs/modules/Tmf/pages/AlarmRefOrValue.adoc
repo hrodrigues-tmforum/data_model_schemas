@@ -19,6 +19,8 @@ A JSON Schema corresponding to this data model can be found https://tmforum.org[
 The data model is defined as shown below:
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:AlarmRef.adoc[]
 This schema extends: xref:v4.1@schemas:Tmf:Alarm.adoc[]

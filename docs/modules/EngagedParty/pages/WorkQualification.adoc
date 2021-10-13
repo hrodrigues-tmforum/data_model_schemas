@@ -77,5 +77,7 @@ description: State of the workQualification (acknowledged, inProgress, terminate
 $ref of: xref:v4.1@schemas:EngagedParty:TaskStateType.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:EngagedParty:Entity.adoc[]

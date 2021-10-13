@@ -31,5 +31,7 @@ description: A reference to the related resource graph.
 $ref of: xref:v4.1@schemas:Resource:ResourceGraphRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Resource:Entity.adoc[]

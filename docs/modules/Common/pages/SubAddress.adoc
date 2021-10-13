@@ -84,5 +84,7 @@ description: The type of subaddress : it can be a subunit or a private street
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

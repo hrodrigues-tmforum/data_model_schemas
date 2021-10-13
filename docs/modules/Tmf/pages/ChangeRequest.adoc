@@ -208,5 +208,7 @@ description: The place at which the change request occurred
 $ref of: xref:v4.1@schemas:Tmf:GeographicAddressRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

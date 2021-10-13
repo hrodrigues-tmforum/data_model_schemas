@@ -116,6 +116,8 @@ description: A migration, substitution, dependency or exclusivity relationship b
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Resource:Extensible.adoc[]
 This schema extends: xref:v4.1@schemas:Resource:Addressable.adoc[]

@@ -49,5 +49,7 @@ description: The list of roles specifications a engaged party will be able to pl
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

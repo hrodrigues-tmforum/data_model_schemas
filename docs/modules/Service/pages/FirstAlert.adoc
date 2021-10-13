@@ -37,5 +37,7 @@ description: Type of the object
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Service:Entity.adoc[]

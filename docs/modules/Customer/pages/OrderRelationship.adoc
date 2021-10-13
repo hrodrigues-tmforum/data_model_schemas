@@ -33,5 +33,7 @@ description: The type of order relationship
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Customer:Entity.adoc[]

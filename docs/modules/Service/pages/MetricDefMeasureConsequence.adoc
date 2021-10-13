@@ -54,5 +54,7 @@ description: A valid duration of a thing.
 $ref of: xref:v4.1@schemas:Service:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Service:Extensible.adoc[]

@@ -57,5 +57,7 @@ description: Identifier for a voucher when the topup can be performed by this me
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:BalanceAction.adoc[]

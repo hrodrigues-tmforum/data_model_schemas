@@ -109,5 +109,7 @@ description: Status of the bill
 $ref of: xref:v4.1@schemas:Customer360:CustomerBillStateType.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Customer360:Entity.adoc[]

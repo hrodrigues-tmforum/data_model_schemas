@@ -74,6 +74,8 @@ description: Any constraints in this association
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Addressable.adoc[]
 This schema extends: xref:v4.1@schemas:Tmf:Extensible.adoc[]

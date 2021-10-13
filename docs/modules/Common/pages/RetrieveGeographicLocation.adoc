@@ -47,5 +47,7 @@ $ref of: xref:v4.1@schemas:Common:GeographicLocation.adoc[]
 $ref of: xref:v4.1@schemas:Common:Object.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Common:Entity.adoc[]

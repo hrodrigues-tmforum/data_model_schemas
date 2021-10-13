@@ -43,5 +43,7 @@ description: Any additional characterization of the Area, defined for the Area t
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

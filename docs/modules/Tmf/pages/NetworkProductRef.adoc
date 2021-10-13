@@ -49,5 +49,7 @@ description: Public number associated to the product (msisdn number for mobile l
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Tmf:Entity.adoc[]

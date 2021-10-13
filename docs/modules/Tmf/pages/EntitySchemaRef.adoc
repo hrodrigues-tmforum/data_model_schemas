@@ -31,4 +31,6 @@ description: Class type of the target entity
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

@@ -55,5 +55,7 @@ description: The period for which this feature spoecification relationship is va
 $ref of: xref:v4.1@schemas:Common:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.1@schemas:Common:Extensible.adoc[]
