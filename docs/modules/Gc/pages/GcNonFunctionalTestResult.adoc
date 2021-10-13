@@ -28,3 +28,4 @@ $ref of: xref:4.0.0@schemas:Gc:NonFunctionalTestExecutionRefOrValue.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Core:Entity.adoc[]

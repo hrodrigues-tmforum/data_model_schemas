@@ -32,3 +32,6 @@ type: string
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Gc:GcAttachmentRef.adoc[]
+This schema extends: xref:4.0.0@schemas:Core:EntityRef.adoc[]
+This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]

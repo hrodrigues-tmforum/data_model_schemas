@@ -76,3 +76,5 @@ $ref of: xref:4.0.0@schemas:Tmf:OrganizationParentRelationship.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Gc:GcParty.adoc[]
+This schema extends: xref:4.0.0@schemas:Gc:GcEntity.adoc[]

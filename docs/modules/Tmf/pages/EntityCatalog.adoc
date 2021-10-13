@@ -64,3 +64,5 @@ type: string
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Gc:GcAddressable.adoc[]
+This schema extends: xref:4.0.0@schemas:Gc:GcExtensible.adoc[]

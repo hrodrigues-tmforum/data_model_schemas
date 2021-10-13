@@ -20,3 +20,6 @@ The data model is defined as shown below:
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Gc:GcProductOfferingRef.adoc[]
+This schema extends: xref:4.0.0@schemas:Core:EntityRef.adoc[]
+This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]

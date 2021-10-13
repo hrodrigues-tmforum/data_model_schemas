@@ -24,3 +24,5 @@ $ref of: xref:4.0.0@schemas:Tmf:TestSuiteRef.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Gc:GcTestExecution.adoc[]
+This schema extends: xref:4.0.0@schemas:Gc:GcTestExecutionRef.adoc[]

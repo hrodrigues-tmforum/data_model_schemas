@@ -38,3 +38,5 @@ type: string
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Gc:GcRelatedOrderItem.adoc[]
+This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]

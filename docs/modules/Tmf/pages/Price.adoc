@@ -44,3 +44,5 @@ type: number
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Gc:GcPrice.adoc[]
+This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]

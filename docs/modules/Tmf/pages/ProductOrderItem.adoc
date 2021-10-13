@@ -78,3 +78,5 @@ type: array
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Gc:GcProductOrderItem.adoc[]
+This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
