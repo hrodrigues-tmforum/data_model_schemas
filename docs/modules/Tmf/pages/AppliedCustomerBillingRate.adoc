@@ -42,7 +42,7 @@ type: boolean
 
 
 === bill
-$ref of: xref:4.0.0@schemas:Tmf:CustomerBillRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:CustomerBillRef.adoc[]
 
 
 === date
@@ -66,15 +66,15 @@ type: string
 === periodCoverage
 description: periodCoverage for RecurringCharge (RC) indicating the RC coverage period dates for different purposes, such as RC proration, display on bill, GL reporting, etc. periodCoverage for OC start and end date will be the same
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 === taxExcludedAmount
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Money.adoc[]
 
 
 === taxIncludedAmount
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Money.adoc[]
 
 
 === appliedBillingRateType
@@ -84,13 +84,13 @@ type: string
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === product
 description: Usually this information should be provided by the PRODUCT, which implies that there is a valid reference to product. In this case, this property should be empty. For all other situations, a text or structured info could be provided using this property. Regular modelling would suggest tu use the reforvalue pattern for this case. It is not choosen here because it would generate declarational dependencies which would be hard to maintain.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductRef.adoc[]
 
 
 === characteristic
@@ -98,4 +98,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

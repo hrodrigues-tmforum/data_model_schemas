@@ -52,7 +52,7 @@ type: string
 === product
 description: Network product reference for which the usage consumption report is requested
 
-$ref of: xref:4.0.0@schemas:Tmf:NetworkProductRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:NetworkProductRef.adoc[]
 
 
 === relatedParty
@@ -70,13 +70,13 @@ type: string
 === usageConsumptionReport
 description: References of the usage consumption report (given when it has been calculated and the status of the request is done)
 
-$ref of: xref:4.0.0@schemas:Tmf:UsageConsumptionReportRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:UsageConsumptionReportRef.adoc[]
 
 
 === validPeriod
 description: Validity period
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 

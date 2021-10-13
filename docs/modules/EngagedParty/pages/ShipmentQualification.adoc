@@ -64,16 +64,16 @@ type: array
 === state
 description: State of the shipmentQualification (acknowledged, inProgress, terminatedWithError, done)
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TaskStateType.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:TaskStateType.adoc[]
 
 
 === placeFrom
-$ref of: xref:4.0.0@schemas:EngagedParty:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:PlaceRefOrValue.adoc[]
 
 
 === placeTo
-$ref of: xref:4.0.0@schemas:EngagedParty:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:PlaceRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:EngagedParty:Entity.adoc[]

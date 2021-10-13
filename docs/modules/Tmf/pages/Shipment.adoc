@@ -76,13 +76,13 @@ type: string
 === weight
 description: Weight of the shipping package/parcel
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Quantity.adoc[]
 
 
 === shippingInstruction
 description: Shipping instructions, usually relevant for the carrier.
 
-$ref of: xref:4.0.0@schemas:Tmf:ShippingInstruction.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ShippingInstruction.adoc[]
 
 
 === characteristic
@@ -100,7 +100,7 @@ type: array
 === shipmentPrice
 description: Shipment price
 
-$ref of: xref:4.0.0@schemas:Tmf:Price.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Price.adoc[]
 
 
 === note
@@ -112,31 +112,31 @@ type: array
 === shipmentTracking
 description: A reference number usually provided by the delivery partner(carrier) used to identify and track shipments across the delivery network
 
-$ref of: xref:4.0.0@schemas:Tmf:ShipmentTrackingRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ShipmentTrackingRef.adoc[]
 
 
 === placeFrom
 description: Source location of the package. E.g. warehouse or shop location
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
 
 
 === placeTo
 description: Destination of the package. E.g. customer home address
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
 
 
 === relatedShipment
 description: An existing shipment that has some form of correlation with the given shipment
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedShipment.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedShipment.adoc[]
 
 
 === paymentMethod
 description: Payment method to be used when delivering the package(e.g.: cash, credit card, ). Structure including at least attribute name. Notice that the use of a voucher can be managed as a specific methodtype, where he voucher code can be passed as value.
 
-$ref of: xref:4.0.0@schemas:Tmf:PaymentMethodRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:PaymentMethodRef.adoc[]
 
 
 === externalIdentifier
@@ -148,7 +148,7 @@ type: array
 === shipmentSpecification
 description: A set of characteristics to describe the shipment
 
-$ref of: xref:4.0.0@schemas:Tmf:ShipmentSpecificationRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ShipmentSpecificationRefOrValue.adoc[]
 
 
 === relatedParty
@@ -158,4 +158,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

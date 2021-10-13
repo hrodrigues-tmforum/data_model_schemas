@@ -36,12 +36,12 @@ type: array
 
 
 === violation
-$ref of: xref:4.0.0@schemas:Tmf:Violation.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Violation.adoc[]
 
 
 === sla
-$ref of: xref:4.0.0@schemas:Tmf:SLARef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:SLARef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

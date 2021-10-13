@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === consumptionPeriod
 description: Consumption counter period between a start date time and an end date time. For prepaid bucket, the period of counters is between the start date of the bucket and the effective date of the usage consumption report generation. For postpaid bucket, the period of counters is between the last bill date and the effective date of the usage consumption report generation.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 === counterType
@@ -40,19 +40,19 @@ type: string
 === product
 description: Public identifier associated to the product for which the consumption counter is detailed. If the level of the counter is global (i.e. concerning all the network products), the list of them is not specified. It can be found through the network products listed in the bucket sub-resource
 
-$ref of: xref:4.0.0@schemas:Tmf:NetworkProductRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:NetworkProductRef.adoc[]
 
 
 === user
 description: Reference of the user for which the consumption counter is detailed. If the level of the counter is global (i.e. concerning all the users), the list of them is not specified. It can be found through the users listed in the network products of the bucket sub-resource
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === value
 description: Numeric value of the bucket counter in a given unit
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Quantity.adoc[]
 
 
 === valueName
@@ -62,4 +62,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

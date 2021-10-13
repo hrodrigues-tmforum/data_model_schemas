@@ -22,8 +22,8 @@ The data model is defined as shown below:
 === partyRole
 description: The party role for which the assessment is to be carried out, must be supplied as input to the task, with the attribute id populated
 
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Customer:RelatedParty.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Customer:Entity.adoc[]

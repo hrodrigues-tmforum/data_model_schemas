@@ -34,8 +34,8 @@ type: array
 === validFor
 description: Period for which this result is considered valid and not stale
 
-$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Customer:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Customer:Extensible.adoc[]

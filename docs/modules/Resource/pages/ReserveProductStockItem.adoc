@@ -28,38 +28,38 @@ type: string
 === quantityRequested
 description: Quantity requested for this Product
 
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Resource:Quantity.adoc[]
 
 
 === quantityReserved
 description: Quantity reserved for this Product
 
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Resource:Quantity.adoc[]
 
 
 === reserveProductStockState
 description: State of the ReserveProductStockItem (acknowledged, inProgress, failed, done, cancelled).
 
-$ref of: xref:4.0.0@schemas:Resource:TaskStateType.adoc[]
+$ref of: xref:v4.2@schemas:Resource:TaskStateType.adoc[]
 
 
 === productStockRequested
 description: Identifier of the Product Stock requested for this reservation item.
 
-$ref of: xref:4.0.0@schemas:Resource:ProductStockRef.adoc[]
+$ref of: xref:v4.2@schemas:Resource:ProductStockRef.adoc[]
 
 
 === productStockReserved
 description: Identifier of the Product Stock used for this reservation item.
 
-$ref of: xref:4.0.0@schemas:Resource:ProductStockRef.adoc[]
+$ref of: xref:v4.2@schemas:Resource:ProductStockRef.adoc[]
 
 
 === requestedProduct
 description: Requested product for reservation - a Product configuration could be passed
 
-$ref of: xref:4.0.0@schemas:Resource:ProductRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Resource:ProductRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Resource:Extensible.adoc[]

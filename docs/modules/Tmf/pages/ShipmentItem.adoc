@@ -28,7 +28,7 @@ type: string
 === action
 description: The action to be carried out on the shipment item. Can be: add, modify, delete, noChange
 
-$ref of: xref:4.0.0@schemas:Tmf:ShipmentItemActionType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ShipmentItemActionType.adoc[]
 
 
 === quantity
@@ -44,11 +44,11 @@ type: string
 
 
 === productReservationRef
-$ref of: xref:4.0.0@schemas:Tmf:ReserveProductStockRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ReserveProductStockRef.adoc[]
 
 
 === productStockRef
-$ref of: xref:4.0.0@schemas:Tmf:ProductStockRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductStockRef.adoc[]
 
 
 === externalIdentifier
@@ -60,7 +60,7 @@ type: array
 === shipmentItemPrice
 description: Item price details
 
-$ref of: xref:4.0.0@schemas:Tmf:Price.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Price.adoc[]
 
 
 === characteristic
@@ -72,8 +72,8 @@ type: array
 === product
 description: This data structure captures the product information.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

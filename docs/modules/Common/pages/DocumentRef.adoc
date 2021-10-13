@@ -38,4 +38,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:EntityRef.adoc[]
+This schema extends: xref:v4.2@schemas:Common:EntityRef.adoc[]

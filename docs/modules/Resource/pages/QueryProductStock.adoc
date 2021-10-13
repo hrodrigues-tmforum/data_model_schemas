@@ -64,7 +64,7 @@ type: boolean
 === state
 description: State of the CheckProductStock (acknowledged, inProgress, terminatedWithError, done)
 
-$ref of: xref:4.0.0@schemas:Resource:TaskStateType.adoc[]
+$ref of: xref:v4.2@schemas:Resource:TaskStateType.adoc[]
 
 
 === queryProductStockItem
@@ -76,7 +76,7 @@ type: array
 === searchCriteria
 description: Criterias used to perform the query product stock - To be provided in the request.
 
-$ref of: xref:4.0.0@schemas:Resource:ProductStock.adoc[]
+$ref of: xref:v4.2@schemas:Resource:ProductStock.adoc[]
 
 
 === relatedParty
@@ -86,4 +86,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Resource:Entity.adoc[]

@@ -48,11 +48,11 @@ type: string
 === validFor
 description: Date interval in which the payment method is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === account
@@ -60,4 +60,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

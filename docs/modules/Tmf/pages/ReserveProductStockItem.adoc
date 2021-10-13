@@ -28,38 +28,38 @@ type: string
 === quantityRequested
 description: Quantity requested for this Product
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Quantity.adoc[]
 
 
 === quantityReserved
 description: Quantity reserved for this Product
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Quantity.adoc[]
 
 
 === reserveProductStockState
 description: State of the ReserveProductStockItem (acknowledged, inProgress, failed, done, cancelled).
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TaskStateType.adoc[]
 
 
 === productStockRequested
 description: Identifier of the Product Stock requested for this reservation item.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductStockRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductStockRef.adoc[]
 
 
 === productStockReserved
 description: Identifier of the Product Stock used for this reservation item.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductStockRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductStockRef.adoc[]
 
 
 === requestedProduct
 description: Requested product for reservation - a Product configuration could be passed
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

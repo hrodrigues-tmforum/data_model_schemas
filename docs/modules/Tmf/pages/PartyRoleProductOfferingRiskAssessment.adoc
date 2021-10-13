@@ -22,14 +22,14 @@ The data model is defined as shown below:
 === partyRole
 description: The party or party role for which the assessment is to be carried out, must be supplied as input to the task, with the attribute id populated
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === productOffering
 description: The product offering for which the assessment is to be carried out, must be supplied as input to the task, with the attribute id populated
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.json.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductOfferingRef.json.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:RiskAssessment.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:RiskAssessment.adoc[]

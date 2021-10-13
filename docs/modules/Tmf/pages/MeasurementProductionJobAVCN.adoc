@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === granularity
-$ref of: xref:4.0.0@schemas:Tmf:ExecutionState.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ExecutionState.adoc[]
 
 
 === monitoredInstancesCriteria
@@ -38,7 +38,7 @@ type: string
 
 
 === adminState
-$ref of: xref:4.0.0@schemas:Tmf:AdministrativeState.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:AdministrativeState.adoc[]
 
 
 === jobPriority
@@ -48,7 +48,7 @@ type: integer
 
 
 === executionState
-$ref of: xref:4.0.0@schemas:Tmf:ExecutionState.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ExecutionState.adoc[]
 
 
 === scheduleDefinition

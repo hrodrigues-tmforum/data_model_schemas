@@ -42,7 +42,7 @@ description: Additional attributes required to perform the action. These attribu
 
 type: object
 
-$ref of: xref:4.0.0@schemas:Product:Any.adoc[]
+$ref of: xref:v4.2@schemas:Product:Any.adoc[]
 
 
 === body
@@ -50,7 +50,7 @@ description: The body if the request that is made when this action i executed. T
 
 type: object
 
-$ref of: xref:4.0.0@schemas:Product:Any.adoc[]
+$ref of: xref:v4.2@schemas:Product:Any.adoc[]
 
 
 === headers
@@ -58,7 +58,7 @@ description: The HTTP headers that is added to the action call.
 
 type: object
 
-$ref of: xref:4.0.0@schemas:Product:Any.adoc[]
+$ref of: xref:v4.2@schemas:Product:Any.adoc[]
 
 
 === version

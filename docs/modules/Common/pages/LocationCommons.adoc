@@ -20,11 +20,11 @@ The data model is defined as shown below:
 
 
 === location
-$ref of: xref:4.0.0@schemas:Common:GeographicLocation.adoc[]
+$ref of: xref:v4.2@schemas:Common:GeographicLocation.adoc[]
 
 
 === address
-$ref of: xref:4.0.0@schemas:Common:Address.adoc[]
+$ref of: xref:v4.2@schemas:Common:Address.adoc[]
 
 
 === areaServed

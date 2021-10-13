@@ -36,11 +36,11 @@ type: array
 
 
 === serviceLevelAgreement
-$ref of: xref:4.0.0@schemas:Tmf:ServiceLevelAgreementRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ServiceLevelAgreementRef.adoc[]
 
 
 === violation
-$ref of: xref:4.0.0@schemas:Tmf:Violation.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Violation.adoc[]
 
 
 = All Of 

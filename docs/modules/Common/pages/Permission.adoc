@@ -46,15 +46,15 @@ type: string
 === validFor
 description: The period for which the permission is valid
 
-$ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Common:TimePeriod.adoc[]
 
 
 === user
-$ref of: xref:4.0.0@schemas:Common:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Common:RelatedParty.adoc[]
 
 
 === granter
-$ref of: xref:4.0.0@schemas:Common:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Common:RelatedParty.adoc[]
 
 
 === privilege
@@ -66,4 +66,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Common:Entity.adoc[]

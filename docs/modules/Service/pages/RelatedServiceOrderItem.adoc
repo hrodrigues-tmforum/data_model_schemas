@@ -40,7 +40,7 @@ type: string
 === itemAction
 description: Action of the order item for this service
 
-$ref of: xref:4.0.0@schemas:Service:OrderItemActionType.adoc[]
+$ref of: xref:v4.2@schemas:Service:OrderItemActionType.adoc[]
 
 
 === itemId
@@ -56,4 +56,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Service:Entity.adoc[]

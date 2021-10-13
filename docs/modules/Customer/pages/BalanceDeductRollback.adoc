@@ -50,24 +50,24 @@ type: string
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Customer:RelatedParty.adoc[]
 
 
 === product
-$ref of: xref:4.0.0@schemas:Customer:ProductRef.adoc[]
+$ref of: xref:v4.2@schemas:Customer:ProductRef.adoc[]
 
 
 === partyAccount
-$ref of: xref:4.0.0@schemas:Customer:PartyAccountRef.adoc[]
+$ref of: xref:v4.2@schemas:Customer:PartyAccountRef.adoc[]
 
 
 === balanceDeduct
-$ref of: xref:4.0.0@schemas:Customer:BalanceDeductRef.adoc[]
+$ref of: xref:v4.2@schemas:Customer:BalanceDeductRef.adoc[]
 
 
 === requestor
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Customer:RelatedParty.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Customer:Entity.adoc[]

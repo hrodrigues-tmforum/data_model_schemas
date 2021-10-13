@@ -28,17 +28,17 @@ type: string
 
 
 === compressionType
-$ref of: xref:4.0.0@schemas:Tmf:CompressionType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:CompressionType.adoc[]
 
 
 === retentionPeriod
-$ref of: xref:4.0.0@schemas:Tmf:Duration.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Duration.adoc[]
 
 
 === packingType
-$ref of: xref:4.0.0@schemas:Tmf:PackingType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:PackingType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:ProtocolTransferData.adoc[]
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:ProtocolTransferData.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

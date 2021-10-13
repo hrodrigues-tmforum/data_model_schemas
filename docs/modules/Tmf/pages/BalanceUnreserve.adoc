@@ -38,26 +38,26 @@ type: string
 
 
 === balanceReserve
-$ref of: xref:4.0.0@schemas:Tmf:BalanceReserveRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:BalanceReserveRef.adoc[]
 
 
 === bucketBalance
 description: A reference to the bucket involved in the balance-related operation
 
-$ref of: xref:4.0.0@schemas:Tmf:BucketBalanceRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:BucketBalanceRef.adoc[]
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === requestor
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === product
-$ref of: xref:4.0.0@schemas:Tmf:ProductRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:BalanceAction.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:BalanceAction.adoc[]

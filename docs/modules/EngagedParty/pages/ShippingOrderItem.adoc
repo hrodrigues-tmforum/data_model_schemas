@@ -28,7 +28,7 @@ type: string
 === action
 description: The action to be carried out on the Product. Can be: add, modify, delete, noChange
 
-$ref of: xref:4.0.0@schemas:EngagedParty:ShippingOrderItemActionType.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:ShippingOrderItemActionType.adoc[]
 
 
 === status
@@ -40,14 +40,14 @@ type: string
 === shipment
 description: A set of goods to be shipped
 
-$ref of: xref:4.0.0@schemas:EngagedParty:Shipment.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:Shipment.adoc[]
 
 
 === shippingOrderItemOffer
 description: Each shipping order item can have a corresponding product offer in the product catalog.
 
-$ref of: xref:4.0.0@schemas:EngagedParty:ProductOfferingRef.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:ProductOfferingRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:EngagedParty:Entity.adoc[]

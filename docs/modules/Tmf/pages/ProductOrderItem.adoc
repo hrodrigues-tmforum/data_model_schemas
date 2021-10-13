@@ -34,15 +34,15 @@ type: integer
 === action
 description: The action to be carried out on the Product. Can be: add, modify, delete, noChange
 
-$ref of: xref:4.0.0@schemas:Tmf:OrderItemActionType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:OrderItemActionType.adoc[]
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:AppointmentRef.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === itemPrice
@@ -62,19 +62,19 @@ type: array
 
 
 === product
-$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === productOfferingQualificationItem
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
 
 
 === quoteItem
-$ref of: xref:4.0.0@schemas:Tmf:QuoteItemRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:QuoteItemRef.adoc[]
 
 
 === productOrderItem
@@ -92,8 +92,8 @@ type: array
 === state
 description: State of the order item : described in the state machine diagram
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOrderItemStateType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductOrderItemStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

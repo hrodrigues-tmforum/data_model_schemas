@@ -26,7 +26,7 @@ type: array
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Customer:BillingAccountRef.adoc[]
+$ref of: xref:v4.2@schemas:Customer:BillingAccountRef.adoc[]
 
 
 === cancellationDate
@@ -148,8 +148,8 @@ type: string
 === state
 description: Tracks the lifecycle status of the product order, such as Acknowledged, Rejected, InProgress, Pending and so on.
 
-$ref of: xref:4.0.0@schemas:Customer:ProductOrderStateType.adoc[]
+$ref of: xref:v4.2@schemas:Customer:ProductOrderStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Customer:Entity.adoc[]

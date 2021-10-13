@@ -82,7 +82,7 @@ type: array
 === validFor
 description: The period for which the category is valid
 
-$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Product:TimePeriod.adoc[]
 
 
 === version
@@ -92,5 +92,5 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Addressable.adoc[]
-This schema extends: xref:4.0.0@schemas:Product:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Product:Addressable.adoc[]
+This schema extends: xref:v4.2@schemas:Product:Extensible.adoc[]

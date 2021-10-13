@@ -70,8 +70,8 @@ type: string
 === value
 description: The value of Metric in the test. This also could be a document to record all values captured during the service test
 
-$ref of: xref:4.0.0@schemas:Service:Characteristic.adoc[]
+$ref of: xref:v4.2@schemas:Service:Characteristic.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Service:Extensible.adoc[]

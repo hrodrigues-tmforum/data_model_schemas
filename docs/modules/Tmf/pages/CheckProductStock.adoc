@@ -64,7 +64,7 @@ type: boolean
 === state
 description: State of the CheckProductStock (acknowledged, inProgress, terminatedWithError, done)
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TaskStateType.adoc[]
 
 
 === provideAlternative
@@ -88,8 +88,8 @@ type: array
 === place
 description: Used to define a geographical place where requester wants to check stock availability 
 
-$ref of: xref:4.0.0@schemas:Tmf:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:PlaceRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

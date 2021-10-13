@@ -34,14 +34,14 @@ type: string
 === relatedParty
 description: RelatedParty reference. A related party defines party or party role linked to a specific entity.
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === validFor
 description: Start date and end date of the timeSlot
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

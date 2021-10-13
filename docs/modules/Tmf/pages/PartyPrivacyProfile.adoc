@@ -22,19 +22,19 @@ The data model is defined as shown below:
 === applicableForParty
 description: The party to whom the privacy profile applies. Could be a minor where the agreeing party is a parent, an organization where the agreeing party is authorized to make such agreements, or some individual for whom the agreeing party has authorization (e.g. power of attorney). If empty, the agreeing party is the party to whom the profile applies.
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === agreedByParty
 description: The party who agreed to the privacy profile. Not necessarily the party to whom the profile applies.
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === agreement
 description: An agreement under which the privacy profile was produced.
 
-$ref of: xref:4.0.0@schemas:Tmf:PartyPrivacyAgreementRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:PartyPrivacyAgreementRef.adoc[]
 
 
 === creationDate
@@ -76,7 +76,7 @@ type: array
 === partyPrivacyProfileSpecification
 description: The specification from which this profile was instantiated
 
-$ref of: xref:4.0.0@schemas:Tmf:PartyPrivacyProfileSpecificationRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:PartyPrivacyProfileSpecificationRef.adoc[]
 
 
 === status
@@ -88,8 +88,8 @@ type: string
 === validFor
 description: The period of time for which this profile is valid, depending on regulations or business consideration the profile may expire and need to be renegotiated.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

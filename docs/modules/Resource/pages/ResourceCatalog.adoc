@@ -53,7 +53,7 @@ type: string
 === validFor
 description: The period for which the catalog is valid
 
-$ref of: xref:4.0.0@schemas:Resource:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Resource:TimePeriod.adoc[]
 
 
 === lastUpdate
@@ -81,4 +81,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Resource:Entity.adoc[]

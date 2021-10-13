@@ -26,7 +26,7 @@ type: array
 === calendarEvent
 description: A calendar event reference (CalendarEventRef). The appointment is associated with a calendar event (an happening at a point of time) associated to a calendar entry.
 
-$ref of: xref:4.0.0@schemas:Customer:CalendarEventRef.adoc[]
+$ref of: xref:v4.2@schemas:Customer:CalendarEventRef.adoc[]
 
 
 === category
@@ -82,7 +82,7 @@ type: array
 === relatedPlace
 description: Related place defines (by reference or value) the place where the appointment will take place.
 
-$ref of: xref:4.0.0@schemas:Customer:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Customer:RelatedPlaceRefOrValue.adoc[]
 
 
 === relatedEntity
@@ -94,14 +94,14 @@ type: array
 
 
 === status
-$ref of: xref:4.0.0@schemas:Customer:AppointmentStateType.adoc[]
+$ref of: xref:v4.2@schemas:Customer:AppointmentStateType.adoc[]
 
 
 === validFor
 description: A time period (TimePeriod). Appointment beginning date time and end date time.
 
-$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Customer:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Customer:Entity.adoc[]

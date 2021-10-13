@@ -52,7 +52,7 @@ type: string
 === authorizedPayment 
 description: Related payment to this operation.
 
-$ref of: xref:4.0.0@schemas:Tmf:PaymentRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:PaymentRefOrValue.adoc[]
 
 
 = All Of 

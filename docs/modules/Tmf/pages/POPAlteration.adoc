@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === applicationDuration
 description: The period for which the productOfferingPriceAlteration is applicable
 
-$ref of: xref:4.0.0@schemas:Tmf:Duration.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Duration.adoc[]
 
 
 === description
@@ -58,18 +58,18 @@ type: string
 === validFor
 description: The period for which this productOfferingPriceAlteration is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 === unitOfMeasure
 description: A number and unit representing denominator of an alteration rate. For example, for a data discount rate of $1 per 20 GB usage, the amount of unitOfMeasure will be 20 with units as GB.
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Quantity.adoc[]
 
 
 === price
-$ref of: xref:4.0.0@schemas:Tmf:ProductPriceValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductPriceValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

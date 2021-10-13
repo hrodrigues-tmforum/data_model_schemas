@@ -28,8 +28,8 @@ type: boolean
 === connectionPoint
 description: The connection point (SAP) of the associated resource function (optional).
 
-$ref of: xref:4.0.0@schemas:Resource:ConnectionPointRef.adoc[]
+$ref of: xref:v4.2@schemas:Resource:ConnectionPointRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:EntityRef.adoc[]
+This schema extends: xref:v4.2@schemas:Resource:EntityRef.adoc[]

@@ -20,8 +20,8 @@ The data model is defined as shown below:
 
 
 === testDataSchemaDefinition
-$ref of: xref:4.0.0@schemas:Common:TestDataSchemaDefinition.adoc[]
+$ref of: xref:v4.2@schemas:Common:TestDataSchemaDefinition.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:ManagedArtifact.adoc[]
+This schema extends: xref:v4.2@schemas:Common:ManagedArtifact.adoc[]

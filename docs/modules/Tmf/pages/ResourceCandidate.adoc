@@ -52,7 +52,7 @@ type: string
 === validFor
 description: The period for which this REST resource is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 === lastUpdate
@@ -76,8 +76,8 @@ type: array
 === resourceSpecification
 description: The detailed specification for this candidate
 
-$ref of: xref:4.0.0@schemas:Tmf:ResourceSpecificationRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ResourceSpecificationRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

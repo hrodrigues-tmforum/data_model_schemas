@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === taxAmount
 description: Amount of tax expressed in the given currency
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Money.adoc[]
 
 
 === taxCategory
@@ -38,4 +38,4 @@ type: number
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

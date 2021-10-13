@@ -26,8 +26,8 @@ type: string
 
 
 === documentRef
-$ref of: xref:4.0.0@schemas:Common:DocumentRef.adoc[]
+$ref of: xref:v4.2@schemas:Common:DocumentRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Common:Entity.adoc[]

@@ -58,4 +58,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Resource.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Resource.adoc[]

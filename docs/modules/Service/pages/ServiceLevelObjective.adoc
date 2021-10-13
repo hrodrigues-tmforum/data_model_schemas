@@ -30,7 +30,7 @@ type: string
 === conformancePeriod
 description: An interval of time during which the Conformance Target must be measured.
 
-$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Service:TimePeriod.adoc[]
 
 
 === conformanceTarget
@@ -75,7 +75,7 @@ type: string
 === tolerancePeriod
 description: A value that specifies the allowable time variation of a conformance
 
-$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Service:TimePeriod.adoc[]
 
 
 === toleranceTarget
@@ -88,13 +88,13 @@ type: string
 === validFor
 description: A valid duration of a thing.
 
-$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Service:TimePeriod.adoc[]
 
 
 === serviceLevelSpecParameter
 description: A parameter for this objective
 
-$ref of: xref:4.0.0@schemas:Service:ServiceLevelSpecParameter.adoc[]
+$ref of: xref:v4.2@schemas:Service:ServiceLevelSpecParameter.adoc[]
 
 
 === serviceLevelSpecConsequence
@@ -104,4 +104,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Service:Entity.adoc[]

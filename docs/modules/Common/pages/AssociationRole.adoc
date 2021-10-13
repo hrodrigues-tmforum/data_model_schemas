@@ -34,8 +34,8 @@ type: string
 === entity
 description: The entity being referred to
 
-$ref of: xref:4.0.0@schemas:Common:EntityRef.adoc[]
+$ref of: xref:v4.2@schemas:Common:EntityRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Common:Extensible.adoc[]

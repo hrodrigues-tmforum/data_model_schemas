@@ -76,33 +76,33 @@ type: string
 === productStockStatusType
 description: The status of the ProductStock, such as available, unavailable, reserved, unknown
 
-$ref of: xref:4.0.0@schemas:Resource:ProductStockStatusType.adoc[]
+$ref of: xref:v4.2@schemas:Resource:ProductStockStatusType.adoc[]
 
 
 === productStockUsageType
 description: The usage type of the  ProductStock, such as inTransit, damaged, onDisplay, etc..
 
-$ref of: xref:4.0.0@schemas:Resource:ProductStockUsageType.adoc[]
+$ref of: xref:v4.2@schemas:Resource:ProductStockUsageType.adoc[]
 
 
 === productStockLevel
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Resource:Quantity.adoc[]
 
 
 === minStockLevel
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Resource:Quantity.adoc[]
 
 
 === maxStockLevel
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Resource:Quantity.adoc[]
 
 
 === stockLevelAlert
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Resource:Quantity.adoc[]
 
 
 === reorderQuantity
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Resource:Quantity.adoc[]
 
 
 === productStockRelationship
@@ -114,7 +114,7 @@ type: array
 === stockedProduct
 description: Product stocked in this product stock  - could be via a productSpecification, a ProductSpecification + valued characteristic, etc. 
 
-$ref of: xref:4.0.0@schemas:Resource:ProductRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Resource:ProductRefOrValue.adoc[]
 
 
 === resource
@@ -142,8 +142,8 @@ type: array
 === place
 description: Used to define a place useful for the ProductStock for example a geographical place where the Product Stock is located
 
-$ref of: xref:4.0.0@schemas:Resource:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Resource:RelatedPlaceRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Resource:Entity.adoc[]

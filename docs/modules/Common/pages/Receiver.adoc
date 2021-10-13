@@ -56,8 +56,8 @@ type: string
 
 
 === party
-$ref of: xref:4.0.0@schemas:Common:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Common:RelatedParty.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Common:Entity.adoc[]

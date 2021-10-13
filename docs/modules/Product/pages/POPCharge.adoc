@@ -40,7 +40,7 @@ type: string
 === validFor
 description: The period for which the productOfferingPrice is valid
 
-$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Product:TimePeriod.adoc[]
 
 
 === priceType
@@ -52,7 +52,7 @@ type: string
 === unitOfMeasure
 description: A number and unit representing denominator of a rate. For example, for a data charge rate of $2 per 5 GB usage, the amount of unitOfMeasure will be 5 with units as GB.
 
-$ref of: xref:4.0.0@schemas:Product:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Product:Quantity.adoc[]
 
 
 === recurringChargePeriod
@@ -91,9 +91,9 @@ type: array
 
 
 === price
-$ref of: xref:4.0.0@schemas:Product:ProductPriceValue.adoc[]
+$ref of: xref:v4.2@schemas:Product:ProductPriceValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Addressable.adoc[]
-This schema extends: xref:4.0.0@schemas:Product:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Product:Addressable.adoc[]
+This schema extends: xref:v4.2@schemas:Product:Extensible.adoc[]

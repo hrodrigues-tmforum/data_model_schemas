@@ -36,7 +36,7 @@ type: string
 === state
 description: Ex: primarySkill, secondarySkill
 
-$ref of: xref:4.0.0@schemas:Tmf:WorkforceEmployeeAssignmentStateType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:WorkforceEmployeeAssignmentStateType.adoc[]
 
 
 === timeSlot
@@ -44,8 +44,8 @@ type: array
 
 
 === workforceEmployee
-$ref of: xref:4.0.0@schemas:Tmf:PartyRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:PartyRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

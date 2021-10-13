@@ -52,13 +52,13 @@ type: string
 === channel
 description: Indicator for the channel used to request the transfer operation. Structure including at least attribute name
 
-$ref of: xref:4.0.0@schemas:Tmf:ChannelRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ChannelRef.adoc[]
 
 
 === requestor
 description: Identifier for the user/customer/entity that performs the transfer action.This can be used to indicate the identifier of an agent that performs the operation on behalf of a user via a customer service channel Structure including at least attributes “role” and “name”
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === targetId
@@ -76,43 +76,43 @@ type: string
 === receiver
 description: Identifier for the user/customer/entity that receives the transfer action when it is required to indicate additional customer hierarchy information regarding the entity receiving the balance transfer Structure including at least attributes “role” and “name”
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === amount
 description: Amount (can be monetary or non-monetary) to be transferred
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Quantity.adoc[]
 
 
 === transferCost
 description: Associated cost to be charged for the transfer operation (can be monetary or non-monetary)
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Quantity.adoc[]
 
 
 === product
 description: A reference to the product related to the bucket that is impacted by the balance related operation
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductRef.adoc[]
 
 
 === sourceBucketBalance
 description: A reference to the source bucketBalance from which the funds are being transferred 
 
-$ref of: xref:4.0.0@schemas:Tmf:BucketBalanceRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:BucketBalanceRef.adoc[]
 
 
 === targetBucketBalance
 description: A reference to the target bucketBalance to which the funds are being transferred 
 
-$ref of: xref:4.0.0@schemas:Tmf:BucketBalanceRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:BucketBalanceRef.adoc[]
 
 
 === partyAccount
 description: A reference to the account that owns the bucket impacted by the balance transfer request
 
-$ref of: xref:4.0.0@schemas:Tmf:PartyAccountRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:PartyAccountRef.adoc[]
 
 
 === relatedParty
@@ -122,4 +122,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:BalanceAction.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:BalanceAction.adoc[]

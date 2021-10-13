@@ -50,37 +50,37 @@ type: string
 === validFor
 description: The period in which the recommendation is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 === order
-$ref of: xref:4.0.0@schemas:Tmf:ProductOrderRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductOrderRef.adoc[]
 
 
 === location
 description: The geographic location which the recommendation is related to
 
-$ref of: xref:4.0.0@schemas:Tmf:GeographicLocationRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:GeographicLocationRef.adoc[]
 
 
 === channel
-$ref of: xref:4.0.0@schemas:Tmf:ChannelRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ChannelRef.adoc[]
 
 
 === category
 description: The category for grouping recommendations
 
-$ref of: xref:4.0.0@schemas:Tmf:CategoryRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:CategoryRef.adoc[]
 
 
 === shoppingCart
 description: The shopping cart which the recommendation is related to
 
-$ref of: xref:4.0.0@schemas:Tmf:ShoppingCartRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ShoppingCartRef.adoc[]
 
 
 === party
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedParty.adoc[]
 
 
 === item
@@ -88,4 +88,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

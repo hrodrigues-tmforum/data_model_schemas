@@ -38,7 +38,7 @@ type: boolean
 
 
 === state
-$ref of: xref:4.0.0@schemas:Common:TaskStateType.adoc[]
+$ref of: xref:v4.2@schemas:Common:TaskStateType.adoc[]
 
 
 === validationDate
@@ -56,13 +56,13 @@ type: string
 === submittedGeographicAddress
 description: the address as submitted to validation
 
-$ref of: xref:4.0.0@schemas:Common:GeographicAddress.adoc[]
+$ref of: xref:v4.2@schemas:Common:GeographicAddress.adoc[]
 
 
 === validGeographicAddress
 description: the correct form of the validated address in case of validation success
 
-$ref of: xref:4.0.0@schemas:Common:GeographicAddress.adoc[]
+$ref of: xref:v4.2@schemas:Common:GeographicAddress.adoc[]
 
 
 === alternateGeographicAddress
@@ -70,4 +70,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Common:Entity.adoc[]

@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === action
 description: The action to be carried out on the Product. Can be: add, modify, delete, noChange
 
-$ref of: xref:4.0.0@schemas:Tmf:CartItemActionType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:CartItemActionType.adoc[]
 
 
 === id
@@ -40,7 +40,7 @@ type: integer
 === status
 description: status of cart item. e.g &quot;active&quot; , &quot;savedForLater&quot;.
 
-$ref of: xref:4.0.0@schemas:Tmf:CartItemStatusType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:CartItemStatusType.adoc[]
 
 
 === itemTerm
@@ -60,7 +60,7 @@ type: array
 
 
 === product
-$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
 === itemPrice
@@ -68,7 +68,7 @@ type: array
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === cartItemRelationship
@@ -76,4 +76,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

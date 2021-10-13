@@ -32,7 +32,7 @@ type: string
 
 
 === status
-$ref of: xref:4.0.0@schemas:Tmf:UsageStatusType.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:UsageStatusType.adoc[]
 
 
 === usageType
@@ -42,7 +42,7 @@ type: string
 
 
 === usageSpecification
-$ref of: xref:4.0.0@schemas:Tmf:UsageSpecificationRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:UsageSpecificationRef.adoc[]
 
 
 === usageCharacteristic
@@ -58,4 +58,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

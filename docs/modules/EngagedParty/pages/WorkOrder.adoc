@@ -26,11 +26,11 @@ type: array
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:EngagedParty:AppointmentRef.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:AppointmentRef.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:EngagedParty:BillingAccountRef.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:BillingAccountRef.adoc[]
 
 
 === cancellationDate
@@ -92,7 +92,7 @@ type: string
 
 
 === note
-$ref of: xref:4.0.0@schemas:EngagedParty:Note.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:Note.adoc[]
 
 
 === notificationContact
@@ -120,7 +120,7 @@ type: array
 
 
 === place
-$ref of: xref:4.0.0@schemas:EngagedParty:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:PlaceRefOrValue.adoc[]
 
 
 === priority
@@ -160,7 +160,7 @@ type: string
 
 
 === state
-$ref of: xref:4.0.0@schemas:EngagedParty:WorkOrderStateType.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:WorkOrderStateType.adoc[]
 
 
 === stateChangeDate
@@ -185,4 +185,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:EngagedParty:Entity.adoc[]

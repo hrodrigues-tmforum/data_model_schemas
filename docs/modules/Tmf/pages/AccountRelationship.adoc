@@ -28,12 +28,12 @@ type: string
 === validFor
 description: Validity period of that relationship
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 === account
-$ref of: xref:4.0.0@schemas:Tmf:AccountRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:AccountRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

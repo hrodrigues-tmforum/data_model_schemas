@@ -76,7 +76,7 @@ type: string
 === validFor
 description: The period for which the productOffering is valid
 
-$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Product:TimePeriod.adoc[]
 
 
 === version
@@ -94,13 +94,13 @@ type: array
 === serviceLevelAgreement
 description: A service level agreement (SLA) is a type of agreement that represents a formal negotiated agreement between two parties designed to create a common understanding about products, services, priorities, responsibilities, and so forth. The SLA is a set of appropriate procedures and targets formally or informally agreed between parties in order to achieve and maintain specified Quality of Service.
 
-$ref of: xref:4.0.0@schemas:Product:SLARef.adoc[]
+$ref of: xref:v4.2@schemas:Product:SLARef.adoc[]
 
 
 === productSpecification
 description: A ProductSpecification is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.
 
-$ref of: xref:4.0.0@schemas:Product:ProductSpecificationRef.adoc[]
+$ref of: xref:v4.2@schemas:Product:ProductSpecificationRef.adoc[]
 
 
 === channel
@@ -112,7 +112,7 @@ type: array
 === serviceCandidate
 description: ServiceCandidate is an entity that makes a ServiceSpecification available to a catalog.
 
-$ref of: xref:4.0.0@schemas:Product:ServiceCandidateRef.adoc[]
+$ref of: xref:v4.2@schemas:Product:ServiceCandidateRef.adoc[]
 
 
 === category
@@ -124,7 +124,7 @@ type: array
 === resourceCandidate
 description: A resource candidate is an entity that makes a ResourceSpecification available to a catalog.
 
-$ref of: xref:4.0.0@schemas:Product:ResourceCandidateRef.adoc[]
+$ref of: xref:v4.2@schemas:Product:ResourceCandidateRef.adoc[]
 
 
 === productOfferingTerm
@@ -176,5 +176,5 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Addressable.adoc[]
-This schema extends: xref:4.0.0@schemas:Product:Extensible.adoc[]
+This schema extends: xref:v4.2@schemas:Product:Addressable.adoc[]
+This schema extends: xref:v4.2@schemas:Product:Extensible.adoc[]

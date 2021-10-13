@@ -26,7 +26,7 @@ type: string
 
 
 === manageableAsset
-$ref of: xref:4.0.0@schemas:Common:EntityRef.adoc[]
+$ref of: xref:v4.2@schemas:Common:EntityRef.adoc[]
 
 
 === function
@@ -42,4 +42,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Common:Entity.adoc[]

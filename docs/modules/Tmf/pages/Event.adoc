@@ -76,13 +76,13 @@ type: string
 === source
 description: Source Entity described by EntityRef
 
-$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:EntityRef.adoc[]
 
 
 === reportingSystem
 description: Reporting System described by EntityRef
 
-$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:EntityRef.adoc[]
 
 
 === relatedParty
@@ -96,8 +96,8 @@ type: array
 === event
 description: The event linked to the involved resource object
 
-$ref of: xref:4.0.0@schemas:Tmf:Any.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Any.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

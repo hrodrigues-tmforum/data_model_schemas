@@ -52,13 +52,13 @@ type: string
 === taxExcludedAmount
 description: Tax excluded amount to be charged on the bill (expresses in the given currency) for this applied billing rate
 
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.2@schemas:Customer:Money.adoc[]
 
 
 === taxIncludedAmount
 description: All taxes included amount to be charged on the bill (expressed in the given currency) for this applied billing rate
 
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.2@schemas:Customer:Money.adoc[]
 
 
 === rateType
@@ -72,7 +72,7 @@ type: array
 
 
 === bill
-$ref of: xref:4.0.0@schemas:Customer:BillRef.adoc[]
+$ref of: xref:v4.2@schemas:Customer:BillRef.adoc[]
 
 
 === characteristic
@@ -80,4 +80,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Customer:Entity.adoc[]

@@ -34,13 +34,13 @@ type: string
 === relatedShippingOrder
 description: An existing shipping order that has some form of correlation with the given shipping order
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedShippingOrder.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:RelatedShippingOrder.adoc[]
 
 
 === productOrderRef
 description: The product order for which the shipping order is created, if supplied as input the attribute id must be populated
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOrderRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductOrderRef.adoc[]
 
 
 === shippingOrderItem
@@ -64,14 +64,14 @@ type: array
 === shippingOrderPrice
 description: Shipping Order price
 
-$ref of: xref:4.0.0@schemas:Tmf:Price.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Price.adoc[]
 
 
 === shippingOrderOffer
 description: Shipping order can have a corresponding entry in the product catalog (product offering)
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

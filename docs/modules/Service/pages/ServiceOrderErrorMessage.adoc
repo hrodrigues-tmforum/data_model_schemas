@@ -32,4 +32,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:ErrorMessage.adoc[]
+This schema extends: xref:v4.2@schemas:Service:ErrorMessage.adoc[]

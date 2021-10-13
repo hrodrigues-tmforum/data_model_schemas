@@ -56,7 +56,7 @@ type: string
 
 
 === place
-$ref of: xref:4.0.0@schemas:EngagedParty:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:PlaceRefOrValue.adoc[]
 
 
 === relatedParty
@@ -68,8 +68,8 @@ type: array
 === state
 description: State of the workQualification (acknowledged, inProgress, terminatedWithError, done)
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TaskStateType.adoc[]
+$ref of: xref:v4.2@schemas:EngagedParty:TaskStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:EngagedParty:Entity.adoc[]

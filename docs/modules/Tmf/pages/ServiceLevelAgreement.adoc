@@ -52,13 +52,13 @@ type: array
 
 
 === template
-$ref of: xref:4.0.0@schemas:Tmf:Template.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:Template.adoc[]
 
 
 === validFor
 description: The period for which the SLA is valid  (A period of time, either as a deadline (endDateTime only) a startDateTime only, or both)
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
 === version
@@ -66,4 +66,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

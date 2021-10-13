@@ -32,11 +32,11 @@ type: string
 
 
 === alarmType
-$ref of: xref:4.0.0@schemas:Resource:AlarmType.adoc[]
+$ref of: xref:v4.2@schemas:Resource:AlarmType.adoc[]
 
 
 === perceivedSeverity
-$ref of: xref:4.0.0@schemas:Resource:PerceivedSeverity.adoc[]
+$ref of: xref:v4.2@schemas:Resource:PerceivedSeverity.adoc[]
 
 
 === probableCause
@@ -58,7 +58,7 @@ type: string
 
 
 === alarmedObject
-$ref of: xref:4.0.0@schemas:Resource:AlarmedObject.adoc[]
+$ref of: xref:v4.2@schemas:Resource:AlarmedObject.adoc[]
 
 
 === reportingSystemId
@@ -153,7 +153,7 @@ type: array
 
 
 === crossedThresholdInformation
-$ref of: xref:4.0.0@schemas:Resource:CrossedThresholdInformation.adoc[]
+$ref of: xref:v4.2@schemas:Resource:CrossedThresholdInformation.adoc[]
 
 
 === isRootCause
@@ -189,4 +189,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.2@schemas:Resource:Entity.adoc[]
