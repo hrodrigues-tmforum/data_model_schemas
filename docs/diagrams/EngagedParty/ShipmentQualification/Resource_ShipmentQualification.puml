@@ -1,0 +1,65 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ShipmentQualification <<Pivot>> {
+    description : String
+    effectiveQualificationDate : DateTime
+    estimatedResponseDate : DateTime
+    expectedQualificationDate : DateTime
+    expirationDate : DateTime
+    externalId : String
+    href : Uri
+    id : String
+    state : TaskStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaskStateType <<Enumeration>> {
+    accepted
+    terminatedWithError
+    inProgress
+    done
+}
+
+ShipmentQualification -right[hidden]-> TaskStateType
+
+ShipmentQualification *-->  "0..1" PlaceRefOrValue : placeTo
+
+ShipmentQualification *-->  "0..1" PlaceRefOrValue : placeFrom
+
+ShipmentQualification *-->  "0..*" RelatedParty : relatedParty
+
+@enduml

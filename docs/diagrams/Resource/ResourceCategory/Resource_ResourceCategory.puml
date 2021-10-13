@@ -1,0 +1,69 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ResourceCategory <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    isRoot : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    parentId : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceCandidateRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceCategoryRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ResourceCategory *-->  "0..*" RelatedParty : relatedParty
+
+ResourceCategory *-->  "0..*" ResourceCandidateRef : resourceCandidate
+
+ResourceCategory *-->  "0..*" ResourceCategoryRef : category
+
+@enduml

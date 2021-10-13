@@ -1,0 +1,277 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class SettlementAccount <<Pivot>> {
+    accountType : String
+    creditLimit : Money
+    description : String
+    href : Uri
+    id : String
+    lastModified : DateTime
+    name : String [1]
+    paymentStatus : String
+    state : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentMethodRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentPlan  {
+    href : Uri
+    id : String
+    numberOfPayments : Integer
+    paymentFrequency : String
+    planType : String
+    priority : Integer
+    status : String
+    totalAmount : Money
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillStructure  {
+    href : Uri
+    id : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillFormatRefOrValue  {
+    description : String
+    href : String
+    id : String
+    name : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingCycleSpecificationRefOrValue  {
+    billingDateShift : Integer
+    billingPeriod : String
+    chargeDateOffset : Integer
+    creditDateOffset : Integer
+    dateShift : Integer
+    description : String
+    frequency : String
+    href : String
+    id : String
+    mailingDateOffset : Integer
+    name : String [1]
+    paymentDueDateOffset : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillPresentationMediaRefOrValue  {
+    description : String
+    href : String
+    id : String
+    name : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FinancialAccountRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxExemptionCertificate  {
+    certificateNumber : String
+    id : String
+    issuingJurisdiction : String
+    reason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxDefinition  {
+    id : String
+    jurisdictionLevel : String
+    jurisdictionName : String
+    name : String
+    taxType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Contact  {
+    contactName : String
+    contactType : String [1]
+    href : Uri
+    id : String
+    partyRoleType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountBalance  {
+    amount : Money [1]
+    balanceType : String [1]
+    href : Uri
+    id : String
+    validFor : TimePeriod [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+SettlementAccount *-->  "0..1" PaymentMethodRef : defaultPaymentMethod
+
+SettlementAccount *-->  "0..*" PaymentPlan : paymentPlan
+
+SettlementAccount *-->  "1..*" RelatedParty : relatedParty
+
+SettlementAccount *-->  "0..*" Contact : contact
+
+PaymentPlan *-right-> "0..1" PaymentMethodRef : paymentMethod
+
+Contact *-right-> "0..1" RelatedParty : relatedParty
+
+AccountBalance "0..*" <-left-* SettlementAccount : accountBalance
+
+SettlementAccount *-right-> "0..1" FinancialAccountRef : financialAccount
+
+AccountRelationship "0..*" <--* SettlementAccount : accountRelationship
+
+SettlementAccount *-->  "0..*" TaxExemptionCertificate : taxExemption
+
+SettlementAccount *-->  "0..1" BillStructure : billStructure
+
+BillStructure *-->  "0..*" BillPresentationMediaRefOrValue : presentationMedia
+
+BillStructure *-->  "0..1" BillingCycleSpecificationRefOrValue : cycleSpecification
+
+BillStructure *-->  "0..1" BillFormatRefOrValue : format
+
+TaxExemptionCertificate *-->  "0..*" TaxDefinition : taxDefinition
+
+TaxExemptionCertificate *-->  "0..1" AttachmentRefOrValue : attachment
+
+Contact *-->  "0..*" ContactMedium : contactMedium
+
+AccountRelationship *-right-> "0..1" AccountRef : account
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+@enduml

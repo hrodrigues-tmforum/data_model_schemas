@@ -1,0 +1,105 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ServiceFeatureSpecification <<Pivot>> {
+    href : Uri
+    id : String
+    isBundle : Boolean
+    isEnabled : Boolean
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FeatureSpecificationRelationship  {
+    featureId : String
+    name : String [1]
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String [1]
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicSpecification  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class CharacteristicSpecificationRelationship  {
+    characteristicSpecificationId : String
+    name : String
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ServiceFeatureSpecification *-->  "0..*" FeatureSpecificationRelationship : featureSpecRelationship
+
+ServiceFeatureSpecification *-->  "0..*" ConstraintRef : constraint
+
+ServiceFeatureSpecification *-->  "0..*" CharacteristicSpecification : featureSpecCharacteristic
+
+CharacteristicSpecification *-->  "0..*" CharacteristicSpecificationRelationship : charSpecRelationship
+
+CharacteristicSpecification *-->  "0..*" CharacteristicValueSpecification : characteristicValueSpecification
+
+@enduml

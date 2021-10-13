@@ -1,0 +1,29 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Customer360PromotionVO <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String [1]
+    type : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+
+@enduml

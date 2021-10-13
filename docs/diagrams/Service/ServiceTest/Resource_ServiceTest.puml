@@ -1,0 +1,142 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ServiceTest <<Pivot>> {
+    description : String
+    endDateTime : DateTime
+    href : Uri
+    id : String
+    mode : String
+    name : String
+    startDateTime : DateTime
+    state : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TestMeasure  {
+    accuracy : Float
+    captureDateTime : DateTime
+    captureMethod : String
+    metricDescription : String
+    metricHref : String
+    metricName : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MeasureThresholdRuleViolation  {
+    conformanceComparatorLower : String
+    conformanceComparatorUpper : String
+    conformanceTargetExact : String
+    conformanceTargetLower : String
+    conformanceTargetUpper : String
+    description : String
+    name : String
+    numberOfAllowedCrossing : Integer
+    thresholdRuleSeverity : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppliedConsequence  {
+    appliedAction : String
+    description : String
+    name : String
+    repeatAction : Boolean
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Duration  {
+    amount : Integer
+    units : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceTestSpecificationRef  <<Ref>> {
+    href : String
+    id : String [1]
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ServiceTest *-->  "0..*" Characteristic : characteristic
+
+ServiceTest *-->  "0..*" TestMeasure : testMeasure
+
+TestMeasure *-right-> "0..1" Characteristic : value
+
+RelatedParty "0..*" <-left-* ServiceTest : relatedParty
+
+ServiceTest *-right-> "0..1" ServiceRef : relatedService
+
+ServiceTestSpecificationRef "0..1" <--* ServiceTest : testSpecification
+
+TestMeasure *-->  "0..*" MeasureThresholdRuleViolation : ruleViolation
+
+MeasureThresholdRuleViolation *-->  "0..*" AppliedConsequence : appliedConsequence
+
+MeasureThresholdRuleViolation *-->  "0..1" Duration : tolerancePeriod
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

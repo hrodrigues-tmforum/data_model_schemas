@@ -1,0 +1,556 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Warranty <<Pivot>> {
+    context : String
+    description : String
+    endDate : String
+    href : Uri
+    id : String
+    isBundle : Boolean
+    isExternal : Boolean
+    name : String [1]
+    startDate : String
+    state : WarrantyStateType
+    status : String
+    statusChangeDate : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntityRelationship  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssociationSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRefOrValue  {
+    description : String
+    href : String
+    id : String
+    isBundle : Boolean
+    isCustomerVisible : Boolean
+    name : String
+    orderDate : DateTime
+    productSerialNumber : String
+    startDate : DateTime
+    status : ProductStatusType
+    terminationDate : DateTime
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetProductSchema  {
+    @schemaLocation : Uri [1]
+    @type : String [1]
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedProductOrderItem  {
+    href : Uri
+    id : String
+    orderItemAction : String
+    orderItemId : String [1]
+    productOrderHref : String
+    productOrderId : String [1]
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementItemRef  <<Ref>> {
+    agreementItemId : String
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductTerm  {
+    description : String
+    duration : Quantity
+    href : Uri
+    id : String
+    name : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductPrice  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingPriceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Price  {
+    dutyFreeAmount : Money
+    href : Uri
+    id : String
+    percentage : Float
+    taxIncludedAmount : Money
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PriceAlteration  {
+    applicationDuration : Integer
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    priority : Integer
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductStatusType <<Enumeration>> {
+    created
+    pendingActive
+    cancelled
+    active
+    pendingTerminate
+    terminated
+    suspended
+    aborted
+}
+
+class ResourceRefOrValue  {
+    administrativeState : ResourceAdministrativeStateType
+    category : String
+    description : String
+    endOperatingDate : DateTime
+    href : String [1]
+    id : String [1]
+    name : String
+    operationalState : ResourceOperationalStateType
+    resourceStatus : ResourceStatusType
+    resourceVersion : String
+    startOperatingDate : DateTime
+    usageState : ResourceUsageStateType
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Feature  {
+    id : String
+    isBundle : Boolean
+    isEnabled : Boolean
+    name : String [1]
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FeatureRelationship  {
+    id : String
+    name : String [1]
+    relationshipType : String [1]
+    validFor : TimePeriod
+}
+
+class ResourceSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceStatusType <<Enumeration>> {
+    standby
+    alarm
+    available
+    reserved
+    unknown
+    suspended
+}
+
+class ResourceUsageStateType <<Enumeration>> {
+    idle
+    active
+    busy
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceAdministrativeStateType <<Enumeration>> {
+    locked
+    unlocked
+    shutdown
+}
+
+class ResourceRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceOperationalStateType <<Enumeration>> {
+    enable
+    disable
+}
+
+class AgreementRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WarrantyStateType <<Enumeration>> {
+    feasibilityChecked
+    designed
+    reserved
+    inactive
+    active
+    terminated
+}
+
+class WarrantyRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntitySpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WarrantySpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Warranty *-right-> "0..*" Warranty : warranty
+
+Warranty *-->  "0..*" AttachmentRefOrValue : attachment
+
+Warranty *-->  "0..*" Note : note
+
+Warranty -right[hidden]-> WarrantyStateType
+
+Warranty *-->  "0..*" RelatedPlaceRefOrValue : place
+
+Warranty *-->  "0..*" RelatedParty : relatedParty
+
+Warranty *-->  "0..*" Characteristic : characteristic
+
+Warranty *-->  "0..*" ResourceRefOrValue : appliesToResource
+
+Warranty *-->  "0..*" ProductRefOrValue : appliesToProduct
+
+ProductRefOrValue *-right-> "0..*" ProductRefOrValue : product
+
+ProductRefOrValue *-->  "0..*" Characteristic : productCharacteristic
+
+ProductRefOrValue *-->  "0..*" RelatedPlaceRefOrValue : place
+
+ProductRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+ProductRefOrValue -right[hidden]-> ProductStatusType
+
+ProductRefOrValue *-->  "0..1" BillingAccountRef : billingAccount
+
+ProductRefOrValue *-->  "0..*" ProductRelationship : productRelationship
+
+ProductRefOrValue *-->  "0..*" ProductPrice : productPrice
+
+ProductRefOrValue "1" <--* ProductRelationship : product
+
+BillingAccountRef "0..1" <--* ProductPrice : billingAccount
+
+ProductPrice *-->  "1" Price : price
+
+ProductPrice *-->  "0..1" ProductOfferingPriceRef : productOfferingPrice
+
+ProductPrice *-->  "0..*" PriceAlteration : productPriceAlteration
+
+Price "1" <--* PriceAlteration : price
+
+ProductOfferingPriceRef "0..1" <--* PriceAlteration : productOfferingPrice
+
+AttachmentRefOrValue "0..*" <--* ResourceRefOrValue : attachment
+
+Note "0..*" <--* ResourceRefOrValue : note
+
+Characteristic "1..*" <--* Feature : featureCharacteristic
+
+ResourceRefOrValue *-->  "0..*" Feature : activationFeature
+
+Characteristic "0..*" <--* ResourceRefOrValue : resourceCharacteristic
+
+RelatedPlaceRefOrValue "0..1" <--* ResourceRefOrValue : place
+
+RelatedParty "0..*" <--* ResourceRefOrValue : relatedParty
+
+ResourceRefOrValue -right[hidden]-> ResourceUsageStateType
+
+ResourceUsageStateType -right[hidden]-> ResourceAdministrativeStateType
+
+ResourceAdministrativeStateType -right[hidden]-> ResourceOperationalStateType
+
+ResourceOperationalStateType -right[hidden]-> ResourceStatusType
+
+ResourceRefOrValue *-->  "0..*" ResourceRelationship : resourceRelationship
+
+ResourceRefOrValue "1" <--* ResourceRelationship : resource
+
+ProductRefOrValue *-->  "0..*" AgreementItemRef : agreement
+
+ProductRefOrValue *-->  "0..*" ProductTerm : productTerm
+
+ProductRefOrValue *-->  "0..1" ProductOfferingRef : productOffering
+
+ProductRefOrValue *-->  "0..*" RelatedProductOrderItem : productOrderItem
+
+ProductRefOrValue *-->  "0..*" ServiceRef : realizingService
+
+ProductRefOrValue *-->  "0..*" ResourceRef : realizingResource
+
+ProductRefOrValue *-->  "0..1" ProductSpecificationRef : productSpecification
+
+EntityRelationship "0..*" <--* Warranty : entityRelationship
+
+AgreementRef "0..*" <--* Warranty : warrantyAgreement
+
+EntitySpecificationRef "0..1" <--* Warranty : entitySpecification
+
+WarrantyRelationship "0..*" <--* Warranty : warrantyRelationship
+
+WarrantySpecificationRef "0..1" <--* Warranty : warrantySpecification
+
+ResourceSpecificationRef "0..1" <-left-* ResourceRefOrValue : resourceSpecification
+
+Feature *-right-> "0..*" ConstraintRef : constraint
+
+Feature *-->  "0..*" FeatureRelationship : featureRelationship
+
+EntityRelationship *-right-> "0..1" AssociationSpecificationRef : associationSpec
+
+ProductSpecificationRef *-->  "0..1" TargetProductSchema : targetProductSchema
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

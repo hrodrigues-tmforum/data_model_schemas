@@ -1,0 +1,217 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class SalesLead <<Pivot>> {
+    creationDate : DateTime
+    description : String
+    estimatedRevenue : Money
+    href : String
+    id : String
+    name : String
+    priority : SalesLeadPriorityType
+    rating : String
+    referredDate : DateTime
+    status : SalesLeadStateType
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    type : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetProductSchema  {
+    @schemaLocation : Uri [1]
+    @type : String [1]
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MarketingCampaignRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MarketSegmentRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SalesLeadPriorityType <<Enumeration>> {
+    low
+    medium
+    high
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SalesOpportunityRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CategoryRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SalesLeadStateType <<Enumeration>> {
+    accepted
+    acknowledged
+    cancelled
+    inProgress
+    pending
+    rejected
+}
+
+SalesLead -right[hidden]-> SalesLeadStateType
+
+SalesLeadStateType -right[hidden]-> SalesLeadPriorityType
+
+Note "0..*" <-left-* SalesLead : note
+
+ChannelRef "0..1" <--* SalesLead : channel
+
+ProductRef "0..1" <--* SalesLead : product
+
+CategoryRef "0..1" <--* SalesLead : category
+
+RelatedParty "0..*" <--* SalesLead : relatedParty
+
+MarketSegmentRef "0..1" <--* SalesLead : marketSegment
+
+SalesLead *-->  "0..1" ProductOfferingRef : productOffering
+
+SalesLead *-->  "0..1" MarketingCampaignRef : marketingCampaign
+
+SalesLead *-->  "0..1" SalesOpportunityRef : salesOpportunity
+
+SalesLead *-->  "0..*" ContactMedium : prospectContact
+
+SalesLead *-->  "0..1" ProductSpecificationRef : productSpecification
+
+ProductSpecificationRef *-->  "0..1" TargetProductSchema : targetProductSchema
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+@enduml

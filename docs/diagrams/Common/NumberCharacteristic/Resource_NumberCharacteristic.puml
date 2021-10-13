@@ -1,0 +1,35 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class NumberCharacteristic <<Pivot>> {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+NumberCharacteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

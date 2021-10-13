@@ -1,0 +1,69 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class CheckMethod <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    name : String
+    preferred : Boolean
+    status : String
+    statusDate : DateTime
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CheckDetails  {
+    bank : String
+    code : String
+    date : DateTime
+    drawer : String
+    href : Uri
+    id : String
+    payee : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+CheckMethod *-->  "0..1" RelatedParty : relatedParty
+
+CheckMethod *-->  "0..*" AccountRef : account
+
+CheckMethod *-->  "0..1" CheckDetails : details
+
+@enduml

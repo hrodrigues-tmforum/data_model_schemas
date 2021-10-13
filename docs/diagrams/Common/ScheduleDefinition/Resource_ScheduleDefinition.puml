@@ -1,0 +1,51 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ScheduleDefinition <<Pivot>> {
+    recurringFrequency : String
+    scheduleDefinitionEndTime : DateTime
+    scheduleDefinitionHourRange : String
+    scheduleDefinitionStartTime : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DayOfWeekRecurrence  {
+    dates : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MonthlyScheduleDayOfWeekDefinition  {
+    recurringDaySequence : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DayOfMonthRecurrence  {
+    dates : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ScheduleDefinition *-right-> "0..1" MonthlyScheduleDayOfWeekDefinition : MonthlyScheduleDayOfWeekDefinition
+
+ScheduleDefinition *-->  "0..*" DayOfWeekRecurrence : WeeklyScheduledDefinition
+
+MonthlyScheduleDayOfWeekDefinition *-->  "0..*" DayOfMonthRecurrence : dayOfMonthRecurrence
+
+@enduml

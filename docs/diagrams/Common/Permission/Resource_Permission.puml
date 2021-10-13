@@ -1,0 +1,89 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Permission <<Pivot>> {
+    creationDate : DateTime
+    description : String
+    href : String
+    id : String
+    validFor : TimePeriod [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssetUserRole  {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssetGroup  {
+    href : Uri
+    id : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class UserRoleRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Privilege  {
+    action : String
+    function : String
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+Permission *-->  "0..*" Privilege : privilege
+
+Permission *-->  "0..*" AssetUserRole : assetUserRole
+
+AssetUserRole *-->  "0..1" AssetGroup : managedAssetGroup
+
+Privilege *-->  "0..1" AssetGroup : managedAssetGroup
+
+RelatedParty "0..1" <-left-* Permission : granter
+
+RelatedParty "1" <-left-* Permission : user
+
+AssetUserRole *-->  "0..1" UserRoleRef : userRole
+
+@enduml

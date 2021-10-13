@@ -1,0 +1,48 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Execution <<Pivot>> {
+    dataCorrelationId : String
+    href : Uri
+    id : String
+    state : ExecutionStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeneralTestArtifactRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExecutionStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    inProgress
+    cancelled
+    completed
+    failed
+}
+
+Execution -right[hidden]-> ExecutionStateType
+
+Execution *-->  "0..*" GeneralTestArtifactRef : generalTestArtifact
+
+@enduml

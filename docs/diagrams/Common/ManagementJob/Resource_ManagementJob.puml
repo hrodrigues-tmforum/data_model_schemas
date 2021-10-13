@@ -1,0 +1,125 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ManagementJob <<Pivot>> {
+    adminState : AdministrativeState
+    creationTime : DateTime
+    executionState : ExecutionStateType
+    href : Uri
+    id : String
+    jobId : String
+    jobPriority : Integer
+    lastModifiedTime : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExecutionStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    inProgress
+    cancelled
+    completed
+    failed
+}
+
+class FileTransferData  {
+    compressionType : CompressionType
+    fileFormat : String
+    fileLocation : Uri
+    packingType : PackingType
+    transportProtocol : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CompressionEnumType <<Enumeration>> {
+    no_compression
+    gzip
+    vendor_ext
+    minor_ext
+}
+
+class PackingEnumType <<Enumeration>> {
+    NO_PACKING
+    GZIP
+    TAR
+    VENDOR_EXT
+    MINOR_EXT
+}
+
+class Duration  {
+    amount : Integer
+    units : String
+}
+
+class ScheduleDefinition  {
+    recurringFrequency : String
+    scheduleDefinitionEndTime : DateTime
+    scheduleDefinitionHourRange : String
+    scheduleDefinitionStartTime : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DayOfWeekRecurrence  {
+    dates : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MonthlyScheduleDayOfWeekDefinition  {
+    recurringDaySequence : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DayOfMonthRecurrence  {
+    dates : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AdministrativeState <<Enumeration>> {
+    locked
+    unlocked
+}
+
+ManagementJob -right[hidden]-> ExecutionStateType
+
+ExecutionStateType -right[hidden]-> AdministrativeState
+
+ManagementJob *-->  "1..*" FileTransferData : fileTransferData
+
+ManagementJob *-->  "0..1" ScheduleDefinition : scheduleDefinition
+
+ScheduleDefinition *-->  "0..*" DayOfWeekRecurrence : WeeklyScheduledDefinition
+
+ScheduleDefinition *-->  "0..1" MonthlyScheduleDayOfWeekDefinition : MonthlyScheduleDayOfWeekDefinition
+
+FileTransferData *-->  "0..1" Duration : retentionPeriod
+
+MonthlyScheduleDayOfWeekDefinition *-->  "0..*" DayOfMonthRecurrence : dayOfMonthRecurrence
+
+CompressionType -right[hidden]-> CompressionEnumType
+
+PackingType -right[hidden]-> PackingEnumType
+
+@enduml

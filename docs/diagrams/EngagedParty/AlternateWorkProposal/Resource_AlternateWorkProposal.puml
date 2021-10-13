@@ -1,0 +1,435 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class AlternateWorkProposal <<Pivot>> {
+    alternateWorkDate : DateTime
+    id : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkRefOrValue  {
+    actualDuration : Quantity
+    completionDate : DateTime
+    currentDuration : Quantity
+    deliveryTimeSlot : TimePeriod
+    description : String
+    expectedCompletionDate : DateTime
+    href : Uri
+    id : String
+    name : String
+    orderDate : DateTime
+    percentageComplete : Float
+    plannedDuration : Quantity
+    quantity : Quantity
+    scheduledDuration : Quantity
+    state : WorkStateType
+    workPriority : String
+    workType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppointmentRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkPrice  {
+    description : String
+    name : String
+    priceType : PriceType
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Price  {
+    dutyFreeAmount : Money
+    href : Uri
+    id : String
+    percentage : Float
+    taxIncludedAmount : Money
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PriceType <<Enumeration>> {
+    recurring
+    oneTime
+    usage
+}
+
+class ProductOfferingPriceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PriceAlteration  {
+    applicationDuration : Integer
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    priority : Integer
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+}
+
+class WorkforceEmployeeAssignment  {
+    description : String [1]
+    id : String [1]
+    skillType : String [1]
+    state : WorkforceEmployeeAssignmentStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TimeSlot  {
+    href : String
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkforceEmployeeAssignmentStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+}
+
+class PartyRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxExemptionCertificate  {
+    certificateNumber : String
+    id : String
+    issuingJurisdiction : String
+    reason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxDefinition  {
+    id : String
+    jurisdictionLevel : String
+    jurisdictionName : String
+    name : String
+    taxType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExternalReference  {
+    externalReferenceType : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyCreditProfile  {
+    creditAgencyName : String
+    creditAgencyType : String
+    href : Uri
+    id : String
+    ratingReference : String
+    ratingScore : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedWorkOrderItem  {
+    orderItemAction : String
+    orderItemId : String [1]
+    role : String
+    workOrderHref : String
+    workOrderId : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+AlternateWorkProposal *-->  "0..1" WorkRefOrValue : alternateWork
+
+WorkRefOrValue *-right-> "0..*" WorkRefOrValue : work
+
+WorkRefOrValue -right[hidden]-> WorkStateType
+
+WorkRelationship "0..*" <--* WorkRefOrValue : workRelationship
+
+WorkRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+WorkRefOrValue *-->  "0..*" Characteristic : workCharacteristic
+
+WorkRefOrValue *-->  "0..*" WorkforceEmployeeAssignment : workforceEmployeeAssignment
+
+WorkRefOrValue *-->  "0..*" WorkPrice : workPrice
+
+WorkRelationship *-->  "0..1" WorkRefOrValue : work
+
+WorkRelationship *-->  "0..*" Characteristic : workRelationshipCharacteristic
+
+WorkPrice *-->  "0..1" Price : price
+
+WorkPrice *-->  "0..1" ProductOfferingPriceRef : productOfferingPrice
+
+WorkPrice -right[hidden]-> PriceType
+
+WorkPrice *-->  "0..*" PriceAlteration : priceAlteration
+
+Price "1" <--* PriceAlteration : price
+
+ProductOfferingPriceRef "0..1" <--* PriceAlteration : productOfferingPrice
+
+WorkforceEmployeeAssignment *-right-> "0..*" TimeSlot : timeSlot
+
+TimeSlot *-right-> "0..1" RelatedParty : relatedParty
+
+WorkforceEmployeeAssignment *-->  "1" PartyRefOrValue : workforceEmployee
+
+RelatedParty "0..*" <--* PartyRefOrValue : relatedParty
+
+WorkforceEmployeeAssignmentStateType <-left[hidden]- WorkforceEmployeeAssignment
+
+Characteristic "0..*" <--* PartyRefOrValue : partyCharacteristic
+
+Note "0..1" <--* WorkRefOrValue : note
+
+RelatedPlaceRefOrValue "0..*" <--* WorkRefOrValue : place
+
+AgreementRef "0..*" <--* WorkRefOrValue : agreement
+
+AppointmentRef "0..1" <--* WorkRefOrValue : appointment
+
+RelatedWorkOrderItem "0..*" <--* WorkRefOrValue : workOrderItem
+
+WorkRefOrValue *-->  "0..1" WorkSpecificationRef : workSpecification
+
+Characteristic <-left[hidden]- WorkSpecificationRef
+
+PartyRefOrValue *-right-> "0..*" PartyCreditProfile : creditRating
+
+PartyRefOrValue *-->  "0..*" ExternalReference : externalReference
+
+PartyRefOrValue *-->  "0..*" ContactMedium : contactMedium
+
+PartyRefOrValue *-->  "0..*" TaxExemptionCertificate : taxExemptionCertificate
+
+BillingAccountRef "0..1" <-left-* WorkPrice : billingAccount
+
+TaxExemptionCertificate *-->  "0..*" TaxDefinition : taxDefinition
+
+TaxExemptionCertificate *-->  "0..1" AttachmentRefOrValue : attachment
+
+CharacteristicRelationship "0..*" <-left-* Characteristic : characteristicRelationship
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+@enduml

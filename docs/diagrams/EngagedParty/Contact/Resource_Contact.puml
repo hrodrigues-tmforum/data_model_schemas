@@ -1,0 +1,73 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Contact <<Pivot>> {
+    contactName : String
+    contactType : String [1]
+    href : Uri
+    id : String
+    partyRoleType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+Contact *-right-> "0..*" ContactMedium : contactMedium
+
+Contact *-->  "0..1" RelatedParty : relatedParty
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+@enduml

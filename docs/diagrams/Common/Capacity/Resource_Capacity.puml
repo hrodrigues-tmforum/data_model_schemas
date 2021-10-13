@@ -1,0 +1,81 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Capacity <<Pivot>> {
+    plannedOrActualCapacity : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ApplicableTimePeriod  {
+    dayOfWeek : String
+    fromToDateTime : TimePeriod
+    rangeInterval : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CapacityRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CapacitySpecRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CapacityAmount  {
+    capacityAmount : String
+    capacityAmountFrom : String
+    capacityAmountTo : String
+    rangeInterval : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+PlaceRefOrValue "0..1" <-left-* Capacity : place
+
+Capacity *-right-> "0..1" CapacitySpecRef : capacitySpec
+
+CapacityAmount "0..1" <--* Capacity : capacityAmount
+
+Capacity *-->  "0..*" CapacityRef : relatedCapacity
+
+Capacity *-->  "0..*" ApplicableTimePeriod : applicableTimePeriod
+
+@enduml

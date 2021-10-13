@@ -1,0 +1,64 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ProductSpecificationCharacteristicValueUse <<Pivot>> {
+    description : String
+    id : String
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetProductSchema  {
+    @schemaLocation : Uri [1]
+    @type : String [1]
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ProductSpecificationCharacteristicValueUse *-right-> "0..1" ProductSpecificationRef : productSpecification
+
+ProductSpecificationCharacteristicValueUse *-->  "0..*" CharacteristicValueSpecification : productSpecCharacteristicValue
+
+ProductSpecificationRef *-->  "0..1" TargetProductSchema : targetProductSchema
+
+@enduml

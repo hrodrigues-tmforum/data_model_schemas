@@ -1,0 +1,103 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class AppliedCustomerBillingRate <<Pivot>> {
+    appliedBillingRateType : String
+    date : DateTime
+    description : String
+    href : String
+    id : String [1]
+    isBilled : Boolean
+    name : String
+    periodCoverage : TimePeriod
+    taxExcludedAmount : Money
+    taxIncludedAmount : Money
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CustomerBillRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppliedBillingTaxRate  {
+    href : Uri
+    id : String
+    taxAmount : Money
+    taxCategory : String
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+CustomerBillRef "0..1" <-left-* AppliedCustomerBillingRate : bill
+
+AppliedCustomerBillingRate *-right-> "0..1" ProductRef : product
+
+AppliedBillingTaxRate "0..*" <--* AppliedCustomerBillingRate : appliedTax
+
+AppliedCustomerBillingRate *-->  "0..1" BillingAccountRef : billingAccount
+
+AppliedCustomerBillingRate *-->  "0..*" Characteristic : characteristic
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

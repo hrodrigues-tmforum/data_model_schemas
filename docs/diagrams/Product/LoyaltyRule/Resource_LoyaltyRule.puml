@@ -1,0 +1,51 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class LoyaltyRule <<Pivot>> {
+    commonName : String
+    description : String
+    hasSubRules : Boolean
+    href : String
+    id : String
+    isCNF : Boolean
+    isMandatoryEvaluation : Boolean
+    keywords : String
+    policyName : String
+    usage : String
+}
+
+class LoyaltyEventTypeRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @referredType : Uri
+}
+
+class LoyaltyActionRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @referredType : Uri
+}
+
+class LoyaltyConditionRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @referredType : Uri
+}
+
+LoyaltyRule *-->  "0..*" LoyaltyActionRef : loyaltyAction
+
+LoyaltyRule *-->  "0..*" LoyaltyConditionRef : loyaltyCondition
+
+LoyaltyRule *-->  "0..*" LoyaltyEventTypeRef : loyaltyEventType
+
+@enduml

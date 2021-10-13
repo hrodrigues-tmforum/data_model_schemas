@@ -1,0 +1,89 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Reservation <<Pivot>> {
+    cancellationDate : String
+    cancellationReason : String
+    completionDate : String
+    creationDate : DateTime
+    description : String
+    expectedCompletionDate : String
+    href : Uri
+    id : String
+    requestedCompletionDate : String
+    requestedStartDate : String
+    reservationPeriod : TimePeriod
+    state : ReservationStateType
+    stateChangeDate : DateTime
+    stateChangeReason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntity  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPartyRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ReservationStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+    assessingCancellation
+    pendingCancellation
+}
+
+Reservation -right[hidden]-> ReservationStateType
+
+Reservation *-->  "0..*" RelatedEntity : relatedEntity
+
+Reservation *-->  "0..*" RelatedPartyRef : relatedParty
+
+Reservation *-->  "0..1" ChannelRef : channel
+
+@enduml

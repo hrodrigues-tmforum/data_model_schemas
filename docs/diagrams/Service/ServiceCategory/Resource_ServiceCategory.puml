@@ -1,0 +1,56 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ServiceCategory <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    isRoot : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    parentId : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceCandidateRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceCategoryRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ServiceCategory *-->  "0..*" ServiceCandidateRef : serviceCandidate
+
+ServiceCategory *-->  "0..*" ServiceCategoryRef : category
+
+@enduml

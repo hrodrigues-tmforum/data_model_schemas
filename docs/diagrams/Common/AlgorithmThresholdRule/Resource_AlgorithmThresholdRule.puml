@@ -1,0 +1,101 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class AlgorithmThresholdRule <<Pivot>> {
+    algorithmRef : String
+    href : Uri
+    id : String
+    name : String
+    perfAlarmSpecThresholdCrossingDescription : String
+    thresholdRuleCondition : String
+    thresholdRuleName : String
+    thresholdRuleSeverity : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Consequence  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    prescribedAction : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AlgorithmParams  {
+    name : String
+    value : String
+}
+
+class Measurement  {
+    collectionType : String
+    description : String
+    href : Uri
+    id : String
+    measurementFormula : String
+    measurementType : String
+    measurementUnit : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PerformanceAlarmSpecification  {
+    perfAlarmSpecAdditionalText : String
+    perfAlarmSpecAlarmType : String
+    perfAlarmSpecProbableCause : String
+    perfAlarmSpecSeverity : PerceivedSeverity
+    perfAlarmSpecSpecificProblem : String
+    perfAlarmThresholdCrossingDescription : String
+}
+
+class PerceivedSeverity <<Enumeration>> {
+    CRITICAL
+    MAJOR
+    MINOR
+    WARNING
+    INDETERMINATE
+    CLEARED
+}
+
+class PerformanceConsequence  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    prescribedAction : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+AlgorithmThresholdRule *-->  "0..1" PerformanceAlarmSpecification : performanceAlarmSpecification
+
+PerformanceAlarmSpecification -right[hidden]-> PerceivedSeverity
+
+PerformanceAlarmSpecification *-->  "0..1" PerformanceConsequence : performanceConsequence
+
+PerformanceAlarmSpecification "0..1" <--* PerformanceConsequence : alarmSpecification
+
+Measurement "0..1" <-left-* AlgorithmThresholdRule : measurement
+
+AlgorithmThresholdRule *-right-> "0..*" Consequence : consequence
+
+AlgorithmParams "0..*" <--* AlgorithmThresholdRule : algorithmParams
+
+@enduml

@@ -1,0 +1,277 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class OnDemandCollection <<Pivot>> {
+    adminState : AdministrativeState
+    collectionPeriod : TimePeriod
+    consumingApplicationId : String
+    creationTime : DateTime
+    executionState : ExecutionStateType
+    granulatiry : Granularity
+    href : Uri
+    id : String
+    jobId : String
+    jobPriority : Integer
+    lastModifiedTime : DateTime
+    outputFormat : String
+    producingApplicationId : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TrackingRecord  {
+    description : String
+    id : String
+    systemId : String
+    time : DateTime
+    user : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExecutionStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    inProgress
+    cancelled
+    completed
+    failed
+}
+
+class PerformanceIndicatorSpecificationRefOrValue  {
+    collectionType : CollectionType
+    derivationAlgorithm : String
+    derivationMethod : String
+    description : String
+    href : Uri
+    id : String
+    indicatorCategory : String
+    indicatorType : IndicatorType
+    indicatorUnit : String
+    name : String
+    perspective : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PerformanceIndicatorSpecRelationship  <<Ref>> {
+    href : String
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CollectionType <<Enumeration>> {
+    cumulative
+    delta
+    discrete_event
+    gauge
+    status_inspection
+}
+
+class IndicatorType <<Enumeration>> {
+    string
+    int
+    float
+    double
+}
+
+class PerformanceIndicatorGroupSpecification  {
+    href : Uri
+    id : String
+    name : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PerformanceIndicatorSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FileTransferData  {
+    compressionType : CompressionType
+    fileFormat : String
+    fileLocation : Uri
+    packingType : PackingType
+    transportProtocol : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CompressionEnumType <<Enumeration>> {
+    no_compression
+    gzip
+    vendor_ext
+    minor_ext
+}
+
+class PackingEnumType <<Enumeration>> {
+    NO_PACKING
+    GZIP
+    TAR
+    VENDOR_EXT
+    MINOR_EXT
+}
+
+class Duration  {
+    amount : Integer
+    units : String
+}
+
+class ScheduleDefinition  {
+    recurringFrequency : String
+    scheduleDefinitionEndTime : DateTime
+    scheduleDefinitionHourRange : String
+    scheduleDefinitionStartTime : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DayOfWeekRecurrence  {
+    dates : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MonthlyScheduleDayOfWeekDefinition  {
+    recurringDaySequence : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DayOfMonthRecurrence  {
+    dates : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MonitoredClassCriteria  {
+    monitoredObjectClass : String
+    objectInstanceFilter : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Granularity <<Enumeration>> {
+    g_1mn
+    g_5mn
+    g_15mn
+    g_30mn
+    g_1h
+    g_24h
+    g_1m
+    g_1y
+    na
+}
+
+class MonitoredInstancesCriteria  {
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AdministrativeState <<Enumeration>> {
+    locked
+    unlocked
+}
+
+OnDemandCollection -right[hidden]-> ExecutionStateType
+
+ExecutionStateType -right[hidden]-> AdministrativeState
+
+AdministrativeState -right[hidden]-> Granularity
+
+MonitoredClassCriteria "0..1" <-left-* OnDemandCollection : monitoredClassCriteria
+
+TrackingRecord "0..*" <--* OnDemandCollection : trackingRecord
+
+FileTransferData "1..*" <--* OnDemandCollection : fileTransferData
+
+MonitoredInstancesCriteria "0..1" <--* OnDemandCollection : monitoredInstancesCriteria
+
+OnDemandCollection *-->  "0..*" PerformanceIndicatorSpecificationRefOrValue : performanceIndicatorSpecification
+
+OnDemandCollection *-->  "0..*" PerformanceIndicatorGroupSpecification : performanceIndicatorGroupSpecification
+
+OnDemandCollection *-->  "0..1" ScheduleDefinition : scheduleDefinition
+
+ScheduleDefinition *-->  "0..*" DayOfWeekRecurrence : WeeklyScheduledDefinition
+
+ScheduleDefinition *-->  "0..1" MonthlyScheduleDayOfWeekDefinition : MonthlyScheduleDayOfWeekDefinition
+
+TrackingRecord *-right-> "0..*" Characteristic : characteristic
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+PerformanceIndicatorSpecificationRefOrValue -right[hidden]-> IndicatorType
+
+IndicatorType -right[hidden]-> CollectionType
+
+PerformanceIndicatorSpecificationRefOrValue *-->  "0..*" PerformanceIndicatorSpecRelationship : performanceIndicatorSpecRelationship
+
+PerformanceIndicatorGroupSpecification *-->  "1..*" PerformanceIndicatorSpecificationRef : performanceIndicatorSpecification
+
+FileTransferData *-right-> "0..1" Duration : retentionPeriod
+
+MonthlyScheduleDayOfWeekDefinition *-->  "0..*" DayOfMonthRecurrence : dayOfMonthRecurrence
+
+CompressionType -right[hidden]-> CompressionEnumType
+
+PackingType -right[hidden]-> PackingEnumType
+
+@enduml

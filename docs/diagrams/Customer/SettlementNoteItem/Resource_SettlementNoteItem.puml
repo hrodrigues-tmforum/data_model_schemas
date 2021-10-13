@@ -1,0 +1,43 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class SettlementNoteItem <<Pivot>> {
+    href : Uri
+    id : String
+    itemId : String
+    itemLabel : String
+    itemNumber : String
+    period : TimePeriod
+    quantity : Integer
+    taxExcludedAmount : Float
+    taxExcludedUnitPrice : Float
+    taxIncludedAmount : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxItem  {
+    href : Uri
+    id : String
+    taxAmount : Money
+    taxCategory : String
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+SettlementNoteItem *-->  "0..*" TaxItem : taxItem
+
+@enduml

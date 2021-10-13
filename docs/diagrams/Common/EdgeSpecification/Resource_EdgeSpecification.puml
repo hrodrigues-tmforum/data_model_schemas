@@ -1,0 +1,92 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class EdgeSpecification <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EdgeSpecificationCharacteristic  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class EdgeSpecificationCharacteristicRelationship  {
+    characteristicSpecificationId : String
+    edgeSpecificationHref : Uri
+    edgeSpecificationId : String
+    name : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+EdgeSpecification *-->  "0..*" RelatedParty : relatedParty
+
+EdgeSpecification *-->  "0..*" EdgeSpecificationCharacteristic : edgeSpecCharacteristic
+
+EdgeSpecificationCharacteristic *-->  "0..*" EdgeSpecificationCharacteristicRelationship : edgeSpecCharRelationship
+
+EdgeSpecificationCharacteristic *-->  "0..*" CharacteristicValueSpecification : edgeSpecCharacteristicValue
+
+@enduml

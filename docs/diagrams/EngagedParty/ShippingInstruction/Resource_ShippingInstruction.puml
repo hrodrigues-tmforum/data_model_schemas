@@ -1,0 +1,78 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ShippingInstruction <<Pivot>> {
+    carrierId : String
+    carrierName : String
+    carrierServiceCode : String
+    deliveryAttempts : Integer
+    deliverySpeed : String
+    deliveryTimeSlot : TimePeriod
+    href : Uri
+    id : String
+    insuredValue : Money
+    labelMessage : String
+    packageType : String
+    receiptConfirmation : String
+    shippingType : String
+    signatureRequired : Boolean
+    signatureRequiredBy : SignatureRequiredByType
+    warehouseId : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SignatureRequiredByType <<Enumeration>> {
+    adult
+    receiver
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ShippingInstruction -right[hidden]-> SignatureRequiredByType
+
+ShippingInstruction *-->  "0..*" Note : note
+
+ShippingInstruction *-->  "0..*" Characteristic : instructionCharacteristic
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

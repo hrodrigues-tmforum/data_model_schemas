@@ -1,0 +1,154 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class TransferBalance <<Pivot>> {
+    amount : Quantity
+    confirmationDate : DateTime
+    costOwner : String
+    description : String
+    href : Uri
+    id : String
+    reason : String
+    receiverBucketUsageType : String
+    requestedDate : DateTime
+    status : String
+    transferCost : Quantity
+    usageType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class LogicalResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    value : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BucketRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    usageType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyAccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    status : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ImpactedBucket  {
+    amountAfter : Quantity
+    amountBefore : Quantity
+    confirmationDate : DateTime
+    description : String
+    name : String
+    requestedDate : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ImpactedBucketItem  {
+    amount : Quantity
+    description : String
+    itemType : String
+    name : String
+    reason : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+BucketRef "0..1" <--* TransferBalance : receiverBucket
+
+BucketRef "0..1" <--* TransferBalance : bucket
+
+TransferBalance *-->  "0..*" ImpactedBucket : impactedBucket
+
+ImpactedBucket *-right-> "1..*" ImpactedBucketItem : item
+
+BucketRef "0..1" <--* ImpactedBucket : bucket
+
+ChannelRef "0..1" <-left-* TransferBalance : channel
+
+TransferBalance *-right-> "0..1" ProductRef : receiverProduct
+
+TransferBalance *-right-> "0..1" ProductRef : product
+
+PartyAccountRef "0..1" <--* TransferBalance : partyAccount
+
+PartyAccountRef "0..1" <--* TransferBalance : receiverPartyAccount
+
+TransferBalance *-->  "0..1" LogicalResourceRef : logicalResource
+
+TransferBalance *-->  "0..1" LogicalResourceRef : receiverLogicalResource
+
+LogicalResourceRef -right[hidden]-> ImpactedBucket
+
+TransferBalance *-->  "0..1" RelatedParty : requestor
+
+TransferBalance *-->  "0..*" RelatedParty : relatedParty
+
+TransferBalance *-->  "0..1" RelatedParty : receiver
+
+RelatedParty -right[hidden]-> LogicalResourceRef
+
+@enduml

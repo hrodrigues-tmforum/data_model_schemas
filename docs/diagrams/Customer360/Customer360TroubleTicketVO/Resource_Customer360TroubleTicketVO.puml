@@ -1,0 +1,74 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Customer360TroubleTicketVO <<Pivot>> {
+    creationDate : DateTime
+    description : String
+    expectedResolutionDate : DateTime
+    externalId : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    name : String
+    priority : String
+    requestedResolutionDate : DateTime
+    resolutionDate : DateTime
+    severity : String
+    status : TroubleTicketStatusType
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    ticketType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class StatusChange  {
+    changeDate : DateTime
+    changeReason : String
+    href : Uri
+    id : String
+    status : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TroubleTicketStatusType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    closed
+    resolved
+}
+
+Customer360TroubleTicketVO -right[hidden]-> TroubleTicketStatusType
+
+Customer360TroubleTicketVO *-->  "0..*" StatusChange : statusChange
+
+Customer360TroubleTicketVO *-->  "0..1" ChannelRef : channel
+
+@enduml

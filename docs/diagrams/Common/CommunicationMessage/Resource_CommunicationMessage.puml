@@ -1,0 +1,127 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class CommunicationMessage <<Pivot>> {
+    content : String
+    description : String
+    href : String
+    id : String
+    logFlag : Boolean
+    messageType : String
+    priority : String
+    scheduledSendTime : DateTime
+    sendTime : DateTime
+    sendTimeComplete : DateTime
+    state : CommunicationMessageStateType
+    subject : String
+    tryTimes : Integer
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Receiver  {
+    appUserId : String
+    email : String
+    href : Uri
+    id : String
+    ip : String
+    name : String
+    phoneNumber : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Attachment  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Sender  {
+    email : String
+    href : Uri
+    id : String
+    name : String
+    phoneNumber : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CommunicationMessageStateType <<Enumeration>> {
+    initial
+    inProgress
+    completed
+    cancelled
+    failed
+}
+
+CommunicationMessage *-->  "0..*" Receiver : receiver
+
+CommunicationMessage *-->  "0..1" Sender : sender
+
+CommunicationMessage -right[hidden]-> CommunicationMessageStateType
+
+Receiver *-->  "0..1" RelatedParty : party
+
+Sender *-->  "0..1" RelatedParty : party
+
+Attachment "0..*" <-left-* CommunicationMessage : attachment
+
+Characteristic "0..*" <--* CommunicationMessage : characteristic
+
+Characteristic *-right-> "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml
