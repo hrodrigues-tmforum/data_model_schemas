@@ -1,0 +1,25 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class PromotionCriteria <<Pivot>> {
+    criteriaOperator : String [1]
+    criteriaParameter : String [1]
+    criteriaValue : String [1]
+    id : String
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+
+@enduml

@@ -1,0 +1,29 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class LoyaltyAction <<Pivot>> {
+    action : String
+    actionAttributes : Any
+    actionType : String
+    body : Any
+    commonName : String
+    description : String
+    endpoint : String
+    headers : Any
+    href : String
+    id : String
+    version : String
+}
+
+
+@enduml

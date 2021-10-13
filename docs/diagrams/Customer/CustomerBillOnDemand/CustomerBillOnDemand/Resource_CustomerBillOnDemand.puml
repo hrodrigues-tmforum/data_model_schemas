@@ -1,0 +1,70 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class CustomerBillOnDemand <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    lastUpdate : String
+    name : String
+    state : CustomerBillOnDemandStateType
+}
+
+class CustomerBillRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CustomerBillOnDemandStateType <<Enumeration>> {
+    inProgress
+    rejected
+    done
+    terminatedWithError
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+CustomerBillOnDemand -right[hidden]-> CustomerBillOnDemandStateType
+
+CustomerBillOnDemand *-->  "0..1" BillingAccountRef : billingAccount
+
+CustomerBillOnDemand *-->  "0..1" RelatedParty : relatedParty
+
+CustomerBillOnDemand *-->  "0..1" CustomerBillRef : customerBill
+
+@enduml

@@ -1,0 +1,943 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Customer360 <<Pivot>> {
+    customerId : String
+    customerRef : String
+    href : String
+    id : String
+    name : String
+    status : String
+    statusReason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Customer360ProductOrderVO  {
+    cancellationDate : DateTime
+    cancellationReason : String
+    category : String
+    completionDate : DateTime
+    description : String
+    expectedCompletionDate : DateTime
+    externalId : String
+    href : String
+    id : String
+    notificationContact : String
+    orderDate : DateTime
+    priority : String
+    requestedCompletionDate : DateTime
+    requestedStartDate : DateTime
+    state : ProductOrderStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOrderStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+    assessingCancellation
+    pendingCancellation
+}
+
+class Customer360RecommendationVO  {
+    description : String
+    href : String
+    id : String
+    name : String
+    recommendationType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RecommendationItem  {
+    href : Uri
+    id : String
+    priority : Integer
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRefOrValue  {
+    description : String
+    href : String
+    id : String
+    isBundle : Boolean
+    isCustomerVisible : Boolean
+    name : String
+    orderDate : DateTime
+    productSerialNumber : String
+    startDate : DateTime
+    status : ProductStatusType
+    terminationDate : DateTime
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetProductSchema  {
+    @schemaLocation : Uri [1]
+    @type : String [1]
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedProductOrderItem  {
+    href : Uri
+    id : String
+    orderItemAction : String
+    orderItemId : String [1]
+    productOrderHref : String
+    productOrderId : String [1]
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementItemRef  <<Ref>> {
+    agreementItemId : String
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductTerm  {
+    description : String
+    duration : Quantity
+    href : Uri
+    id : String
+    name : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductPrice  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingPriceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Price  {
+    dutyFreeAmount : Money
+    href : Uri
+    id : String
+    percentage : Float
+    taxIncludedAmount : Money
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PriceAlteration  {
+    applicationDuration : Integer
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    priority : Integer
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductStatusType <<Enumeration>> {
+    created
+    pendingActive
+    cancelled
+    active
+    pendingTerminate
+    terminated
+    suspended
+    aborted
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ShoppingCartRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeographicLocationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CategoryRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOrderRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Customer360AppointmentVO  {
+    category : String
+    creationDate : DateTime
+    description : String
+    externalId : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    status : AppointmentStateType
+    validFor : TimePeriod [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CalendarEventRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppointmentStateType <<Enumeration>> {
+    initialized
+    confirmed
+    cancelled
+    completed
+    failed
+}
+
+class Customer360QuoteVO  {
+    category : String
+    description : String
+    effectiveQuoteCompletionDate : DateTime
+    expectedFulfillmentStartDate : DateTime
+    expectedQuoteCompletionDate : DateTime
+    externalId : String
+    href : String
+    id : String
+    instantSyncQuote : Boolean
+    quoteDate : DateTime
+    requestedQuoteCompletionDate : DateTime
+    state : QuoteStateType
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class QuoteStateType <<Enumeration>> {
+    rejected
+    pending
+    inProgress
+    cancelled
+    approved
+    accepted
+}
+
+class Customer360LoyaltyBalanceVO  {
+    href : String
+    id : String
+    quantity : Money
+    validFor : TimePeriod
+}
+
+class LoyaltyProgramMemberRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : Uri
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Customer360ServiceProblemVO  {
+    affectedNumberOfServices : Integer
+    category : String
+    correlationId : String
+    description : String
+    href : String
+    id : String
+    impactImportanceFactor : String
+    originatingSystem : String
+    priority : Integer
+    problemEscalation : String
+    reason : String
+    resolutionDate : DateTime
+    status : String
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    timeChanged : DateTime
+    timeRaised : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceProblemRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntityRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Place  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CreditProfile  {
+    creditProfileDate : DateTime
+    creditRiskRating : Integer
+    creditScore : Integer
+    href : Uri
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Customer360CustomerBillVO  {
+    amountDue : Money
+    billDate : DateTime
+    billNo : String
+    billingPeriod : TimePeriod
+    category : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    nextBillDate : DateTime
+    paymentDueDate : DateTime
+    remainingAmount : Money
+    runType : CustomerBillRunType
+    state : CustomerBillStateType
+    taxExcludedAmount : Money
+    taxIncludedAmount : Money
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CustomerBillRunType <<Enumeration>> {
+    onCycle
+    offCycle
+}
+
+class PaymentMethodRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CustomerBillStateType <<Enumeration>> {
+    new
+    onHold
+    validated
+    sent
+    settled
+    partiallyPaid
+}
+
+class BillCycleRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Customer360TroubleTicketVO  {
+    creationDate : DateTime
+    description : String
+    expectedResolutionDate : DateTime
+    externalId : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    name : String
+    priority : String
+    requestedResolutionDate : DateTime
+    resolutionDate : DateTime
+    severity : String
+    status : TroubleTicketStatusType
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    ticketType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class StatusChange  {
+    changeDate : DateTime
+    changeReason : String
+    href : Uri
+    id : String
+    status : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TroubleTicketStatusType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    closed
+    resolved
+}
+
+class Customer360PartyInteractionVO  {
+    creationDate : DateTime
+    description : String
+    direction : String
+    href : String
+    id : String
+    interactionDate : TimePeriod
+    reason : String
+    status : String
+    statusChangeDate : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class InteractionRelationship  <<Ref>> {
+    href : String
+    id : String
+    relationshipType : String
+}
+
+class RelatedChannel  {
+    href : Uri
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class InteractionItem  {
+    creationDate : DateTime
+    href : Uri
+    id : String
+    itemDate : TimePeriod
+    reason : String
+    resolution : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntityRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Customer360ProductValueVO  {
+    description : String
+    href : String
+    id : String
+    isBundle : Boolean
+    isCustomerVisible : Boolean
+    name : String
+    orderDate : DateTime
+    productSerialNumber : String
+    randomAtt : String
+    startDate : DateTime
+    status : ProductStatusType
+    terminationDate : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Customer360PromotionVO  {
+    description : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String [1]
+    type : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+PaymentMethodRef "0..*" <--* Customer360 : paymentMethod
+
+Customer360 *-->  "0..*" RelatedParty : relatedParty
+
+Customer360 *-->  "1" RelatedParty : engagedParty
+
+Customer360 *-->  "0..*" Characteristic : characteristic
+
+Customer360 *-->  "0..*" Customer360CustomerBillVO : customerBill
+
+Customer360 *-->  "0..*" Customer360TroubleTicketVO : troubleTicket
+
+Customer360 *-->  "0..*" Customer360ProductValueVO : productValue
+
+Customer360 *-->  "0..*" Customer360PartyInteractionVO : interactionItem
+
+Customer360 *-->  "0..*" Customer360RecommendationVO : recommendation
+
+Customer360 *-->  "0..*" Customer360ServiceProblemVO : serviceProblem
+
+Customer360RecommendationVO *-->  "0..1" ChannelRef : channel
+
+Customer360TroubleTicketVO *-->  "0..1" ChannelRef : channel
+
+Customer360RecommendationVO *-->  "0..1" RelatedParty : party
+
+Customer360RecommendationVO *-->  "0..*" RecommendationItem : item
+
+ProductRefOrValue *-right-> "0..*" ProductRefOrValue : product
+
+ProductRefOrValue *-->  "0..*" ResourceRef : realizingResource
+
+Customer360ServiceProblemVO *-right-> "0..*" ResourceRef : rootCauseResource
+
+ProductRefOrValue *-->  "0..*" ServiceRef : realizingService
+
+Customer360ServiceProblemVO *-right-> "0..*" ServiceRef : affectedService
+
+ProductRefOrValue *-->  "0..1" ProductSpecificationRef : productSpecification
+
+ProductSpecificationRef "0..1" <--* Customer360ProductValueVO : productSpecification
+
+ProductRefOrValue *-->  "0..*" Characteristic : productCharacteristic
+
+ProductRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+ProductRefOrValue -right[hidden]-> ProductStatusType
+
+ProductRelationship "0..*" <--* ProductRefOrValue : productRelationship
+
+ProductRefOrValue *-->  "0..1" BillingAccountRef : billingAccount
+
+ProductRefOrValue *-->  "0..1" ProductOfferingRef : productOffering
+
+ProductRefOrValue *-->  "0..*" ProductPrice : productPrice
+
+ProductOfferingRef "0..1" <--* RecommendationItem : productOffering
+
+ProductRefOrValue "1" <--* RecommendationItem : product
+
+ProductRelationship *-->  "1" ProductRefOrValue : product
+
+ProductPrice *-->  "0..1" BillingAccountRef : billingAccount
+
+ProductPrice *-->  "1" Price : price
+
+ProductPrice *-->  "0..1" ProductOfferingPriceRef : productOfferingPrice
+
+ProductPrice *-->  "0..*" PriceAlteration : productPriceAlteration
+
+Price "1" <--* PriceAlteration : price
+
+ProductOfferingPriceRef "0..1" <--* PriceAlteration : productOfferingPrice
+
+Characteristic "0..*" <--* Customer360ServiceProblemVO : extensionInfo
+
+RelatedParty "0..*" <--* Customer360ServiceProblemVO : relatedParty
+
+RelatedParty "0..1" <--* Customer360ServiceProblemVO : responsibleParty
+
+PaymentMethodRef "0..1" <--* Customer360CustomerBillVO : paymentMethod
+
+Customer360CustomerBillVO -right[hidden]-> CustomerBillStateType
+
+CustomerBillStateType -right[hidden]-> CustomerBillRunType
+
+Customer360TroubleTicketVO -right[hidden]-> TroubleTicketStatusType
+
+RelatedParty "0..*" <-left-* InteractionItem : relatedParty
+
+InteractionItem "0..*" <--* Customer360PartyInteractionVO : interactionItem
+
+RelatedParty "0..*" <--* Customer360PartyInteractionVO : relatedParty
+
+Customer360PartyInteractionVO *-->  "0..*" AttachmentRefOrValue : attachment
+
+Customer360PartyInteractionVO *-->  "0..*" Note : note
+
+Customer360PartyInteractionVO *-->  "0..*" RelatedChannel : channel
+
+InteractionItem *-->  "0..*" AttachmentRefOrValue : attachment
+
+InteractionItem *-->  "0..*" Note : note
+
+InteractionItem *-->  "0..*" RelatedChannel : channel
+
+ProductOfferingRef "0..1" <--* Customer360ProductValueVO : productOffering
+
+BillingAccountRef "0..1" <--* Customer360ProductValueVO : billingAccount
+
+ProductRefOrValue "0..*" <--* Customer360ProductValueVO : product
+
+Customer360QuoteVO "0..*" <-left-* Customer360 : quote
+
+Customer360 *-right-> "0..*" AccountRef : account
+
+Customer360AppointmentVO "0..*" <--* Customer360 : appointment
+
+ContactMedium "0..*" <--* Customer360 : contactMedium
+
+Customer360LoyaltyBalanceVO "0..*" <--* Customer360 : loyaltyBalance
+
+AgreementRef "0..*" <--* Customer360 : agreement
+
+Customer360PromotionVO "0..*" <--* Customer360 : promotion
+
+Customer360ProductOrderVO "0..*" <--* Customer360 : productOrder
+
+CreditProfile "0..*" <--* Customer360 : creditProfile
+
+RelatedPlaceRefOrValue "0..*" <--* ProductRefOrValue : place
+
+AgreementItemRef "0..*" <--* ProductRefOrValue : agreement
+
+ProductTerm "0..*" <--* ProductRefOrValue : productTerm
+
+RelatedProductOrderItem "0..*" <--* ProductRefOrValue : productOrderItem
+
+ProductOrderRef "0..1" <-left-* Customer360RecommendationVO : order
+
+Customer360RecommendationVO *-right-> "0..1" GeographicLocationRef : location
+
+Customer360RecommendationVO *-->  "0..1" CategoryRef : category
+
+CategoryRef -right[hidden]-> RelatedParty
+
+Customer360RecommendationVO *-->  "0..1" ShoppingCartRef : shoppingCart
+
+ShoppingCartRef -right[hidden]-> CategoryRef
+
+Customer360ServiceProblemVO *-->  "0..*" RelatedEntityRef : relatedObject
+
+Customer360ServiceProblemVO *-->  "0..*" ServiceProblemRef : underlyingProblem
+
+Customer360ServiceProblemVO *-->  "0..*" Place : affectedLocation
+
+Customer360PartyInteractionVO *-right-> "0..*" InteractionRelationship : interactionRelationship
+
+InteractionItem *-right-> "0..1" RelatedEntityRefOrValue : item
+
+Customer360CustomerBillVO *-->  "0..1" BillCycleRef : billCycle
+
+Customer360TroubleTicketVO *-->  "0..*" StatusChange : statusChange
+
+ContactMedium *-right-> "0..1" MediumCharacteristic : characteristic
+
+ProductSpecificationRef *-->  "0..1" TargetProductSchema : targetProductSchema
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+Customer360AppointmentVO -right[hidden]-> AppointmentStateType
+
+CalendarEventRef "0..1" <--* Customer360AppointmentVO : calendarEvent
+
+Customer360LoyaltyBalanceVO *-right-> "0..1" LoyaltyProgramMemberRef : loyaltyProgramMember
+
+Customer360ProductOrderVO -right[hidden]-> ProductOrderStateType
+
+QuoteStateType <-left[hidden]- Customer360QuoteVO
+
+@enduml

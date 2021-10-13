@@ -1,0 +1,93 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class GeographicAddressValidation <<Pivot>> {
+    href : String
+    id : String
+    provideAlternative : Boolean
+    state : TaskStateType
+    validationDate : DateTime
+    validationResult : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeographicAddress  {
+    city : String
+    country : String
+    href : Uri
+    id : String
+    locality : String
+    name : String
+    postcode : String
+    stateOrProvince : String
+    streetName : String
+    streetNr : String
+    streetNrLast : String
+    streetNrLastSuffix : String
+    streetNrSuffix : String
+    streetSuffix : String
+    streetType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeographicLocationRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String [1]
+}
+
+class GeographicSubAddress  {
+    buildingName : String
+    href : String
+    id : String
+    levelNumber : String
+    levelType : String
+    name : String
+    privateStreetName : String
+    privateStreetNumber : String
+    subAddressType : String
+    subUnitNumber : String
+    subUnitType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaskStateType <<Enumeration>> {
+    accepted
+    terminatedWithError
+    inProgress
+    done
+}
+
+GeographicAddress *-->  "0..1" GeographicLocationRefOrValue : geographicLocation
+
+GeographicAddress *-->  "0..*" GeographicSubAddress : geographicSubAddress
+
+GeographicAddress "0..1" <--* GeographicAddressValidation : validGeographicAddress
+
+GeographicAddress "0..*" <--* GeographicAddressValidation : alternateGeographicAddress
+
+GeographicAddress "0..1" <--* GeographicAddressValidation : submittedGeographicAddress
+
+GeographicAddressValidation -right[hidden]-> TaskStateType
+
+@enduml

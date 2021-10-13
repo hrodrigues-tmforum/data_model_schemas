@@ -1,0 +1,702 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class WorkOrder <<Pivot>> {
+    cancellationDate : DateTime
+    cancellationReason : String
+    category : String
+    completionDate : DateTime
+    description : String
+    expectedCompletionDate : DateTime
+    externalId : String
+    href : String
+    id : String
+    notificationContact : String
+    orderDate : DateTime
+    priority : String
+    requestedCompletionDate : DateTime
+    requestedStartDate : DateTime
+    startDate : DateTime
+    state : WorkOrderStateType
+    stateChangeDate : DateTime
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedChannel  {
+    href : Uri
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppointmentRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class QuoteRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkOrderStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+    assessingCancellation
+    pendingCancellation
+}
+
+class OrderRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OrderPrice  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingPriceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PriceAlteration  {
+    applicationDuration : Integer
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    priority : Integer
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Price  {
+    dutyFreeAmount : Money
+    href : Uri
+    id : String
+    percentage : Float
+    taxIncludedAmount : Money
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntity  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OrderRelationship  <<Ref>> {
+    href : String
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkOrderItem  {
+    action : OrderItemActionType
+    description : String
+    id : String
+    state : WorkOrderItemStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OrderItemRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkRefOrValue  {
+    actualDuration : Quantity
+    completionDate : DateTime
+    currentDuration : Quantity
+    deliveryTimeSlot : TimePeriod
+    description : String
+    expectedCompletionDate : DateTime
+    href : Uri
+    id : String
+    name : String
+    orderDate : DateTime
+    percentageComplete : Float
+    plannedDuration : Quantity
+    quantity : Quantity
+    scheduledDuration : Quantity
+    state : WorkStateType
+    workPriority : String
+    workType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkPrice  {
+    description : String
+    name : String
+    priceType : PriceType
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PriceType <<Enumeration>> {
+    recurring
+    oneTime
+    usage
+}
+
+class WorkSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+}
+
+class WorkforceEmployeeAssignment  {
+    description : String [1]
+    id : String [1]
+    skillType : String [1]
+    state : WorkforceEmployeeAssignmentStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TimeSlot  {
+    href : String
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkforceEmployeeAssignmentStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+}
+
+class PartyRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxExemptionCertificate  {
+    certificateNumber : String
+    id : String
+    issuingJurisdiction : String
+    reason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxDefinition  {
+    id : String
+    jurisdictionLevel : String
+    jurisdictionName : String
+    name : String
+    taxType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExternalReference  {
+    externalReferenceType : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyCreditProfile  {
+    creditAgencyName : String
+    creditAgencyType : String
+    href : Uri
+    id : String
+    ratingReference : String
+    ratingScore : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedWorkOrderItem  {
+    orderItemAction : String
+    orderItemId : String [1]
+    role : String
+    workOrderHref : String
+    workOrderId : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OrderItemPrice  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OrderItemRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OrderItemActionType <<Enumeration>> {
+    add
+    modify
+    delete
+    noChange
+}
+
+class WorkOrderItemStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+    assessingCancellation
+    pendingCancellation
+}
+
+WorkOrder *-right-> "1..*" WorkOrderItem : workOrderItem
+
+PaymentRef "0..*" <--* WorkOrder : payment
+
+PaymentRef "0..*" <--* WorkOrderItem : payment
+
+WorkOrderItem *-->  "0..*" RelatedEntity : relatedEntity
+
+WorkOrder *-->  "0..*" RelatedEntity : relatedEntity
+
+WorkOrder *-->  "0..*" AgreementRef : agreement
+
+WorkOrderStateType <-left[hidden]- WorkOrder
+
+WorkOrder *-->  "0..1" Note : note
+
+Note -right[hidden]-> RelatedEntity
+
+WorkOrder *-->  "0..1" AppointmentRef : appointment
+
+AppointmentRef -right[hidden]-> Note
+
+WorkOrder *-->  "0..*" RelatedParty : relatedParty
+
+RelatedParty -right[hidden]-> AppointmentRef
+
+WorkOrder *-->  "0..1" BillingAccountRef : billingAccount
+
+BillingAccountRef -right[hidden]-> RelatedParty
+
+WorkOrder *-->  "0..*" OrderPrice : orderTotalPrice
+
+OrderPrice -right[hidden]-> BillingAccountRef
+
+WorkOrderItem *-right-> "0..*" WorkOrderItem : workOrderItem
+
+OrderItemPrice *-->  "0..1" BillingAccountRef : billingAccount
+
+WorkOrderItem *-->  "0..*" OrderItemPrice : itemPrice
+
+WorkOrderItem *-->  "0..*" OrderItemPrice : itemTotalPrice
+
+AgreementRef "0..*" <-left-* WorkRefOrValue : agreement
+
+WorkOrderItem *-->  "0..1" WorkRefOrValue : work
+
+WorkOrderItem *-->  "0..1" BillingAccountRef : billingAccount
+
+WorkOrderItem *-->  "0..1" Note : note
+
+WorkOrderItem *-->  "0..1" AppointmentRef : appointment
+
+WorkOrderItem -right[hidden]-> WorkOrderItemStateType
+
+WorkOrderItemStateType -right[hidden]-> OrderItemActionType
+
+PriceAlteration *-->  "0..1" ProductOfferingPriceRef : productOfferingPrice
+
+PriceAlteration *-->  "1" Price : price
+
+WorkRefOrValue *-right-> "0..*" WorkRefOrValue : work
+
+PriceAlteration "0..*" <-left-* WorkPrice : priceAlteration
+
+WorkPrice "0..*" <--* WorkRefOrValue : workPrice
+
+WorkRefOrValue *-->  "0..1" AppointmentRef : appointment
+
+WorkRefOrValue *-->  "0..1" Note : note
+
+WorkRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+WorkRefOrValue *-->  "0..*" WorkRelationship : workRelationship
+
+WorkRefOrValue -right[hidden]-> WorkStateType
+
+WorkRefOrValue *-->  "0..*" Characteristic : workCharacteristic
+
+RelatedEntity <-left[hidden]- Characteristic
+
+WorkRefOrValue *-->  "0..*" WorkforceEmployeeAssignment : workforceEmployeeAssignment
+
+Characteristic <-left[hidden]- WorkforceEmployeeAssignment
+
+PriceAlteration "0..*" <--* OrderPrice : priceAlteration
+
+Price "0..1" <--* OrderPrice : price
+
+OrderPrice *-->  "0..1" BillingAccountRef : billingAccount
+
+OrderPrice *-->  "0..1" ProductOfferingPriceRef : productOfferingPrice
+
+WorkRefOrValue "0..1" <--* WorkRelationship : work
+
+WorkRelationship *-->  "0..*" Characteristic : workRelationshipCharacteristic
+
+WorkPrice *-->  "0..1" ProductOfferingPriceRef : productOfferingPrice
+
+WorkPrice *-->  "0..1" Price : price
+
+WorkPrice *-->  "0..1" BillingAccountRef : billingAccount
+
+WorkPrice -right[hidden]-> PriceType
+
+RelatedParty "0..1" <--* TimeSlot : relatedParty
+
+TimeSlot "0..*" <--* WorkforceEmployeeAssignment : timeSlot
+
+RelatedParty "0..*" <--* PartyRefOrValue : relatedParty
+
+PartyRefOrValue "1" <--* WorkforceEmployeeAssignment : workforceEmployee
+
+WorkforceEmployeeAssignment -right[hidden]-> WorkforceEmployeeAssignmentStateType
+
+PartyRefOrValue *-->  "0..*" Characteristic : partyCharacteristic
+
+PriceAlteration "0..*" <--* OrderItemPrice : priceAlteration
+
+OrderItemPrice *-->  "0..1" ProductOfferingPriceRef : productOfferingPrice
+
+OrderItemPrice *-->  "1" Price : price
+
+OrderRef "0..*" <--* WorkOrder : order
+
+PlaceRefOrValue "0..1" <--* WorkOrder : place
+
+QuoteRef "0..*" <--* WorkOrder : quote
+
+RelatedChannel "0..*" <--* WorkOrder : channel
+
+OrderRelationship "0..*" <--* WorkOrder : workOrderRelationship
+
+WorkRefOrValue *-->  "0..*" RelatedPlaceRefOrValue : place
+
+RelatedEntity <-left[hidden]- RelatedPlaceRefOrValue
+
+WorkRefOrValue *-->  "0..*" RelatedWorkOrderItem : workOrderItem
+
+RelatedPlaceRefOrValue <-left[hidden]- RelatedWorkOrderItem
+
+WorkRefOrValue *-->  "0..1" WorkSpecificationRef : workSpecification
+
+RelatedWorkOrderItem <-left[hidden]- WorkSpecificationRef
+
+OrderItemRef "0..*" <--* WorkOrderItem : orderItem
+
+OrderItemRelationship "0..*" <--* WorkOrderItem : workOrderItemRelationship
+
+PartyCreditProfile "0..*" <-left-* PartyRefOrValue : creditRating
+
+PartyRefOrValue *-right-> "0..*" ExternalReference : externalReference
+
+ContactMedium "0..*" <--* PartyRefOrValue : contactMedium
+
+PartyRefOrValue *-->  "0..*" TaxExemptionCertificate : taxExemptionCertificate
+
+TaxExemptionCertificate -right[hidden]-> OrderPrice
+
+TaxExemptionCertificate *-->  "0..*" TaxDefinition : taxDefinition
+
+TaxExemptionCertificate *-->  "0..1" AttachmentRefOrValue : attachment
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+@enduml

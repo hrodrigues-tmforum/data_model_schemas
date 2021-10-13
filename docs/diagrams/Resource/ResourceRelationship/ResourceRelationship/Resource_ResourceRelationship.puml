@@ -1,0 +1,210 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ResourceRelationship <<Pivot>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceRefOrValue  {
+    administrativeState : ResourceAdministrativeStateType
+    category : String
+    description : String
+    endOperatingDate : DateTime
+    href : String [1]
+    id : String [1]
+    name : String
+    operationalState : ResourceOperationalStateType
+    resourceStatus : ResourceStatusType
+    resourceVersion : String
+    startOperatingDate : DateTime
+    usageState : ResourceUsageStateType
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Feature  {
+    id : String
+    isBundle : Boolean
+    isEnabled : Boolean
+    name : String [1]
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FeatureRelationship  {
+    id : String
+    name : String [1]
+    relationshipType : String [1]
+    validFor : TimePeriod
+}
+
+class ResourceSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceStatusType <<Enumeration>> {
+    standby
+    alarm
+    available
+    reserved
+    unknown
+    suspended
+}
+
+class ResourceUsageStateType <<Enumeration>> {
+    idle
+    active
+    busy
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceAdministrativeStateType <<Enumeration>> {
+    locked
+    unlocked
+    shutdown
+}
+
+class ResourceOperationalStateType <<Enumeration>> {
+    enable
+    disable
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ResourceRelationship *-->  "1" ResourceRefOrValue : resource
+
+ResourceRelationship "0..*" <--* ResourceRefOrValue : resourceRelationship
+
+ResourceRefOrValue -right[hidden]-> ResourceUsageStateType
+
+ResourceUsageStateType -right[hidden]-> ResourceAdministrativeStateType
+
+ResourceAdministrativeStateType -right[hidden]-> ResourceOperationalStateType
+
+ResourceOperationalStateType -right[hidden]-> ResourceStatusType
+
+ResourceRefOrValue *-->  "0..*" Characteristic : resourceCharacteristic
+
+ResourceRefOrValue *-->  "0..*" Feature : activationFeature
+
+Feature *-right-> "1..*" Characteristic : featureCharacteristic
+
+Note "0..*" <-left-* ResourceRefOrValue : note
+
+RelatedPlaceRefOrValue "0..1" <--* ResourceRefOrValue : place
+
+AttachmentRefOrValue "0..*" <--* ResourceRefOrValue : attachment
+
+ResourceRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+Characteristic <-left[hidden]- RelatedParty
+
+ResourceRefOrValue *-->  "0..1" ResourceSpecificationRef : resourceSpecification
+
+RelatedParty <-left[hidden]- ResourceSpecificationRef
+
+Feature *-->  "0..*" FeatureRelationship : featureRelationship
+
+Feature *-->  "0..*" ConstraintRef : constraint
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

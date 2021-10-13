@@ -1,0 +1,72 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class BankCardMethod <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    name : String
+    preferred : Boolean
+    status : String
+    statusDate : DateTime
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BankCardDetails  {
+    bank : String
+    brand : String
+    cardNumber : String
+    cardType : String
+    cvv : String
+    expirationDate : DateTime
+    href : Uri
+    id : String
+    lastFourDigits : String
+    nameOnCard : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+BankCardMethod *-->  "0..1" BankCardDetails : details
+
+BankCardMethod *-->  "0..1" RelatedParty : relatedParty
+
+BankCardMethod *-->  "0..*" AccountRef : account
+
+@enduml

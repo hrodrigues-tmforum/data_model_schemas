@@ -1,0 +1,499 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class AiModel <<Pivot>> {
+    category : String
+    description : String
+    endDate : DateTime
+    hasStarted : Boolean
+    href : Uri
+    id : String [1]
+    isBundle : Boolean
+    isServiceEnabled : Boolean
+    isStateful : Boolean
+    name : String
+    serviceDate : String
+    serviceType : String
+    startDate : DateTime
+    startMode : String
+    state : ServiceStateType
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AiModelSpecification  {
+    deploymentRecord : object
+    description : String
+    href : Uri
+    id : String
+    inheritedModel : object
+    isBundle : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    modelContractVersionHistory : object
+    modelDataSheet : object
+    modelEvaluationData : object
+    modelSpecificationHistory : object
+    modelTrainingData : object
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceSpecRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceLevelSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetEntitySchema  {
+    @schemaLocation : String [1]
+    @type : String [1]
+}
+
+class ResourceSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicSpecification  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class CharacteristicSpecificationRelationship  {
+    characteristicSpecificationId : String
+    name : String
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntitySpecificationRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssociationSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceFeatureSpecification  {
+    href : Uri
+    id : String
+    isBundle : Boolean
+    isEnabled : Boolean
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FeatureSpecificationRelationship  {
+    featureId : String
+    name : String [1]
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String [1]
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SoftwareRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedServiceOrderItem  {
+    href : Uri
+    id : String
+    itemAction : OrderItemActionType
+    itemId : String
+    role : String
+    serviceOrderHref : String
+    serviceOrderId : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OrderItemActionType <<Enumeration>> {
+    add
+    modify
+    delete
+    noChange
+}
+
+class ServiceRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceRefOrValue  {
+    category : String
+    description : String
+    endDate : DateTime
+    hasStarted : Boolean
+    href : String
+    id : String
+    isBundle : Boolean
+    isServiceEnabled : Boolean
+    isStateful : Boolean
+    name : String
+    serviceDate : String
+    serviceType : String
+    startDate : DateTime
+    startMode : String
+    state : ServiceStateType
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Feature  {
+    id : String
+    isBundle : Boolean
+    isEnabled : Boolean
+    name : String [1]
+}
+
+class FeatureRelationship  {
+    id : String
+    name : String [1]
+    relationshipType : String [1]
+    validFor : TimePeriod
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceStateType <<Enumeration>> {
+    feasibilityChecked
+    designed
+    reserved
+    inactive
+    active
+    terminated
+}
+
+class RelatedEntityRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+AiModel *-->  "0..*" Note : note
+
+AiModel *-->  "0..*" RelatedEntityRefOrValue : relatedEntity
+
+AiModel *-->  "0..*" RelatedPlaceRefOrValue : place
+
+AiModel *-->  "0..*" RelatedServiceOrderItem : serviceOrderItem
+
+AiModel *-->  "0..*" ResourceRef : supportingResource
+
+AiModel *-->  "0..1" ResourceRef : gpu
+
+AiModel *-->  "0..1" ServiceSpecificationRef : serviceSpecification
+
+AiModel -right[hidden]-> ServiceStateType
+
+AiModel *-->  "0..*" RelatedParty : relatedParty
+
+AiModel *-->  "0..*" Characteristic : serviceCharacteristic
+
+AiModel *-->  "0..*" ServiceRelationship : serviceRelationship
+
+AiModel *-->  "0..*" Feature : feature
+
+AiModel *-->  "0..1" AiModelSpecification : aiModelSpecification
+
+AiModel *-->  "0..*" ServiceRefOrValue : supportingService
+
+ServiceRefOrValue *-right-> "0..*" ServiceRefOrValue : supportingService
+
+Note "0..*" <--* ServiceRefOrValue : note
+
+RelatedEntityRefOrValue "0..*" <--* ServiceRefOrValue : relatedEntity
+
+RelatedPlaceRefOrValue "0..*" <--* ServiceRefOrValue : place
+
+RelatedServiceOrderItem "0..*" <--* ServiceRefOrValue : serviceOrderItem
+
+ResourceRef "0..*" <--* ServiceRefOrValue : supportingResource
+
+ServiceSpecificationRef "0..1" <--* ServiceRefOrValue : serviceSpecification
+
+Characteristic "0..*" <--* ServiceRefOrValue : serviceCharacteristic
+
+RelatedParty "0..*" <--* ServiceRefOrValue : relatedParty
+
+ServiceRelationship *-->  "0..1" ServiceRefOrValue : service
+
+ServiceRelationship "0..*" <--* ServiceRefOrValue : serviceRelationship
+
+Feature "0..*" <--* ServiceRefOrValue : feature
+
+RelatedServiceOrderItem -right[hidden]-> OrderItemActionType
+
+ServiceRelationship *-right-> "0..*" Characteristic : serviceRelationshipCharacteristic
+
+Characteristic "1..*" <-left-* Feature : featureCharacteristic
+
+Feature *-->  "0..*" ConstraintRef : constraint
+
+ServiceRefOrValue <-left[hidden]- ConstraintRef
+
+AiModelSpecification *-right-> "0..*" ServiceFeatureSpecification : featureSpecification
+
+ServiceFeatureSpecification *-->  "0..*" ConstraintRef : constraint
+
+AiModelSpecification *-->  "0..*" RelatedParty : relatedParty
+
+AiModelSpecification *-->  "0..*" ConstraintRef : constraint
+
+AiModelSpecification *-->  "0..*" CharacteristicSpecification : specCharacteristic
+
+CharacteristicSpecification -right[hidden]-> RelatedParty
+
+ServiceFeatureSpecification *-->  "0..*" CharacteristicSpecification : featureSpecCharacteristic
+
+SoftwareRef "0..*" <-left-* AiModel : software
+
+AttachmentRefOrValue "0..*" <-left-* AiModelSpecification : attachment
+
+AiModelSpecification *-->  "0..1" TargetEntitySchema : targetEntitySchema
+
+TargetEntitySchema -right[hidden]-> RelatedParty
+
+AiModelSpecification *-->  "0..*" ResourceSpecificationRef : resourceSpecification
+
+ResourceSpecificationRef -right[hidden]-> TargetEntitySchema
+
+AiModelSpecification *-->  "0..*" ServiceSpecRelationship : serviceSpecRelationship
+
+ServiceSpecRelationship -right[hidden]-> ResourceSpecificationRef
+
+AiModelSpecification *-->  "0..*" ServiceLevelSpecificationRef : serviceLevelSpecification
+
+ServiceLevelSpecificationRef -right[hidden]-> ServiceSpecRelationship
+
+AiModelSpecification *-->  "0..*" EntitySpecificationRelationship : entitySpecRelationship
+
+EntitySpecificationRelationship -right[hidden]-> ServiceLevelSpecificationRef
+
+ServiceFeatureSpecification *-right-> "0..*" FeatureSpecificationRelationship : featureSpecRelationship
+
+Feature *-right-> "0..*" FeatureRelationship : featureRelationship
+
+CharacteristicSpecification *-->  "0..*" CharacteristicSpecificationRelationship : charSpecRelationship
+
+CharacteristicSpecification *-->  "0..*" CharacteristicValueSpecification : characteristicValueSpecification
+
+EntitySpecificationRelationship *-->  "0..1" AssociationSpecificationRef : associationSpec
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

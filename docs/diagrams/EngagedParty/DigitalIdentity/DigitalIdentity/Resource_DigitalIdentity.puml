@@ -1,0 +1,111 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class DigitalIdentity <<Pivot>> {
+    creationDate : DateTime
+    href : Uri
+    id : String
+    lastUpdate : DateTime
+    nickname : String
+    status : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DigitalIdentityContactMedium  {
+    contactType : String
+    id : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String [1]
+}
+
+class ResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyRef  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Credential  {
+    id : String
+    state : String
+    trustLevel : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+DigitalIdentity *-->  "0..*" Credential : credential
+
+DigitalIdentity *-->  "0..*" DigitalIdentityContactMedium : contactMedium
+
+Credential *-right-> "0..*" DigitalIdentityContactMedium : contactMedium
+
+AttachmentRefOrValue "0..*" <-left-* DigitalIdentity : attachment
+
+DigitalIdentity *-right-> "0..1" ResourceRef : resourceIdentified
+
+PartyRef "0..1" <--* DigitalIdentity : individualIdentified
+
+RelatedParty "0..*" <--* DigitalIdentity : relatedParty
+
+RelatedParty "0..*" <--* DigitalIdentity : partyRoleIdentified
+
+@enduml

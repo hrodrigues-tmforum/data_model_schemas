@@ -1,0 +1,38 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ImportJob <<Pivot>> {
+    completionDate : DateTime
+    contentType : String
+    creationDate : DateTime
+    errorLog : String
+    href : Uri
+    id : String
+    path : String
+    status : JobStateType
+    url : Uri
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class JobStateType <<Enumeration>> {
+    Not Started
+    Running
+    Succeeded
+    Failed
+}
+
+ImportJob -right[hidden]-> JobStateType
+
+@enduml

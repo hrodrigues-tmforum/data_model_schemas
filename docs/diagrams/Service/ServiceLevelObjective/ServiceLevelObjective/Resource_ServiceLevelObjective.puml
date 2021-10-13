@@ -1,0 +1,71 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ServiceLevelObjective <<Pivot>> {
+    conformanceComparator : String
+    conformancePeriod : TimePeriod
+    conformanceTarget : String
+    graceTimes : String
+    href : String
+    id : String
+    name : String
+    thresholdTarget : String
+    tolerancePeriod : TimePeriod
+    toleranceTarget : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceLevelSpecConsequence  {
+    href : Uri
+    id : String
+    prescribedAction : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceLevelSpecParameter  {
+    href : Uri
+    id : String
+    name : String
+    parameterType : String
+    serviceParmCategory : String
+    serviceParmPerspective : String
+    transformationAlgorithmOfKQI : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntityRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ServiceLevelObjective *-right-> "0..1" ServiceLevelSpecParameter : serviceLevelSpecParameter
+
+ServiceLevelObjective *-->  "0..*" ServiceLevelSpecConsequence : serviceLevelSpecConsequence
+
+ServiceLevelSpecParameter *-->  "0..*" RelatedEntityRef : relatedEntity
+
+@enduml

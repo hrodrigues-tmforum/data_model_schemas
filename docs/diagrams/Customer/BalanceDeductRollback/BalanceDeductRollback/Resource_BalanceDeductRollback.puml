@@ -1,0 +1,77 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class BalanceDeductRollback <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    requestedDate : DateTime
+    status : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyAccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    status : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BalanceDeductRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+BalanceDeductRollback *-right-> "0..1" ProductRef : product
+
+PartyAccountRef "0..1" <--* BalanceDeductRollback : partyAccount
+
+BalanceDeductRollback *-->  "0..1" RelatedParty : relatedParty
+
+BalanceDeductRollback *-->  "0..1" RelatedParty : requestor
+
+BalanceDeductRollback *-->  "0..1" BalanceDeductRef : balanceDeduct
+
+@enduml

@@ -1,0 +1,77 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class BankCard <<Pivot>> {
+    authorizationCode : String
+    bank : String
+    brand : String [1]
+    cardNumber : String [1]
+    cardType : String
+    cvv : String
+    description : String
+    expirationDate : DateTime [1]
+    href : Uri
+    id : String
+    isPreferred : Boolean
+    lastFourDigits : String
+    name : String [1]
+    nameOnCard : String [1]
+    status : String
+    statusDate : DateTime
+    statusReason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String [1]
+}
+
+class RelatedPlace  {
+    href : String
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+BankCard *-->  "0..1" RelatedParty : relatedParty
+
+BankCard *-->  "0..*" AccountRef : account
+
+BankCard *-->  "0..1" RelatedPlace : relatedPlace
+
+@enduml

@@ -1,0 +1,47 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class CancelResourceReservation <<Pivot>> {
+    cancellationReason : String
+    effectiveCancellationDate : String
+    href : Uri
+    id : String
+    requestedCancellationDate : String
+    state : TaskStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceReservationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaskStateType <<Enumeration>> {
+    accepted
+    terminatedWithError
+    inProgress
+    done
+}
+
+CancelResourceReservation -right[hidden]-> TaskStateType
+
+CancelResourceReservation *-->  "1" ResourceReservationRef : resourceReservation
+
+@enduml

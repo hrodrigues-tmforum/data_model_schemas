@@ -1,0 +1,134 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Customer360ServiceProblemVO <<Pivot>> {
+    affectedNumberOfServices : Integer
+    category : String
+    correlationId : String
+    description : String
+    href : String
+    id : String
+    impactImportanceFactor : String
+    originatingSystem : String
+    priority : Integer
+    problemEscalation : String
+    reason : String
+    resolutionDate : DateTime
+    status : String
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    timeChanged : DateTime
+    timeRaised : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceProblemRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntityRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Place  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+RelatedEntityRef "0..*" <-left-* Customer360ServiceProblemVO : relatedObject
+
+Customer360ServiceProblemVO *-right-> "0..*" ServiceRef : affectedService
+
+Place "0..*" <--* Customer360ServiceProblemVO : affectedLocation
+
+ResourceRef "0..*" <--* Customer360ServiceProblemVO : rootCauseResource
+
+Customer360ServiceProblemVO *-->  "0..*" ServiceProblemRef : underlyingProblem
+
+Customer360ServiceProblemVO *-->  "0..1" RelatedParty : responsibleParty
+
+Customer360ServiceProblemVO *-->  "0..*" RelatedParty : relatedParty
+
+Customer360ServiceProblemVO *-->  "0..*" Characteristic : extensionInfo
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

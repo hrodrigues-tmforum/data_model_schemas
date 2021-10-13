@@ -1,0 +1,43 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class BillCycle <<Pivot>> {
+    billingDate : DateTime
+    billingPeriod : String
+    chargeDate : DateTime
+    creditDate : DateTime
+    description : String
+    href : String
+    id : String
+    mailingDate : DateTime
+    name : String
+    paymentDueDate : DateTime
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillCycleSpecificationRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+BillCycle *-->  "0..1" BillCycleSpecificationRef : BillCycleSpecification
+
+@enduml

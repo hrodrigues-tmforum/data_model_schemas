@@ -1,0 +1,68 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class TestMeasureDefinition <<Pivot>> {
+    captureFrequency : String
+    captureMethod : String
+    metricDescription : String
+    metricHref : String
+    metricName : String
+    name : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Duration  {
+    amount : Integer
+    units : String
+}
+
+class MetricDefMeasureThresholdRule  {
+    conformanceComparatorLower : String
+    conformanceComparatorUpper : String
+    conformanceTargetExact : String
+    conformanceTargetLower : String
+    conformanceTargetUpper : String
+    description : String
+    name : String
+    numberOfAllowedCrossing : Integer
+    thresholdRuleSeverity : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MetricDefMeasureConsequence  {
+    description : String
+    name : String
+    prescribeAction : String
+    repeatAction : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+TestMeasureDefinition *-->  "0..1" Duration : capturePeriod
+
+TestMeasureDefinition *-->  "0..*" MetricDefMeasureThresholdRule : thresholdRule
+
+MetricDefMeasureThresholdRule *-right-> "0..1" Duration : tolerancePeriod
+
+MetricDefMeasureThresholdRule *-->  "0..*" MetricDefMeasureConsequence : consequence
+
+@enduml

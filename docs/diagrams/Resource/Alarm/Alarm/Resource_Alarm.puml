@@ -1,0 +1,146 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Alarm <<Pivot>> {
+    ackState : String
+    ackSystemId : String
+    ackUserId : String
+    alarmChangedTime : DateTime
+    alarmClearedTime : DateTime
+    alarmDetails : String
+    alarmEscalation : Boolean
+    alarmRaisedTime : DateTime
+    alarmReportingTime : DateTime
+    alarmType : AlarmType
+    alarmedObjectType : String
+    clearSystemId : String
+    clearUserId : String
+    externalAlarmId : String
+    href : Uri
+    id : String
+    isRootCause : Boolean
+    perceivedSeverity : PerceivedSeverity
+    plannedOutageIndicator : String
+    probableCause : String
+    proposedRepairedActions : String
+    reportingSystemId : String
+    serviceAffecting : Boolean
+    sourceSystemId : String
+    specificProblem : String
+    state : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AlarmRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AlarmedObject  {
+    href : String
+    id : String
+}
+
+class PerceivedSeverity <<Enumeration>> {
+    CRITICAL
+    MAJOR
+    MINOR
+    WARNING
+    INDETERMINATE
+    CLEARED
+}
+
+class AffectedService  {
+    href : String
+    id : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CrossedThresholdInformation  {
+    direction : String
+    granularity : String
+    indicatorName : String
+    indicatorUnit : String
+    observedValue : String
+    thresholdCrossingDescription : String
+}
+
+class ThresholdRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AlarmType <<Enumeration>> {
+    communicationsAlarm
+    processingErrorAlarm
+    environmentalAlarm
+    qualityOfServiceAlarm
+    equipmentAlarm
+    integrityViolation
+    operationalViolation
+    physicalViolation
+    securityService
+    mechanismViolation
+    timeDomainViolation
+}
+
+class Comment  {
+    comment : String
+    systemId : String
+    time : DateTime
+    userId : String
+}
+
+Alarm -right[hidden]-> AlarmType
+
+AlarmType -right[hidden]-> PerceivedSeverity
+
+RelatedPlaceRefOrValue "0..*" <-left-* Alarm : place
+
+Comment "0..*" <--* Alarm : comment
+
+AlarmedObject "0..1" <--* Alarm : alarmedObject
+
+Alarm *-->  "0..*" AffectedService : affectedService
+
+Alarm *-->  "0..*" AlarmRef : correlatedAlarm
+
+Alarm *-->  "0..*" AlarmRef : parentAlarm
+
+Alarm *-->  "0..1" CrossedThresholdInformation : crossedThresholdInformation
+
+CrossedThresholdInformation *-->  "0..1" ThresholdRef : threshold
+
+@enduml
