@@ -100,3 +100,4 @@ $ref of: xref:4.0.0@schemas:Common:Any.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]

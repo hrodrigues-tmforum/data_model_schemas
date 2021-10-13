@@ -20,3 +20,5 @@ The data model is defined as shown below:
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Common:EntityRef.adoc[]
+This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]

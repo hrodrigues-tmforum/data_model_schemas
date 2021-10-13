@@ -40,3 +40,5 @@ $ref of: xref:4.0.0@schemas:Common:PackingType.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Common:ProtocolTransferData.adoc[]
+This schema extends: xref:4.0.0@schemas:Common:Extensible.adoc[]

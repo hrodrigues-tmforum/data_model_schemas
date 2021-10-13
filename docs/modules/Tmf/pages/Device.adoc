@@ -110,3 +110,6 @@ type: string
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Tmf:GSMACommons.adoc[]
+This schema extends: xref:4.0.0@schemas:Tmf:LocationCommons.adoc[]
+This schema extends: xref:4.0.0@schemas:Tmf:PhysicalResource.adoc[]

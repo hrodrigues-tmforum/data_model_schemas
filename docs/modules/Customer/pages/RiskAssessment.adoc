@@ -44,3 +44,5 @@ $ref of: xref:4.0.0@schemas:Customer:RiskAssessmentResult.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Customer:Addressable.adoc[]
+This schema extends: xref:4.0.0@schemas:Customer:Extensible.adoc[]

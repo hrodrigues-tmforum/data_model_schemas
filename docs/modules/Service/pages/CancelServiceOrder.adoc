@@ -36,3 +36,4 @@ $ref of: xref:4.0.0@schemas:Service:ErrorMessage.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Service:CancelOrder.adoc[]

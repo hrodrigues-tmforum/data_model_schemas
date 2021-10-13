@@ -24,3 +24,5 @@ type: string
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:EngagedParty:Party.adoc[]
+This schema extends: xref:4.0.0@schemas:EngagedParty:PartyRef.adoc[]

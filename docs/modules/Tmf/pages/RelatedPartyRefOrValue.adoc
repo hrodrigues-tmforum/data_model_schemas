@@ -24,3 +24,5 @@ type: string
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Tmf:Party.adoc[]
+This schema extends: xref:4.0.0@schemas:Tmf:PartyRef.adoc[]
