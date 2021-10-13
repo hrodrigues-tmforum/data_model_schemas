@@ -1,0 +1,35 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class CancelOrder <<Pivot>> {
+    cancellationReason : String
+    effectiveCancellationDate : DateTime
+    href : String
+    id : String
+    requestedCancellationDate : DateTime
+    state : TaskStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaskStateType <<Enumeration>> {
+    accepted
+    terminatedWithError
+    inProgress
+    done
+}
+
+CancelOrder -right[hidden]-> TaskStateType
+
+@enduml

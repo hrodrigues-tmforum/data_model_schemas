@@ -1,0 +1,353 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ChangeRequest <<Pivot>> {
+    actualEndTime : DateTime
+    actualStartTime : DateTime
+    budget : Money
+    channel : String
+    completionDate : DateTime
+    description : String
+    href : Uri
+    id : String
+    impact : String
+    lastUpdateDate : DateTime
+    plannedEndTime : DateTime
+    plannedStartTime : DateTime
+    priority : String
+    requestDate : DateTime
+    requestType : String
+    risk : String
+    riskMitigationPlan : String
+    riskValue : String
+    scheduledDate : DateTime
+    status : ChangeRequestStatusType
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntity  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Resolution  {
+    code : String
+    description : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Task  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    state : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkLog  {
+    createDateTime : DateTime
+    description : String
+    href : Uri
+    id : String
+    lastUpdateDateTime : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Record  {
+    dateTime : DateTime
+    description : String
+    href : Uri
+    id : String
+    supportPerson : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChangeRequestRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChangeRequestRefOrValue  {
+    actualEndTime : DateTime
+    actualStartTime : DateTime
+    budget : Money
+    channel : String
+    completionDate : DateTime
+    description : String
+    href : Uri
+    id : String
+    impact : String
+    lastUpdateDate : DateTime
+    plannedEndTime : DateTime
+    plannedStartTime : DateTime
+    priority : String
+    requestDate : DateTime
+    requestType : String
+    risk : String
+    riskMitigationPlan : String
+    riskValue : String
+    scheduledDate : DateTime
+    status : ChangeRequestStatusType
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SLARef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntitySpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TroubleTicketRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExternalReference  {
+    externalReferenceType : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceProblemRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ImpactEntity  {
+    action : String
+    href : Uri
+    id : String [1]
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChangeRequestStatusType <<Enumeration>> {
+    acknowledged
+    requestForAuthorization
+    waitForApproval
+    approved
+    scheduled
+    postImplementationReview
+    fallbackExecution
+    cancelled
+    rejected
+    inProgress
+    failed
+    completed
+}
+
+ChangeRequest *-->  "0..*" AttachmentRefOrValue : attachment
+
+ChangeRequest *-->  "0..1" EntitySpecificationRef : specification
+
+ChangeRequest *-->  "0..*" ExternalReference : externalReference
+
+ChangeRequest *-->  "0..*" ImpactEntity : impactEntity
+
+ChangeRequest *-->  "0..*" Note : note
+
+ChangeRequest *-->  "1..*" RelatedEntity : targetEntity
+
+ChangeRequest *-->  "0..*" RelatedParty : relatedParty
+
+ChangeRequest *-->  "0..1" RelatedPlaceRefOrValue : location
+
+ChangeRequest *-->  "0..*" SLARef : sla
+
+ChangeRequest *-->  "0..*" ServiceProblemRef : problemTicket
+
+ChangeRequest *-->  "0..*" TroubleTicketRef : troubleTicket
+
+ChangeRequest -right[hidden]-> ChangeRequestStatusType
+
+ChangeRequest *-->  "0..*" Characteristic : changeRequestCharacteristic
+
+ChangeRequest *-->  "0..*" WorkLog : workLog
+
+ChangeRequest *-->  "0..1" Resolution : resolution
+
+ChangeRequest *-->  "0..*" ChangeRequestRelationship : changeRelationship
+
+ChangeRequestRelationship *-->  "0..1" ChangeRequestRefOrValue : changeRequest
+
+ChangeRequestRelationship "0..*" <--* ChangeRequestRefOrValue : changeRelationship
+
+RelatedEntity "1..*" <--* ChangeRequestRefOrValue : targetEntity
+
+ChangeRequestRelationship *-->  "0..*" Characteristic : changeRequestRelationshipCharacteristic
+
+AttachmentRefOrValue "0..*" <--* ChangeRequestRefOrValue : attachment
+
+EntitySpecificationRef "0..1" <--* ChangeRequestRefOrValue : specification
+
+ExternalReference "0..*" <--* ChangeRequestRefOrValue : externalReference
+
+ImpactEntity "0..*" <--* ChangeRequestRefOrValue : impactEntity
+
+Note "0..*" <--* ChangeRequestRefOrValue : note
+
+RelatedParty "0..*" <--* ChangeRequestRefOrValue : relatedParty
+
+RelatedPlaceRefOrValue "0..1" <--* ChangeRequestRefOrValue : location
+
+SLARef "0..*" <--* ChangeRequestRefOrValue : sla
+
+ServiceProblemRef "0..*" <--* ChangeRequestRefOrValue : problemTicket
+
+TroubleTicketRef "0..*" <--* ChangeRequestRefOrValue : troubleTicket
+
+Resolution "0..1" <--* ChangeRequestRefOrValue : resolution
+
+WorkLog "0..*" <--* ChangeRequestRefOrValue : workLog
+
+Characteristic "0..*" <--* ChangeRequestRefOrValue : changeRequestCharacteristic
+
+Resolution *-->  "0..*" Task : task
+
+WorkLog *-->  "0..*" Record : record
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

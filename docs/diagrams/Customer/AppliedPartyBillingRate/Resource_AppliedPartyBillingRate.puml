@@ -1,0 +1,65 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class AppliedPartyBillingRate <<Pivot>> {
+    date : DateTime
+    description : String
+    href : String
+    id : String
+    name : String
+    rateType : String
+    taxExcludedAmount : Money
+    taxIncludedAmount : Money
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppliedBillingRateCharacteristic  {
+    href : Uri
+    id : String
+    name : String
+    value : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppliedBillingTaxRate  {
+    href : Uri
+    id : String
+    taxAmount : Money
+    taxCategory : String
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+AppliedPartyBillingRate *-->  "0..1" BillRef : bill
+
+AppliedPartyBillingRate *-->  "0..*" AppliedBillingTaxRate : appliedTax
+
+AppliedPartyBillingRate *-->  "0..*" AppliedBillingRateCharacteristic : characteristic
+
+@enduml

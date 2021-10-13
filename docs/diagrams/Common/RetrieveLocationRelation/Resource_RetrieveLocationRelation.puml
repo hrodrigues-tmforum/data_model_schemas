@@ -1,0 +1,48 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class RetrieveLocationRelation <<Pivot>> {
+    distance : String
+    href : String
+    id : String
+    status : String
+    time : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeographicLocation  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String [1]
+}
+
+class GeographicLocationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+RetrieveLocationRelation *-->  "0..*" GeographicLocation : intersection
+
+RetrieveLocationRelation *-->  "0..1" GeographicLocationRef : location
+
+@enduml

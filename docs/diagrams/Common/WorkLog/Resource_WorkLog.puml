@@ -1,0 +1,38 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class WorkLog <<Pivot>> {
+    createDateTime : DateTime
+    description : String
+    href : Uri
+    id : String
+    lastUpdateDateTime : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Record  {
+    dateTime : DateTime
+    description : String
+    href : Uri
+    id : String
+    supportPerson : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+WorkLog *-->  "0..*" Record : record
+
+@enduml

@@ -1,0 +1,40 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ServiceLevelSpecParameter <<Pivot>> {
+    href : Uri
+    id : String
+    name : String
+    parameterType : String
+    serviceParmCategory : String
+    serviceParmPerspective : String
+    transformationAlgorithmOfKQI : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntityRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ServiceLevelSpecParameter *-->  "0..*" RelatedEntityRef : relatedEntity
+
+@enduml

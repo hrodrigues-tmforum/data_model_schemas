@@ -1,0 +1,74 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Voucher <<Pivot>> {
+    authorizationCode : String
+    campaign : String
+    code : String [1]
+    description : String
+    discount : String
+    expirationDate : DateTime [1]
+    href : Uri
+    id : String
+    isPreferred : Boolean
+    name : String [1]
+    status : String
+    statusDate : DateTime
+    statusReason : String
+    validFor : TimePeriod
+    value : Quantity [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String [1]
+}
+
+class RelatedPlace  {
+    href : String
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Voucher *-->  "0..1" RelatedParty : relatedParty
+
+Voucher *-->  "0..*" AccountRef : account
+
+Voucher *-->  "0..1" RelatedPlace : relatedPlace
+
+@enduml

@@ -1,0 +1,184 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class TopupBalance <<Pivot>> {
+    amount : Quantity
+    confirmationDate : DateTime
+    description : String
+    href : Uri
+    id : String
+    isAutoTopup : Boolean
+    numberOfPeriods : Integer
+    reason : String
+    recurringPeriod : String
+    requestedDate : DateTime
+    status : String
+    usageType : String
+    voucher : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class LogicalResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    value : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedTopupBalance  {
+    href : Uri
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ImpactedBucket  {
+    amountAfter : Quantity
+    amountBefore : Quantity
+    confirmationDate : DateTime
+    description : String
+    name : String
+    requestedDate : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BucketRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    usageType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ImpactedBucketItem  {
+    amount : Quantity
+    description : String
+    itemType : String
+    name : String
+    reason : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyAccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    status : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentMethodRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+BucketRef "0..1" <--* TopupBalance : bucket
+
+TopupBalance *-->  "0..*" ImpactedBucket : impactedBucket
+
+ImpactedBucket *-right-> "1..*" ImpactedBucketItem : item
+
+BucketRef "0..1" <--* ImpactedBucket : bucket
+
+PaymentRef "0..1" <-left-* TopupBalance : payment
+
+TopupBalance *-right-> "0..1" ProductRef : product
+
+ChannelRef "0..1" <--* TopupBalance : channel
+
+PartyAccountRef "0..1" <--* TopupBalance : partyAccount
+
+PaymentMethodRef "0..1" <--* TopupBalance : paymentMethod
+
+TopupBalance *-->  "0..1" LogicalResourceRef : logicalResource
+
+LogicalResourceRef -right[hidden]-> ImpactedBucket
+
+TopupBalance *-->  "0..1" RelatedTopupBalance : relatedTopupBalance
+
+RelatedTopupBalance -right[hidden]-> LogicalResourceRef
+
+TopupBalance *-->  "0..1" RelatedParty : requestor
+
+TopupBalance *-->  "0..*" RelatedParty : relatedParty
+
+RelatedParty -right[hidden]-> RelatedTopupBalance
+
+@enduml

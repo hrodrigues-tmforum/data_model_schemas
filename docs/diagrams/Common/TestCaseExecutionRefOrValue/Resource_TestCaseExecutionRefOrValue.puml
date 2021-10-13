@@ -1,0 +1,161 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class TestCaseExecutionRefOrValue <<Pivot>> {
+    dataCorrelationId : String
+    href : Uri
+    id : String
+    name : String
+    state : ExecutionStateType
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeneralTestArtifactRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TestEnvironmentProvisioningExecution  {
+    dataCorrelationId : String
+    href : Uri
+    id : String
+    state : ExecutionStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProvisioningArtifactRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TestEnvironmentAllocationExecution  {
+    dataCorrelationId : String
+    href : Uri
+    id : String
+    resourceManagerUrl : Uri [1]
+    state : ExecutionStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AbstractEnvironmentRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExecutionStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    inProgress
+    cancelled
+    completed
+    failed
+}
+
+class TestScenarioRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConcreteResourceMapping  {
+    abstractResource : String
+    href : Uri
+    id : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConcreteResource  {
+    href : Uri
+    id : String
+    name : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TestDataInstanceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TestCaseRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+TestCaseExecutionRefOrValue -right[hidden]-> ExecutionStateType
+
+TestCaseExecutionRefOrValue *-->  "0..*" GeneralTestArtifactRef : generalTestArtifact
+
+TestCaseExecutionRefOrValue *-->  "1" TestEnvironmentProvisioningExecution : testEnvironmentProvisioningExecution
+
+TestEnvironmentProvisioningExecution *-->  "1" TestEnvironmentAllocationExecution : testEnvironmentAllocationExecution
+
+GeneralTestArtifactRef "0..*" <--* TestEnvironmentAllocationExecution : generalTestArtifact
+
+TestEnvironmentProvisioningExecution *-right-> "0..*" GeneralTestArtifactRef : generalTestArtifact
+
+TestCaseRef "0..1" <-left-* TestCaseExecutionRefOrValue : testCase
+
+TestDataInstanceRef "0..*" <--* TestCaseExecutionRefOrValue : testDataInstance
+
+TestScenarioRef "0..1" <-left-* TestEnvironmentAllocationExecution : testScenario
+
+TestEnvironmentAllocationExecution *-right-> "0..1" AbstractEnvironmentRef : abstractEnvironment
+
+TestEnvironmentAllocationExecution *-->  "0..*" ConcreteResourceMapping : concreteResourceMapping
+
+ProvisioningArtifactRef "0..*" <-left-* TestEnvironmentProvisioningExecution : provisioningArtifact
+
+ConcreteResourceMapping *-->  "0..*" ConcreteResource : concreteResource
+
+@enduml

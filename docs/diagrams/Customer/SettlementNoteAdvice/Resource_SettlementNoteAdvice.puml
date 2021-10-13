@@ -1,0 +1,104 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class SettlementNoteAdvice <<Pivot>> {
+    currencyCode : String
+    date : DateTime
+    description : String
+    href : String
+    id : String
+    issuerTaxRegistration : String
+    paymentDueDate : DateTime
+    receiverTaxRegistration : String
+    taxDate : DateTime
+    taxExcludedAmount : Float
+    taxIncludedAmount : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyRef  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SettlementNoteImage  {
+    href : Uri
+    id : String
+    imageFileName : String
+    imageFileURL : String
+    imageFormat : String
+    imageSize : Integer
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxItem  {
+    href : Uri
+    id : String
+    taxAmount : Money
+    taxCategory : String
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SettlementMethod  {
+    code : String
+    href : Uri
+    id : String
+    label : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SettlementNoteItem  {
+    href : Uri
+    id : String
+    itemId : String
+    itemLabel : String
+    itemNumber : String
+    period : TimePeriod
+    quantity : Integer
+    taxExcludedAmount : Float
+    taxExcludedUnitPrice : Float
+    taxIncludedAmount : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+SettlementNoteAdvice *-->  "0..*" SettlementNoteItem : settlementNoteItem
+
+SettlementNoteAdvice *-->  "0..*" TaxItem : taxItem
+
+SettlementNoteItem *-right-> "0..*" TaxItem : taxItem
+
+SettlementMethod "0..1" <-left-* SettlementNoteAdvice : settlementMethod
+
+SettlementNoteAdvice *-right-> "0..1" SettlementNoteImage : settlementNoteImage
+
+PartyRef "0..1" <--* SettlementNoteAdvice : issuer
+
+PartyRef "0..1" <--* SettlementNoteAdvice : receiver
+
+@enduml

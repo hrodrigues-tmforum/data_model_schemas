@@ -1,0 +1,66 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Feature <<Pivot>> {
+    id : String
+    isBundle : Boolean
+    isEnabled : Boolean
+    name : String [1]
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FeatureRelationship  {
+    id : String
+    name : String [1]
+    relationshipType : String [1]
+    validFor : TimePeriod
+}
+
+Feature *-->  "0..*" FeatureRelationship : featureRelationship
+
+Feature *-->  "0..*" ConstraintRef : constraint
+
+Feature *-->  "1..*" Characteristic : featureCharacteristic
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

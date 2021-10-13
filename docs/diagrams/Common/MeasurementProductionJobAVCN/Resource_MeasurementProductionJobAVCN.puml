@@ -1,0 +1,112 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class MeasurementProductionJobAVCN <<Pivot>> {
+    adminState : AdministrativeState
+    executionState : ExecutionStateType
+    granularity : Granularity
+    jobPriority : Integer
+    lastModifiedTime : DateTime
+}
+
+class ScheduleDefinition  {
+    recurringFrequency : String
+    scheduleDefinitionEndTime : DateTime
+    scheduleDefinitionHourRange : String
+    scheduleDefinitionStartTime : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DayOfWeekRecurrence  {
+    dates : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MonthlyScheduleDayOfWeekDefinition  {
+    recurringDaySequence : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class DayOfMonthRecurrence  {
+    dates : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MonitoredClassCriteria  {
+    monitoredObjectClass : String
+    objectInstanceFilter : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Granularity <<Enumeration>> {
+    g_1mn
+    g_5mn
+    g_15mn
+    g_30mn
+    g_1h
+    g_24h
+    g_1m
+    g_1y
+    na
+}
+
+class MonitoredInstancesCriteria  {
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AdministrativeState <<Enumeration>> {
+    locked
+    unlocked
+}
+
+class ExecutionStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    inProgress
+    cancelled
+    completed
+    failed
+}
+
+MeasurementProductionJobAVCN -right[hidden]-> ExecutionStateType
+
+ExecutionStateType -right[hidden]-> AdministrativeState
+
+AdministrativeState -right[hidden]-> Granularity
+
+MeasurementProductionJobAVCN *-->  "0..1" MonitoredClassCriteria : monitoredClassCriteria
+
+MeasurementProductionJobAVCN *-->  "0..1" MonitoredInstancesCriteria : monitoredInstancesCriteria
+
+MeasurementProductionJobAVCN *-->  "0..1" ScheduleDefinition : scheduleDefinition
+
+ScheduleDefinition *-->  "0..*" DayOfWeekRecurrence : WeeklyScheduledDefinition
+
+ScheduleDefinition *-->  "0..1" MonthlyScheduleDayOfWeekDefinition : MonthlyScheduleDayOfWeekDefinition
+
+MonthlyScheduleDayOfWeekDefinition *-->  "0..*" DayOfMonthRecurrence : dayOfMonthRecurrence
+
+@enduml

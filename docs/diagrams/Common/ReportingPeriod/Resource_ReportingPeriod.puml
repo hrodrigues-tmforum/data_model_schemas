@@ -1,0 +1,25 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ReportingPeriod <<Enumeration>> {
+    r_1mn
+    r_5mn
+    r_15mn
+    r_30mn
+    r_1h
+    r_24h
+    na
+}
+
+
+@enduml

@@ -1,0 +1,224 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class PhysicalResourceSpecification <<Pivot>> {
+    category : String
+    description : String
+    href : Uri
+    id : String
+    isBundle : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    model : String
+    name : String
+    part : String
+    sku : String
+    validFor : TimePeriod
+    vendor : String
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceSpecificationCharacteristic  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceSpecificationCharacteristicRelationship  {
+    characteristicSpecificationId : String
+    name : String
+    relationshipType : String
+    resourceSpecificationHref : Uri
+    resourceSpecificationId : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FeatureSpecification  {
+    href : Uri
+    id : String
+    isBundle : Boolean
+    isEnabled : Boolean
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FeatureSpecificationRelationship  {
+    featureId : String
+    name : String [1]
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String [1]
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FeatureSpecificationCharacteristic  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String [1]
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class FeatureSpecificationCharacteristicRelationship  <<Ref>> {
+    characteristicId : String
+    featureId : String
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String
+    resourceSpecificationHref : Uri
+    resourceSpecificationId : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceSpecificationRelationship  <<Ref>> {
+    defaultQuantity : Integer
+    href : Uri
+    id : String
+    maximumQuantity : Integer
+    minimumQuantity : Integer
+    name : String
+    relationshipType : String
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetResourceSchema  {
+    @schemaLocation : Uri [1]
+    @type : String [1]
+}
+
+ResourceSpecificationRelationship "0..*" <--* PhysicalResourceSpecification : resourceSpecRelationship
+
+PhysicalResourceSpecification *-->  "0..*" ResourceSpecificationCharacteristic : resourceSpecCharacteristic
+
+PhysicalResourceSpecification *-->  "0..*" FeatureSpecification : featureSpecification
+
+ResourceSpecificationCharacteristic *-->  "0..*" CharacteristicValueSpecification : resourceSpecCharacteristicValue
+
+FeatureSpecification *-->  "0..*" FeatureSpecificationCharacteristic : featureSpecCharacteristic
+
+CharacteristicValueSpecification "0..*" <-left-* FeatureSpecificationCharacteristic : featureSpecCharacteristicValue
+
+ResourceSpecificationRelationship *-->  "0..*" ResourceSpecificationCharacteristic : characteristic
+
+AttachmentRefOrValue "0..*" <-left-* PhysicalResourceSpecification : attachment
+
+PhysicalResourceSpecification *-right-> "0..*" RelatedParty : relatedParty
+
+PhysicalResourceSpecification *-->  "0..1" TargetResourceSchema : targetResourceSchema
+
+ConstraintRef "0..*" <-left-* FeatureSpecification : constraint
+
+FeatureSpecification *-right-> "0..*" FeatureSpecificationRelationship : featureSpecRelationship
+
+ResourceSpecificationCharacteristic *-->  "0..*" ResourceSpecificationCharacteristicRelationship : resourceSpecCharRelationship
+
+FeatureSpecificationCharacteristic *-->  "0..*" FeatureSpecificationCharacteristicRelationship : featureSpecCharRelationship
+
+@enduml

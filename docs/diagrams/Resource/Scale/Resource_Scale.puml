@@ -1,0 +1,61 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Scale <<Pivot>> {
+    aspectId : String
+    href : String
+    id : String
+    name : String
+    numberOfSteps : Integer [1]
+    scaleType : String [1]
+    state : TaskStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ScheduleRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceFunctionRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaskStateType <<Enumeration>> {
+    accepted
+    terminatedWithError
+    inProgress
+    done
+}
+
+Scale -right[hidden]-> TaskStateType
+
+Scale *-->  "0..*" ScheduleRef : schedule
+
+Scale *-->  "1" ResourceFunctionRef : resourceFunction
+
+@enduml

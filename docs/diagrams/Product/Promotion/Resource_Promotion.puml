@@ -1,0 +1,98 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Promotion <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    promotionType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+class PromotionPattern  {
+    criteriaGroupLogicalRelationship : String
+    description : String
+    id : String
+    name : String
+    priority : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+class PromotionCriteriaGroup  {
+    criteriaLogicalRelationship : String
+    groupName : String
+    id : String
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+class PromotionCriteria  {
+    criteriaOperator : String [1]
+    criteriaParameter : String [1]
+    criteriaValue : String [1]
+    id : String
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+class PromotionAction  {
+    actionType : String [1]
+    actionValue : String
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Promotion *-->  "0..*" AttachmentRefOrValue : attachment
+
+Promotion *-->  "0..*" PromotionPattern : pattern
+
+PromotionPattern *-->  "1..*" PromotionAction : action
+
+PromotionPattern *-->  "1..*" PromotionCriteriaGroup : criteriaGroup
+
+PromotionCriteriaGroup *-->  "1..*" PromotionCriteria : criteria
+
+@enduml

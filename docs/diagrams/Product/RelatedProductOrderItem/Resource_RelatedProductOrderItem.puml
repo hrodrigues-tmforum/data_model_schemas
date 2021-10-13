@@ -1,0 +1,29 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class RelatedProductOrderItem <<Pivot>> {
+    href : Uri
+    id : String
+    orderItemAction : String
+    orderItemId : String [1]
+    productOrderHref : String
+    productOrderId : String [1]
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+
+@enduml
