@@ -1,0 +1,40 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class UsageSpecCharacteristic <<Pivot>> {
+    configurable : Boolean
+    description : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class UsageSpecCharacteristicValue  {
+    default : Boolean
+    href : Uri
+    id : String
+    value : String
+    valueFrom : String
+    valueTo : String
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+UsageSpecCharacteristic *-->  "0..*" UsageSpecCharacteristicValue : usageSpecCharacteristicValue
+
+@enduml

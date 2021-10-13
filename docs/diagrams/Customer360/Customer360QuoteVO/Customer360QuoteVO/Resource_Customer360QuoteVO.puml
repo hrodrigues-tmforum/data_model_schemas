@@ -1,0 +1,45 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Customer360QuoteVO <<Pivot>> {
+    category : String
+    description : String
+    effectiveQuoteCompletionDate : DateTime
+    expectedFulfillmentStartDate : DateTime
+    expectedQuoteCompletionDate : DateTime
+    externalId : String
+    href : String
+    id : String
+    instantSyncQuote : Boolean
+    quoteDate : DateTime
+    requestedQuoteCompletionDate : DateTime
+    state : QuoteStateType
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class QuoteStateType <<Enumeration>> {
+    rejected
+    pending
+    inProgress
+    cancelled
+    approved
+    accepted
+}
+
+Customer360QuoteVO -right[hidden]-> QuoteStateType
+
+@enduml

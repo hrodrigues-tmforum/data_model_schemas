@@ -1,0 +1,88 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class SearchTimeSlot <<Pivot>> {
+    href : String
+    id : String
+    searchDate : DateTime
+    searchResult : String
+    status : SearchTimeSlotStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntity  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TimeSlot  {
+    href : String
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SearchTimeSlotStateType <<Enumeration>> {
+    inProgress
+    done
+    rejected
+    terminatedWithError
+}
+
+SearchTimeSlot *-->  "0..1" RelatedParty : relatedParty
+
+SearchTimeSlot *-->  "0..*" TimeSlot : availableTimeSlot
+
+SearchTimeSlot *-->  "0..*" TimeSlot : requestedTimeSlot
+
+SearchTimeSlot -right[hidden]-> SearchTimeSlotStateType
+
+TimeSlot *-right-> "0..1" RelatedParty : relatedParty
+
+RelatedPlaceRefOrValue "0..1" <-left-* SearchTimeSlot : relatedPlace
+
+RelatedEntity "0..*" <--* SearchTimeSlot : relatedEntity
+
+@enduml

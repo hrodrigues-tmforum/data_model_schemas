@@ -1,0 +1,115 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class TaskFlow <<Pivot>> {
+    completionMethod : String
+    href : String
+    id : String
+    isMandatory : Boolean
+    priority : Integer
+    state : TaskFlowStateType
+    taskFlowSpecification : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntity  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaskFlowRelationship  {
+    relationshipType : String [1]
+}
+
+class TaskFlowRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaskFlowStateType <<Enumeration>> {
+    new
+    active
+    hold
+    cancelled
+    completed
+}
+
+TaskFlow -right[hidden]-> TaskFlowStateType
+
+ChannelRef "0..*" <-left-* TaskFlow : channel
+
+RelatedParty "0..*" <--* TaskFlow : relatedParty
+
+RelatedEntity "0..*" <--* TaskFlow : relatedEntity
+
+TaskFlow *-->  "0..*" Characteristic : characteristic
+
+TaskFlow *-->  "0..*" TaskFlowRelationship : taskFlowRelationship
+
+TaskFlowRelationship *-->  "1" TaskFlowRef : taskFlow
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

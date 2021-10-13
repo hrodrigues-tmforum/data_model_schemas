@@ -1,0 +1,112 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Stream <<Pivot>> {
+    collectionPeriod : TimePeriod
+    consumingApplicationId : String
+    granulatiry : Granularity
+    href : Uri
+    id : String
+    outputFormat : String
+    producingApplicationId : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PerformanceIndicatorSpecification  {
+    collectionType : CollectionType
+    derivationAlgorithm : String
+    derivationMethod : String
+    description : String
+    href : Uri
+    id : String
+    indicatorCategory : String
+    indicatorType : IndicatorType
+    indicatorUnit : String
+    name : String
+    perspective : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PerformanceIndicatorSpecRelationship  <<Ref>> {
+    href : String
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CollectionType <<Enumeration>> {
+    cumulative
+    delta
+    discrete_event
+    gauge
+    status_inspection
+}
+
+class IndicatorType <<Enumeration>> {
+    string
+    int
+    float
+    double
+}
+
+class MonitoredClassCriteria  {
+    monitoredObjectClass : String
+    objectInstanceFilter : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Granularity <<Enumeration>> {
+    g_1mn
+    g_5mn
+    g_15mn
+    g_30mn
+    g_1h
+    g_24h
+    g_1m
+    g_1y
+    na
+}
+
+class MonitoredInstancesCriteria  {
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Stream -right[hidden]-> Granularity
+
+Stream *-->  "0..1" MonitoredClassCriteria : monitoredClassCriteria
+
+Stream *-->  "0..1" MonitoredInstancesCriteria : monitoredInstancesCriteria
+
+Stream *-->  "0..*" PerformanceIndicatorSpecification : performanceIndicatorSpecification
+
+PerformanceIndicatorSpecification -right[hidden]-> IndicatorType
+
+IndicatorType -right[hidden]-> CollectionType
+
+PerformanceIndicatorSpecification *-->  "0..*" PerformanceIndicatorSpecRelationship : performanceIndicatorSpecRelationship
+
+@enduml

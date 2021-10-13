@@ -1,0 +1,278 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Individual <<Pivot>> {
+    aristocraticTitle : String
+    birthDate : DateTime
+    countryOfBirth : String
+    deathDate : DateTime
+    familyName : String
+    familyNamePrefix : String
+    formattedName : String
+    fullName : String
+    gender : String
+    generation : String
+    givenName : String
+    href : Uri
+    id : String
+    legalName : String
+    location : String
+    maritalStatus : String
+    middleName : String
+    nationality : String
+    placeOfBirth : String
+    preferredGivenName : String
+    status : IndividualStateType
+    title : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxExemptionCertificate  {
+    certificateNumber : String
+    id : String
+    issuingJurisdiction : String
+    reason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxDefinition  {
+    id : String
+    jurisdictionLevel : String
+    jurisdictionName : String
+    name : String
+    taxType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Disability  {
+    disabilityCode : String
+    disabilityName : String
+    href : Uri
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class IndividualIdentification  {
+    href : Uri
+    id : String
+    identificationId : String
+    identificationType : String
+    issuingAuthority : String
+    issuingDate : DateTime
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Skill  {
+    comment : String
+    evaluatedLevel : String
+    href : Uri
+    id : String
+    skillCode : String
+    skillName : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyCreditProfile  {
+    creditAgencyName : String
+    creditAgencyType : String
+    href : Uri
+    id : String
+    ratingReference : String
+    ratingScore : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExternalReference  {
+    externalReferenceType : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class LanguageAbility  {
+    href : Uri
+    id : String
+    isFavouriteLanguage : Boolean
+    languageCode : String
+    languageName : String
+    listeningProficiency : String
+    readingProficiency : String
+    speakingProficiency : String
+    validFor : TimePeriod
+    writingProficiency : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OtherNameIndividual  {
+    aristocraticTitle : String
+    familyName : String
+    familyNamePrefix : String
+    formattedName : String
+    fullName : String
+    generation : String
+    givenName : String
+    href : Uri
+    id : String
+    legalName : String
+    middleName : String
+    preferredGivenName : String
+    title : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class IndividualStateType <<Enumeration>> {
+    initialized
+    validated
+    deceased
+}
+
+Individual -right[hidden]-> IndividualStateType
+
+IndividualIdentification "0..*" <--* Individual : individualIdentification
+
+Individual *-->  "0..*" TaxExemptionCertificate : taxExemptionCertificate
+
+IndividualIdentification *-->  "0..1" AttachmentRefOrValue : attachment
+
+TaxExemptionCertificate *-right-> "0..1" AttachmentRefOrValue : attachment
+
+Skill "0..*" <-left-* Individual : skill
+
+OtherNameIndividual "0..*" <--* Individual : otherName
+
+Disability "0..*" <--* Individual : disability
+
+PartyCreditProfile "0..*" <--* Individual : creditRating
+
+RelatedParty "0..*" <--* Individual : relatedParty
+
+Individual *-->  "0..*" LanguageAbility : languageAbility
+
+Individual *-->  "0..*" ExternalReference : externalReference
+
+Individual *-->  "0..*" ContactMedium : contactMedium
+
+Individual *-->  "0..*" Characteristic : partyCharacteristic
+
+TaxExemptionCertificate *-->  "0..*" TaxDefinition : taxDefinition
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+@enduml

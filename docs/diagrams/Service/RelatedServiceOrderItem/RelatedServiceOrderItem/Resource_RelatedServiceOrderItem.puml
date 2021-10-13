@@ -1,0 +1,37 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class RelatedServiceOrderItem <<Pivot>> {
+    href : Uri
+    id : String
+    itemAction : OrderItemActionType
+    itemId : String
+    role : String
+    serviceOrderHref : String
+    serviceOrderId : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class OrderItemActionType <<Enumeration>> {
+    add
+    modify
+    delete
+    noChange
+}
+
+RelatedServiceOrderItem -right[hidden]-> OrderItemActionType
+
+@enduml

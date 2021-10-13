@@ -1,0 +1,48 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Monitor <<Pivot>> {
+    href : String
+    id : String
+    sourceHref : String
+    state : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Request  {
+    body : String [1]
+    method : String
+    to : String
+}
+
+class HeaderItem  {
+    name : String [1]
+    value : String [1]
+}
+
+class Response  {
+    body : String [1]
+    statusCode : String
+}
+
+Monitor *-->  "0..1" Response : response
+
+Monitor *-->  "0..1" Request : request
+
+Request *-->  "1..*" HeaderItem : header
+
+Response *-->  "1..*" HeaderItem : header
+
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Granularity <<Enumeration>> {
+    g_1mn
+    g_5mn
+    g_15mn
+    g_30mn
+    g_1h
+    g_24h
+    g_1m
+    g_1y
+    na
+}
+
+
+@enduml

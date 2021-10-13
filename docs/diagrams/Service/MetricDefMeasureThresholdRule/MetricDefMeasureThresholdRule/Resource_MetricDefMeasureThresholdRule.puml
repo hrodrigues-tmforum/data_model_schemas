@@ -1,0 +1,49 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class MetricDefMeasureThresholdRule <<Pivot>> {
+    conformanceComparatorLower : String
+    conformanceComparatorUpper : String
+    conformanceTargetExact : String
+    conformanceTargetLower : String
+    conformanceTargetUpper : String
+    description : String
+    name : String
+    numberOfAllowedCrossing : Integer
+    thresholdRuleSeverity : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MetricDefMeasureConsequence  {
+    description : String
+    name : String
+    prescribeAction : String
+    repeatAction : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Duration  {
+    amount : Integer
+    units : String
+}
+
+MetricDefMeasureThresholdRule *-->  "0..*" MetricDefMeasureConsequence : consequence
+
+MetricDefMeasureThresholdRule *-->  "0..1" Duration : tolerancePeriod
+
+@enduml

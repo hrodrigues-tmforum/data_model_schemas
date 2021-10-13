@@ -1,0 +1,261 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ServiceProblem <<Pivot>> {
+    affectedNumberOfServices : Integer
+    category : String
+    creationDate : DateTime
+    description : String
+    href : Uri
+    id : String
+    impactImportanceFactor : String
+    lastUpdate : DateTime
+    name : String
+    originatingSystem : String
+    priority : Integer
+    problemEscalation : String
+    reason : String
+    resolutionDate : DateTime
+    status : ServiceProblemStateType
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TrackingRecord  {
+    description : String
+    id : String
+    systemId : String
+    time : DateTime
+    user : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceProblemRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExternalIdentifier  {
+    externalIdentifierType : String
+    href : Uri
+    id : String [1]
+    owner : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceAlarmRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntity  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EventRef  <<Ref>> {
+    eventTime : DateTime
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TroubleTicketRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ImpactPattern  {
+    description : String
+    href : Uri
+    id : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SLAViolationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPlace  {
+    href : String
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceProblemStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    resolved
+    cancelled
+    closed
+}
+
+ServiceProblem *-->  "0..1" ImpactPattern : impactPattern
+
+ServiceProblem *-->  "0..*" TrackingRecord : trackingRecord
+
+ServiceProblem -right[hidden]-> ServiceProblemStateType
+
+ServiceProblem *-->  "0..*" Characteristic : characteristic
+
+TrackingRecord *-right-> "0..*" Characteristic : characteristic
+
+Characteristic "0..*" <-left-* ImpactPattern : characteristic
+
+Note "0..*" <-left-* ServiceProblem : note
+
+EventRef "0..*" <--* ServiceProblem : relatedEvent
+
+SLAViolationRef "0..*" <--* ServiceProblem : slaViolation
+
+TroubleTicketRef "0..*" <--* ServiceProblem : troubleTicket
+
+ResourceAlarmRef "0..*" <--* ServiceProblem : underlyingAlarm
+
+RelatedPlace "0..*" <--* ServiceProblem : affectedLocation
+
+ExternalIdentifier "0..*" <--* ServiceProblem : externalIdentifier
+
+RelatedEntity "0..*" <--* ServiceProblem : relatedEntity
+
+RelatedEntity "0..1" <--* ServiceProblem : firstAlert
+
+ServiceProblem *-->  "0..*" ServiceProblemRef : underlyingProblem
+
+ServiceProblem *-->  "0..*" ServiceProblemRef : parentProblem
+
+ServiceProblem *-->  "0..1" RelatedParty : responsibleParty
+
+ServiceProblem *-->  "0..*" RelatedParty : relatedParty
+
+ServiceProblem *-->  "0..1" RelatedParty : originatorParty
+
+ServiceProblem *-->  "0..*" ResourceRef : rootCauseResource
+
+ServiceProblem *-->  "0..*" ResourceRef : affectedResource
+
+ServiceProblem *-->  "0..*" ServiceRef : rootCauseService
+
+ServiceProblem *-->  "0..*" ServiceRef : affectedService
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

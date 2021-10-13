@@ -1,0 +1,140 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class BucketRefOrValue <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    isShared : Boolean
+    name : String
+    remainingValue : Quantity
+    remainingValueName : String
+    reservedValue : Quantity
+    status : String
+    usageType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class UsageConsumptionProductRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConsumptionSummary  {
+    consumptionPeriod : TimePeriod
+    counterType : String
+    href : Uri
+    id : String
+    level : String
+    value : Quantity
+    valueName : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BucketRelationship  {
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class UsageConsumptionLogicalResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ReserveBalanceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyAccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    status : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class UsageConsumptionServiceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+BucketRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+BucketRefOrValue *-->  "0..*" UsageConsumptionLogicalResourceRef : logicalResource
+
+BucketRefOrValue *-->  "0..*" UsageConsumptionProductRef : product
+
+BucketRefOrValue *-->  "0..*" UsageConsumptionServiceRef : service
+
+BucketRelationship "0..*" <--* BucketRefOrValue : bucketRelationship
+
+BucketRefOrValue *-->  "0..*" ConsumptionSummary : bucketCounter
+
+RelatedParty "0..1" <--* ConsumptionSummary : user
+
+UsageConsumptionProductRef *-->  "0..*" ConsumptionSummary : consumptionSummary
+
+BucketRelationship *-->  "1" BucketRefOrValue : bucketRefOrValue
+
+UsageConsumptionLogicalResourceRef *-->  "0..*" ConsumptionSummary : consumptionSummary
+
+UsageConsumptionServiceRef *-->  "0..*" ConsumptionSummary : consumptionSummary
+
+PartyAccountRef "0..1" <-left-* BucketRefOrValue : partyAccount
+
+BucketRefOrValue *-right-> "0..*" ReserveBalanceRef : reserveBalance
+
+@enduml

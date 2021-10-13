@@ -1,0 +1,86 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class TestMeasure <<Pivot>> {
+    accuracy : Float
+    captureDateTime : DateTime
+    captureMethod : String
+    metricDescription : String
+    metricHref : String
+    metricName : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MeasureThresholdRuleViolation  {
+    conformanceComparatorLower : String
+    conformanceComparatorUpper : String
+    conformanceTargetExact : String
+    conformanceTargetLower : String
+    conformanceTargetUpper : String
+    description : String
+    name : String
+    numberOfAllowedCrossing : Integer
+    thresholdRuleSeverity : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppliedConsequence  {
+    appliedAction : String
+    description : String
+    name : String
+    repeatAction : Boolean
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Duration  {
+    amount : Integer
+    units : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+TestMeasure *-right-> "0..1" Characteristic : value
+
+TestMeasure *-->  "0..*" MeasureThresholdRuleViolation : ruleViolation
+
+MeasureThresholdRuleViolation *-->  "0..*" AppliedConsequence : appliedConsequence
+
+MeasureThresholdRuleViolation *-->  "0..1" Duration : tolerancePeriod
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

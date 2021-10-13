@@ -1,0 +1,150 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ReservationItem <<Pivot>> {
+    action : ReservationItemActionType
+    id : String
+    quantity : Integer
+    reservationPeriod : TimePeriod
+    state : ReservationItemStateType
+    stateChangeDate : DateTime
+    stateChangeReason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntity  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPartyRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Capacity  {
+    plannedOrActualCapacity : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ApplicableTimePeriod  {
+    dayOfWeek : String
+    fromToDateTime : TimePeriod
+    rangeInterval : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CapacityRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CapacitySpecRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CapacityAmount  {
+    capacityAmount : String
+    capacityAmountFrom : String
+    capacityAmountTo : String
+    rangeInterval : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ReservationItemActionType <<Enumeration>> {
+    add
+    modify
+    delete
+    noChange
+}
+
+class ReservationItemStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+    assessingCancellation
+    pendingCancellation
+}
+
+PlaceRefOrValue "0..1" <-left-* Capacity : place
+
+Capacity *-right-> "0..1" CapacitySpecRef : capacitySpec
+
+CapacityAmount "0..1" <--* Capacity : capacityAmount
+
+Capacity *-->  "0..*" CapacityRef : relatedCapacity
+
+Capacity *-->  "0..*" ApplicableTimePeriod : applicableTimePeriod
+
+Capacity "0..1" <--* ReservationItem : capacityDemand
+
+Capacity "0..1" <--* ReservationItem : appliedCapacity
+
+ReservationItem -right[hidden]-> ReservationItemActionType
+
+ReservationItemActionType -right[hidden]-> ReservationItemStateType
+
+ReservationItem *-->  "0..*" RelatedEntity : relatedEntity
+
+ReservationItem *-->  "0..*" RelatedPartyRef : relatedParty
+
+@enduml

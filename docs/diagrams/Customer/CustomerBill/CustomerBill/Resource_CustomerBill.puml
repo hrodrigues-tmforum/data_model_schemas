@@ -1,0 +1,165 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class CustomerBill <<Pivot>> {
+    amountDue : Money
+    billDate : DateTime
+    billNo : String
+    billingPeriod : TimePeriod
+    category : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    nextBillDate : DateTime
+    paymentDueDate : DateTime
+    remainingAmount : Money
+    runType : CustomerBillRunType
+    state : CustomerBillStateType
+    taxExcludedAmount : Money
+    taxIncludedAmount : Money
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CustomerBillRunType <<Enumeration>> {
+    onCycle
+    offCycle
+}
+
+class TaxItem  {
+    href : Uri
+    id : String
+    taxAmount : Money
+    taxCategory : String
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FinancialAccountRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CustomerBillStateType <<Enumeration>> {
+    new
+    onHold
+    validated
+    sent
+    settled
+    partiallyPaid
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AppliedPayment  {
+    appliedAmount : Money
+}
+
+class PaymentRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentMethodRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillCycleRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+CustomerBill -right[hidden]-> CustomerBillStateType
+
+CustomerBillStateType -right[hidden]-> CustomerBillRunType
+
+TaxItem "0..*" <-left-* CustomerBill : taxItem
+
+BillCycleRef "0..1" <--* CustomerBill : billCycle
+
+AttachmentRefOrValue "0..*" <--* CustomerBill : billDocument
+
+RelatedParty "0..*" <--* CustomerBill : relatedParty
+
+CustomerBill *-->  "0..1" BillingAccountRef : billingAccount
+
+CustomerBill *-->  "0..1" PaymentMethodRef : paymentMethod
+
+CustomerBill *-->  "0..1" FinancialAccountRef : financialAccount
+
+CustomerBill *-->  "0..*" AppliedPayment : appliedPayment
+
+AppliedPayment *-->  "0..1" PaymentRef : payment
+
+@enduml

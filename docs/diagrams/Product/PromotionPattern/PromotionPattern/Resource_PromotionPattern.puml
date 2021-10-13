@@ -1,0 +1,63 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class PromotionPattern <<Pivot>> {
+    criteriaGroupLogicalRelationship : String
+    description : String
+    id : String
+    name : String
+    priority : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+class PromotionCriteriaGroup  {
+    criteriaLogicalRelationship : String
+    groupName : String
+    id : String
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+class PromotionCriteria  {
+    criteriaOperator : String [1]
+    criteriaParameter : String [1]
+    criteriaValue : String [1]
+    id : String
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+class PromotionAction  {
+    actionType : String [1]
+    actionValue : String
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+PromotionPattern *-right-> "1..*" PromotionCriteriaGroup : criteriaGroup
+
+PromotionPattern *-->  "1..*" PromotionAction : action
+
+PromotionCriteriaGroup *-->  "1..*" PromotionCriteria : criteria
+
+@enduml

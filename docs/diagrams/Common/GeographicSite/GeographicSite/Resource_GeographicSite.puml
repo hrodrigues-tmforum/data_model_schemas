@@ -1,0 +1,84 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class GeographicSite <<Pivot>> {
+    code : String
+    description : String
+    href : Uri
+    id : String
+    name : String
+    status : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CalendarPeriod  {
+    day : String
+    href : Uri
+    id : String
+    status : String
+    timeZone : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class HourPeriod  {
+    endHour : String
+    startHour : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeographicSiteRelationship  <<Ref>> {
+    href : String
+    id : String
+    relationshipType : String
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+GeographicSite *-right-> "0..*" PlaceRefOrValue : place
+
+RelatedParty "0..*" <--* GeographicSite : relatedParty
+
+GeographicSite *-->  "0..*" GeographicSiteRelationship : siteRelationship
+
+GeographicSite *-->  "0..*" CalendarPeriod : calendar
+
+CalendarPeriod *-->  "0..*" HourPeriod : hourPeriod
+
+@enduml

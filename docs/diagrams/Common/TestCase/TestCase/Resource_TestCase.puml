@@ -1,0 +1,137 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class TestCase <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    state : ManagedArtifactStateType
+    version : String
+    versionDescription : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TestAgreement  {
+    name : String
+    terms : String
+    url : Uri
+}
+
+class RelatedPartyWithContactInfo  {
+    href : Uri
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TestCaseDefinition  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Attribute  {
+    description : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ManagedArtifactStateType <<Enumeration>> {
+    incomplete
+    beta
+    stable
+    deprecated
+}
+
+TestCase -right[hidden]-> ManagedArtifactStateType
+
+TestAgreement "0..1" <--* TestCase : agreement
+
+TestCaseDefinition "1" <--* TestCase : testCaseDefinition
+
+TestCase *-->  "0..*" Attribute : attribute
+
+TestCase *-->  "0..*" RelatedPartyWithContactInfo : relatedParty
+
+RelatedPartyWithContactInfo *-right-> "0..*" ContactMedium : contactMedium
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+Attribute *-right-> "0..1" Characteristic : characteristic
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

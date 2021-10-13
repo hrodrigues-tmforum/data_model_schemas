@@ -1,0 +1,52 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ImpactedBucket <<Pivot>> {
+    amountAfter : Quantity
+    amountBefore : Quantity
+    confirmationDate : DateTime
+    description : String
+    name : String
+    requestedDate : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BucketRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    usageType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ImpactedBucketItem  {
+    amount : Quantity
+    description : String
+    itemType : String
+    name : String
+    reason : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ImpactedBucket *-right-> "1..*" ImpactedBucketItem : item
+
+ImpactedBucket *-->  "0..1" BucketRef : bucket
+
+@enduml
