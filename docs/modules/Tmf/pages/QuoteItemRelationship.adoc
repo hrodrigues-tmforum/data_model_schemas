@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 Used to describe relationship between quote item. These relationship could have an impact on pricing and conditions
 
 

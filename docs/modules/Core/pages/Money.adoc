@@ -7,6 +7,7 @@ This schema is part of Core
 
 [#description]
 == Description
+
 A base / value business entity used to represent money
 
 

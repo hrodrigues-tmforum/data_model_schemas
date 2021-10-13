@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 A party account used for billing purposes. It includes a description of the bill structure (frequency, presentation media, format and so on). It is a specialization of entity PartyAccount.
 
 

@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Describes an email that could be used to contact a party (an individual or an organization)
 
 

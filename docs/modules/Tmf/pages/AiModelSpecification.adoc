@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 AiModelSpecification is a class that offers characteristics to describe a type of service.
 Functionally, it acts as a template by which Services may be instantiated. By sharing the same  specification, these services would therefore share the same set of characteristics.
 

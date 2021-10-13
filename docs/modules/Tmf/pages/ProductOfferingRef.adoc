@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 ProductOffering reference. A product offering represents entities that are orderable from the provider of the catalog, this resource includes pricing information.
 
 

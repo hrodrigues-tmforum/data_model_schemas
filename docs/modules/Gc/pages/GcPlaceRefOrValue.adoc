@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 A  place described by reference or by value. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the place entity and not the PlaceRefOrValue class itself
 
 

@@ -7,6 +7,7 @@ This schema is part of Core
 
 [#description]
 == Description
+
 A time interval in a given unit of time
 
 

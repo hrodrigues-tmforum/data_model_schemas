@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Holds the definition of the requested Performance indicator including: its name, value type, collection type, description and units.
 
 

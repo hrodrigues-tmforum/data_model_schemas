@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 The service test specification describes the service test in terms of parameters to be configured and 
 measures to be taken.
 

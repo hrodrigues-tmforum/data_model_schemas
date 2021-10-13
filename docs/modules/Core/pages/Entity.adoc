@@ -7,6 +7,7 @@ This schema is part of Core
 
 [#description]
 == Description
+
 Base entity schema for use in TMForum Open-APIs. Property.
 
 

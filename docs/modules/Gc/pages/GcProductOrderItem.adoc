@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 A ProductOrder items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.
 
 

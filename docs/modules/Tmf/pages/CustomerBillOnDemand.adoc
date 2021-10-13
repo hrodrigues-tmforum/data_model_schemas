@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 This resource is used to manage the creation request of a customer bill in real-time (on demand).
 
 

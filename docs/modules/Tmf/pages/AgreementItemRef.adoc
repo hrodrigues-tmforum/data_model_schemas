@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 It&#x27;s a Agreement item that has been executed previously.
 
 

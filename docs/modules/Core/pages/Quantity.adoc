@@ -7,6 +7,7 @@ This schema is part of Core
 
 [#description]
 == Description
+
 An amount in a given unit
 
 

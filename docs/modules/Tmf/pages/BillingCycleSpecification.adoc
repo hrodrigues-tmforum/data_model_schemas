@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 A detailed description of when to initiate a billing cycle and the various sub steps of a billing cycle.
 
 

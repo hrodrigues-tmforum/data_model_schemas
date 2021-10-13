@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 BillingAccount reference. A BillingAccount is a detailed description of a bill structure.
 
 
