@@ -3,7 +3,7 @@
 [#domain]
 == Domain
 
-This schema is part of Common
+This schema is part of Product
 
 [#description]
 == Description
@@ -49,7 +49,7 @@ description: URL where information pertaining to the implementation can be found
 type: string
 
 
-=== characteristic
+=== dlImplementationCharcteristic
 description: Characteristic of the Distributed Ledger implementation
 
 type: array
