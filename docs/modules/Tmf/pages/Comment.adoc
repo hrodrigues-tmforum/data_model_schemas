@@ -10,6 +10,7 @@ This schema is part of Common
 
 Indicates the comments entered on the alarm.
 
+None
 
 [#data_model]
 == Data model

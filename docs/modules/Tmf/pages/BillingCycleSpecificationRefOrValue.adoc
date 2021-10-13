@@ -10,6 +10,7 @@ This schema is part of Customer
 
 An attachment by value or by reference.
 
+None
 
 [#data_model]
 == Data model

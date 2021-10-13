@@ -10,6 +10,7 @@ This schema is part of Product
 
 A value that can be assigned to a UsageSpecCharacteristic.
 
+None
 
 [#data_model]
 == Data model

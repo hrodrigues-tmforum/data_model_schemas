@@ -10,6 +10,7 @@ This schema is part of Common
 
 Enumeration of supported compressions. All extensions allowed.
 
+None
 
 [#data_model]
 == Data model

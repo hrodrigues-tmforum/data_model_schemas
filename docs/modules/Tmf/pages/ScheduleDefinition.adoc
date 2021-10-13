@@ -10,6 +10,7 @@ This schema is part of Common
 
 The schedule definition for running jobs.
 
+None
 
 [#data_model]
 == Data model

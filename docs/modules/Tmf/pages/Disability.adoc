@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Lack or inadequate strength or ability.
 
+None
 
 [#data_model]
 == Data model

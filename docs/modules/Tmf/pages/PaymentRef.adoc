@@ -10,6 +10,7 @@ This schema is part of Customer
 
 If an immediate payment has been done at the product order submission, the payment information are captured and stored (as a reference) in the order.
 
+None
 
 [#data_model]
 == Data model

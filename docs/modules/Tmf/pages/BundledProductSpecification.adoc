@@ -10,6 +10,7 @@ This schema is part of Product
 
 A type of ProductSpecification that belongs to a grouping of ProductSpecifications made available to the market. It inherits of all attributes of ProductSpecification.
 
+None
 
 [#data_model]
 == Data model

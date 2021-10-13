@@ -10,6 +10,7 @@ This schema is part of Common
 
 The notification is sent to each listener who has subscribed to receive it.
 
+None
 
 [#data_model]
 == Data model

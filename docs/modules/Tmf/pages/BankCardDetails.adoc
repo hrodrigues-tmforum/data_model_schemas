@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Detailed information for a bank card
 
+None
 
 [#data_model]
 == Data model

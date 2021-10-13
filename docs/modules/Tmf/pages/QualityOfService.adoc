@@ -10,6 +10,7 @@ This schema is part of Service
 
 This object represents expected quality of service in terms of quality key index (KQI or KPI) with their associated service level objective and specification
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A business participant that is responsible for approving the agreement.
 
+None
 
 [#data_model]
 == Data model

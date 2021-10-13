@@ -10,6 +10,7 @@ This schema is part of Common
 
 Specific ability of an entity measured in quantity and units of quantity over an extended period.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of MarketingSales
 
 A Sales Lead is the identification of a person or organization that has an interest in the goods and/or services provided in the prospect of them becoming Customers with one or more Subscriptions.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Service
 
 The configuration of the service test is set by the service test characteristic.
 
+None
 
 [#data_model]
 == Data model

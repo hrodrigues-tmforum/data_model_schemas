@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Task Resource used to request healing of a Resource Function
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Container for GeoJSON Polygon: An array of linear rings
 
+None
 
 [#data_model]
 == Data model

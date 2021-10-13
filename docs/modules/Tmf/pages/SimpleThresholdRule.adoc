@@ -10,6 +10,7 @@ This schema is part of Common
 
 A threshold rule that is based on explicit definition of attributes that represent a Boolean expression
 
+None
 
 [#data_model]
 == Data model

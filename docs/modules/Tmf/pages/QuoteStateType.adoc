@@ -10,6 +10,7 @@ This schema is part of Product
 
 Possible values for the state of the quote
 
+None
 
 [#data_model]
 == Data model

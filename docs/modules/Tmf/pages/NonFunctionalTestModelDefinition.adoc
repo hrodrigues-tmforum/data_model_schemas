@@ -10,6 +10,7 @@ This schema is part of Common
 
 Non-functional test model definition
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Operation to payment authorization, prior to payment capture.
 
+None
 
 [#data_model]
 == Data model

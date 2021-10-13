@@ -10,6 +10,7 @@ This schema is part of Common
 
 Test resource API definition
 
+None
 
 [#data_model]
 == Data model

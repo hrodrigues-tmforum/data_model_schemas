@@ -10,6 +10,7 @@ This schema is part of Common
 
 A Consequence can be applied as a result of a threshold crossing or a threshold ceasing to be crossed
 
+None
 
 [#data_model]
 == Data model

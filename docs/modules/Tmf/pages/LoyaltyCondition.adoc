@@ -10,6 +10,7 @@ This schema is part of Product
 
 A condition, comprised of a attribute that will be tested against a value.
 
+None
 
 [#data_model]
 == Data model

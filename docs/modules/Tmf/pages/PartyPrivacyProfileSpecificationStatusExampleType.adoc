@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Possible values for the status of party privacy profile Specification (for example: inDesign, active, rejected, retired)
 
+None
 
 [#data_model]
 == Data model

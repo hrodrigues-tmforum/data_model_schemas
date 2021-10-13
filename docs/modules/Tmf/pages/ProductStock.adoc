@@ -10,6 +10,7 @@ This schema is part of Resource
 
 ProductStock is a base class for defining a product (or configured product with values characteristic) stock level.
 
+None
 
 [#data_model]
 == Data model

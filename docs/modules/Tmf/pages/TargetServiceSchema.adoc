@@ -10,6 +10,7 @@ This schema is part of Service
 
 The reference object to the schema and type of target service which is described by service specification
 
+None
 
 [#data_model]
 == Data model

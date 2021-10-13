@@ -10,6 +10,7 @@ This schema is part of Product
 
 An instantiated network product (specialization of a product) subscribed by a customer.
 
+None
 
 [#data_model]
 == Data model

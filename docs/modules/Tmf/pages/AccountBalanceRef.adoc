@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Balances linked to the account
 
+None
 
 [#data_model]
 == Data model

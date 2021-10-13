@@ -10,6 +10,7 @@ This schema is part of Common
 
 Container for a GeoJSON Point: A single position
 
+None
 
 [#data_model]
 == Data model

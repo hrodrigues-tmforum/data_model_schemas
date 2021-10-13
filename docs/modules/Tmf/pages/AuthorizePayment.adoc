@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Task resource for operation authorize payment
 
+None
 
 [#data_model]
 == Data model

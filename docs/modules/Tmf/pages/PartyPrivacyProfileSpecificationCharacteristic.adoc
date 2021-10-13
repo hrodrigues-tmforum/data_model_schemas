@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A characteristic of the party privacy profile, whose value(s) would be supplied at runtime. For example, email address
 
+None
 
 [#data_model]
 == Data model

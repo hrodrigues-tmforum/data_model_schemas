@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Account used for billing or for settlement purposes concerning a given party (an organization or an individual). It is a specialization of entity Account.
 
+None
 
 [#data_model]
 == Data model

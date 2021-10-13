@@ -10,6 +10,7 @@ This schema is part of Product
 
 Set of criteria to be followed by all parties.
 
+None
 
 [#data_model]
 == Data model

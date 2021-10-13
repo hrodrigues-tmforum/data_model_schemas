@@ -10,6 +10,7 @@ This schema is part of Common
 
 A  Place and an associated role as installation adress, delivery address, etc....
 
+None
 
 [#data_model]
 == Data model

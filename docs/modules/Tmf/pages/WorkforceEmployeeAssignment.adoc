@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Represents an assignment of a particular WorforceEmployeeRole for a particular unit of work in a specific timeframe. For example, assignment of a person in a network engineer role to a trouble shooting unit of work for at least 2 hours. The assignment is associated with a TimeSlot.
 
+None
 
 [#data_model]
 == Data model

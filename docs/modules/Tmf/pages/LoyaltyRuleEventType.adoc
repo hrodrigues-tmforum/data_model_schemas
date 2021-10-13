@@ -10,6 +10,7 @@ This schema is part of Product
 
 Resource containing a the ID of a event type to link to a loyalty rule.
 
+None
 
 [#data_model]
 == Data model

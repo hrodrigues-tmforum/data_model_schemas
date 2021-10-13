@@ -10,6 +10,7 @@ This schema is part of Product
 
 Characteristics of the product to instantiate or to modify
 
+None
 
 [#data_model]
 == Data model

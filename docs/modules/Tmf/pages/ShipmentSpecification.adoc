@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Definition of the nature of a Shipment. For example, could be a standard ground delivery, overnight express with signature required by an adult, etc.
 
+None
 
 [#data_model]
 == Data model

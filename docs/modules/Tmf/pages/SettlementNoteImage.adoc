@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Is the image of the settlement note
 
+None
 
 [#data_model]
 == Data model

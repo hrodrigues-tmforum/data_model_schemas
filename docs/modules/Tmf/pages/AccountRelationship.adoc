@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Significant connection between accounts. For instance an aggregating account for a list of shop branches each having its own billing account.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Possible values for the status of party privacy profile (for example: created, terminated)
 
+None
 
 [#data_model]
 == Data model

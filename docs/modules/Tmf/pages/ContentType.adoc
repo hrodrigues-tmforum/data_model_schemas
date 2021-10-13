@@ -10,6 +10,7 @@ This schema is part of Common
 
 Base64 content structure.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Refers an appointment, such as a Customer presentation or internal meeting or site visit
 
+None
 
 [#data_model]
 == Data model

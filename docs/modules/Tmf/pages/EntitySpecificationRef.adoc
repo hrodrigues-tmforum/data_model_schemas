@@ -10,6 +10,7 @@ This schema is part of Common
 
 reference to an EntitySpecification object
 
+None
 
 [#data_model]
 == Data model

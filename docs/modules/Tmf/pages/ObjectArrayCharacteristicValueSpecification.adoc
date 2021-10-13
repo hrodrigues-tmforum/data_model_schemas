@@ -10,6 +10,7 @@ This schema is part of Common
 
 A specification for a characteristic for which the value is an array of objects
 
+None
 
 [#data_model]
 == Data model

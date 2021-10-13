@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Part of a business agreement between a Service Provider and a Customer, quantitatively specifying the service performance level the Service Provider commits to deliver.
 
+None
 
 [#data_model]
 == Data model

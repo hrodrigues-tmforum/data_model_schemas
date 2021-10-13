@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A RoleSpecification represents a specification of a role.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Events linked with service problem
 
+None
 
 [#data_model]
 == Data model

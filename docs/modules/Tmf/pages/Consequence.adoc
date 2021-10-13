@@ -10,6 +10,7 @@ This schema is part of Common
 
 A threshold crossing or a threshold ceased to be crossing results in a Performance consequence.
 
+None
 
 [#data_model]
 == Data model

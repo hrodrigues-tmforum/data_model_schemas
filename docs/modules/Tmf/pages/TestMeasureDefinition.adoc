@@ -10,6 +10,7 @@ This schema is part of Service
 
 A TestMeasureDefinition specifies a measure of a specific aspect of a product, service, or resource test, such as lost packets or connectivity status
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Product
 
 A reference to a loyalty event type.
 
+None
 
 [#data_model]
 == Data model

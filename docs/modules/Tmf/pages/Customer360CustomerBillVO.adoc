@@ -10,6 +10,7 @@ This schema is part of Customer360
 
 The customer bill. Can be a regular recurring bill or an extra bill on demand by the customer or the csp.
 
+None
 
 [#data_model]
 == Data model

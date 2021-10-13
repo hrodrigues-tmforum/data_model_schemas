@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Represents a complementary piece of information to describe the agreement. Could be a document, picture, a video or any kind of multimedia content.
 
+None
 
 [#data_model]
 == Data model

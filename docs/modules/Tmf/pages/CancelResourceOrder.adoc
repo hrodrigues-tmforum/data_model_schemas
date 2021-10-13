@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Request for cancellation an existing resource order
 
+None
 
 [#data_model]
 == Data model

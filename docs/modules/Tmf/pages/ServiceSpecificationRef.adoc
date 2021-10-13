@@ -10,6 +10,7 @@ This schema is part of Service
 
 Service specification reference: ServiceSpecification(s) required to realize a ProductSpecification.
 
+None
 
 [#data_model]
 == Data model

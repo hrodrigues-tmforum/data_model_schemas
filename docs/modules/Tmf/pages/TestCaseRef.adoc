@@ -10,6 +10,7 @@ This schema is part of Common
 
 A reference to a managed test case artifact
 
+None
 
 [#data_model]
 == Data model

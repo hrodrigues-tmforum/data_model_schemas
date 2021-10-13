@@ -10,6 +10,7 @@ This schema is part of Common
 
 Configuration feature characteristic specification.
 
+None
 
 [#data_model]
 == Data model

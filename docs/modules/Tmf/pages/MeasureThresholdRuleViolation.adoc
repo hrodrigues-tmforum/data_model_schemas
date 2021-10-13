@@ -11,6 +11,7 @@ This schema is part of Service
 A measureThresholdRuleViolation is a violation of a rule that defines the in the 
 MericDefMeasureThresholdRule.
 
+None
 
 [#data_model]
 == Data model

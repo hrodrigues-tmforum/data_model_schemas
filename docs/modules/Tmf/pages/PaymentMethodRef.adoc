@@ -10,6 +10,7 @@ This schema is part of Customer
 
 PaymentMethod reference. A payment method defines a specific mean of payment (e.g direct debit).
 
+None
 
 [#data_model]
 == Data model

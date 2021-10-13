@@ -10,6 +10,7 @@ This schema is part of Common
 
 Quantity that defines the Capacity.
 
+None
 
 [#data_model]
 == Data model

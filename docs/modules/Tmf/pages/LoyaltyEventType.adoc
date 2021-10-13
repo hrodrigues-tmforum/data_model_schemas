@@ -10,6 +10,7 @@ This schema is part of Product
 
 An event type used to match filter incoming loyalty events.
 
+None
 
 [#data_model]
 == Data model

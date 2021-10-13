@@ -10,6 +10,7 @@ This schema is part of Product
 
 A condition under which a ProductOffering is made available to Customers. For instance, a productOffering can be offered with multiple commitment periods.
 
+None
 
 [#data_model]
 == Data model

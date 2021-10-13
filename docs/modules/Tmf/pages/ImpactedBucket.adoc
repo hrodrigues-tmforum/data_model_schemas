@@ -10,6 +10,7 @@ This schema is part of Customer
 
 A resource that references other buckets that have been impacted by the action of type TopupBalance,AdjustBalance,TransferBalance or ReserveBalance
 
+None
 
 [#data_model]
 == Data model

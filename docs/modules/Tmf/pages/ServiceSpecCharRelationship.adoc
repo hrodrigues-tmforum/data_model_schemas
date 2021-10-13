@@ -10,6 +10,7 @@ This schema is part of Service
 
 An aggregation, migration, substitution, dependency or exclusivity relationship between/among serviceSpecCharacteristics.
 
+None
 
 [#data_model]
 == Data model

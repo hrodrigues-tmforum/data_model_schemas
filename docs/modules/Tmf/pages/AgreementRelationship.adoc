@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A uni-directionmal relationship from this agreement to another agreement
 
+None
 
 [#data_model]
 == Data model

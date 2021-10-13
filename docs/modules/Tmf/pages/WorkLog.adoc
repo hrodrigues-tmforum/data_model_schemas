@@ -10,6 +10,7 @@ This schema is part of Common
 
 A record of the work performed on the change request during the investigation and resolution process.
 
+None
 
 [#data_model]
 == Data model

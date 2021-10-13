@@ -10,6 +10,7 @@ This schema is part of Resource
 
 A migration, substitution, dependency or exclusivity relationship between/among resource specifications.
 
+None
 
 [#data_model]
 == Data model

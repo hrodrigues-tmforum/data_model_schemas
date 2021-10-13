@@ -10,6 +10,7 @@ This schema is part of Product
 
 Product specification reference: A ProductSpecification is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.
 
+None
 
 [#data_model]
 == Data model

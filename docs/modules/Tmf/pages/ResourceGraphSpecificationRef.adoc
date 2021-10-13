@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Resource graph specification reference.
 
+None
 
 [#data_model]
 == Data model

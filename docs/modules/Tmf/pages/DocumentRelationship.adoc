@@ -10,6 +10,7 @@ This schema is part of Common
 
 Another document that is related to the current document;
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Related party specialization that includes contact information
 
+None
 
 [#data_model]
 == Data model

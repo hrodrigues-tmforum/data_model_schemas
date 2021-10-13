@@ -10,6 +10,7 @@ This schema is part of Customer
 
 The Rollback Balance Deduct task resource is a detailed description of rollback deduction
 
+None
 
 [#data_model]
 == Data model

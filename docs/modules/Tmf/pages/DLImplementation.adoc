@@ -10,6 +10,7 @@ This schema is part of Product
 
 Provides the definition of a Distributed Ledger technology implemementation
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Customer
 
 An identified part of the order. A product order is decomposed into one or more order items.
 
+None
 
 [#data_model]
 == Data model

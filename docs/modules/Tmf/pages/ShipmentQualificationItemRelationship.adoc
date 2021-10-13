@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Structure used to describe relationship between shipmentQualification items from the same shipmentQualification .
 
+None
 
 [#data_model]
 == Data model

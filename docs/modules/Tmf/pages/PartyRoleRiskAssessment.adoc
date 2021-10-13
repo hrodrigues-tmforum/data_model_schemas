@@ -10,6 +10,7 @@ This schema is part of Customer
 
 This is a task resource allowing assessment of the risks associated with a party role
 
+None
 
 [#data_model]
 == Data model

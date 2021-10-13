@@ -10,6 +10,7 @@ This schema is part of Resource
 
 ReserveProductStockItem is used to request a stock reservation item for a product
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Reason for eligibility result if the ShipmentQualification result is no (meaning the Shipment is not valid)
 
+None
 
 [#data_model]
 == Data model

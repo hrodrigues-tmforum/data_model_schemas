@@ -10,6 +10,7 @@ This schema is part of Common
 
 An Incident is a record of an event that has altered the operational state of a entity (Resource, Service or Customers Product)
 
+None
 
 [#data_model]
 == Data model

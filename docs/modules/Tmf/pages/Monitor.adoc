@@ -10,6 +10,7 @@ This schema is part of Common
 
 Monitoring of resources
 
+None
 
 [#data_model]
 == Data model

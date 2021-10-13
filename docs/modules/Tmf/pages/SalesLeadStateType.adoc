@@ -10,6 +10,7 @@ This schema is part of MarketingSales
 
 Valid values for the lifecycle state of a salesLead resource
 
+None
 
 [#data_model]
 == Data model

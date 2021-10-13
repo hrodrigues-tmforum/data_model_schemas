@@ -10,6 +10,7 @@ This schema is part of Customer
 
 The AdjustBalance resource allows adjustments to be made to the original BalanceTopup e.g. increment the amount, alter the recharge periodicity. Alternatively, an adjustment can be made to an outstanding reservation request, in which case the reservedValue of the bucket will be adjusted, not the remaining value
 
+None
 
 [#data_model]
 == Data model

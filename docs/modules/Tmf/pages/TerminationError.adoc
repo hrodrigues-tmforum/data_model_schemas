@@ -10,6 +10,7 @@ This schema is part of Service
 
 This indicates an error that caused a qualificationItem to be terminated.
 
+None
 
 [#data_model]
 == Data model

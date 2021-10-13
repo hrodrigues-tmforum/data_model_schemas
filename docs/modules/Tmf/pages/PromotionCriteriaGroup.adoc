@@ -10,6 +10,7 @@ This schema is part of Product
 
 Set of group criteria to promotion. Fulfilling these criteria, parties will receice benefits
 
+None
 
 [#data_model]
 == Data model

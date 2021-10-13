@@ -10,6 +10,7 @@ This schema is part of Service
 
 Task resource that requests unacknowledgement of problems, rolling back the status of the problems from Acknowledged to Submitted.
 
+None
 
 [#data_model]
 == Data model

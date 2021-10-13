@@ -10,6 +10,7 @@ This schema is part of Common
 
 GeoJSON: A collection of Points forming a connected line
 
+None
 
 [#data_model]
 == Data model

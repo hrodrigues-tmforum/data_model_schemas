@@ -10,6 +10,7 @@ This schema is part of Resource
 
 A Resource Order is a request to provision a set of Resources (logical and physical) triggered by the request to provision a Service through a Service Order
 
+None
 
 [#data_model]
 == Data model

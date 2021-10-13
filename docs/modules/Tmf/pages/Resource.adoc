@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Resource is an abstract entity that describes the common set of attributes shared by all concrete resources (e.g. TPE, EQUIPMENT) in the inventory.
 
+None
 
 [#data_model]
 == Data model

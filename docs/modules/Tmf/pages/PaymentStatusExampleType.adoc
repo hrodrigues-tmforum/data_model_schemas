@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Possible values for the status of a payment
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Describes the information of a bank account
 
+None
 
 [#data_model]
 == Data model

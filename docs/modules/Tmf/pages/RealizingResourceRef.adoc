@@ -10,6 +10,7 @@ This schema is part of Resource
 
 RealizingResource reference. RealizingResource is a link to the resource that realizes the product.
 
+None
 
 [#data_model]
 == Data model

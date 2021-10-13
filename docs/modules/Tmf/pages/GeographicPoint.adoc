@@ -10,6 +10,7 @@ This schema is part of Common
 
 A GeographicPoint defines a geographic point through coordinates.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Customer360
 
 A loyalty balance, containing a balance unit and value.
 
+None
 
 [#data_model]
 == Data model

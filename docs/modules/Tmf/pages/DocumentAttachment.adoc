@@ -10,6 +10,7 @@ This schema is part of Common
 
 Attachment refers to extensions or additional parts that is or may be attached to something (agreements, contracts, appointments) to perform a particular function. They can be communication attachments, documents and other.
 
+None
 
 [#data_model]
 == Data model

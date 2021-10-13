@@ -10,6 +10,7 @@ This schema is part of Resource
 
 CheckProductStock is used to log and execute check about product stock availability
 
+None
 
 [#data_model]
 == Data model

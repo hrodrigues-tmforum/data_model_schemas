@@ -10,6 +10,7 @@ This schema is part of Service
 
 RelatedServiceOrderItem (a ServiceOrder item) .The service order item which triggered service creation/change/termination.
 
+None
 
 [#data_model]
 == Data model

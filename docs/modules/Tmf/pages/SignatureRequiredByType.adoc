@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Possible values for the signature requirement upon receiving the shipment
 
+None
 
 [#data_model]
 == Data model

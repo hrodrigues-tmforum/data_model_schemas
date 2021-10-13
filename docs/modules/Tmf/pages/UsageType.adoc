@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Valid values for the usage type are
 
+None
 
 [#data_model]
 == Data model

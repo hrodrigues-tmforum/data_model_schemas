@@ -12,6 +12,7 @@ A MetricDefMeasureThresholdRule is a rule that defines the condition (raise or c
 consequences when a threshold is crossed or ceased to be crossed. It also defines the severity of the 
 raise or clear of the threshold.
 
+None
 
 [#data_model]
 == Data model

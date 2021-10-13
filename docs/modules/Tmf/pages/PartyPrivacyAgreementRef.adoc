@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Reference to Party Privacy Agreement resource
 
+None
 
 [#data_model]
 == Data model

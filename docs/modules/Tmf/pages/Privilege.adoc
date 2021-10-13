@@ -10,6 +10,7 @@ This schema is part of Common
 
 A Privilege is a detailed information concerning an individual access entitlement.
 
+None
 
 [#data_model]
 == Data model

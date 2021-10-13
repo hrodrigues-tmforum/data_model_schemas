@@ -10,6 +10,7 @@ This schema is part of Product
 
 This represents a bundling pricing relationship, allowing a price to be composed of multiple other prices (e.g. a recurring charge and a onetime charge).
 
+None
 
 [#data_model]
 == Data model

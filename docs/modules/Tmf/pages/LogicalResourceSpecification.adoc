@@ -10,6 +10,7 @@ This schema is part of Resource
 
 This is an example of a derived class of ResourceSpecification, and is used to define the invariant characteristics and behavior (attributes, methods, constraints, and relationships) of a LogicalResource.
 
+None
 
 [#data_model]
 == Data model

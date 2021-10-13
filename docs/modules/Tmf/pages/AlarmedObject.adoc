@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Identifies the managed object instance associated with the alarm.
 
+None
 
 [#data_model]
 == Data model

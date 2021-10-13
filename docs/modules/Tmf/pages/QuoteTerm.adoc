@@ -10,6 +10,7 @@ This schema is part of Product
 
 Description of  aproduct Term linked to this quoteItem. This represent a commitment with a duration
 
+None
 
 [#data_model]
 == Data model

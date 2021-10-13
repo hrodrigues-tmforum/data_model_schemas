@@ -10,6 +10,7 @@ This schema is part of Common
 
 Complements the description of an entity through video, pictures...
 
+None
 
 [#data_model]
 == Data model
