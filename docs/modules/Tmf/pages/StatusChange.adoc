@@ -36,3 +36,5 @@ description: The status of the trouble ticket
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

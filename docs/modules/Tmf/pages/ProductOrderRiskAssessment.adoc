@@ -24,3 +24,5 @@ description: The product order for which the assessment is to be carried out, mu
 
 $ref of: xref:4.0.0@schemas:Tmf:ProductOrderRef.json.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;RiskAssessment.schema.json#RiskAssessment&#x27;}

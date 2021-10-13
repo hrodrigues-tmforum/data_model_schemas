@@ -42,3 +42,5 @@ description: Discount that the voucher applies when it is a discount
 
 type: number
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

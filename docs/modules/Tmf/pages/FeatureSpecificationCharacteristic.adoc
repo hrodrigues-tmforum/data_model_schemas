@@ -30,3 +30,5 @@ description: Used to define a set of attributes, each of which can be assigned t
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/CharacteristicSpecificationBase.schema.json#CharacteristicSpecificationBase&#x27;}

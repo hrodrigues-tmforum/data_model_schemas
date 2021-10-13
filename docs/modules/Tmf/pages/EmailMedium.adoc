@@ -24,3 +24,5 @@ description: Full email address in standard format
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/DigitalIdentityContactMedium.schema.json#DigitalIdentityContactMedium&#x27;}

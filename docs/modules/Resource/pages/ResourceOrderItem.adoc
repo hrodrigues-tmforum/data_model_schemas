@@ -54,3 +54,5 @@ $ref of: xref:4.0.0@schemas:Resource:ResourceReforValue.adoc[]
 === state
 $ref of: xref:4.0.0@schemas:Resource:ResourceOrderItemStateType.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;Entity.schema.json#/Entity&#x27;}

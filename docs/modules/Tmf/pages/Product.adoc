@@ -140,3 +140,5 @@ description: Is the date when the product was terminated
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

@@ -24,3 +24,5 @@ description: Descriptive name for the resource graph.
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#/EntityRef&#x27;}

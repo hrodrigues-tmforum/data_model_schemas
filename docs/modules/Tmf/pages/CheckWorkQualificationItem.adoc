@@ -52,3 +52,5 @@ description: If qualificationItem has not been done properly this lists the erro
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../EngagedParty/WorkQualificationItem.schema.json#/definitions/WorkQualificationItem&#x27;}

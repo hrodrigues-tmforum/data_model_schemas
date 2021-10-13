@@ -24,3 +24,4 @@ The data model is defined as shown below:
 === coordinates
 $ref of: xref:4.0.0@schemas:Tmf:GeoJSON.adoc[]
 
+

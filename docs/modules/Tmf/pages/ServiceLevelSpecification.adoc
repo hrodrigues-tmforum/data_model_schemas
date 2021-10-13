@@ -56,3 +56,5 @@ description: A list of objectives related to this service level specification
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

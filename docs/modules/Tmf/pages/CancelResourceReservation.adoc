@@ -22,3 +22,5 @@ The data model is defined as shown below:
 === resourceReservation
 $ref of: xref:4.0.0@schemas:Tmf:ResourceReservationRef.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/CancelReservation.schema.json#/definitions/CancelReservation&#x27;}

@@ -228,3 +228,5 @@ description: A list of underlying problems. Relevant only if this problem is der
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#/definitions/Entity&#x27;}

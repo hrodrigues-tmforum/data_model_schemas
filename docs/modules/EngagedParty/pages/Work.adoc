@@ -136,3 +136,5 @@ type: string
 === workforceEmployeeAssignment
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#/definitions/Entity&#x27;}

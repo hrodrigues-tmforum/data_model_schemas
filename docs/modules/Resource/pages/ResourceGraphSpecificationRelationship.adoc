@@ -30,3 +30,5 @@ description: A reference to the related resource graph specification.
 
 $ref of: xref:4.0.0@schemas:Resource:ResourceGraphSpecificationRef.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

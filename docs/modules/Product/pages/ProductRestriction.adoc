@@ -56,3 +56,5 @@ $ref of: xref:4.0.0@schemas:Product:ProductSpecificationRef.adoc[]
 === relatedPlace
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

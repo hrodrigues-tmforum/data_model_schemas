@@ -40,3 +40,5 @@ description: The product stock to adjust .
 
 $ref of: xref:4.0.0@schemas:Resource:ProductStockRef.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

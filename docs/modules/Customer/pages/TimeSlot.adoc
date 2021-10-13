@@ -42,3 +42,5 @@ description: Start date and end date of the timeSlot
 
 $ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

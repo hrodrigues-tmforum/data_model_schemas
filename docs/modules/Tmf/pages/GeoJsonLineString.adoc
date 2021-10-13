@@ -28,3 +28,5 @@ type: string
 === geoJson
 $ref of: xref:4.0.0@schemas:Tmf:LineString.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/GeographicLocation.schema.json#GeographicLocation&#x27;}

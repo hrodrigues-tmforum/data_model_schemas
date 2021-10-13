@@ -102,3 +102,5 @@ description: A time period (TimePeriod). Appointment beginning date time and end
 
 $ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

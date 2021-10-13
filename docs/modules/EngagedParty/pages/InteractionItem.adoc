@@ -72,3 +72,5 @@ type: array
 === note
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

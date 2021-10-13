@@ -48,3 +48,5 @@ description: Date when the interaction item is created in the system
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
