@@ -1,0 +1,258 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ProductOffering <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    isBundle : Boolean
+    isSellable : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    statusReason : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetProductSchema  {
+    @schemaLocation : Uri [1]
+    @type : String [1]
+}
+
+class ServiceCandidateRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingPriceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceCandidateRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BundledProductOffering  {
+    href : String
+    id : String
+    lifecycleStatus : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BundledProductOfferingOption  {
+    numberRelOfferDefault : Integer
+    numberRelOfferLowerLimit : Integer
+    numberRelOfferUpperLimit : Integer
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PlaceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingTerm  {
+    description : String
+    duration : Quantity
+    name : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MarketSegmentRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationCharacteristicValueUse  {
+    description : String
+    id : String
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SLARef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CategoryRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ProductOffering *-->  "0..1" ProductSpecificationRef : productSpecification
+
+ProductOffering *-->  "0..*" ProductSpecificationCharacteristicValueUse : prodSpecCharValueUse
+
+ProductSpecificationCharacteristicValueUse *-right-> "0..1" ProductSpecificationRef : productSpecification
+
+PlaceRef "0..*" <-left-* ProductOffering : place
+
+ProductOffering *-right-> "0..*" ChannelRef : channel
+
+CategoryRef "0..*" <--* ProductOffering : category
+
+AgreementRef "0..*" <--* ProductOffering : agreement
+
+AttachmentRefOrValue "0..*" <--* ProductOffering : attachment
+
+MarketSegmentRef "0..*" <--* ProductOffering : marketSegment
+
+ServiceCandidateRef "0..1" <--* ProductOffering : serviceCandidate
+
+ResourceCandidateRef "0..1" <--* ProductOffering : resourceCandidate
+
+ProductOffering *-->  "0..*" ProductOfferingTerm : productOfferingTerm
+
+ProductSpecificationRef <-left[hidden]- ProductOfferingTerm
+
+ProductOffering *-->  "0..*" ProductOfferingPriceRef : productOfferingPrice
+
+ProductOfferingTerm <-left[hidden]- ProductOfferingPriceRef
+
+ProductOffering *-->  "0..1" SLARef : serviceLevelAgreement
+
+ProductOfferingPriceRef <-left[hidden]- SLARef
+
+ProductOffering *-->  "0..*" BundledProductOffering : bundledProductOffering
+
+SLARef <-left[hidden]- BundledProductOffering
+
+ProductSpecificationCharacteristicValueUse *-->  "0..*" CharacteristicValueSpecification : productSpecCharacteristicValue
+
+ProductSpecificationRef *-->  "0..1" TargetProductSchema : targetProductSchema
+
+BundledProductOffering *-->  "0..1" BundledProductOfferingOption : bundledProductOfferingOption
+
+@enduml

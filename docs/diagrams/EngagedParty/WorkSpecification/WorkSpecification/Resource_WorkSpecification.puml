@@ -1,0 +1,177 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class WorkSpecification <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    isAppointmentRequired : Boolean
+    isBundle : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetEntitySchema  {
+    @schemaLocation : String [1]
+    @type : String [1]
+}
+
+class CharacteristicSpecification  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class CharacteristicSpecificationRelationship  {
+    characteristicSpecificationId : String
+    name : String
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntitySpecificationRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssociationSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkSpecificationRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+WorkSpecification *-->  "0..*" EntitySpecificationRelationship : entitySpecRelationship
+
+WorkSpecification *-->  "0..*" WorkSpecificationRelationship : workSpecRelationship
+
+EntitySpecificationRelationship *-->  "0..1" AssociationSpecificationRef : associationSpec
+
+WorkSpecificationRelationship *-->  "0..1" AssociationSpecificationRef : associationSpec
+
+AttachmentRefOrValue "0..*" <-left-* WorkSpecification : attachment
+
+WorkSpecification *-right-> "0..*" ConstraintRef : constraint
+
+RelatedParty "0..*" <--* WorkSpecification : relatedParty
+
+TargetEntitySchema "0..1" <--* WorkSpecification : targetEntitySchema
+
+WorkSpecification *-->  "0..*" CharacteristicSpecification : specCharacteristic
+
+CharacteristicSpecification *-->  "0..*" CharacteristicSpecificationRelationship : charSpecRelationship
+
+CharacteristicSpecification *-->  "0..*" CharacteristicValueSpecification : characteristicValueSpecification
+
+@enduml

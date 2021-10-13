@@ -1,0 +1,171 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ProductSpecification <<Pivot>> {
+    brand : String
+    description : String
+    href : String
+    id : String
+    isBundle : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    productNumber : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationCharacteristic  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class ProductSpecificationCharacteristicRelationship  <<Ref>> {
+    charSpecSeq : Integer
+    href : String
+    id : String
+    name : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetProductSchema  {
+    @schemaLocation : Uri [1]
+    @type : String [1]
+}
+
+class ResourceSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BundledProductSpecification  {
+    href : String
+    id : String
+    lifecycleStatus : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationRelationship  <<Ref>> {
+    href : String
+    id : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+AttachmentRefOrValue "0..*" <-left-* ProductSpecification : attachment
+
+ProductSpecification *-right-> "0..*" RelatedParty : relatedParty
+
+TargetProductSchema "0..1" <--* ProductSpecification : targetProductSchema
+
+ServiceSpecificationRef "0..*" <--* ProductSpecification : serviceSpecification
+
+ResourceSpecificationRef "0..*" <--* ProductSpecification : resourceSpecification
+
+ProductSpecification *-->  "0..*" ProductSpecificationRelationship : productSpecificationRelationship
+
+ProductSpecification *-->  "0..*" BundledProductSpecification : bundledProductSpecification
+
+ProductSpecification *-->  "0..*" ProductSpecificationCharacteristic : productSpecCharacteristic
+
+ProductSpecificationCharacteristic *-->  "0..*" ProductSpecificationCharacteristicRelationship : productSpecCharRelationship
+
+ProductSpecificationCharacteristic *-->  "0..*" CharacteristicValueSpecification : productSpecCharacteristicValue
+
+@enduml

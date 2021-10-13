@@ -1,0 +1,259 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ServiceLevelAgreementSpecification <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    isBundle : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceLevelAgreementTemplate  {
+    description : String
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementSpecificationRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicSpecification  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class CharacteristicSpecificationRelationship  {
+    characteristicSpecificationId : String
+    name : String
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntitySpecificationRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssociationSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SLAItemSpecification  {
+    description : String
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementTermOrCondition  {
+    description : String
+    href : Uri
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntitySpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class QualityOfService  {
+    keyIndex : String [1]
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceLevelObjectiveRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceLevelSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ServiceLevelAgreementSpecification *-->  "0..*" ConstraintRef : constraint
+
+ServiceLevelAgreementSpecification *-->  "0..1" ServiceLevelAgreementTemplate : template
+
+ServiceLevelAgreementSpecification *-->  "0..*" AttachmentRefOrValue : attachment
+
+ServiceLevelAgreementSpecification *-->  "0..*" EntitySpecificationRelationship : entitySpecRelationship
+
+ServiceLevelAgreementSpecification *-->  "0..*" CharacteristicSpecification : specCharacteristic
+
+ServiceLevelAgreementSpecification *-->  "1..*" SLAItemSpecification : itemSpecification
+
+ServiceLevelAgreementTemplate *-right-> "0..1" AttachmentRefOrValue : document
+
+ConstraintRef "0..*" <--* SLAItemSpecification : constraint
+
+EntitySpecificationRelationship "0..*" <--* SLAItemSpecification : entitySpecRelationship
+
+CharacteristicSpecification "0..*" <--* SLAItemSpecification : specCharacteristic
+
+AttachmentRefOrValue "0..*" <--* SLAItemSpecification : attachment
+
+RelatedParty "0..*" <-left-* ServiceLevelAgreementSpecification : relatedParty
+
+ServiceLevelAgreementSpecification *-right-> "0..*" AgreementSpecificationRelationship : agreementSpecificationRelationship
+
+AgreementTermOrCondition "0..*" <-left-* SLAItemSpecification : termOrCondition
+
+SLAItemSpecification *-right-> "0..*" EntitySpecificationRef : serviceSpecification
+
+SLAItemSpecification *-right-> "0..*" EntitySpecificationRef : productSpecification
+
+SLAItemSpecification *-->  "1..*" QualityOfService : qualityOfService
+
+CharacteristicSpecification *-->  "0..*" CharacteristicSpecificationRelationship : charSpecRelationship
+
+CharacteristicSpecification *-->  "0..*" CharacteristicValueSpecification : characteristicValueSpecification
+
+QualityOfService *-->  "1" ServiceLevelSpecificationRef : serviceLevelSpecification
+
+QualityOfService *-->  "0..1" ServiceLevelObjectiveRef : serviceLevelObjective
+
+EntitySpecificationRelationship *-->  "0..1" AssociationSpecificationRef : associationSpec
+
+@enduml

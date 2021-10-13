@@ -1,0 +1,70 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Ticket <<Pivot>> {
+    correlationId : String
+    creationDate : DateTime
+    description : String
+    href : String
+    id : String
+    resolutionDate : DateTime
+    severity : String
+    status : String
+    statusChangeDate : DateTime
+    statusChangeReason : String
+    subStatus : String
+    targetResolutionDate : DateTime
+    ticketType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedObject  {
+    href : Uri
+    id : String
+    involvement : String
+    reference : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+Ticket *-->  "0..*" RelatedObject : relatedObject
+
+Ticket *-->  "0..*" Note : note
+
+Ticket *-->  "0..*" RelatedParty : relatedParty
+
+@enduml

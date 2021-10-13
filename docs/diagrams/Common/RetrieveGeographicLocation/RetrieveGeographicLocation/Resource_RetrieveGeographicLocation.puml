@@ -1,0 +1,37 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class RetrieveGeographicLocation <<Pivot>> {
+    href : String
+    id : String
+    requestedAccuracy : Float
+    status : String
+    thing : object
+    time : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeographicLocation  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String [1]
+}
+
+RetrieveGeographicLocation *-->  "0..1" GeographicLocation : geographicLocation
+
+@enduml

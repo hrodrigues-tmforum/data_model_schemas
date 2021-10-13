@@ -1,0 +1,254 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class FederatedIdentity <<Pivot>> {
+    href : Uri
+    id : String
+    name : String [1]
+    status : String
+    statusReason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CreditProfile  {
+    creditProfileDate : DateTime
+    creditRiskRating : Integer
+    creditScore : Integer
+    href : Uri
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPartyRefOrValue  {
+    href : Uri
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxExemptionCertificate  {
+    certificateNumber : String
+    id : String
+    issuingJurisdiction : String
+    reason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxDefinition  {
+    id : String
+    jurisdictionLevel : String
+    jurisdictionName : String
+    name : String
+    taxType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExternalReference  {
+    externalReferenceType : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyCreditProfile  {
+    creditAgencyName : String
+    creditAgencyType : String
+    href : Uri
+    id : String
+    ratingReference : String
+    ratingScore : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RoleTypeRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    partnershipHref : String
+    partnershipId : String
+    partnershipName : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentMethodRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+FederatedIdentity *-->  "0..*" ContactMedium : contactMedium
+
+FederatedIdentity *-->  "0..*" Characteristic : characteristic
+
+FederatedIdentity *-->  "0..*" RelatedPartyRefOrValue : relatedParty
+
+FederatedIdentity *-->  "0..1" RelatedPartyRefOrValue : engagedParty
+
+Characteristic "0..*" <--* RelatedPartyRefOrValue : partyCharacteristic
+
+ContactMedium "0..*" <--* RelatedPartyRefOrValue : contactMedium
+
+AccountRef "0..*" <-left-* FederatedIdentity : account
+
+FederatedIdentity *-right-> "1" RoleTypeRef : roleType
+
+AgreementRef "0..*" <--* FederatedIdentity : agreement
+
+CreditProfile "0..*" <--* FederatedIdentity : creditProfile
+
+PaymentMethodRef "0..*" <--* FederatedIdentity : paymentMethod
+
+PartyCreditProfile "0..*" <-left-* RelatedPartyRefOrValue : creditRating
+
+RelatedPartyRefOrValue *-right-> "0..*" RelatedParty : relatedParty
+
+RelatedPartyRefOrValue *-->  "0..*" ExternalReference : externalReference
+
+RelatedPartyRefOrValue *-->  "0..*" TaxExemptionCertificate : taxExemptionCertificate
+
+TaxExemptionCertificate *-->  "0..*" TaxDefinition : taxDefinition
+
+TaxExemptionCertificate *-->  "0..1" AttachmentRefOrValue : attachment
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+CharacteristicRelationship "0..*" <-left-* Characteristic : characteristicRelationship
+
+@enduml

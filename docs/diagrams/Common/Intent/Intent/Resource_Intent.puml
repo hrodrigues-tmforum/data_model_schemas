@@ -1,0 +1,170 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Intent <<Pivot>> {
+    context : String
+    creationDate : DateTime
+    description : String
+    href : Uri
+    id : String [1]
+    isBundle : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    statusChangeDate : DateTime
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntityRelationship  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssociationSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedExpectationRefOrValue  {
+    description : String
+    href : Uri
+    id : String
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    role : String [1]
+    statusChangeDate : DateTime
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExpectationTarget  {
+    description : String
+    href : Uri
+    id : String [1]
+    name : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Intent *-->  "0..*" Characteristic : characteristic
+
+Intent *-->  "1..*" RelatedExpectationRefOrValue : relatedExpectation
+
+RelatedExpectationRefOrValue *-->  "0..*" ExpectationTarget : target
+
+Characteristic "0..*" <--* ExpectationTarget : characteristic
+
+RelatedExpectationRefOrValue *-right-> "0..*" Characteristic : characteristic
+
+RelatedExpectationRefOrValue *-->  "0..*" ConstraintRef : constraint
+
+ConstraintRef -right[hidden]-> ExpectationTarget
+
+ExpectationTarget *-->  "0..*" ConstraintRef : constraint
+
+AttachmentRefOrValue "0..*" <-left-* Intent : attachment
+
+Intent *-right-> "0..*" RelatedParty : relatedParty
+
+EntityRelationship "0..*" <--* Intent : intentRelationship
+
+EntityRelationship *-right-> "0..1" AssociationSpecificationRef : associationSpec
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+ExpectationTarget <-left[hidden]- CharacteristicRelationship
+
+@enduml

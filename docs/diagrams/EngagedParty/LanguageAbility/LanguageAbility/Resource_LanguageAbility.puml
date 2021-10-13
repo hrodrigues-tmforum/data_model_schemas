@@ -1,0 +1,31 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class LanguageAbility <<Pivot>> {
+    href : Uri
+    id : String
+    isFavouriteLanguage : Boolean
+    languageCode : String
+    languageName : String
+    listeningProficiency : String
+    readingProficiency : String
+    speakingProficiency : String
+    validFor : TimePeriod
+    writingProficiency : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+
+@enduml

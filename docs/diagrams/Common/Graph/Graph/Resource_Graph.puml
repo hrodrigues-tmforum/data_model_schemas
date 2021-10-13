@@ -1,0 +1,141 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Graph <<Pivot>> {
+    contained : Boolean
+    description : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EdgeContained  {
+    bidirectional : Boolean
+    description : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class VertexContainedRef  {
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EdgeSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GraphRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class VertexContained  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class VertexSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GraphRelationship  <<Ref>> {
+    href : String
+    id : String
+    name : String
+    relationshipType : String
+    role : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Graph *-->  "0..*" VertexContained : vertex
+
+Graph *-->  "0..*" EdgeContained : edge
+
+EdgeContained *-right-> "0..1" GraphRef : subGraph
+
+GraphRef "0..1" <-left-* VertexContained : subGraph
+
+EdgeContained *-->  "0..*" Characteristic : edgeCharacteristic
+
+VertexContained *-->  "0..*" Characteristic : vertexCharacteristic
+
+VertexContainedRef "0..*" <-left-* EdgeContained : vertex
+
+EdgeContained *-->  "0..1" EdgeSpecificationRef : edgeSpecification
+
+GraphRelationship "0..*" <-left-* Graph : graphRelationship
+
+VertexContained *-right-> "0..1" VertexSpecificationRef : vertexSpecification
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+@enduml

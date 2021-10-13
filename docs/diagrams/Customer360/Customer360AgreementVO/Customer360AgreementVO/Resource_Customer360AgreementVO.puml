@@ -1,0 +1,45 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Customer360AgreementVO <<Pivot>> {
+    agreementPeriod : TimePeriod
+    agreementType : String [1]
+    completionDate : TimePeriod
+    description : String
+    documentNumber : Integer
+    href : String
+    id : String
+    initialDate : DateTime
+    name : String [1]
+    statementOfIntent : String
+    status : String
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementSpecificationRef  <<Ref>> {
+    description : String
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Customer360AgreementVO *-->  "0..1" AgreementSpecificationRef : agreementSpecification
+
+@enduml

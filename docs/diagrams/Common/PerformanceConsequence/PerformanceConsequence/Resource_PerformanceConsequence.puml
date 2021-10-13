@@ -1,0 +1,49 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class PerformanceConsequence <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    prescribedAction : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PerformanceAlarmSpecification  {
+    perfAlarmSpecAdditionalText : String
+    perfAlarmSpecAlarmType : String
+    perfAlarmSpecProbableCause : String
+    perfAlarmSpecSeverity : PerceivedSeverity
+    perfAlarmSpecSpecificProblem : String
+    perfAlarmThresholdCrossingDescription : String
+}
+
+class PerceivedSeverity <<Enumeration>> {
+    CRITICAL
+    MAJOR
+    MINOR
+    WARNING
+    INDETERMINATE
+    CLEARED
+}
+
+PerformanceConsequence *-->  "0..1" PerformanceAlarmSpecification : alarmSpecification
+
+PerformanceConsequence "0..1" <--* PerformanceAlarmSpecification : performanceConsequence
+
+PerformanceAlarmSpecification -right[hidden]-> PerceivedSeverity
+
+@enduml

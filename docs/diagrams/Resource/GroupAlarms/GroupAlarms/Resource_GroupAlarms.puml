@@ -1,0 +1,162 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class GroupAlarms <<Pivot>> {
+    alarmChangedTime : DateTime
+    href : String
+    id : String
+    sourceSystemId : String
+    state : String
+}
+
+class AlarmRefOrValue  {
+    ackState : String
+    ackSystemId : String
+    ackUserId : String
+    alarmChangedTime : DateTime
+    alarmClearedTime : DateTime
+    alarmDetails : String
+    alarmEscalation : Boolean
+    alarmRaisedTime : DateTime
+    alarmReportingTime : DateTime
+    alarmType : AlarmType
+    alarmedObjectType : String
+    clearSystemId : String
+    clearUserId : String
+    externalAlarmId : String
+    href : Uri
+    id : String
+    isRootCause : Boolean
+    name : String
+    perceivedSeverity : PerceivedSeverity
+    plannedOutageIndicator : String
+    probableCause : String
+    proposedRepairedActions : String
+    reportingSystemId : String
+    serviceAffecting : Boolean
+    sourceSystemId : String
+    specificProblem : String
+    state : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AlarmRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AlarmedObject  {
+    href : String
+    id : String
+}
+
+class PerceivedSeverity <<Enumeration>> {
+    CRITICAL
+    MAJOR
+    MINOR
+    WARNING
+    INDETERMINATE
+    CLEARED
+}
+
+class AffectedService  {
+    href : String
+    id : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CrossedThresholdInformation  {
+    direction : String
+    granularity : String
+    indicatorName : String
+    indicatorUnit : String
+    observedValue : String
+    thresholdCrossingDescription : String
+}
+
+class ThresholdRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AlarmType <<Enumeration>> {
+    communicationsAlarm
+    processingErrorAlarm
+    environmentalAlarm
+    qualityOfServiceAlarm
+    equipmentAlarm
+    integrityViolation
+    operationalViolation
+    physicalViolation
+    securityService
+    mechanismViolation
+    timeDomainViolation
+}
+
+class Comment  {
+    comment : String
+    systemId : String
+    time : DateTime
+    userId : String
+}
+
+AlarmRefOrValue -right[hidden]-> AlarmType
+
+AlarmType -right[hidden]-> PerceivedSeverity
+
+RelatedPlaceRefOrValue "0..*" <-left-* AlarmRefOrValue : place
+
+Comment "0..*" <--* AlarmRefOrValue : comment
+
+AlarmedObject "0..1" <--* AlarmRefOrValue : alarmedObject
+
+AlarmRefOrValue *-->  "0..*" AffectedService : affectedService
+
+AlarmRefOrValue *-->  "0..*" AlarmRef : parentAlarm
+
+AlarmRefOrValue *-->  "0..*" AlarmRef : correlatedAlarm
+
+AlarmRefOrValue *-->  "0..1" CrossedThresholdInformation : crossedThresholdInformation
+
+AlarmRefOrValue "0..1" <--* GroupAlarms : parentAlarm
+
+AlarmRefOrValue "0..*" <--* GroupAlarms : groupedAlarm
+
+AlarmRefOrValue "0..*" <--* GroupAlarms : correlatedAlarm
+
+CrossedThresholdInformation *-->  "0..1" ThresholdRef : threshold
+
+@enduml

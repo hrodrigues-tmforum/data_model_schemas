@@ -1,0 +1,243 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ServiceTestSpecification <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    isBundle : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetEntitySchema  {
+    @schemaLocation : String [1]
+    @type : String [1]
+}
+
+class CharacteristicSpecification  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class CharacteristicSpecificationRelationship  {
+    characteristicSpecificationId : String
+    name : String
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EntitySpecificationRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssociationSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TestMeasureDefinition  {
+    captureFrequency : String
+    captureMethod : String
+    metricDescription : String
+    metricHref : String
+    metricName : String
+    name : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Duration  {
+    amount : Integer
+    units : String
+}
+
+class MetricDefMeasureThresholdRule  {
+    conformanceComparatorLower : String
+    conformanceComparatorUpper : String
+    conformanceTargetExact : String
+    conformanceTargetLower : String
+    conformanceTargetUpper : String
+    description : String
+    name : String
+    numberOfAllowedCrossing : Integer
+    thresholdRuleSeverity : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MetricDefMeasureConsequence  {
+    description : String
+    name : String
+    prescribeAction : String
+    repeatAction : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceTestSpecRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ServiceTestSpecification *-->  "0..*" TestMeasureDefinition : testMeasureDefinition
+
+TestMeasureDefinition *-->  "0..1" Duration : capturePeriod
+
+TestMeasureDefinition *-->  "0..*" MetricDefMeasureThresholdRule : thresholdRule
+
+MetricDefMeasureThresholdRule *-right-> "0..1" Duration : tolerancePeriod
+
+AttachmentRefOrValue "0..*" <-left-* ServiceTestSpecification : attachment
+
+ServiceTestSpecification *-right-> "0..*" ConstraintRef : constraint
+
+RelatedParty "0..*" <--* ServiceTestSpecification : relatedParty
+
+TargetEntitySchema "0..1" <--* ServiceTestSpecification : targetEntitySchema
+
+ServiceSpecificationRef "0..*" <--* ServiceTestSpecification : relatedServiceSpecification
+
+ServiceTestSpecification *-->  "0..*" ServiceTestSpecRelationship : serviceTestSpecRelationship
+
+ServiceTestSpecification *-->  "0..*" EntitySpecificationRelationship : entitySpecRelationship
+
+ServiceTestSpecification *-->  "0..*" CharacteristicSpecification : specCharacteristic
+
+CharacteristicSpecification *-->  "0..*" CharacteristicSpecificationRelationship : charSpecRelationship
+
+CharacteristicSpecification *-->  "0..*" CharacteristicValueSpecification : characteristicValueSpecification
+
+MetricDefMeasureThresholdRule *-->  "0..*" MetricDefMeasureConsequence : consequence
+
+EntitySpecificationRelationship *-->  "0..1" AssociationSpecificationRef : associationSpec
+
+@enduml

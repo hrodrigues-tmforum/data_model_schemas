@@ -1,0 +1,128 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class PartyBill <<Pivot>> {
+    amountDue : Money
+    billDate : DateTime
+    billNo : String
+    billingPeriod : TimePeriod
+    category : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    nextBillDate : DateTime
+    paymentDueDate : DateTime
+    remainingAmount : Money
+    runType : String
+    state : String
+    taxExcludedAmount : Money
+    taxIncludedAmount : Money
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxItem  {
+    href : Uri
+    id : String
+    taxAmount : Money
+    taxCategory : String
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FinancialAccountRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentItem  {
+    amount : Money
+    href : Uri
+    id : String [1]
+    name : String
+    taxAmount : Money
+    totalAmount : Money
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class FileDocument  {
+    downloadUrl : Uri
+    fileType : String
+    href : Uri
+    id : String
+    name : String
+    size : Integer
+    sizeUnit : Integer
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentMethodRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+TaxItem "0..*" <-left-* PartyBill : taxItem
+
+PartyBill *-right-> "0..*" PaymentItem : paymentItem
+
+FileDocument "0..*" <--* PartyBill : billDocument
+
+RelatedParty "0..*" <--* PartyBill : relatedParty
+
+PartyBill *-->  "0..1" BillingAccountRef : billingAccount
+
+PartyBill *-->  "0..1" PaymentMethodRef : paymentMethod
+
+PartyBill *-->  "0..1" FinancialAccountRef : financialAccount
+
+@enduml
