@@ -1,0 +1,41 @@
+= AiModel
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+AiModel is a base class for defining the AiModel hierarchy
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== software
+description: Reference to Software in Inventory
+
+type: array
+
+
+=== gpu
+description: Reference to GPU in Inventory
+
+$ref of: xref:4.0.0@schemas:Tmf:ResourceRef.adoc[]
+
+
+=== trainingData
+description: Reference to training data set
+
+$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+
+
+=== aiModelSpecification
+$ref of: xref:4.0.0@schemas:Tmf:AiModelSpecification.adoc[]
+

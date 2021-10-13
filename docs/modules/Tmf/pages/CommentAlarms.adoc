@@ -1,0 +1,31 @@
+= CommentAlarms
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource for comment alarms operation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== state
+description: Current state of the operation task
+
+type: string
+
+
+=== commentedAlarm
+description: The successfully commented alarms
+
+type: array
+

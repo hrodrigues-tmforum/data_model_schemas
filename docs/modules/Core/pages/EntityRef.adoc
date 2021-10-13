@@ -1,0 +1,25 @@
+= EntityRef
+
+[#domain]
+== Domain
+
+This schema is part of Core
+
+[#description]
+== Description
+Entity reference schema to be use for all entityRef class.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Hyperlink reference
+
+type: string
+

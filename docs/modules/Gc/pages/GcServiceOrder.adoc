@@ -1,0 +1,35 @@
+= GcServiceOrder
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== serviceOrderItem
+description: A list of service order items to be processed by this order
+
+type: array
+
+
+=== state
+description: State of the order: described in the state-machine diagram
+
+$ref of: xref:4.0.0@schemas:Gc:ServiceOrderStateType.adoc[]
+
+
+=== orderDate
+type: string
+

@@ -1,0 +1,37 @@
+= GcProductOrderItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+A ProductOrder items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== action
+description: The action to be carried out on the Product. Can be: add, modify, delete, noChange
+
+type: string
+
+
+=== id
+description: Identifier of the ProductOrder item (generally it is a sequence number 01, 02, 03, ...)
+
+type: string
+
+
+=== state
+description: State of the ProductOrder item : described in the state machine diagram
+
+$ref of: xref:4.0.0@schemas:Gc:GcProductOrderItemStateType.adoc[]
+

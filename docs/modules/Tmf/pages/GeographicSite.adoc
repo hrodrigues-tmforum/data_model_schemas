@@ -1,0 +1,63 @@
+= GeographicSite
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== code
+description: A code that may be used for some addressing schemes eg: [ANSI T1.253-1999]
+
+type: string
+
+
+=== creationDate
+description: Date and time when the GeographicSite was created
+
+type: string
+
+
+=== description
+description: Text describing additional information regarding the site
+
+type: string
+
+
+=== status
+description: The condition of the GeographicSite, such as planned, underConstruction, cancelled, active, inactive, former
+
+type: string
+
+
+=== relatedParty
+type: array
+
+
+=== externalIdentifier
+type: array
+
+
+=== calendar
+type: array
+
+
+=== place
+type: array
+
+
+=== siteRelationship
+type: array
+

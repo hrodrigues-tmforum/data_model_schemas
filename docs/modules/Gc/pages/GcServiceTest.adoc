@@ -1,0 +1,39 @@
+= GcServiceTest
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+A service test is an entity that exists for a controlled test invocation on a service. The service 
+test is executed according to a schedule and contains service test configuration parameters that are to be 
+applied at execution time, and service test measures that result.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relatedService
+description: The actual service being tested
+
+$ref of: xref:4.0.0@schemas:Gc:ServiceRef.adoc[]
+
+
+=== testSpecification
+description: The specification for this test
+
+$ref of: xref:4.0.0@schemas:Gc:ServiceTestSpecificationRef.adoc[]
+
+
+=== name
+description: The name of the service test
+
+type: string
+

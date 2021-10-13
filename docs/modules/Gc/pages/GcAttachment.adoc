@@ -1,0 +1,31 @@
+= GcAttachment
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Complements the description of an element (for instance a product) through video, pictures...
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== attachmentType
+description: Attachment type such as video, picture
+
+type: string
+
+
+=== mimeType
+description: Attachment mime type such as extension file for video, picture and document
+
+type: string
+

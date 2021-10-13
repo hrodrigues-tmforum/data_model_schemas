@@ -1,0 +1,31 @@
+= GcGeographicSiteRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Used to describe relationship between geographic site.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the related site entity within the server
+
+type: string
+
+
+=== relationshipType
+description: Type of relationship
+
+type: string
+

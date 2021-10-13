@@ -1,0 +1,31 @@
+= GcProductOrderItemRef
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Reference of a productOrder item that has been executed previously.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== productOrderId
+description: Unique identifier of a related entity.
+
+type: string
+
+
+=== itemId
+description: Id of an item of a product order
+
+type: string
+

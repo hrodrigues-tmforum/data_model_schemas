@@ -1,0 +1,33 @@
+= GcPayment
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+The Payment resource represents a performed payment. It contains both information about the payment and the payment method used to perform it.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== account
+$ref of: xref:4.0.0@schemas:Gc:AccountRef.adoc[]
+
+
+=== paymentMethod
+$ref of: xref:4.0.0@schemas:Gc:PaymentMethodRefOrValue.adoc[]
+
+
+=== totalAmount
+description: Amount to be paid (including taxes)
+
+$ref of: xref:4.0.0@schemas:Gc:Money.adoc[]
+

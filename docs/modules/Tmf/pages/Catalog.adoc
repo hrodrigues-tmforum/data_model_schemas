@@ -1,0 +1,67 @@
+= Catalog
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A collection of Product Offerings, intended for a specific DistributionChannel, enhanced with additional information such as SLA parameters, invoicing and shipping details
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of this catalog
+
+type: string
+
+
+=== lastUpdate
+description: Date and time of the last update
+
+type: string
+
+
+=== lifecycleStatus
+description: Used to indicate the current lifecycle status
+
+type: string
+
+
+=== catalogType
+description: Indicates if the catalog is a product, service or resource catalog
+
+type: string
+
+
+=== validFor
+description: The period for which the catalog is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== version
+description: Catalog version
+
+type: string
+
+
+=== relatedParty
+description: List of parties involved in this catalog
+
+type: array
+
+
+=== category
+description: List of root categories contained in this catalog
+
+type: array
+

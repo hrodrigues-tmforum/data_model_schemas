@@ -1,0 +1,26 @@
+= GcResourceCatalog
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+The root entity for resource catalog management.
+A resource catalog is a group of resource specifications made available through resource candidates that an organization provides to the consumers (internal consumers like its employees or B2B customers or B2C customers).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: Name of the catalog
+
+type: string
+

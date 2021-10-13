@@ -1,0 +1,19 @@
+= Entity
+
+[#domain]
+== Domain
+
+This schema is part of Core
+
+[#description]
+== Description
+Base entity schema for use in TMForum Open-APIs. Property.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

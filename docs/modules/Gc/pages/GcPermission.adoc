@@ -1,0 +1,29 @@
+= GcPermission
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+The Permission resource represents the entitlement given by an individual (granter) to another individual (user) to get access to a set of his owned manageable assets. One single permission resource can hold information referring to privileges granted for multiple manageable assets.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== user
+$ref of: xref:4.0.0@schemas:Gc:RelatedParty.adoc[]
+
+
+=== validFor
+description: The period for which the permission is valid
+
+$ref of: xref:4.0.0@schemas:Gc:TimePeriod.adoc[]
+

@@ -1,0 +1,31 @@
+= GcTopic
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Is a event channel provided by the Event Streaming API
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== contentQuery
+description: is the filter that will be applied on the content of the Event.
+
+type: string
+
+
+=== headerQuery
+description: is the filter that will be applied on the Event header properties.
+
+type: string
+

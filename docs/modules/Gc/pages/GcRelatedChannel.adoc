@@ -1,0 +1,25 @@
+= GcRelatedChannel
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Related channel to another entity. May be online web, mobile app, social ,etc.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== role
+description: Role playing by the channel.
+
+type: string
+

@@ -1,0 +1,77 @@
+= ProductOrderItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+An identified part of the order. A product order is decomposed into one or more order items.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== quantity
+description: Quantity ordered
+
+type: integer
+
+
+=== appointment
+$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+
+
+=== billingAccount
+$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+
+
+=== itemPrice
+type: array
+
+
+=== itemTerm
+type: array
+
+
+=== itemTotalPrice
+type: array
+
+
+=== payment
+type: array
+
+
+=== product
+$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+
+
+=== productOffering
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+
+
+=== productOfferingQualificationItem
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
+
+
+=== quoteItem
+$ref of: xref:4.0.0@schemas:Tmf:QuoteItemRef.adoc[]
+
+
+=== productOrderItem
+type: array
+
+
+=== productOrderItemRelationship
+type: array
+
+
+=== qualification
+type: array
+

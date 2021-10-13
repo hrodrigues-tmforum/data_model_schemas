@@ -1,0 +1,69 @@
+= PartyInteraction
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== interactionDate
+description: The period during which the interaction took place. Start and end will be different in case of a call or a store visit. They will be the same (or only one will appear) in case of a message or other momentary interactions.
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== description
+description: Description of the interaction
+
+type: string
+
+
+=== status
+description: Status of the interaction (opened, inProgress, completed)
+
+type: string
+
+
+=== statusChangeDate
+description: Last time the status changed
+
+type: string
+
+
+=== creationDate
+description: Date when the interaction is created in the system
+
+type: string
+
+
+=== relatedParty
+type: array
+
+
+=== attachment
+type: array
+
+
+=== note
+type: array
+
+
+=== interactionItem
+type: array
+
+
+=== interactionRelationship
+type: array
+

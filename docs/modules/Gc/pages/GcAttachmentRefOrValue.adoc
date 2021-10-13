@@ -1,0 +1,19 @@
+= GcAttachmentRefOrValue
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+An attachment by value or by reference. An attachment complements the description of an element, for example through a document, a video, a picture.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

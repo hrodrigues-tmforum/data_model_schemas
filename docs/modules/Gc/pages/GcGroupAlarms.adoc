@@ -1,0 +1,43 @@
+= GcGroupAlarms
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource for group alarms operation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== alarmChangedTime
+description: Time of the correlation
+
+type: string
+
+
+=== correlatedAlarm
+description: Correlated alarms
+
+type: array
+
+
+=== parentAlarm
+description: Root cause alarm
+
+$ref of: xref:4.0.0@schemas:Gc:AlarmRefOrValue.adoc[]
+
+
+=== sourceSystemId
+description: Source system identifier
+
+type: string
+

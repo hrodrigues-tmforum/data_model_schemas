@@ -1,0 +1,74 @@
+= EntityCategory
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+The (entity) category resource is used to group entity catalog items in logical containers. Categories can contain other categories.
+Resource IDs for categories are strings and are defined by the catalog application.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of the category
+
+type: string
+
+
+=== isRoot
+description: If true, this Boolean indicates that the category is a root of categories
+
+type: boolean
+
+
+=== lastUpdate
+description: Date and time of the last update
+
+type: string
+
+
+=== lifecycleStatus
+description: Used to indicate the current lifecycle status
+
+type: string
+
+
+=== parentId
+description: Unique identifier of the parent category
+
+type: string
+
+
+=== validFor
+description: The period for which the category is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== childCategory
+description: The child category(ies) if any, contained in this category
+
+type: array
+
+
+=== entityCatalogItem
+description: The catalog items referred to by this category
+
+type: array
+
+
+=== version
+description: Category version
+
+type: string
+

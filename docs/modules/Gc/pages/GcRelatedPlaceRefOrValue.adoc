@@ -1,0 +1,23 @@
+= GcRelatedPlaceRefOrValue
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Related Entity reference. A related place defines a place described by reference or by value linked to a specific entity. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the place entity and not the RelatedPlaceRefOrValue class itself
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== role
+type: string
+

@@ -1,0 +1,43 @@
+= GcQuoteItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+A quote items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== action
+description: Action to be performed on this quote item (add, modify, remove, etc.)
+
+type: string
+
+
+=== id
+description: Identifier of the quote item (generally it is a sequence number 01, 02, 03, ...)
+
+type: string
+
+
+=== quoteItemPrice
+description: Price for this quote item
+
+type: array
+
+
+=== state
+description: State of the quote item : described in the state machine diagram
+
+$ref of: xref:4.0.0@schemas:Gc:GcQuoteStateType.adoc[]
+

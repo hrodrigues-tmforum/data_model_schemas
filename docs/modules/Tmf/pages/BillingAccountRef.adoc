@@ -1,0 +1,25 @@
+= BillingAccountRef
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+BillingAccount reference. A BillingAccount is a detailed description of a bill structure.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== ratingType
+description: Indicates whether the account follows a specific payment option such as prepaid or postpaid
+
+type: string
+

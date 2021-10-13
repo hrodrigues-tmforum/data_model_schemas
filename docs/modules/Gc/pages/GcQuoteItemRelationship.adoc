@@ -1,0 +1,31 @@
+= GcQuoteItemRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Used to describe relationship between quote item. These relationship could have an impact on pricing and conditions
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Id of the related quote item (must be in the same quote)
+
+type: string
+
+
+=== relationshipType
+description: Relationship type as relies on, bundles, etc...
+
+type: string
+

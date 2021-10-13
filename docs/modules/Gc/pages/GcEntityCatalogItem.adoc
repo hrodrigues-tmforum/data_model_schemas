@@ -1,0 +1,32 @@
+= GcEntityCatalogItem
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+An EntityCatalogItem is an entity that allows any ProductOffering, ServiceCandidate, ResourceCandidate, or even any object inheriting from RootEntity, to be available to a catalog. The CatalogSpecification and Policy of the catalog governs the content of the EntityCatalogItem. This API addresses only EntitySpecification items extended from RootEntity as EntityCatalogItem.
+The EntityCatalogItem resource (JSON format) represents a set of characteristics that define the values given by the EntityCatalogItem.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: Name given to this REST resource
+
+type: string
+
+
+=== specification
+description: The specification implied by this candidate
+
+$ref of: xref:4.0.0@schemas:Gc:EntitySpecificationRef.adoc[]
+

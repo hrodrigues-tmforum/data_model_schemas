@@ -1,0 +1,38 @@
+= GcGeographicAddressValue
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Structured textual way of describing how to find a Property in an urban area (country properties are often defined differently).
+Note : Address corresponds to SID UrbanPropertyAddress
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== city
+description: City that the address is in
+
+type: string
+
+
+=== country
+description: Country that the address is in
+
+type: string
+
+
+=== streetName
+description: Name of the street or other street type
+
+type: string
+

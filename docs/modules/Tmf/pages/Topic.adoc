@@ -1,0 +1,25 @@
+= Topic
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Is a event channel provided by the Event Streaming API
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: use to identify grouping of events, per domain, per event types, per access control-right and so on.
+
+type: string
+

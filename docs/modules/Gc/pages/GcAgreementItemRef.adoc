@@ -1,0 +1,31 @@
+= GcAgreementItemRef
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Reference of an Agreement item.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== agreementId
+description: Unique identifier of a related entity.
+
+type: string
+
+
+=== agreementItemId
+description: Id of an item of a Agreement
+
+type: string
+

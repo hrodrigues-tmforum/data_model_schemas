@@ -1,0 +1,71 @@
+= AgreementSpecification
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A template of an agreement that can be used when establishing partnerships
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: A narrative that explains in detail what the agreement specification is about
+
+type: string
+
+
+=== isBundle
+description: If true, this agreement specification is a grouping of other agreement specifications. The list of bundled agreement specifications is provided by the specificationRelationship property
+
+type: boolean
+
+
+=== lastUpdate
+description: Date and time of the last update
+
+type: string
+
+
+=== lifecycleStatus
+description: Indicates the current lifecycle status
+
+type: string
+
+
+=== validFor
+description: The period for which the agreement specification is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== version
+description: Agreement specification version
+
+type: string
+
+
+=== serviceCategory
+$ref of: xref:4.0.0@schemas:Tmf:CategoryRef.adoc[]
+
+
+=== specificationCharacteristic
+type: array
+
+
+=== relatedParty
+type: array
+
+
+=== specificationRelationship
+type: array
+

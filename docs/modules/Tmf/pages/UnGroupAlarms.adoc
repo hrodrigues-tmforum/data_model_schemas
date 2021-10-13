@@ -1,0 +1,31 @@
+= UnGroupAlarms
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource for ungroup alarms operation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== state
+description: Current state of the operation task
+
+type: string
+
+
+=== unGroupedAlarm
+description: The successfully uncorrelated alarms
+
+type: array
+

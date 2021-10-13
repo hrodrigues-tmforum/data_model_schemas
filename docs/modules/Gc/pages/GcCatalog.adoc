@@ -1,0 +1,25 @@
+= GcCatalog
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A collection of Product Offerings, intended for a specific DistributionChannel, enhanced with additional information such as SLA parameters, invoicing and shipping details
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: Name of the catalog
+
+type: string
+

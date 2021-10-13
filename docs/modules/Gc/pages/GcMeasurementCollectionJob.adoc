@@ -1,0 +1,19 @@
+= GcMeasurementCollectionJob
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Used to control the periodic collection of performance indicators, implemented as a sub-entity of the PM Measurement Job.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

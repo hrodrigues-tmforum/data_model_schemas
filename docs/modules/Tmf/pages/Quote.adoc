@@ -1,0 +1,131 @@
+= Quote
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Quote can be used to negotiate service and product acquisition or modification between a customer and a service provider. Quote contain list of quote items, a reference to customer (partyRole), a list of productOffering and attached prices and conditions.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== agreement
+description: A reference to an agreement defining the context of the quote
+
+type: array
+
+
+=== billingAccount
+description: A reference to a billing account to provide quote context information 
+
+type: array
+
+
+=== category
+description: Used to categorize the quote from a business perspective that can be useful for the CRM system (e.g. &quot;enterprise&quot;, &quot;residential&quot;, ...)
+
+type: string
+
+
+=== contactMedium
+description: Information contact related to the quote requester
+
+type: array
+
+
+=== description
+description: Description of the quote
+
+type: string
+
+
+=== expectedFulfillmentStartDate
+description: this is the date wished by the requester to have the requested quote item delivered
+
+type: string
+
+
+=== expectedQuoteCompletionDate
+description: This is expected date - from quote supplier - to be able to send back  a response for this quote
+
+type: string
+
+
+=== externalId
+type: array
+
+
+=== instantSyncQuote
+description: An indicator which when the value is &quot;true&quot; means that requester expects to get quoting result immediately in the response. If the indicator is true then the response code of 200 indicates the operation is successful otherwise a task is created with a response 201. 
+
+type: boolean
+
+
+=== note
+description: Free form text associated with the quote
+
+type: array
+
+
+=== authorization
+description: An authorization provided for the quote
+
+type: array
+
+
+=== quoteTotalPrice
+description: Quote total price
+
+type: array
+
+
+=== relatedParty
+description: A reference to a party playing a role in this quote (customer, seller, requester, etc.)
+
+type: array
+
+
+=== productOfferingQualification
+description: A reference to a previously done product offering qualification
+
+type: array
+
+
+=== requestedQuoteCompletionDate
+description: This is requested date - from quote requester - to get a complete response for this quote
+
+type: string
+
+
+=== state
+description: State of the quote : described in the state-machine diagram
+
+$ref of: xref:4.0.0@schemas:Tmf:QuoteStateType.adoc[]
+
+
+=== validFor
+description: Quote validity period
+
+$ref of: xref:4.0.0@schemas:Core:TimePeriod.adoc[]
+
+
+=== version
+description: Quote version - if the customer rejected the quote but  negotiations still open a new version of the quote is managed
+
+type: string
+
+
+=== quoteItem
+description: A quote items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.
+
+type: array
+

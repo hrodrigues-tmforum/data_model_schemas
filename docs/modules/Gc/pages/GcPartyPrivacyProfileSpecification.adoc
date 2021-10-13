@@ -1,0 +1,25 @@
+= GcPartyPrivacyProfileSpecification
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Party Privacy Profile Specification serves as a template for creating Privacy Profiles. The specification defines characteristics for the profile. For example there might be a profile specification for residential customers, and a different specification for partners.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== partyPrivacyProfileSpecCharacteristic
+description: List of characteristics of the specification, whose values would typically be supplied when the profile is instantiated
+
+type: array
+

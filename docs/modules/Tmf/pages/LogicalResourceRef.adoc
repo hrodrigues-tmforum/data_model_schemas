@@ -1,0 +1,25 @@
+= LogicalResourceRef
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+reference to the LogicalResource eg MSISDN.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== value
+description: Value used to identifiy this resource as a MSISDN or a VoIP number.
+
+type: string
+

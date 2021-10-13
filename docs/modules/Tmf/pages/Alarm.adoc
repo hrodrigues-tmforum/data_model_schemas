@@ -1,0 +1,152 @@
+= Alarm
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+This resource represents an alarm supporting the information model defined in ITU-T X.733.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== externalAlarmId
+description: An identifier of the alarm in the source system.
+
+type: string
+
+
+=== specificProblem
+description: Provides more specific information about the alarm.
+
+type: string
+
+
+=== alarmedObjectType
+description: The type (class) of the managed object associated with the event.
+
+type: string
+
+
+=== reportingSystemId
+description: Reporting system identity.
+
+type: string
+
+
+=== alarmDetails
+description: Contains further information on the alarm.
+
+type: string
+
+
+=== alarmChangedTime
+description: Indicates the last date and time when the alarm is changed on the alarm-owning system. Any change to the alarm whether coming from the alarmed resource, or triggered by a change from the client is changing this time.
+
+type: string
+
+
+=== alarmClearedTime
+description: Indicates the time (as a date + time) at which the alarm is cleared at the source. 
+
+type: string
+
+
+=== alarmReportingTime
+description: Indicates the time (as a date + time) at which the alarm was reported by the owning OSS. It might be different from the alarmRaisedTime. For instance, if the alarm list is maintained by an EMS, the alarmRaisedtime would be the time the alarm
+  was detected by the NE, while the alarmReportingTime would be the time this alarm was stored in the alarm list of the EMS.
+
+type: string
+
+
+=== ackState
+description: Provides the Acknowledgement State of the alarm (unacknowledged | acknowledged).
+
+type: string
+
+
+=== ackSystemId
+description: Provides the name of the system that last changed the ackState of an alarm, i.e. acknowledged or unacknowledged the alarm.
+
+type: string
+
+
+=== ackUserId
+description: Provides the id of the user who has last changed the ack state of the alarm, i.e. acknowledged or unacknowledged the alarm.
+
+type: string
+
+
+=== affectedService
+type: array
+
+
+=== alarmEscalation
+description: Indicates if this alarm has been escalated or not. 
+
+type: boolean
+
+
+=== clearSystemId
+description: Provides the id of the system where the user who invoked the alarmCleared operation is located. 
+
+type: string
+
+
+=== clearUserId
+description: Provides the id of the user who invoked the alarmCleared operation
+
+type: string
+
+
+=== comment
+type: array
+
+
+=== correlatedAlarm
+type: array
+
+
+=== crossedThresholdInformation
+$ref of: xref:4.0.0@schemas:Tmf:CrossedThresholdInformation.adoc[]
+
+
+=== isRootCause
+description: Indicates whether the alarm is a root cause alarm.. 
+
+type: boolean
+
+
+=== parentAlarm
+type: array
+
+
+=== plannedOutageIndicator
+description: Indicates that the Managed Object (related to this alarm) is in planned outage (in planned maintenance, or out-of-service). 
+
+type: string
+
+
+=== proposedRepairedActions
+description: Indicates proposed repair actions, if known to the system emitting the alarm.
+
+type: string
+
+
+=== serviceAffecting
+description: Indicates whether the alarm affects service or not.
+
+type: boolean
+
+
+=== place
+type: array
+

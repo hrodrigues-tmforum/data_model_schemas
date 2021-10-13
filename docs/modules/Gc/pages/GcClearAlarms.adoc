@@ -1,0 +1,43 @@
+= GcClearAlarms
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource for clear alarms operation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== alarmClearedTime
+description: Time of the alarm clearing
+
+type: string
+
+
+=== alarmPattern
+description: Alarm patterns to match target alarms. An alarm will match if all of the sttributes in any of the patterns compare equal to those attributes of the alarm.
+
+type: array
+
+
+=== clearSystemId
+description: Name of the clearing system
+
+type: string
+
+
+=== clearUserId
+description: Name of the clearing user
+
+type: string
+

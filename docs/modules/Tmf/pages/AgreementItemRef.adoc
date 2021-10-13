@@ -1,0 +1,37 @@
+= AgreementItemRef
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+It&#x27;s a Agreement item that has been executed previously.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== agreementName
+description: Name of the related entity.
+
+type: string
+
+
+=== agreementHref
+description: Reference of the related entity.
+
+type: string
+
+
+=== @referredType
+description: The actual type of the target instance when needed for disambiguation.
+
+type: string
+

@@ -1,0 +1,43 @@
+= GcProductOrder
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Generic Contect schema for ProductOrder.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== creationDate
+description: Date and time when the ProductOrder was created
+
+type: string
+
+
+=== state
+description: Tracks the lifecycle status of the product order, such as Acknowledged, Rejected, InProgress, Pending and so on.
+
+$ref of: xref:4.0.0@schemas:Gc:GcProductOrderStateType.adoc[]
+
+
+=== completionDate
+description: Date when the ProductOrder was completed
+
+type: string
+
+
+=== ProductOrderItem
+description: A ProductOrder items describe an action to be performed on a productOffering or a product.
+
+type: array
+

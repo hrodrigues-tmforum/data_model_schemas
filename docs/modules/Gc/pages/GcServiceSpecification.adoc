@@ -1,0 +1,20 @@
+= GcServiceSpecification
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+ServiceSpecification is a class that offers characteristics to describe a type of service.
+Functionally, it acts as a template by which Services may be instantiated. By sharing the same specification, these services would therefore share the same set of characteristics.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

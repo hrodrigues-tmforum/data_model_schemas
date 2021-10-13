@@ -1,0 +1,31 @@
+= GcCheckServiceQualification
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+CheckServiceQualification is used to perform a technical eligibility on service configuration(s). It allows to retrieve services that are technically available in the context of the interaction (place, party, service characteristics, ...).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== checkServiceQualificationDate
+description: Date when the serviceQualification was submitted
+
+type: string
+
+
+=== serviceQualificationItem
+description: A list of service qualification items.
+
+type: array
+

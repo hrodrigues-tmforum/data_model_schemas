@@ -1,0 +1,145 @@
+= Service
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+Service is a base class for defining the Service hierarchy. All Services are characterized as either being possibly visible and usable by a Customer or not. This gives rise to the two subclasses of Service: CustomerFacingService and ResourceFacingService.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Free-text description of the service
+
+type: string
+
+
+=== isServiceEnabled
+description: If FALSE and hasStarted is FALSE, this particular Service has NOT been enabled for use - if FALSE and hasStarted is TRUE then the service has failed 
+
+type: boolean
+
+
+=== hasStarted
+description: If TRUE, this Service has already been started
+
+type: boolean
+
+
+=== startMode
+description: This attribute is an enumerated integer that indicates how the Service is started, such as: 0: Unknown; 1: Automatically by the managed environment; 2: Automatically by the owning device; 3: Manually by the Provider of the Service; 4: Manually by a Customer of the Provider; 5: Any of the above
+
+type: string
+
+
+=== isStateful
+description: If TRUE, this Service can be changed without affecting any other services
+
+type: boolean
+
+
+=== startDate
+description: Date when the service starts
+
+type: string
+
+
+=== endDate
+description: Date when the service ends
+
+type: string
+
+
+=== serviceOrderItem
+description: A list of service order items related to this service
+
+type: array
+
+
+=== note
+description: A list of notes made on this service
+
+type: array
+
+
+=== serviceType
+description: Business type of the service
+
+type: string
+
+
+=== isBundle
+description: If true, the service is a ServiceBundle which regroup a service hierachy. If false, the service is a &#x27;atomic&#x27; service (hierachy leaf).
+
+type: boolean
+
+
+=== name
+description: Name of the service
+
+type: string
+
+
+=== category
+description: Is it a customer facing or resource facing service
+
+type: string
+
+
+=== feature
+description: A list of feature associated with this service 
+
+type: array
+
+
+=== relatedEntity
+description: A list of related  entity in relationship with this service 
+
+type: array
+
+
+=== serviceCharacteristic
+description: A list of characteristics that characterize this service (ServiceCharacteristic [*]) 
+
+type: array
+
+
+=== serviceRelationship
+description: A list of service relationships (ServiceRelationship [*]). Describes links with other service(s) in the inventory.
+
+type: array
+
+
+=== supportingService
+description: A list of supporting services (SupportingService [*]). A collection of services that support this service (bundling, link CFS to RFS)
+
+type: array
+
+
+=== supportingResource
+description: A list of supporting resources (SupportingResource [*]).Note: only Service of type RFS can be associated with Resources
+
+type: array
+
+
+=== relatedParty
+description: A list of related party references (RelatedParty [*]). A related party defines party or party role linked to a specific entity
+
+type: array
+
+
+=== place
+description: A list of places (Place [*]). Used to define a place useful for the service (for example a geographical place whre the service is installed)
+
+type: array
+

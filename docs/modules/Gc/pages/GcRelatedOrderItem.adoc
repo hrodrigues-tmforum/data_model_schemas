@@ -1,0 +1,37 @@
+= GcRelatedOrderItem
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Reference of a Order item that has been executed previously.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== role
+description: Role played by the  Order
+
+type: string
+
+
+=== orderId
+description: Unique identifier of a related  Order.
+
+type: string
+
+
+=== orderItemId
+description: Id of an item of a prduct order
+
+type: string
+

@@ -1,0 +1,19 @@
+= QueryServiceQualification
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+QueryServiceQualification is used to retrieve a list of services that are technically available in the context of the interaction (place, party, service characteristics, ...).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

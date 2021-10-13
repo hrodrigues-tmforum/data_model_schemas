@@ -1,0 +1,25 @@
+= EmailContactMedium
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Describes an email that could be used to contact a party (an individual or an organization)
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== emailAddress
+description: Full email address in standard format
+
+type: string
+

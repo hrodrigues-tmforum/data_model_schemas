@@ -1,0 +1,46 @@
+= GeographicSubAddress
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Representation of a GeographicSubAddress 
+It is used for addressing within a property in an urban area (country properties are often defined differently). It may refer to a building, a building cluster, or a floor of a multistory building.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== buildingName
+description: allows for buildings that have well-known names
+
+type: string
+
+
+=== name
+description: Name of the subAddress to identify it with a meaningful identification
+
+type: string
+
+
+=== subUnitNumber
+description: the discriminator used for the subunit
+often just a simple number e.g. FLAT 5, may also be a range
+
+type: string
+
+
+=== subUnitType
+description: the type of subunit
+e.g.BERTH, FLAT, PIER, SUITE, SHOP, TOWER, UNIT, WHARF
+
+type: string
+

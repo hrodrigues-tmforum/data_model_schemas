@@ -1,0 +1,12 @@
+* Core
+*** xref:SchemaContext.adoc[]
+*** xref:Addressable.adoc[]
+*** xref:Duration.adoc[]
+*** xref:Money.adoc[]
+*** xref:Quantity.adoc[]
+*** xref:Reference.adoc[]
+*** xref:Entity.adoc[]
+*** xref:BaseEvent.adoc[]
+*** xref:EntityRef.adoc[]
+*** xref:Extensible.adoc[]
+*** xref:TimePeriod.adoc[]

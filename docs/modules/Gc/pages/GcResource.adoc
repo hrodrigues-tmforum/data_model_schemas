@@ -1,0 +1,25 @@
+= GcResource
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Resource is an abstract entity that describes the common set of attributes shared by all concrete resources (e.g. TPE, EQUIPMENT) in the inventory.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: A string used to give a name to the resource
+
+type: string
+

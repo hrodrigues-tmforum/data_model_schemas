@@ -1,0 +1,25 @@
+= GcCategory
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other categories and/or product offerings, resource or service candidates.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: Name of the category
+
+type: string
+

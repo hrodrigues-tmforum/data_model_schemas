@@ -1,0 +1,31 @@
+= Addressable
+
+[#domain]
+== Domain
+
+This schema is part of Core
+
+[#description]
+== Description
+Base schema for adressable entities
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Hyperlink reference
+
+type: string
+
+
+=== id
+description: unique identifier
+
+type: string
+

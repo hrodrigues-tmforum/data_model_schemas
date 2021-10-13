@@ -1,0 +1,37 @@
+= GcService
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+Service is a base class for defining the Service hierarchy. All Services are characterized as either being possibly visible and usable by a Customer or not. This gives rise to the two subclasses of Service: CustomerFacingService and ResourceFacingService.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== state
+description: The life cycle state of the service, such as designed, reserved, active, etc...
+
+$ref of: xref:4.0.0@schemas:Gc:ServiceStateType.adoc[]
+
+
+=== serviceSpecification
+description: The specification from which this service was instantiated
+
+$ref of: xref:4.0.0@schemas:Gc:ServiceSpecificationRef.adoc[]
+
+
+=== serviceDate
+description: Date when the service was created (whatever its status).
+
+type: string
+

@@ -1,0 +1,43 @@
+= GcQuote
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Generic Contect schema for Quote.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== creationDate
+description: Date and time when the quote was created
+
+type: string
+
+
+=== state
+description: State of the quote : described in the state-machine diagram
+
+$ref of: xref:4.0.0@schemas:Gc:GcQuoteStateType.adoc[]
+
+
+=== effectiveQuoteCompletionDate
+description: Date when the quote has been completed
+
+type: string
+
+
+=== quoteItem
+description: A quote items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.
+
+type: array
+

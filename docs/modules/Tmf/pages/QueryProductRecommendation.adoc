@@ -1,0 +1,91 @@
+= QueryProductRecommendation
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Recommendation API is used to recommend offering quickly based on the history and real-time context of customer. It is a real-time and personalized recommendation API. It is usually provided by e-commerce or BSS, CRM system in omni-channel.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+type: string
+
+
+=== instantSyncRecommendation
+description: An indicator which when the value is &quot;true&quot; means that requester expects to get recommendation result in the response
+
+type: boolean
+
+
+=== name
+description: Name of the queryProductRecommendation
+
+type: string
+
+
+=== recommendationType
+description: The type of the queryProductRecommendation
+
+type: string
+
+
+=== validFor
+description: The period in which the queryProductRecommendation is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== productOrder
+type: array
+
+
+=== productOrderItem
+type: array
+
+
+=== place
+description: The place which the queryProductRecommendation is related to
+
+$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+
+
+=== channel
+type: array
+
+
+=== category
+type: array
+
+
+=== shoppingCart
+type: array
+
+
+=== shoppingCartItem
+type: array
+
+
+=== relatedParty
+$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+
+
+=== recommendationItem
+type: array
+
+
+=== state
+description: State of the queryProductRecommendation defined in the state engine
+
+$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+

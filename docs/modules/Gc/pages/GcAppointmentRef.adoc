@@ -1,0 +1,19 @@
+= GcAppointmentRef
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Refers an appointment, such as a Customer presentation or internal meeting or site visit
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

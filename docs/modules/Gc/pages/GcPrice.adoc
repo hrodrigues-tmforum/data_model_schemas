@@ -1,0 +1,19 @@
+= GcPrice
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price and Price Alteration.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

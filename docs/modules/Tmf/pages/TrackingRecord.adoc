@@ -1,0 +1,49 @@
+= TrackingRecord
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+Tracking records allow the tracking of modifications on the problem. The tracking records should not be embedded in the problem to allow retrieving the problem without the tracking records
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Describes the action being done, such as: ack, clear
+
+type: string
+
+
+=== characteristic
+description: A generic list of any type of elements. Used for vendor Extensions or loose element encapsulation from other namespaces
+
+type: array
+
+
+=== systemId
+description: Describes the system Id from which the action was done
+
+type: string
+
+
+=== time
+description: Describes the time at which the action was done
+
+type: string
+
+
+=== user
+description: Describes the user doing the action
+
+type: string
+

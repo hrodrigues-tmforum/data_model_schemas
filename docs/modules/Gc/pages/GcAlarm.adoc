@@ -1,0 +1,55 @@
+= GcAlarm
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+This resource represents an alarm supporting the information model defined in ITU-T X.733.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== alarmRaisedTime
+description: Indicates the time (as a date + time) at which the alarm occurred at its source.
+
+type: string
+
+
+=== alarmType
+$ref of: xref:4.0.0@schemas:Gc:AlarmType.adoc[]
+
+
+=== alarmedObject
+$ref of: xref:4.0.0@schemas:Gc:AlarmedObject.adoc[]
+
+
+=== perceivedSeverity
+$ref of: xref:4.0.0@schemas:Gc:PerceivedSeverity.adoc[]
+
+
+=== probableCause
+description: Provides the probable cause of the alarm. The values are consistent with ITU-T Recommendation X.733 or 3GPP TS 32.111-2 Annex B.
+
+type: string
+
+
+=== sourceSystemId
+description: Source system identity.
+
+type: string
+
+
+=== state
+description: Defines the alarm state during its life cycle (raised | updated | cleared).
+
+type: string
+

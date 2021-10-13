@@ -1,0 +1,23 @@
+= GcProvisioningArtifact
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A managed provisioning artifact resource
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== provisioningArtifactDefinition
+$ref of: xref:4.0.0@schemas:Gc:ProvisioningArtifactDefinition.adoc[]
+

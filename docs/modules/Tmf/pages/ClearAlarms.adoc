@@ -1,0 +1,31 @@
+= ClearAlarms
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource for clear alarms operation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== state
+description: Current state of the operation task
+
+type: string
+
+
+=== clearedAlarm
+description: The successfully cleared alarms
+
+type: array
+

@@ -1,0 +1,54 @@
+= GeographicAddress
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Structured textual way of describing how to find a Property in an urban area (country properties are often defined differently).
+Note : Address corresponds to SID UrbanPropertyAddress
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== locality
+description: An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi rural in nature. [ANZLIC-STREET], or a suburb, a bounded locality within a city, town or shire principally of urban character [ANZLICSTREET]
+
+type: string
+
+
+=== streetNrLast
+description: Last number in a range of street numbers allocated to a property
+
+type: string
+
+
+=== streetNrLastSuffix
+description: Last street number suffix for a ranged address
+
+type: string
+
+
+=== streetNrSuffix
+description: the first street number suffix
+
+type: string
+
+
+=== streetSuffix
+description: A modifier denoting a relative direction
+
+type: string
+
+
+=== geographicLocation
+$ref of: xref:4.0.0@schemas:Tmf:GeographicLocationRefOrValue.adoc[]
+

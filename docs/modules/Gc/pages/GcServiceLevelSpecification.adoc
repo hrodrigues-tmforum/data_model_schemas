@@ -1,0 +1,33 @@
+= GcServiceLevelSpecification
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+A Service Level Specification represents a pre-defined or negotiated set of Service Level 
+Objectives. In addition, certain consequences are associated with not meeting the Service Level 
+Objectives. Service Level Agreements are expressed in terms of Service Level Specifications.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: The name of Service Level Specification
+
+type: string
+
+
+=== relatedServiceLevelObjective
+description: A list of objectives related to this service level specification
+
+type: array
+

@@ -1,0 +1,37 @@
+= UnAckAlarms
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource for unacknowledge alarms operation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== state
+description: Current state of the operation task
+
+type: string
+
+
+=== ackTime
+description: Time of the unacknowledgement
+
+type: string
+
+
+=== unAckedAlarm
+description: The successfully unacknowledged alarms
+
+type: array
+
