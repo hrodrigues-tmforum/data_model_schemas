@@ -43,6 +43,8 @@ description: Tax rate
 type: number
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcPrice.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

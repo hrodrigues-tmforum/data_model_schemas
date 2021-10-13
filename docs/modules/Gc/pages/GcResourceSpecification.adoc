@@ -38,6 +38,8 @@ description: Name given to this REST resource
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcExtensible.adoc[]
 This schema extends: xref:v5.0@schemas:Gc:GcAddressable.adoc[]

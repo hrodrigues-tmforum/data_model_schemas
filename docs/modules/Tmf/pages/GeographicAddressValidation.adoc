@@ -29,5 +29,7 @@ $ref of: xref:v5.0@schemas:Tmf:GeographicAddress.adoc[]
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

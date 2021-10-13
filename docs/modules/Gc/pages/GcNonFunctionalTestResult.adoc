@@ -27,5 +27,7 @@ $ref of: xref:v5.0@schemas:Gc:NonFunctionalTestResultDefinition.adoc[]
 $ref of: xref:v5.0@schemas:Gc:NonFunctionalTestExecutionRefOrValue.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

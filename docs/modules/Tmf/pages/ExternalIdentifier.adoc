@@ -31,6 +31,8 @@ description: Type of the identification, typically would be the type of the enti
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcExternalIdentifier.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

@@ -25,7 +25,9 @@ description: Role played by the related party
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcRelatedParty.adoc[]
 This schema extends: xref:v5.0@schemas:Core:EntityRef.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

@@ -25,4 +25,6 @@ description: Indication of the availability of the caledar period (e.g.: availab
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

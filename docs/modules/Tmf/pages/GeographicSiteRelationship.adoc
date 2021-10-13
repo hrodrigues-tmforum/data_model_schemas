@@ -37,6 +37,8 @@ description: Validity for the relationship
 $ref of: xref:v5.0@schemas:Core:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcGeographicSiteRelationship.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

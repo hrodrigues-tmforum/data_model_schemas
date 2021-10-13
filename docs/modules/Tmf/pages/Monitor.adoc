@@ -43,5 +43,7 @@ description: The Monitor state of the resource.  InProgress, InError, Completed
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

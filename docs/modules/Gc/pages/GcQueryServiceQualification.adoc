@@ -37,5 +37,7 @@ description: A list of service qualification items.
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcServiceQualification.adoc[]

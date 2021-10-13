@@ -76,6 +76,8 @@ description: The results of the test in terms of the measured metrics
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcExtensible.adoc[]
 This schema extends: xref:v5.0@schemas:Gc:GcAddressable.adoc[]

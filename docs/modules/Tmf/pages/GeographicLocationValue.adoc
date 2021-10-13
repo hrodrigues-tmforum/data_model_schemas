@@ -25,6 +25,8 @@ description: A bounding box array that contains the geometry. The axes order fol
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcGeographicLocationValue.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

@@ -37,4 +37,6 @@ description: The successfully acknowledged alarms
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+

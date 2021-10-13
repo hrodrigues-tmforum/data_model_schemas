@@ -37,5 +37,7 @@ description: Qualification result for this serviceQualification. It could be:  q
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcServiceQualification.adoc[]

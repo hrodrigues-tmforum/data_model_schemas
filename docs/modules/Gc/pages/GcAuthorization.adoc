@@ -25,4 +25,6 @@ description: Name of the required authorization
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

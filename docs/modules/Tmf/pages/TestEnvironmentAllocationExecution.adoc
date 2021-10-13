@@ -31,5 +31,7 @@ $ref of: xref:v5.0@schemas:Tmf:TestScenarioRef.adoc[]
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcExecution.adoc[]

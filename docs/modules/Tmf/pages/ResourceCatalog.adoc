@@ -62,5 +62,7 @@ description: List of root categories contained in this catalog
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

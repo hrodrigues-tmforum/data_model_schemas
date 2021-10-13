@@ -35,5 +35,7 @@ $ref of: xref:v5.0@schemas:Gc:ServiceOrderStateType.adoc[]
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

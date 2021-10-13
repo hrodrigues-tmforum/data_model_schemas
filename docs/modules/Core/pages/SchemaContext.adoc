@@ -37,4 +37,6 @@ description: When sub-classing, this defines the sub-class Extensible name
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

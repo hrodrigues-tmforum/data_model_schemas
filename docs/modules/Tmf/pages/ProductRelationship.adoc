@@ -19,7 +19,9 @@ A JSON Schema corresponding to this data model can be found https://tmforum.org[
 The data model is defined as shown below:
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcProductRelationship.adoc[]
 This schema extends: xref:v5.0@schemas:Core:EntityRef.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

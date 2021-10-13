@@ -31,7 +31,9 @@ description: Link to the attachment media/content
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcAttachmentRef.adoc[]
 This schema extends: xref:v5.0@schemas:Core:EntityRef.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

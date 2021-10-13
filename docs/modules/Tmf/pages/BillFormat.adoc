@@ -25,5 +25,7 @@ description: An explanatory text for this bill format
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

@@ -147,6 +147,8 @@ description: Is the date when the product was terminated
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcProductValue.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

@@ -25,7 +25,9 @@ description: Indicates whether the account follows a specific payment option suc
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcBillingAccountRef.adoc[]
 This schema extends: xref:v5.0@schemas:Core:EntityRef.adoc[]
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

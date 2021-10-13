@@ -39,5 +39,7 @@ description: A human-readable name for the agreement
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

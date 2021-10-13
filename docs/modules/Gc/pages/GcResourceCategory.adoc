@@ -25,5 +25,7 @@ description: Name of the category
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

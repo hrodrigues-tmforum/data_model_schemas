@@ -49,5 +49,7 @@ description: Describes the user doing the action
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcExtensible.adoc[]

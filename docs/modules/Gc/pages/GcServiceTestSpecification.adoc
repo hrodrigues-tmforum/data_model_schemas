@@ -26,5 +26,7 @@ description: The related service specification may relate to more than one servi
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcEntitySpecification.adoc[]

@@ -46,5 +46,7 @@ e.g.BERTH, FLAT, PIER, SUITE, SHOP, TOWER, UNIT, WHARF
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

@@ -25,5 +25,7 @@ description: An explanatory text describing this bill presentation media
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

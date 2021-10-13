@@ -133,5 +133,7 @@ description: the error message if the order closed by an error
 $ref of: xref:v5.0@schemas:Tmf:ServiceOrderErrorMessage.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

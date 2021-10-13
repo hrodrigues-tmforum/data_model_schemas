@@ -157,6 +157,8 @@ description: A use of the ProductSpecificationCharacteristicValue by a ProductOf
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcAddressable.adoc[]
 This schema extends: xref:v5.0@schemas:Gc:GcExtensible.adoc[]

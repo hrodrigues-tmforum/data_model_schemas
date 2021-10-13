@@ -23,5 +23,7 @@ The data model is defined as shown below:
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcExecution.adoc[]

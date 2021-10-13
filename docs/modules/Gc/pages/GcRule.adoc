@@ -25,5 +25,7 @@ description: The name of the rule.
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcEntity.adoc[]

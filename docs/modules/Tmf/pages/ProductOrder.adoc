@@ -121,5 +121,7 @@ description: Order fulfillment start date wished by the requestor. This is used 
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcProductOrder.adoc[]

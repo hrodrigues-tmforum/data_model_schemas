@@ -25,5 +25,7 @@ description: Reference to the AI Model Specification
 $ref of: xref:v5.0@schemas:Gc:EntityRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcSLA.adoc[]

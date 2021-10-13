@@ -31,4 +31,6 @@ description: Relationship type as relies on, bundles, etc...
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

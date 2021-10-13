@@ -25,6 +25,8 @@ description: Value of the characteristic
 type: number
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]
 This schema extends: xref:v5.0@schemas:Tmf:Characteristic.adoc[]

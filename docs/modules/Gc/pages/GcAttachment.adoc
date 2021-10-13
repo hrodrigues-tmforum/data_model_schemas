@@ -31,5 +31,7 @@ description: Attachment mime type such as extension file for video, picture and 
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

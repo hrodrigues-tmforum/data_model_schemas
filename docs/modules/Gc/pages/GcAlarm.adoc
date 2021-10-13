@@ -55,5 +55,7 @@ description: Defines the alarm state during its life cycle (raised | updated | c
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

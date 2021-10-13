@@ -73,6 +73,8 @@ description: List of child categories in the tree for in this category
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v5.0@schemas:Gc:GcAddressable.adoc[]
 This schema extends: xref:v5.0@schemas:Gc:GcExtensible.adoc[]
