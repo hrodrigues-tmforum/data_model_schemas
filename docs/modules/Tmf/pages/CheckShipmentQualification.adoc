@@ -1,0 +1,48 @@
+= CheckShipmentQualification
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+CheckShipmentQualification is used to validate the eligibility of specific 
+shipments.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== provideAlternative
+description: When the value is TRUE means that alternative solutions should be provided
+
+type: boolean
+
+
+=== provideUnavailabilityReason
+description: When the value is TRUE means that unavailability reason are expected for non available shipments.
+
+type: boolean
+
+
+=== qualificationResult
+description: Qualification result for this shipmentQualification. It could be:  qualified (all qualification item are qualified), alternate (At least one item alternate and no item with  unqualified), unqualified (At least one item unqualified)
+
+type: string
+
+
+=== checkShipmentQualificationDate
+description: Date when the shipmentQualification was submitted
+
+type: string
+
+
+=== shipmentQualificationItem
+type: array
+

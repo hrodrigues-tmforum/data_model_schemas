@@ -1,0 +1,85 @@
+= QueryProductStock
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+QueryProductStock is used to query product stock availability
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== creationDate
+description: Date when the QueryProductStock was created.
+
+type: string
+
+
+=== requestedQueryProductStockDate
+description: Date when the requester wished to have a response for this product stock query.
+
+type: string
+
+
+=== completedQueryProductStockDate
+description: Date when the QueryProductStock was completed.
+
+type: string
+
+
+=== requestedAvailabilityDate
+description: Date when the stock availability should be query.
+
+type: string
+
+
+=== id
+description: Unique identifier of the QueryProductStock
+
+type: string
+
+
+=== href
+description: Reference of the QueryProductStock
+
+type: string
+
+
+=== instantSyncCheck
+description: An indicator which when the value is &quot;true&quot; means that requester expects to get result immediately in the response. If the indicator is true then the response code of 200 indicates the operation is successful otherwise a task is created with a response 201.
+
+type: boolean
+
+
+=== state
+description: State of the CheckProductStock (acknowledged, inProgress, terminatedWithError, done)
+
+$ref of: xref:4.0.0@schemas:Resource:TaskStateType.adoc[]
+
+
+=== queryProductStockItem
+description: A list of query product stock item - only present in response
+
+type: array
+
+
+=== searchCriteria
+description: Criterias used to perform the query product stock - To be provided in the request.
+
+$ref of: xref:4.0.0@schemas:Resource:ProductStock.adoc[]
+
+
+=== relatedParty
+description: A list of related party references (RelatedParty [*]). A related party defines party or party role linked to this QueryProductStock
+
+type: array
+

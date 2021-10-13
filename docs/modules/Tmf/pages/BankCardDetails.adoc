@@ -1,0 +1,67 @@
+= BankCardDetails
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Detailed information for a bank card
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== bank
+description: Bank that issued the card
+
+type: string
+
+
+=== brand
+description: Card brand, such as Visa, MasterCard, AmericanExpress
+
+type: string
+
+
+=== cardNumber
+description: Credit long card number
+
+type: string
+
+
+=== cvv
+description: The security code (e.g.: CVV, CVV2) of the card
+
+type: string
+
+
+=== expirationDate
+description: Expiration date of the card
+
+type: string
+
+
+=== lastFourDigits
+description: Last four digits of the credit card
+
+type: string
+
+
+=== nameOnCard
+description: Name on the card
+
+type: string
+
+
+=== cardType
+description: Type of the card, such as Credit, Debit
+
+type: string
+

@@ -1,0 +1,37 @@
+= StatusChange
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Holds the status notification reasons and associated date the status changed, populated by the server
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== changeDate
+description: The date and time the status changed.
+
+type: string
+
+
+=== changeReason
+description: The reason why the status changed.
+
+type: string
+
+
+=== status
+description: The status of the trouble ticket
+
+type: string
+

@@ -1,0 +1,77 @@
+= WorkQualification
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of the qualification
+
+type: string
+
+
+=== effectiveQualificationDate
+description: Effective date to qualification completion
+
+type: string
+
+
+=== estimatedResponseDate
+description: Date when the requester expect to provide an answer for the qualification request.
+
+type: string
+
+
+=== expectedQualificationDate
+description: A date (DateTime). Deadline date when the requester expected a qualification answer.
+
+type: string
+
+
+=== expirationDate
+description: Date when the qualification response expires
+
+type: string
+
+
+=== externalId
+description: Identifier provided by the requester
+
+type: string
+
+
+=== instantSyncQualification
+description: An indicator which when the value is &quot;true&quot; means that requester expects to get qualifcation result immediately in the response. If the indicator is true then the response code of 200 indicates the operation is successful otherwise a task is created with a response 201.
+
+type: boolean
+
+
+=== place
+$ref of: xref:4.0.0@schemas:EngagedParty:PlaceRefOrValue.adoc[]
+
+
+=== relatedParty
+description: A list of related party references, defines party or party role linked to this request.
+
+type: array
+
+
+=== state
+description: State of the workQualification (acknowledged, inProgress, terminatedWithError, done)
+
+$ref of: xref:4.0.0@schemas:EngagedParty:TaskStateType.adoc[]
+

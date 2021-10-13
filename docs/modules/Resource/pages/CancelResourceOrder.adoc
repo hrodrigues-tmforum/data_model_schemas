@@ -1,0 +1,23 @@
+= CancelResourceOrder
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Request for cancellation an existing resource order
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== resourceOrder
+$ref of: xref:4.0.0@schemas:Resource:ResourceOrderRef.adoc[]
+

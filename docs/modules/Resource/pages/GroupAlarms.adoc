@@ -1,0 +1,67 @@
+= GroupAlarms
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource for group alarms operation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: The identifier of the task
+
+type: string
+
+
+=== href
+description: A reference to the task
+
+type: string
+
+
+=== state
+description: Current state of the operation task
+
+type: string
+
+
+=== sourceSystemId
+description: Source system identifier
+
+type: string
+
+
+=== alarmChangedTime
+description: Time of the correlation
+
+type: string
+
+
+=== parentAlarm
+description: Root cause alarm
+
+$ref of: xref:4.0.0@schemas:Resource:AlarmRefOrValue.adoc[]
+
+
+=== correlatedAlarm
+description: Correlated alarms
+
+type: array
+
+
+=== groupedAlarm
+description: The successfully correlated alarms
+
+type: array
+

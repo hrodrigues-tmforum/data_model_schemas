@@ -1,0 +1,115 @@
+= ShippingOrder
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A Shipping Order is a document used by a business to specify what items are to be transferred from a storage location or warehouse to which person and to which new location. A Shipping Order can typically be sent along with a shipment of goods so that the person receiving them can verify that the document correctly reflects the items that they actually received.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Identifier of the Shipping Order
+
+type: string
+
+
+=== href
+description: Shipping Order unique reference
+
+type: string
+
+
+=== creationDate
+description: Date of the Shipping Order
+
+type: string
+
+
+=== lastUpdateDate
+description: Date of the Shipping Order
+
+type: string
+
+
+=== relatedParty
+description: An existing related party that has some form of correlation with the given shipping order. It can be recipient, payer, etc.
+
+type: array
+
+
+=== relatedShippingOrder
+description: An existing shipping order that has some form of correlation with the given shipping order
+
+$ref of: xref:4.0.0@schemas:Tmf:RelatedShippingOrder.adoc[]
+
+
+=== productOrder
+description: The product order for which the shipping order is created, if supplied as input the attribute id must be populated
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductOrderRef.adoc[]
+
+
+=== shippingInstruction
+description: The product order for which the shipping order is created, if supplied as input the attribute id must be populated
+
+$ref of: xref:4.0.0@schemas:Tmf:ShippingInstruction.adoc[]
+
+
+=== shippingOrderItem
+description: A list of shipping order items. Each shipping order item has a corresponding Shipment(e.g. parcel) which has one or multiple products in it
+
+type: array
+
+
+=== shippingOrderCharacteristic
+description: List of characteristics with values
+
+type: array
+
+
+=== note
+description: A list of notes made on this shipping shipment
+
+type: array
+
+
+=== shippingOrderPrice
+description: Shipping Order price
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductPrice.adoc[]
+
+
+=== shippingOrderOffering
+description: Shipping order can have a corresponding entry in the product catalog (product offering)
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+
+
+=== status
+description: status of shipping order e.g &quot;active&quot; , &quot;savedForLater&quot;
+
+type: string
+
+
+=== placeFrom
+description: Source location of the item. E.g. warehouse or shop location. The location can be specified at the shipping order level or at the shipping order item level if multiple sources are specified part of the same shipping order.
+
+$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+
+
+=== placeTo
+description: Destination of the item. E.g. customer home address. The location can be specified at the shipping order level or at the shipping order item level if multiple destinations are specified part of the same shipping order.
+
+$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+

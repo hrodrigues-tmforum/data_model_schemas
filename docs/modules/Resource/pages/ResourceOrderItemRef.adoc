@@ -1,0 +1,43 @@
+= ResourceOrderItemRef
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== itemId
+description: Identifier of the line item
+
+type: string
+
+
+=== resourceOrderId
+description: Identifier of the resource order that this item belongs to
+
+type: string
+
+
+=== resourceOrderHref
+description: Link to the order to which this item belongs to
+
+type: string
+
+
+=== @referredType
+description: The actual type of the target instance when needed for disambiguation
+
+type: string
+

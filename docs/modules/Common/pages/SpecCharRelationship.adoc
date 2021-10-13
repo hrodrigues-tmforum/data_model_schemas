@@ -1,0 +1,49 @@
+= SpecCharRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+An aggregation, migration, substitution, dependency or exclusivity relationship between/among productSpecCharacteristics.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Hyperlink reference to the target entity specification
+
+type: string
+
+
+=== id
+description: Unique identifier of the target entity specification
+
+type: string
+
+
+=== name
+description: Name of the target specCharacteristic
+
+type: string
+
+
+=== relationshipType
+description: Type of relationship such as aggregation, migration, substitution, dependency, exclusivity
+
+type: string
+
+
+=== validFor
+description: The period for which the SpecCharRelationship is valid
+
+$ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
+

@@ -1,0 +1,31 @@
+= SetAssetGroup
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Defines a group of assets (entities) to which access can be controlled, using a predefined name that implies a list of entity types
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: Name of the list
+
+type: string
+
+
+=== entityType
+description: List of entity types for this named list
+
+type: array
+

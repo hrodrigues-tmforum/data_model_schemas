@@ -1,0 +1,9 @@
+
+name: schemas
+title: Schemas
+version: v4.0
+nav:
+- modules/ROOT/nav.adoc
+- modules/Core/nav.adoc
+- modules/Gc/nav.adoc
+- modules/Tmf/nav.adoc

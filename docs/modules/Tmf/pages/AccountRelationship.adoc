@@ -1,0 +1,35 @@
+= AccountRelationship
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Significant connection between accounts. For instance an aggregating account for a list of shop branches each having its own billing account.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: Type of relationship
+
+type: string
+
+
+=== validFor
+description: Validity period of that relationship
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== account
+$ref of: xref:4.0.0@schemas:Tmf:AccountRef.adoc[]
+

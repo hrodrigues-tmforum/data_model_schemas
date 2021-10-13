@@ -1,0 +1,141 @@
+= PartyBill
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== amountDue
+description: Amount due for this bill expressed in the given currency
+
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== billDate
+description: Bill date
+
+type: string
+
+
+=== billingPeriod
+description: Billing period of the bill (used for onCycle bill only)
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== billNo
+description: Bill reference known by the customer or the party and displayed on the bill. Could be different from the id.
+
+type: string
+
+
+=== category
+description: Category of the bill produced : normal, duplicate, interim, last, trial customer or credit note
+
+type: string
+
+
+=== href
+description: Bill unique reference
+
+type: string
+
+
+=== id
+description: Bill unique identifier
+
+type: string
+
+
+=== lastUpdate
+description: Date of bill last update
+
+type: string
+
+
+=== nextBillDate
+description: Approximate date of  the next bill production given for information (only used for onCycle bill)
+
+type: string
+
+
+=== paymentDueDate
+description: Date at which the amount due should have been paid
+
+type: string
+
+
+=== remainingAmount
+description: Remaining amount to be paid for this bill expressed in the given currency
+
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== runType
+description: onCycle (a bill can be created as a result of a cycle run) or offCycle (a bill can be created as a result of other events such as customer request or account close)
+
+type: string
+
+
+=== state
+description: State that a bill could take during its lifecycle : New, Validated, On Hold, Sent, Partially paid or Settled
+
+type: string
+
+
+=== taxExcludedAmount
+description: Total tax excluded amount expressed in the given currency
+
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== taxIncludedAmount
+description: Total tax included amount expressed in the given
+
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== billDocument
+description: Document(s) associated to the bill
+
+type: array
+
+
+=== paymentItem
+description: Payment items already lettered on this bill.
+
+type: array
+
+
+=== billingAccount
+$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+
+
+=== taxItem
+type: array
+
+
+=== paymentMethod
+$ref of: xref:4.0.0@schemas:Tmf:PaymentMethodRef.adoc[]
+
+
+=== relatedParty
+type: array
+
+
+=== financialAccount
+$ref of: xref:4.0.0@schemas:Tmf:FinancialAccountRef.adoc[]
+

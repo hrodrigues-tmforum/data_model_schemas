@@ -1,0 +1,41 @@
+= CalendarPeriod
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== day
+description: Day where the calendar status applies (e.g.: monday, mon-to-fri, weekdays, weekend, all week, ...)
+
+type: string
+
+
+=== status
+description: Indication of the availability of the site (e.g.: open)
+
+type: string
+
+
+=== timeZone
+description: Indication of the timezone applicable to the calendar information (e.g.: Paris, GMT+1)
+
+type: string
+
+
+=== hourPeriod
+type: array
+

@@ -1,0 +1,81 @@
+= PromotionPattern
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Contains the conditions and benefits of the promotion toan eligible party
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @baseType
+description: The base type for use in polymorphic collections
+
+type: string
+
+
+=== @schemaLocation
+description: A link to the schema describing a resource (for type extension).
+
+type: string
+
+
+=== @type
+description: The class type of the actual resource (for type extension).
+
+type: string
+
+
+=== action
+type: array
+
+
+=== criteriaGroup
+type: array
+
+
+=== description
+description: Small description to clarify the pattern details.
+
+type: string
+
+
+=== id
+description: Unique identifier of promotion pattern.
+
+type: string
+
+
+=== name
+description: Alias to promotion pattern. This way is easily mentioned.
+
+type: string
+
+
+=== priority
+description: Priority. Smaller number means high.
+
+type: integer
+
+
+=== criteriaGroupLogicalRelationship
+description: Logical relation followed by the criteria group.
+
+type: string
+
+
+=== validFor
+description: The period  for which the promotion pattern is valid.
+
+$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+

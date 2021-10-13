@@ -1,0 +1,37 @@
+= EndpointSpecificationRef
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+A specification for a vertex in a resource graph.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== role
+description: Role of the Resource Function.
+
+type: string
+
+
+=== isRoot
+description: Directionality: true when endpoint is a source, false when a sink. If true for all endpoints connectivity is bidirectional. Default is true.
+
+type: boolean
+
+
+=== connectionPointSpecification
+description: A specification for the connection point (SAP) of the associated resource function (optional).
+
+$ref of: xref:4.0.0@schemas:Resource:ConnectionPointSpecificationRef.adoc[]
+

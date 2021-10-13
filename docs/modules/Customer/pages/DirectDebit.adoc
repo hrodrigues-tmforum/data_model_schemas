@@ -1,0 +1,123 @@
+= DirectDebit
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Direct Debit is a fully automated payment instrument which is generally used for recurrent payments. It allows a creditor to initiate the payment order. In doing so, it exempts the debtor from having to send a separate payment order at each due date
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== mandateId
+description: Unique mandate reference. Further information can be found on EPC002-09
+
+type: string
+
+
+=== mandateStatus
+description: The status of the mandate(Active/Inactive/Pending)
+
+type: string
+
+
+=== mandateType
+description: The type of mandate
+
+type: string
+
+
+=== mandateCategory
+description: The identification code of the Scheme
+
+type: string
+
+
+=== signature
+description: The (e)Mandate electronic signature data
+
+type: string
+
+
+=== signatureDate
+description: The date of signing of the (e)Mandate
+
+type: string
+
+
+=== mandateStatusDate
+description: The date of the mandate status change
+
+type: string
+
+
+=== firstDebitDate
+description: The first debit date. The debit date of the collection is the day when the payment of the Debtor is due to the Creditor
+
+type: string
+
+
+=== lastDebitDate
+description: The last debit date. The debit date of the collection is the day when the payment of the Debtor is due to the Creditor
+
+type: string
+
+
+=== cancellationDate
+description: The date on which the (e)Mandate has been cancelled by the Debtor or the Creditor.
+
+type: string
+
+
+=== accountNumber
+description: The bank account number, this could refer to the iban or swift number.
+
+type: string
+
+
+=== accountNumberType
+description: The type of account number (e.g.: IBAN, SWIFT, ...)
+
+type: string
+
+
+=== reference
+description: A reference that the party can later use to identify the direct debit.
+
+type: string
+
+
+=== BIC
+description: The Business Identifier Code/Swift code of the financial institution where the account is located.
+
+type: string
+
+
+=== owner
+description: The owner of the bank account. This is also the account name.
+
+type: string
+
+
+=== bank
+description: The display name of the bank.
+
+type: string
+
+
+=== attachment
+type: array
+
+
+=== @type
+type: string
+

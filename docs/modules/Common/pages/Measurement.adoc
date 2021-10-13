@@ -1,0 +1,55 @@
+= Measurement
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A counter/KPI to be used by the threshold rule
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: A description of the measurement
+
+type: string
+
+
+=== name
+description: A word, term, or phrase by which a measurement is known and distinguished from other measurements
+
+type: string
+
+
+=== collectionType
+description: This attribute indicates different forms in which the measurement data can be captured (please see details below)
+
+type: string
+
+
+=== measurementFormula
+description: A formula that is used to calculate a measurement (a string)
+
+type: string
+
+
+=== measurementType
+description: A category of the measurement (different SDOs may be using different categories)
+
+type: string
+
+
+=== measurementUnit
+description: The unit of the measurement (e.g. second, bytes, Celsius, etc.)
+
+type: string
+

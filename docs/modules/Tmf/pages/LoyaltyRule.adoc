@@ -1,0 +1,97 @@
+= LoyaltyRule
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Loyalty rule, containing conditions, event types and actions.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier for the loyalty rule.
+
+type: string
+
+
+=== href
+description: A reference to the loyalty rule.
+
+type: string
+
+
+=== isCNF
+description: This is a Boolean attribute that, if true, defines the condition clause of this rule to be represented in Conjunctive Normal Form (e.g., an AND of ORs). If the value of this attribute is false, then the condition clause will be represented in Disjunctive Normal Form (e.g., an OR of ANDs).
+
+type: boolean
+
+
+=== hasSubRules
+description: A Boolean attribute that signifies whether this loyalty rule has one or more sub-rules. Sub-rules are used to enforce a hierarchical nesting of rules, so that parent rules may control the execution and other semantics of sub-rules that they contain.
+
+type: boolean
+
+
+=== isMandatoryEvaluation
+description: A Boolean attribute that, if true, signifies that evaluation (and possibly action execution) of this entity is mandatory and must be attempted. If the Mandatory property value of this entity is false, then the evaluation of this entity is considered to be &#x27;best effort&#x27; and may be ignored.
+
+type: boolean
+
+
+=== usage
+description: A free-form string attribute that recommends how this policy object should be used.
+
+type: string
+
+
+=== keywords
+description: A string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations.
+
+type: string
+
+
+=== policyName
+description: A generic naming attribute that can be used to identify different policy entities.
+
+type: string
+
+
+=== commonName
+description: A user-friendly identifier of the loyalty rule.
+
+type: string
+
+
+=== description
+description: A free-form description of the rule.
+
+type: string
+
+
+=== loyaltyEventType
+description: References to linked event types.
+
+type: array
+
+
+=== loyaltyCondition
+description: References to linked conditions.
+
+type: array
+
+
+=== loyaltyAction
+description: References to linked actions.
+
+type: array
+

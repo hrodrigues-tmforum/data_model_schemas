@@ -1,0 +1,65 @@
+= ProductPrice
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+An amount, usually of money, that represents the actual price paid by a Customer for a purchase, a rent or a lease of a Product. The price is valid for a defined period of time.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: A narrative that explains in detail the semantics of this product price.
+
+type: string
+
+
+=== name
+description: A short descriptive name such as &quot;Subscription price&quot;.
+
+type: string
+
+
+=== productOfferingPrice
+$ref of: xref:4.0.0@schemas:Product:ProductOfferingPriceRef.adoc[]
+
+
+=== billingAccount
+$ref of: xref:4.0.0@schemas:Product:BillingAccountRef.adoc[]
+
+
+=== priceType
+description: A category that describes the price, such as recurring, discount, allowance, penalty, and so forth.
+
+type: string
+
+
+=== recurringChargePeriod
+description: Could be month, week...
+
+type: string
+
+
+=== unitOfMeasure
+description: Could be minutes, GB...
+
+type: string
+
+
+=== productPriceAlteration
+type: array
+
+
+=== price
+$ref of: xref:4.0.0@schemas:Product:Price.adoc[]
+

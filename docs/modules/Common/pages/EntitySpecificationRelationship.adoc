@@ -1,0 +1,43 @@
+= EntitySpecificationRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A migration, substitution, dependency or exclusivity relationship between/among entity specifications.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== role
+description: The association role for this entity specification
+
+type: string
+
+
+=== relationshipType
+description: Type of relationship such as migration, substitution, dependency, exclusivity
+
+type: string
+
+
+=== validFor
+description: The period for which the entitySpecRelationship is valid
+
+$ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
+
+
+=== associationSpec
+description: A specification for an association used by this relationship
+
+$ref of: xref:4.0.0@schemas:Common:AssociationSpecificationRef.adoc[]
+

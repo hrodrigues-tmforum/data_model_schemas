@@ -1,0 +1,232 @@
+= ChangeRequest
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Change Request is a type of request which can be used for the management and control of Change Management 
+process between a customer and a service provider or between a service provider and a partner and vice versa.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Hyperlink to access a change request
+
+type: string
+
+
+=== id
+description: Identifier of a Change Request. It is created on repository side (a Change Management system)
+
+type: string
+
+
+=== @baseType
+description: When sub-classing, this defines the super-class
+
+type: string
+
+
+=== @schemaLocation
+description: A URI to a JSON-Schema file that defines additional attributes and relationships
+
+$ref of: xref:4.0.0@schemas:Tmf:Uri.adoc[]
+
+
+=== @type
+description: When sub-classing, this defines the sub-class Extensible name
+
+type: string
+
+
+=== actualEndTime
+description: Date and time when the change implementation actually finished
+
+type: string
+
+
+=== actualStartTime
+description: Date and time when the change implementation actually started
+
+type: string
+
+
+=== attachment
+description: The attachments of the communication message (when it is email type)
+
+type: array
+
+
+=== budget
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== changeRelationship
+type: array
+
+
+=== changeRequestCharacteristic
+type: array
+
+
+=== channel
+description: A channel represents the way the Change Request was created
+
+type: string
+
+
+=== completionDate
+description: Date and time when the change request is confirmed to be completed
+
+type: string
+
+
+=== description
+description: Description of the change request
+
+type: string
+
+
+=== externalReference
+type: array
+
+
+=== impact
+description: Indicates the impact of this change
+
+type: string
+
+
+=== impactEntity
+type: array
+
+
+=== lastUpdateDate
+description: Date and time when the change request was updated
+
+type: string
+
+
+=== location
+description: A list of places (Place [*]). Used to define a place useful for the service (for example a geographical place whre the service is installed)
+
+$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+
+
+=== note
+type: array
+
+
+=== plannedEndTime
+description: Date and time when the change implementation is planned to be finished
+
+type: string
+
+
+=== plannedStartTime
+description: Date and time when the change implementation is planned to be started
+
+type: string
+
+
+=== priority
+description: Used by consumers to prioritize a change request in Change Management system
+
+type: string
+
+
+=== problemTicket
+type: array
+
+
+=== relatedParty
+description: The parties involved in the change request
+
+type: array
+
+
+=== requestDate
+description: Date and time when the change request is raised
+
+type: string
+
+
+=== requestType
+description: Indicates the type of the change request
+
+type: string
+
+
+=== resolution
+$ref of: xref:4.0.0@schemas:Tmf:Resolution.adoc[]
+
+
+=== risk
+description: The risk to implement this change request
+
+type: string
+
+
+=== riskMitigationPlan
+description: The risk mitigation plan
+
+type: string
+
+
+=== riskValue
+description: The additional cost if the risk will happen
+
+type: string
+
+
+=== scheduledDate
+description: Date and time that the schedule is made
+
+type: string
+
+
+=== sla
+type: array
+
+
+=== specification
+$ref of: xref:4.0.0@schemas:Tmf:EntitySpecificationRef.adoc[]
+
+
+=== status
+$ref of: xref:4.0.0@schemas:Tmf:ChangeRequestStatusType.adoc[]
+
+
+=== statusChangeDate
+description: Date and time when the change request status was changed
+
+type: string
+
+
+=== statusChangeReason
+description: Reason of the status change
+
+type: string
+
+
+=== targetEntity
+type: array
+
+
+=== troubleTicket
+type: array
+
+
+=== workLog
+type: array
+

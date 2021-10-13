@@ -1,0 +1,128 @@
+= Customer360TroubleTicketVO
+
+[#domain]
+== Domain
+
+This schema is part of Customer360
+
+[#description]
+== Description
+A trouble ticket is a record of an issue that is created, tracked, and managed by a trouble ticket management system
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== channel
+description: The channel that origin the trouble ticket
+
+$ref of: xref:4.0.0@schemas:Tmf:ChannelRef.adoc[]
+
+
+=== creationDate
+description: The date on which the trouble ticket was created
+
+type: string
+
+
+=== description
+description: Description of the trouble or issue
+
+type: string
+
+
+=== expectedResolutionDate
+description: The expected resolution date determined by the trouble ticket system
+
+type: string
+
+
+=== externalId
+description: Additional identifier coming from an external system
+
+type: string
+
+
+=== href
+description: Hyperlink, a reference to the trouble ticket entity
+
+type: string
+
+
+=== id
+description: Unique identifier of the trouble ticket
+
+type: string
+
+
+=== lastUpdate
+description: The date and time that the trouble ticked was last updated
+
+type: string
+
+
+=== name
+description: Name of the trouble ticket, typically a short description provided by the user that create the ticket
+
+type: string
+
+
+=== priority
+description: The priority of the trouble ticket and how quickly the issue should be resolved. Example: Critical, High, Medium, Low. The value is set by the ticket management system considering the severity, ticket type etc...
+
+type: string
+
+
+=== requestedResolutionDate
+description: The resolution date requested by the user
+
+type: string
+
+
+=== resolutionDate
+description: The date and time the trouble ticket was resolved
+
+type: string
+
+
+=== severity
+description: The severity of the issue. Indicate the implication of the issue on the expected functionality e.g. of a system, application, service etc.. 
+Severity values can be for example : Critical, Major, Minor
+
+type: string
+
+
+=== status
+description: The current status of the trouble ticket
+
+$ref of: xref:4.0.0@schemas:Tmf:TroubleTicketStatusType.adoc[]
+
+
+=== statusChange
+description: The status change history that are associated to the ticket.Populated by the server
+
+type: array
+
+
+=== statusChangeDate
+description: The date and time the status changed.
+
+type: string
+
+
+=== statusChangeReason
+description: The reason for changing the status
+
+type: string
+
+
+=== ticketType
+description: represent a business type of the trouble ticket e.g. incident, complain, request
+
+type: string
+

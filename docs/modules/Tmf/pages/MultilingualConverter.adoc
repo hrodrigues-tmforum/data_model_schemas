@@ -1,0 +1,37 @@
+= MultilingualConverter
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+REST resource for multilingual conversion from the base language
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== baseText
+description: The text in the base language
+
+type: string
+
+
+=== langSelector
+description: The language to provide conversion to
+
+type: string
+
+
+=== convertedText
+description: The converted text
+
+type: string
+

@@ -1,0 +1,91 @@
+= Category
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other categories and/or product offerings, resource or service candidates.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of the category
+
+type: string
+
+
+=== href
+description: Reference of the category
+
+type: string
+
+
+=== id
+description: Unique identifier of the category
+
+type: string
+
+
+=== isRoot
+description: If true, this Boolean indicates that the category is a root of categories
+
+type: boolean
+
+
+=== lastUpdate
+description: Date and time of the last update
+
+type: string
+
+
+=== lifecycleStatus
+description: Used to indicate the current lifecycle status
+
+type: string
+
+
+=== name
+description: Name of the category
+
+type: string
+
+
+=== parentId
+description: Unique identifier of the parent category
+
+type: string
+
+
+=== productOffering
+description: A product offering represents entities that are orderable from the provider of the catalog, this resource includes pricing information.
+
+type: array
+
+
+=== subCategory
+description: The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other (sub-)categories and/or product offerings.
+
+type: array
+
+
+=== validFor
+description: The period for which the category is valid
+
+$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+
+
+=== version
+description: Category version
+
+type: string
+

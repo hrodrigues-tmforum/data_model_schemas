@@ -1,0 +1,33 @@
+= AssetUserRole
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+The AssetUserRole is the detailed information concerning an individual user role
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== manageableAsset
+$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+
+
+=== managedAssetGroup
+description: List (explicit or implied) of entities managed by this user role assignment.
+
+$ref of: xref:4.0.0@schemas:Tmf:AssetGroup.adoc[]
+
+
+=== userRole
+$ref of: xref:4.0.0@schemas:Tmf:UserRoleRef.adoc[]
+

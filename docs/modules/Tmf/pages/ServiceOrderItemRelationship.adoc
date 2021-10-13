@@ -1,0 +1,31 @@
+= ServiceOrderItemRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+Linked service order item to the one containing this attribute
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== orderItem
+description: A service order item in relationship with this order item
+
+$ref of: xref:4.0.0@schemas:Tmf:ServiceOrderItemRef.adoc[]
+
+
+=== relationshipType
+description: The type of related order item, can be: dependency if the order item needs to be not started until another order item is complete
+
+type: string
+

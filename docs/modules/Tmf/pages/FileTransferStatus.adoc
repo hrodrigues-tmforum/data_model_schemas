@@ -1,0 +1,43 @@
+= FileTransferStatus
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== filename
+description: This attribute shall represent the name of the file being transferred (this shall include the path name).
+
+type: string
+
+
+=== transferStatus
+description: This attribute shall represent the current state of the transfer (in progress, failed or completed)
+
+type: string
+
+
+=== percentageComplete
+description: This attribute shall indicate the percent complete of the file transfer it shall be in the range 0..100.
+
+type: integer
+
+
+=== reason
+description: This attribute shall represent, in the event of a failure, reason for the failure.
+
+type: string
+

@@ -1,0 +1,55 @@
+= ServiceSpecCharRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+An aggregation, migration, substitution, dependency or exclusivity relationship between/among serviceSpecCharacteristics.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: Type of relationship such as aggregation, migration, substitution, dependency, exclusivity
+
+type: string
+
+
+=== role
+description: The association role for this service specification
+
+type: string
+
+
+=== id
+description: Unique identifier of the target specification
+
+type: string
+
+
+=== href
+description: Hyperlink reference to the target specification
+
+type: string
+
+
+=== name
+description: Name of the target  characteristic
+
+type: string
+
+
+=== validFor
+description: The period for which the serviceSpecCharRelationship is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

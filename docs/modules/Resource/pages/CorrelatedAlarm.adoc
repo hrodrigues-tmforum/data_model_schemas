@@ -1,0 +1,27 @@
+= CorrelatedAlarm
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Indicates the alarms attached to this alarm as correlated alarms from a correlation point of view. An alarm can be correlated to one or more underlying alarms. There might be multiple levels of alarm correlation and an underlying alarm in one relation can be itself a parent alarm for other underlying alarms.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+type: string
+
+
+=== href
+type: string
+

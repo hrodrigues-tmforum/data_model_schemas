@@ -1,0 +1,101 @@
+= Migrate
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource used to request migration of the Resource Function
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the Migrate task resource
+
+type: string
+
+
+=== href
+description: Reference to the Migrate task resource
+
+type: string
+
+
+=== name
+description: Name of the Migrate task resource
+
+type: string
+
+
+=== resourceFunction
+description: Reference to the Resource Function that needs to be migrated
+
+$ref of: xref:4.0.0@schemas:Tmf:ResourceFunctionRef.adoc[]
+
+
+=== cause
+description: Reason why migration is being requested
+
+type: string
+
+
+=== adminStateModification
+description: SubState required before migrate is carried out
+
+type: string
+
+
+=== removeConnectionPoint
+description: Connection points to be removed when function is migrated
+
+type: array
+
+
+=== addConnectionPoint
+description: Connection points to be added when function is migrated
+
+type: array
+
+
+=== priority
+description: Priority of the migrate operation
+
+type: integer
+
+
+=== startTime
+description: The time when the migration needs to commence. This allows a delay to be added
+
+type: string
+
+
+=== completionMode
+description: In what mode is the migrate operation to be performed
+
+type: string
+
+
+=== place
+$ref of: xref:4.0.0@schemas:Tmf:PlaceRef.adoc[]
+
+
+=== characteristics
+description: Additional attributes to pass to the migrate operation
+
+type: array
+
+
+=== state
+description: Tracks the lifecycle status of the migrate request.
+
+$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+

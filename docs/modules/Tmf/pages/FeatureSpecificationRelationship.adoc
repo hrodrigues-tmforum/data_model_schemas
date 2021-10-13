@@ -1,0 +1,55 @@
+= FeatureSpecificationRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Relationship between feature specifications
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: This is the type of the feature specification relationship.
+
+type: string
+
+
+=== featureId
+description: Unique identifier of the target feature specification.
+
+type: string
+
+
+=== parentSpecificationId
+description: Unique identifier of the parent specification containing the target feature
+
+type: string
+
+
+=== parentSpecificationHref
+description: Hyperlink reference to the parent specification containing the target feature
+
+type: string
+
+
+=== name
+description: This is the name of the target feature specification.
+
+type: string
+
+
+=== validFor
+description: The period for which this feature spoecification relationship is valid.
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

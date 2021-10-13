@@ -1,0 +1,63 @@
+= QuotePrice
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Description of price and discount awarded
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of the quote/quote item price
+
+type: string
+
+
+=== name
+description: Name of the quote /quote item price
+
+type: string
+
+
+=== productOfferingPrice
+description: An amount, usually of money, that is asked for or allowed when a ProductOffering is bought, rented, or leased. The price is valid for a defined period of time.
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingPriceRef.adoc[]
+
+
+=== priceType
+description: indicate if the price is for recurrent or no-recurrent charge
+
+type: string
+
+
+=== recurringChargePeriod
+description: Used for recurring charge to indicate period (month, week, etc..)
+
+type: string
+
+
+=== unitOfMeasure
+description: Unit of Measure if price depending on it (Gb, SMS volume, etc..)
+
+type: string
+
+
+=== priceAlteration
+type: array
+
+
+=== price
+$ref of: xref:4.0.0@schemas:Tmf:Price.adoc[]
+

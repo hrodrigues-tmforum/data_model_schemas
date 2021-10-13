@@ -1,0 +1,89 @@
+= BillCycle
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+A detailed description of a billing cycle and the various sub steps of a billing cycle.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== billingDate
+description: The billing/settlement date.
+
+type: string
+
+
+=== billingPeriod
+description: A billing time period. It is e.g. the concrete expressed month. Example: &#x27;March&#x27;.
+
+type: string
+
+
+=== chargeDate
+description: Date through when a payment method (e.g. credit card,...) will be activated.
+
+type: string
+
+
+=== creditDate
+description: Date through which credits previously received by the billing system are displeyed on the bill.
+
+type: string
+
+
+=== description
+description: An explanation regarding this billing cycle. If necessary.
+
+type: string
+
+
+=== href
+description: Reference of the billing cycle
+
+type: string
+
+
+=== id
+description: Unique identifier of the billing cycle.
+
+type: string
+
+
+=== mailingDate
+description: Customer bill mailing date.
+
+type: string
+
+
+=== name
+description: A short descriptive name of the actual billing cycle
+
+type: string
+
+
+=== paymentDueDate
+description: Date, when the payment is due.
+
+type: string
+
+
+=== BillCycleSpecification
+$ref of: xref:4.0.0@schemas:Tmf:BillCycleSpecificationRef.adoc[]
+
+
+=== validFor
+description: The period for which the billing cycle is valid (expressed in a formal formatted way)
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

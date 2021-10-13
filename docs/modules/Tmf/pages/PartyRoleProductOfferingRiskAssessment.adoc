@@ -1,0 +1,31 @@
+= PartyRoleProductOfferingRiskAssessment
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+This is a task resource allowing assessment of the risks associated with a party or party role that considers acquiring a specific product offering
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== partyRole
+description: The party or party role for which the assessment is to be carried out, must be supplied as input to the task, with the attribute id populated
+
+$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+
+
+=== productOffering
+description: The product offering for which the assessment is to be carried out, must be supplied as input to the task, with the attribute id populated
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.json.adoc[]
+

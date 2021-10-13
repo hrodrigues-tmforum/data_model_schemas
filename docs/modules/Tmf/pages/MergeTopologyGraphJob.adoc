@@ -1,0 +1,49 @@
+= MergeTopologyGraphJob
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Merges two or more Graphs into a single graph.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== completionDate
+description: Date at which the job was completed
+
+type: string
+
+
+=== creationDate
+description: Date at which the job was created
+
+type: string
+
+
+=== status
+description: Status of the merge job
+
+$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+
+
+=== mergeTopologyGraph
+description: URI with query string of the Topology GraphIds to be merged
+
+type: array
+
+
+=== graphResult
+description: The created topology graph
+
+$ref of: xref:4.0.0@schemas:Tmf:GraphRef.adoc[]
+

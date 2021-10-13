@@ -1,0 +1,99 @@
+= EntitySpecification
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+EntitySpecification is a class that offers characteristics to describe a type of entity. Entities are generic constructs that may be used to describe bespoke business entities that are not effectively covered by the existing SID model.
+Functionally, the entity specification acts as a template by which entities may be instantiated and described. By sharing the same specification, these entities would therefore share the same set of characteristics.
+Note: The ‘configurable’ attribute on the specCharacteristics determines if an entity instantiated from the entity specification can override the value of the attribute. When set to false, the entity instance may not define a value that differs from the value in the specification.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of the specification
+
+type: string
+
+
+=== lastUpdate
+description: Date and time of the last update of the specification
+
+type: string
+
+
+=== lifecycleStatus
+description: Used to indicate the current lifecycle status of this catalog item
+
+type: string
+
+
+=== name
+description: Name given to the specification
+
+type: string
+
+
+=== isBundle
+description: isBundle determines whether specification represents a single specification (false), or a bundle of specifications (true).
+
+type: boolean
+
+
+=== validFor
+description: The period for which this REST resource is valid
+
+$ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
+
+
+=== version
+description: specification version
+
+type: string
+
+
+=== attachment
+description: Attachments that may be of relevance to this specification, such as picture, document, media
+
+type: array
+
+
+=== targetEntitySchema
+description: Pointer to a schema that defines the target entity
+
+$ref of: xref:4.0.0@schemas:Common:TargetEntitySchema.adoc[]
+
+
+=== specCharacteristic
+description: List of characteristics that the entity can take
+
+type: array
+
+
+=== relatedParty
+description: Parties who manage or otherwise have an interest in this specification
+
+type: array
+
+
+=== constraint
+description: This is a list of constraint references applied to this specification
+
+type: array
+
+
+=== entitySpecRelationship
+description: Relationship to another specification
+
+type: array
+

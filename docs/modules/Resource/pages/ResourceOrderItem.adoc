@@ -1,0 +1,55 @@
+= ResourceOrderItem
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+An identified part of the order. A resource order is decomposed into one or more order items.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== action
+$ref of: xref:4.0.0@schemas:Resource:OrderItemActionType.adoc[]
+
+
+=== id
+description: Identifier of the line item (such as a sequence number 01, 02, 03)
+
+type: string
+
+
+=== orderItemRelationship
+type: array
+
+
+=== quantity
+description: Quantity ordered
+
+type: integer
+
+
+=== resourceSpecification
+$ref of: xref:4.0.0@schemas:Resource:ResourceSpecificationRef.adoc[]
+
+
+=== appointment
+$ref of: xref:4.0.0@schemas:Resource:AppointmentRef.adoc[]
+
+
+=== resource
+$ref of: xref:4.0.0@schemas:Resource:ResourceReforValue.adoc[]
+
+
+=== state
+$ref of: xref:4.0.0@schemas:Resource:ResourceOrderItemStateType.adoc[]
+

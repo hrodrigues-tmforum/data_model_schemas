@@ -1,0 +1,31 @@
+= TargetPerformanceIndicatorSpecificationSchema
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+The reference object to the schema and type of target performance indicator specification which is described by performance indicator specification
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @type
+description: Class type of the target product
+
+type: string
+
+
+=== @schemaLocation
+description: This field provides a link to the schema describing the target performance indicator specification
+
+type: string
+

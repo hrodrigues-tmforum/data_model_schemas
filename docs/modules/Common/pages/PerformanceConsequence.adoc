@@ -1,0 +1,23 @@
+= PerformanceConsequence
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A Consequence can be applied as a result of a threshold crossing or a threshold ceasing to be crossed
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== alarmSpecification
+$ref of: xref:4.0.0@schemas:Common:PerformanceAlarmSpecification.adoc[]
+

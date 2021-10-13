@@ -1,0 +1,31 @@
+= BillStructure
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+The structure of the bill for party accounts (billing or settlement).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== presentationMedia
+type: array
+
+
+=== format
+$ref of: xref:4.0.0@schemas:Customer:BillFormatRefOrValue.adoc[]
+
+
+=== cycleSpecification
+$ref of: xref:4.0.0@schemas:Customer:BillingCycleSpecificationRefOrValue.adoc[]
+

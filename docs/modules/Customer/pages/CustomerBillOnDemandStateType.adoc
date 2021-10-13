@@ -1,0 +1,19 @@
+= CustomerBillOnDemandStateType
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Recommended Enumeration Type (not formal forced in standard): Valid values for &#x27;CustomerBillOnDemand&#x27;: &#x27;inProgress&#x27;, &#x27;rejected&#x27;, &#x27;done&#x27;, &#x27;terminatedWithError&#x27;
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

@@ -1,0 +1,63 @@
+= ServiceLevelSpecParameter
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+Service Level Specification parameters can be one of two types. A Key Quality Indicator (KQI) 
+provides a measurement of a specific aspect of the performance of a Product (i.e., Product 
+Specification, Product Offering, or Product) or a Service (i.e., Service Specification or Service).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: The name of the parameter
+
+type: string
+
+
+=== serviceParmCategory
+description: A string that specifies whether the Service Level Specification Parameter is technology specific, service specific, or technology/service independent
+
+type: string
+
+
+=== serviceParmPerspective
+description: A string that specifies whether the Service Level Specification Parameter represents a single user instance parameter or a parameter that represents an aggregation
+
+type: string
+
+
+=== transformationAlgorithmOfKQI
+description: The description of a logical step-by-step procedure used to calculate the value of a KQI
+
+type: string
+
+
+=== parameterType
+description: Types of Service Level Specification parameters are KQI or KPI
+
+type: string
+
+
+=== validFor
+description: A valid duration of a thing
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== relatedEntity
+description: A list of entities related to this parameter
+
+type: array
+

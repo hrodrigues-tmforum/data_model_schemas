@@ -1,0 +1,31 @@
+= ServiceRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+type: string
+
+
+=== serviceRelationshipCharacteristic
+type: array
+
+
+=== service
+$ref of: xref:4.0.0@schemas:Tmf:ServiceRefOrValue.adoc[]
+

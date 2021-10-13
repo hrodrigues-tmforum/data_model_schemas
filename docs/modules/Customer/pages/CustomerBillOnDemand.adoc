@@ -1,0 +1,67 @@
+= CustomerBillOnDemand
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+This resource is used to manage the creation request of a customer bill in real-time (on demand).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Explanation: Unique identifier of the customer bill on demand request given by the server
+
+type: string
+
+
+=== href
+description: Reference of the customer bill on demand request
+
+type: string
+
+
+=== name
+description: Friendly name to identify the customer bill on demand request
+
+type: string
+
+
+=== state
+description: State of the request to produce an off cycle bill: Possible values are: inProgress, rejected, done, terminatedWithError.
+
+$ref of: xref:4.0.0@schemas:Customer:CustomerBillOnDemandStateType.adoc[]
+
+
+=== billingAccount
+$ref of: xref:4.0.0@schemas:Customer:BillingAccountRef.adoc[]
+
+
+=== customerBill
+$ref of: xref:4.0.0@schemas:Customer:CustomerBillRef.adoc[]
+
+
+=== description
+description: Additional data describing the customer bill on demand request
+
+type: string
+
+
+=== lastUpdate
+description: The last date time when the customer bill on demand has been updated
+
+type: string
+
+
+=== relatedParty
+$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+

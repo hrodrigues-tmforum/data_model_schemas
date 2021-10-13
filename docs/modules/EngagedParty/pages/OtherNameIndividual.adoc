@@ -1,0 +1,89 @@
+= OtherNameIndividual
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Keeps track of other names, for example the old name of a woman before marriage or an artist name.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== title
+description: Use for titles (aristrocatic, social, ...): Pr, Dr, Sir,....
+
+type: string
+
+
+=== aristocraticTitle
+description: e.g. Baron, Graf, Earl,…
+
+type: string
+
+
+=== generation
+description: e.g. Sr, Jr…
+
+type: string
+
+
+=== givenName
+description: First name
+
+type: string
+
+
+=== preferredGivenName
+description: Contains the chosen name by which the person prefers to be addressed. Note: This name may be a name other than a given name, such as a nickname
+
+type: string
+
+
+=== familyNamePrefix
+description: Family name prefix
+
+type: string
+
+
+=== familyName
+description: Contains the non-chosen or inherited name. Also known as last name in the Western context
+
+type: string
+
+
+=== legalName
+description: Legal name or birth name (name one has for official purposes)
+
+type: string
+
+
+=== middleName
+description: Middle name or initial
+
+type: string
+
+
+=== fullName
+description: Full name flatten (first, middle, and last names)
+
+type: string
+
+
+=== formattedName
+description: . A fully formatted name in one string with all of its pieces in their proper place and all of the necessary punctuation. Useful for specific contexts (Chinese, Japanese, Korean,…)
+
+type: string
+
+
+=== validFor
+$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+

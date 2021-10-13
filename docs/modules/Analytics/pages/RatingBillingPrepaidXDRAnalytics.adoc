@@ -1,0 +1,49 @@
+= RatingBillingPrepaidXDRAnalytics
+
+[#domain]
+== Domain
+
+This schema is part of Analytics
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== eventEndTime
+description: 2015-01-08T15:04:19.000Z
+
+type: string
+
+
+=== eventDeliveryTime
+type: string
+
+
+=== eventAnswerTime
+description: 2015-01-07T15:01:09.000Z
+
+type: string
+
+
+=== dataCreationTimestamp
+description:  
+
+type: string
+
+
+=== runTimestamp
+type: string
+
+
+=== validFromTimestamp
+type: string
+

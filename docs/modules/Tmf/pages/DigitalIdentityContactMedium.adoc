@@ -1,0 +1,43 @@
+= DigitalIdentityContactMedium
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Indicates the contact medium that could be used to contact the party.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Identifier for this contact medium.
+
+type: string
+
+
+=== preferred
+description: If true, indicates that is the preferred contact medium
+
+type: boolean
+
+
+=== contactType
+description: Type of the contact medium to qualifiy it like pro email / personal email. This is not used to define the contact medium used.
+
+type: string
+
+
+=== validFor
+description: The time period that the contact medium is valid for
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

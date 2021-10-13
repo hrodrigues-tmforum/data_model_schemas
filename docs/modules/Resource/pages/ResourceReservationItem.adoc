@@ -1,0 +1,27 @@
+= ResourceReservationItem
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== reservationItem
+type: array
+
+
+=== resource
+$ref of: xref:4.0.0@schemas:Resource:ResourceRefOrValue.adoc[]
+

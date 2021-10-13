@@ -1,0 +1,50 @@
+= ResourceCapacityDemand
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+the amount of capacity that is planned to be consumed or has been consumed.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== applicableTimePeriod
+$ref of: xref:4.0.0@schemas:Resource:ApplicableTimePeriod.adoc[]
+
+
+=== capacityDemandAmount
+description: A value and units that define the CapacityDemand, such as 10000 ea, 10B Mb. 
+Instance values are mutually exclusive with From and To capacityDemandAmounts and range interval.
+
+type: string
+
+
+=== place
+$ref of: xref:4.0.0@schemas:Resource:PlaceRefOrValue.adoc[]
+
+
+=== resource
+$ref of: xref:4.0.0@schemas:Resource:ResourceRefOrValue.adoc[]
+
+
+=== resourcePool
+description: manages resource capacity with the resource state.
+
+$ref of: xref:4.0.0@schemas:Resource:ResourcePool.adoc[]
+
+
+=== resourceValueOffset
+description: A value used to specify the next resource to retrieve or manipulate, for example: for resoruceAvailablityCheck, an offset of 4383942288 will indicate that the search will look for consequent phone numbers of 4383942288.
+
+type: integer
+

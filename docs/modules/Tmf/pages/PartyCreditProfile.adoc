@@ -1,0 +1,47 @@
+= PartyCreditProfile
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+An individual might be evaluated for its worthiness and this evaluation might be based on a credit rating given by a credit agency.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== creditAgencyName
+description: Name of the credit agency giving the score
+
+type: string
+
+
+=== creditAgencyType
+description: Type of the credit agency giving the score
+
+type: string
+
+
+=== ratingReference
+description: Reference corresponding to the credit rating
+
+type: string
+
+
+=== ratingScore
+description: A measure of a party’s creditworthiness calculated on the basis of a combination of factors such as their income and credit history
+
+type: integer
+
+
+=== validFor
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

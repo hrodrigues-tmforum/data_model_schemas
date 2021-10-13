@@ -1,0 +1,87 @@
+= Customer360RecommendationVO
+
+[#domain]
+== Domain
+
+This schema is part of Customer360
+
+[#description]
+== Description
+Recommendation API is used to recommend offering quickly based on the history and real-time context of customer. It is a real-time and personalized recommendation API. It is usually provided by e-commerce or BSS, CRM system in omni-channel.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+type: string
+
+
+=== href
+description: Hypertext Reference of the recommendation
+
+type: string
+
+
+=== id
+description: Unique identifier of recommendation
+
+type: string
+
+
+=== name
+description: Name of recommendation
+
+type: string
+
+
+=== recommendationType
+description: The type of recommendation
+
+type: string
+
+
+=== validFor
+description: The period in which the recommendation is valid
+
+$ref of: xref:4.0.0@schemas:Customer360:TimePeriod.adoc[]
+
+
+=== order
+$ref of: xref:4.0.0@schemas:Customer360:ProductOrderRef.adoc[]
+
+
+=== location
+description: The geographic location which the recommendation is related to
+
+$ref of: xref:4.0.0@schemas:Customer360:GeographicLocationRef.adoc[]
+
+
+=== channel
+$ref of: xref:4.0.0@schemas:Customer360:ChannelRef.adoc[]
+
+
+=== category
+description: The category for grouping recommendations
+
+$ref of: xref:4.0.0@schemas:Customer360:CategoryRef.adoc[]
+
+
+=== shoppingCart
+description: The shopping cart which the recommendation is related to
+
+$ref of: xref:4.0.0@schemas:Customer360:ShoppingCartRef.adoc[]
+
+
+=== party
+$ref of: xref:4.0.0@schemas:Customer360:RelatedParty.adoc[]
+
+
+=== item
+type: array
+

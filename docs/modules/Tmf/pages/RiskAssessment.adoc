@@ -1,0 +1,43 @@
+= RiskAssessment
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+This is a generalized task resource allowing assessment of risks - it is expected that the resource will be specialized to reflect specific risks, such as risks associated with a party, or with an order, etc.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== place
+description: The place for which the risk is assessed, this is optional input to the task
+
+$ref of: xref:4.0.0@schemas:Tmf:RelatedPlace.adoc[]
+
+
+=== characteristic
+description: Additional characteristics for which the risk might be assessed, optional input to the task
+
+type: array
+
+
+=== status
+description: The status of the risk assessment, such as Succeeded, In Progress, Failed, output from the task
+
+type: string
+
+
+=== riskAssessmentResult
+description: The result of the risk assessment, output from the task
+
+$ref of: xref:4.0.0@schemas:Tmf:RiskAssessmentResult.adoc[]
+

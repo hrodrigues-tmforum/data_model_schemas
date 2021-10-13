@@ -1,0 +1,67 @@
+= UnAckAlarms
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task resource for unacknowledge alarms operation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: The identifier of the task
+
+type: string
+
+
+=== href
+description: A reference to the task
+
+type: string
+
+
+=== state
+description: Current state of the operation task
+
+type: string
+
+
+=== ackSystemId
+description: Name of the unacknowledging system
+
+type: string
+
+
+=== ackUserId
+description: Name of the unacknowledging user
+
+type: string
+
+
+=== ackTime
+description: Time of the unacknowledgement
+
+type: string
+
+
+=== alarmPattern
+description: Alarm patterns to match target alarms. An alarm will match if all of the sttributes in any of the patterns compare equal to those attributes of the alarm.
+
+type: array
+
+
+=== unAckedAlarm
+description: The successfully unacknowledged alarms
+
+type: array
+

@@ -1,0 +1,19 @@
+= ResourceRefOrValue
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Resource is an abstract entity that describes the common set of attributes shared by all concrete resources. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the Resource entity and not the related ResourceRefOrValue class itself
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

@@ -1,0 +1,29 @@
+= GeoJsonMultiLineString
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A container for GeoJSON MultiLineString: A collection of distinct LineStrings
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @type
+description: The name of the GeoJSON structure used in the geometry attribute
+
+type: string
+
+
+=== geoJson
+$ref of: xref:4.0.0@schemas:Common:MultiLineString.adoc[]
+

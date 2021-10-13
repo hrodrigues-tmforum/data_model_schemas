@@ -1,0 +1,19 @@
+= TestSuiteExecutionRefOrValue
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

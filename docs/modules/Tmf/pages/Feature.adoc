@@ -1,0 +1,59 @@
+= Feature
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Configuration feature.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the feature.
+
+type: string
+
+
+=== name
+description: This is the name for the feature.
+
+type: string
+
+
+=== isBundle
+description: True if this is a feature group. Default is false.
+
+type: boolean
+
+
+=== featureRelationship
+type: array
+
+
+=== constraint
+description: This is a list of feature constraints.
+
+type: array
+
+
+=== isEnabled
+description: True if this feature is enabled. Default is true.
+
+type: boolean
+
+
+=== featureCharacteristic
+description: This is a list of Characteristics for a particular feature.
+
+type: array
+

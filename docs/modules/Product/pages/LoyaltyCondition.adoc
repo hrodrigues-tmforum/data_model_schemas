@@ -1,0 +1,49 @@
+= LoyaltyCondition
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A condition, comprised of a attribute that will be tested against a value.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier for the loyalty condition.
+
+type: string
+
+
+=== href
+description: A reference to the loyalty event type.
+
+type: string
+
+
+=== attribute
+description: The attribute to evaluate.
+
+type: string
+
+
+=== operator
+description: Comparison operator to be used in the evaluation.
+
+type: string
+
+
+=== value
+description: The value of the attribute to be evaluated.
+
+type: string
+

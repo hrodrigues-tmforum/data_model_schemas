@@ -1,0 +1,47 @@
+= EntityRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A uni-directionmal relationship from this entity to a target entity instance
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== entity
+description: The entity being referred to
+
+$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+
+
+=== role
+description: The association role for this entity
+
+type: string
+
+
+=== relationshipType
+description: Type of relationship such as containment, substitution, dependency, exclusivity
+
+type: string
+
+
+=== validFor
+description: The period for which the entityRelationship is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== associationSpec
+$ref of: xref:4.0.0@schemas:Tmf:AssociationSpecificationRef.adoc[]
+

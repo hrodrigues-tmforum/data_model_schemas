@@ -1,0 +1,31 @@
+= CartItemRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Relationship among cart items mainly other than hierarchical relationships such as &quot;relyOn&quot;, &quot;dependentOn&quot;, &quot;shipping&quot; etc.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the referred cart item
+
+type: string
+
+
+=== relationshipType
+description: Type of the cart item relationship
+
+type: string
+

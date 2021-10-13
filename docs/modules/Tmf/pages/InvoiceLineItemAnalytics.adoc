@@ -1,0 +1,89 @@
+= InvoiceLineItemAnalytics
+
+[#domain]
+== Domain
+
+This schema is part of Analytics
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== customerStatusDate
+description: Date when status was set or changed last time
+
+type: string
+
+
+=== customerCreationDate
+description: Date when customer was created
+
+type: string
+
+
+=== customerBirthDate
+description: Date of birth
+
+type: string
+
+
+=== arpuAmount
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== accountStatusDate
+description: Status last change date
+
+type: string
+
+
+=== accountCreationDate
+description: Account creation Date
+
+type: string
+
+
+=== subscriptionStatusDate
+description: Status last change date
+
+type: string
+
+
+=== subscriptionCreationDate
+description: Subscriber creation date
+
+type: string
+
+
+=== subscriptionActivationDate
+description: Activation date
+
+type: string
+
+
+=== dataCreationTimestamp
+description: Time stamp for data creation (e.g. system dump creation, event generation…)
+
+type: string
+
+
+=== runTimestamp
+description: Time stamp for data upload run
+
+type: string
+
+
+=== validFromTimestamp
+description: Time stamp for business validity of entity record
+
+type: string
+

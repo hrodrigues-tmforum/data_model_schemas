@@ -1,0 +1,47 @@
+= Sender
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Sender of the communication message.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== email
+description: Sender address of email, if the communication type is email
+
+type: string
+
+
+=== id
+description: ID of the sender
+
+type: string
+
+
+=== name
+description: Name of the sender
+
+type: string
+
+
+=== phoneNumber
+description: Phone number of the sender, if the communication type is SMS.
+
+type: string
+
+
+=== party
+$ref of: xref:4.0.0@schemas:Common:RelatedParty.adoc[]
+
