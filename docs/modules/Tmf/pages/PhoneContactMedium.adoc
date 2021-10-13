@@ -25,4 +25,4 @@ description: The phone number of the contact
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/ContactMedium.schema.json#ContactMedium&#x27;}
+= All Of 

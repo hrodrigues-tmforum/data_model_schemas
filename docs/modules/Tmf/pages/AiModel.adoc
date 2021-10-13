@@ -41,4 +41,4 @@ $ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
 $ref of: xref:4.0.0@schemas:Tmf:AiModelSpecification.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Service/GcService.schema.json#GcService&#x27;}
+= All Of 

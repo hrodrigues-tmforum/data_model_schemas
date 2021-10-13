@@ -25,4 +25,4 @@ description: Reference to the AI Model Specification
 $ref of: xref:4.0.0@schemas:Gc:EntityRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/EngagedParty/GcSLA.schema.json#GcSLA&#x27;}
+= All Of 

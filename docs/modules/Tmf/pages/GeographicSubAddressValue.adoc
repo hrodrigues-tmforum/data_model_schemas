@@ -76,4 +76,4 @@ description: Type of subAddress : it can be a subunit or a private street
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcGeographicSubAddressValue.schema.json#GcGeographicSubAddressValue&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}
+= All Of 

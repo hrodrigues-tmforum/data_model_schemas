@@ -37,4 +37,4 @@ description: Qualification result for this serviceQualification. It could be:  q
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Service/GcServiceQualification.schema.json#GcServiceQualification&#x27;}
+= All Of 

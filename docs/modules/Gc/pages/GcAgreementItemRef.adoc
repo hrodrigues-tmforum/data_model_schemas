@@ -31,3 +31,4 @@ description: Id of an item of a Agreement
 type: string
 
 
+= All Of 

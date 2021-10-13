@@ -77,4 +77,4 @@ description: The time the event occured.
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;Entity.schema.json#Entity&#x27;}
+= All Of 

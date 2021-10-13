@@ -25,4 +25,4 @@ description: Value of the characteristic
 type: object
 
 
-{&#x27;$ref&#x27;: &#x27;Characteristic.schema.json#Characteristic&#x27;}
+= All Of 

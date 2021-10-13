@@ -37,3 +37,4 @@ description: A URI to a JSON-Schema file that defines additional attributes and 
 type: string
 
 
+= All Of 

@@ -25,4 +25,4 @@ description: Indicates whether the account follows a specific payment option suc
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/EngagedParty/GcPartyAccount.schema.json#GcPartyAccount&#x27;}
+= All Of 

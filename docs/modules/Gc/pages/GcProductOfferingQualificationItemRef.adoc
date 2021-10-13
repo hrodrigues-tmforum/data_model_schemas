@@ -31,3 +31,4 @@ description: Id of an item of a product offering qualification
 type: string
 
 
+= All Of 

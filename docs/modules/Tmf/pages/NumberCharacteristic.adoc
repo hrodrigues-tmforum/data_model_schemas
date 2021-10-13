@@ -25,4 +25,4 @@ description: Value of the characteristic
 type: number
 
 
-{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}{&#x27;$ref&#x27;: &#x27;Characteristic.schema.json#Characteristic&#x27;}
+= All Of 

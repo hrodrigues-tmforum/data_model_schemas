@@ -75,4 +75,4 @@ type: array
 $ref of: xref:4.0.0@schemas:Tmf:OrganizationParentRelationship.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/EngagedParty/GcParty.schema.json#GcParty&#x27;}{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcEntity.schema.json#GcEntity&#x27;}
+= All Of 

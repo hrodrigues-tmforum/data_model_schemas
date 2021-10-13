@@ -25,4 +25,4 @@ description: An explanatory text regarding the appointment made with a party
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Customer/GcAppointmentRef.schema.json#GcAppointmentRef&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/EntityRef.schema.json#EntityRef&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}
+= All Of 

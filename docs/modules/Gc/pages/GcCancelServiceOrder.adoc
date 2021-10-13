@@ -23,4 +23,4 @@ The data model is defined as shown below:
 $ref of: xref:4.0.0@schemas:Gc:ServiceOrderRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Product/GcCancelOrder.schema.json#GcCancelOrder&#x27;}
+= All Of 

@@ -135,4 +135,4 @@ description: Is the date when the product was terminated
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Product/GcProduct.schema.json#GcProduct&#x27;}
+= All Of 

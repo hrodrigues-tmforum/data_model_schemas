@@ -31,4 +31,4 @@ description: Link to the attachment media/content
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcAttachmentRef.schema.json#GcAttachmentRef&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/EntityRef.schema.json#EntityRef&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}
+= All Of 

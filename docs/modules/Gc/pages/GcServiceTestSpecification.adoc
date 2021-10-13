@@ -26,4 +26,4 @@ description: The related service specification may relate to more than one servi
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcEntitySpecification.schema.json#GcEntitySpecification&#x27;}
+= All Of 

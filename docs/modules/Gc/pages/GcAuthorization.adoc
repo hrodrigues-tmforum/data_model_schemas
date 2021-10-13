@@ -25,3 +25,4 @@ description: Name of the required authorization
 type: string
 
 
+= All Of 

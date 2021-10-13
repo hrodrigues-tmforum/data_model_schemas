@@ -27,4 +27,4 @@ description: Name given to the specification
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Core/Entity.schema.json&#x27;}
+= All Of 

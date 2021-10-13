@@ -25,4 +25,4 @@ description: Name that the organization (unit) trades under
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/EngagedParty/GcParty.schema.json#GcParty&#x27;}{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcEntity.schema.json#GcEntity&#x27;}
+= All Of 

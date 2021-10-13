@@ -25,4 +25,4 @@ description: An explanatory text describing this bill presentation media
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
+= All Of 

@@ -57,4 +57,4 @@ description: Identifier for a voucher when the topup can be performed by this me
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Customer/GcBalanceAction.schema.json#GcBalanceAction&#x27;}
+= All Of 

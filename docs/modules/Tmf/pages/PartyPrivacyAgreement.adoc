@@ -31,4 +31,4 @@ description: A list of (typically) high criticality characteristics whose chosen
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/EngagedParty/GcAgreement.schema.json#GcAgreement&#x27;}
+= All Of 

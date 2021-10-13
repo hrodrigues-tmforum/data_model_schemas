@@ -25,4 +25,4 @@ description: The type of the adjustment. For example: recurringChargeDebit,oneTi
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Customer/GcBalanceAction.schema.json#GcBalanceAction&#x27;}
+= All Of 

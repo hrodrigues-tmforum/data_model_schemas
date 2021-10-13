@@ -25,4 +25,4 @@ description: Unique identifier of the characteristic
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcCharacteristic.schema.json#/GcCharacteristic&#x27;}
+= All Of 

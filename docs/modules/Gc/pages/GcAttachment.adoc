@@ -31,4 +31,4 @@ description: Attachment mime type such as extension file for video, picture and 
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Core/Entity.schema.json#Entity&#x27;}
+= All Of 

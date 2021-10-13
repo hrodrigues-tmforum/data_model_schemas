@@ -25,4 +25,4 @@ description: Role playing by the channel.
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Core/Reference.schema.json#Reference&#x27;}
+= All Of 

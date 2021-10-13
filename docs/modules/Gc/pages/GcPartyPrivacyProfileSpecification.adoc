@@ -25,3 +25,4 @@ description: List of characteristics of the specification, whose values would ty
 type: array
 
 
+= All Of 

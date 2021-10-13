@@ -31,4 +31,4 @@ description: The time when the status starts applying
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcHourPeriod.schema.json#GcHourPeriod&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}
+= All Of 

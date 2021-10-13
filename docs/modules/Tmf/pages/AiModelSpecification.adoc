@@ -48,4 +48,4 @@ type: object
 type: object
 
 
-{&#x27;$ref&#x27;: &#x27;../../Gc/Service/GcServiceSpecification.schema.json#GcServiceSpecification&#x27;}
+= All Of 
