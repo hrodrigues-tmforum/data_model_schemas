@@ -10,6 +10,7 @@ This schema is part of Customer
 
 A ProductOrder items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.
 
+None
 
 [#data_model]
 == Data model

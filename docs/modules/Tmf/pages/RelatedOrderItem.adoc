@@ -10,6 +10,7 @@ This schema is part of Common
 
 It&#x27;s a Order item that has been executed previously.
 
+None
 
 [#data_model]
 == Data model

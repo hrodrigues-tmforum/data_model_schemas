@@ -10,6 +10,7 @@ This schema is part of Common
 
 Used to describe relationship between geographic site.
 
+None
 
 [#data_model]
 == Data model

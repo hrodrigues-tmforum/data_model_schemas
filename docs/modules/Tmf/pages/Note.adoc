@@ -10,6 +10,7 @@ This schema is part of Common
 
 Extra information about a given entity
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 A managed general test artifact resource
 
+None
 
 [#data_model]
 == Data model

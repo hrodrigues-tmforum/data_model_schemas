@@ -10,6 +10,7 @@ This schema is part of Common
 
 Is a event channel provided by the Event Streaming API
 
+None
 
 [#data_model]
 == Data model

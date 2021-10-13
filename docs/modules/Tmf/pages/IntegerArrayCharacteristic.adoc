@@ -10,6 +10,7 @@ This schema is part of Common
 
 A characteristic which value is an array of Integer(s).
 
+None
 
 [#data_model]
 == Data model

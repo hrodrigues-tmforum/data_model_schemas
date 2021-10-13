@@ -11,6 +11,7 @@ This schema is part of Resource
 The root entity for resource catalog management.
 A resource catalog is a group of resource specifications made available through resource candidates that an organization provides to the consumers (internal consumers like its employees or B2B customers or B2C customers).
 
+None
 
 [#data_model]
 == Data model

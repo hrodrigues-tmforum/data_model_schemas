@@ -10,6 +10,7 @@ This schema is part of Common
 
 Describes a given characteristic of an object or entity through a name/value pair.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 REST resource for the non-functional test execution lifecycle
 
+None
 
 [#data_model]
 == Data model

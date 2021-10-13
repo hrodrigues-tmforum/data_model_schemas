@@ -10,6 +10,7 @@ This schema is part of Product
 
 Description of price and discount awarded
 
+None
 
 [#data_model]
 == Data model

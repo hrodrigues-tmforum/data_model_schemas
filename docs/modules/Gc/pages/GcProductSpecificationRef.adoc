@@ -10,6 +10,7 @@ This schema is part of Product
 
 ProductSpecification reference. A product Specification represents entities that are orderable from the provider of the catalog.
 
+None
 
 [#data_model]
 == Data model

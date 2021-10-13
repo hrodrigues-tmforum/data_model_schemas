@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Party Privacy Profile Specification serves as a template for creating Privacy Profiles. The specification defines characteristics for the profile. For example there might be a profile specification for residential customers, and a different specification for partners.
 
+None
 
 [#data_model]
 == Data model

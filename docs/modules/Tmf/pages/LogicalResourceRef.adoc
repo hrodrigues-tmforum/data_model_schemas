@@ -10,6 +10,7 @@ This schema is part of Resource
 
 reference to the LogicalResource eg MSISDN.
 
+None
 
 [#data_model]
 == Data model

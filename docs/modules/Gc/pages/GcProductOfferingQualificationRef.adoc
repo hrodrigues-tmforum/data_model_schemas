@@ -10,6 +10,7 @@ This schema is part of Product
 
 ProductOfferingQualification reference. A productOfferingQualification that has been executed previously.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Service
 
 QueryServiceQualification is used to retrieve a list of services that are technically available in the context of the interaction (place, party, service characteristics, ...).
 
+None
 
 [#data_model]
 == Data model

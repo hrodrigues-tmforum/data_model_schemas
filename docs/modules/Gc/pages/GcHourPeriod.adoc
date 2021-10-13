@@ -10,6 +10,7 @@ This schema is part of Common
 
 Used to describe a Hour period.
 
+None
 
 [#data_model]
 == Data model

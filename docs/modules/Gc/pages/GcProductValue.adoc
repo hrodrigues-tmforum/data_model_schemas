@@ -10,6 +10,7 @@ This schema is part of Product
 
 A product specification or offering procured to a customer or other interested party playing a party role. A product is realized as one or more service(s) and / or resource(s).
 
+None
 
 [#data_model]
 == Data model

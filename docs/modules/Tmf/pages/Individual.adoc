@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Individual represents a single human being (a man, woman or child). The individual can be a customer, an employee or any other person that the organization needs to store information about.
 
+None
 
 [#data_model]
 == Data model

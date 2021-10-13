@@ -10,6 +10,7 @@ This schema is part of Resource
 
 This resource represents an alarm supporting the information model defined in ITU-T X.733.
 
+None
 
 [#data_model]
 == Data model

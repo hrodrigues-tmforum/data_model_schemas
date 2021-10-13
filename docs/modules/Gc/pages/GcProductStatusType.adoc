@@ -10,6 +10,7 @@ This schema is part of Product
 
 Possible core values for the status of the product
 
+None
 
 [#data_model]
 == Data model

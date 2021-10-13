@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Task resource for the acknowledge alarms operation
 
+None
 
 [#data_model]
 == Data model

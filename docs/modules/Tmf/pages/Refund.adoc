@@ -10,6 +10,7 @@ This schema is part of Customer
 
 The Refund resource represents a performed Refund. It contains both information about the refund and the payment method used to perform it.
 
+None
 
 [#data_model]
 == Data model

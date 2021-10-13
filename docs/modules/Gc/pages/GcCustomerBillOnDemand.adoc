@@ -10,6 +10,7 @@ This schema is part of Customer
 
 This resource is used to manage the creation request of a customer bill in real-time (on demand).
 
+None
 
 [#data_model]
 == Data model

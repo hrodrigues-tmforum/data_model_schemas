@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price and Price Alteration.
 
+None
 
 [#data_model]
 == Data model

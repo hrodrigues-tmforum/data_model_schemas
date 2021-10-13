@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A Party Privacy Profile represents the set of Privacy settings defined for a Party
 
+None
 
 [#data_model]
 == Data model

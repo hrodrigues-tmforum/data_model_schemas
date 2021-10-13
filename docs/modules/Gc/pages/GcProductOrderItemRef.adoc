@@ -10,6 +10,7 @@ This schema is part of Product
 
 Reference of a productOrder item that has been executed previously.
 
+None
 
 [#data_model]
 == Data model

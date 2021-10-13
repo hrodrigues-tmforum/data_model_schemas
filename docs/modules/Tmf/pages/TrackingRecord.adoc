@@ -10,6 +10,7 @@ This schema is part of Service
 
 Tracking records allow the tracking of modifications on the problem. The tracking records should not be embedded in the problem to allow retrieving the problem without the tracking records
 
+None
 
 [#data_model]
 == Data model

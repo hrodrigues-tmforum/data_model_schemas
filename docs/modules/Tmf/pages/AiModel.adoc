@@ -10,6 +10,7 @@ This schema is part of Common
 
 AiModel is a base class for defining the AiModel hierarchy
 
+None
 
 [#data_model]
 == Data model
