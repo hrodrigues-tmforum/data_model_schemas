@@ -83,3 +83,5 @@ description: The type of subaddress : it can be a subunit or a private street
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

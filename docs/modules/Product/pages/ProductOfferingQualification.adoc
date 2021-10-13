@@ -134,3 +134,5 @@ description: State of the productOfferingQualification defined in the state engi
 
 $ref of: xref:4.0.0@schemas:Product:TaskStateType.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

@@ -84,3 +84,5 @@ description: A preconfigured value that describes a reserve type which determine
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Customer/BalanceAction.schema.json#BalanceAction&#x27;}

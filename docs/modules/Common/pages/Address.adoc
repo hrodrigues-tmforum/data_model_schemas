@@ -98,3 +98,5 @@ description: Within a property in an urban area, may refer to a building, buildi
 
 $ref of: xref:4.0.0@schemas:Common:SubAddress.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

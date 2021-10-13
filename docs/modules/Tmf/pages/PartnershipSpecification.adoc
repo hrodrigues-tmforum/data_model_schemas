@@ -48,3 +48,5 @@ description: The list of roles specifications a engaged party will be able to pl
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

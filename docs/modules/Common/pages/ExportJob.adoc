@@ -78,3 +78,5 @@ description: URL of the file containing the data to be exported
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

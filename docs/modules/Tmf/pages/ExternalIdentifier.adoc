@@ -36,3 +36,5 @@ description: identification of the entity within the external system.
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

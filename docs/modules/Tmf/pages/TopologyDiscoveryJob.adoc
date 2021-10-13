@@ -50,3 +50,5 @@ description: Attributes of the created Graph
 === graphResult
 description: The discovered topology graph
 
+
+{&#x27;$ref&#x27;: &#x27;Entity.schema.json#Entity&#x27;}

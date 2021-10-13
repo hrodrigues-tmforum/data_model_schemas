@@ -160,3 +160,5 @@ description: the error message if the order closed by an error
 
 $ref of: xref:4.0.0@schemas:Tmf:ServiceOrderErrorMessage.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

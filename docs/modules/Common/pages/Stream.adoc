@@ -50,3 +50,5 @@ $ref of: xref:4.0.0@schemas:Common:.adoc[]
 === monitoredClassCriteria
 $ref of: xref:4.0.0@schemas:Common:.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Addressable.schema.json#/definitions/Addressable&#x27;}{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#/definitions/Extensible&#x27;}

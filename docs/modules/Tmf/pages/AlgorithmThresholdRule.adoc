@@ -26,3 +26,5 @@ type: array
 === algorithmRef
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/ThresholdRule.schema.json#ThresholdRule&#x27;}

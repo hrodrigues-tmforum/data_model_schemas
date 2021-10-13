@@ -22,3 +22,5 @@ The data model is defined as shown below:
 === testCase
 $ref of: xref:4.0.0@schemas:Common:TestCaseRef.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/TestExecution.schema.json#TestExecution&#x27;}

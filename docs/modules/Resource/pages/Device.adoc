@@ -108,3 +108,5 @@ type: string
 === value
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/GSMACommons.schema.json#GSMACommons&#x27;}{&#x27;$ref&#x27;: &#x27;../Common/LocationCommons.schema.json#LocationCommons&#x27;}{&#x27;$ref&#x27;: &#x27;../Resource/PhysicalResource.schema.json#PhysicalResource&#x27;}

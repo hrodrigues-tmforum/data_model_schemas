@@ -36,3 +36,5 @@ description: A user-friendly name for the place, such as [Paris Store], [London 
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

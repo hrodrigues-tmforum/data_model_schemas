@@ -26,3 +26,4 @@ type: string
 === coordinates
 type: array
 
+

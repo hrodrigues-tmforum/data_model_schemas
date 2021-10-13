@@ -60,3 +60,4 @@ description: Related payment to this operation.
 
 $ref of: xref:4.0.0@schemas:Customer:PaymentRefOrValue.adoc[]
 
+

@@ -36,3 +36,4 @@ description: Type of the interaction relationship
 
 type: string
 
+

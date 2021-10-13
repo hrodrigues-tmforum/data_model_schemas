@@ -30,3 +30,5 @@ description: The filter expression that defines the entities covered by a permis
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/AssetGroup.schema.json#AssetGroup&#x27;}

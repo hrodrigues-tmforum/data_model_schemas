@@ -28,3 +28,5 @@ type: string
 === resource
 $ref of: xref:4.0.0@schemas:Resource:ResourceRefOrValue.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

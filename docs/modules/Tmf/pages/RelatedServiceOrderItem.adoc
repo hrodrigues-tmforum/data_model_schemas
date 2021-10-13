@@ -54,3 +54,5 @@ description: role of the service order item for this service
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;Entity.schema.json#/Entity&#x27;}

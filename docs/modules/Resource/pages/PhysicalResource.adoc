@@ -56,3 +56,5 @@ description: This is a string that identifies the version of this physical resou
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;./Resource.schema.json#Resource&#x27;}

@@ -24,3 +24,5 @@ description: The phone number of the contact
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/DigitalIdentityContactMedium.schema.json#DigitalIdentityContactMedium&#x27;}
