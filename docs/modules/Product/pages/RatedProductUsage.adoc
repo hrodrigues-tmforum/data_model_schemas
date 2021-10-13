@@ -79,4 +79,4 @@ description: Tag value: [usage]: the usage is always rated outside a usage bundl
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#Extensible&#x27;}
+= All Of 

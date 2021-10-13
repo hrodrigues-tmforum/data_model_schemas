@@ -31,3 +31,4 @@ description: The time when the status starts applying
 type: string
 
 
+= All Of 

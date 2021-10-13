@@ -37,4 +37,4 @@ description: Time stamp for business validity of entity record
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Extensible&#x27;}
+= All Of 

@@ -100,4 +100,4 @@ $ref of: xref:4.0.0@schemas:Common:GeographicLocationRefOrValue.adoc[]
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Place.schema.json#Place&#x27;}
+= All Of 

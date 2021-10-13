@@ -85,4 +85,4 @@ description: Relationship to another specification
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#/definitions/Extensible&#x27;}
+= All Of 

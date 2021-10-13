@@ -59,3 +59,4 @@ description: Logical relation followed by all criteria.
 type: string
 
 
+= All Of 

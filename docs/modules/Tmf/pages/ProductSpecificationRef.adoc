@@ -31,4 +31,4 @@ description: A target product schema reference. The reference object to the sche
 $ref of: xref:4.0.0@schemas:Tmf:TargetProductSchema.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/EntityRef.schema.json#EntityRef&#x27;}
+= All Of 

@@ -25,4 +25,4 @@ description: List of entities to which entitlements might apply.
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/AssetGroup.schema.json#AssetGroup&#x27;}
+= All Of 

@@ -31,3 +31,4 @@ description: A version number of the artifact
 type: string
 
 
+= All Of 

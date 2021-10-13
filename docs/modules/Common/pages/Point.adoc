@@ -27,3 +27,4 @@ type: string
 $ref of: xref:4.0.0@schemas:Common:GeoJSON.adoc[]
 
 
+= All Of 

@@ -37,4 +37,4 @@ description: The converted text
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Resource/ResourceEntity.schema.json#ResourceEntity&#x27;}
+= All Of 

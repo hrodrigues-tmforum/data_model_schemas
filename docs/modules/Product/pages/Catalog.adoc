@@ -85,4 +85,4 @@ description: List of root categories contained in this catalog
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Addressable.schema.json#Addressable&#x27;}{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#Extensible&#x27;}
+= All Of 

@@ -49,3 +49,4 @@ type: object
 $ref of: xref:4.0.0@schemas:Product:Any.adoc[]
 
 
+= All Of 

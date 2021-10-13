@@ -61,4 +61,4 @@ description: Alternate shipment proposal is used when the requested shipment is 
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../EngagedParty/ShipmentQualificationItem.schema.json#/definitions/ShipmentQualificationItem&#x27;}
+= All Of 

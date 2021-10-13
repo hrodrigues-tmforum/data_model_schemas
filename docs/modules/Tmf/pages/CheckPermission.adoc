@@ -49,4 +49,4 @@ description: Input: A list of entities for which permission is being tested. For
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
+= All Of 

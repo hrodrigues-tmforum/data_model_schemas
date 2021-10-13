@@ -67,3 +67,4 @@ description: The successfully acknowledged alarms
 type: array
 
 
+= All Of 

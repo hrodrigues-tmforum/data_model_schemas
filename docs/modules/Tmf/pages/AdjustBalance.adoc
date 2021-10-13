@@ -31,4 +31,4 @@ description: Should be present for types relating to reservation, such as reserv
 $ref of: xref:4.0.0@schemas:Tmf:ReserveBalanceRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;BalanceAction.schema.json#BalanceAction&#x27;}
+= All Of 

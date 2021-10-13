@@ -43,4 +43,4 @@ description: The parent problem from which the problems are to be ungrouped
 $ref of: xref:4.0.0@schemas:Tmf:ServiceProblemRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
+= All Of 
