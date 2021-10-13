@@ -43,5 +43,7 @@ description: The actual type of the target instance when needed for disambiguati
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:EngagedParty:Entity.adoc[]

@@ -93,4 +93,6 @@ $ref of: xref:v4.0@schemas:Product:TimePeriod.adoc[]
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+

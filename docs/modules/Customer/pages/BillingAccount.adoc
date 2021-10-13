@@ -25,5 +25,7 @@ description: Indicates whether the account follows a specific payment option suc
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Customer:PartyAccount.adoc[]

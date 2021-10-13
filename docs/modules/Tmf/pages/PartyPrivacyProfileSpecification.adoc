@@ -89,4 +89,6 @@ description: The version of the specification, in case it is desired to maintain
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

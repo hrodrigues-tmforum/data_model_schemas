@@ -55,5 +55,7 @@ description: Alternat product available
 $ref of: xref:v4.0@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Extensible.adoc[]

@@ -50,5 +50,7 @@ description: A value used to specify the next resource to retrieve or manipulate
 type: integer
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Extensible.adoc[]

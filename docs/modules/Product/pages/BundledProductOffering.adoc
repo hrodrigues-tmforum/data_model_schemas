@@ -49,5 +49,7 @@ description: A set of numbers that specifies the lower and upper limits for a Pr
 $ref of: xref:v4.0@schemas:Product:BundledProductOfferingOption.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Product:Extensible.adoc[]

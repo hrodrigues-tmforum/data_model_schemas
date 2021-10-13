@@ -59,7 +59,9 @@ $ref of: xref:v4.0@schemas:Common:.adoc[]
 $ref of: xref:v4.0@schemas:Common:.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Common:ManagementJob.adoc[]
 This schema extends: xref:v4.0@schemas:Common:Addressable.adoc[]
 This schema extends: xref:v4.0@schemas:Common:Extensible.adoc[]

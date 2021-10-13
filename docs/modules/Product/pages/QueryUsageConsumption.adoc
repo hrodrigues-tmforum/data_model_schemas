@@ -49,5 +49,7 @@ description: A reference to the account that owns the bucket
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Product:Entity.adoc[]

@@ -31,5 +31,7 @@ description: A target product schema reference. The reference object to the sche
 $ref of: xref:v4.0@schemas:Product:TargetProductSchema.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Product:EntityRef.adoc[]

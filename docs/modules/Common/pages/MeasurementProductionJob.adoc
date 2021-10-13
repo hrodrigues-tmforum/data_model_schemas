@@ -23,7 +23,9 @@ The data model is defined as shown below:
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Common:ManagementJob.adoc[]
 This schema extends: xref:v4.0@schemas:Common:Addressable.adoc[]
 This schema extends: xref:v4.0@schemas:Common:Extensible.adoc[]

@@ -61,5 +61,7 @@ description: This is a reference to a schedule. Allows consumers to schedule mod
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:LogicalResource.adoc[]

@@ -55,5 +55,7 @@ description: Card type. Might be used for display purposes
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

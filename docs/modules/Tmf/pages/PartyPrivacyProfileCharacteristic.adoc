@@ -35,5 +35,7 @@ description: Defines the purpose authorized or refused for the characteristic (e
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Characteristic.adoc[]

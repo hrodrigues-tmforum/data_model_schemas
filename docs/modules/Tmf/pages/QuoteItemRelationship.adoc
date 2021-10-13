@@ -31,5 +31,7 @@ description: Relationship type as relies on, bundles, etc...
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

@@ -73,5 +73,7 @@ description: A kind of value that the characteristic value can take on, such as 
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

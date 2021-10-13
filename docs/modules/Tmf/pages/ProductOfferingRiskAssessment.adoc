@@ -25,5 +25,7 @@ description: The product offering for which the assessment is to be carried out,
 $ref of: xref:v4.0@schemas:Tmf:ProductOfferingRef.json.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:RiskAssessment.adoc[]

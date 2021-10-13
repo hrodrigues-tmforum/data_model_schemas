@@ -61,5 +61,7 @@ description: A list of alternate availability - from other product stock , diffe
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Resource:Extensible.adoc[]

@@ -115,5 +115,7 @@ description: Destination of the item. E.g. customer home address. The location c
 $ref of: xref:v4.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

@@ -31,5 +31,7 @@ description: A CharacteristicValueSpecification object is used to define a set o
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Common:CharacteristicSpecificationBase.adoc[]

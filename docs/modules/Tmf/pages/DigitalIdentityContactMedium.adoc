@@ -43,5 +43,7 @@ description: The time period that the contact medium is valid for
 $ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Extensible.adoc[]

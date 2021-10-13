@@ -67,4 +67,6 @@ type: string
 $ref of: xref:v4.0@schemas:Customer:RelatedParty.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+

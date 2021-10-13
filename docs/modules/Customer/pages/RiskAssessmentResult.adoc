@@ -37,5 +37,7 @@ description: Period for which this result is considered valid and not stale
 $ref of: xref:v4.0@schemas:Customer:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Customer:Extensible.adoc[]

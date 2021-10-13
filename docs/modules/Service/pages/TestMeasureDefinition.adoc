@@ -85,5 +85,7 @@ description: The rule(s) associated with the measure threshold
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Service:Extensible.adoc[]

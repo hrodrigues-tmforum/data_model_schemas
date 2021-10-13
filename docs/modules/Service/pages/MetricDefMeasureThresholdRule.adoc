@@ -93,5 +93,7 @@ description: An interval of time of allowed crossing occurrences before a conseq
 $ref of: xref:v4.0@schemas:Service:Duration.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Service:Extensible.adoc[]

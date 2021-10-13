@@ -101,4 +101,6 @@ description: A particular form or variety of an artefact that is different from 
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

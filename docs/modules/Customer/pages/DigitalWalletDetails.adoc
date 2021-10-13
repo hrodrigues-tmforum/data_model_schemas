@@ -37,5 +37,7 @@ description: URI pointing at the digital wallet (e.g.: https://paypal.me/johndoe
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

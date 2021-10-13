@@ -49,5 +49,7 @@ description: A record of the action taken in this acknowledgement
 $ref of: xref:v4.0@schemas:Service:TrackingRecord.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Service:Entity.adoc[]

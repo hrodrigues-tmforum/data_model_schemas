@@ -91,5 +91,7 @@ description: Specification of the taskFlow.
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

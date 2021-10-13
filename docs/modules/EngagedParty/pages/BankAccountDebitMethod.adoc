@@ -75,5 +75,7 @@ $ref of: xref:v4.0@schemas:EngagedParty:RelatedParty.adoc[]
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:EngagedParty:Entity.adoc[]

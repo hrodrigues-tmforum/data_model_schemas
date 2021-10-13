@@ -31,4 +31,6 @@ description: A reference to the loyalty condition.
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

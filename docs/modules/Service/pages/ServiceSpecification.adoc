@@ -44,5 +44,7 @@ description: A list of Features for this specification.
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Service:EntitySpecification.adoc[]

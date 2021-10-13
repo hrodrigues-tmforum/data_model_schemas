@@ -43,5 +43,7 @@ description: Name of the account
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

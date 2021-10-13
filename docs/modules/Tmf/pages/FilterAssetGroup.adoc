@@ -31,5 +31,7 @@ description: The filter expression that defines the entities covered by a permis
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:AssetGroup.adoc[]

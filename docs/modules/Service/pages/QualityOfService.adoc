@@ -43,5 +43,7 @@ description: correponding service level specification
 $ref of: xref:v4.0@schemas:Service:ServiceLevelSpecificationRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Service:Extensible.adoc[]

@@ -109,7 +109,9 @@ type: string
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Resource:GSMACommons.adoc[]
 This schema extends: xref:v4.0@schemas:Resource:LocationCommons.adoc[]
 This schema extends: xref:v4.0@schemas:Resource:PhysicalResource.adoc[]

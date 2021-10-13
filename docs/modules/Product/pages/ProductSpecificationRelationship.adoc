@@ -43,5 +43,7 @@ description: The period for which the productSpecificationRelationship is valid
 $ref of: xref:v4.0@schemas:Product:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Product:Extensible.adoc[]

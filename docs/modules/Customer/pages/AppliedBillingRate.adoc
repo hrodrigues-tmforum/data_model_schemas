@@ -79,5 +79,7 @@ $ref of: xref:v4.0@schemas:Customer:BillRef.adoc[]
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

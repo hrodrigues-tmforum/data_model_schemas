@@ -31,5 +31,7 @@ description: The type of related order item, can be: dependency if the order ite
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Extensible.adoc[]

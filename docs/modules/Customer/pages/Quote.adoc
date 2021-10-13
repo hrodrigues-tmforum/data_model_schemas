@@ -157,5 +157,7 @@ description: Quote version - if the customer rejected the quote but  negotiation
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

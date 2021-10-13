@@ -61,5 +61,7 @@ description: Alternate shipment proposal is used when the requested shipment is 
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:ShipmentQualificationItem.adoc[]

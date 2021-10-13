@@ -49,5 +49,7 @@ description: Person or entity the check is addressed to
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

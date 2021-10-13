@@ -37,4 +37,6 @@ description: The agreement URL
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

@@ -161,5 +161,7 @@ description: the error message if the order closed by an error
 $ref of: xref:v4.0@schemas:Service:ServiceOrderErrorMessage.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Service:Entity.adoc[]

@@ -67,5 +67,7 @@ description: A list of order items embedded to this order item
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Service:Extensible.adoc[]

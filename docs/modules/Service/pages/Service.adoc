@@ -175,5 +175,7 @@ description: A list of places (Place [*]). Used to define a place useful for the
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Service:Entity.adoc[]

@@ -80,6 +80,8 @@ description: Category version
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Common:Addressable.adoc[]
 This schema extends: xref:v4.0@schemas:Common:Extensible.adoc[]

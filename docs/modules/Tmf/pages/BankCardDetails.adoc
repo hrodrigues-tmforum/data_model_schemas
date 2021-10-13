@@ -67,5 +67,7 @@ description: Type of the card, such as Credit, Debit
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

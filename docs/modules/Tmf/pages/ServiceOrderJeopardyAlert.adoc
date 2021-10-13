@@ -25,5 +25,7 @@ description: A list of order items corresponded to this alert
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:JeopardyAlert.adoc[]

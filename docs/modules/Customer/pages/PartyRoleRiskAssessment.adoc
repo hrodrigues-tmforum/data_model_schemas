@@ -25,5 +25,7 @@ description: The party role for which the assessment is to be carried out, must 
 $ref of: xref:v4.0@schemas:Customer:RelatedParty.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Customer:RiskAssessment.adoc[]

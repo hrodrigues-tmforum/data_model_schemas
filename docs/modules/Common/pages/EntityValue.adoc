@@ -31,5 +31,7 @@ description: Reference of the related entity.
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Common:Entity.adoc[]

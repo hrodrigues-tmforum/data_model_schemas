@@ -176,6 +176,8 @@ description: An amount of money levied on the price of a Product by a legislativ
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Addressable.adoc[]
 This schema extends: xref:v4.0@schemas:Tmf:Extensible.adoc[]

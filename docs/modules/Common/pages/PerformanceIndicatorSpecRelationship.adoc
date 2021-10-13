@@ -55,5 +55,7 @@ description: The period for which the performanceIndicatorSpecRelationship is va
 $ref of: xref:v4.0@schemas:Common:.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Common:Extensible.adoc[]

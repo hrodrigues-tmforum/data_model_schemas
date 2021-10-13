@@ -37,5 +37,7 @@ description: Actual value of the characteristio
 $ref of: xref:v4.0@schemas:Tmf:Value.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]
