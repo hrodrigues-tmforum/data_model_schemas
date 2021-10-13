@@ -31,4 +31,4 @@ description: type of the relationship, for example override, discount, etc.
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/EntityRef.schema.json#/definitions/EntityRef&#x27;}
+= All Of 

@@ -25,4 +25,4 @@ description: Resource function specification version
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/EntityRef.schema.json#EntityRef&#x27;}
+= All Of 

@@ -33,4 +33,4 @@ $ref of: xref:4.0.0@schemas:EngagedParty:WorkQualificationItem.adoc[]
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../EngagedParty/WorkQualification.schema.json#/definitions/WorkQualification&#x27;}
+= All Of 

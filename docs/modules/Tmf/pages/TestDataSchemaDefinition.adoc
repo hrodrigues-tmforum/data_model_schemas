@@ -25,4 +25,4 @@ description: The test data schema code
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Attachment.schema.json#Attachment&#x27;}
+= All Of 

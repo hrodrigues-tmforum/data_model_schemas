@@ -25,4 +25,4 @@ description: Version of the service candidate
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/EntityRef.schema.json#/definitions/EntityRef&#x27;}
+= All Of 

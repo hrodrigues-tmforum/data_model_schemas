@@ -80,4 +80,4 @@ description: List of root categories contained in this catalog
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
+= All Of 

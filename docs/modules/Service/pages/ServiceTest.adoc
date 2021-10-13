@@ -94,4 +94,4 @@ description: The specification for this test
 $ref of: xref:4.0.0@schemas:Service:ServiceTestSpecificationRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#Extensible&#x27;}{&#x27;$ref&#x27;: &#x27;../Common/Addressable.schema.json#Addressable&#x27;}
+= All Of 

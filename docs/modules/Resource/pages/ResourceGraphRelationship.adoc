@@ -31,4 +31,4 @@ description: A reference to the related resource graph.
 $ref of: xref:4.0.0@schemas:Resource:ResourceGraphRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#/definitions/Entity&#x27;}
+= All Of 

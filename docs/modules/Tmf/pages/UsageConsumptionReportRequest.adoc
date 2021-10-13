@@ -79,3 +79,4 @@ description: Validity period
 $ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
 
 
+= All Of 

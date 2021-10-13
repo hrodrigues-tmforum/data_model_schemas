@@ -31,3 +31,4 @@ description: A reference to the loyalty action.
 type: string
 
 
+= All Of 

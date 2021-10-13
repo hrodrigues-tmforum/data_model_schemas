@@ -25,3 +25,4 @@ description: A filter that can be used in conjunction with the monitored object 
 type: string
 
 
+= All Of 

@@ -37,4 +37,4 @@ description: he amount of capacity that is planned to be consumed or has been co
 $ref of: xref:4.0.0@schemas:Resource:ResourceCapacityDemand.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#/definitions/Extensible&#x27;}
+= All Of 

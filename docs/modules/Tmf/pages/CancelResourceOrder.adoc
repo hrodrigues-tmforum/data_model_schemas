@@ -23,4 +23,4 @@ The data model is defined as shown below:
 $ref of: xref:4.0.0@schemas:Tmf:ResourceOrderRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/CancelOrder.schema.json#CancelOrder&#x27;}
+= All Of 
