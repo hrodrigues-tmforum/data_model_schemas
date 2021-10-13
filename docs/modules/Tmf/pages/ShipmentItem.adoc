@@ -74,3 +74,5 @@ description: This data structure captures the product information.
 
 $ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#/definitions/Extensible&#x27;}

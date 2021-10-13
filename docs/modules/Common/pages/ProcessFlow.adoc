@@ -78,3 +78,5 @@ description: A list of taskflow related to this processFlow
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

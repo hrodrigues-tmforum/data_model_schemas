@@ -58,3 +58,5 @@ type: array
 === @type
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Ledger/DLImplementation.schema.json#DLImplementation&#x27;}

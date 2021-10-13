@@ -32,3 +32,5 @@ type: array
 === searchCriteria
 $ref of: xref:4.0.0@schemas:EngagedParty:ShipmentQualificationItem.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../EngagedParty/ShipmentQualification.schema.json#/definitions/ShipmentQualification&#x27;}

@@ -36,3 +36,5 @@ description: Priority level for applying this alteration among all the defined a
 
 type: integer
 
+
+{&#x27;$ref&#x27;: &#x27;../Product/ProductOfferingPrice.schema.json#/definitions/ProductOfferingPrice&#x27;}

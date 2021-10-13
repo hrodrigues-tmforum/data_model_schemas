@@ -28,3 +28,5 @@ type: string
 === apiType
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Resource/LogicalResource.schema.json#LogicalResource&#x27;}

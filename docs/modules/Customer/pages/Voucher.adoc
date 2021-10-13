@@ -58,3 +58,5 @@ type: string
 === @type
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Customer/PaymentMethod.schema.json#PaymentMethod&#x27;}

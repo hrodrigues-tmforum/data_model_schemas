@@ -36,3 +36,5 @@ description: The period for which the Relationship is valid
 
 $ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/EntityRef.schema.json#/definitions/EntityRef&#x27;, &#x27;description&#x27;: &#x27;The reference to the target product offering&#x27;}

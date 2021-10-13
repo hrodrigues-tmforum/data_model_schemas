@@ -24,3 +24,5 @@ description: the value of the logical resource. E.g &#x27;0746712345&#x27; for  
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;./Resource.schema.json#Resource&#x27;}

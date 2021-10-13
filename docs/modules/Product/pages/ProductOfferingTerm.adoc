@@ -42,3 +42,5 @@ description: The period for which the productOfferingTerm is valid
 
 $ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#Extensible&#x27;}

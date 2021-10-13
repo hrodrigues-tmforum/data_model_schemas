@@ -24,3 +24,5 @@ description: HTTP Error code extension
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/ErrorMessage.schema.json#/definition/ErrorMessage&#x27;}

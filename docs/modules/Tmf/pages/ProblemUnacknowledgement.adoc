@@ -48,3 +48,5 @@ description: A record of the action taken in this acknowledgement
 
 $ref of: xref:4.0.0@schemas:Tmf:TrackingRecord.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

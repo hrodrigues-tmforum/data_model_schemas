@@ -26,3 +26,5 @@ $ref of: xref:4.0.0@schemas:Common:EntityRef.adoc[]
 === userRole
 $ref of: xref:4.0.0@schemas:Common:UserRoleRef.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

@@ -64,3 +64,5 @@ $ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
 === version
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

@@ -22,3 +22,5 @@ The data model is defined as shown below:
 === testCaseDefinition
 $ref of: xref:4.0.0@schemas:Common:TestCaseDefinition.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/ManagedArtifact.schema.json#ManagedArtifact&#x27;}

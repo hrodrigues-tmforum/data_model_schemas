@@ -24,3 +24,5 @@ description: The party role for which the assessment is to be carried out, must 
 
 $ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;Entity.schema.json#Entity&#x27;}

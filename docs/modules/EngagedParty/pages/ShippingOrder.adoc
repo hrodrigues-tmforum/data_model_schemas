@@ -72,3 +72,5 @@ description: Shipping order can have a corresponding entry in the product catalo
 
 $ref of: xref:4.0.0@schemas:EngagedParty:ProductOfferingRef.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

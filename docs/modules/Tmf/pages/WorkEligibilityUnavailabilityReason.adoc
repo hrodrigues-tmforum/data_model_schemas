@@ -30,3 +30,5 @@ description: Unavailability reason label
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#/definitions/Extensible&#x27;}

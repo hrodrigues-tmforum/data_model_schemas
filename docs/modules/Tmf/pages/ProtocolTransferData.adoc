@@ -22,3 +22,4 @@ The data model is defined as shown below:
 === transportProtocol
 type: string
 
+

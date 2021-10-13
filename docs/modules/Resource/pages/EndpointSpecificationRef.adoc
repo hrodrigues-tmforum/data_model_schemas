@@ -36,3 +36,5 @@ description: A specification for the connection point (SAP) of the associated re
 
 $ref of: xref:4.0.0@schemas:Resource:ConnectionPointSpecificationRef.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;EntityRef.schema.json#EntityRef&#x27;}

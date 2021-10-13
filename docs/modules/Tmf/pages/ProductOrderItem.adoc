@@ -94,3 +94,5 @@ description: State of the order item : described in the state machine diagram
 
 $ref of: xref:4.0.0@schemas:Tmf:ProductOrderItemStateType.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
