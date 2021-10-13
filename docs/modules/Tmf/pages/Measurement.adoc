@@ -10,6 +10,7 @@ This schema is part of Common
 
 A counter/KPI to be used by the threshold rule
 
+None
 
 [#data_model]
 == Data model

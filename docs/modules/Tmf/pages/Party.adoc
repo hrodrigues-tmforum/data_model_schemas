@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Generic Party structure used to define commonalities between sub concepts of Individual and Organization.
 
+None
 
 [#data_model]
 == Data model

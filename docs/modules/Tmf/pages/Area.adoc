@@ -10,6 +10,7 @@ This schema is part of Common
 
 Area corresponds to a geographic area as a city, a locality, a district, etc.
 
+None
 
 [#data_model]
 == Data model

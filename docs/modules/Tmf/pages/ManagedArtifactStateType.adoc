@@ -10,6 +10,7 @@ This schema is part of Common
 
 Possible values for the state of a managed artifact: &#x27;incomplete&#x27;, &#x27;beta&#x27;, &#x27;stable&#x27;, &#x27;deprecated&#x27;
 
+None
 
 [#data_model]
 == Data model

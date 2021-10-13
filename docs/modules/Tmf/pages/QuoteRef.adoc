@@ -10,6 +10,7 @@ This schema is part of Customer
 
 It&#x27;s a Quote that has been executed previously
 
+None
 
 [#data_model]
 == Data model

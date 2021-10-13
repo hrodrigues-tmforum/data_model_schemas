@@ -10,6 +10,7 @@ This schema is part of Service
 
 The problem information for Middle B which is abstracted in the service layer from the issued event information by First B
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Place reference. PlaceRef defines the placeRefs where the products are sold or delivered.
 
+None
 
 [#data_model]
 == Data model

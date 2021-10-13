@@ -10,6 +10,7 @@ This schema is part of Resource
 
 A vertex in a resource graph.
 
+None
 
 [#data_model]
 == Data model

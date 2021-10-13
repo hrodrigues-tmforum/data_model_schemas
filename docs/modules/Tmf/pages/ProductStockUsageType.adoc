@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Possible values for the usage of the stock level - This is illustrative
 
+None
 
 [#data_model]
 == Data model

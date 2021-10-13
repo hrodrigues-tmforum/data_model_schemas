@@ -10,6 +10,7 @@ This schema is part of Common
 
 A period of time, either as a deadline (endDateTime only) a startDateTime only, or both
 
+None
 
 [#data_model]
 == Data model

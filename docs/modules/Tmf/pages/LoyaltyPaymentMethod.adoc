@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Reference to an account in a loyalty system that could be used to perform the payment.
 
+None
 
 [#data_model]
 == Data model

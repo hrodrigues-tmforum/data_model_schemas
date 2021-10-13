@@ -10,6 +10,7 @@ This schema is part of Common
 
 Receivers of the communication message.
 
+None
 
 [#data_model]
 == Data model

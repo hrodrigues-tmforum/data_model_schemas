@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Skills evaluated for an individual with a level and possibly with a limited validity when an obsolescence is defined (Ex: the first-aid certificate first level is limited to one year and an update training is required each year to keep the level).
 
+None
 
 [#data_model]
 == Data model

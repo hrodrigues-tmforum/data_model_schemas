@@ -10,6 +10,7 @@ This schema is part of Common
 
 The Threshold Type may be either LogicDefinition or PreDefined
 
+None
 
 [#data_model]
 == Data model

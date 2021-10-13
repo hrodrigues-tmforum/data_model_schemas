@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 An individual or an organization used as a contact point for a given account and accessed via some contact medium.
 
+None
 
 [#data_model]
 == Data model

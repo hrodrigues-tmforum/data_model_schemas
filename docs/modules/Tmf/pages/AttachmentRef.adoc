@@ -10,6 +10,7 @@ This schema is part of Common
 
 Attachment reference. An attachment complements the description of an element (for instance a product) through video, pictures
 
+None
 
 [#data_model]
 == Data model

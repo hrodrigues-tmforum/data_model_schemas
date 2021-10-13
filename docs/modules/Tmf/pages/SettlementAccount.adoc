@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A party account used for settlement purposes. It includes a description of the bill structure (frequency, presentation media, format and so on). It is a specialization of entity PartyAccount.
 
+None
 
 [#data_model]
 == Data model

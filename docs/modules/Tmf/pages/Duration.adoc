@@ -10,6 +10,7 @@ This schema is part of Common
 
 A time interval in a given unit of time
 
+None
 
 [#data_model]
 == Data model

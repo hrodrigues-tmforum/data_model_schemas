@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Task resource used to request migration of the Resource Function
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Process Flow ref class is used to provide process main information from Task sub resource.
 
+None
 
 [#data_model]
 == Data model

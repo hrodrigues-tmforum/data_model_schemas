@@ -10,6 +10,7 @@ This schema is part of Common
 
 A managed test case result resource
 
+None
 
 [#data_model]
 == Data model

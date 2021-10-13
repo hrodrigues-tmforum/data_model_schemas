@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 AccountReceivable reference. An account of money owed by a party to another entity in exchange for goods or services that have been delivered or used. An account receivable aggregates the amounts of one or more party accounts (billing or settlement) owned by a given party.
 
+None
 
 [#data_model]
 == Data model

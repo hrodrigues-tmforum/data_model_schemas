@@ -10,6 +10,7 @@ This schema is part of Service
 
 Possible values for the state of the ServiceProblem
 
+None
 
 [#data_model]
 == Data model

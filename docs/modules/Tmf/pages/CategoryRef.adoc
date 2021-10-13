@@ -10,6 +10,7 @@ This schema is part of Product
 
 The category for grouping recommendations
 
+None
 
 [#data_model]
 == Data model

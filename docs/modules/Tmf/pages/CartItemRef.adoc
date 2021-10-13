@@ -10,6 +10,7 @@ This schema is part of Customer
 
 CartIIem reference. A CartItem is an identified part of the shopping cart.
 
+None
 
 [#data_model]
 == Data model

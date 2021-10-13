@@ -10,6 +10,7 @@ This schema is part of Common
 
 AssociationSpecification is an association class that describes a type of relationship between two entities. This is a generic construct that may be used to describe relationship types and roles. The role and type of each entity in the relationship is given by an association role specification. Two role specifications are embedded in the association specification.
 
+None
 
 [#data_model]
 == Data model

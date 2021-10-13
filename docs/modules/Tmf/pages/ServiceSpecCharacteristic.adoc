@@ -10,6 +10,7 @@ This schema is part of Service
 
 This class represents the key features of this service specification. For example, bandwidth is a characteristic of many different types of services; if bandwidth is a relevant characteristic (e.g., from the point-of-view of a Customer obtaining this Service via a Product) then bandwidth would be a ServiceSpecCharacteristic for that particular Service.
 
+None
 
 [#data_model]
 == Data model

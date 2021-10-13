@@ -10,6 +10,7 @@ This schema is part of Product
 
 ProductOfferingQualification is used to perform a commercial eligibility. It allows to retrieve a list of productOffering that are commercially available in the context of the interaction (defined be place, channel, party, product).
 
+None
 
 [#data_model]
 == Data model

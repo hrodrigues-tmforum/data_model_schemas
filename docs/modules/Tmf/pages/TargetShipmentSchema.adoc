@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 The reference object to the schema and type of target shipment which is described by shipment specification
 
+None
 
 [#data_model]
 == Data model

@@ -12,6 +12,7 @@ Structured textual way of describing how to find a Property in an urban area (co
 defined differently).
 Note : Address corresponds to SID UrbanPropertyAddress
 
+None
 
 [#data_model]
 == Data model

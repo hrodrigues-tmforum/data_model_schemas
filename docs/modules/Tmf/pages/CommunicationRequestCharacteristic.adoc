@@ -10,6 +10,7 @@ This schema is part of Common
 
 The values of parameters which are used in the content if the content contains them.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Resource
 
 ProductStockRef is a reference to a product stock
 
+None
 
 [#data_model]
 == Data model

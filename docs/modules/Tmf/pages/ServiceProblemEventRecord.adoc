@@ -10,6 +10,7 @@ This schema is part of Service
 
 A record of an event (related to a service problem) received from another system
 
+None
 
 [#data_model]
 == Data model

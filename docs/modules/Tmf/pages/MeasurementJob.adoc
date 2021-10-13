@@ -10,6 +10,7 @@ This schema is part of Common
 
 A PM measurement job is the administrative entity defined by a client application to perform a periodic activity related to PM data.  The PM activities may be production of measurements, collection of measurements or PM objective monitoring (scheduled evaluation of thresholds).
 
+None
 
 [#data_model]
 == Data model

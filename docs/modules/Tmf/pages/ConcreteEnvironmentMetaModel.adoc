@@ -10,6 +10,7 @@ This schema is part of Common
 
 A managed concrete environment resource metamodel resource
 
+None
 
 [#data_model]
 == Data model

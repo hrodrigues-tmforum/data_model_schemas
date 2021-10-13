@@ -10,6 +10,7 @@ This schema is part of Common
 
 Base event with common attributes.
 
+None
 
 [#data_model]
 == Data model

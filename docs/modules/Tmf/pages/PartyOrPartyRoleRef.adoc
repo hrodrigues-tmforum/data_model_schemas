@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Party reference. A party represents an organization or an individual.
 
+None
 
 [#data_model]
 == Data model

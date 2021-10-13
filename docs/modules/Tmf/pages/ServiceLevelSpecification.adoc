@@ -12,6 +12,7 @@ A Service Level Specification represents a pre-defined or negotiated set of Serv
 Objectives. In addition, certain consequences are associated with not meeting the Service Level 
 Objectives. Service Level Agreements are expressed in terms of Service Level Specifications.
 
+None
 
 [#data_model]
 == Data model

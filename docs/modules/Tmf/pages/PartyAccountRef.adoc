@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 PartyAccount reference. A party account is an arrangement that a party has with an enterprise that provides products to the party.
 
+None
 
 [#data_model]
 == Data model

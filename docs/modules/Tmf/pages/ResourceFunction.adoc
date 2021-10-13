@@ -10,6 +10,7 @@ This schema is part of Resource
 
 A ResourceFunction is a behavior to transform inputs of any nature into outputs of any nature independently from the way it is provided.
 
+None
 
 [#data_model]
 == Data model

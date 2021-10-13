@@ -10,6 +10,7 @@ This schema is part of Common
 
 The reference object to the schema and type of target entity which is described by an entity specification
 
+None
 
 [#data_model]
 == Data model

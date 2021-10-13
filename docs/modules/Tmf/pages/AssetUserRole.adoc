@@ -10,6 +10,7 @@ This schema is part of Common
 
 The AssetUserRole is the detailed information concerning an individual user role
 
+None
 
 [#data_model]
 == Data model

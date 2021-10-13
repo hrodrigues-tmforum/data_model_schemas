@@ -10,6 +10,7 @@ This schema is part of Customer
 
 This is a generalized task resource allowing assessment of risks - it is expected that the resource will be specialized to reflect specific risks, such as risks associated with a party, or with an order, etc.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Service
 
 Structure used to describe relationship between serviceQualification items from the same serviceQualification.
 
+None
 
 [#data_model]
 == Data model

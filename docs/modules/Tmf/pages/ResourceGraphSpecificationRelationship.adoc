@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Describes link between resource graph specifications.
 
+None
 
 [#data_model]
 == Data model

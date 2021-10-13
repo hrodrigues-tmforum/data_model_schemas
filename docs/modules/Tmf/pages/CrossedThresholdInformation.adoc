@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Identifies the details of the threshold that has been crossed.
 
+None
 
 [#data_model]
 == Data model

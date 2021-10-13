@@ -10,6 +10,7 @@ This schema is part of Customer
 
 The Balance Reserve Operation resource is a detailed description of a balance reserve operation requested over a subscription
 
+None
 
 [#data_model]
 == Data model

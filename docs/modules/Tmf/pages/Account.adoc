@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Generic Account structure used to define commonalities between sub concepts of PartyAccount and Financial Account.
 
+None
 
 [#data_model]
 == Data model

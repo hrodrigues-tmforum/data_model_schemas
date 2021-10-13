@@ -10,6 +10,7 @@ This schema is part of Common
 
 The entity which will be changed or configured while the change request is executed.
 
+None
 
 [#data_model]
 == Data model

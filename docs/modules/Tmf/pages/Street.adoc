@@ -10,6 +10,7 @@ This schema is part of Common
 
 A street is a road in a city or locality that has buildings that are usually close together along one or both sides
 
+None
 
 [#data_model]
 == Data model

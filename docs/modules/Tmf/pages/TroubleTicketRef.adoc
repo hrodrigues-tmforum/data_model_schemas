@@ -10,6 +10,7 @@ This schema is part of Common
 
 TroubleTicket reference, for when a Trouble Ticket is used by other entities
 
+None
 
 [#data_model]
 == Data model

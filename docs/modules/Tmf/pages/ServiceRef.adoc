@@ -10,6 +10,7 @@ This schema is part of Service
 
 Service reference, for when Service is used by other entities
 
+None
 
 [#data_model]
 == Data model

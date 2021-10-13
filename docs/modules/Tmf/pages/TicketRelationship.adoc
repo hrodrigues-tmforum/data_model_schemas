@@ -10,6 +10,7 @@ This schema is part of Common
 
 Represents a relationship between trouble tickets
 
+None
 
 [#data_model]
 == Data model

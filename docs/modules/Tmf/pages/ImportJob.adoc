@@ -10,6 +10,7 @@ This schema is part of Common
 
 Represents a task used to import resources from a file
 
+None
 
 [#data_model]
 == Data model

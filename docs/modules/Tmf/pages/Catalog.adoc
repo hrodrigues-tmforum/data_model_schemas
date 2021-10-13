@@ -10,6 +10,7 @@ This schema is part of Product
 
 A collection of Product Offerings, intended for a specific DistributionChannel, enhanced with additional information such as SLA parameters, invoicing and shipping details
 
+None
 
 [#data_model]
 == Data model

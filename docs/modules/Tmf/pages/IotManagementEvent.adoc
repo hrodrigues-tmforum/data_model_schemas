@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Generic IotManagementEvent structure used to define commonalities between sub concepts of PartyIotManagementEvent and Financial IotManagementEvent.
 
+None
 
 [#data_model]
 == Data model

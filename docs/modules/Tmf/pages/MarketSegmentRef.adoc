@@ -10,6 +10,7 @@ This schema is part of MarketingSales
 
 provides references to the corresponding market segment as target of product offerings. A market segment is grouping of Parties, GeographicAreas, SalesChannels, and so forth.
 
+None
 
 [#data_model]
 == Data model

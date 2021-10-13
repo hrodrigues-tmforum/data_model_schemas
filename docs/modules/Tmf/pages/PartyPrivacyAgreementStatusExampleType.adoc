@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Possible values for the status of party privacy profile agreement (for example: intialized, inProgress, rejected, pendingUpdate, validated)
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Characteristics of the change request to instantiate or to modify
 
+None
 
 [#data_model]
 == Data model

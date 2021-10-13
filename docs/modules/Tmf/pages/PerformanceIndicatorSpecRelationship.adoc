@@ -10,6 +10,7 @@ This schema is part of Common
 
 Type of relationship such as aggregation, migration, substitution, dependency, exclusivity
 
+None
 
 [#data_model]
 == Data model

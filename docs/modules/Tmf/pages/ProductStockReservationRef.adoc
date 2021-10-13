@@ -10,6 +10,7 @@ This schema is part of Product
 
 Product Stock Reservation reference
 
+None
 
 [#data_model]
 == Data model

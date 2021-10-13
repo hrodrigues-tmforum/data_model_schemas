@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 An amount, usually of money, that represents the actual price paid by the Customer for this item or this order.
 
+None
 
 [#data_model]
 == Data model

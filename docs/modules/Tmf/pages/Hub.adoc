@@ -10,6 +10,7 @@ This schema is part of Common
 
 A Hub is used to subscribe to an event notification
 
+None
 
 [#data_model]
 == Data model

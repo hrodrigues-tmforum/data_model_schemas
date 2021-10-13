@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A characteristic quality or distinctive feature of an agreement.
 
+None
 
 [#data_model]
 == Data model

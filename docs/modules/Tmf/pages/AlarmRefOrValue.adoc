@@ -10,6 +10,7 @@ This schema is part of Resource
 
 An alarm defined by reference or value. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the alarm entity and not the RelatedAlarmRefOrValue class itself
 
+None
 
 [#data_model]
 == Data model

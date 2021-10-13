@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A specific type of agreement that formalizes the privacy profiles requested for a party
 
+None
 
 [#data_model]
 == Data model

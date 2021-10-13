@@ -10,6 +10,7 @@ This schema is part of Customer
 
 An applied billing rate has dynamic characteristics according to the its type (characteristics are based on the service type, line of business or on others parameters)
 
+None
 
 [#data_model]
 == Data model

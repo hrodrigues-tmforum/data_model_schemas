@@ -10,6 +10,7 @@ This schema is part of Product
 
 A list of recommendation items. Every item is a product offering and its rank.
 
+None
 
 [#data_model]
 == Data model

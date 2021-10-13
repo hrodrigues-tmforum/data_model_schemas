@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A list of shipping order items
 
+None
 
 [#data_model]
 == Data model

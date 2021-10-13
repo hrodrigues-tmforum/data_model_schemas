@@ -10,6 +10,7 @@ This schema is part of Product
 
 RelatedProductOrderItem (ProductOrder item) .The product order item which triggered product creation/change/termination.
 
+None
 
 [#data_model]
 == Data model

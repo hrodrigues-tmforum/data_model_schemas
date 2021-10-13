@@ -10,6 +10,7 @@ This schema is part of Common
 
 The period of time for which Capacity or CapacityDemand applies.
 
+None
 
 [#data_model]
 == Data model

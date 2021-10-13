@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Work specification reference
 
+None
 
 [#data_model]
 == Data model

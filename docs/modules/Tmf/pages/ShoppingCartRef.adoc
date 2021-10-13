@@ -10,6 +10,7 @@ This schema is part of Customer
 
 ShoppingCart (ShoppingCartRef) . The shopping cart which the recommendation is related with.
 
+None
 
 [#data_model]
 == Data model

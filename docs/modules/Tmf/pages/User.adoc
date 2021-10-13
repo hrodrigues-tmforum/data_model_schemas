@@ -10,6 +10,7 @@ This schema is part of Common
 
 Generic User structure used to define commonalities between sub concepts of PartyUser and Financial User.
 
+None
 
 [#data_model]
 == Data model

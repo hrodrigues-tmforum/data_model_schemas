@@ -11,6 +11,7 @@ This schema is part of Service
 The service test specification describes the service test in terms of parameters to be configured and 
 measures to be taken.
 
+None
 
 [#data_model]
 == Data model

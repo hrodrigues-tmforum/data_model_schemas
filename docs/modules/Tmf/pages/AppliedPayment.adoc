@@ -10,6 +10,7 @@ This schema is part of Customer
 
 The applied payment is the result of lettering process. It enables to assign automatically or manually part of incoming payment amount to a bill.
 
+None
 
 [#data_model]
 == Data model

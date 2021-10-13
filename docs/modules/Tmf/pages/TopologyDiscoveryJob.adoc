@@ -10,6 +10,7 @@ This schema is part of Common
 
 Represents a task used to discover topology from providers
 
+None
 
 [#data_model]
 == Data model

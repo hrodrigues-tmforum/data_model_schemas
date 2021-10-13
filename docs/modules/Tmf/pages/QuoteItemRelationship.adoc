@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Used to describe relationship between quote item. These relationship could have an impact on pricing and conditions
 
+None
 
 [#data_model]
 == Data model

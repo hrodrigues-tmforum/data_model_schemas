@@ -10,6 +10,7 @@ This schema is part of Service
 
 The service test specification used by the service test.
 
+None
 
 [#data_model]
 == Data model

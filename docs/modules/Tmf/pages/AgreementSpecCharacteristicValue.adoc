@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A number or text that can be assigned to an agreement specification characteristic.
 
+None
 
 [#data_model]
 == Data model

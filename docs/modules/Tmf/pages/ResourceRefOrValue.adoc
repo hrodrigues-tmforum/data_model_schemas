@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Resource is an abstract entity that describes the common set of attributes shared by all concrete resources. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the Resource entity and not the related ResourceRefOrValue class itself
 
+None
 
 [#data_model]
 == Data model

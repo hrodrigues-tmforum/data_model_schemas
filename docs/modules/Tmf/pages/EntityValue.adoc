@@ -10,6 +10,7 @@ This schema is part of Common
 
 Base entity value  schema for use in TMForum Open-APIs
 
+None
 
 [#data_model]
 == Data model

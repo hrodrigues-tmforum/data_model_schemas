@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Detailed information for a bank account debit. Bear in mind that this could be extended to add any required authorization fields to allow recurring payments
 
+None
 
 [#data_model]
 == Data model

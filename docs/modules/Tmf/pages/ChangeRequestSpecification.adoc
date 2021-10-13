@@ -10,6 +10,7 @@ This schema is part of Common
 
 Defines a set of attributes related to Change Request.
 
+None
 
 [#data_model]
 == Data model

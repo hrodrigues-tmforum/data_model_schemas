@@ -10,6 +10,7 @@ This schema is part of Service
 
 A collection of services that support this service (links between CFS -&gt; RFS)
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Product
 
 The reference object to the schema and type of target product which is described by product specification
 
+None
 
 [#data_model]
 == Data model

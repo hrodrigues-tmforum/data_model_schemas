@@ -10,6 +10,7 @@ This schema is part of Resource
 
 QueryProductStock is used to query product stock availability
 
+None
 
 [#data_model]
 == Data model

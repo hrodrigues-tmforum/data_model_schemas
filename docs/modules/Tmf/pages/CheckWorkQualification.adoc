@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 CheckWorkQualification is used to validate specific units of work
 
+None
 
 [#data_model]
 == Data model

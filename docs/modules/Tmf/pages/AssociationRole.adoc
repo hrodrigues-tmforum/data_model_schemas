@@ -10,6 +10,7 @@ This schema is part of Common
 
 This embedded object represents the role and type of each entity involved in a relationship.
 
+None
 
 [#data_model]
 == Data model

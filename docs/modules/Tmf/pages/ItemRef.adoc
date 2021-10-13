@@ -10,6 +10,7 @@ This schema is part of Common
 
 Describes a specific item contained in a parent element
 
+None
 
 [#data_model]
 == Data model

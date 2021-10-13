@@ -10,6 +10,7 @@ This schema is part of Product
 
 A loyalty event notification.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Resource
 
 Heal policy reference.
 
+None
 
 [#data_model]
 == Data model

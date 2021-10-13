@@ -10,6 +10,7 @@ This schema is part of Resource
 
 An identified part of the order. A resource order is decomposed into one or more order items.
 
+None
 
 [#data_model]
 == Data model

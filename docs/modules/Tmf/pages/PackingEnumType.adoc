@@ -10,6 +10,7 @@ This schema is part of Common
 
 Enumeration of supported packing/packaging. All extensions allowed.
 
+None
 
 [#data_model]
 == Data model

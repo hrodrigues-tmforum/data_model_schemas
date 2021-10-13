@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Structure used to describe relationship between WorkQualification item from the same WorkQualification.
 
+None
 
 [#data_model]
 == Data model

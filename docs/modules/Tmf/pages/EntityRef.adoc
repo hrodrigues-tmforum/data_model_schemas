@@ -10,6 +10,7 @@ This schema is part of Common
 
 Entity reference schema to be use for all entityRef class.
 
+None
 
 [#data_model]
 == Data model

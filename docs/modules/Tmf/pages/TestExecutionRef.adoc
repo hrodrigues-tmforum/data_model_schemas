@@ -10,6 +10,7 @@ This schema is part of Common
 
 A reference to an execution of a test activity
 
+None
 
 [#data_model]
 == Data model

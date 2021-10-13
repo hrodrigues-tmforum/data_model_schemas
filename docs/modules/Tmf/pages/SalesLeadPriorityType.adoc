@@ -10,6 +10,7 @@ This schema is part of MarketingSales
 
 Urgency of working this salesLead
 
+None
 
 [#data_model]
 == Data model

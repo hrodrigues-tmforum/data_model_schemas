@@ -10,6 +10,7 @@ This schema is part of Customer
 
 The structure of the bill for party accounts (billing or settlement).
 
+None
 
 [#data_model]
 == Data model

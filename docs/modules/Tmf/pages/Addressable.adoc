@@ -10,6 +10,7 @@ This schema is part of Common
 
 Base schema for adressable entities
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Sampling rate of the collection or production of performance indicators.
 
+None
 
 [#data_model]
 == Data model

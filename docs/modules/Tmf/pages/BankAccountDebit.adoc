@@ -10,6 +10,7 @@ This schema is part of Customer
 
 A bank account debit method of payment. This could be extended to add any required authorization fields to allow recurring payments
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Product
 
 Loyalty rule, containing conditions, event types and actions.
 
+None
 
 [#data_model]
 == Data model

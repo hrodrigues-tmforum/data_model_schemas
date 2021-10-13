@@ -10,6 +10,7 @@ This schema is part of Resource
 
 A set of alarm ids identifying the alarms that are underlying this problem.
 
+None
 
 [#data_model]
 == Data model

@@ -10,6 +10,7 @@ This schema is part of Common
 
 Specifies a monitored object class (a string) in conjunction with a filter object.
 
+None
 
 [#data_model]
 == Data model

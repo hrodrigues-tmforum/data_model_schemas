@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Party role reference. A party role represents the part played by a party in a given context.
 
+None
 
 [#data_model]
 == Data model

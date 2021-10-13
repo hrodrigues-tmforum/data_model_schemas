@@ -10,6 +10,7 @@ This schema is part of Common
 
 List of monitored instances
 
+None
 
 [#data_model]
 == Data model

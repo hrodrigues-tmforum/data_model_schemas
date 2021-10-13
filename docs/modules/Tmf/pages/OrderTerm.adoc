@@ -10,6 +10,7 @@ This schema is part of Customer
 
 Description of a productTerm linked to this orderItem. This represent a commitment with a duration
 
+None
 
 [#data_model]
 == Data model

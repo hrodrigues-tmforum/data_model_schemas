@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 A specification that can be used when instantiating a service level agreement (SLA)
 
+None
 
 [#data_model]
 == Data model

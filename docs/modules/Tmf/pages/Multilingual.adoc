@@ -10,6 +10,7 @@ This schema is part of Common
 
 Serialization format for multilingual text
 
+None
 
 [#data_model]
 == Data model

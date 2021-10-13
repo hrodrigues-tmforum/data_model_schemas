@@ -10,6 +10,7 @@ This schema is part of Common
 
 Document is a tangible output from an activity
 
+None
 
 [#data_model]
 == Data model

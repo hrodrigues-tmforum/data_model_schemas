@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 An individual might be evaluated for its worthiness and this evaluation might be based on a credit rating given by a credit agency.
 
+None
 
 [#data_model]
 == Data model

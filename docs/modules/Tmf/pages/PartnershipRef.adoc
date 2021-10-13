@@ -10,6 +10,7 @@ This schema is part of EngagedParty
 
 Partnership reference. A partnership contains all the information for the setup of a partnership of a given kind. This includes the list of identified role types for the partnership with the corresponding agreement specifications.
 
+None
 
 [#data_model]
 == Data model

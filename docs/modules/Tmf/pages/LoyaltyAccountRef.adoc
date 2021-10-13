@@ -10,6 +10,7 @@ This schema is part of Product
 
 Reference to a loyalty account.
 
+None
 
 [#data_model]
 == Data model
