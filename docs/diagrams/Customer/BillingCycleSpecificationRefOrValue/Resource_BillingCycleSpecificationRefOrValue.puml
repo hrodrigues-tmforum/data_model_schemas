@@ -1,0 +1,35 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class BillingCycleSpecificationRefOrValue <<Pivot>> {
+    billingDateShift : Integer
+    billingPeriod : String
+    chargeDateOffset : Integer
+    creditDateOffset : Integer
+    dateShift : Integer
+    description : String
+    frequency : String
+    href : String
+    id : String
+    mailingDateOffset : Integer
+    name : String [1]
+    paymentDueDateOffset : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+
+@enduml

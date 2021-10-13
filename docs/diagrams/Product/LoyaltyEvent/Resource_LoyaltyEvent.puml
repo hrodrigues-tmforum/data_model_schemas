@@ -1,0 +1,32 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class LoyaltyEvent <<Pivot>> {
+    event : Any
+    eventTime : String
+    eventType : String
+    memberId : String
+}
+
+class LoyaltyProgramProductRef  <<Ref>> {
+    href : String
+    id : String [1]
+    @baseType : String
+    @referredType : Uri
+    @schemaLocation : Uri
+    @type : String
+}
+
+LoyaltyEvent *-->  "0..1" LoyaltyProgramProductRef : eventId
+
+@enduml

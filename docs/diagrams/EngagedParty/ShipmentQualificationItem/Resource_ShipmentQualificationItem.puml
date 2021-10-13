@@ -1,0 +1,675 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ShipmentQualificationItem <<Pivot>> {
+    expectedDeliveryDate : DateTime
+    expirationDate : DateTime
+    id : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EligibilityUnavailabilityReason  {
+    code : String
+    href : Uri
+    id : String
+    label : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ShipmentRefOrValue  {
+    collectionDate : DateTime
+    completionDate : DateTime
+    deliveryDate : DateTime
+    description : String
+    expectedDeliveryDate : DateTime
+    href : Uri
+    id : String
+    name : String
+    requestedDeliveryDate : DateTime
+    state : String
+    weight : Quantity
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ShipmentTrackingRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedShipment  {
+    href : Uri
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ShipmentSpecificationRefOrValue  {
+    description : String
+    href : Uri
+    id : String
+    isBundle : Boolean
+    lastUpdate : DateTime
+    lifecycleStatus : String
+    name : String
+    validFor : TimePeriod
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ShipmentSpecificationRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    name : String
+    relationshipType : String [1]
+    role : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AssociationSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicSpecification  {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class CharacteristicSpecificationRelationship  {
+    characteristicSpecificationId : String
+    name : String
+    parentSpecificationHref : Uri
+    parentSpecificationId : String
+    relationshipType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetShipmentSchema  {
+    @schemaLocation : String [1]
+    @type : String [1]
+}
+
+class ConstraintRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExternalIdentifier  {
+    externalIdentifierType : String
+    href : Uri
+    id : String [1]
+    owner : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPlaceRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductPrice  {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingPriceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class BillingAccountRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    ratingType : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Price  {
+    dutyFreeAmount : Money
+    href : Uri
+    id : String
+    percentage : Float
+    taxIncludedAmount : Money
+    taxRate : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PriceAlteration  {
+    applicationDuration : Integer
+    description : String
+    href : Uri
+    id : String
+    name : String
+    priceType : String [1]
+    priority : Integer
+    recurringChargePeriod : String
+    unitOfMeasure : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ShippingInstruction  {
+    carrierId : String
+    carrierName : String
+    carrierServiceCode : String
+    deliveryAttempts : Integer
+    deliverySpeed : String
+    deliveryTimeSlot : TimePeriod
+    href : Uri
+    id : String
+    insuredValue : Money
+    labelMessage : String
+    packageType : String
+    receiptConfirmation : String
+    shippingType : String
+    signatureRequired : Boolean
+    signatureRequiredBy : SignatureRequiredByType
+    warehouseId : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class SignatureRequiredByType <<Enumeration>> {
+    adult
+    receiver
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedPartyWithContactInfo  {
+    href : Uri
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentMethodRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ShipmentItem  {
+    action : ShipmentItemActionType
+    id : String
+    quantity : String
+    sku : String
+    weight : Quantity
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRefOrValue  {
+    description : String
+    href : String
+    id : String
+    isBundle : Boolean
+    isCustomerVisible : Boolean
+    name : String
+    orderDate : DateTime
+    productSerialNumber : String
+    startDate : DateTime
+    status : ProductStatusType
+    terminationDate : DateTime
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductSpecificationRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TargetProductSchema  {
+    @schemaLocation : Uri [1]
+    @type : String [1]
+}
+
+class RelatedProductOrderItem  {
+    href : Uri
+    id : String
+    orderItemAction : String
+    orderItemId : String [1]
+    productOrderHref : String
+    productOrderId : String [1]
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ServiceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementItemRef  <<Ref>> {
+    agreementItemId : String
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductTerm  {
+    description : String
+    duration : Quantity
+    href : Uri
+    id : String
+    name : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductStatusType <<Enumeration>> {
+    created
+    pendingActive
+    cancelled
+    active
+    pendingTerminate
+    terminated
+    suspended
+    aborted
+}
+
+class ReserveProductStockRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductStockRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ShipmentItemActionType <<Enumeration>> {
+    add
+    modify
+    delete
+    noChange
+}
+
+ShipmentQualificationItem *-->  "0..1" ShipmentRefOrValue : shipment
+
+ShipmentRefOrValue *-->  "0..*" AttachmentRefOrValue : attachment
+
+ShipmentRefOrValue *-->  "0..*" ExternalIdentifier : externalIdentifier
+
+ShipmentRefOrValue *-->  "0..*" Note : note
+
+ShipmentRefOrValue *-->  "0..1" RelatedPlaceRefOrValue : placeTo
+
+ShipmentRefOrValue *-->  "0..1" RelatedPlaceRefOrValue : placeFrom
+
+ShipmentRefOrValue *-->  "0..*" Characteristic : shipmentCharacteristic
+
+ShipmentRefOrValue *-->  "0..1" ShippingInstruction : shippingInstruction
+
+ShipmentRefOrValue *-->  "0..1" ProductPrice : shipmentPrice
+
+ShipmentRefOrValue *-->  "0..*" ShipmentItem : shipmentItem
+
+ShipmentRefOrValue *-->  "0..1" ShipmentSpecificationRefOrValue : shipmentSpecification
+
+ShipmentSpecificationRefOrValue *-right-> "0..*" AttachmentRefOrValue : attachment
+
+ShipmentSpecificationRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+ProductPrice *-->  "0..1" BillingAccountRef : billingAccount
+
+ProductPrice *-->  "0..1" ProductOfferingPriceRef : productOfferingPrice
+
+ProductPrice *-->  "1" Price : price
+
+ProductPrice *-->  "0..*" PriceAlteration : productPriceAlteration
+
+ProductOfferingPriceRef "0..1" <--* PriceAlteration : productOfferingPrice
+
+Price "1" <--* PriceAlteration : price
+
+Note "0..*" <--* ShippingInstruction : note
+
+Characteristic "0..*" <--* ShippingInstruction : instructionCharacteristic
+
+ShippingInstruction -right[hidden]-> SignatureRequiredByType
+
+ExternalIdentifier "0..*" <--* ShipmentItem : externalIdentifier
+
+BillingAccountRef "0..1" <--* ProductRefOrValue : billingAccount
+
+ShipmentItem *-->  "0..1" ProductRefOrValue : product
+
+Price "0..1" <--* ShipmentItem : shipmentItemPrice
+
+Characteristic "0..*" <--* ShipmentItem : characteristic
+
+ShipmentItem -right[hidden]-> ShipmentItemActionType
+
+ProductRefOrValue *-right-> "0..*" ProductRefOrValue : product
+
+RelatedParty "0..*" <--* ProductRefOrValue : relatedParty
+
+RelatedPlaceRefOrValue "0..*" <--* ProductRefOrValue : place
+
+Characteristic "0..*" <--* ProductRefOrValue : productCharacteristic
+
+ProductPrice "0..*" <--* ProductRefOrValue : productPrice
+
+ProductRefOrValue -right[hidden]-> ProductStatusType
+
+ProductRefOrValue *-->  "0..*" ProductRelationship : productRelationship
+
+ProductRefOrValue "1" <--* ProductRelationship : product
+
+AgreementItemRef "0..*" <--* ProductRefOrValue : agreement
+
+ProductRefOrValue *-->  "0..*" RelatedProductOrderItem : productOrderItem
+
+ProductRefOrValue *-->  "0..1" ProductOfferingRef : productOffering
+
+ProductRefOrValue *-->  "0..*" ResourceRef : realizingResource
+
+ProductRefOrValue *-->  "0..*" ProductTerm : productTerm
+
+ProductRefOrValue *-->  "0..*" ServiceRef : realizingService
+
+ProductRefOrValue *-->  "0..1" ProductSpecificationRef : productSpecification
+
+PaymentMethodRef "0..1" <-left-* ShipmentRefOrValue : paymentMethod
+
+ShipmentRefOrValue *-right-> "0..*" RelatedShipment : relatedShipment
+
+RelatedPartyWithContactInfo "0..*" <--* ShipmentRefOrValue : relatedParty
+
+ShipmentTrackingRef "0..1" <--* ShipmentRefOrValue : shipmentTracking
+
+ConstraintRef "0..*" <-left-* ShipmentSpecificationRefOrValue : constraint
+
+ShipmentSpecificationRefOrValue *-->  "0..1" TargetShipmentSchema : targetShipmentSchema
+
+TargetShipmentSchema -right[hidden]-> RelatedParty
+
+ShipmentSpecificationRefOrValue *-->  "0..*" ShipmentSpecificationRelationship : shipmentSpecRelationship
+
+ShipmentSpecificationRelationship -right[hidden]-> TargetShipmentSchema
+
+ShipmentSpecificationRefOrValue *-->  "0..*" CharacteristicSpecification : shipmentSpecificationCharacteristic
+
+CharacteristicSpecification -right[hidden]-> ShipmentSpecificationRelationship
+
+ShipmentItem *-->  "0..1" ProductStockRef : productStockRef
+
+ShipmentItem *-->  "0..1" ReserveProductStockRef : productReservationRef
+
+ShipmentQualificationItem *-right-> "0..*" EligibilityUnavailabilityReason : eligibilityUnavailabilityReason
+
+CharacteristicSpecification *-->  "0..*" CharacteristicSpecificationRelationship : charSpecRelationship
+
+CharacteristicSpecification *-->  "0..*" CharacteristicValueSpecification : characteristicValueSpecification
+
+ShipmentSpecificationRelationship *-->  "0..1" AssociationSpecificationRef : associationSpec
+
+Characteristic *-right-> "0..*" CharacteristicRelationship : characteristicRelationship
+
+RelatedPartyWithContactInfo *-right-> "0..*" ContactMedium : contactMedium
+
+ContactMedium *-->  "0..1" MediumCharacteristic : characteristic
+
+ProductSpecificationRef *-->  "0..1" TargetProductSchema : targetProductSchema
+
+@enduml

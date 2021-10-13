@@ -1,0 +1,32 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class RiskScore <<Pivot>> {
+    riskName : RiskType
+    score : Float
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RiskType <<Enumeration>> {
+    FraudRisk
+    BadPaymentRisk
+    CreditGamingRisk
+    IDConfidenceRisk
+    PaymentMethodRisk
+}
+
+RiskScore -right[hidden]-> RiskType
+
+@enduml

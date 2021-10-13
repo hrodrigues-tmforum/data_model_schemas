@@ -1,0 +1,169 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class InitiatePayment <<Pivot>> {
+    InitiatePaymentDate  : DateTime
+    InitiatedPaymentDate  : DateTime
+    href : String
+    id : String
+    state : String
+}
+
+class PaymentRefOrValue  {
+    amount : Money
+    authorizationCode : String
+    correlatorId : String
+    description : String
+    href : String
+    id : String
+    name : String
+    paymentDate : DateTime
+    status : String
+    statusDate : DateTime
+    taxAmount : Money
+    totalAmount : Money
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ChannelRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PointOfInteraction  {
+    href : Uri
+    id : String
+    modeOfEntry : String
+    retrievalReferenceNumber : String
+    transactionDate : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentItem  {
+    amount : Money
+    href : Uri
+    id : String [1]
+    name : String
+    taxAmount : Money
+    totalAmount : Money
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PaymentMethodRefOrValue  {
+    authorizationCode : String
+    description : String
+    href : Uri
+    id : String
+    isPreferred : Boolean
+    name : String [1]
+    status : String
+    statusDate : DateTime
+    statusReason : String
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String [1]
+}
+
+class RelatedPlace  {
+    href : String
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AuthorizePaymentRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+InitiatePayment *-->  "0..1" PaymentRefOrValue : initiatedPayment 
+
+PaymentRefOrValue *-->  "1" AccountRef : account
+
+PaymentRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+PaymentRefOrValue *-->  "1" PaymentMethodRefOrValue : paymentMethod
+
+AccountRef "0..*" <--* PaymentMethodRefOrValue : account
+
+RelatedParty "0..1" <--* PaymentMethodRefOrValue : relatedParty
+
+ChannelRef "0..1" <-left-* PaymentRefOrValue : channel
+
+PaymentRefOrValue *-right-> "0..*" PaymentItem : paymentItem
+
+PointOfInteraction "0..1" <--* PaymentRefOrValue : pointOfInteraction
+
+PaymentMethodRefOrValue *-->  "0..1" RelatedPlace : relatedPlace
+
+InitiatePayment *-right-> "0..1" AuthorizePaymentRef : authorizedPayment 
+
+PointOfInteraction *-right-> "0..1" ResourceRef : resource
+
+@enduml

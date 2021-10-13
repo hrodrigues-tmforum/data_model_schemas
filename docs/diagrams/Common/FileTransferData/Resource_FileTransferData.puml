@@ -1,0 +1,51 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class FileTransferData <<Pivot>> {
+    compressionType : CompressionType
+    fileFormat : String
+    fileLocation : Uri
+    packingType : PackingType
+    transportProtocol : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CompressionEnumType <<Enumeration>> {
+    no_compression
+    gzip
+    vendor_ext
+    minor_ext
+}
+
+class PackingEnumType <<Enumeration>> {
+    NO_PACKING
+    GZIP
+    TAR
+    VENDOR_EXT
+    MINOR_EXT
+}
+
+class Duration  {
+    amount : Integer
+    units : String
+}
+
+FileTransferData *-->  "0..1" Duration : retentionPeriod
+
+CompressionType -right[hidden]-> CompressionEnumType
+
+PackingType -right[hidden]-> PackingEnumType
+
+@enduml

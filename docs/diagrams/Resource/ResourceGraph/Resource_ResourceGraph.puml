@@ -1,0 +1,85 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ResourceGraph <<Pivot>> {
+    description : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceGraphRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceGraphRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Connection  {
+    associationType : String [1]
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class EndpointRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    isRoot : Boolean
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConnectionPointRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    version : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ResourceGraph *-right-> "0..*" ResourceGraphRelationship : graphRelationship
+
+ResourceGraph *-->  "1..*" Connection : connection
+
+ResourceGraphRelationship *-->  "0..1" ResourceGraphRef : resourceGraph
+
+Connection *-right-> "1" EndpointRef : endpoint
+
+EndpointRef *-->  "0..1" ConnectionPointRef : connectionPoint
+
+@enduml

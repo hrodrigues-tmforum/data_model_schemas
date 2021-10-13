@@ -1,0 +1,66 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class AlternateGeographicAddress <<Pivot>> {
+    city : String
+    country : String
+    href : String
+    id : String
+    locality : String
+    name : String
+    postcode : String
+    role : String
+    stateOrProvince : String
+    streetName : String
+    streetNr : String
+    streetNrLast : String
+    streetNrLastSuffix : String
+    streetNrSuffix : String
+    streetSuffix : String
+    streetType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeographicLocation  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String [1]
+}
+
+class GeographicSubAddress  {
+    buildingName : String
+    href : String
+    id : String
+    levelNumber : String
+    levelType : String
+    name : String
+    privateStreetName : String
+    privateStreetNumber : String
+    subAddressType : String
+    subUnitNumber : String
+    subUnitType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+AlternateGeographicAddress *-->  "0..1" GeographicLocation : geographicLocation
+
+AlternateGeographicAddress *-->  "0..*" GeographicSubAddress : geographicSubAddress
+
+@enduml

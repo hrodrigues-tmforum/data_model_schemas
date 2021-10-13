@@ -1,0 +1,183 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class PartyPrivacyAgreement <<Pivot>> {
+    agreementPeriod : TimePeriod
+    agreementType : String [1]
+    completionDate : TimePeriod
+    description : String
+    documentNumber : Integer
+    href : Uri
+    id : String
+    initialDate : DateTime
+    name : String [1]
+    statementOfIntent : String
+    status : String
+    version : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyPrivacyProfileCharacteristic  {
+    id : String
+    name : String [1]
+    privacyUsagePurpose : String
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementSpecificationRef  <<Ref>> {
+    description : String
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementAuthorization  {
+    date : DateTime
+    href : Uri
+    id : String
+    signatureRepresentation : String
+    state : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyPrivacyProfileRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementItem  {
+    href : Uri
+    id : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AgreementTermOrCondition  {
+    description : String
+    href : Uri
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductOfferingRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+PartyPrivacyAgreement *-->  "0..*" Characteristic : characteristic
+
+PartyPrivacyAgreement *-->  "1..*" RelatedParty : engagedParty
+
+PartyPrivacyAgreement *-->  "0..*" PartyPrivacyProfileCharacteristic : partyPrivacyProfileCharacteristic
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+PartyPrivacyProfileCharacteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+PartyPrivacyProfileCharacteristic *-right-> "0..*" RelatedParty : relatedParty
+
+AgreementRef "0..*" <-left-* PartyPrivacyAgreement : associatedAgreement
+
+PartyPrivacyAgreement *-right-> "0..*" PartyPrivacyProfileRef : partyPrivacyProfile
+
+AgreementAuthorization "0..*" <--* PartyPrivacyAgreement : agreementAuthorization
+
+AgreementSpecificationRef "0..1" <--* PartyPrivacyAgreement : agreementSpecification
+
+PartyPrivacyAgreement *-->  "1..*" AgreementItem : agreementItem
+
+AgreementItem -right[hidden]-> Characteristic
+
+AgreementItem *-->  "0..*" ProductOfferingRef : productOffering
+
+AgreementItem *-->  "0..*" AgreementTermOrCondition : termOrCondition
+
+AgreementItem *-->  "0..*" ProductRef : product
+
+@enduml

@@ -1,0 +1,129 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Customer360PartyInteractionVO <<Pivot>> {
+    creationDate : DateTime
+    description : String
+    direction : String
+    href : String
+    id : String
+    interactionDate : TimePeriod
+    reason : String
+    status : String
+    statusChangeDate : DateTime
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Note  {
+    author : String
+    date : DateTime
+    id : String
+    text : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class InteractionRelationship  <<Ref>> {
+    href : String
+    id : String
+    relationshipType : String
+}
+
+class RelatedChannel  {
+    href : Uri
+    id : String
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class InteractionItem  {
+    creationDate : DateTime
+    href : Uri
+    id : String
+    itemDate : TimePeriod
+    reason : String
+    resolution : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedEntityRefOrValue  {
+    href : String
+    id : String
+    name : String
+    role : String [1]
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Customer360PartyInteractionVO *-->  "0..*" AttachmentRefOrValue : attachment
+
+Customer360PartyInteractionVO *-->  "0..*" Note : note
+
+Customer360PartyInteractionVO *-->  "0..*" RelatedChannel : channel
+
+Customer360PartyInteractionVO *-->  "0..*" RelatedParty : relatedParty
+
+Customer360PartyInteractionVO *-->  "0..*" InteractionItem : interactionItem
+
+AttachmentRefOrValue "0..*" <--* InteractionItem : attachment
+
+Note "0..*" <--* InteractionItem : note
+
+RelatedChannel "0..*" <--* InteractionItem : channel
+
+RelatedParty "0..*" <--* InteractionItem : relatedParty
+
+InteractionRelationship "0..*" <-left-* Customer360PartyInteractionVO : interactionRelationship
+
+RelatedEntityRefOrValue "0..1" <-left-* InteractionItem : item
+
+@enduml

@@ -1,0 +1,77 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Customer360CustomerBillVO <<Pivot>> {
+    amountDue : Money
+    billDate : DateTime
+    billNo : String
+    billingPeriod : TimePeriod
+    category : String
+    href : String
+    id : String
+    lastUpdate : DateTime
+    nextBillDate : DateTime
+    paymentDueDate : DateTime
+    remainingAmount : Money
+    runType : CustomerBillRunType
+    state : CustomerBillStateType
+    taxExcludedAmount : Money
+    taxIncludedAmount : Money
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CustomerBillRunType <<Enumeration>> {
+    onCycle
+    offCycle
+}
+
+class PaymentMethodRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CustomerBillStateType <<Enumeration>> {
+    new
+    onHold
+    validated
+    sent
+    settled
+    partiallyPaid
+}
+
+class BillCycleRef  <<Ref>> {
+    href : String
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+Customer360CustomerBillVO -right[hidden]-> CustomerBillStateType
+
+CustomerBillStateType -right[hidden]-> CustomerBillRunType
+
+Customer360CustomerBillVO *-->  "0..1" BillCycleRef : billCycle
+
+Customer360CustomerBillVO *-->  "0..1" PaymentMethodRef : paymentMethod
+
+@enduml

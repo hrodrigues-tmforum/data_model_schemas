@@ -1,0 +1,206 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class WorkforceEmployeeAssignment <<Pivot>> {
+    description : String [1]
+    id : String [1]
+    skillType : String [1]
+    state : WorkforceEmployeeAssignmentStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TimeSlot  {
+    href : String
+    id : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class WorkforceEmployeeAssignmentStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    held
+    inProgress
+    cancelled
+    completed
+    failed
+    partial
+}
+
+class PartyRefOrValue  {
+    href : String
+    id : String
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxExemptionCertificate  {
+    certificateNumber : String
+    id : String
+    issuingJurisdiction : String
+    reason : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class TaxDefinition  {
+    id : String
+    jurisdictionLevel : String
+    jurisdictionName : String
+    name : String
+    taxType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AttachmentRefOrValue  {
+    attachmentType : String
+    content : string/base64
+    description : String
+    href : Uri
+    id : String
+    mimeType : String
+    name : String
+    size : Quantity
+    url : Uri
+    validFor : TimePeriod
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class Characteristic  {
+    id : String
+    name : String [1]
+    value : Any [1]
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class CharacteristicRelationship  <<Ref>> {
+    href : Uri
+    id : String
+    relationshipType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ContactMedium  {
+    href : Uri
+    id : String
+    mediumType : String
+    preferred : Boolean
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class MediumCharacteristic  {
+    city : String
+    contactType : String
+    country : String
+    emailAddress : String
+    faxNumber : String
+    href : Uri
+    id : String
+    phoneNumber : String
+    postCode : String
+    socialNetworkId : String
+    stateOrProvince : String
+    street1 : String
+    street2 : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExternalReference  {
+    externalReferenceType : String
+    href : Uri
+    id : String
+    name : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyCreditProfile  {
+    creditAgencyName : String
+    creditAgencyType : String
+    href : Uri
+    id : String
+    ratingReference : String
+    ratingScore : Integer
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+WorkforceEmployeeAssignment -right[hidden]-> WorkforceEmployeeAssignmentStateType
+
+WorkforceEmployeeAssignment *-->  "0..*" TimeSlot : timeSlot
+
+WorkforceEmployeeAssignment *-->  "1" PartyRefOrValue : workforceEmployee
+
+PartyRefOrValue *-->  "0..*" RelatedParty : relatedParty
+
+TimeSlot *-->  "0..1" RelatedParty : relatedParty
+
+PartyCreditProfile "0..*" <-left-* PartyRefOrValue : creditRating
+
+PartyRefOrValue *-right-> "0..*" ExternalReference : externalReference
+
+ContactMedium "0..*" <--* PartyRefOrValue : contactMedium
+
+PartyRefOrValue *-->  "0..*" Characteristic : partyCharacteristic
+
+PartyRefOrValue *-->  "0..*" TaxExemptionCertificate : taxExemptionCertificate
+
+TaxExemptionCertificate *-->  "0..*" TaxDefinition : taxDefinition
+
+TaxExemptionCertificate *-->  "0..1" AttachmentRefOrValue : attachment
+
+Characteristic *-->  "0..*" CharacteristicRelationship : characteristicRelationship
+
+ContactMedium *-right-> "0..1" MediumCharacteristic : characteristic
+
+@enduml

@@ -1,0 +1,95 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class Bucket <<Pivot>> {
+    description : String
+    href : String
+    id : String
+    isShared : Boolean
+    name : String
+    remainingValue : Quantity
+    remainingValueName : String
+    reservedValue : Quantity
+    status : String
+    usageType : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ProductRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class RelatedParty  {
+    href : Uri
+    id : String [1]
+    name : String
+    role : String
+    @baseType : String
+    @referredType : String [1]
+    @schemaLocation : Uri
+    @type : String
+}
+
+class LogicalResourceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    value : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ReserveBalanceRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class PartyAccountRef  <<Ref>> {
+    description : String
+    href : String
+    id : String [1]
+    name : String
+    status : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ProductRef "0..*" <-left-* Bucket : product
+
+Bucket *-right-> "0..1" PartyAccountRef : partyAccount
+
+RelatedParty "0..*" <--* Bucket : relatedParty
+
+Bucket *-->  "0..*" LogicalResourceRef : logicalResource
+
+Bucket *-->  "0..*" ReserveBalanceRef : reserveBalance
+
+@enduml

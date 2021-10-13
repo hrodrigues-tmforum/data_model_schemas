@@ -1,0 +1,95 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class TestEnvironmentAllocationExecution <<Pivot>> {
+    dataCorrelationId : String
+    href : Uri
+    id : String
+    resourceManagerUrl : Uri [1]
+    state : ExecutionStateType
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class GeneralTestArtifactRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class AbstractEnvironmentRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ExecutionStateType <<Enumeration>> {
+    acknowledged
+    rejected
+    pending
+    inProgress
+    cancelled
+    completed
+    failed
+}
+
+class TestScenarioRef  <<Ref>> {
+    href : Uri
+    id : String [1]
+    name : String
+    @baseType : String
+    @referredType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConcreteResourceMapping  {
+    abstractResource : String
+    href : Uri
+    id : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ConcreteResource  {
+    href : Uri
+    id : String
+    name : String [1]
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+TestEnvironmentAllocationExecution -right[hidden]-> ExecutionStateType
+
+TestScenarioRef "0..1" <--* TestEnvironmentAllocationExecution : testScenario
+
+AbstractEnvironmentRef "0..1" <--* TestEnvironmentAllocationExecution : abstractEnvironment
+
+TestEnvironmentAllocationExecution *-->  "0..*" GeneralTestArtifactRef : generalTestArtifact
+
+TestEnvironmentAllocationExecution *-->  "0..*" ConcreteResourceMapping : concreteResourceMapping
+
+ConcreteResourceMapping *-->  "0..*" ConcreteResource : concreteResource
+
+@enduml

@@ -1,0 +1,63 @@
+@startuml
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BackgroundColor<<Enumeration>> #E6F5F7
+   BackgroundColor<<Ref>> #FFFFE0
+   BackgroundColor<<Pivot>> #FFFFFFF
+   BackgroundColor<<SimpleType>> #E2F0DA
+   BackgroundColor #FCF2E3
+}
+
+class ResourceSpecificationCharacteristic <<Pivot>> {
+    configurable : Boolean
+    description : String
+    extensible : Boolean
+    id : String
+    isUnique : Boolean
+    maxCardinality : Integer
+    minCardinality : Integer
+    name : String
+    regex : String
+    validFor : TimePeriod
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+    @valueSchemaLocation : String
+}
+
+class CharacteristicValueSpecification  {
+    isDefault : Boolean
+    rangeInterval : String
+    regex : String
+    unitOfMeasure : String
+    validFor : TimePeriod
+    value : Any
+    valueFrom : Integer
+    valueTo : Integer
+    valueType : String
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+class ResourceSpecificationCharacteristicRelationship  {
+    characteristicSpecificationId : String
+    name : String
+    relationshipType : String
+    resourceSpecificationHref : Uri
+    resourceSpecificationId : String
+    validFor : TimePeriod
+    @baseType : String
+    @schemaLocation : Uri
+    @type : String
+}
+
+ResourceSpecificationCharacteristic *-->  "0..*" ResourceSpecificationCharacteristicRelationship : resourceSpecCharRelationship
+
+ResourceSpecificationCharacteristic *-->  "0..*" CharacteristicValueSpecification : resourceSpecCharacteristicValue
+
+@enduml
