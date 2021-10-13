@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 Service level objectives are defined in terms of parameters and metrics, thresholds, and tolerances 
 associated with the parameters.
 

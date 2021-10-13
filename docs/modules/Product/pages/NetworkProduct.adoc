@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 An instantiated network product (specialization of a product) subscribed by a customer.
 
 

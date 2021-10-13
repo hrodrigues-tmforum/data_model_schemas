@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 Structure used to describe relationship between serviceQualification items from the same serviceQualification.
 
 

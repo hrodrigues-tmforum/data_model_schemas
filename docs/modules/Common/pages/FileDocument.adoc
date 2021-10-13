@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 A document accompanying an entity
 
 

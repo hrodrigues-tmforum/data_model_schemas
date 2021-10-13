@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 specification of a value (number or text or an object) that can be assigned to a Characteristic.
 
 

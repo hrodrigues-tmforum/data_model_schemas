@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 Reference to a reservation item that can typically be queried with another API.
 
 

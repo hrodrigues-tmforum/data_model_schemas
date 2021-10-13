@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 Service Level Agreement (SLA) is a type of agreement that represents targets formally or informally agreed between parties in order to achieve and maintain specified Quality of Service.
 
 

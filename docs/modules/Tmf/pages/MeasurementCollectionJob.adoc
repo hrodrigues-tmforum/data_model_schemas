@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Used to control the periodic collection of performance indicators, implemented as a sub-entity of the PM Measurement Job.
 
 

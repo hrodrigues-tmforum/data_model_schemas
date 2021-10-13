@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 Reason for eligibility result if the ServiceQualification result is no (meaning the Service is not available)
 
 

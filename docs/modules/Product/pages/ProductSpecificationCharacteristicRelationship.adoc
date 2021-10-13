@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 An aggregation, migration, substitution, dependency or exclusivity relationship between/among productSpecificationCharacteristics.
 
 

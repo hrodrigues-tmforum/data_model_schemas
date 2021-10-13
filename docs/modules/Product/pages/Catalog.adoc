@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 A collection of Product Offerings, intended for a specific DistributionChannel, enhanced with additional information such as SLA parameters, invoicing and shipping details
 
 

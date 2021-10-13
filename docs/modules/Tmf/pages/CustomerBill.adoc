@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 The customer bill. Can be a regular recurring bill or an extra bill on demand by the customer or the csp.
 
 

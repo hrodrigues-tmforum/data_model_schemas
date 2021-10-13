@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 Represents a detailed description of a recharge operation requested over a bucket (defined by a specific product or reference to a product (i.e.: a commercial id such as an msisidn) and a service type)
 
 

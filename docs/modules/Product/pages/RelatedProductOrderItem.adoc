@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 RelatedProductOrderItem (ProductOrder item) .The product order item which triggered product creation/change/termination.
 
 

@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 The entity which will be changed or configured while the change request is executed.
 
 

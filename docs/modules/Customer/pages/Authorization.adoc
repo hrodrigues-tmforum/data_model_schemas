@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 If special discount or special product offering price or specific condition need an approval for ISP sale representative it is described here.
 
 

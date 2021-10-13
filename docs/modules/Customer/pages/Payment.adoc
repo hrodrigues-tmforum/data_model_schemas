@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 The Payment resource represents a performed payment. It contains both information about the payment and the payment method used to perform it.
 
 

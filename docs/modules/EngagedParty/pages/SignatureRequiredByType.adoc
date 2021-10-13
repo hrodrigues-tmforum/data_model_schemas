@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 Possible values for the signature requirement upon receiving the shipment
 
 

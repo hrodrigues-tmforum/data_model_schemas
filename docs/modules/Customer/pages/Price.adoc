@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price Alteration.
 
 

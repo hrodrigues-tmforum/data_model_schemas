@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 A list of recommendation items. Every item is a product offering and its rank.
 
 

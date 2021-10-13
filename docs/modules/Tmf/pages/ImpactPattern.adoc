@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 Define the patterns of impact (optional), such as other service characteristics- Used when defining impact through another pattern than the pre-defined attributes
 
 

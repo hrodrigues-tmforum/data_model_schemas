@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 link to the resource that holds information about the payment mean used to complete the operation
 
 

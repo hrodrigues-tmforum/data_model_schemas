@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 It&#x27;s a Quote that has been executed previously
 
 

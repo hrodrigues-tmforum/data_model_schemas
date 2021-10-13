@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 This is a task resource allowing assessment of the risks associated with a product order - presumably submitted by a party role and containing one or more product offerings
 
 

@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Sampling rate of the collection or production of performance indicators.
 
 

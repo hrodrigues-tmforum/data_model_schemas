@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 An applied billing rate presented on a bill. It is created before or during the billing process
 
 

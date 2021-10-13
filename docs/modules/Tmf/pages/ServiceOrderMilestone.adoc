@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 ServiceOrderMilestone represents an action or event marking a significant change or stage in processing of a service order.
 
 

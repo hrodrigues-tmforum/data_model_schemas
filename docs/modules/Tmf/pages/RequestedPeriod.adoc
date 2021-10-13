@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 The period of time for which user requested to use the resources.
 The user can request on the start date without the end date.
 

@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 CheckServiceQualification is used to perform a technical eligibility on service configuration(s). It allows to retrieve services that are technically available in the context of the interaction (place, party, service characteristics, ...).
 
 

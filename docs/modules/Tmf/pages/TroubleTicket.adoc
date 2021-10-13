@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 A trouble ticket is a record of an issue that is created, tracked, and managed by a trouble ticket management system
 
 

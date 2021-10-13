@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 StreetSegment corresponds to a part of a street referenced by a number or a set of number. Sometimes a suffix is added.
 
 

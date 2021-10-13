@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 BillFormat reference. A bill format is a description of the way in which a bill is presented.
 
 

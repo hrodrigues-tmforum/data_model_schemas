@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Representation of a SubAddress 
 It is used for addressing within a property in an urban area (country properties are often defined differently). It may refer to a building, a building cluster, or a floor of a multistory building.
 

@@ -7,6 +7,7 @@ This schema is part of Customer360
 
 [#description]
 == Description
+
 A product offering procured by a customer or other interested party playing a party role. A product is realized as one or more service(s) and / or resource(s).
 
 

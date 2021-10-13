@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 This resource represents an alarm supporting the information model defined in ITU-T X.733.
 
 

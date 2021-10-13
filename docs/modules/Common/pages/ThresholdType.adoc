@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 The Threshold Type may be either LogicDefinition or PreDefined
 
 

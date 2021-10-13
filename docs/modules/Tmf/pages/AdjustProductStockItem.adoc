@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 A list of AdjustProductStock items. Every item is a ProductStock adjustement request.
 
 
