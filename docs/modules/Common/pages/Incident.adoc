@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 An Incident is a record of an event that has altered the operational state of a entity (Resource, Service or Customers Product)
 
 

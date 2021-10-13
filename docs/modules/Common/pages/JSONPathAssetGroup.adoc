@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Defines a group of assets (entities) to which access can be controlled, using a JSON Path expression. Any entities matching the JSON Path expression are implicitly included in the group. The embedded example implies all TroubleTickets with status Pending
 
 

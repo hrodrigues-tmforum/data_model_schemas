@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 A resource that references other buckets that have been impacted by the action of type TopupBalance,AdjustBalance,TransferBalance or ReserveBalance
 
 

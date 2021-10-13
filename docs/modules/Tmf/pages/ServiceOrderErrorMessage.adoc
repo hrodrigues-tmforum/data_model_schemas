@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 A ServiceOrderErrorMessage represents an error that causes a status change in a service order.
 
 

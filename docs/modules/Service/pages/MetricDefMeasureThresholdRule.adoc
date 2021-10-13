@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 A MetricDefMeasureThresholdRule is a rule that defines the condition (raise or clear) to achieve to apply 
 consequences when a threshold is crossed or ceased to be crossed. It also defines the severity of the 
 raise or clear of the threshold.

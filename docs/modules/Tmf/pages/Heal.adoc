@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 Task Resource used to request healing of a Resource Function
 
 

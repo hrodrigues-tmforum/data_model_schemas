@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 An identified part of the reservation. A reservation is decomposed into one or more reservation items.
 
 

@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Related channel to another entity. May be online web, mobile app, social ,etc.
 
 

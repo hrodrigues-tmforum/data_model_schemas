@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 A measureThresholdRuleViolation is a violation of a rule that defines the in the 
 MericDefMeasureThresholdRule.
 

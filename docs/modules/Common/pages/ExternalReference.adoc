@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 External reference of the individual or reference in other system
 
 

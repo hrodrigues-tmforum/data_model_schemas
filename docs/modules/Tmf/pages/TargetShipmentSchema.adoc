@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 The reference object to the schema and type of target shipment which is described by shipment specification
 
 

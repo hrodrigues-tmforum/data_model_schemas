@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 ReserveProductStockItem is used to request a stock reservation item for a product
 
 

@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Represents a task used to discover topology from providers
 
 

@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 Cash has no additional data, but it could be extended to add information (e.g.: the cashier who took the payment, the person who paid, etc)
 
 

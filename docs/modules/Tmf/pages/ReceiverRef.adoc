@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Receiver reference. The receiver is the party role who will receive the settlement note.
 
 

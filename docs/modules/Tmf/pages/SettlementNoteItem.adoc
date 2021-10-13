@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 Concerns a product identified by its catalogue reference. It could also follow a period delimited by a start and an end date.
 
 

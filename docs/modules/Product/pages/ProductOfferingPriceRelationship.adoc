@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 Describes a non-composite relationship between product offering prices. For example one price might be an discount alteration for another price.
 
 

@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 A Consequence can be applied as a result of a threshold crossing or a threshold ceasing to be crossed
 
 

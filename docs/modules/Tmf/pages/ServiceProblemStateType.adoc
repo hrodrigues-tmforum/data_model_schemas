@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 Possible values for the state of the ServiceProblem
 
 

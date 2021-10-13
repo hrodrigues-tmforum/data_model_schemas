@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 A substitution, dependency or exclusivity relationship between/among service specifications.
 
 

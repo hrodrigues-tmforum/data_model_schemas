@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 A Service Level Specification represents a pre-defined or negotiated set of Service Level 
 Objectives. In addition, certain consequences are associated with not meeting the Service Level 
 Objectives. Service Level Agreements are expressed in terms of Service Level Specifications.

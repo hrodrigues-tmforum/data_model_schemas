@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 A related shipping order addressable entity
 
 

@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 The Balance Unreserve Operation resource is a detailed description of a balance unreserve operation requested over a subscription
 
 

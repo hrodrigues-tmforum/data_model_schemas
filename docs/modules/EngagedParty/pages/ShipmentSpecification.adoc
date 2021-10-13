@@ -7,6 +7,7 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
+
 Definition of the nature of a Shipment. For example, could be a standard ground delivery, overnight express with signature required by an adult, etc.
 
 

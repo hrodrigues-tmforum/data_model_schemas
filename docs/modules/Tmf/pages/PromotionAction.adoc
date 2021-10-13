@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 Action of the promotion.When the customer meets the conditions in the promotion pattern, the customer can be given the benefits in the action.
 
 

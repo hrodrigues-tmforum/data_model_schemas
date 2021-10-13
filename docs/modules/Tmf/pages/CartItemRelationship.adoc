@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 Relationship among cart items mainly other than hierarchical relationships such as &quot;RelyOn&quot;, &quot;DependentOn&quot;, &quot;Shipping&quot; etc.
 
 

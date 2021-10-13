@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 The reference object to the schema and type of target entity which is described by an entity specification
 
 

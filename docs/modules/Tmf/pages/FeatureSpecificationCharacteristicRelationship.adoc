@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 An aggregation, migration, substitution, dependency or exclusivity relationship between/among FeatureSpecificationCharacteristics.
 
 

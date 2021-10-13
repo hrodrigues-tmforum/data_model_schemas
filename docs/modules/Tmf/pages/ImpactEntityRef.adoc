@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Defines the entities (product, service, resource, and other related objects) which will be impacted while the change 
 request is executed.
 

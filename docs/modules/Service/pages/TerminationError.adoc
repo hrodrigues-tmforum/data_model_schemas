@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 This indicates an error that caused a qualificationItem to be terminated.
 
 

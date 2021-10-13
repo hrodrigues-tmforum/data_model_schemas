@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 Connection point reference. A connection point provides a service access point (SAP) for input and/or output of the resource function.
 
 

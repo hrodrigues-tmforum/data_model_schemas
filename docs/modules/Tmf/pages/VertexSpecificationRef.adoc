@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 A Vertex is connected by directed Edges to other vertices in a Graph.
 A VertexSpecification is a base class that represents a generic means for implementing a particular type of Vertex. In essence, a VertexSpecification defines the common attributes and relationships of a set of related Vertices, while Vertex defines a specific instance that is based on a particular VertexSpecification.
 

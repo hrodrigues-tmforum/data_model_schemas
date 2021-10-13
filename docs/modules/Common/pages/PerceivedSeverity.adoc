@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 This datatype lists the possible severities that can be allocated to a Alarm. The values are consistent with ITU-T Recommendation X.733. This specification does not recommend the use of indeterminate.
 
 

@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 POI consists of hardware and software which enables a Cardholder and/or an Acceptor to perform a Local Card transaction. This is also referred to as a Physical/EMV Terminal. It may be Attended or Unattended.
 
 

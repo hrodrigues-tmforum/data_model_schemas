@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Defines a group of assets (entities) to which access can be controlled. Specific subclasses allow definition in various ways (list of entities, queries, ownership by customer, etc.)
 
 

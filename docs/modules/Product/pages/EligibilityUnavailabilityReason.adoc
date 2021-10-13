@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 Reason for eligibility result if the productOfferingQualification result is no (meaning the productOffering or productSpec is not available).
 
 

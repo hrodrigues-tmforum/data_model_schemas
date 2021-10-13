@@ -7,6 +7,7 @@ This schema is part of Customer
 
 [#description]
 == Description
+
 A tax item is created for each tax rate and tax type used in the bill.
 
 

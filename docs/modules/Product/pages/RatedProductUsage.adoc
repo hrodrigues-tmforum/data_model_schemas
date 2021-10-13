@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 An occurrence of employing a product for its intended purpose with all rating details
 
 

@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 The (resource) category resource is used to group resource candidates in logical containers. Categories can contain other categories.
 
 

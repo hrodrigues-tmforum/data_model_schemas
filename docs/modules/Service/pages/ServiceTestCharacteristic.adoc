@@ -7,6 +7,7 @@ This schema is part of Service
 
 [#description]
 == Description
+
 The configuration of the service test is set by the service test characteristic.
 
 

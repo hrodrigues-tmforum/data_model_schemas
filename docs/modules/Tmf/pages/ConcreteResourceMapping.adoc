@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 Individual mapping from an abstract resource to a list of concrete resources
 
 

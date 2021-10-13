@@ -7,6 +7,7 @@ This schema is part of Resource
 
 [#description]
 == Description
+
 Generic IotManagementEvent structure used to define commonalities between sub concepts of PartyIotManagementEvent and Financial IotManagementEvent.
 
 

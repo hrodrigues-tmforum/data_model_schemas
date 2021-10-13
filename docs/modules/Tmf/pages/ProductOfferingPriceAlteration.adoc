@@ -7,6 +7,7 @@ This schema is part of Product
 
 [#description]
 == Description
+
 A discount is a reduction in price. It could be a flat fee such as 10 dollars or a percentage, such as 50% off. A discount always applies to, and thus is associated with, one or more other ProdOfferPrices. So a discount would be 10 dollars off the installation fee or 50% off the per-minute rate.
 
 

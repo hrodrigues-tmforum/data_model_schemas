@@ -7,6 +7,7 @@ This schema is part of Common
 
 [#description]
 == Description
+
 Base Extensible schema for use in TMForum Open-APIs
 
 
