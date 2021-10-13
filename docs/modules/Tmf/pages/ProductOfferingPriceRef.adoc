@@ -18,3 +18,5 @@ A JSON Schema corresponding to this data model can be found https://tmforum.org[
 
 The data model is defined as shown below:
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Product/GcProductOfferingPriceRef.schema.json#GcProductOfferingPriceRef&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/EntityRef.schema.json#EntityRef&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}

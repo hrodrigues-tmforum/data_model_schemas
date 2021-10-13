@@ -48,3 +48,5 @@ description: Describes the user doing the action
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcExtensible.schema.json#GcExtensible&#x27;}

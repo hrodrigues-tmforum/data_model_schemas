@@ -146,3 +146,5 @@ description: Is the date when the product was terminated
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Product/GcProductValue.schema.json#GcProductValue&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}

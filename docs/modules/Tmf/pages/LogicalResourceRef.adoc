@@ -24,3 +24,5 @@ description: Value used to identifiy this resource as a MSISDN or a VoIP number.
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Resource/GcResourceRef.schema.json#GcResourceRef&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/EntityRef.schema.json#EntityRef&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}

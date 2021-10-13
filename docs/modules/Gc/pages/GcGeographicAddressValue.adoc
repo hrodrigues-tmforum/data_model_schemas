@@ -37,3 +37,5 @@ description: Name of the street or other street type
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../../Core/Extensible.schema.json#Extensible&#x27;}

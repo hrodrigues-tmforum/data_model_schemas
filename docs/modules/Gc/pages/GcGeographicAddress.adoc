@@ -65,3 +65,5 @@ description: alley, avenue, boulevard, brae, crescent, drive, highway, lane, ter
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcPlace.schema.json#GcPlace&#x27;}

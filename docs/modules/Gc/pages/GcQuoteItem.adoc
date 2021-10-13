@@ -42,3 +42,4 @@ description: State of the quote item : described in the state machine diagram
 
 $ref of: xref:4.0.0@schemas:Gc:GcQuoteStateType.adoc[]
 
+

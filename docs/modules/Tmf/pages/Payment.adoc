@@ -84,3 +84,5 @@ type: array
 === payer
 $ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

@@ -22,3 +22,5 @@ The data model is defined as shown below:
 === resourceManagerUrl
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcExecution.schema.json#GcExecution&#x27;}

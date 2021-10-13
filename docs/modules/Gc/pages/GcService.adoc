@@ -36,3 +36,5 @@ description: Date when the service was created (whatever its status).
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../../Core/Entity.schema.json&#x27;}

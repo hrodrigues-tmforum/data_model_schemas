@@ -24,3 +24,5 @@ description: use to identify grouping of events, per domain, per event types, pe
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

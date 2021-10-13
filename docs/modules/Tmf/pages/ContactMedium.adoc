@@ -42,3 +42,5 @@ description: The time period that the contact medium is valid for
 
 $ref of: xref:4.0.0@schemas:Core:TimePeriod.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcContactMedium.schema.json#GcContactMedium&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}

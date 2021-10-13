@@ -24,3 +24,5 @@ description: The name of the rule.
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcEntity.schema.json#GcEntity&#x27;}

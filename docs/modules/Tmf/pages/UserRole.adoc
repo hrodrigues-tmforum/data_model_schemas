@@ -24,3 +24,5 @@ description: Indication of the part that a user plays in its involvement with a 
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

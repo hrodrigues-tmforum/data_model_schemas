@@ -30,3 +30,5 @@ description: A list of service qualification items.
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Service/GcServiceQualification.schema.json#GcServiceQualification&#x27;}

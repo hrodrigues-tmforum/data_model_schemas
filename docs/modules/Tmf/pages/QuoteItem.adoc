@@ -92,3 +92,5 @@ description: A reference to a party playing a role in this quote item
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Customer/GcQuoteItem.schema.json#GcQuoteItem&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}

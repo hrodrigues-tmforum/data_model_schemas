@@ -45,3 +45,5 @@ e.g.BERTH, FLAT, PIER, SUITE, SHOP, TOWER, UNIT, WHARF
 
 type: string
 
+
+{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}

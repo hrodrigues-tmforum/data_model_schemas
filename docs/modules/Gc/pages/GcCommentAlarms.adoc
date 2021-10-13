@@ -28,3 +28,4 @@ description: Alarm patterns to match target alarms. An alarm will match if all o
 
 type: array
 
+

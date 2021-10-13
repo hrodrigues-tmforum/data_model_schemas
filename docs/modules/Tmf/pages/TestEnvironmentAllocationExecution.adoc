@@ -30,3 +30,5 @@ $ref of: xref:4.0.0@schemas:Tmf:TestScenarioRef.adoc[]
 === concreteResourceMapping
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcExecution.schema.json#GcExecution&#x27;}

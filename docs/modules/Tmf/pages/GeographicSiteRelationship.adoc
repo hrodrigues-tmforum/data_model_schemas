@@ -36,3 +36,5 @@ description: Validity for the relationship
 
 $ref of: xref:4.0.0@schemas:Core:TimePeriod.adoc[]
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcGeographicSiteRelationship.schema.json#GcGeographicSiteRelationship&#x27;}{&#x27;$ref&#x27;: &#x27;../../Core/SchemaContext.schema.json#SchemaContext&#x27;}

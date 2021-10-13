@@ -130,3 +130,5 @@ description: A quote items describe an action to be performed on a productOfferi
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Customer/GcQuote.schema.json#GcQuote&#x27;}

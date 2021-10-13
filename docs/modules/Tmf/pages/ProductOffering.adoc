@@ -156,3 +156,5 @@ description: A use of the ProductSpecificationCharacteristicValue by a ProductOf
 
 type: array
 
+
+{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcAddressable.schema.json#GcAddressable&#x27;}{&#x27;$ref&#x27;: &#x27;../../Gc/Common/GcExtensible.schema.json#GcExtensible&#x27;}
