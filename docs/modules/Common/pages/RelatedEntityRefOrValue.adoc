@@ -23,4 +23,4 @@ The data model is defined as shown below:
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;EntityRef.schema.json#EntityRef&#x27;}{&#x27;$ref&#x27;: &#x27;EntityValue.schema.json#EntityValue&#x27;}
+= All Of 

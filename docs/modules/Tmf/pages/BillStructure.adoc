@@ -31,4 +31,4 @@ $ref of: xref:4.0.0@schemas:Tmf:BillFormatRefOrValue.adoc[]
 $ref of: xref:4.0.0@schemas:Tmf:BillingCycleSpecificationRefOrValue.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
+= All Of 

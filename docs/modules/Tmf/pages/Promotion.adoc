@@ -93,3 +93,4 @@ $ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
 type: array
 
 
+= All Of 

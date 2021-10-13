@@ -23,4 +23,4 @@ The data model is defined as shown below:
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;ResourceRef.schema.json#ResourceRef&#x27;}
+= All Of 

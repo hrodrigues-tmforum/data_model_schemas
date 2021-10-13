@@ -35,4 +35,4 @@ description: Defines the purpose authorized or refused for the characteristic (e
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Characteristic.schema.json#Characteristic&#x27;}
+= All Of 

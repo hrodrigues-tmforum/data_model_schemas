@@ -59,3 +59,4 @@ description: Indicates further information on the threshold crossing alarm.
 type: string
 
 
+= All Of 

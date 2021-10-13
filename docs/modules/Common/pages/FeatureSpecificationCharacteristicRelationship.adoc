@@ -61,4 +61,4 @@ description: The period for which the object is valid
 $ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
+= All Of 

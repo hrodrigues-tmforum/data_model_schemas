@@ -73,4 +73,4 @@ description: A kind of value that the characteristic value can take on, such as 
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
+= All Of 

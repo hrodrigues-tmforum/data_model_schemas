@@ -63,4 +63,4 @@ description: Could be minutes, GB...
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#/definitions/Extensible&#x27;}
+= All Of 

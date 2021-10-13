@@ -121,4 +121,4 @@ description: Used to provide information about any other entity with relation to
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../Customer/BalanceAction.schema.json#BalanceAction&#x27;}
+= All Of 

@@ -31,3 +31,4 @@ description: A reference to the product specification.
 type: string
 
 
+= All Of 

@@ -73,4 +73,4 @@ description: A ProductSpecification is a detailed description of a tangible or i
 $ref of: xref:4.0.0@schemas:Tmf:ProductSpecificationRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#Extensible&#x27;}
+= All Of 

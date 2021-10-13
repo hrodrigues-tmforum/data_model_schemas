@@ -43,4 +43,4 @@ description: The size of the settlement note image (in bytes)
 type: integer
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Entity.schema.json#Entity&#x27;}
+= All Of 

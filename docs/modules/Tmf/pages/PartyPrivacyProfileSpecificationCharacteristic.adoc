@@ -71,3 +71,4 @@ description: The period of time for which this characteristic specification is v
 $ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
 
 
+= All Of 

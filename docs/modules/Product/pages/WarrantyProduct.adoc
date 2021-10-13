@@ -27,4 +27,4 @@ $ref of: xref:4.0.0@schemas:Product:WarrantyProductSpecificationRef.adoc[]
 $ref of: xref:4.0.0@schemas:Product:WarrantyRef.adoc[]
 
 
-{&#x27;$ref&#x27;: &#x27;../Product/Product.schema.json#/definitions/Product&#x27;}
+= All Of 

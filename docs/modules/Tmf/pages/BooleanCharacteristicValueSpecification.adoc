@@ -25,4 +25,4 @@ description: Value of the characteristic
 type: boolean
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/CharacteristicValueSpecification.schema.json#CharacteristicValueSpecification&#x27;}
+= All Of 

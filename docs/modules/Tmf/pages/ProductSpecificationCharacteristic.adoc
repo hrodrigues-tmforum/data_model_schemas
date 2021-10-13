@@ -31,4 +31,4 @@ description: An aggregation, migration, substitution, dependency or exclusivity 
 type: array
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/CharacteristicSpecificationBase.schema.json#CharacteristicSpecificationBase&#x27;}
+= All Of 

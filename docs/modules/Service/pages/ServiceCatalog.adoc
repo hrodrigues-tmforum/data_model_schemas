@@ -70,4 +70,4 @@ description: ServiceCatalog version
 type: string
 
 
-{&#x27;$ref&#x27;: &#x27;../Common/Addressable.schema.json#/definitions/Addressable&#x27;}{&#x27;$ref&#x27;: &#x27;../Common/Extensible.schema.json#/definitions/Extensible&#x27;}
+= All Of 
