@@ -1,0 +1,51 @@
+= Stream
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== consumingApplicationId
+type: string
+
+
+=== producingApplicationId
+type: string
+
+
+=== granulatiry
+$ref of: xref:4.0.0@schemas:Tmf:.adoc[]
+
+
+=== outputFormat
+type: string
+
+
+=== collectionPeriod
+$ref of: xref:4.0.0@schemas:Tmf:.adoc[]
+
+
+=== performanceIndicatorSpecification
+type: array
+
+
+=== monitoredInstancesCriteria
+$ref of: xref:4.0.0@schemas:Tmf:.adoc[]
+
+
+=== monitoredClassCriteria
+$ref of: xref:4.0.0@schemas:Tmf:.adoc[]
+

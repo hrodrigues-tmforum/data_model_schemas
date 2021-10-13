@@ -1,0 +1,43 @@
+= ContactMedium
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Indicates the contact medium that could be used to contact the party.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== preferred
+description: If true, indicates that is the preferred contact medium
+
+type: boolean
+
+
+=== mediumType
+description: Type of the contact medium, such as: email address, telephone number, postal address
+
+type: string
+
+
+=== validFor
+description: The time period that the contact medium is valid for
+
+$ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
+
+
+=== characteristic
+description: Any additional characteristic(s) of this contact medium
+
+$ref of: xref:4.0.0@schemas:Common:MediumCharacteristic.adoc[]
+

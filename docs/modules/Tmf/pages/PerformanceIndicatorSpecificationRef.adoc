@@ -1,0 +1,25 @@
+= PerformanceIndicatorSpecificationRef
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+PerformanceIndicatorSpecification reference: A PerformanceIndicatorSpecification is a detailed description of a tangible or intangible object made available externally in the form of a PerformanceIndicatorSpecification to customers or other parties playing a party role.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== version
+description: Version of the performance indicator specification
+
+type: string
+

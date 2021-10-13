@@ -1,0 +1,37 @@
+= TaxItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+A tax item is created for each tax rate and tax type used in the bill.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== taxAmount
+description: Amount of tax expressed in the given currency
+
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== taxCategory
+description: Tax category
+
+type: string
+
+
+=== taxRate
+description: Applied rate of the tax
+
+type: number
+

@@ -1,0 +1,37 @@
+= UsageVolumeProductRef
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Reference of a bucket
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @referredType
+description: Generic attribute indicating the name of the class type of the referred resource entity
+
+type: string
+
+
+=== id
+description: Unique identifier of the bucket
+
+type: string
+
+
+=== name
+description: Bucket name
+
+type: string
+

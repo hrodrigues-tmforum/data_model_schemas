@@ -1,0 +1,73 @@
+= PurchaseActivityAnalytics
+
+[#domain]
+== Domain
+
+This schema is part of Analytics
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== purchaseTime
+description: time the purchase occurred
+
+type: string
+
+
+=== rentalExpiryDate
+description: date of rental expiring
+
+type: string
+
+
+=== purchaseFinalAmount
+description: Amount of purchase that was invoiced (including tax)
+
+type: number
+
+
+=== purchaseDiscountAmount
+description: Amount of discount (from catalogue price)
+
+type: number
+
+
+=== purchaseCataloguePrice
+description: The catalogue price (excluding Tax)
+
+type: number
+
+
+=== purchaseTaxAmount
+description: Amount of tax included in the final amount
+
+type: number
+
+
+=== dataCreationTimestamp
+description: Time stamp for data creation (e.g. system dump creation, event generation…)
+
+type: string
+
+
+=== runTimestamp
+description: Time stamp for data upload run
+
+type: string
+
+
+=== validFromTimestamp
+description: Time stamp for business validity of entity record
+
+type: string
+

@@ -1,0 +1,80 @@
+= ResourceCatalog
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+The root entity for resource catalog management.
+A resource catalog is a group of resource specifications made available through resource candidates that an organization provides to the consumers (internal consumers like its employees or B2B customers or B2C customers).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the Catalog
+
+type: string
+
+
+=== href
+description: Unique reference of the catalog
+
+type: string
+
+
+=== name
+description: Name of the catalog
+
+type: string
+
+
+=== description
+description: Description of this catalog
+
+type: string
+
+
+=== version
+description: Catalog version
+
+type: string
+
+
+=== validFor
+description: The period for which the catalog is valid
+
+$ref of: xref:4.0.0@schemas:Resource:TimePeriod.adoc[]
+
+
+=== lastUpdate
+description: Date and time of the last update
+
+type: string
+
+
+=== lifecycleStatus
+description: Used to indicate the current lifecycle status
+
+type: string
+
+
+=== relatedParty
+description: List of parties involved in this catalog
+
+type: array
+
+
+=== category
+description: List of root categories contained in this catalog
+
+type: array
+

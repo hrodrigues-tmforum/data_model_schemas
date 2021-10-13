@@ -1,0 +1,25 @@
+= ServiceCategoryRef
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+The (service) category resource is used to group service candidates in logical containers. Categories can contain other categories.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== version
+description: Category version
+
+type: string
+

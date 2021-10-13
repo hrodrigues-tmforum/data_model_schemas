@@ -1,0 +1,73 @@
+= InteractionItem
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the interaction item
+
+type: string
+
+
+=== itemDate
+description: Moment this item is referred
+
+$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+
+
+=== reason
+description: Reason why this item is referred
+
+type: string
+
+
+=== resolution
+description: Resolution of the interaction item
+
+type: string
+
+
+=== creationDate
+description: Date when the interaction item is created in the system
+
+type: string
+
+
+=== item
+description: RelatedEntity defines a reference to any entity. It uses polymorphism in order to let the API client know how to treat the element, as the entity type is not known beforehand.
+
+$ref of: xref:4.0.0@schemas:EngagedParty:RelatedEntity.adoc[]
+
+
+=== channel
+description: Where the interaction took place (e.g.: web, mobile app, store, kiosk, etc.)
+
+type: array
+
+
+=== relatedParty
+type: array
+
+
+=== attachment
+type: array
+
+
+=== note
+type: array
+

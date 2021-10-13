@@ -1,0 +1,41 @@
+= OtherNameOrganization
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Keeps track of other names, for example the old name of an organization.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== tradingName
+description: The name that the organization trades under
+
+type: string
+
+
+=== nameType
+description: Co. , Inc. , Ltd. , Pty Ltd. , Plc; , Gmbh
+
+type: string
+
+
+=== name
+description: Organization name (department name for example)
+
+type: string
+
+
+=== validFor
+$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+

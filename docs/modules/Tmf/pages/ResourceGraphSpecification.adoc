@@ -1,0 +1,49 @@
+= ResourceGraphSpecification
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Resource graph specification.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the resource graph specification.
+
+type: string
+
+
+=== name
+description: Descriptive name for the resource graph specification.
+
+type: string
+
+
+=== description
+description: Description of the resource graph specification.
+
+type: string
+
+
+=== graphSpecificationRelationship
+description: Relationships to other resource graph specifications.
+
+type: array
+
+
+=== connectionSpecification
+description: Resource graph edge specifications.
+
+type: array
+

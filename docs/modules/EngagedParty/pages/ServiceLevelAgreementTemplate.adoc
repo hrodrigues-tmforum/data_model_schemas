@@ -1,0 +1,39 @@
+= ServiceLevelAgreementTemplate
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A template document that can be used for an agreement between parties on offered product/service level quality
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+type: string
+
+
+=== id
+type: string
+
+
+=== name
+description: name given to this template
+
+type: string
+
+
+=== document
+description: the document attachment that is relevant to this template
+
+$ref of: xref:4.0.0@schemas:EngagedParty:AttachmentRefOrValue.adoc[]
+

@@ -1,0 +1,57 @@
+= ProductRestriction
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+In the context of a product order or a product offering qualification, this data structure captures the product information useful to order or qualified  an existing subscribed product or to a new one. This is a subset of relevant product attributes for ordering and qualification
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Reference of the product
+
+type: string
+
+
+=== id
+description: Unique identifier of the product
+
+type: string
+
+
+=== name
+description: This is the name of the product.
+
+type: string
+
+
+=== productCharacteristic
+type: array
+
+
+=== productRelationship
+type: array
+
+
+=== relatedParty
+type: array
+
+
+=== productSpecification
+$ref of: xref:4.0.0@schemas:Product:ProductSpecificationRef.adoc[]
+
+
+=== relatedPlace
+type: array
+

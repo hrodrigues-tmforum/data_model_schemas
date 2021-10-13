@@ -1,0 +1,83 @@
+= Heal
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Task Resource used to request healing of a Resource Function
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the Heal task resource
+
+type: string
+
+
+=== href
+description: Reference to the Heal task resource
+
+type: string
+
+
+=== name
+description: Name of the Heal task resource
+
+type: string
+
+
+=== resourceFunction
+description: Reference to the Resource Function that needs to be healed
+
+$ref of: xref:4.0.0@schemas:Tmf:ResourceFunctionRef.adoc[]
+
+
+=== cause
+description: Reason why healing is being requested
+
+type: string
+
+
+=== degreeOfHealing
+description: Indicates the degree of healing required
+
+type: string
+
+
+=== healAction
+description: Exact action to be taken as part of the heal process or a pointer to a script to be run
+
+type: string
+
+
+=== healPolicy
+$ref of: xref:4.0.0@schemas:Tmf:HealPolicyRef.adoc[]
+
+
+=== startTime
+description: The time when the heal action needs to commence. This allows a delay to be added
+
+type: string
+
+
+=== additionalParms
+description: Additional parameters to be sent to the heal action as name value pairs
+
+type: array
+
+
+=== state
+description: Tracks the lifecycle status of the migrate request.
+
+$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+

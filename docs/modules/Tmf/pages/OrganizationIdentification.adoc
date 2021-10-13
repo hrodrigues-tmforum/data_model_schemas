@@ -1,0 +1,53 @@
+= OrganizationIdentification
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Represents our registration of information used as proof of identity by an organization
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== identificationId
+description: Identifier
+
+type: string
+
+
+=== issuingAuthority
+description: Authority which has issued the identifier (chamber of commerce...)
+
+type: string
+
+
+=== issuingDate
+description: Date at which the identifier was issued
+
+type: string
+
+
+=== identificationType
+description: Type of identification information used to identify the company in a country or internationally
+
+type: string
+
+
+=== validFor
+description: The period for which the identification information is valid.
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== attachment
+$ref of: xref:4.0.0@schemas:Tmf:AttachmentRefOrValue.adoc[]
+

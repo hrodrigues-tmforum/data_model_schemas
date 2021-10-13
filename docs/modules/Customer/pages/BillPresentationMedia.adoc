@@ -1,0 +1,43 @@
+= BillPresentationMedia
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+A mean of communicating a bill, supported by the associated bill format. For example, post mail, email, web page.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: An explanatory text describing this bill presentation media
+
+type: string
+
+
+=== href
+description: Reference of the bill presentation media
+
+type: string
+
+
+=== id
+description: Unique identifier of the bill presentation media
+
+type: string
+
+
+=== name
+description: A short descriptive name
+
+type: string
+

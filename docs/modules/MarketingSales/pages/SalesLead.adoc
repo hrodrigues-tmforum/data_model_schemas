@@ -1,0 +1,147 @@
+= SalesLead
+
+[#domain]
+== Domain
+
+This schema is part of MarketingSales
+
+[#description]
+== Description
+A Sales Lead is the identification of a person or organization that has an interest in the goods and/or services provided in the prospect of them becoming Customers with one or more Subscriptions.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Reference of the salesLead
+
+type: string
+
+
+=== id
+description: Unique identifier of the salesLead
+
+type: string
+
+
+=== name
+description: Name of the salesLead
+
+type: string
+
+
+=== description
+description: Unique description of the salesLead
+
+type: string
+
+
+=== status
+$ref of: xref:4.0.0@schemas:MarketingSales:SalesLeadStateType.adoc[]
+
+
+=== statusChangeDate
+description: Date and time of the last update
+
+type: string
+
+
+=== creationDate
+description: Date and time of the salesLead creation
+
+type: string
+
+
+=== referredDate
+description: Date when the prospect information was received (for example, from a trade show).
+
+type: string
+
+
+=== statusChangeReason
+description: Reason why the status has changed
+
+type: string
+
+
+=== type
+description: Indicates the nature of the salesLead
+
+type: string
+
+
+=== rating
+description: Identifies the potential of a salesLead for becoming a sale. Usual ratings for qualified leads are: hot, warm, cold.
+
+type: string
+
+
+=== priority
+$ref of: xref:4.0.0@schemas:MarketingSales:SalesLeadPriorityType.adoc[]
+
+
+=== estimatedRevenue
+description: Estimation of the revenue if the salesLead turns into a sale.
+
+$ref of: xref:4.0.0@schemas:MarketingSales:Money.adoc[]
+
+
+=== validFor
+description: The period for which the salesLead is valid
+
+$ref of: xref:4.0.0@schemas:MarketingSales:TimePeriod.adoc[]
+
+
+=== marketingCampaign
+description: Campaign represents the carrier-initiated marketing activity which aims at the better recognition about its brand and offerings by the market.
+
+$ref of: xref:4.0.0@schemas:MarketingSales:MarketingCampaignRef.adoc[]
+
+
+=== marketSegment
+description: MarketSegment reference. A Market Segment is a grouping of Parties, GeographicAreas, SalesChannels, and so forth. MarketSegments are the target of MarketingCampaigns, ProductOfferings, ProductPromotions, ProductPlacements, and ProductPrograms from both internal and external (Competitors, and other Providers) perspective.
+
+$ref of: xref:4.0.0@schemas:MarketingSales:MarketSegmentRef.adoc[]
+
+
+=== channel
+$ref of: xref:4.0.0@schemas:MarketingSales:ChannelRef.adoc[]
+
+
+=== productOffering
+$ref of: xref:4.0.0@schemas:MarketingSales:ProductOfferingRef.adoc[]
+
+
+=== relatedParty
+type: array
+
+
+=== prospectContact
+type: array
+
+
+=== productSpecification
+$ref of: xref:4.0.0@schemas:MarketingSales:ProductSpecificationRef.adoc[]
+
+
+=== category
+$ref of: xref:4.0.0@schemas:MarketingSales:CategoryRef.adoc[]
+
+
+=== salesOpportunity
+$ref of: xref:4.0.0@schemas:MarketingSales:SalesOpportunityRef.adoc[]
+
+
+=== product
+$ref of: xref:4.0.0@schemas:MarketingSales:ProductRef.adoc[]
+
+
+=== note
+type: array
+

@@ -1,0 +1,43 @@
+= ProblemGroup
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+Task resource that requests Service Problems to be grouped together into a parent and set of children
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Reference to this task resource
+
+type: string
+
+
+=== id
+description: Unique identifier of this task resource
+
+type: string
+
+
+=== childProblem
+description: List of problems to be grouped under a parent problem
+
+type: array
+
+
+=== parentProblem
+description: The parent problem to which the problems are to be grouped
+
+$ref of: xref:4.0.0@schemas:Service:ServiceProblemRef.adoc[]
+

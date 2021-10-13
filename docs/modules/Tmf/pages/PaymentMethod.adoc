@@ -1,0 +1,59 @@
+= PaymentMethod
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Defines a specific method of payment (e.g. direct debit with all details associated)
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: The contents of the payment method
+
+type: string
+
+
+=== name
+description: Friendly name assigned to the payment method
+
+type: string
+
+
+=== isPreferred
+description: If the method is the preferred one by the owner. Typically used when querying for the payment methods of a specific customer or account
+
+type: boolean
+
+
+=== status
+type: string
+
+
+=== statusDate
+type: string
+
+
+=== validFor
+description: Date interval in which the payment method is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== relatedParty
+$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+
+
+=== account
+type: array
+

@@ -1,0 +1,111 @@
+= Payment
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+The Payment resource represents a performed payment. It contains both information about the payment and the payment method used to perform it.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of Payment
+
+type: string
+
+
+=== href
+description: Hypertext Reference of the Payment
+
+type: string
+
+
+=== correlatorId
+description: Unique identifier in the client for the payment in case it is needed to correlate
+
+type: string
+
+
+=== paymentDate
+description: Date when the payment was performed
+
+type: string
+
+
+=== name
+description: Screen name of the payment
+
+type: string
+
+
+=== description
+description: Text describing the contents of the payment
+
+type: string
+
+
+=== authorizationCode
+description: Authorization code retrieved from an external payment gateway that could be used for conciliation
+
+type: string
+
+
+=== status
+description: Status of the payment
+
+type: string
+
+
+=== statusDate
+description: Date when the status was recorded
+
+type: string
+
+
+=== amount
+description: Amount to be paid (net of taxes)
+
+$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+
+
+=== taxAmount
+description: Tax applied
+
+$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+
+
+=== totalAmount
+description: Amount to be paid (including taxes)
+
+$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+
+
+=== channel
+$ref of: xref:4.0.0@schemas:Customer:ChannelRef.adoc[]
+
+
+=== paymentItem
+type: array
+
+
+=== payer
+$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+
+
+=== paymentMethod
+$ref of: xref:4.0.0@schemas:Customer:PaymentMethodRefOrValue.adoc[]
+
+
+=== account
+$ref of: xref:4.0.0@schemas:Customer:AccountRef.adoc[]
+

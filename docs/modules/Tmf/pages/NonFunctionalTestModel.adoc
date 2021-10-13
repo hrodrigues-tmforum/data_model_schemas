@@ -1,0 +1,23 @@
+= NonFunctionalTestModel
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A managed non-functional test model resource
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== nonFunctionalTestModelDefinition
+$ref of: xref:4.0.0@schemas:Tmf:NonFunctionalTestModelDefinition.adoc[]
+

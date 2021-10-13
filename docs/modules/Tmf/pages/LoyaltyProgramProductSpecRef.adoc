@@ -1,0 +1,31 @@
+= LoyaltyProgramProductSpecRef
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A reference to a loyalty program specification.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier for the product specification.
+
+type: string
+
+
+=== href
+description: A reference to the product specification.
+
+type: string
+

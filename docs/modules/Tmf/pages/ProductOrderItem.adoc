@@ -1,0 +1,95 @@
+= ProductOrderItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+An identified part of the order. A product order is decomposed into one or more order items.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Identifier of the line item (generally it is a sequence number 01, 02, 03, ...)
+
+type: string
+
+
+=== quantity
+description: Quantity ordered
+
+type: integer
+
+
+=== action
+description: The action to be carried out on the Product. Can be: add, modify, delete, noChange
+
+$ref of: xref:4.0.0@schemas:Tmf:OrderItemActionType.adoc[]
+
+
+=== appointment
+$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+
+
+=== billingAccount
+$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+
+
+=== itemPrice
+type: array
+
+
+=== itemTerm
+type: array
+
+
+=== itemTotalPrice
+type: array
+
+
+=== payment
+type: array
+
+
+=== product
+$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+
+
+=== productOffering
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+
+
+=== productOfferingQualificationItem
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
+
+
+=== quoteItem
+$ref of: xref:4.0.0@schemas:Tmf:QuoteItemRef.adoc[]
+
+
+=== productOrderItem
+type: array
+
+
+=== productOrderItemRelationship
+type: array
+
+
+=== qualification
+type: array
+
+
+=== state
+description: State of the order item : described in the state machine diagram
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductOrderItemStateType.adoc[]
+

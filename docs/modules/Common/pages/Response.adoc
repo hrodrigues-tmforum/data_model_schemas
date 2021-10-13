@@ -1,0 +1,37 @@
+= Response
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A response to a request
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== body
+description: The body of the response. For example for an HTTP response might contain HTML for rendering.
+
+type: string
+
+
+=== header
+description: Items included in the header of the response. For example for an HTTP response might contain negotiated locale.
+
+type: array
+
+
+=== statusCode
+description: The status of the response. For example for an HTTP response would be codes such as 200, 400, etc.
+
+type: string
+

@@ -1,0 +1,19 @@
+= ProductOfferingPriceRefOrValue
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A new product offering price being created by value or a reference to an existing product offering price that alreasy created. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the product offering price and not to this ReforValue structure
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

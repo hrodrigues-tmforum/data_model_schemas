@@ -1,0 +1,49 @@
+= ProductPriceValue
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price Alteration.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== dutyFreeAmount
+description: All taxes excluded amount (expressed in the given currency)
+
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== percentage
+description: Percentage to apply for ProdOfferPriceAlteration
+
+type: number
+
+
+=== taxIncludedAmount
+description: All taxes included amount (expressed in the given currency)
+
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== taxCategory
+description: Tax category
+
+type: string
+
+
+=== taxRate
+description: Tax rate
+
+type: number
+

@@ -1,0 +1,73 @@
+= ServiceLevelAgreementItem
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A part of the Service Level Agreement representing quality aspect of the agrrement for a product offering and corresponding products/services
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: identifier of the agreement item (unique within the agreement scope) 
+
+type: string
+
+
+=== productOffering
+description: The product offering referred by this agreement item
+
+type: string
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+
+
+=== termOrCondition
+description: The selected term or conditions for this agreement item
+
+type: array
+
+
+=== product
+description: product instance(s) associated to this agreement item
+
+type: array
+
+
+=== itemRelationship
+description: A list of SLA items related to this SLA item
+
+type: array
+
+
+=== characteristic
+type: array
+
+
+=== service
+description: Service instance(s) associated to this agreement item
+
+type: array
+
+
+=== constraint
+description: This is a list of references to rules applied to this SLA item
+
+type: array
+
+
+=== expectedQoS
+description: A list of quality of services in terms of SLS, SLO, KPI/KQI associated to this SLA item, and which will need to be satisified for corresponding service instances. This list is the subset of the QoS list as specified in the corresponding SLA specification
+
+type: array
+

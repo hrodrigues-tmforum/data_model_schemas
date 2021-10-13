@@ -1,0 +1,31 @@
+= AgreementSpecificationRelationship
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A relationship between agreement specifications. Typical relationships are substitution and dependency.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: Type of relationship such as, substitution or dependency.
+
+type: string
+
+
+=== validFor
+description: The period for which the relationship is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

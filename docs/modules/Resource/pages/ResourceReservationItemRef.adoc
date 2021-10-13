@@ -1,0 +1,25 @@
+= ResourceReservationItemRef
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Reference to a reservation item that can typically be queried with another API.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== resourceReservationId
+description: Identifier of the reservation of which the item is a part of
+
+type: string
+

@@ -1,0 +1,73 @@
+= TestMeasure
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+A TestMeasure specifies a measure of a specific aspect of a product, service, or resource test, such as lost packets or connectivity status
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== accuracy
+description: The number of digits of accuracy captured for associated Metrics
+
+type: number
+
+
+=== captureDateTime
+description: The date and time that the metric was captured
+
+type: string
+
+
+=== captureMethod
+description: The method used to capture the Metrics (This may be replaced by a set of entities similar to the Performance Monitoring Ref)
+
+type: string
+
+
+=== metricDescription
+description: Brief description of the metric
+
+type: string
+
+
+=== metricHref
+description: Hyperlink to access a metric for detail information
+
+type: string
+
+
+=== metricName
+description: The name of the metric
+
+type: string
+
+
+=== ruleViolation
+description: A list of rules that were violated in this test measure
+
+type: array
+
+
+=== unitOfMeasure
+description: The unit of measure for the metric values, such as meters, cubic yards, kilograms [ISO 1000].
+
+type: string
+
+
+=== value
+description: The value of Metric in the test. This also could be a document to record all values captured during the service test
+
+$ref of: xref:4.0.0@schemas:Service:Characteristic.adoc[]
+

@@ -1,0 +1,57 @@
+= ProductSpecificationCharacteristicRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+An aggregation, migration, substitution, dependency or exclusivity relationship between/among productSpecificationCharacteristics.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: the identifier of the associated product specification
+
+type: string
+
+
+=== href
+description: Hyperlink reference to the target product specification
+
+type: string
+
+
+=== charSpecSeq
+description: The order in which a CharacteristicSpecification appears within another CharacteristicSpecification that defines a grouping of CharacteristicSpecifications.
+
+For example, a grouping may represent the name of an individual. The given name is first, the middle name is second, and the last name is third.
+
+type: integer
+
+
+=== name
+description: Name of the target product specification characteristic
+
+type: string
+
+
+=== relationshipType
+description: Type of relationship such as aggregation, migration, substitution, dependency, exclusivity
+
+type: string
+
+
+=== validFor
+description: The period for which the productSpecificationCharacteristicRelationship is valid
+
+$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+

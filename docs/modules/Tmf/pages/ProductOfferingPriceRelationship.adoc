@@ -1,0 +1,31 @@
+= ProductOfferingPriceRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Describes a non-composite relationship between product offering prices. For example one price might be an discount alteration for another price.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== role
+description: The association role for the source product offering price
+
+type: string
+
+
+=== relationshipType
+description: type of the relationship, for example override, discount, etc.
+
+type: string
+

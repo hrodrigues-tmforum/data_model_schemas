@@ -1,0 +1,53 @@
+= GSMACommons
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== dateCreated
+type: string
+
+
+=== dateModified
+type: string
+
+
+=== source
+type: string
+
+
+=== name
+type: string
+
+
+=== alternateName
+type: string
+
+
+=== description
+type: string
+
+
+=== dataProvider
+type: string
+
+
+=== owner
+type: array
+
+
+=== seeAlso

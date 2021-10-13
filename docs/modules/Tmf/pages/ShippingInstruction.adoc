@@ -1,0 +1,67 @@
+= ShippingInstruction
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Instructions and details for the carrier
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== shippingType
+description: The shipping type, e.g. thick_envelope, small_flat_rate_box, large_package, etc.
+
+type: string
+
+
+=== carrierId
+description: The carrier identifier
+
+type: string
+
+
+=== carrierServiceCode
+description: The service code used by the carrier to ship the package, royal mail ground, royal mail first class, etc
+
+type: string
+
+
+=== deliverySpeed
+description: Shipping delivery speed, same day, next day, next business day, etc
+
+type: string
+
+
+=== deliveryAttempts
+description: Shipping delivery attempts that should be performed
+
+type: integer
+
+
+=== characteristic
+description: Additional shipping characteristics that maybe specific to one or another carrier
+
+type: array
+
+
+=== warehouseId
+description: The identification of the warehouse that the shipment is being shipped from.
+
+type: string
+
+
+=== receiptConfirmation
+description: Delivery confirmation required for the shipment (none, signature, over18Signature)
+
+type: string
+

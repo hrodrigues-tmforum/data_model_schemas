@@ -1,0 +1,43 @@
+= CreditProfile
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Credit profile for the party (containing credit scoring, ...). By default only the current credit profile  is retrieved. It can be used as a list to give the party credit profiles history, the first one in the list will be the current one.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== creditProfileDate
+description: The date the profile was established
+
+type: string
+
+
+=== creditRiskRating
+description: This is an integer whose value is used to rate the risk
+
+type: integer
+
+
+=== creditScore
+description: A measure of a person or organizations creditworthiness calculated on the basis of a combination of factors such as their income and credit history
+
+type: integer
+
+
+=== validFor
+description: The period for which the profile is valid
+
+$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+

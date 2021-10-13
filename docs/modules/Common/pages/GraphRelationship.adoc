@@ -1,0 +1,49 @@
+= GraphRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A relationship between Graphs.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: Type of relationship such as adjacency, connectivity
+
+type: string
+
+
+=== role
+description: The association role for this Graph
+
+type: string
+
+
+=== id
+description: Unique identifier of target Graph
+
+type: string
+
+
+=== href
+description: Reference of the target Graph
+
+type: string
+
+
+=== name
+description: The name given to the target Grapph instance
+
+type: string
+

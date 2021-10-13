@@ -1,0 +1,49 @@
+= RoleTypeRef
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+RoleType reference.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: The name of the role type. It uniquely identifies the role type within the partnership type.
+
+type: string
+
+
+=== partnershipHref
+description: Reference url of the partnership type containing the role type
+
+type: string
+
+
+=== partnershipId
+description: The identifier of the partnership type containing the role type
+
+type: string
+
+
+=== partnershipName
+description: The name of the partnership type defining this role type
+
+type: string
+
+
+=== @referredType
+description: The actual type of the target instance when needed for disambiguation.
+
+type: string
+

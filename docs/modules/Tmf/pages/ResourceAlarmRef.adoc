@@ -1,0 +1,41 @@
+= ResourceAlarmRef
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+A set of alarm ids identifying the alarms that are underlying this problem.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @referredType
+description: The actual type of the target instance when needed for disambiguation.
+
+type: string
+
+
+=== changeRequest
+$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+
+
+=== href
+description: Reference of the Alarm
+
+type: string
+
+
+=== id
+description: Unique identifier of the Alarm
+
+type: string
+

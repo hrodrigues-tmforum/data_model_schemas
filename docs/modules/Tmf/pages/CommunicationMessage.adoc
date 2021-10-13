@@ -1,0 +1,120 @@
+= CommunicationMessage
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Communication message means a notification approach in the format of a message which can be dispatched (sent) to the certain user by the system with the content which can be felt and understood by the recipient. The user can be either a final customer or a customer service agent. The message can reach the customer in different interaction channels, including: email, short message, mobile app notification (push).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== content
+description: The content of the communication message
+
+type: string
+
+
+=== description
+description: Description for the whole object
+
+type: string
+
+
+=== href
+description: Hypertext Reference of the Communication Message
+
+type: string
+
+
+=== id
+description: Unique identifier of Communication Message
+
+type: string
+
+
+=== logFlag
+type: boolean
+
+
+=== priority
+description: The priority of the communication message.
+Small number means higher priority.
+
+type: string
+
+
+=== scheduledSendTime
+description: The scheduled time for sending the communication message
+
+type: string
+
+
+=== sendTime
+description: The time of sending communication message
+
+type: string
+
+
+=== sendTimeComplete
+description: The time of completion of sending communication message
+
+type: string
+
+
+=== state
+description: Status of communication message
+
+$ref of: xref:4.0.0@schemas:Tmf:CommunicationMessageStateType.adoc[]
+
+
+=== subject
+description: The title of the message, necessary for the email and mobile app push
+
+type: string
+
+
+=== tryTimes
+description: How many times do you want to retry the delivery of this message?
+
+type: integer
+
+
+=== messageType
+description: The type of message, such as: SMS, Email, Mobile app push notification
+
+type: string
+
+
+=== attachment
+description: Any attachment associated with this message
+
+type: array
+
+
+=== receiver
+description: The receiver(s) of this message
+
+type: array
+
+
+=== sender
+description: The sender of this message
+
+$ref of: xref:4.0.0@schemas:Tmf:Sender.adoc[]
+
+
+=== characteristic
+description: Any additional characteristic(s) of this message
+
+type: array
+

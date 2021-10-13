@@ -1,0 +1,61 @@
+= PromotionCriteria
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Criteria of the promotion.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @baseType
+description: The base type for use in polymorphic collections
+
+type: string
+
+
+=== @schemaLocation
+description: A link to the schema describing a resource (for type extension).
+
+type: string
+
+
+=== @type
+description: The class type of the actual resource (for type extension).
+
+type: string
+
+
+=== criteriaOperator
+description: The logic expression including parameter and operator. includeing:=,&amp;gt;,&amp;lt;,&amp;gt;=,&amp;lt;=,&amp;lt;&amp;gt;
+
+type: string
+
+
+=== criteriaPara
+description: The parameter (factor) of the criteria.The basic factors are abstracted from these data sources.There are several detail parameters .
+
+type: string
+
+
+=== criteriaValue
+description: The value is filled for the comparison of the criteria.
+
+type: string
+
+
+=== id
+description: Unique identifier.
+
+type: string
+

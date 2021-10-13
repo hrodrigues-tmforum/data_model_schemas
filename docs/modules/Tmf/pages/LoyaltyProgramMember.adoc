@@ -1,0 +1,49 @@
+= LoyaltyProgramMember
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A person or group that opts in to a loyalty program.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier for the loyalty program member.
+
+type: string
+
+
+=== href
+description: A reference to the loyalty program member.
+
+type: string
+
+
+=== name
+description: The loyalty members name.
+
+type: string
+
+
+=== status
+description: A free-form field in which the members status may be captured, e.g. [active], [suspended], .etc.
+
+type: string
+
+
+=== ValidFor
+description: The period during which the loyalty member is valid for.
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

@@ -1,0 +1,31 @@
+= ProductSpecificationRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A migration, substitution, dependency or exclusivity relationship between/among product specifications.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: Type of relationship such as migration, substitution, dependency, exclusivity
+
+type: string
+
+
+=== validFor
+description: The period for which the productSpecificationRelationship is valid
+
+$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+

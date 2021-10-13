@@ -1,0 +1,31 @@
+= TargetEntitySchema
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+The reference object to the schema and type of target entity which is described by a specification
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @type
+description: Class type of the target entity
+
+type: string
+
+
+=== @schemaLocation
+description: This field provides a link to the schema describing the target entity
+
+type: string
+

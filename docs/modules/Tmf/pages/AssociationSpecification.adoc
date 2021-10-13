@@ -1,0 +1,67 @@
+= AssociationSpecification
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+AssociationSpecification is an association class that describes a type of relationship between two entities. This is a generic construct that may be used to describe relationship types and roles. The role and type of each entity in the relationship is given by an association role specification. Two role specifications are embedded in the association specification.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of the specification
+
+type: string
+
+
+=== lastUpdate
+description: The last modified date of this specification
+
+type: string
+
+
+=== lifecycleStatus
+description: Indicates the current lifecycle status
+
+type: string
+
+
+=== name
+description: Name given to this association specification
+
+type: string
+
+
+=== validFor
+description: The period for which this specification is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== version
+description: Version of this association
+
+type: string
+
+
+=== constraint
+description: Constraints relating to this association
+
+type: array
+
+
+=== associationRoleSpec
+description: Role specifications for this association
+
+type: array
+

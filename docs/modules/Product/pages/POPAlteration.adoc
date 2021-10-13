@@ -1,0 +1,71 @@
+= POPAlteration
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Is an amount, usually of money, that modifies the price charged for an order item.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== applicationDuration
+description: The period for which the productOfferingPriceAlteration is applicable
+
+$ref of: xref:4.0.0@schemas:Product:Duration.adoc[]
+
+
+=== description
+description: A narrative that explains in detail the semantics of this order item price alteration
+
+type: string
+
+
+=== name
+description: Name given to this price alteration
+
+type: string
+
+
+=== priceType
+description: A category that describes the price such as recurring, one time and usage.
+
+type: string
+
+
+=== priority
+description: Priority level for applying this alteration among all the defined alterations on the order item price
+
+type: integer
+
+
+=== recurringChargePeriod
+description: Could be month, week...
+
+type: string
+
+
+=== validFor
+description: The period for which this productOfferingPriceAlteration is valid
+
+$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+
+
+=== unitOfMeasure
+description: A number and unit representing denominator of an alteration rate. For example, for a data discount rate of $1 per 20 GB usage, the amount of unitOfMeasure will be 20 with units as GB.
+
+$ref of: xref:4.0.0@schemas:Product:Quantity.adoc[]
+
+
+=== price
+$ref of: xref:4.0.0@schemas:Product:ProductPriceValue.adoc[]
+

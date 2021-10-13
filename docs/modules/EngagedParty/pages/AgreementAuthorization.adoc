@@ -1,0 +1,37 @@
+= AgreementAuthorization
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A business participant that is responsible for approving the agreement.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== date
+description: The date associated with the authorization state.
+
+type: string
+
+
+=== signatureRepresentation
+description: Indication that represents whether the signature is a physical paper signature or a digital signature.
+
+type: string
+
+
+=== state
+description: Current status of the authorization, for example in process, approved, rejected.
+
+type: string
+

@@ -1,0 +1,81 @@
+= BalanceDeduct
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+The Balance Deduct task resource is a detailed description of deduction operation. If balanceReserve Resource ID is contained in the deduct request message, the reserved balance will be performed deduct operation (if part of the reserved balance is deducted, the remain amount will be released); if balanceReserve Resource ID is not contained in the deduct request message, the balance will be deducted directly.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== confirmationDate
+description: Date when the deduction was confirmed in the server
+
+type: string
+
+
+=== description
+description: Description of the deduct  operation
+
+type: string
+
+
+=== href
+description: A resource URI pointing to the resource in the OB that stores the detailed information about a deduction
+
+type: string
+
+
+=== id
+description: Unique Identifier within the server for the deduction  operation request
+
+type: string
+
+
+=== requestedDate
+description: Date when the deduction request was received in the server
+
+type: string
+
+
+=== status
+description: Status of the deduction operation
+
+type: string
+
+
+=== deductType
+description: A preconfigured value that describes a deduct type which determines the prepay balance bucket in which the deduct is done
+
+type: string
+
+
+=== relatedParty
+$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+
+
+=== product
+$ref of: xref:4.0.0@schemas:Tmf:ProductRef.adoc[]
+
+
+=== balanceReserve
+$ref of: xref:4.0.0@schemas:Tmf:BalanceReserveRef.adoc[]
+
+
+=== requestor
+$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+
+
+=== partyAccount
+$ref of: xref:4.0.0@schemas:Tmf:PartyAccountRef.adoc[]
+

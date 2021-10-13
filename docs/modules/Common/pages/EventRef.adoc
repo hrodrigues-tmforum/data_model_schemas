@@ -1,0 +1,25 @@
+= EventRef
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Events linked with service problem
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== eventTime
+description: Time the event occurred
+
+type: string
+

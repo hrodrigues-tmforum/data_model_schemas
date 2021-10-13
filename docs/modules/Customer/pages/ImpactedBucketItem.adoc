@@ -1,0 +1,49 @@
+= ImpactedBucketItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+a resource used by the ImpactedBucket resource to capture the impact of a ImpactedBucket
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== reason
+description: Text describing the reason for the action/task
+
+type: string
+
+
+=== description
+description: Description of the recharge operation
+
+type: string
+
+
+=== amount
+description: Indicate the amount on the bucket
+
+$ref of: xref:4.0.0@schemas:Customer:Quantity.adoc[]
+
+
+=== name
+description: This represents the transaction activity. e.g topup, bonus, additional bonus, tax, fees, and so on
+
+type: string
+
+
+=== itemType
+description: This indicates whether the action led to the bucket being incremented or decremented.eg credit or debit
+
+type: string
+

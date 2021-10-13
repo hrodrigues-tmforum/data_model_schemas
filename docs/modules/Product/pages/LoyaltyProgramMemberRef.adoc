@@ -1,0 +1,31 @@
+= LoyaltyProgramMemberRef
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Reference to a loyalty member.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier for the loyalty program member.
+
+type: string
+
+
+=== href
+description: A reference to the loyalty program member.
+
+type: string
+

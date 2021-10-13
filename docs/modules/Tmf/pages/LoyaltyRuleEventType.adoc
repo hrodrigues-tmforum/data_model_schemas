@@ -1,0 +1,31 @@
+= LoyaltyRuleEventType
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Resource containing a the ID of a event type to link to a loyalty rule.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier for the loyalty event type.
+
+type: string
+
+
+=== href
+description: A reference to the loyalty event type.
+
+type: string
+

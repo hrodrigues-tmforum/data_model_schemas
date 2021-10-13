@@ -1,0 +1,37 @@
+= RiskAssessmentResult
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+This resource reflects the risk assessment
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== overallScore
+description: An overall assessment of the risk, composed from the individual scores
+
+type: number
+
+
+=== score
+description: Additional characteristics for which the risk might be assessed, optional input to the task
+
+type: array
+
+
+=== validFor
+description: Period for which this result is considered valid and not stale
+
+$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+

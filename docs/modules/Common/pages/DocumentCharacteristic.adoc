@@ -1,0 +1,29 @@
+= DocumentCharacteristic
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+is a list of name value pairs that define the document characteristics.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: name of the characteristic
+
+type: string
+
+
+=== value
+type: string
+

@@ -1,0 +1,51 @@
+= Graph
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Graph is a directed graph representing edges connecting vertices.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: Name given to this REST resource
+
+type: string
+
+
+=== description
+description: Description of this REST resource
+
+type: string
+
+
+=== graphRelationship
+description: Relationship to another Graph.
+
+type: array
+
+
+=== contained
+description: True if this graph contains embedded edges &amp; vertices, false for seperate edge/vertex collections.
+
+type: boolean
+
+
+=== vertex
+type: array
+
+
+=== edge
+type: array
+

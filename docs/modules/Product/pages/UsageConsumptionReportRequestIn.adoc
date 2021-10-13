@@ -1,0 +1,43 @@
+= UsageConsumptionReportRequestIn
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+An UsageConsumptionReportRequest allows to manage the calculation request of an usage consumption report
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== bucket
+description: Reference of the buckets for which the usage consumption report is requested
+
+type: array
+
+
+=== product
+description: Network product reference for which the usage consumption report is requested
+
+$ref of: xref:4.0.0@schemas:Product:NetworkProductRef.adoc[]
+
+
+=== relatedParty
+description: Reference and role of the related parties for which the usage consumption report is requested
+
+type: array
+
+
+=== validPeriod
+description: Validity period
+
+$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+

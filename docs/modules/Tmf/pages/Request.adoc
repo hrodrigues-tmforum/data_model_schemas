@@ -1,0 +1,43 @@
+= Request
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A response to a request
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== body
+description: The body of the request. For example for an HTTP request might contain content of a form .
+
+type: string
+
+
+=== header
+description: Items included in the header of the request. For example for an HTTP request might contain requested locale, basic authentication.
+
+type: array
+
+
+=== method
+description: The protocol of the request, e.g. http
+
+type: string
+
+
+=== to
+description: The target of the request, e.g. a URL for an HTTP request
+
+type: string
+

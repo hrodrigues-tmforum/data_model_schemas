@@ -1,0 +1,47 @@
+= ShipmentQualificationItem
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A ShipmentQualificationItem relates to a specific shipment being checked in a qualification operation.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== expectedDeliveryDate
+description: The date when the shipment is expected to be delivered
+
+type: string
+
+
+=== id
+description: Id of the Shipment Qualification Item
+
+type: string
+
+
+=== expirationDate
+description: Date when the qualification item response expires
+
+type: string
+
+
+=== shipment
+description: Shipment structure that allows to identify the Shipment&#x27;s composition, the Shipment Specification and the Shipment Characteristics.
+
+$ref of: xref:4.0.0@schemas:EngagedParty:ShipmentRefOrValue.adoc[]
+
+
+=== eligibilityUnavailabilityReason
+type: array
+

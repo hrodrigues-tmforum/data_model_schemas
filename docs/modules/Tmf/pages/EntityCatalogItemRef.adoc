@@ -1,0 +1,25 @@
+= EntityCatalogItemRef
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+reference to EntityCatalogItem object
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== version
+description: EntityCatalogItem version
+
+type: string
+

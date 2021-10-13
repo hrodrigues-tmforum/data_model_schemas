@@ -1,0 +1,43 @@
+= BankAccount
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Describes the information of a bank account
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== accountHolder
+description: Name of the holder of the bank account
+
+type: string
+
+
+=== BIC
+description: Identifier of the bank according to its international code
+
+type: string
+
+
+=== domiciliation
+description: Address of the bank agency which manages the bank account
+
+type: string
+
+
+=== IBAN
+description: International Bank Account Number
+
+type: string
+

@@ -1,0 +1,94 @@
+= ServiceTest
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+A service test is an entity that exists for a controlled test invocation on a service. The service 
+test is executed according to a schedule and contains service test configuration parameters that are to be 
+applied at execution time, and service test measures that result.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== characteristic
+description: List of characteristics with values that define the test run
+
+type: array
+
+
+=== description
+description: Description of the service test
+
+type: string
+
+
+=== endDateTime
+description: The end date and time of the service test
+
+type: string
+
+
+=== mode
+description: An indication of whether the service test is running in 
+&quot;PROACTIVE&quot; or &quot;ONDEMAND&quot; mode
+
+type: string
+
+
+=== validFor
+description: The validity time for the test results
+
+$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+
+
+=== name
+description: The name of the service test
+
+type: string
+
+
+=== relatedService
+description: The actual service being tested
+
+$ref of: xref:4.0.0@schemas:Service:ServiceRef.adoc[]
+
+
+=== relatedParty
+description: Party related to the test
+
+type: array
+
+
+=== startDateTime
+description: The start date and time of the service test.
+
+type: string
+
+
+=== state
+description: The actual state the service test is in. Recommended states are found in ExecutionStateType schema possible values include acknowledged, rejected, pending, inProgress, cancelled, completed and failed
+
+type: string
+
+
+=== testMeasure
+description: The results of the test in terms of the measured metrics
+
+type: array
+
+
+=== testSpecification
+description: The specification for this test
+
+$ref of: xref:4.0.0@schemas:Service:ServiceTestSpecificationRef.adoc[]
+

@@ -1,0 +1,44 @@
+= RequestedPeriod
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+The period of time for which user requested to use the resources.
+The user can request on the start date without the end date.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== daysOfWeek
+description: A day or days representing when the schedule is applicable. For example 2, 3 represent Monday and Tuesday.
+
+type: string
+
+
+=== fromToDateTime
+description: The period of time for which the schedule is applicable. 
+Instance values are mutually exclusive with daysOfWeek values.
+
+type: string
+
+
+=== rangeInterval
+description: An indicator that specifies the inclusion or exclusion of the from and to DateTime attributes. 
+Possible values are &quot;open&quot;, &quot;closed&quot;, &quot;closedBottom&quot; and &quot;closedTop&quot;.
+
+type: string
+
+
+=== validFor
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

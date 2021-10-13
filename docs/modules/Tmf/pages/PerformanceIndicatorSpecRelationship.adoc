@@ -1,0 +1,55 @@
+= PerformanceIndicatorSpecRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Type of relationship such as aggregation, migration, substitution, dependency, exclusivity
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: 
+
+type: string
+
+
+=== role
+description: The association role for this service specification
+
+type: string
+
+
+=== id
+description: Unique identifier of the target specification
+
+type: string
+
+
+=== href
+description: Hyperlink reference to the target specification
+
+type: string
+
+
+=== name
+description: Name of the targetcharacteristic
+
+type: string
+
+
+=== validFor
+description: The period for which the performanceIndicatorSpecRelationship is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:.adoc[]
+

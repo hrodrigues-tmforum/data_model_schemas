@@ -1,0 +1,31 @@
+= MonitoredClassCriteria
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Specifies a monitored object class (a string) in conjunction with a filter object.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== monitoredObjectClass
+description: A monitored object class for specifying the set of instances that are referenced by a PM query.
+
+type: string
+
+
+=== objectInstanceFilter
+description: A filter that can be used in conjunction with the monitored object class for specifying the set of instances that are referenced by a PM query.
+
+type: string
+

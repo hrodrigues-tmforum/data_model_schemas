@@ -1,0 +1,49 @@
+= PerformanceAlarmSpecification
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+The specification of how to populate the alarm fields when generating a threshold crossing alarm
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== perfAlarmSpecAdditionalText
+description: A value for the AdditionalText attribute as part of a threshold crossing alarm definition.
+
+type: string
+
+
+=== perfAlarmSpecAlarmType
+description: A value for the AlarmType attribute as part of a threshold crossing alarm definition.
+
+type: string
+
+
+=== perfAlarmSpecSeverity
+description: A value for the Severity attribute as part of a threshold crossing alarm definition
+
+type: string
+
+
+=== perfAlarmSpecSpecificProblem
+description: A value for the SpecificProblem attribute as part of a threshold crossing alarm definition
+
+type: string
+
+
+=== perfeAlarmProbableCause
+description: A value for the ProbableCause attribute as part of a threshold crossing alarm definition.
+
+type: string
+

@@ -1,0 +1,55 @@
+= MeasurementProductionJobAVCN
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+This is a notification generated from the entity MeasurementProductionJob
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== granularity
+$ref of: xref:4.0.0@schemas:Common:ExecutionState.adoc[]
+
+
+=== monitoredInstancesCriteria
+type: array
+
+
+=== monitoredClassCriteria
+type: array
+
+
+=== lastModifiedTime
+description: The last time that a measurement job was modified.
+
+type: string
+
+
+=== adminState
+$ref of: xref:4.0.0@schemas:Common:AdministrativeState.adoc[]
+
+
+=== jobPriority
+description: The priority of the management job. The way the management application will use the JobPriority to schedule job execution is application specific and outside the scope. Integer, limited to a range of 1 to 10.
+
+type: integer
+
+
+=== executionState
+$ref of: xref:4.0.0@schemas:Common:ExecutionState.adoc[]
+
+
+=== scheduleDefinition
+type: array
+

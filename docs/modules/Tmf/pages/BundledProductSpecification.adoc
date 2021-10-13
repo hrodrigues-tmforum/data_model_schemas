@@ -1,0 +1,43 @@
+= BundledProductSpecification
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A type of ProductSpecification that belongs to a grouping of ProductSpecifications made available to the market. It inherits of all attributes of ProductSpecification.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Reference of the product specification
+
+type: string
+
+
+=== id
+description: Unique identifier of the product specification
+
+type: string
+
+
+=== lifecycleStatus
+description: Used to indicate the current lifecycle status
+
+type: string
+
+
+=== name
+description: Name of the product specification
+
+type: string
+

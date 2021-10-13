@@ -1,0 +1,69 @@
+= SettlementNoteItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Concerns a product identified by its catalogue reference. It could also follow a period delimited by a start and an end date.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== itemId
+description: Unique identifier of the settlement note item
+
+type: string
+
+
+=== itemLabel
+description: A free description text for the settlement note item
+
+type: string
+
+
+=== itemNumber
+description: Unique number assigned to the settlement note item
+
+type: string
+
+
+=== period
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== quantity
+description: Quantity
+
+type: integer
+
+
+=== taxExcludedAmount
+description: Tax excluded amount equal to quantity * taxExcludedUnitPrice
+
+type: number
+
+
+=== taxExcludedUnitPrice
+description: Tax excluded unit price to be applied on the given quantity
+
+type: number
+
+
+=== taxIncludedAmount
+description: All taxes included amount equal to taxExcludedAmount + taxAmount
+
+type: number
+
+
+=== taxItem
+type: array
+

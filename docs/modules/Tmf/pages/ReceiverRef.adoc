@@ -1,0 +1,37 @@
+= ReceiverRef
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Receiver reference. The receiver is the party role who will receive the settlement note.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Reference of the receiver
+
+type: string
+
+
+=== id
+description: Identifier of the receiver
+
+type: string
+
+
+=== @referredType
+description: The actual type of the target instance when needed for disambiguation.
+
+type: string
+

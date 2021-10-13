@@ -1,0 +1,23 @@
+= CancelProductOrder
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Request for cancellation an existing product order
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== productOrder
+$ref of: xref:4.0.0@schemas:Product:ProductOrderRef.adoc[]
+

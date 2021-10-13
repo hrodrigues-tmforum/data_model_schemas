@@ -1,0 +1,37 @@
+= AppliedBillingTaxRate
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+The applied billing tax rate represents taxes applied billing rate it refers to. It is calculated during the billing process.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== taxAmount
+description: Tax amount expressed in the given currency
+
+$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+
+
+=== taxCategory
+description: A categorization of the tax rate
+
+type: string
+
+
+=== taxRate
+description: Applied rate
+
+type: number
+

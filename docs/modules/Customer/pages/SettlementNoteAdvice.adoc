@@ -1,0 +1,109 @@
+= SettlementNoteAdvice
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+The settlement is about transferring money receiving by a CSP to a partner. The settlement is notified to the partner with a settlement note advice containing details in settlement lines.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== currencyCode
+description: A string used as a code for specifying the currency associated to the given amounts. The ISO4217 norm uses 3 letters to define the currency (for example USD for US dollar or EUR for Euro).
+
+type: string
+
+
+=== date
+description: Creation date of the settlement note advice
+
+type: string
+
+
+=== description
+description: A free description text
+
+type: string
+
+
+=== href
+description: Reference of the settlement note advice
+
+type: string
+
+
+=== id
+description: A unique identifier for the settlement note advice
+
+type: string
+
+
+=== issuerTaxRegistration
+description: Tax registration number of the issuer
+
+type: string
+
+
+=== paymentDueDate
+description: Date at which the due amount should have been paid to the partner
+
+type: string
+
+
+=== receiverTaxRegistration
+description: Tax registration number of the receiver
+
+type: string
+
+
+=== taxDate
+description: Date of the tax
+
+type: string
+
+
+=== taxExcludedAmount
+description: All taxes excluded amount (expressed in the given currency)
+
+type: number
+
+
+=== taxIncludedAmount
+description: All taxes included amount (expressed in the given currency)
+
+type: number
+
+
+=== settlementMethod
+$ref of: xref:4.0.0@schemas:Customer:SettlementMethod.adoc[]
+
+
+=== settlementNoteImage
+$ref of: xref:4.0.0@schemas:Customer:SettlementNoteImage.adoc[]
+
+
+=== receiver
+$ref of: xref:4.0.0@schemas:Customer:PartyRef.adoc[]
+
+
+=== taxItem
+type: array
+
+
+=== issuer
+$ref of: xref:4.0.0@schemas:Customer:PartyRef.adoc[]
+
+
+=== settlementNoteItem
+type: array
+

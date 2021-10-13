@@ -1,0 +1,73 @@
+= FeatureSpecification
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Specification for resource, service or product features
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Identifier of the feature specification. Must be locally unique within the containing specification, thus allowing direct access to the feature spec.
+
+type: string
+
+
+=== version
+description: Version of the feature specification
+
+type: string
+
+
+=== name
+description: Unique name given to the feature specification
+
+type: string
+
+
+=== isBundle
+description: A flag indicating if this is a feature group (true) or not (false)
+
+type: boolean
+
+
+=== validFor
+description: The period for which this feature specification is valid
+
+$ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
+
+
+=== featureSpecRelationship
+description: A dependency, exclusivity or aggratation relationship between/among feature specifications.
+
+type: array
+
+
+=== constraint
+description: This is a list of feature constraints
+
+type: array
+
+
+=== isEnabled
+description: A flag indicating if the feature is enabled (true) or not (false)
+
+type: boolean
+
+
+=== featureSpecCharacteristic
+description: This is a list of characteristics for a particular feature
+
+type: array
+

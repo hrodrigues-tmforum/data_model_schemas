@@ -1,0 +1,83 @@
+= WorkOrderItem
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+An identified part of the order. A work order is decomposed into one or more order items.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== action
+$ref of: xref:4.0.0@schemas:Tmf:OrderItemActionType.adoc[]
+
+
+=== appointment
+$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+
+
+=== billingAccount
+$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+
+
+=== description
+description: Description of the Order Item
+
+type: string
+
+
+=== id
+description: Identifier of the line item (generally it is a sequence number 01, 02, 03, ...)
+
+type: string
+
+
+=== itemPrice
+type: array
+
+
+=== itemTotalPrice
+type: array
+
+
+=== note
+$ref of: xref:4.0.0@schemas:Tmf:Note.adoc[]
+
+
+=== orderItem
+type: array
+
+
+=== payment
+type: array
+
+
+=== relatedEntity
+type: array
+
+
+=== state
+$ref of: xref:4.0.0@schemas:Tmf:WorkOrderItemStateType.adoc[]
+
+
+=== work
+$ref of: xref:4.0.0@schemas:Tmf:WorkRefOrValue.adoc[]
+
+
+=== workOrderItem
+type: array
+
+
+=== workOrderItemRelationship
+type: array
+

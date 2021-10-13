@@ -1,0 +1,43 @@
+= SettlementNoteImage
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Is the image of the settlement note
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== imageFileName
+description: The name of the file in which the settlement note image is saved.
+
+type: string
+
+
+=== imageFileURL
+description: The URL of the settlement note image
+
+type: string
+
+
+=== imageFormat
+description: The format of the settlement note image (csv, pdf, xls, txt...)
+
+type: string
+
+
+=== imageSize
+description: The size of the settlement note image (in bytes)
+
+type: integer
+

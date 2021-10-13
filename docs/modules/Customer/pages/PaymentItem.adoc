@@ -1,0 +1,47 @@
+= PaymentItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+The paymentItem is the result of lettering process. It enables to assign automatically or manually part of incoming payment amount to a bill
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the payment Item
+
+type: string
+
+
+=== amount
+description: Amount to be paid (net of taxes)
+
+$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+
+
+=== taxAmount
+description: Tax applied
+
+$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+
+
+=== totalAmount
+description: Amount to be paid (including taxes)
+
+$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+
+
+=== item
+$ref of: xref:4.0.0@schemas:Customer:EntityRef.adoc[]
+

@@ -1,0 +1,91 @@
+= ReserveProductStock
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+ReserveProductStock is used to request a product stock reservation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the ReserveProductStock
+
+type: string
+
+
+=== href
+description: Reference of the ReserveProductStock
+
+type: string
+
+
+=== creationDate
+description: Date when the ReserveProductStock was created (whatever its status).
+
+type: string
+
+
+=== requiredAvailabilityDate
+description: Requested product availability date for the reservation.
+
+type: string
+
+
+=== reserveProductStockState
+description: State of the ReserveProductStock (acknowledged, inProgress, failed, done, cancelled)
+
+$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+
+
+=== reserveProductStockItem
+description: A list of product stock item reservation 
+
+type: array
+
+
+=== relatedEntity
+description: A list of related  entity in relationship with this stock reservation (trouble ticket, quote, product order, etc...) 
+
+type: array
+
+
+=== channel
+description: Channel(s) beneficiary(ies) for this reservation
+
+type: array
+
+
+=== marketSegment
+description: Market segment(s) beneficiary(ies) for this reservation
+
+type: array
+
+
+=== relatedParty
+description: A list of related party references (RelatedParty [*]). A related party defines party or party role linked to a specific entity
+
+type: array
+
+
+=== validFor
+description: Reservation validity period
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== place
+description: Used to define a place where the product stock must be reserved
+
+$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+

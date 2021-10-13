@@ -1,0 +1,65 @@
+= ServiceLevelAgreement
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Service Level Agreement
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: verbal description of the SLA
+
+type: string
+
+
+=== href
+description: Hyperlink to access the SLA definition
+
+type: string
+
+
+=== id
+description: Unique identifier created by SLA Management system
+
+type: string
+
+
+=== name
+description: name associated with the SLA
+
+type: string
+
+
+=== relatedParty
+type: array
+
+
+=== rule
+type: array
+
+
+=== template
+$ref of: xref:4.0.0@schemas:Tmf:Template.adoc[]
+
+
+=== validFor
+description: The period for which the SLA is valid  (A period of time, either as a deadline (endDateTime only) a startDateTime only, or both)
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== version
+type: string
+

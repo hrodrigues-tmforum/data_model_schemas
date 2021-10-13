@@ -1,0 +1,49 @@
+= ShippingOrderItem
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A list of shipping order items
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Identifier of the Shipping Order Item
+
+type: string
+
+
+=== action
+description: The action to be carried out on the Product. Can be: add, modify, delete, noChange
+
+$ref of: xref:4.0.0@schemas:EngagedParty:ShippingOrderItemActionType.adoc[]
+
+
+=== status
+description: status of shipping order item. e.g &quot;active&quot; , &quot;savedForLater&quot;
+
+type: string
+
+
+=== shipment
+description: A set of goods to be shipped
+
+$ref of: xref:4.0.0@schemas:EngagedParty:Shipment.adoc[]
+
+
+=== shippingOrderItemOffer
+description: Each shipping order item can have a corresponding product offer in the product catalog.
+
+$ref of: xref:4.0.0@schemas:EngagedParty:ProductOfferingRef.adoc[]
+

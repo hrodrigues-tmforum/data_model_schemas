@@ -1,0 +1,37 @@
+= ServiceLevelObjectiveRef
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+A set of Service Level Objectives that are contained in the Service Level Specification.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: The hyperlink to access a service level object.
+
+type: string
+
+
+=== id
+description: The identifier of a service level object.
+
+type: string
+
+
+=== @referredType
+description: The actual type of the target instance when needed for disambiguation.
+
+type: string
+

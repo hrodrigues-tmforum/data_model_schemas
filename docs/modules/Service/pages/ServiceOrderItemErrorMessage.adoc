@@ -1,0 +1,25 @@
+= ServiceOrderItemErrorMessage
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+AServiceOrderItemErrorMessage represents an error that causes a status change in a service order item.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== timestamp
+description: Date when the error happened
+
+type: string
+

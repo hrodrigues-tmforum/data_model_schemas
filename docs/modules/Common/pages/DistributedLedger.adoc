@@ -1,0 +1,101 @@
+= DistributedLedger
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Document is a tangible output from an activity
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== binaryAttachment
+type: array
+
+
+=== category
+type: array
+
+
+=== characteristic
+type: array
+
+
+=== creationDate
+description: The date and time the document was created. A date and time formatted in compliance with the ISO8601 standard must be used.
+
+type: string
+
+
+=== description
+description: free-text description of the document
+
+type: string
+
+
+=== documentRelationship
+type: array
+
+
+=== documentSpecification
+$ref of: xref:4.0.0@schemas:Common:DocumentSpecification.adoc[]
+
+
+=== href
+description: The URI for the object itself.
+
+type: string
+
+
+=== id
+description: Identifier of an instance of the document. Required to be unique within the document type.  Used in URIs as the identifier for specific instances of a type.
+
+type: string
+
+
+=== lastUpdate
+description: The date and time the document was last modified. A date and time formatted in compliance with the ISO8601 standard must be used.
+
+type: string
+
+
+=== lifecycleState
+description: The life cycle state of the document.
+
+type: string
+
+
+=== name
+description: A string used to give a name to the document
+
+type: string
+
+
+=== relatedEntity
+$ref of: xref:4.0.0@schemas:Common:RelatedEntity.adoc[]
+
+
+=== relatedParty
+type: array
+
+
+=== documentType
+description: Name of the document type
+
+type: string
+
+
+=== version
+description: A particular form or variety of an artefact that is different from others or from the original. The form represents differences in properties that characterize an artefact, that are not enough to warrant creating a new artefact
+
+type: string
+
