@@ -3,12 +3,12 @@
 [#domain]
 == Domain
 
-This schema is part of Common
+This schema is part of EngagedParty
 
 [#description]
 == Description
 
-A reference to the shipment tracking entity.
+ShipmentTracking reference
 
 
 [#data_model]

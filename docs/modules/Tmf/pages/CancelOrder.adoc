@@ -3,7 +3,7 @@
 [#domain]
 == Domain
 
-This schema is part of Common
+This schema is part of Product
 
 [#description]
 == Description
