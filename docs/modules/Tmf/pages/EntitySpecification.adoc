@@ -54,7 +54,7 @@ type: boolean
 === validFor
 description: The period for which this REST resource is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === version
@@ -72,7 +72,7 @@ type: array
 === targetEntitySchema
 description: Pointer to a schema that defines the target entity
 
-$ref of: xref:4.0.0@schemas:Tmf:TargetEntitySchema.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TargetEntitySchema.adoc[]
 
 
 === specCharacteristic
@@ -100,4 +100,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

@@ -40,7 +40,7 @@ type: string
 === validFor
 description: Validity period of that contact
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === contactMedium
@@ -48,8 +48,8 @@ type: array
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:EngagedParty:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:RelatedParty.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Entity.adoc[]

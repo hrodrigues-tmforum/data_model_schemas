@@ -34,7 +34,7 @@ type: string
 === capturePeriod
 description: A period of the capture
 
-$ref of: xref:4.0.0@schemas:Service:Duration.adoc[]
+$ref of: xref:v4.0@schemas:Service:Duration.adoc[]
 
 
 === metricDescription
@@ -70,7 +70,7 @@ type: string
 === validFor
 description: The time period for which this definition is valid
 
-$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Service:TimePeriod.adoc[]
 
 
 === valueType
@@ -86,4 +86,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Service:Extensible.adoc[]

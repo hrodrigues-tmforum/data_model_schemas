@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === stockLevel
 description: A product stock  in relationship with this product stock
 
-$ref of: xref:4.0.0@schemas:Resource:ProductStockRef.adoc[]
+$ref of: xref:v4.0@schemas:Resource:ProductStockRef.adoc[]
 
 
 === relationshipType
@@ -32,4 +32,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Resource:Extensible.adoc[]

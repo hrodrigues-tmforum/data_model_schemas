@@ -52,7 +52,7 @@ type: string
 === validFor
 description: The period for which the productOfferingPrice is valid
 
-$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Product:TimePeriod.adoc[]
 
 
 === priceType
@@ -64,7 +64,7 @@ type: string
 === unitOfMeasure
 description: A number and unit representing how many (for instance 1 dozen) of an ProductOffering is available at the offered price. Its meaning depends on the priceType. It could be a price, a rate, or a discount.
 
-$ref of: xref:4.0.0@schemas:Product:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Product:Quantity.adoc[]
 
 
 === recurringChargePeriodType
@@ -119,7 +119,7 @@ type: string
 === price
 description: The amount of money that characterizes the price.
 
-$ref of: xref:4.0.0@schemas:Product:Money.adoc[]
+$ref of: xref:v4.0@schemas:Product:Money.adoc[]
 
 
 === percentage
@@ -177,5 +177,5 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Addressable.adoc[]
-This schema extends: xref:4.0.0@schemas:Product:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Product:Addressable.adoc[]
+This schema extends: xref:v4.0@schemas:Product:Extensible.adoc[]

@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === details
-$ref of: xref:4.0.0@schemas:Customer:CashDetails.adoc[]
+$ref of: xref:v4.0@schemas:Customer:CashDetails.adoc[]
 
 
 === description
@@ -64,11 +64,11 @@ type: string
 === validFor
 description: Date interval in which the payment method is valid
 
-$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Customer:TimePeriod.adoc[]
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:Customer:RelatedParty.adoc[]
 
 
 === account
@@ -76,4 +76,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

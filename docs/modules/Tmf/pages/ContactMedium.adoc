@@ -34,14 +34,14 @@ type: string
 === validFor
 description: The time period that the contact medium is valid for
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === characteristic
 description: Any additional characteristic(s) of this contact medium
 
-$ref of: xref:4.0.0@schemas:Tmf:MediumCharacteristic.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:MediumCharacteristic.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

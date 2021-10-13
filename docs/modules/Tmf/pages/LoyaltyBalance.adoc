@@ -36,7 +36,7 @@ description: Unit and value of the balance.
 
 type: object
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Money.adoc[]
 
 
 === loyaltyProgramMember
@@ -44,7 +44,7 @@ description: Reference to the loyaltyProgramMember to whom the loyaltyAccount be
 
 type: object
 
-$ref of: xref:4.0.0@schemas:Tmf:LoyaltyProgramMemberRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:LoyaltyProgramMemberRef.adoc[]
 
 
 === validFor
@@ -52,7 +52,7 @@ description: The validity period in which loyalty can be burned using the accoun
 
 type: object
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 

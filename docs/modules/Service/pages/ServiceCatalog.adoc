@@ -61,7 +61,7 @@ type: array
 === validFor
 description: The period for which the service catalog is valid
 
-$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Service:TimePeriod.adoc[]
 
 
 === version
@@ -71,5 +71,5 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Addressable.adoc[]
-This schema extends: xref:4.0.0@schemas:Service:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Service:Addressable.adoc[]
+This schema extends: xref:v4.0@schemas:Service:Extensible.adoc[]

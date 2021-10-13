@@ -28,7 +28,7 @@ type: string
 === action
 description: The action to be carried out on the Service. Can be: add, modify, delete, noChange
 
-$ref of: xref:4.0.0@schemas:Tmf:OrderItemActionType.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:OrderItemActionType.adoc[]
 
 
 === quantity
@@ -40,19 +40,19 @@ type: integer
 === state
 description: State of the order item: described in the state machine diagram. This is the requested state.
 
-$ref of: xref:4.0.0@schemas:Tmf:ServiceOrderItemStateType.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ServiceOrderItemStateType.adoc[]
 
 
 === service
 description: The Service to be acted on by the order item
 
-$ref of: xref:4.0.0@schemas:Tmf:ServiceRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ServiceRefOrValue.adoc[]
 
 
 === appointment
 description: An appointment that was set up with a related party for this order item
 
-$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:AppointmentRef.adoc[]
 
 
 === serviceOrderItemRelationship
@@ -68,4 +68,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Extensible.adoc[]

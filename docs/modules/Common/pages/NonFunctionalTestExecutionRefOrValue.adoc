@@ -20,5 +20,5 @@ The data model is defined as shown below:
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:NonFunctionalTestExecution.adoc[]
-This schema extends: xref:4.0.0@schemas:Common:NonFunctionalTestExecutionRef.adoc[]
+This schema extends: xref:v4.0@schemas:Common:NonFunctionalTestExecution.adoc[]
+This schema extends: xref:v4.0@schemas:Common:NonFunctionalTestExecutionRef.adoc[]

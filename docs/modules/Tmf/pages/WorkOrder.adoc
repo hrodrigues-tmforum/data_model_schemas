@@ -26,11 +26,11 @@ type: array
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:AppointmentRef.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === cancellationDate
@@ -92,7 +92,7 @@ type: string
 
 
 === note
-$ref of: xref:4.0.0@schemas:Tmf:Note.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Note.adoc[]
 
 
 === notificationContact
@@ -120,7 +120,7 @@ type: array
 
 
 === place
-$ref of: xref:4.0.0@schemas:Tmf:PlaceRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:PlaceRefOrValue.adoc[]
 
 
 === priority
@@ -160,7 +160,7 @@ type: string
 
 
 === state
-$ref of: xref:4.0.0@schemas:Tmf:WorkOrderStateType.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:WorkOrderStateType.adoc[]
 
 
 === stateChangeDate
@@ -185,4 +185,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

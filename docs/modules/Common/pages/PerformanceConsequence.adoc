@@ -20,8 +20,8 @@ The data model is defined as shown below:
 
 
 === alarmSpecification
-$ref of: xref:4.0.0@schemas:Common:PerformanceAlarmSpecification.adoc[]
+$ref of: xref:v4.0@schemas:Common:PerformanceAlarmSpecification.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Consequence.adoc[]
+This schema extends: xref:v4.0@schemas:Common:Consequence.adoc[]

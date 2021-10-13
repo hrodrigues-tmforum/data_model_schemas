@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === productOrderItem
-$ref of: xref:4.0.0@schemas:EngagedParty:ProductOrderItemRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:ProductOrderItemRef.adoc[]
 
 
 === productCharacteristic
@@ -30,4 +30,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:ProductRef.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:ProductRef.adoc[]

@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === relatedTopupBalance
-$ref of: xref:4.0.0@schemas:Customer:RelatedTopupBalance.adoc[]
+$ref of: xref:v4.0@schemas:Customer:RelatedTopupBalance.adoc[]
 
 
 === isAutoTopup
@@ -44,11 +44,11 @@ type: string
 === paymentMethod
 description: Payment method used for the recharge operation (e.g.: cash, credit card). Structure including at least attribute dname. Notice that the use of a voucher can be managed as a specific methodtype, where he voucher code can be passed as value.
 
-$ref of: xref:4.0.0@schemas:Customer:PaymentMethodRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:PaymentMethodRef.adoc[]
 
 
 === payment
-$ref of: xref:4.0.0@schemas:Customer:PaymentRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:PaymentRef.adoc[]
 
 
 === voucher
@@ -58,4 +58,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:BalanceAction.adoc[]
+This schema extends: xref:v4.0@schemas:Customer:BalanceAction.adoc[]

@@ -48,7 +48,7 @@ type: string
 === validFor
 description: A valid duration of a thing.
 
-$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Service:TimePeriod.adoc[]
 
 
 === relatedServiceLevelObjective
@@ -58,4 +58,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Service:Entity.adoc[]

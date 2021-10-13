@@ -88,8 +88,8 @@ type: integer
 === validFor
 description: The period for which the billing cycle is valid, expressed in a formatted structured way.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

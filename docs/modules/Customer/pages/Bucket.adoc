@@ -64,7 +64,7 @@ type: array
 === partyAccount
 description: A reference to the account that owns the bucket
 
-$ref of: xref:4.0.0@schemas:Customer:PartyAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:PartyAccountRef.adoc[]
 
 
 === product
@@ -78,7 +78,7 @@ type: array
 === reservedValue
 description: Indicate the amount reserved on the bucket; should be the sum of all the valid (i.e. confirmed and not consumed or expired) amounts in the reserveBalance request array
 
-$ref of: xref:4.0.0@schemas:Customer:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Customer:Quantity.adoc[]
 
 
 === reserveBalance
@@ -88,7 +88,7 @@ type: array
 === remainingValue
 description: Indicate the amount on the bucket
 
-$ref of: xref:4.0.0@schemas:Customer:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Customer:Quantity.adoc[]
 
 
 === remainingValueName
@@ -106,8 +106,8 @@ type: string
 === validFor
 description: The period for which the balance in the bucket is valid
 
-$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Customer:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

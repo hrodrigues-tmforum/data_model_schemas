@@ -20,12 +20,12 @@ The data model is defined as shown below:
 
 
 === testSuiteResultDefinition
-$ref of: xref:4.0.0@schemas:Tmf:TestSuiteResultDefinition.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TestSuiteResultDefinition.adoc[]
 
 
 === testExecution
-$ref of: xref:4.0.0@schemas:Tmf:TestSuiteExecutionRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TestSuiteExecutionRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:ResourceEntity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:ResourceEntity.adoc[]

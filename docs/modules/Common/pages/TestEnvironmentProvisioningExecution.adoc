@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === testEnvironmentAllocationExecution
-$ref of: xref:4.0.0@schemas:Common:TestEnvironmentAllocationExecution.adoc[]
+$ref of: xref:v4.0@schemas:Common:TestEnvironmentAllocationExecution.adoc[]
 
 
 === provisioningArtifact
@@ -28,4 +28,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Execution.adoc[]
+This schema extends: xref:v4.0@schemas:Common:Execution.adoc[]

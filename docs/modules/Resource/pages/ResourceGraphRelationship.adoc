@@ -28,8 +28,8 @@ type: string
 === resourceGraph
 description: A reference to the related resource graph.
 
-$ref of: xref:4.0.0@schemas:Resource:ResourceGraphRef.adoc[]
+$ref of: xref:v4.0@schemas:Resource:ResourceGraphRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Resource:Entity.adoc[]

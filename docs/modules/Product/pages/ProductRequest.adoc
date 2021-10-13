@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === referredProduct
-$ref of: xref:4.0.0@schemas:Product:ProductRef.adoc[]
+$ref of: xref:v4.0@schemas:Product:ProductRef.adoc[]
 
 
 === description
@@ -98,7 +98,7 @@ type: array
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Product:ProductOfferingRef.adoc[]
+$ref of: xref:v4.0@schemas:Product:ProductOfferingRef.adoc[]
 
 
 === agreement
@@ -126,7 +126,7 @@ type: array
 
 
 === productSpecification
-$ref of: xref:4.0.0@schemas:Product:ProductSpecificationRef.adoc[]
+$ref of: xref:v4.0@schemas:Product:ProductSpecificationRef.adoc[]
 
 
 === place
@@ -134,4 +134,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Product:Entity.adoc[]

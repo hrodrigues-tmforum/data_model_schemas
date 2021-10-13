@@ -28,7 +28,7 @@ type: string
 
 
 === perfAlarmSpecSeverity
-$ref of: xref:4.0.0@schemas:Common:PerceivedSeverity.adoc[]
+$ref of: xref:v4.0@schemas:Common:PerceivedSeverity.adoc[]
 
 
 === perfAlarmSpecSpecificProblem
@@ -44,7 +44,7 @@ type: string
 
 
 === performanceConsequence
-$ref of: xref:4.0.0@schemas:Common:PerformanceConsequence.adoc[]
+$ref of: xref:v4.0@schemas:Common:PerformanceConsequence.adoc[]
 
 
 = All Of 

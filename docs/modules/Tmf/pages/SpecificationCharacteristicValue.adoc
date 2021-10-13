@@ -46,13 +46,13 @@ type: string
 === validFor
 description: The period for which this object is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === value
 description: the  value that the characteristic can take on.
 
-$ref of: xref:4.0.0@schemas:Tmf:Any.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Any.adoc[]
 
 
 === valueFrom
@@ -74,4 +74,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

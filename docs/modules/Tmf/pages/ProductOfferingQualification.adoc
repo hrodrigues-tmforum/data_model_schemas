@@ -22,11 +22,11 @@ The data model is defined as shown below:
 === channel
 description: Channel used for the qualification
 
-$ref of: xref:4.0.0@schemas:Tmf:ChannelRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ChannelRef.adoc[]
 
 
 === category
-$ref of: xref:4.0.0@schemas:Tmf:CategoryRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:CategoryRef.adoc[]
 
 
 === description
@@ -132,8 +132,8 @@ type: string
 === state
 description: State of the productOfferingQualification defined in the state engine
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TaskStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

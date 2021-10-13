@@ -76,40 +76,40 @@ type: string
 === amount
 description: Amount to be refunded (net of taxes)
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Money.adoc[]
 
 
 === taxAmount
 description: Tax applied
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Money.adoc[]
 
 
 === totalAmount
 description: Amount to be paid (including taxes)
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Money.adoc[]
 
 
 === channel
-$ref of: xref:4.0.0@schemas:Tmf:ChannelRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ChannelRef.adoc[]
 
 
 === payment
-$ref of: xref:4.0.0@schemas:Tmf:PaymentRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:PaymentRef.adoc[]
 
 
 === requestor
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:RelatedParty.adoc[]
 
 
 === paymentMethod
-$ref of: xref:4.0.0@schemas:Tmf:PaymentMethodRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:PaymentMethodRefOrValue.adoc[]
 
 
 === account
-$ref of: xref:4.0.0@schemas:Tmf:AccountRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:AccountRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

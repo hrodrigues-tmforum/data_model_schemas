@@ -46,7 +46,7 @@ type: string
 === totalAmount
 description: Amount paid
 
-$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Money.adoc[]
 
 
 === planType
@@ -58,12 +58,12 @@ type: string
 === validFor
 description: Validity period of the payment plan
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === paymentMethod
-$ref of: xref:4.0.0@schemas:Tmf:PaymentMethodRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:PaymentMethodRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

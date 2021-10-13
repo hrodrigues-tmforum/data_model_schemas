@@ -26,13 +26,13 @@ type: string
 
 
 === manageableAsset
-$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:EntityRef.adoc[]
 
 
 === managedAssetGroup
 description: List (explicit or implied) of entities managed by this privilege.
 
-$ref of: xref:4.0.0@schemas:Tmf:AssetGroup.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:AssetGroup.adoc[]
 
 
 === function
@@ -48,4 +48,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

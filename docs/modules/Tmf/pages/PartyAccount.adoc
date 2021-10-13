@@ -26,7 +26,7 @@ type: string
 
 
 === billStructure
-$ref of: xref:4.0.0@schemas:Tmf:BillStructure.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:BillStructure.adoc[]
 
 
 === paymentPlan
@@ -34,12 +34,12 @@ type: array
 
 
 === financialAccount
-$ref of: xref:4.0.0@schemas:Tmf:FinancialAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:FinancialAccountRef.adoc[]
 
 
 === defaultPaymentMethod
-$ref of: xref:4.0.0@schemas:Tmf:PaymentMethodRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:PaymentMethodRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Account.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Account.adoc[]

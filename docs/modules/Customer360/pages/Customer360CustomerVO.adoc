@@ -40,13 +40,13 @@ type: string
 === validFor
 description: The time period that the Customer is valid for.
 
-$ref of: xref:4.0.0@schemas:Customer360:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:TimePeriod.adoc[]
 
 
 === engagedParty
 description: The party - an organization or an individual - that is engaged as a customer.
 
-$ref of: xref:4.0.0@schemas:Customer360:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:RelatedParty.adoc[]
 
 
 === account
@@ -80,4 +80,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer360:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Customer360:Entity.adoc[]

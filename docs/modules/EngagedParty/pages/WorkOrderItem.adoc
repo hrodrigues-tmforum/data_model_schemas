@@ -20,15 +20,15 @@ The data model is defined as shown below:
 
 
 === action
-$ref of: xref:4.0.0@schemas:EngagedParty:OrderItemActionType.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:OrderItemActionType.adoc[]
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:EngagedParty:AppointmentRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:AppointmentRef.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:EngagedParty:BillingAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:BillingAccountRef.adoc[]
 
 
 === description
@@ -52,7 +52,7 @@ type: array
 
 
 === note
-$ref of: xref:4.0.0@schemas:EngagedParty:Note.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:Note.adoc[]
 
 
 === orderItem
@@ -68,11 +68,11 @@ type: array
 
 
 === state
-$ref of: xref:4.0.0@schemas:EngagedParty:WorkOrderItemStateType.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:WorkOrderItemStateType.adoc[]
 
 
 === work
-$ref of: xref:4.0.0@schemas:EngagedParty:WorkRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:WorkRefOrValue.adoc[]
 
 
 === workOrderItem
@@ -84,4 +84,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Extensible.adoc[]

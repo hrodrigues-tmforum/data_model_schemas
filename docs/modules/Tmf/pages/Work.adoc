@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === actualDuration
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Quantity.adoc[]
 
 
 === agreement
@@ -28,7 +28,7 @@ type: array
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:AppointmentRef.adoc[]
 
 
 === completionDate
@@ -38,11 +38,11 @@ type: string
 
 
 === currentDuration
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Quantity.adoc[]
 
 
 === deliveryTimeSlot
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === description
@@ -64,7 +64,7 @@ type: string
 
 
 === note
-$ref of: xref:4.0.0@schemas:Tmf:Note.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Note.adoc[]
 
 
 === orderDate
@@ -82,11 +82,11 @@ type: array
 
 
 === plannedDuration
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Quantity.adoc[]
 
 
 === quantity
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Quantity.adoc[]
 
 
 === relatedParty
@@ -94,11 +94,11 @@ type: array
 
 
 === scheduledDuration
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Quantity.adoc[]
 
 
 === state
-$ref of: xref:4.0.0@schemas:Tmf:WorkStateType.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:WorkStateType.adoc[]
 
 
 === work
@@ -126,7 +126,7 @@ type: array
 
 
 === workSpecification
-$ref of: xref:4.0.0@schemas:Tmf:WorkSpecificationRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:WorkSpecificationRef.adoc[]
 
 
 === workType
@@ -138,4 +138,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

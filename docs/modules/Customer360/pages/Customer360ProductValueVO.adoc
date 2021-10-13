@@ -24,7 +24,7 @@ type: string
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Customer360:BillingAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:BillingAccountRef.adoc[]
 
 
 === description
@@ -70,7 +70,7 @@ type: string
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Customer360:ProductOfferingRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:ProductOfferingRef.adoc[]
 
 
 === product
@@ -84,7 +84,7 @@ type: string
 
 
 === productSpecification
-$ref of: xref:4.0.0@schemas:Customer360:ProductSpecificationRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:ProductSpecificationRef.adoc[]
 
 
 === startDate
@@ -96,7 +96,7 @@ type: string
 === status
 description: Is the lifecycle status of the product.
 
-$ref of: xref:4.0.0@schemas:Customer360:ProductStatusType.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:ProductStatusType.adoc[]
 
 
 === terminationDate
@@ -106,4 +106,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer360:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Customer360:Entity.adoc[]

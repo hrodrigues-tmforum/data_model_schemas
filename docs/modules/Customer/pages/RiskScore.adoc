@@ -28,8 +28,8 @@ type: number
 === riskName
 description: The name of the risk
 
-$ref of: xref:4.0.0@schemas:Customer:RiskType.adoc[]
+$ref of: xref:v4.0@schemas:Customer:RiskType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Customer:Extensible.adoc[]

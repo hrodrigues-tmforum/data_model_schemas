@@ -46,7 +46,7 @@ type: string
 === validFor
 description: The period for which this digial identity is valid.
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === credential
@@ -82,15 +82,15 @@ type: array
 === individualIdentified
 description: Individual identified by this digital identity. In this case the digitial identity is for all her/his role. It is recommended to not provide partyRoleIdentified if individualIdentified provided 
 
-$ref of: xref:4.0.0@schemas:EngagedParty:PartyRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:PartyRef.adoc[]
 
 
 === resourceIdentified
 description: Resource identified by this digital identity. It is recommended to no provided individualIdentified or partyRoleIdentified if resourceIdentified provided.
 
-$ref of: xref:4.0.0@schemas:EngagedParty:ResourceRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:ResourceRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
-This schema extends: xref:4.0.0@schemas:EngagedParty:Addressable.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Addressable.adoc[]

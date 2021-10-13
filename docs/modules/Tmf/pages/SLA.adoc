@@ -60,7 +60,7 @@ type: string
 === validFor
 description: Period where the clauses of the SLA are applicable
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === version
@@ -78,8 +78,8 @@ type: array
 
 
 === template
-$ref of: xref:4.0.0@schemas:Tmf:TemplateRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TemplateRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

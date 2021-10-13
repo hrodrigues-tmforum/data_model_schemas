@@ -46,7 +46,7 @@ type: string
 === state
 description: The life cycle state of the service, such as: [feasibilityChecked], [designed]
 
-$ref of: xref:4.0.0@schemas:Service:ServiceStateType.adoc[]
+$ref of: xref:v4.0@schemas:Service:ServiceStateType.adoc[]
 
 
 === category
@@ -58,7 +58,7 @@ type: string
 === serviceSpecification
 description: The specification from which this service was instantiated
 
-$ref of: xref:4.0.0@schemas:Service:ServiceSpecificationRef.adoc[]
+$ref of: xref:v4.0@schemas:Service:ServiceSpecificationRef.adoc[]
 
 
 === serviceCharacteristic
@@ -98,4 +98,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Service:Entity.adoc[]

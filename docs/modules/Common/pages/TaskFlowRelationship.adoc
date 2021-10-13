@@ -28,7 +28,7 @@ type: string
 === taskFlow
 description: The taskFlow being referred to
 
-$ref of: xref:4.0.0@schemas:Common:TaskFlowRef.adoc[]
+$ref of: xref:v4.0@schemas:Common:TaskFlowRef.adoc[]
 
 
 = All Of 

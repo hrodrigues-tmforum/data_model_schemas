@@ -58,13 +58,13 @@ type: integer
 === deliveryTimeSlot
 description: Shipping delivery time slot
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === insuredValue
 description: Shipping delivery value
 
-$ref of: xref:4.0.0@schemas:EngagedParty:Money.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:Money.adoc[]
 
 
 === labelMessage
@@ -108,8 +108,8 @@ type: boolean
 
 
 === signatureRequiredBy
-$ref of: xref:4.0.0@schemas:EngagedParty:SignatureRequiredByType.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:SignatureRequiredByType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Entity.adoc[]

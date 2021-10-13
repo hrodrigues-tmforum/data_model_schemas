@@ -34,7 +34,7 @@ type: string
 === status
 type: string
 
-$ref of: xref:4.0.0@schemas:Customer:SearchTimeSlotStateType.adoc[]
+$ref of: xref:v4.0@schemas:Customer:SearchTimeSlotStateType.adoc[]
 
 
 === searchDate
@@ -60,7 +60,7 @@ type: array
 === relatedParty
 description: RelatedParty reference. A related party defines party or party role linked to a specific entity.
 
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:Customer:RelatedParty.adoc[]
 
 
 === relatedEntity
@@ -70,8 +70,8 @@ type: array
 === relatedPlace
 description: Related place defines (by reference or value) the place where the appointment will take place.
 
-$ref of: xref:4.0.0@schemas:Customer:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Customer:RelatedPlaceRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

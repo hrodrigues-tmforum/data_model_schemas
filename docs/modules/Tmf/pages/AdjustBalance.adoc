@@ -28,8 +28,8 @@ type: string
 === reserveBalance
 description: Should be present for types relating to reservation, such as reservation debit. Means that the adjustment needs to be executed according to this reservation request. The amount of the balance action is optional in this case, and if not supplied the entire reserved amount will be adjusted in the bucket. If a specific implementation can support partial consumption of the reservation, then amount can be supplied, and that amount will be adjusted in the bucket and the reservation request
 
-$ref of: xref:4.0.0@schemas:Tmf:ReserveBalanceRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ReserveBalanceRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:BalanceAction.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:BalanceAction.adoc[]

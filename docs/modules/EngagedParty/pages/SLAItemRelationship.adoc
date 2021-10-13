@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === agreementItem
 description: A service level agreement item in relationship with this item
 
-$ref of: xref:4.0.0@schemas:EngagedParty:ServiceLevelAgreementItemRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:ServiceLevelAgreementItemRef.adoc[]
 
 
 === role
@@ -40,8 +40,8 @@ type: string
 === validFor
 description: The period for which the Relationship is valid
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Extensible.adoc[]

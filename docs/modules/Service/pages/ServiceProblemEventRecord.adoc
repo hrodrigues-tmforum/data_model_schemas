@@ -52,13 +52,13 @@ type: string
 === serviceProblem
 description: The service problem to which this record applies
 
-$ref of: xref:4.0.0@schemas:Service:ServiceProblemRef.adoc[]
+$ref of: xref:v4.0@schemas:Service:ServiceProblemRef.adoc[]
 
 
 === notification
 description: A notification from the possible notifications for Service Problem (such as creation, status change, information required, change)
 
-$ref of: xref:4.0.0@schemas:Service:Any.adoc[]
+$ref of: xref:v4.0@schemas:Service:Any.adoc[]
 
 
 = All Of 

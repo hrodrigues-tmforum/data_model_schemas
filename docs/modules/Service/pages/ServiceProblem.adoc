@@ -78,7 +78,7 @@ type: array
 === firstAlert
 description: Indicates what first alerted the system to the problem. It is not the root cause of the Service Problem. Examples: Threshold crossing alert
 
-$ref of: xref:4.0.0@schemas:Service:RelatedEntity.adoc[]
+$ref of: xref:v4.0@schemas:Service:RelatedEntity.adoc[]
 
 
 === impactImportanceFactor
@@ -90,7 +90,7 @@ type: string
 === impactPattern
 description: Define the patterns of impact (optional)- e.g. other service characteristics- Used when defining impact through another pattern than the predefined attributes.
 
-$ref of: xref:4.0.0@schemas:Service:ImpactPattern.adoc[]
+$ref of: xref:v4.0@schemas:Service:ImpactPattern.adoc[]
 
 
 === originatingSystem
@@ -138,13 +138,13 @@ type: array
 === originatorParty
 description: Individual or organization that created the problem
 
-$ref of: xref:4.0.0@schemas:Service:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:Service:RelatedParty.adoc[]
 
 
 === responsibleParty
 description: Individual or organization responsible for handling this problem
 
-$ref of: xref:4.0.0@schemas:Service:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:Service:RelatedParty.adoc[]
 
 
 === relatedParty
@@ -172,7 +172,7 @@ type: string
 
 
 === status
-$ref of: xref:4.0.0@schemas:Service:ServiceProblemStateType.adoc[]
+$ref of: xref:v4.0@schemas:Service:ServiceProblemStateType.adoc[]
 
 
 === statusChangeDate
@@ -230,4 +230,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Service:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Service:Entity.adoc[]

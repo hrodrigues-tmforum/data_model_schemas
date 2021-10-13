@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === measurement
-$ref of: xref:4.0.0@schemas:Common:Measurement.adoc[]
+$ref of: xref:v4.0@schemas:Common:Measurement.adoc[]
 
 
 === consequence
@@ -36,7 +36,7 @@ type: string
 
 
 === performanceAlarmSpecification
-$ref of: xref:4.0.0@schemas:Common:PerformanceAlarmSpecification.adoc[]
+$ref of: xref:v4.0@schemas:Common:PerformanceAlarmSpecification.adoc[]
 
 
 === thresholdRuleCondition
@@ -58,4 +58,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Rule.adoc[]
+This schema extends: xref:v4.0@schemas:Common:Rule.adoc[]

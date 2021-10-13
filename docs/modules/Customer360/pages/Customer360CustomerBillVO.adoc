@@ -32,7 +32,7 @@ type: string
 
 
 === amountDue
-$ref of: xref:4.0.0@schemas:Customer360:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:Money.adoc[]
 
 
 === billDate
@@ -48,11 +48,11 @@ type: string
 
 
 === billingPeriod
-$ref of: xref:4.0.0@schemas:Customer360:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:TimePeriod.adoc[]
 
 
 === billCycle
-$ref of: xref:4.0.0@schemas:Customer360:BillCycleRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:BillCycleRef.adoc[]
 
 
 === category
@@ -82,32 +82,32 @@ type: string
 === paymentMethod
 description: paymentMethod here is recognized to be not really necessary in a STANDARD. It could be obtained by a GET request on the billing account. Conclusion: paymentMethod is marked to DEPRECIATED and will be removed in one of the next versions.
 
-$ref of: xref:4.0.0@schemas:Customer360:PaymentMethodRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:PaymentMethodRef.adoc[]
 
 
 === remainingAmount
-$ref of: xref:4.0.0@schemas:Customer360:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:Money.adoc[]
 
 
 === runType
 description: onCycle (a bill can be created as a result of a cycle run) or offCycle (a bill can be created as a result of other events such as customer request or account close)
 
-$ref of: xref:4.0.0@schemas:Customer360:CustomerBillRunType.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:CustomerBillRunType.adoc[]
 
 
 === taxExcludedAmount
-$ref of: xref:4.0.0@schemas:Customer360:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:Money.adoc[]
 
 
 === taxIncludedAmount
-$ref of: xref:4.0.0@schemas:Customer360:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:Money.adoc[]
 
 
 === state
 description: Status of the bill
 
-$ref of: xref:4.0.0@schemas:Customer360:CustomerBillStateType.adoc[]
+$ref of: xref:v4.0@schemas:Customer360:CustomerBillStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer360:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Customer360:Entity.adoc[]

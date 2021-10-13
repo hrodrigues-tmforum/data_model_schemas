@@ -28,13 +28,13 @@ type: string
 === duration
 description: Duration of the productTerm
 
-$ref of: xref:4.0.0@schemas:Product:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Product:Quantity.adoc[]
 
 
 === validFor
 description: productTerm validity period
 
-$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Product:TimePeriod.adoc[]
 
 
 === name
@@ -44,4 +44,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Product:Entity.adoc[]

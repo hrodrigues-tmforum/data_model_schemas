@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === action
-$ref of: xref:4.0.0@schemas:Resource:OrderItemActionType.adoc[]
+$ref of: xref:v4.0@schemas:Resource:OrderItemActionType.adoc[]
 
 
 === id
@@ -40,20 +40,20 @@ type: integer
 
 
 === resourceSpecification
-$ref of: xref:4.0.0@schemas:Resource:ResourceSpecificationRef.adoc[]
+$ref of: xref:v4.0@schemas:Resource:ResourceSpecificationRef.adoc[]
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:Resource:AppointmentRef.adoc[]
+$ref of: xref:v4.0@schemas:Resource:AppointmentRef.adoc[]
 
 
 === resource
-$ref of: xref:4.0.0@schemas:Resource:ResourceReforValue.adoc[]
+$ref of: xref:v4.0@schemas:Resource:ResourceReforValue.adoc[]
 
 
 === state
-$ref of: xref:4.0.0@schemas:Resource:ResourceOrderItemStateType.adoc[]
+$ref of: xref:v4.0@schemas:Resource:ResourceOrderItemStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Resource:Entity.adoc[]

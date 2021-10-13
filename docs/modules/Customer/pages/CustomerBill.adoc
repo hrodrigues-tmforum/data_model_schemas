@@ -32,7 +32,7 @@ type: string
 
 
 === amountDue
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer:Money.adoc[]
 
 
 === appliedPayment
@@ -58,15 +58,15 @@ type: string
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Customer:BillingAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:BillingAccountRef.adoc[]
 
 
 === billingPeriod
-$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Customer:TimePeriod.adoc[]
 
 
 === billCycle
-$ref of: xref:4.0.0@schemas:Customer:BillCycleRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:BillCycleRef.adoc[]
 
 
 === category
@@ -76,7 +76,7 @@ type: string
 
 
 === financialAccount
-$ref of: xref:4.0.0@schemas:Customer:FinancialAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:FinancialAccountRef.adoc[]
 
 
 === lastUpdate
@@ -100,7 +100,7 @@ type: string
 === paymentMethod
 description: paymentMethod here is recognized to be not really necessary in a STANDARD. It could be obtained by a GET request on the billing account. Conclusion: paymentMethod is marked to DEPRECIATED and will be removed in one of the next versions.
 
-$ref of: xref:4.0.0@schemas:Customer:PaymentMethodRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:PaymentMethodRef.adoc[]
 
 
 === relatedParty
@@ -108,21 +108,21 @@ type: array
 
 
 === remainingAmount
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer:Money.adoc[]
 
 
 === runType
 description: onCycle (a bill can be created as a result of a cycle run) or offCycle (a bill can be created as a result of other events such as customer request or account close)
 
-$ref of: xref:4.0.0@schemas:Customer:CustomerBillRunType.adoc[]
+$ref of: xref:v4.0@schemas:Customer:CustomerBillRunType.adoc[]
 
 
 === taxExcludedAmount
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer:Money.adoc[]
 
 
 === taxIncludedAmount
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer:Money.adoc[]
 
 
 === taxItem
@@ -132,8 +132,8 @@ type: array
 === state
 description: Status of the bill
 
-$ref of: xref:4.0.0@schemas:Customer:CustomerBillStateType.adoc[]
+$ref of: xref:v4.0@schemas:Customer:CustomerBillStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

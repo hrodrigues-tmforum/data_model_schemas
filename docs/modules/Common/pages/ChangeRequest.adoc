@@ -41,7 +41,7 @@ type: string
 === @schemaLocation
 description: A URI to a JSON-Schema file that defines additional attributes and relationships
 
-$ref of: xref:4.0.0@schemas:Common:Uri.adoc[]
+$ref of: xref:v4.0@schemas:Common:Uri.adoc[]
 
 
 === @type
@@ -69,7 +69,7 @@ type: array
 
 
 === budget
-$ref of: xref:4.0.0@schemas:Common:Money.adoc[]
+$ref of: xref:v4.0@schemas:Common:Money.adoc[]
 
 
 === changeRelationship
@@ -121,7 +121,7 @@ type: string
 === location
 description: A list of places (Place [*]). Used to define a place useful for the service (for example a geographical place whre the service is installed)
 
-$ref of: xref:4.0.0@schemas:Common:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Common:RelatedPlaceRefOrValue.adoc[]
 
 
 === note
@@ -169,7 +169,7 @@ type: string
 
 
 === resolution
-$ref of: xref:4.0.0@schemas:Common:Resolution.adoc[]
+$ref of: xref:v4.0@schemas:Common:Resolution.adoc[]
 
 
 === risk
@@ -201,11 +201,11 @@ type: array
 
 
 === specification
-$ref of: xref:4.0.0@schemas:Common:EntitySpecificationRef.adoc[]
+$ref of: xref:v4.0@schemas:Common:EntitySpecificationRef.adoc[]
 
 
 === status
-$ref of: xref:4.0.0@schemas:Common:ChangeRequestStatusType.adoc[]
+$ref of: xref:v4.0@schemas:Common:ChangeRequestStatusType.adoc[]
 
 
 === statusChangeDate
@@ -233,4 +233,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Common:Entity.adoc[]

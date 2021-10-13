@@ -26,20 +26,20 @@ type: string
 
 
 === adjustProductStockQuantity
-$ref of: xref:4.0.0@schemas:Resource:Quantity.adoc[]
+$ref of: xref:v4.0@schemas:Resource:Quantity.adoc[]
 
 
 === state
 description: State of the AdjustProductStockItem (acknowledged, inProgress, terminatedWithError, done)
 
-$ref of: xref:4.0.0@schemas:Resource:TaskStateType.adoc[]
+$ref of: xref:v4.0@schemas:Resource:TaskStateType.adoc[]
 
 
 === productStockTarget
 description: The product stock to adjust .
 
-$ref of: xref:4.0.0@schemas:Resource:ProductStockRef.adoc[]
+$ref of: xref:v4.0@schemas:Resource:ProductStockRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Resource:Entity.adoc[]

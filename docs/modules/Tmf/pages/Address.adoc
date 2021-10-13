@@ -96,8 +96,8 @@ type: string
 === subAddress
 description: Within a property in an urban area, may refer to a building, building cluster, or a floor of a multistory building
 
-$ref of: xref:4.0.0@schemas:Tmf:SubAddress.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:SubAddress.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

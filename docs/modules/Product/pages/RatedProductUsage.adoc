@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === bucketValueConvertedInAmount
-$ref of: xref:4.0.0@schemas:Product:Money.adoc[]
+$ref of: xref:v4.0@schemas:Product:Money.adoc[]
 
 
 === isBilled
@@ -42,7 +42,7 @@ type: string
 
 
 === productRef
-$ref of: xref:4.0.0@schemas:Product:ProductRef.adoc[]
+$ref of: xref:v4.0@schemas:Product:ProductRef.adoc[]
 
 
 === ratingAmountType
@@ -58,11 +58,11 @@ type: string
 
 
 === taxExcludedRatingAmount
-$ref of: xref:4.0.0@schemas:Product:Money.adoc[]
+$ref of: xref:v4.0@schemas:Product:Money.adoc[]
 
 
 === taxIncludedRatingAmount
-$ref of: xref:4.0.0@schemas:Product:Money.adoc[]
+$ref of: xref:v4.0@schemas:Product:Money.adoc[]
 
 
 === taxRate
@@ -80,4 +80,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Product:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Product:Extensible.adoc[]

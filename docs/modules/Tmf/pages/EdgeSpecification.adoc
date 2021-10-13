@@ -41,7 +41,7 @@ type: string
 === validFor
 description: The period for which this REST resource is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === lastUpdate
@@ -69,5 +69,5 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
-This schema extends: xref:4.0.0@schemas:Tmf:Addressable.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Addressable.adoc[]

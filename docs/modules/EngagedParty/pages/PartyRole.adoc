@@ -52,15 +52,15 @@ type: string
 === validFor
 description: The time period that the PartyRole is valid for.
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === engagedParty
-$ref of: xref:4.0.0@schemas:EngagedParty:PartyRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:PartyRef.adoc[]
 
 
 === roleType
-$ref of: xref:4.0.0@schemas:EngagedParty:RoleTypeRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:RoleTypeRef.adoc[]
 
 
 === account
@@ -94,4 +94,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Entity.adoc[]

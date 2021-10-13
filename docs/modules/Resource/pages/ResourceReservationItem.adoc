@@ -24,8 +24,8 @@ type: array
 
 
 === resource
-$ref of: xref:4.0.0@schemas:Resource:ResourceRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Resource:ResourceRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Resource:ReservationItem.adoc[]
+This schema extends: xref:v4.0@schemas:Resource:ReservationItem.adoc[]

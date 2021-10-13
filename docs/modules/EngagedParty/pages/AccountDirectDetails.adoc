@@ -20,8 +20,8 @@ The data model is defined as shown below:
 
 
 === account
-$ref of: xref:4.0.0@schemas:EngagedParty:AccountRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:AccountRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Entity.adoc[]

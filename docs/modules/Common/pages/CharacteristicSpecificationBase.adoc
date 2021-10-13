@@ -52,7 +52,7 @@ type: boolean
 === validFor
 description: The period of time for which a characteristic is applicable.
 
-$ref of: xref:4.0.0@schemas:Common:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:Common:TimePeriod.adoc[]
 
 
 === minCardinality
@@ -92,4 +92,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:Common:Extensible.adoc[]

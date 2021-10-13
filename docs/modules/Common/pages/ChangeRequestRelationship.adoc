@@ -28,8 +28,8 @@ type: array
 
 
 === changeRequest
-$ref of: xref:4.0.0@schemas:Common:ChangeRequestRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Common:ChangeRequestRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Common:Entity.adoc[]

@@ -32,7 +32,7 @@ type: string
 
 
 === conformancePeriod
-$ref of: xref:4.0.0@schemas:Common:.adoc[]
+$ref of: xref:v4.0@schemas:Common:.adoc[]
 
 
 === conformanceTargetLower
@@ -60,8 +60,8 @@ type: integer
 
 
 === tolerancePeriod
-$ref of: xref:4.0.0@schemas:Common:.adoc[]
+$ref of: xref:v4.0@schemas:Common:.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:ThresholdRule.adoc[]
+This schema extends: xref:v4.0@schemas:Common:ThresholdRule.adoc[]

@@ -40,7 +40,7 @@ type: string
 === resourceFunction
 description: Reference to the Resource Function that needs to be healed
 
-$ref of: xref:4.0.0@schemas:Tmf:ResourceFunctionRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ResourceFunctionRef.adoc[]
 
 
 === cause
@@ -62,7 +62,7 @@ type: string
 
 
 === healPolicy
-$ref of: xref:4.0.0@schemas:Tmf:HealPolicyRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:HealPolicyRef.adoc[]
 
 
 === startTime
@@ -80,8 +80,8 @@ type: array
 === state
 description: Tracks the lifecycle status of the migrate request.
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TaskStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

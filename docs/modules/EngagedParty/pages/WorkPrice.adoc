@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:EngagedParty:BillingAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:BillingAccountRef.adoc[]
 
 
 === description
@@ -36,7 +36,7 @@ type: string
 
 
 === price
-$ref of: xref:4.0.0@schemas:EngagedParty:Price.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:Price.adoc[]
 
 
 === priceAlteration
@@ -44,11 +44,11 @@ type: array
 
 
 === priceType
-$ref of: xref:4.0.0@schemas:EngagedParty:PriceType.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:PriceType.adoc[]
 
 
 === productOfferingPrice
-$ref of: xref:4.0.0@schemas:EngagedParty:ProductOfferingPriceRef.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:ProductOfferingPriceRef.adoc[]
 
 
 === recurringChargePeriod
@@ -64,4 +64,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Entity.adoc[]

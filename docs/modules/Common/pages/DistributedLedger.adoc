@@ -48,7 +48,7 @@ type: array
 
 
 === documentSpecification
-$ref of: xref:4.0.0@schemas:Common:DocumentSpecification.adoc[]
+$ref of: xref:v4.0@schemas:Common:DocumentSpecification.adoc[]
 
 
 === href
@@ -82,7 +82,7 @@ type: string
 
 
 === relatedEntity
-$ref of: xref:4.0.0@schemas:Common:RelatedEntity.adoc[]
+$ref of: xref:v4.0@schemas:Common:RelatedEntity.adoc[]
 
 
 === relatedParty

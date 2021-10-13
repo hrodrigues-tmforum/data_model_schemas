@@ -38,26 +38,26 @@ type: string
 
 
 === balanceReserve
-$ref of: xref:4.0.0@schemas:Customer:BalanceReserveRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:BalanceReserveRef.adoc[]
 
 
 === bucketBalance
 description: A reference to the bucket involved in the balance-related operation
 
-$ref of: xref:4.0.0@schemas:Customer:BucketBalanceRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:BucketBalanceRef.adoc[]
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:Customer:RelatedParty.adoc[]
 
 
 === requestor
-$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+$ref of: xref:v4.0@schemas:Customer:RelatedParty.adoc[]
 
 
 === product
-$ref of: xref:4.0.0@schemas:Customer:ProductRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:ProductRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:BalanceAction.adoc[]
+This schema extends: xref:v4.0@schemas:Customer:BalanceAction.adoc[]

@@ -52,12 +52,12 @@ type: string
 
 
 === attachment
-$ref of: xref:4.0.0@schemas:Tmf:AttachmentRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:AttachmentRef.adoc[]
 
 
 === rule
-$ref of: xref:4.0.0@schemas:Tmf:RuleRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:RuleRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

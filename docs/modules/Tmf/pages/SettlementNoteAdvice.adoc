@@ -86,15 +86,15 @@ type: number
 
 
 === settlementMethod
-$ref of: xref:4.0.0@schemas:Tmf:SettlementMethod.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:SettlementMethod.adoc[]
 
 
 === settlementNoteImage
-$ref of: xref:4.0.0@schemas:Tmf:SettlementNoteImage.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:SettlementNoteImage.adoc[]
 
 
 === receiver
-$ref of: xref:4.0.0@schemas:Tmf:PartyRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:PartyRef.adoc[]
 
 
 === taxItem
@@ -102,7 +102,7 @@ type: array
 
 
 === issuer
-$ref of: xref:4.0.0@schemas:Tmf:PartyRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:PartyRef.adoc[]
 
 
 === settlementNoteItem
@@ -110,4 +110,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

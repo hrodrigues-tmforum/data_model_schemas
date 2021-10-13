@@ -44,11 +44,11 @@ type: string
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:Customer:AppointmentRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:AppointmentRef.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Customer:BillingAccountRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:BillingAccountRef.adoc[]
 
 
 === itemPrice
@@ -72,11 +72,11 @@ type: array
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Customer:ProductOfferingRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:ProductOfferingRef.adoc[]
 
 
 === product
-$ref of: xref:4.0.0@schemas:Customer:Product.adoc[]
+$ref of: xref:v4.0@schemas:Customer:Product.adoc[]
 
 
 === qualification
@@ -88,4 +88,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Customer:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Customer:Entity.adoc[]

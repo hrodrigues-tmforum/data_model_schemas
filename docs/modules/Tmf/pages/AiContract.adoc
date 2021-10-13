@@ -22,13 +22,13 @@ The data model is defined as shown below:
 === aiModel
 description: Reference to the AI Model 
 
-$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:EntityRef.adoc[]
 
 
 === aiContractSpecification
 description: Reference to the AI Model Specification
 
-$ref of: xref:4.0.0@schemas:Tmf:EntityRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:EntityRef.adoc[]
 
 
 === characteristic
@@ -36,4 +36,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:SLA.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:SLA.adoc[]

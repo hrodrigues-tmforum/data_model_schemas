@@ -34,13 +34,13 @@ type: string
 === status
 description: Status of the topolology query job
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:TaskStateType.adoc[]
 
 
 === graphSource
 description: The topology graph to be queried
 
-$ref of: xref:4.0.0@schemas:Tmf:GraphRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:GraphRef.adoc[]
 
 
 === query
@@ -66,4 +66,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

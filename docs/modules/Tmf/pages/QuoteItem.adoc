@@ -50,11 +50,11 @@ type: array
 
 
 === product
-$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === quantity
@@ -90,7 +90,7 @@ type: array
 === productOfferingQualificationItem
 description: A reference to a previously done POQ with item specified
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
 
 
 === relatedParty
@@ -106,4 +106,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]

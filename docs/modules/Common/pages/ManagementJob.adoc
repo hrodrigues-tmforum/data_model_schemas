@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === adminState
-$ref of: xref:4.0.0@schemas:Common:AdministrativeState.adoc[]
+$ref of: xref:v4.0@schemas:Common:AdministrativeState.adoc[]
 
 
 === creationTime
@@ -30,7 +30,7 @@ type: string
 
 
 === executionState
-$ref of: xref:4.0.0@schemas:Common:ExecutionState.adoc[]
+$ref of: xref:v4.0@schemas:Common:ExecutionState.adoc[]
 
 
 === fileTransferData
@@ -60,4 +60,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Common:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Common:Entity.adoc[]

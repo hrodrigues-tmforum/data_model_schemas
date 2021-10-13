@@ -34,7 +34,7 @@ type: array
 === validFor
 description: The period of time for which the exemption is valid
 
-$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:TimePeriod.adoc[]
 
 
 === certificateNumber
@@ -58,8 +58,8 @@ type: string
 === attachment
 description: The actual certificate contents, if such is supplied by the issuing jurisdiction
 
-$ref of: xref:4.0.0@schemas:EngagedParty:AttachmentRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:EngagedParty:AttachmentRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:EngagedParty:Extensible.adoc[]
+This schema extends: xref:v4.0@schemas:EngagedParty:Extensible.adoc[]

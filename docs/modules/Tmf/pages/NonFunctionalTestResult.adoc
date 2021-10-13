@@ -20,12 +20,12 @@ The data model is defined as shown below:
 
 
 === nonFunctionalTestResultDefinition
-$ref of: xref:4.0.0@schemas:Tmf:NonFunctionalTestResultDefinition.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:NonFunctionalTestResultDefinition.adoc[]
 
 
 === testExecution
-$ref of: xref:4.0.0@schemas:Tmf:NonFunctionalTestExecutionRefOrValue.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:NonFunctionalTestExecutionRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:ResourceEntity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:ResourceEntity.adoc[]

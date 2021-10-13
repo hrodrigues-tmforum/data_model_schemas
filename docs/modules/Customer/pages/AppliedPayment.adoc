@@ -20,11 +20,11 @@ The data model is defined as shown below:
 
 
 === appliedAmount
-$ref of: xref:4.0.0@schemas:Customer:Money.adoc[]
+$ref of: xref:v4.0@schemas:Customer:Money.adoc[]
 
 
 === payment
-$ref of: xref:4.0.0@schemas:Customer:PaymentRef.adoc[]
+$ref of: xref:v4.0@schemas:Customer:PaymentRef.adoc[]
 
 
 = All Of 

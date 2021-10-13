@@ -54,4 +54,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Place.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Place.adoc[]

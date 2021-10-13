@@ -34,7 +34,7 @@ type: string
 === productOfferingPrice
 description: An amount, usually of money, that is asked for or allowed when a ProductOffering is bought, rented, or leased. The price is valid for a defined period of time.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingPriceRef.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:ProductOfferingPriceRef.adoc[]
 
 
 === priceType
@@ -60,8 +60,8 @@ type: array
 
 
 === price
-$ref of: xref:4.0.0@schemas:Tmf:Price.adoc[]
+$ref of: xref:v4.0@schemas:Tmf:Price.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v4.0@schemas:Tmf:Entity.adoc[]
