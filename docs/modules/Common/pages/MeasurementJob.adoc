@@ -56,3 +56,4 @@ $ref of: xref:4.0.0@schemas:Common:.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Common:ManagementJob.adoc[]

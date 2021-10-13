@@ -34,3 +34,4 @@ $ref of: xref:4.0.0@schemas:Resource:ServiceOrderRef.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Resource:Entity.adoc[]

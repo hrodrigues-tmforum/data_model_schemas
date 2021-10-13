@@ -24,3 +24,5 @@ $ref of: xref:4.0.0@schemas:Common:TestSuiteRef.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Common:TestExecution.adoc[]
+This schema extends: xref:4.0.0@schemas:Common:TestExecutionRef.adoc[]

@@ -34,3 +34,4 @@ $ref of: xref:4.0.0@schemas:Tmf:ShipmentQualificationItem.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Tmf:ShipmentQualification.adoc[]

@@ -134,3 +134,5 @@ $ref of: xref:4.0.0@schemas:Tmf:TargetProductSchema.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Tmf:Addressable.adoc[]
+This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]

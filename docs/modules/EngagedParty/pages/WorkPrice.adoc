@@ -64,3 +64,4 @@ type: string
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:EngagedParty:Entity.adoc[]

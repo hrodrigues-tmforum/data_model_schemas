@@ -78,3 +78,4 @@ $ref of: xref:4.0.0@schemas:Customer360:TimePeriod.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Customer360:Entity.adoc[]

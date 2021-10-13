@@ -34,3 +34,4 @@ $ref of: xref:4.0.0@schemas:Resource:GeoLocation.adoc[]
 === configuration
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Resource:Device.json.adoc[]
