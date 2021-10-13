@@ -28,3 +28,4 @@ $ref of: xref:4.0.0@schemas:Product:WarrantyRef.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Product:Product.adoc[]

@@ -26,3 +26,4 @@ $ref of: xref:4.0.0@schemas:Tmf:ShoppingCartRef.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Tmf:RiskAssessment.adoc[]

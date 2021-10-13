@@ -95,3 +95,5 @@ $ref of: xref:4.0.0@schemas:Service:ServiceTestSpecificationRef.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Service:Extensible.adoc[]
+This schema extends: xref:4.0.0@schemas:Service:Addressable.adoc[]

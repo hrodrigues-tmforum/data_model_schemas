@@ -44,3 +44,5 @@ $ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Product:Addressable.adoc[]
+This schema extends: xref:4.0.0@schemas:Product:Extensible.adoc[]

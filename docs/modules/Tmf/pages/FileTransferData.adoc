@@ -40,3 +40,5 @@ $ref of: xref:4.0.0@schemas:Tmf:PackingType.adoc[]
 
 
 = All Of 
+This schema extends: xref:4.0.0@schemas:Tmf:ProtocolTransferData.adoc[]
+This schema extends: xref:4.0.0@schemas:Tmf:Extensible.adoc[]
