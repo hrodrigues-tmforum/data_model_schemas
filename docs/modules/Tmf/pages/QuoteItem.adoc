@@ -38,11 +38,11 @@ type: array
 
 
 === product
-$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === quantity
@@ -78,13 +78,13 @@ type: array
 === productOfferingQualificationItem
 description: A reference to a previously done POQ with item specified
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
 
 
 === state
 description: State of the quote item : described in the state machine diagram
 
-$ref of: xref:4.0.0@schemas:Tmf:QuoteStateType.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:QuoteStateType.adoc[]
 
 
 === relatedParty
@@ -94,5 +94,5 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcQuoteItem.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcQuoteItem.adoc[]
+This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

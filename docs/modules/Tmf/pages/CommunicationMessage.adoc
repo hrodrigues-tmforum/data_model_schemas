@@ -57,7 +57,7 @@ type: string
 === state
 description: Status of communication message
 
-$ref of: xref:4.0.0@schemas:Tmf:CommunicationMessageStateType.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:CommunicationMessageStateType.adoc[]
 
 
 === subject
@@ -85,4 +85,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

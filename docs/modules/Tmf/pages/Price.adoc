@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === dutyFreeAmount
 description: All taxes excluded amount (expressed in the given currency)
 
-$ref of: xref:4.0.0@schemas:Core:Money.adoc[]
+$ref of: xref:v5.0@schemas:Core:Money.adoc[]
 
 
 === percentage
@@ -34,7 +34,7 @@ type: number
 === taxIncludedAmount
 description: All taxes included amount (expressed in the given currency)
 
-$ref of: xref:4.0.0@schemas:Core:Money.adoc[]
+$ref of: xref:v5.0@schemas:Core:Money.adoc[]
 
 
 === taxRate
@@ -44,5 +44,5 @@ type: number
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcPrice.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcPrice.adoc[]
+This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

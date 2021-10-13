@@ -20,5 +20,5 @@ The data model is defined as shown below:
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcTestExecution.adoc[]
-This schema extends: xref:4.0.0@schemas:Gc:GcTestExecutionRef.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcTestExecution.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcTestExecutionRef.adoc[]

@@ -20,8 +20,8 @@ The data model is defined as shown below:
 
 
 === concreteEnvironmentMetaModelDefinition
-$ref of: xref:4.0.0@schemas:Gc:ConcreteEnvironmentMetaModelDefinition.adoc[]
+$ref of: xref:v5.0@schemas:Gc:ConcreteEnvironmentMetaModelDefinition.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcManagedArtifact.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcManagedArtifact.adoc[]

@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === validGeographicAddress
 description: the correct form of the validated address in case of validation success
 
-$ref of: xref:4.0.0@schemas:Tmf:GeographicAddress.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:GeographicAddress.adoc[]
 
 
 === alternateGeographicAddress
@@ -30,4 +30,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

@@ -22,13 +22,13 @@ The data model is defined as shown below:
 === state
 description: The life cycle state of the service, such as designed, reserved, active, etc...
 
-$ref of: xref:4.0.0@schemas:Gc:ServiceStateType.adoc[]
+$ref of: xref:v5.0@schemas:Gc:ServiceStateType.adoc[]
 
 
 === serviceSpecification
 description: The specification from which this service was instantiated
 
-$ref of: xref:4.0.0@schemas:Gc:ServiceSpecificationRef.adoc[]
+$ref of: xref:v5.0@schemas:Gc:ServiceSpecificationRef.adoc[]
 
 
 === serviceDate
@@ -38,4 +38,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Core:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

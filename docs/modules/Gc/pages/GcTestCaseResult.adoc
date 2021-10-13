@@ -20,12 +20,12 @@ The data model is defined as shown below:
 
 
 === testCaseResultDefinition
-$ref of: xref:4.0.0@schemas:Gc:TestCaseResultDefinition.adoc[]
+$ref of: xref:v5.0@schemas:Gc:TestCaseResultDefinition.adoc[]
 
 
 === testExecution
-$ref of: xref:4.0.0@schemas:Gc:TestCaseExecutionRefOrValue.adoc[]
+$ref of: xref:v5.0@schemas:Gc:TestCaseExecutionRefOrValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Core:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

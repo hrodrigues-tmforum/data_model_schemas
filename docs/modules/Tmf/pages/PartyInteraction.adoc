@@ -22,7 +22,7 @@ The data model is defined as shown below:
 === interactionDate
 description: The period during which the interaction took place. Start and end will be different in case of a call or a store visit. They will be the same (or only one will appear) in case of a message or other momentary interactions.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === description
@@ -70,4 +70,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

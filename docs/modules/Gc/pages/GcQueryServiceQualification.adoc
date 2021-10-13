@@ -28,7 +28,7 @@ type: string
 === searchCriteria
 description: Search structure to retrieve eligible service specification
 
-$ref of: xref:4.0.0@schemas:Gc:ServiceQualificationItem.adoc[]
+$ref of: xref:v5.0@schemas:Gc:ServiceQualificationItem.adoc[]
 
 
 === serviceQualificationItem
@@ -38,4 +38,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcServiceQualification.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcServiceQualification.adoc[]

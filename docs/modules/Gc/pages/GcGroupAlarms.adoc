@@ -34,7 +34,7 @@ type: array
 === parentAlarm
 description: Root cause alarm
 
-$ref of: xref:4.0.0@schemas:Gc:AlarmRefOrValue.adoc[]
+$ref of: xref:v5.0@schemas:Gc:AlarmRefOrValue.adoc[]
 
 
 === sourceSystemId

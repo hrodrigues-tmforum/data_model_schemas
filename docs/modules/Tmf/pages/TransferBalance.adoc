@@ -28,7 +28,7 @@ type: string
 === requestor
 description: Identifier for the user/customer/entity that performs the transfer action.This can be used to indicate the identifier of an agent that performs the operation on behalf of a user via a customer service channel Structure including at least attributes “role” and “name”
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:RelatedParty.adoc[]
 
 
 === costOwner
@@ -38,32 +38,32 @@ type: string
 
 
 === receiverProduct
-$ref of: xref:4.0.0@schemas:Tmf:ProductRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductRef.adoc[]
 
 
 === receiverBucket
 description: A reference to the bucket to which the balance will be transferred
 
-$ref of: xref:4.0.0@schemas:Tmf:BucketRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:BucketRef.adoc[]
 
 
 === receiverLogicalResource
 description: A reference to the logical resource that can be used to identify the bucket balance for example where product ids are not unique.
 
-$ref of: xref:4.0.0@schemas:Tmf:LogicalResourceRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:LogicalResourceRef.adoc[]
 
 
 === receiverPartyAccount
 description: A reference to the receiver account that owns the receiverlbucket impacted by the balance related operation
 
-$ref of: xref:4.0.0@schemas:Tmf:PartyAccountRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:PartyAccountRef.adoc[]
 
 
 === transferCost
 description: Associated cost to be charged for the transfer operation (can be monetary or non-monetary)
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:Quantity.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcBalanceAction.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcBalanceAction.adoc[]

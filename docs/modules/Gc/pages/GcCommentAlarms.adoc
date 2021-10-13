@@ -20,7 +20,7 @@ The data model is defined as shown below:
 
 
 === comment
-$ref of: xref:4.0.0@schemas:Gc:Comment.adoc[]
+$ref of: xref:v5.0@schemas:Gc:Comment.adoc[]
 
 
 === alarmPattern

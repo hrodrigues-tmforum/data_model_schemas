@@ -26,11 +26,11 @@ type: integer
 
 
 === appointment
-$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:AppointmentRef.adoc[]
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === itemPrice
@@ -50,19 +50,19 @@ type: array
 
 
 === product
-$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductRefOrValue.adoc[]
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === productOfferingQualificationItem
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductOfferingQualificationItemRef.adoc[]
 
 
 === quoteItem
-$ref of: xref:4.0.0@schemas:Tmf:QuoteItemRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:QuoteItemRef.adoc[]
 
 
 === productOrderItem
@@ -78,5 +78,5 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcProductOrderItem.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcProductOrderItem.adoc[]
+This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

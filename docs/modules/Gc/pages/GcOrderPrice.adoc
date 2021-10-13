@@ -26,7 +26,7 @@ type: string
 
 
 === price
-$ref of: xref:4.0.0@schemas:Gc:GcPrice.adoc[]
+$ref of: xref:v5.0@schemas:Gc:GcPrice.adoc[]
 
 
 = All Of 

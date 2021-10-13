@@ -22,8 +22,8 @@ The data model is defined as shown below:
 === receiver
 description: Identifier for the user/customer/entity that receives the transfer when it is required to indicate additional customer hierarchy information regarding the entity receiving the balance transfer Structure including at least attributes “role” and “name”
 
-$ref of: xref:4.0.0@schemas:Gc:RelatedParty.adoc[]
+$ref of: xref:v5.0@schemas:Gc:RelatedParty.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcBalanceAction.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcBalanceAction.adoc[]

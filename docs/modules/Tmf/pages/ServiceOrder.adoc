@@ -130,8 +130,8 @@ type: array
 === errorMessage
 description: the error message if the order closed by an error
 
-$ref of: xref:4.0.0@schemas:Tmf:ServiceOrderErrorMessage.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ServiceOrderErrorMessage.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

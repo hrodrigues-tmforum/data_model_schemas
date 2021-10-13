@@ -62,7 +62,7 @@ type: array
 === validFor
 description: The period of time for which the specification is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === version

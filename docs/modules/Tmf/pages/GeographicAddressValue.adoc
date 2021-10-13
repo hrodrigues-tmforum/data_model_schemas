@@ -75,9 +75,9 @@ type: string
 
 
 === geographicSubAddress
-$ref of: xref:4.0.0@schemas:Tmf:GeographicSubAddressValue.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:GeographicSubAddressValue.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcGeographicAddressValue.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcGeographicAddressValue.adoc[]
+This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

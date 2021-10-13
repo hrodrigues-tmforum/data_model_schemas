@@ -28,7 +28,7 @@ type: string
 === state
 description: Tracks the lifecycle status of the product order, such as Acknowledged, Rejected, InProgress, Pending and so on.
 
-$ref of: xref:4.0.0@schemas:Gc:GcProductOrderStateType.adoc[]
+$ref of: xref:v5.0@schemas:Gc:GcProductOrderStateType.adoc[]
 
 
 === completionDate
@@ -44,4 +44,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Core:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

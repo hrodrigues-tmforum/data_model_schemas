@@ -36,7 +36,7 @@ type: array
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === creationDate
@@ -80,7 +80,7 @@ type: array
 
 
 === productOffering
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductOfferingRef.adoc[]
 
 
 === productOrderItem
@@ -106,7 +106,7 @@ type: string
 
 
 === productSpecification
-$ref of: xref:4.0.0@schemas:Tmf:ProductSpecificationRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductSpecificationRef.adoc[]
 
 
 === productTerm
@@ -138,7 +138,7 @@ type: string
 === status
 description: Is the lifecycle status of the product.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductStatusType.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductStatusType.adoc[]
 
 
 === terminationDate
@@ -148,5 +148,5 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcProductValue.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcProductValue.adoc[]
+This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

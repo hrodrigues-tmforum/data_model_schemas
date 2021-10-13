@@ -110,13 +110,13 @@ type: string
 === state
 description: State of the quote : described in the state-machine diagram
 
-$ref of: xref:4.0.0@schemas:Tmf:QuoteStateType.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:QuoteStateType.adoc[]
 
 
 === validFor
 description: Quote validity period
 
-$ref of: xref:4.0.0@schemas:Core:TimePeriod.adoc[]
+$ref of: xref:v5.0@schemas:Core:TimePeriod.adoc[]
 
 
 === version
@@ -132,4 +132,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcQuote.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcQuote.adoc[]

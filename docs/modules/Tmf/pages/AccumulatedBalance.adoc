@@ -44,7 +44,7 @@ type: string
 === partyAccount
 description: A reference to the account that owns the buckets aggregated
 
-$ref of: xref:4.0.0@schemas:Tmf:PartyAccountRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:PartyAccountRef.adoc[]
 
 
 === product
@@ -62,8 +62,8 @@ type: array
 === totalBalance
 description: Aggregated for a set of prepay balance buckets associated to the product
 
-$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:Quantity.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

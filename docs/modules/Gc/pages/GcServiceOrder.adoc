@@ -28,7 +28,7 @@ type: array
 === state
 description: State of the order: described in the state-machine diagram
 
-$ref of: xref:4.0.0@schemas:Gc:ServiceOrderStateType.adoc[]
+$ref of: xref:v5.0@schemas:Gc:ServiceOrderStateType.adoc[]
 
 
 === orderDate
@@ -36,4 +36,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Core:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Core:Entity.adoc[]

@@ -23,7 +23,7 @@ The data model is defined as shown below:
 === conformancePeriod
 description: An interval of time during which the Conformance Target must be measured.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === graceTimes
@@ -49,7 +49,7 @@ type: string
 === tolerancePeriod
 description: A value that specifies the allowable time variation of a conformance
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === toleranceTarget
@@ -62,13 +62,13 @@ type: string
 === validFor
 description: A valid duration of a thing.
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === serviceLevelSpecParameter
 description: A parameter for this objective
 
-$ref of: xref:4.0.0@schemas:Tmf:ServiceLevelSpecParameter.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ServiceLevelSpecParameter.adoc[]
 
 
 === serviceLevelSpecConsequence
@@ -78,4 +78,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

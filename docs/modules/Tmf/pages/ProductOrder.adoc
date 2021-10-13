@@ -26,7 +26,7 @@ type: array
 
 
 === billingAccount
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === cancellationDate
@@ -122,4 +122,4 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcProductOrder.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcProductOrder.adoc[]

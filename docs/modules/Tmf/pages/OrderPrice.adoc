@@ -34,7 +34,7 @@ type: string
 === productOfferingPrice
 description: An amount, usually of money, that is asked for or allowed when a ProductOffering is bought, rented, or leased. The price is valid for a defined period of time.
 
-$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingPriceRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:ProductOfferingPriceRef.adoc[]
 
 
 === recurringChargePeriod
@@ -52,7 +52,7 @@ type: string
 === billingAccount
 description: A reference to a billing account used for paid the order price charge
 
-$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:BillingAccountRef.adoc[]
 
 
 === priceAlteration
@@ -62,5 +62,5 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcOrderPrice.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcOrderPrice.adoc[]
+This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

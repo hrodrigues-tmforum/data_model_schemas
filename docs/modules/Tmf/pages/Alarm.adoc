@@ -117,7 +117,7 @@ type: array
 
 
 === crossedThresholdInformation
-$ref of: xref:4.0.0@schemas:Tmf:CrossedThresholdInformation.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:CrossedThresholdInformation.adoc[]
 
 
 === isRootCause
@@ -153,4 +153,4 @@ type: array
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]

@@ -26,6 +26,6 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcAppointmentRef.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:EntityRef.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcAppointmentRef.adoc[]
+This schema extends: xref:v5.0@schemas:Core:EntityRef.adoc[]
+This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

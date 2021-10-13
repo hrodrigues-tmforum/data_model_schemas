@@ -20,8 +20,8 @@ The data model is defined as shown below:
 
 
 === nonFunctionalTestModel
-$ref of: xref:4.0.0@schemas:Tmf:NonFunctionalTestModelRef.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:NonFunctionalTestModelRef.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcTestExecution.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcTestExecution.adoc[]

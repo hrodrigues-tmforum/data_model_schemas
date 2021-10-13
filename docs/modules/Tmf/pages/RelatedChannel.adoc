@@ -26,5 +26,5 @@ type: string
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Gc:GcRelatedChannel.adoc[]
-This schema extends: xref:4.0.0@schemas:Core:SchemaContext.adoc[]
+This schema extends: xref:v5.0@schemas:Gc:GcRelatedChannel.adoc[]
+This schema extends: xref:v5.0@schemas:Core:SchemaContext.adoc[]

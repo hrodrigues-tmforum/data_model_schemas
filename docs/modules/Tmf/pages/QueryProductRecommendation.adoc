@@ -44,7 +44,7 @@ type: string
 === validFor
 description: The period in which the queryProductRecommendation is valid
 
-$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:TimePeriod.adoc[]
 
 
 === productOrder
@@ -58,7 +58,7 @@ type: array
 === place
 description: The place which the queryProductRecommendation is related to
 
-$ref of: xref:4.0.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:RelatedPlaceRefOrValue.adoc[]
 
 
 === channel
@@ -78,7 +78,7 @@ type: array
 
 
 === relatedParty
-$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:RelatedParty.adoc[]
 
 
 === recommendationItem
@@ -88,8 +88,8 @@ type: array
 === state
 description: State of the queryProductRecommendation defined in the state engine
 
-$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+$ref of: xref:v5.0@schemas:Tmf:TaskStateType.adoc[]
 
 
 = All Of 
-This schema extends: xref:4.0.0@schemas:Tmf:Entity.adoc[]
+This schema extends: xref:v5.0@schemas:Tmf:Entity.adoc[]
