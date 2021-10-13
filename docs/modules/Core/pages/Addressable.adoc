@@ -13,7 +13,7 @@ Base schema for adressable entities
 [#diagram]
 == Diagram
 
-image::Resource_Addressable[The Diagram for Addressable]
+image::Resource_Addressable.png[The Diagram for Addressable]
 
 [#data_model]
 == Data model
