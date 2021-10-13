@@ -68,6 +68,8 @@ description: The service specification implied by this candidate
 $ref of: xref:v4.2@schemas:Tmf:ServiceSpecificationRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Addressable.adoc[]
 This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

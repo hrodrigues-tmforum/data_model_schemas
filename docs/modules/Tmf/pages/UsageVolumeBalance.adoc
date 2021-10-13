@@ -37,5 +37,7 @@ description: Balance period between a start date time and an end date time. For 
 $ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

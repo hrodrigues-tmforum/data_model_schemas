@@ -141,5 +141,7 @@ type: array
 $ref of: xref:v4.2@schemas:Customer:FinancialAccountRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Customer:Entity.adoc[]

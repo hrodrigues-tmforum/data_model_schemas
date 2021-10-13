@@ -79,6 +79,8 @@ description: List of child categories in the tree for in this category
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Addressable.adoc[]
 This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

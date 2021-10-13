@@ -25,5 +25,7 @@ description: The shopping cart for which the assessment is to be carried out, mu
 $ref of: xref:v4.2@schemas:Customer:ShoppingCartRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Customer:RiskAssessment.adoc[]

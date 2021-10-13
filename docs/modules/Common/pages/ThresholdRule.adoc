@@ -57,5 +57,7 @@ description: A threshold can be generated in different severity levels. A crossi
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Common:Rule.adoc[]

@@ -94,6 +94,8 @@ description: The specification for this test
 $ref of: xref:v4.2@schemas:Service:ServiceTestSpecificationRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Service:Extensible.adoc[]
 This schema extends: xref:v4.2@schemas:Service:Addressable.adoc[]

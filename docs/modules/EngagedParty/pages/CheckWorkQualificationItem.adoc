@@ -53,5 +53,7 @@ description: If qualificationItem has not been done properly this lists the erro
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:EngagedParty:WorkQualificationItem.adoc[]

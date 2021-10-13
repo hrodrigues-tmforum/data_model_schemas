@@ -25,5 +25,7 @@ description: Date when the error happened
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:ErrorMessage.adoc[]

@@ -59,4 +59,6 @@ description: AND/OR,The logical relation type amongst the various criteria insid
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

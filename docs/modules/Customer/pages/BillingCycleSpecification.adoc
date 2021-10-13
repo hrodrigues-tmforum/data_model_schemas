@@ -91,5 +91,7 @@ description: The period for which the billing specification cycle is valid
 $ref of: xref:v4.2@schemas:Customer:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Customer:Entity.adoc[]

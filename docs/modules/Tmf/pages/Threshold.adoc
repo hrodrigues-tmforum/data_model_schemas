@@ -37,5 +37,7 @@ description: A Performance Threshold contains a set of Performance threshold rul
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

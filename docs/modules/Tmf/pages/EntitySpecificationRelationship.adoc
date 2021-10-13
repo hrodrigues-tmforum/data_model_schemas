@@ -43,5 +43,7 @@ description: A specification for an association used by this relationship
 $ref of: xref:v4.2@schemas:Tmf:AssociationSpecificationRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:EntityRef.adoc[]

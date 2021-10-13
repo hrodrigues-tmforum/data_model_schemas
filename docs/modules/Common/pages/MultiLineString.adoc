@@ -27,4 +27,6 @@ type: string
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+

@@ -47,5 +47,7 @@ $ref of: xref:v4.2@schemas:Common:TimePeriod.adoc[]
 $ref of: xref:v4.2@schemas:Common:AssociationSpecificationRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Common:Extensible.adoc[]

@@ -99,5 +99,7 @@ description: Within a property in an urban area, may refer to a building, buildi
 $ref of: xref:v4.2@schemas:Tmf:SubAddress.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

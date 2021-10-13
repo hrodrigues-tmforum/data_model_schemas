@@ -37,5 +37,7 @@ description: Applied rate of the tax
 type: number
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

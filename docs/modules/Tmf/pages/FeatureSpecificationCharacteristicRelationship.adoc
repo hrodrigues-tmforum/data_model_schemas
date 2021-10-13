@@ -61,5 +61,7 @@ description: The period for which the object is valid
 $ref of: xref:v4.2@schemas:Tmf:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

@@ -31,4 +31,6 @@ description: A positive floating point number
 type: number
 
 
-= All Of 
+[#all_of]
+== All Of
+

@@ -43,5 +43,7 @@ description: The size of the settlement note image (in bytes)
 type: integer
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Customer:Entity.adoc[]

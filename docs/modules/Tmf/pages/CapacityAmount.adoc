@@ -44,5 +44,7 @@ Possible values are &quot;open&quot;, &quot;closed&quot;, &quot;closedBottom&quo
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

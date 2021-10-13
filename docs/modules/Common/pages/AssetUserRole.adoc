@@ -27,5 +27,7 @@ $ref of: xref:v4.2@schemas:Common:EntityRef.adoc[]
 $ref of: xref:v4.2@schemas:Common:UserRoleRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Common:Entity.adoc[]

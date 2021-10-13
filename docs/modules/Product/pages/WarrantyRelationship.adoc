@@ -25,5 +25,7 @@ description: Type of the product relationship, such as [bundled] if the product 
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Product:Entity.adoc[]

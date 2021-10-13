@@ -27,5 +27,7 @@ $ref of: xref:v4.2@schemas:Product:WarrantyProductSpecificationRef.adoc[]
 $ref of: xref:v4.2@schemas:Product:WarrantyRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Product:Product.adoc[]

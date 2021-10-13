@@ -100,5 +100,7 @@ description: An Applied Consequence defines the action (prescribed action or not
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Service:Extensible.adoc[]

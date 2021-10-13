@@ -25,5 +25,7 @@ description: The product order for which the assessment is to be carried out, mu
 $ref of: xref:v4.2@schemas:Tmf:ProductOrderRef.json.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:RiskAssessment.adoc[]

@@ -109,5 +109,7 @@ description: Tracks the lifecycle status of the product order, such as Acknowled
 $ref of: xref:v4.2@schemas:Customer360:ProductOrderStateType.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Customer360:Entity.adoc[]

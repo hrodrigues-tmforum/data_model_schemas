@@ -91,5 +91,7 @@ description: Used to define a place where the product stock must be reserved
 $ref of: xref:v4.2@schemas:Resource:RelatedPlaceRefOrValue.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Resource:Entity.adoc[]

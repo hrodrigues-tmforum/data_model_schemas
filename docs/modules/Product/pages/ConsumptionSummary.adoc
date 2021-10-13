@@ -61,5 +61,7 @@ description: Value of the counter in a formatted string used for display needs f
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Product:Entity.adoc[]

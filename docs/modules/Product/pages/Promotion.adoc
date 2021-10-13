@@ -89,4 +89,6 @@ description: The period for which the promotion is valid.
 $ref of: xref:v4.2@schemas:Product:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+

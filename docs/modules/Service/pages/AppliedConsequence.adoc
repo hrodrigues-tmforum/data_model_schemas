@@ -48,5 +48,7 @@ If the repeatAction is True, if the consequence is always applied as soon as the
 type: boolean
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Service:Extensible.adoc[]

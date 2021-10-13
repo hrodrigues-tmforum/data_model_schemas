@@ -55,5 +55,7 @@ description: A string represents the message of the alert
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

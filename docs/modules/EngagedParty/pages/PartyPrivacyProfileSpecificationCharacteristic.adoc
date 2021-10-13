@@ -71,4 +71,6 @@ description: The period of time for which this characteristic specification is v
 $ref of: xref:v4.2@schemas:EngagedParty:TimePeriod.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+

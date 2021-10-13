@@ -79,5 +79,7 @@ description: URL of the file containing the data to be exported
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

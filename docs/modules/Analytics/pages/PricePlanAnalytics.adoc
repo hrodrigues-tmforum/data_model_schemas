@@ -119,4 +119,6 @@ description: Time stamp for business validity of entity record
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

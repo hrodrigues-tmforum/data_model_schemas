@@ -71,5 +71,7 @@ description: The date schedule is used to define a schedule that is based on spe
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Common:Extensible.adoc[]

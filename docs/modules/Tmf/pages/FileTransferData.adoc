@@ -39,6 +39,8 @@ $ref of: xref:v4.2@schemas:Tmf:Duration.adoc[]
 $ref of: xref:v4.2@schemas:Tmf:PackingType.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:ProtocolTransferData.adoc[]
 This schema extends: xref:v4.2@schemas:Tmf:Extensible.adoc[]

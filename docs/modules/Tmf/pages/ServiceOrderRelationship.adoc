@@ -43,5 +43,7 @@ description: The type of related order, such as: [dependency] if the order needs
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Entity.adoc[]

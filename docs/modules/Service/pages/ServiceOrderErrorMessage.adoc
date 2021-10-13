@@ -31,5 +31,7 @@ description: A list of order item references corresponded to this error
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Service:ErrorMessage.adoc[]

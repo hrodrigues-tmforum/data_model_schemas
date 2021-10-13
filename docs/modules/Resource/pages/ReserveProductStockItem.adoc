@@ -61,5 +61,7 @@ description: Requested product for reservation - a Product configuration could b
 $ref of: xref:v4.2@schemas:Resource:ProductRefOrValue.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Resource:Extensible.adoc[]

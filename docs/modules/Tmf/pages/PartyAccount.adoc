@@ -41,5 +41,7 @@ $ref of: xref:v4.2@schemas:Tmf:FinancialAccountRef.adoc[]
 $ref of: xref:v4.2@schemas:Tmf:PaymentMethodRef.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Account.adoc[]

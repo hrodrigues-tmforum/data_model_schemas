@@ -27,7 +27,9 @@ type: string
 $ref of: xref:v4.2@schemas:Common:.adoc[]
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Common:ManagementJob.adoc[]
 This schema extends: xref:v4.2@schemas:Common:Addressable.adoc[]
 This schema extends: xref:v4.2@schemas:Common:Extensible.adoc[]

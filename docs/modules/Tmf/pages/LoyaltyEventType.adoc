@@ -37,4 +37,6 @@ description: The type of loyalty event expected to trigger the loyalty rule eval
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+

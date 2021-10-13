@@ -43,5 +43,7 @@ description: (Class) type of the referred market segment
 type: string
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:MarketingSales:Entity.adoc[]

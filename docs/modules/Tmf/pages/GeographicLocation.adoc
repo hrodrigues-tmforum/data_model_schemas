@@ -43,5 +43,7 @@ description: A bounding box array that contains the geometry. The axes order fol
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:Tmf:Place.adoc[]

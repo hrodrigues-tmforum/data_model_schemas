@@ -55,5 +55,7 @@ description: The list of partners of the partnership, where a partner represents
 type: array
 
 
-= All Of 
+[#all_of]
+== All Of
+
 This schema extends: xref:v4.2@schemas:EngagedParty:Entity.adoc[]
