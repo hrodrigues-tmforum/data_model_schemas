@@ -1,0 +1,37 @@
+= Consequence
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A threshold crossing or a threshold ceased to be crossing results in a Performance consequence.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: A description of a Consequence
+
+type: string
+
+
+=== name
+description: A word, term, or phrase by which a Consequence is known and distinguished from other measurements
+
+type: string
+
+
+=== prescribedAction
+description: The suggested action
+
+type: string
+

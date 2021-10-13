@@ -1,0 +1,85 @@
+= MediumCharacteristic
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Describes the contact medium characteristics that could be used to contact a party (an individual or an organization)
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== city
+description: The city
+
+type: string
+
+
+=== country
+description: The country
+
+type: string
+
+
+=== emailAddress
+description: Full email address in standard format
+
+type: string
+
+
+=== faxNumber
+description: The fax number of the contact
+
+type: string
+
+
+=== contactType
+description: The type of contact, for example: phone number such as mobile, fixed home, fixed office. postal address such as shipping instalation…
+
+type: string
+
+
+=== socialNetworkId
+description: Identifier as a member of a social network
+
+type: string
+
+
+=== phoneNumber
+description: The primary phone number of the contact
+
+type: string
+
+
+=== postCode
+description: Postcode
+
+type: string
+
+
+=== stateOrProvince
+description: State or province
+
+type: string
+
+
+=== street1
+description: Describes the street
+
+type: string
+
+
+=== street2
+description: Complementary street description
+
+type: string
+

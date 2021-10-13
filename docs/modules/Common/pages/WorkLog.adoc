@@ -1,0 +1,41 @@
+= WorkLog
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A record of the work performed on the change request during the investigation and resolution process.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== createDateTime
+description: Date and time of worklog generated.
+
+type: string
+
+
+=== description
+description: The description of the worklog.
+
+type: string
+
+
+=== lastUpdateDateTime
+description: Date and time when the worklog updated.
+
+type: string
+
+
+=== record
+type: array
+

@@ -1,0 +1,59 @@
+= CrossedThresholdInformation
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Identifies the details of the threshold that has been crossed.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== threshold
+$ref of: xref:4.0.0@schemas:Tmf:ThresholdRef.adoc[]
+
+
+=== direction
+description: Indicates the threshold crossing direction: up or down.
+
+type: string
+
+
+=== granularity
+description: Indicates the granularity at which the indicator is evaluated for threshold crossing
+
+type: string
+
+
+=== indicatorName
+description: Indicates the name of indicator which crossed the threshold.
+
+type: string
+
+
+=== indicatorUnit
+description: Indicates the unit of the measurement of the indicator corresponding to the threshold that has been crossed.
+
+type: string
+
+
+=== observedValue
+description: Indicates the value of the indicator which crossed the threshold.
+
+type: string
+
+
+=== thresholdCrossingDescription
+description: Indicates further information on the threshold crossing alarm.
+
+type: string
+

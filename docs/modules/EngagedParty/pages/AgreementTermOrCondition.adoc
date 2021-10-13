@@ -1,0 +1,37 @@
+= AgreementTermOrCondition
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Aspects of the agreement not formally specified elsewhere in the agreement and that cannot be captured elsewhere in a formal notation, or automatically monitored and require a more human level of management.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Text that explains the term or condition of the agreement.
+
+type: string
+
+
+=== id
+description: Unique number assigned for reference.
+
+type: string
+
+
+=== validFor
+description: The period of time during which the term or condition of the agreement applies.
+
+$ref of: xref:4.0.0@schemas:EngagedParty:TimePeriod.adoc[]
+

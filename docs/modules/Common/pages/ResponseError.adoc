@@ -1,0 +1,25 @@
+= ResponseError
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Used when an API throws an Error, typically with a HTTP error response-code (3xx, 4xx, 5xx)
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== status
+description: HTTP Error code extension
+
+type: string
+

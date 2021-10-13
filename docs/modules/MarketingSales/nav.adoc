@@ -1,0 +1,7 @@
+* MarketingSales
+*** xref:SalesLead.adoc[]
+*** xref:SalesOpportunityRef.adoc[]
+*** xref:SalesLeadStateType.adoc[]
+*** xref:MarketingCampaignRef.adoc[]
+*** xref:SalesLeadPriorityType.adoc[]
+*** xref:MarketSegmentRef.adoc[]

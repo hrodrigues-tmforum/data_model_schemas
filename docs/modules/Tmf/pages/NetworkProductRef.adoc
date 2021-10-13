@@ -1,0 +1,49 @@
+= NetworkProductRef
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Reference of a product
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @referredType
+description: Generic attribute indicating the name of the class type of the referred resource entity
+
+type: string
+
+
+=== href
+description: Reference to the network product
+
+type: string
+
+
+=== id
+description: Unique identifier of the network product
+
+type: string
+
+
+=== name
+description: Network product name
+
+type: string
+
+
+=== publicIdentifier
+description: Public number associated to the product (msisdn number for mobile line for example)
+
+type: string
+

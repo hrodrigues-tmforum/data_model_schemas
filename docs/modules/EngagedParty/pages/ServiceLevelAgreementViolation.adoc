@@ -1,0 +1,43 @@
+= ServiceLevelAgreementViolation
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== date
+type: string
+
+
+=== href
+type: string
+
+
+=== id
+type: integer
+
+
+=== relatedParty
+type: array
+
+
+=== serviceLevelAgreement
+$ref of: xref:4.0.0@schemas:EngagedParty:ServiceLevelAgreementRef.adoc[]
+
+
+=== violation
+$ref of: xref:4.0.0@schemas:EngagedParty:Violation.adoc[]
+

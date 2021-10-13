@@ -1,0 +1,19 @@
+= UsageStatusType
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Possible values for the status of the Usage
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

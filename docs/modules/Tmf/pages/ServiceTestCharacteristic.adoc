@@ -1,0 +1,31 @@
+= ServiceTestCharacteristic
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+The configuration of the service test is set by the service test characteristic.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: The name of the characteristic.
+
+type: string
+
+
+=== value
+description: The value of characteristic.
+
+type: string
+

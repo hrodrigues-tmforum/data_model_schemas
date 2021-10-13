@@ -1,0 +1,23 @@
+= CancelServiceOrder
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+Request for cancellation an existing Service order
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== serviceOrder
+$ref of: xref:4.0.0@schemas:Tmf:ServiceOrderRef.adoc[]
+

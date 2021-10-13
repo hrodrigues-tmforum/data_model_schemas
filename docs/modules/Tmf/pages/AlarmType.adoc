@@ -1,0 +1,19 @@
+= AlarmType
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Categorizes the alarm (X.733 8.1.1, 3GPP TS 32.111-2 Annex A)
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

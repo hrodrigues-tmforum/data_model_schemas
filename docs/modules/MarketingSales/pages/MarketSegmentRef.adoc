@@ -1,0 +1,43 @@
+= MarketSegmentRef
+
+[#domain]
+== Domain
+
+This schema is part of MarketingSales
+
+[#description]
+== Description
+provides references to the corresponding market segment as target of product offerings. A market segment is grouping of Parties, GeographicAreas, SalesChannels, and so forth.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the market segment
+
+type: string
+
+
+=== href
+description: Reference of the market segment
+
+type: string
+
+
+=== name
+description: Name of the market segment
+
+type: string
+
+
+=== @referredType
+description: (Class) type of the referred market segment
+
+type: string
+

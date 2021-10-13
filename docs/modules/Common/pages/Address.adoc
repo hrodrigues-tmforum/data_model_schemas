@@ -1,0 +1,99 @@
+= Address
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Structured textual way of describing how to find a Property in an urban area (country properties are often
+defined differently).
+Note : Address corresponds to SID UrbanPropertyAddress
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== city
+description: City that the address is in
+
+type: string
+
+
+=== country
+description: Country that the address is in
+
+type: string
+
+
+=== locality
+description: &quot;An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi rural in nature.&quot; [ANZLIC-STREET], or a suburb &quot;a bounded locality within a city, town or shire principally of urban character &quot; [ANZLICSTREET]
+
+type: string
+
+
+=== postcode
+description: descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also know as zipcode)
+
+type: string
+
+
+=== stateOrProvince
+description: the State or Province that the address is in
+
+type: string
+
+
+=== streetName
+description: Name of the street or other street type
+
+type: string
+
+
+=== streetNr
+description: Number identifying a specific property on a public street. It may be combined with streetNrLast for ranged addresses
+
+type: string
+
+
+=== streetNrLast
+description: Last number in a range of street numbers allocated to a property
+
+type: string
+
+
+=== streetNrLastSuffix
+description: Last street number suffix for a ranged address
+
+type: string
+
+
+=== streetNrSuffix
+description: the first street number suffix
+
+type: string
+
+
+=== streetSuffix
+description: A modifier denoting a relative direction
+
+type: string
+
+
+=== streetType
+description: alley, avenue, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf 
+
+type: string
+
+
+=== subAddress
+description: Within a property in an urban area, may refer to a building, building cluster, or a floor of a multistory building
+
+$ref of: xref:4.0.0@schemas:Common:SubAddress.adoc[]
+

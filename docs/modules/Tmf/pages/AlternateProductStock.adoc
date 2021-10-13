@@ -1,0 +1,55 @@
+= AlternateProductStock
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+AlternateProductStock is used to log and execute Alternate about product  stock availability
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== alternateAvailabilityDate
+description: Alternate date when the product stock is available.
+
+type: string
+
+
+=== id
+description: identifier of the Alternate product stock 
+
+type: string
+
+
+=== alternateQuantity
+description: Alternate quantity available
+
+$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+
+
+=== alternatePlace
+description: Alternate place where product stock is available
+
+$ref of: xref:4.0.0@schemas:Tmf:PlaceRefOrValue.adoc[]
+
+
+=== alternateStock
+description: Alternate product stock available
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductStockRef.adoc[]
+
+
+=== alternateProduct
+description: Alternat product available
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductRefOrValue.adoc[]
+

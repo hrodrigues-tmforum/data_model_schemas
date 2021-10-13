@@ -1,0 +1,25 @@
+= ResourceCategoryRef
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+The (resource) category resource is used to group resource candidates in logical containers. Categories can contain other categories.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== version
+description: Category version
+
+type: string
+

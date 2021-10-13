@@ -1,0 +1,73 @@
+= SearchTimeSlot
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+This task resource is used to retrieve available time slots. One of this available time slot is after used to create or reschedule an appointment
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the search time slot request
+
+type: string
+
+
+=== href
+description: Reference to access the search time slot resource
+
+type: string
+
+
+=== status
+type: string
+
+$ref of: xref:4.0.0@schemas:Customer:SearchTimeSlotStateType.adoc[]
+
+
+=== searchDate
+description: Date when the search time slot is performed
+
+type: string
+
+
+=== searchResult
+description: Result of the search time slot (success or fail for example)
+
+type: string
+
+
+=== requestedTimeSlot
+type: array
+
+
+=== availableTimeSlot
+type: array
+
+
+=== relatedParty
+description: RelatedParty reference. A related party defines party or party role linked to a specific entity.
+
+$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+
+
+=== relatedEntity
+type: array
+
+
+=== relatedPlace
+description: Related place defines (by reference or value) the place where the appointment will take place.
+
+$ref of: xref:4.0.0@schemas:Customer:RelatedPlaceRefOrValue.adoc[]
+

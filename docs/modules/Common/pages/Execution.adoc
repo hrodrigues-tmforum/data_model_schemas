@@ -1,0 +1,33 @@
+= Execution
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+The base for all Execution resources
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== dataCorrelationId
+description: Data correlation ID passed in by the API consumer
+
+type: string
+
+
+=== generalTestArtifact
+type: array
+
+
+=== state
+$ref of: xref:4.0.0@schemas:Common:ExecutionStateType.adoc[]
+

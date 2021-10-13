@@ -1,0 +1,41 @@
+= CancelReservation
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+A Cancel Reservation is a type of task which  can  be used to place a request to cancel a reservation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== cancellationReason
+description: Reason why the reservation is cancelled.
+
+type: string
+
+
+=== effectiveCancellationDate
+description: Date when the reservation is cancelled.
+
+type: string
+
+
+=== requestedCancellationDate
+description: Date when the submitter wants the reservation to be cancelled
+
+type: string
+
+
+=== state
+$ref of: xref:4.0.0@schemas:Common:TaskStateType.adoc[]
+

@@ -1,0 +1,43 @@
+= TimeSlot
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Reference of the TimeSlot
+
+type: string
+
+
+=== id
+description: Unique identifier of the TimeSlot
+
+type: string
+
+
+=== relatedParty
+description: RelatedParty reference. A related party defines party or party role linked to a specific entity.
+
+$ref of: xref:4.0.0@schemas:Customer:RelatedParty.adoc[]
+
+
+=== validFor
+description: Start date and end date of the timeSlot
+
+$ref of: xref:4.0.0@schemas:Customer:TimePeriod.adoc[]
+

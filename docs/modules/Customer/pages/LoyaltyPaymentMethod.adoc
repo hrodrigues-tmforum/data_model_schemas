@@ -1,0 +1,27 @@
+= LoyaltyPaymentMethod
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Reference to an account in a loyalty system that could be used to perform the payment.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== loyaltyAccount
+$ref of: xref:4.0.0@schemas:Customer:LoyaltyAccountRef.adoc[]
+
+
+=== @type
+type: string
+

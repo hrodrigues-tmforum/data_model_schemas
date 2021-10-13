@@ -1,0 +1,29 @@
+= OrganizationChildRelationship
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Child references of an organization in a structure of organizations.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: Type of the relationship. Could be juridical, hierarchical, geographical, functional for example.
+
+type: string
+
+
+=== organization
+$ref of: xref:4.0.0@schemas:Tmf:OrganizationRef.adoc[]
+

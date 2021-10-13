@@ -1,0 +1,37 @@
+= OrderTerm
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+Description of a productTerm linked to this orderItem. This represent a commitment with a duration
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of the productOrderTerm
+
+type: string
+
+
+=== duration
+description: Duration of the productOrderTerm
+
+$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+
+
+=== name
+description: Name of the productOrderTerm
+
+type: string
+

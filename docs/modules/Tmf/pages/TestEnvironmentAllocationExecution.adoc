@@ -1,0 +1,35 @@
+= TestEnvironmentAllocationExecution
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+REST resource for test environment allocation lifecycle
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== abstractEnvironment
+$ref of: xref:4.0.0@schemas:Tmf:AbstractEnvironmentRef.adoc[]
+
+
+=== testScenario
+$ref of: xref:4.0.0@schemas:Tmf:TestScenarioRef.adoc[]
+
+
+=== concreteResourceMapping
+type: array
+
+
+=== resourceManagerUrl
+type: string
+

@@ -1,0 +1,69 @@
+= EntityCatalog
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+The root entity for entity catalog management. An entity catalog can be defined as a collection of entity catalog items and arranging them in a particular manner based on the need.
+In comparison to Product, Service and Resource catalogs, the entity catalog is intended for the purpose of providing any TMF data model entity to consumers via a catalog, with its specification and policy providing governance over its content. Even Entity catalog may have an overlap with Product, Service or Resource catalog, it does not replace them. It is primarily intended to address those entities which may not be addressed by any of Product, Service or Resource catalog.
+An entity catalog comprises of a list of RootEntities made available through EntityCatalogItems. This API addresses only RootEntity extended items as EntitySpecification. An entity catalog typically includes name, description and time period that it is valid for.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of this catalog
+
+type: string
+
+
+=== lastUpdate
+description: Date and time of the last update
+
+type: string
+
+
+=== lifecycleStatus
+description: Used to indicate the current lifecycle status
+
+type: string
+
+
+=== name
+description: Name of the catalog
+
+type: string
+
+
+=== validFor
+description: The period for which the catalog is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== relatedParty
+description: The parties who are involved or have an interest in this catalog
+
+type: array
+
+
+=== category
+description: The categories used in this catalog
+
+type: array
+
+
+=== version
+description: Catalog version
+
+type: string
+

@@ -1,0 +1,19 @@
+= TaskFlowStateType
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Valid values for the lifecycle state of the taskFlow
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

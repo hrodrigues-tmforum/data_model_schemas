@@ -1,0 +1,55 @@
+= Partnership
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A partnership represents a formalized collaboration between various parties, each party playing a role in the partnership. The parties playing a role in the partnership represented by the Partner entity. The structure of a partnership is specified by a PartnershipSpecification which contain all the information for the setup of the partnership, including the list of identified roles and the agreement that should apply.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: An explanatory text regarding this partnership
+
+type: string
+
+
+=== href
+description: The reference url for this partnership
+
+type: string
+
+
+=== id
+description: The identifier of the partnership
+
+type: string
+
+
+=== name
+description: An identifying name for the partnership.
+
+type: string
+
+
+=== specification
+description: The specification of this partnership.
+
+$ref of: xref:4.0.0@schemas:EngagedParty:PartnershipSpecificationRef.adoc[]
+
+
+=== partner
+description: The list of partners of the partnership, where a partner represents a party playing a given role. Hence a partner structure includes primarily a reference to the engaged party and a role name matching necessarily the name of one of the role specifications defined in the specification of the partnership.
+
+type: array
+

@@ -1,0 +1,49 @@
+= AccountRef
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Account reference. A account may be a party account or a financial account.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Detailed description of the account
+
+type: string
+
+
+=== href
+description: Reference of the account
+
+type: string
+
+
+=== id
+description: Unique identifier of the account
+
+type: string
+
+
+=== name
+description: Name of the account
+
+type: string
+
+
+=== @referredType
+description: The actual type of the target instance when needed for disambiguation.
+
+type: string
+

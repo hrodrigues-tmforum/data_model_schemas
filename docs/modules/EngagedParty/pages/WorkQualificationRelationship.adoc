@@ -1,0 +1,31 @@
+= WorkQualificationRelationship
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Structure used to describe relationship between WorkQualification item from the same WorkQualification.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: The id of the target qualification pointed to by this relationship
+
+type: string
+
+
+=== relationshipType
+description: The type of relationship
+
+type: string
+

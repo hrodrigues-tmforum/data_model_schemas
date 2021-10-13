@@ -1,0 +1,47 @@
+= WorkforceEmployeeAssignment
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Represents an assignment of a particular WorforceEmployeeRole for a particular unit of work in a specific timeframe. For example, assignment of a person in a network engineer role to a trouble shooting unit of work for at least 2 hours. The assignment is associated with a TimeSlot.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+type: string
+
+
+=== id
+type: string
+
+
+=== skillType
+description: Ex: primarySkill, secondarySkill
+
+type: string
+
+
+=== state
+description: Ex: primarySkill, secondarySkill
+
+$ref of: xref:4.0.0@schemas:Tmf:WorkforceEmployeeAssignmentStateType.adoc[]
+
+
+=== timeSlot
+type: array
+
+
+=== workforceEmployee
+$ref of: xref:4.0.0@schemas:Tmf:PartyRefOrValue.adoc[]
+

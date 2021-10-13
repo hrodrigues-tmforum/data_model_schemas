@@ -1,0 +1,75 @@
+= CartItem
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+An identified part of the shopping cart. A shopping cart  is decomposed into one or more shopping cart item. Cart item represents a product offering or bundled product offering that user wish to purchase, as well as the pricing of the product offering, reference to product in case of configured characteristic or installation address. Cart items can be related to other cart item to related bundled offerings or reference cart Items to a shipping options
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== action
+description: The action to be carried out on the Product. Can be: add, modify, delete, noChange
+
+$ref of: xref:4.0.0@schemas:Customer:CartItemActionType.adoc[]
+
+
+=== id
+description: Identifier of the cart item (generally it is a sequence number 01, 02, 03, ...) in the shopping cart
+
+type: string
+
+
+=== quantity
+description: Quantity of cart items
+
+type: integer
+
+
+=== status
+description: status of cart item. e.g &quot;active&quot; , &quot;savedForLater&quot;.
+
+$ref of: xref:4.0.0@schemas:Customer:CartItemStatusType.adoc[]
+
+
+=== itemTerm
+type: array
+
+
+=== cartItem
+type: array
+
+
+=== note
+type: array
+
+
+=== itemTotalPrice
+type: array
+
+
+=== product
+$ref of: xref:4.0.0@schemas:Customer:ProductRefOrValue.adoc[]
+
+
+=== itemPrice
+type: array
+
+
+=== productOffering
+$ref of: xref:4.0.0@schemas:Customer:ProductOfferingRef.adoc[]
+
+
+=== cartItemRelationship
+type: array
+

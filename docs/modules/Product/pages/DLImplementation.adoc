@@ -1,0 +1,59 @@
+= DLImplementation
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Provides the definition of a Distributed Ledger technology implemementation
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Unique reference of the Distributed Ledger implementation
+
+type: string
+
+
+=== id
+description: Unique identifier of the Distributed Ledger implementation
+
+type: string
+
+
+=== name
+description: Name of the Distributed Ledger implementation
+
+type: string
+
+
+=== description
+description: Description of the Distributed Ledger implementation
+
+type: string
+
+
+=== url
+description: URL where information pertaining to the implementation can be found
+
+type: string
+
+
+=== dlImplementationCharcteristic
+description: Characteristic of the Distributed Ledger implementation
+
+type: array
+
+
+=== @type
+type: string
+

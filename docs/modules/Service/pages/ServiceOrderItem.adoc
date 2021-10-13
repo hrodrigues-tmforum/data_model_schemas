@@ -1,0 +1,67 @@
+= ServiceOrderItem
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Identifier of the individual line item
+
+type: string
+
+
+=== action
+description: The action to be carried out on the Service. Can be: add, modify, delete, noChange
+
+$ref of: xref:4.0.0@schemas:Service:OrderItemActionType.adoc[]
+
+
+=== quantity
+description: Quantity ordered
+
+type: integer
+
+
+=== state
+description: State of the order item: described in the state machine diagram. This is the requested state.
+
+$ref of: xref:4.0.0@schemas:Service:ServiceOrderItemStateType.adoc[]
+
+
+=== service
+description: The Service to be acted on by the order item
+
+$ref of: xref:4.0.0@schemas:Service:ServiceRefOrValue.adoc[]
+
+
+=== appointment
+description: An appointment that was set up with a related party for this order item
+
+$ref of: xref:4.0.0@schemas:Service:AppointmentRef.adoc[]
+
+
+=== serviceOrderItemRelationship
+description: A list of order items related to this order item
+
+type: array
+
+
+=== serviceOrderItem
+description: A list of order items embedded to this order item
+
+type: array
+

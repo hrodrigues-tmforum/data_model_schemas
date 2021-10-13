@@ -1,0 +1,59 @@
+= ManagementJob
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== adminState
+$ref of: xref:4.0.0@schemas:Common:AdministrativeState.adoc[]
+
+
+=== creationTime
+description: The measurement job creation time.
+
+type: string
+
+
+=== executionState
+$ref of: xref:4.0.0@schemas:Common:ExecutionState.adoc[]
+
+
+=== fileTransferData
+type: array
+
+
+=== jobId
+description: The ID of the management job.
+
+type: string
+
+
+=== jobPriority
+description: The priority of the management job. The way the management application will use the JobPriority to schedule job execution is application specific and outside the scope. Integer, limited to a range of 1 to 10.
+
+type: integer
+
+
+=== lastModifiedTime
+description: The last time that a measurement job was modified.
+
+type: string
+
+
+=== scheduleDefinition
+type: array
+

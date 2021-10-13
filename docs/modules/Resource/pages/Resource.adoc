@@ -1,0 +1,125 @@
+= Resource
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Resource is an abstract entity that describes the common set of attributes shared by all concrete resources (e.g. TPE, EQUIPMENT) in the inventory.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== category
+description: Category of the concrete resource. e.g Gold, Silver for MSISDN concrete resource
+
+type: string
+
+
+=== description
+description: free-text description of the resource
+
+type: string
+
+
+=== endOperatingDate
+description: A date time( DateTime). The date till the resource is operating
+
+type: string
+
+
+=== href
+description: The URI for the object itself.
+
+type: string
+
+
+=== id
+description: Identifier of an instance of the resource. Required to be unique within the resource type.  Used in URIs as the identifier for specific instances of a type.
+
+type: string
+
+
+=== administrativeState
+description: Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on.
+
+$ref of: xref:4.0.0@schemas:Resource:ResourceAdministrativeStateType.adoc[]
+
+
+=== operationalState
+description: Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on.
+
+$ref of: xref:4.0.0@schemas:Resource:ResourceOperationalStateType.adoc[]
+
+
+=== resourceStatus
+description: Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on.
+
+$ref of: xref:4.0.0@schemas:Resource:ResourceStatusType.adoc[]
+
+
+=== usageState
+description: Tracks the lifecycle status of the resource, such as planning, installing, opereating, retiring and so on.
+
+$ref of: xref:4.0.0@schemas:Resource:ResourceUsageStateType.adoc[]
+
+
+=== name
+description: A string used to give a name to the resource
+
+type: string
+
+
+=== note
+type: array
+
+
+=== place
+$ref of: xref:4.0.0@schemas:Resource:RelatedPlaceRefOrValue.adoc[]
+
+
+=== relatedParty
+type: array
+
+
+=== resourceRelationship
+type: array
+
+
+=== resourceCharacteristic
+type: array
+
+
+=== attachment
+type: array
+
+
+=== resourceSpecification
+$ref of: xref:4.0.0@schemas:Resource:ResourceSpecificationRef.adoc[]
+
+
+=== startOperatingDate
+description: A date time( DateTime). The date from which the resource is operating
+
+type: string
+
+
+=== resourceVersion
+description: A field that identifies the specific version of an instance of a resource.
+
+type: string
+
+
+=== activationFeature
+description: Configuration features
+
+type: array
+

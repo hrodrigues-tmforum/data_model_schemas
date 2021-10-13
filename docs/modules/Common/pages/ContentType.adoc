@@ -1,0 +1,37 @@
+= ContentType
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Base64 content structure.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== type
+description: Content type.
+
+type: string
+
+
+=== contentEncoding
+description: Base64 encoded content.
+
+type: string
+
+
+=== description
+description: Content description.
+
+type: string
+

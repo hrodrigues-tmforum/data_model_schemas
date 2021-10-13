@@ -1,0 +1,31 @@
+= ResourceEntity
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Base schema for REST Resources
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== href
+description: Hyperlink to access the test resource
+
+type: string
+
+
+=== id
+description: ID created by the implementing service
+
+type: string
+

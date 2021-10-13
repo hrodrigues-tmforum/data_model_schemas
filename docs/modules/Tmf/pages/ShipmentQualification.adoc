@@ -1,0 +1,75 @@
+= ShipmentQualification
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+ShipmentQualification is used to perform a validation on shipment parameters and options, in relation to a specific carrier.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: Description of the qualification
+
+type: string
+
+
+=== effectiveQualificationDate
+description: Effective date to qualification completion
+
+type: string
+
+
+=== estimatedResponseDate
+description: Date when the requester expect to provide an answer for the qualification request.
+
+type: string
+
+
+=== expectedQualificationDate
+description: A date (DateTime). Deadline date when the requester expected a qualification answer.
+
+type: string
+
+
+=== expirationDate
+description: Date when the qualification response expires
+
+type: string
+
+
+=== externalId
+description: Identifier provided by the requester
+
+type: string
+
+
+=== relatedParty
+description: A list of related party references, defines party or party role linked to this request.
+
+type: array
+
+
+=== state
+description: State of the shipmentQualification (acknowledged, inProgress, terminatedWithError, done)
+
+$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+
+
+=== placeFrom
+$ref of: xref:4.0.0@schemas:Tmf:PlaceRefOrValue.adoc[]
+
+
+=== placeTo
+$ref of: xref:4.0.0@schemas:Tmf:PlaceRefOrValue.adoc[]
+

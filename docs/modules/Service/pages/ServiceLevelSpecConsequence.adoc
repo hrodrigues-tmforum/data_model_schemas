@@ -1,0 +1,33 @@
+= ServiceLevelSpecConsequence
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+Some consequences for the provider of the Service are resulted when the service level objective
+does not meet.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== prescribedAction
+description: Recommended remedy for a violated Service Level Objective. 
+This could be a hyperlink to the recommended action.
+
+type: string
+
+
+=== validFor
+description: A valid duration of a thing.
+
+$ref of: xref:4.0.0@schemas:Service:TimePeriod.adoc[]
+

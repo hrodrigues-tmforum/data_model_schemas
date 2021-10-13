@@ -1,0 +1,59 @@
+= Receiver
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Receivers of the communication message.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== appUserId
+description: ID of the mobile app user
+
+type: string
+
+
+=== email
+description: Receiver address of email, if the communication type is email
+
+type: string
+
+
+=== id
+description: ID of the receiver
+
+type: string
+
+
+=== ip
+description: IP address of the receiver
+
+type: string
+
+
+=== name
+description: Name of the receiver
+
+type: string
+
+
+=== phoneNumber
+description: Phone number of the receiver, if the communication type is SMS.
+
+type: string
+
+
+=== party
+$ref of: xref:4.0.0@schemas:Tmf:RelatedParty.adoc[]
+

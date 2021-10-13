@@ -1,0 +1,61 @@
+= AgreementSpecCharacteristicValue
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A number or text that can be assigned to an agreement specification characteristic.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== default
+description: Indicates if the value is the default value for a characteristic
+
+type: boolean
+
+
+=== unitOfMeasure
+description: Unit of measure for the characteristic, such as minutes, gigabytes (GB) and so on.
+
+type: string
+
+
+=== validFor
+description: The period of time for which a value is applicable
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== value
+description: A discrete value that the characteristic can take on
+
+$ref of: xref:4.0.0@schemas:Tmf:Any.adoc[]
+
+
+=== valueFrom
+description: The low range value that a characteristic can take on
+
+type: string
+
+
+=== valueTo
+description: The upper range value that a characteristic can take on
+
+type: string
+
+
+=== valueType
+description: A kind of value that the characteristic can take on, such as numeric, text, and so forth
+
+type: string
+

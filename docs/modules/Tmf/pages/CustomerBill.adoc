@@ -1,0 +1,135 @@
+= CustomerBill
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+The customer bill. Can be a regular recurring bill or an extra bill on demand by the customer or the csp.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Explanation: Unique identifier of he bill
+
+type: string
+
+
+=== href
+description: Bill unique reference
+
+type: string
+
+
+=== amountDue
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== appliedPayment
+description: Applied payment is a payment associated with the bill. There may be a partial payment, then there should be several applied payments available. On the other hand, more than one bill could be payed by one payment. In general there is an n:m relation between payment and bill.
+
+type: array
+
+
+=== billDate
+description: Bill date, external customer view (in consequence: different to the production date of the bill)
+
+type: string
+
+
+=== billDocument
+type: array
+
+
+=== billNo
+description: Bill reference known by the customer or the party and displayed on the bill. Could be different from the id
+
+type: string
+
+
+=== billingAccount
+$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+
+
+=== billingPeriod
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== billCycle
+$ref of: xref:4.0.0@schemas:Tmf:BillCycleRef.adoc[]
+
+
+=== category
+description: Category of the bill produced : normal, duplicate, interim, last, trial customer or credit note for example
+
+type: string
+
+
+=== financialAccount
+$ref of: xref:4.0.0@schemas:Tmf:FinancialAccountRef.adoc[]
+
+
+=== lastUpdate
+description: Date of bill last update
+
+type: string
+
+
+=== nextBillDate
+description: ). Approximate date of  the next bill production given for information (only used/meaningful for on cycle / regular bills)
+
+type: string
+
+
+=== paymentDueDate
+description: Date at which the amount due should have been paid
+
+type: string
+
+
+=== paymentMethod
+description: paymentMethod here is recognized to be not really necessary in a STANDARD. It could be obtained by a GET request on the billing account. Conclusion: paymentMethod is marked to DEPRECIATED and will be removed in one of the next versions.
+
+$ref of: xref:4.0.0@schemas:Tmf:PaymentMethodRef.adoc[]
+
+
+=== relatedParty
+type: array
+
+
+=== remainingAmount
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== runType
+description: onCycle (a bill can be created as a result of a cycle run) or offCycle (a bill can be created as a result of other events such as customer request or account close)
+
+$ref of: xref:4.0.0@schemas:Tmf:CustomerBillRunType.adoc[]
+
+
+=== taxExcludedAmount
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== taxIncludedAmount
+$ref of: xref:4.0.0@schemas:Tmf:Money.adoc[]
+
+
+=== taxItem
+type: array
+
+
+=== state
+description: Status of the bill
+
+$ref of: xref:4.0.0@schemas:Tmf:CustomerBillStateType.adoc[]
+

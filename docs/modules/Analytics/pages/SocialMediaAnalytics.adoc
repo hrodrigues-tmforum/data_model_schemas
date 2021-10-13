@@ -1,0 +1,195 @@
+= SocialMediaAnalytics
+
+[#domain]
+== Domain
+
+This schema is part of Analytics
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== startTimestamp
+description: The beginning of the measurement interval 
+START_TIMESTAMP to END_TIME_STAMP defines define the period for which the measurement is done
+
+type: string
+
+
+=== endTimestamp
+description: The beginning of the measurement interval 
+START_TIMESTAMP to END_TIME_STAMP defines define the period for which the measurement is done
+
+type: string
+
+
+=== twitterFollowers
+description: Total followers at the end of the period
+
+type: number
+
+
+=== twitterFollowersGrowth
+description: Difference in followers between beginning of period and end of period
+
+type: number
+
+
+=== twitterTweets
+description: Total own tweets in period
+
+type: number
+
+
+=== twitterRetweets
+description: Total retweets to own tweets in period
+
+type: number
+
+
+=== twitterReplies
+description: Total replies to own tweets in period
+
+type: number
+
+
+=== twitterLike
+description: Total likes to own tweets in period
+
+type: number
+
+
+=== facebookPosts
+description: Total facebook posts in period
+
+type: number
+
+
+=== facebookReactions
+description: Total facebook reactions to own posts in period
+
+type: number
+
+
+=== facebookShares
+description: Total facebook shares to own posts in period
+
+type: number
+
+
+=== facebookComments
+description: Total facebook comments to own posts in period
+
+type: number
+
+
+=== facebookFans
+description: Total facebook fans / friends at the end of period
+
+type: number
+
+
+=== facebookFansGrowth
+description: Difference in fans / friends count between beginning of period and end of period
+
+type: number
+
+
+=== youtubeVideos
+description: Total own youtube videos in period
+
+type: number
+
+
+=== youtubeVisualizations
+description: Total youtube visualizations to own videos in period
+
+type: number
+
+
+=== youtubeLikes
+description: Total youtube likes to own videos in period
+
+type: number
+
+
+=== youtubeDislikes
+description: Total youtube dislikes to own videos in period
+
+type: number
+
+
+=== youtubeComments
+description: Total youtube comments to own videos in period
+
+type: number
+
+
+=== youtubeSubscribers
+description: Total youtube subscribers at the end of the period
+
+type: number
+
+
+=== youtubeSubscribersGrowth
+description: Difference in subscribers count between beginning of period and end of period
+
+type: number
+
+
+=== instagramPosts
+description: Total own instagram posts in period
+
+type: number
+
+
+=== instagramLikes
+description: Total instagram likes to own posts in period
+
+type: number
+
+
+=== instagramComments
+description: Total instagram comments to own posts in period
+
+type: number
+
+
+=== instagramFollowers
+description: Total instagram followers  at the end of the period
+
+type: number
+
+
+=== instagramFollowersGrowth
+description: Difference in followers count between beginning of period and end of period
+
+type: number
+
+
+=== dataCreationTimestamp
+description: Time stamp for data creation (e.g. system dump creation, event generation…)
+
+type: string
+
+
+=== runTimestamp
+description: Time stamp for data upload run
+
+type: string
+
+
+=== validFromTimestamp
+description: Time stamp for business validity of entity record
+
+type: string
+

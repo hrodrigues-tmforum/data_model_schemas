@@ -1,0 +1,31 @@
+= ServiceQualificationRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: The id of the target qualification pointed to by this relationship
+
+type: string
+
+
+=== relationshipType
+description: The type of relationship
+
+type: string
+

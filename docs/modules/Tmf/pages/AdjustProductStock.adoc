@@ -1,0 +1,77 @@
+= AdjustProductStock
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+AdjustProductStock is used to log and execute on or several Product Stock level change
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier of the AdjustProductStock
+
+type: string
+
+
+=== href
+description: Reference of the AdjustProductStock
+
+type: string
+
+
+=== state
+description: State of the AdjustProductStock (acknowledged, inProgress, terminatedWithError, done)
+
+$ref of: xref:4.0.0@schemas:Tmf:TaskStateType.adoc[]
+
+
+=== instantSyncAdjust
+description: An indicator which when the value is &quot;true&quot; means that requester expects the adjustment immediately. If the indicator is true then the response code of 200 indicates the operation is successful otherwise a task is created with a response 201.
+
+type: boolean
+
+
+=== description
+description: Free-text description of the AdjustProductStock
+
+type: string
+
+
+=== creationDate
+description: Date when the AdjustProductStock was created (whatever its status).
+
+type: string
+
+
+=== requestedAdjustProductStockDate
+description: Date when the AdjustProductStock was created (whatever its status).
+
+type: string
+
+
+=== completedAdjustProductStockDate
+description: Date when the AdjustProductStock was created (whatever its status).
+
+type: string
+
+
+=== adjustReason
+description: A reason for this product stock adjustment like theft or wastage.
+
+type: string
+
+
+=== adjustProductStockItem
+type: array
+

@@ -1,0 +1,19 @@
+= BalanceAdjustment
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+#TODO
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+

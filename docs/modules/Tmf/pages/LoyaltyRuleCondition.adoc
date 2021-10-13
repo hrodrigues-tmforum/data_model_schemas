@@ -1,0 +1,31 @@
+= LoyaltyRuleCondition
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Resource containing a the ID of a condition to link to a loyalty rule.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier for the loyalty condition.
+
+type: string
+
+
+=== href
+description: A reference to the loyalty condition.
+
+type: string
+

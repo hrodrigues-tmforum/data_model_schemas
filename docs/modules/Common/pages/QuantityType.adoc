@@ -1,0 +1,31 @@
+= QuantityType
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Representation of a quantity of something. I can also be used to represent a quantity range
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== amount
+description: Measured amount
+
+type: number
+
+
+=== units
+description: Units the quantity is measured in
+
+type: string
+

@@ -1,0 +1,137 @@
+= Work
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== actualDuration
+$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+
+
+=== agreement
+type: array
+
+
+=== appointment
+$ref of: xref:4.0.0@schemas:Tmf:AppointmentRef.adoc[]
+
+
+=== completionDate
+description: Date when the order was completed
+
+type: string
+
+
+=== currentDuration
+$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+
+
+=== deliveryTimeSlot
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== description
+description: Is the description of the work unit. It could be the same as the description of the work specification.
+
+type: string
+
+
+=== expectedCompletionDate
+description: Date when the requester expects the work to be completed
+
+type: string
+
+
+=== name
+description: Name of the work unit. It could be the same as the name of the work specification.
+
+type: string
+
+
+=== note
+$ref of: xref:4.0.0@schemas:Tmf:Note.adoc[]
+
+
+=== orderDate
+description: Date at which the work order which triggered this unit of work&#x27;s creation/change/termination was created.
+
+type: string
+
+
+=== percentageComplete
+type: number
+
+
+=== place
+type: array
+
+
+=== plannedDuration
+$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+
+
+=== quantity
+$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+
+
+=== relatedParty
+type: array
+
+
+=== scheduledDuration
+$ref of: xref:4.0.0@schemas:Tmf:Quantity.adoc[]
+
+
+=== state
+$ref of: xref:4.0.0@schemas:Tmf:WorkStateType.adoc[]
+
+
+=== work
+type: array
+
+
+=== workCharacteristic
+type: array
+
+
+=== workOrderItem
+type: array
+
+
+=== workPrice
+type: array
+
+
+=== workPriority
+type: string
+
+
+=== workRelationship
+type: array
+
+
+=== workSpecification
+$ref of: xref:4.0.0@schemas:Tmf:WorkSpecificationRef.adoc[]
+
+
+=== workType
+type: string
+
+
+=== workforceEmployeeAssignment
+type: array
+

@@ -1,0 +1,91 @@
+= TaskFlow
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+No description on schema
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== channel
+description: A list of channel(s) where this taskFlow is executed
+
+type: array
+
+
+=== characteristic
+description: A list of characteristic(s) associated to this taskFlow
+
+type: array
+
+
+=== completionMethod
+description: TaskFlow completion method.
+
+type: string
+
+
+=== href
+description: Reference of the taskFlow
+
+type: string
+
+
+=== id
+description: Identifier of the taskFlow
+
+type: string
+
+
+=== isMandatory
+description: Indicate mandatory TaskFlow.
+
+type: boolean
+
+
+=== priority
+description: TaskFlow priority.
+
+type: integer
+
+
+=== relatedEntity
+description: A list of related entity(ies) to this taskFlow
+
+type: array
+
+
+=== relatedParty
+description: A list of related party(ies) to this task
+
+type: array
+
+
+=== state
+description: State of the taskFlow: described in the state machine diagram.
+
+$ref of: xref:4.0.0@schemas:Common:TaskFlowStateType.adoc[]
+
+
+=== taskFlowRelationship
+description: A list of taskFlows related to this taskFlow
+
+type: array
+
+
+=== taskFlowSpecification
+description: Specification of the taskFlow.
+
+type: string
+

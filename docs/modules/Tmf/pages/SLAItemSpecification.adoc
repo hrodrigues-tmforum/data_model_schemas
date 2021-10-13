@@ -1,0 +1,85 @@
+= SLAItemSpecification
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+A sevice level agreement (SLA) item specification
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== description
+description: A narrative that explains in detail what this SLA specification item is about
+
+type: string
+
+
+=== id
+description: Unique identifier of the SLA specification item
+
+type: string
+
+
+=== validFor
+description: The period for which the agreement specification is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+
+
+=== specCharacteristic
+description: List of characteristics that the SLA item can take
+
+type: array
+
+
+=== attachment
+description: Attachments that may be of relevance to this specification item, such as picture, document, media
+
+type: array
+
+
+=== productSpecification
+description: Related product specifications in the scope of this SLA Item specification
+
+type: array
+
+
+=== serviceSpecification
+description: Related service specifications in the scope of this SLA Item specification
+
+type: array
+
+
+=== constraint
+description: This is a list of constraint references applied to this specification item
+
+type: array
+
+
+=== termOrCondition
+description: The list of term or conditions applicable to this agreement item
+
+type: array
+
+
+=== qualityOfService
+description: A list of quality of services related to this specification, and which will need to be satisifiable for corresponding service instances
+
+type: array
+
+
+=== entitySpecRelationship
+description: Relationship to another specification
+
+type: array
+

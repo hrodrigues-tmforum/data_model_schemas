@@ -1,0 +1,31 @@
+= ResourceGraphSpecificationRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Describes link between resource graph specifications.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: Semantic of the relationship.
+
+type: string
+
+
+=== resourceGraph
+description: A reference to the related resource graph specification.
+
+$ref of: xref:4.0.0@schemas:Resource:ResourceGraphSpecificationRef.adoc[]
+

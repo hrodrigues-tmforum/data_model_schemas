@@ -1,0 +1,23 @@
+= RelatedPartyWithContactInfo
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+Related party specialization that includes contact information
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== contactMedium
+type: array
+

@@ -1,0 +1,43 @@
+= BillCycleRef
+
+[#domain]
+== Domain
+
+This schema is part of Customer
+
+[#description]
+== Description
+....
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @referredType
+description: The actual type of the target instance when needed for disambiguation.
+
+type: string
+
+
+=== href
+description: Unique reference of the account
+
+type: string
+
+
+=== id
+description: Unique identifier of the account
+
+type: string
+
+
+=== name
+description: Name of the account
+
+type: string
+

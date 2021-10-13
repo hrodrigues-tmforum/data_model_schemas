@@ -1,0 +1,85 @@
+= Customer360PromotionVO
+
+[#domain]
+== Domain
+
+This schema is part of Customer360
+
+[#description]
+== Description
+Promotion Resource is used to provide the additional discount, voucher, bonus or gift to the customer who meets the pre-defined criteria. Using promotion, the enterprise is able to attract the users and encourage more consumption, especially continuous purchases.   Normally Promotion is not regarded as one type of product or product offering. It is often applied when the customer buys the product offerings with the price or amount surpassing the certain limit.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== @baseType
+description: The base type for use in polymorphic collections
+
+type: string
+
+
+=== @schemaLocation
+description: A link to the schema describing a resource (for type extension).
+
+type: string
+
+
+=== @type
+description: The class type of the actual resource (for type extension).
+
+type: string
+
+
+=== description
+description: Description of Promotion
+
+type: string
+
+
+=== href
+description: Hyperlink to access the promotion.
+
+type: string
+
+
+=== id
+description: Unique identifier of Promotion.
+
+type: string
+
+
+=== lastUpdate
+description: Latest update date of Promotion
+
+type: string
+
+
+=== lifecycleStatus
+description: Status of Promotion, including draft/Test/WaitForApproval/Release/Suspend/Retirement.
+
+type: string
+
+
+=== name
+description: Name of Promotion.
+
+type: string
+
+
+=== type
+description: Type of promotion.The basic type is Award/Discount/Reduction. More types can be extended in future.
+
+type: string
+
+
+=== validFor
+description: The period for which the promotion is valid.
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

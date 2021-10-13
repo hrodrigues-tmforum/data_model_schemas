@@ -1,0 +1,29 @@
+= DocumentRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+Another document that is related to the current document;
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: The type of relationship
+
+type: string
+
+
+=== documentRef
+$ref of: xref:4.0.0@schemas:Tmf:DocumentRef.adoc[]
+

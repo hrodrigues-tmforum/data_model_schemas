@@ -1,0 +1,29 @@
+= AffectedService
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+type: string
+
+
+=== href
+description: Provides the identifier of the service affected by the alarm
+
+type: string
+

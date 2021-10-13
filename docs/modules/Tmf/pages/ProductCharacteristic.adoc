@@ -1,0 +1,31 @@
+= ProductCharacteristic
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+Characteristics of the product to instantiate or to modify
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== name
+description: Name of the characteristic
+
+type: string
+
+
+=== value
+description: Value of the characteristic
+
+type: string
+

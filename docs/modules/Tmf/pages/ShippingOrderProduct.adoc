@@ -1,0 +1,29 @@
+= ShippingOrderProduct
+
+[#domain]
+== Domain
+
+This schema is part of EngagedParty
+
+[#description]
+== Description
+The product order item
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== productOrderItem
+$ref of: xref:4.0.0@schemas:Tmf:ProductOrderItemRef.adoc[]
+
+
+=== productCharacteristic
+description: 
+
+type: array
+

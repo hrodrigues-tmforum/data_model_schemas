@@ -1,0 +1,105 @@
+= Customer360ProductValueVO
+
+[#domain]
+== Domain
+
+This schema is part of Customer360
+
+[#description]
+== Description
+A product offering procured by a customer or other interested party playing a party role. A product is realized as one or more service(s) and / or resource(s).
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== randomAtt
+type: string
+
+
+=== billingAccount
+$ref of: xref:4.0.0@schemas:Tmf:BillingAccountRef.adoc[]
+
+
+=== description
+description: Is the description of the product. It could be copied from the description of the Product Offering.
+
+type: string
+
+
+=== href
+description: Reference of the product
+
+type: string
+
+
+=== id
+description: Unique identifier of the product
+
+type: string
+
+
+=== isBundle
+description: If true, the product is a ProductBundle which is an instantiation of a BundledProductOffering. If false, the product is a ProductComponent which is an instantiation of a SimpleProductOffering.
+
+type: boolean
+
+
+=== isCustomerVisible
+description: If true, the product is visible by the customer.
+
+type: boolean
+
+
+=== name
+description: Name of the product. It could be the same as the name of the product offering
+
+type: string
+
+
+=== orderDate
+description: Is the date when the product was ordered
+
+type: string
+
+
+=== productOffering
+$ref of: xref:4.0.0@schemas:Tmf:ProductOfferingRef.adoc[]
+
+
+=== product
+type: array
+
+
+=== productSerialNumber
+description: Is the serial number for the product. This is typically applicable to tangible products e.g. Broadband Router.
+
+type: string
+
+
+=== productSpecification
+$ref of: xref:4.0.0@schemas:Tmf:ProductSpecificationRef.adoc[]
+
+
+=== startDate
+description: Is the date from which the product starts
+
+type: string
+
+
+=== status
+description: Is the lifecycle status of the product.
+
+$ref of: xref:4.0.0@schemas:Tmf:ProductStatusType.adoc[]
+
+
+=== terminationDate
+description: Is the date when the product was terminated
+
+type: string
+

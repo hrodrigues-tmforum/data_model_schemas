@@ -1,0 +1,37 @@
+= ServiceSpecRelationship
+
+[#domain]
+== Domain
+
+This schema is part of Service
+
+[#description]
+== Description
+A dependency, substitution or exclusivity relationship between/among service specifications.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== relationshipType
+description: Type of relationship such as dependency, substitution or exclusivity
+
+type: string
+
+
+=== role
+description: The association role for this service specification
+
+type: string
+
+
+=== validFor
+description: The period for which the serviceSpecRelationship is valid
+
+$ref of: xref:4.0.0@schemas:Tmf:TimePeriod.adoc[]
+

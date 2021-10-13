@@ -1,0 +1,31 @@
+= EdgeSpecificationCharacteristic
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+This class defines the characteristic features of an edge specification. Every EdgeSpecification has a variety of important attributes, methods, constraints, and relationships, which distinguish an edge specification from other edge specifications.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== edgeSpecCharRelationship
+description: An aggregation, migration, substitution, dependency or exclusivity relationship between/among Specification Characteristics.
+
+type: array
+
+
+=== edgeSpecCharacteristicValue
+description: A CharacteristicValueSpecification object is used to define a set of attributes, each of which can be assigned to a corresponding set of attributes in a EdgeSpecificationCharacteristic object. The values of the attributes in the CharacteristicValueSpecification object describe the values of the attributes that a corresponding EdgeSpecificationCharacteristic object can take on.
+
+type: array
+

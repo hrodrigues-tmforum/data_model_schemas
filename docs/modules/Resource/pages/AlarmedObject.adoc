@@ -1,0 +1,31 @@
+= AlarmedObject
+
+[#domain]
+== Domain
+
+This schema is part of Resource
+
+[#description]
+== Description
+Identifies the managed object instance associated with the alarm.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: The identifier of the managed object associated with the event.
+
+type: string
+
+
+=== href
+description: A reference to the managed object associated with the event.
+
+type: string
+

@@ -1,0 +1,31 @@
+= Quantity
+
+[#domain]
+== Domain
+
+This schema is part of Common
+
+[#description]
+== Description
+An amount in a given unit
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== amount
+description: Numeric value in a given unit
+
+type: number
+
+
+=== units
+description: Unit
+
+type: string
+

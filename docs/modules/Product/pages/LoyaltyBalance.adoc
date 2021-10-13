@@ -1,0 +1,55 @@
+= LoyaltyBalance
+
+[#domain]
+== Domain
+
+This schema is part of Product
+
+[#description]
+== Description
+A loyalty balance, containing a balance unit and value.
+
+
+[#data_model]
+== Data model
+
+A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+
+The data model is defined as shown below:
+
+
+=== id
+description: Unique identifier for the loyalty balance.
+
+type: string
+
+
+=== href
+description: A reference to the loyalty member’s loyalty balance.
+
+type: string
+
+
+=== quantity
+description: Unit and value of the balance.
+
+type: object
+
+$ref of: xref:4.0.0@schemas:Product:Money.adoc[]
+
+
+=== loyaltyProgramMember
+description: Reference to the loyaltyProgramMember to whom the loyaltyAccount belongs.
+
+type: object
+
+$ref of: xref:4.0.0@schemas:Product:LoyaltyProgramMemberRef.adoc[]
+
+
+=== validFor
+description: The validity period in which loyalty can be burned using the account.
+
+type: object
+
+$ref of: xref:4.0.0@schemas:Product:TimePeriod.adoc[]
+
