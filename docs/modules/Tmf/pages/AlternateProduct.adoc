@@ -15,7 +15,7 @@ In the context of a product offering qualification, this data structure is usefu
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

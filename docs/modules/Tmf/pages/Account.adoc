@@ -15,7 +15,7 @@ Generic Account structure used to define commonalities between sub concepts of P
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

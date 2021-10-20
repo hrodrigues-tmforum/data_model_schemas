@@ -15,7 +15,7 @@ Describes a specific item contained in a parent element
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

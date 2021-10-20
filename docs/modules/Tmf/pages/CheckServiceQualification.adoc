@@ -15,7 +15,7 @@ CheckServiceQualification is used to perform a technical eligibility on service 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

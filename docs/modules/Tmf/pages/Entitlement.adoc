@@ -15,7 +15,7 @@ An Entitlement defines access levels to operate over a given function that can b
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

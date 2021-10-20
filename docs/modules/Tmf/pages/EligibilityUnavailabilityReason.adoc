@@ -15,7 +15,7 @@ Reason for eligibility result if the productOfferingQualification result is no (
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

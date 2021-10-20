@@ -15,7 +15,7 @@ Recommended Enumeration Type (not formal forced in standard): Valid values for &
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

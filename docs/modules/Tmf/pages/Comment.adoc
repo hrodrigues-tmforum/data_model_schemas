@@ -15,7 +15,7 @@ Indicates the comments entered on the alarm.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

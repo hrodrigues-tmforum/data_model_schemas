@@ -15,7 +15,7 @@ Indicates the alarms attached to this alarm as correlated alarms from a correlat
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

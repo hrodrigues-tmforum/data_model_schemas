@@ -15,7 +15,7 @@ A ResourceFunction is a behavior to transform inputs of any nature into outputs 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

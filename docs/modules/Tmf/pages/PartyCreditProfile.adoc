@@ -15,7 +15,7 @@ An individual might be evaluated for its worthiness and this evaluation might be
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

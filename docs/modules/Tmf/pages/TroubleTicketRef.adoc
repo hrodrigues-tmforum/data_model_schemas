@@ -15,7 +15,7 @@ TroubleTicket reference, for when a Trouble Ticket is used by other entities
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:
