@@ -16,7 +16,7 @@ An usage consumption report enables to know at a given point the balances and th
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 

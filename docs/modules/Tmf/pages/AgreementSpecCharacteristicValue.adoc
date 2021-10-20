@@ -16,7 +16,7 @@ A number or text that can be assigned to an agreement specification characterist
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 

@@ -16,7 +16,7 @@ Indicates what first alerted the system to the problem. It is not the root cause
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 

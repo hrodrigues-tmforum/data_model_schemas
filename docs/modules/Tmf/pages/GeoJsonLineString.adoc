@@ -16,7 +16,7 @@ Container for GeoJson LineString: A collection of Points forming a connected lin
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 

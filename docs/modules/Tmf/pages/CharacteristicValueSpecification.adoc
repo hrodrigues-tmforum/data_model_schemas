@@ -16,7 +16,7 @@ specification of a value (number or text or an object) that can be assigned to a
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 
