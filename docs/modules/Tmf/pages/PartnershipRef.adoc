@@ -15,7 +15,7 @@ Partnership reference. A partnership contains all the information for the setup 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

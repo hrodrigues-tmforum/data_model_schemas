@@ -15,7 +15,7 @@ Reference of a tax definition. A tax is levied by an authorized tax jurisdiction
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

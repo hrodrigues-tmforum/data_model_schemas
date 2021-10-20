@@ -15,7 +15,7 @@ An applied billing rate presented on a party bill. It is created before or durin
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

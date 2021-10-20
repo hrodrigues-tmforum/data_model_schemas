@@ -15,7 +15,7 @@ The Balance Reserve Operation resource is a detailed description of a balance re
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

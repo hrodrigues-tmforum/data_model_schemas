@@ -15,7 +15,7 @@ Promotion Resource is used to provide the additional discount, voucher, bonus or
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

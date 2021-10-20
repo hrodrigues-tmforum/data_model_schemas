@@ -15,7 +15,7 @@ In the context of a service order and depending on the action requested (add/mod
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

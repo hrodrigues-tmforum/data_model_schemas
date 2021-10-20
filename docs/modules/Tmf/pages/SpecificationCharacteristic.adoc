@@ -15,7 +15,7 @@ A characteristic quality or distinctive feature of a Specification.  The charact
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

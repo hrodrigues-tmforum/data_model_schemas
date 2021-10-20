@@ -15,7 +15,7 @@ A discount is a reduction in price. It could be a flat fee such as 10 dollars or
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

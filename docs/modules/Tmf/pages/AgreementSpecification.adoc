@@ -15,7 +15,7 @@ A template of an agreement that can be used when establishing partnerships
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:
