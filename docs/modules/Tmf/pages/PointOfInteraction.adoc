@@ -15,6 +15,8 @@ POI consists of hardware and software which enables a Cardholder and/or an Accep
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 

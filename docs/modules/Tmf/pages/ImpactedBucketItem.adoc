@@ -15,6 +15,8 @@ a resource used by the ImpactedBucket resource to capture the impact of a Impact
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 

@@ -15,6 +15,8 @@ The applied payment is the result of lettering process. It enables to assign aut
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 

@@ -15,6 +15,8 @@ A detailed description of the way in which a bill is presented.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 

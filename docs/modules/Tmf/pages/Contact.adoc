@@ -15,6 +15,8 @@ An individual or an organization used as a contact point for a given account and
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 
