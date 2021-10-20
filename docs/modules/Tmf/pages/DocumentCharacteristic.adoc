@@ -15,6 +15,7 @@ is a list of name value pairs that define the document characteristics.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

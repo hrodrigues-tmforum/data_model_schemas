@@ -15,6 +15,7 @@ This indicates an error that caused a qualificationItem to be terminated.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:
