@@ -15,7 +15,7 @@ Resource containing a the ID of a event type to link to a loyalty rule.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:

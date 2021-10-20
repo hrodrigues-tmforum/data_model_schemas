@@ -15,7 +15,7 @@ QueryWorkQualification is used to retrieve a list of units of work that are vali
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:

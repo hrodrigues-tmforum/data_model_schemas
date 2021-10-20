@@ -15,7 +15,7 @@ Action of the promotion. When the customer meets the conditions in the promotion
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:

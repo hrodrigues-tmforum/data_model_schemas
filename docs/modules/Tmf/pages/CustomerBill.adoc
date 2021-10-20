@@ -15,7 +15,7 @@ The customer bill. Can be a regular recurring bill or an extra bill on demand by
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:
