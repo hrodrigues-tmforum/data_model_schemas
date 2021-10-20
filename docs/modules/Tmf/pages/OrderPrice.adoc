@@ -15,7 +15,6 @@ An amount, usually of money, that represents the actual price paid by the Custom
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

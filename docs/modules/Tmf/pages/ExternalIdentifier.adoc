@@ -15,7 +15,6 @@ An identification of an entity that is owned by or originates in a software syst
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

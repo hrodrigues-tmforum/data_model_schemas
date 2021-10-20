@@ -16,7 +16,6 @@ measures to be taken.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

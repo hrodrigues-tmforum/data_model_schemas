@@ -15,7 +15,6 @@ Recommendation API is used to recommend offering quickly based on the history an
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

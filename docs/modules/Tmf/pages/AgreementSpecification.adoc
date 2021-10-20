@@ -15,7 +15,6 @@ A template of an agreement that can be used when establishing partnerships
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

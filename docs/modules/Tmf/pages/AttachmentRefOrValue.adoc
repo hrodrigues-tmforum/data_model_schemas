@@ -15,7 +15,6 @@ An attachment by value or by reference. An attachment complements the descriptio
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

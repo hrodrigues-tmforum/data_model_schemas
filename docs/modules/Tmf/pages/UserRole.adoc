@@ -15,7 +15,6 @@ A UserRole defines access levels to operate over a given function that can be in
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

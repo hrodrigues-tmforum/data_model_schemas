@@ -15,7 +15,6 @@ The Permission resource represents the entitlement given by an individual (grant
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

@@ -15,7 +15,6 @@ Quote reference. It&#x27;s a Quote that has been executed previously.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

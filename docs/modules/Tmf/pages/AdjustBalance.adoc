@@ -15,7 +15,6 @@ The AdjustBalance resource allows adjustments to be made to the original Balance
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

@@ -15,7 +15,6 @@ A characteristic which value is an array of Object(s).
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

@@ -15,7 +15,6 @@ Holds the definition of the requested Performance indicator including: its name,
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

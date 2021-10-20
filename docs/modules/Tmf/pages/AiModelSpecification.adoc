@@ -16,7 +16,6 @@ Functionally, it acts as a template by which Services may be instantiated. By sh
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram

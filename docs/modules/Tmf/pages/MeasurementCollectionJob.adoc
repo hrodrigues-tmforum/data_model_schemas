@@ -15,7 +15,6 @@ Used to control the periodic collection of performance indicators, implemented a
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 [#diagram]
 == Diagram
