@@ -18,6 +18,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
+            [#diagram]
+            == Diagram
+            image::Resource_GeographicSubAddress.png[Diagram illustrating GeographicSubAddress]
+            
 
 The data model is defined as shown below:
 

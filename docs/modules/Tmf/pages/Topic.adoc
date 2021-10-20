@@ -17,6 +17,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
+            [#diagram]
+            == Diagram
+            image::Resource_Topic.png[Diagram illustrating Topic]
+            
 
 The data model is defined as shown below:
 

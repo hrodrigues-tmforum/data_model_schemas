@@ -17,6 +17,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
+            [#diagram]
+            == Diagram
+            image::Resource_ServiceRef.png[Diagram illustrating ServiceRef]
+            
 
 The data model is defined as shown below:
 

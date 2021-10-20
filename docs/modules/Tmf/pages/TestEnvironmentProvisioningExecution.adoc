@@ -17,6 +17,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
+            [#diagram]
+            == Diagram
+            image::Resource_TestEnvironmentProvisioningExecution.png[Diagram illustrating TestEnvironmentProvisioningExecution]
+            
 
 The data model is defined as shown below:
 

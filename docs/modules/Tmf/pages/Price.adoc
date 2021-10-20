@@ -17,6 +17,26 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
+            [#diagram]
+            == Diagram
+            image::Resource_OrderPrice.png[Diagram illustrating Price]
+            
+            [#diagram]
+            == Diagram
+            image::Resource_Price.png[Diagram illustrating Price]
+            
+            [#diagram]
+            == Diagram
+            image::Resource_QuotePrice.png[Diagram illustrating Price]
+            
+            [#diagram]
+            == Diagram
+            image::Resource_ProductPrice.png[Diagram illustrating Price]
+            
+            [#diagram]
+            == Diagram
+            image::Resource_ProductOfferingPrice.png[Diagram illustrating Price]
+            
 
 The data model is defined as shown below:
 

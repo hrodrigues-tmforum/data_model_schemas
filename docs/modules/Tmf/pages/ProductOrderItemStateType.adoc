@@ -17,6 +17,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
+            [#diagram]
+            == Diagram
+            image::Resource_ProductOrderItemStateType.png[Diagram illustrating ProductOrderItemStateType]
+            
 
 The data model is defined as shown below:
 
