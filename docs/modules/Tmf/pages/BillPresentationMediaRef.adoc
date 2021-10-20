@@ -15,7 +15,7 @@ PresentationMedia reference. A mean of communicating a bill, supported by the as
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:

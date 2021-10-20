@@ -15,7 +15,7 @@ Entity reference schema to be use for all entityRef class OrValue to provide inf
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:

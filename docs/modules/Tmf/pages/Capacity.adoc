@@ -15,7 +15,7 @@ Specific ability of an entity measured in quantity and units of quantity over an
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:
