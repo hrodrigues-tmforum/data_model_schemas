@@ -16,6 +16,8 @@ A ResourceSpecification is a base class that represents a generic means for impl
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 

@@ -16,6 +16,8 @@ A resource catalog is a group of resource specifications made available through 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 
