@@ -7,15 +7,13 @@ This schema is part of Service
 
 [#description]
 == Description
-
 This object represents expected quality of service in terms of quality key index (KQI or KPI) with their associated service level objective and specification
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

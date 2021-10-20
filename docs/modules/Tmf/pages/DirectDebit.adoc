@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 Direct Debit is a fully automated payment instrument which is generally used for recurrent payments. It allows a creditor to initiate the payment order. In doing so, it exempts the debtor from having to send a separate payment order at each due date
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

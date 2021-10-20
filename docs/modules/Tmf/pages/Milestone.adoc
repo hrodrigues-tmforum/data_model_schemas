@@ -7,15 +7,13 @@ This schema is part of Common
 
 [#description]
 == Description
-
 Milestone represents an action or event marking a significant change or stage in a process like an order process.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

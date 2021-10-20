@@ -7,15 +7,13 @@ This schema is part of MarketingSales
 
 [#description]
 == Description
-
 A Sales Lead is the identification of a person or organization that has an interest in the goods and/or services provided in the prospect of them becoming Customers with one or more Subscriptions.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

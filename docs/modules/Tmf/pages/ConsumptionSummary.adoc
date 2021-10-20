@@ -7,15 +7,13 @@ This schema is part of Product
 
 [#description]
 == Description
-
 The consumption counters (called ConsumptionSummary in the SID model) detail for example the different kind of consumption done on the bucket.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

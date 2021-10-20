@@ -7,15 +7,13 @@ This schema is part of Common
 
 [#description]
 == Description
-
 Place reference. PlaceRef defines the placeRefs where the products are sold or delivered.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

@@ -7,15 +7,13 @@ This schema is part of Common
 
 [#description]
 == Description
-
 Defines a group of assets (entities) to which access can be controlled. Specific subclasses allow definition in various ways (list of entities, queries, ownership by customer, etc.)
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 
