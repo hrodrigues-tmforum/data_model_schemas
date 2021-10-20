@@ -7,16 +7,14 @@ This schema is part of Common
 
 [#description]
 == Description
-
 Name/value pairs, used to extra characterized the Area (e.g. if a standard
 code set has been defined for the GeographicArea type, etc.)
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

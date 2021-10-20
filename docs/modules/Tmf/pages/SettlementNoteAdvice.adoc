@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 The settlement is about transferring money receiving by a CSP to a partner. The settlement is notified to the partner with a settlement note advice containing details in settlement lines.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

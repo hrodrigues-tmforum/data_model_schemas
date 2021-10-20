@@ -7,15 +7,13 @@ This schema is part of Service
 
 [#description]
 == Description
-
 A Service to be created defined by value or existing defined by reference. The polymorphic attributes @type, @schemaLocation &amp; @referredType are related to the Service entity and not the RelatedServiceRefOrValue class itself
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

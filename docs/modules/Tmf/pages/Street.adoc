@@ -7,15 +7,13 @@ This schema is part of Common
 
 [#description]
 == Description
-
 A street is a road in a city or locality that has buildings that are usually close together along one or both sides
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

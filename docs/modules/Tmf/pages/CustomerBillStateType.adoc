@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 Recommended Enumeration Type (not formal forced in standard): Valid values for the lifecycle state of the bill: new = &#x27;bill is ready to validate or to sent&#x27;, validated = &#x27;bill is checked (manual / automatic)&#x27;, sent = &#x27;bill is sent with the channel defined in the billingaccount&#x27;, settled = &#x27;bill is payed&#x27;, partiallySettled = &#x27;bill is partially payed&#x27;, onHold = &#x27;bill will not be in further processing until open issues connected to the bill are solved&#x27;
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

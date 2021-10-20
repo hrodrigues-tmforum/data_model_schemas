@@ -7,15 +7,13 @@ This schema is part of Resource
 
 [#description]
 == Description
-
 Connection point reference. A connection point provides a service access point (SAP) for input and/or output of the resource function.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

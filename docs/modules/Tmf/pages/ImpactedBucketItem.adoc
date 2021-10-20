@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 a resource used by the ImpactedBucket resource to capture the impact of a ImpactedBucket
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

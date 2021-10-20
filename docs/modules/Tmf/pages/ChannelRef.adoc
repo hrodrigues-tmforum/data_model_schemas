@@ -7,15 +7,13 @@ This schema is part of Common
 
 [#description]
 == Description
-
 The channel to which the resource reference to. e.g. channel for selling product offerings, channel for opening a trouble ticket etc..
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

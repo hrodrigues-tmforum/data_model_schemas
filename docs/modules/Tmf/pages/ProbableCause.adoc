@@ -7,15 +7,13 @@ This schema is part of Resource
 
 [#description]
 == Description
-
 This resource represents Probable Cause values defined in ITU-T X.733 and 3GPP TS 32.111-2 Annex B.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

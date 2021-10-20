@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 This is a task resource allowing assessment of the risks associated with a product offering. For example, the risk associated with iPhone X will probably be higher than the risk for a battery
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

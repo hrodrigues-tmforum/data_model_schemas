@@ -7,15 +7,13 @@ This schema is part of Common
 
 [#description]
 == Description
-
 A threshold base entity containing threshold rules.This entity  is  mandatoryThis entity  is  extendableThis entity   does not generate Object Creation notifications (NA)This entity   generates Object Deletion notificationsThis entity   does not generate Object Discovery notifications (NA)This entity supports the Common Get Operation.This entity supports the Common Get Multiple Operation.This entity supports the Common Create Operation.This entity supports the Common Delete Operation.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

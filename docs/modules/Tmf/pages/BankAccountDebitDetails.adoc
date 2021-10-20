@@ -7,15 +7,13 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
-
 Detailed information for a bank account debit. Bear in mind that this could be extended to add any required authorization fields to allow recurring payments
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 
