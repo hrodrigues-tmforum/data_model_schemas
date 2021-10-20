@@ -15,7 +15,6 @@ BillingAccount reference. A BillingAccount is a detailed description of a bill s
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

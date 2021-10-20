@@ -15,7 +15,6 @@ Defines a group of assets (entities) to which access can be controlled, using a 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

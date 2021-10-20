@@ -15,7 +15,6 @@ Skills evaluated for an individual with a level and possibly with a limited vali
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

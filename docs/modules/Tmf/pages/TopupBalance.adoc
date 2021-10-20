@@ -15,7 +15,6 @@ Represents a detailed description of a recharge operation requested over a bucke
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

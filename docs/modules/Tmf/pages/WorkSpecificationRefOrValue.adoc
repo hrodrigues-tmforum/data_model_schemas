@@ -15,7 +15,6 @@ A work specification defined by value or existing defined by reference. The poly
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:
