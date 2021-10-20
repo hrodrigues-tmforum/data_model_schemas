@@ -15,6 +15,7 @@ Possible values for the status of party privacy profile (for example: created, t
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

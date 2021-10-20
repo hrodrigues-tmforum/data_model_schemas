@@ -15,6 +15,7 @@ An occurrence of employing a product for its intended purpose with all rating de
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

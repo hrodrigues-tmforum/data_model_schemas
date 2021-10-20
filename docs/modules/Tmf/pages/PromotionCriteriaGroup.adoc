@@ -15,6 +15,7 @@ The group of the criteria of the promotion. The logical relationship between dif
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

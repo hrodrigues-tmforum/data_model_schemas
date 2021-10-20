@@ -15,6 +15,7 @@ ResourceCandidate is an entity that makes a resource specification available to 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

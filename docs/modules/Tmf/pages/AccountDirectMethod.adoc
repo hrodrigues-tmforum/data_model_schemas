@@ -15,6 +15,7 @@ A payment method using an internal account that could be billed directly to perf
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

@@ -15,6 +15,7 @@ Direct Debit is a fully automated payment instrument which is generally used for
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:
