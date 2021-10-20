@@ -16,10 +16,6 @@ Shopping Cart resource is used for the temporarily selection and reservation of 
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ShoppingCart.png[Diagram illustrating ShoppingCart]
-
 
 The data model is defined as shown below:
 

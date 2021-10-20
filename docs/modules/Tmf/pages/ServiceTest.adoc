@@ -18,10 +18,6 @@ applied at execution time, and service test measures that result.
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ServiceTest.png[Diagram illustrating ServiceTest]
-
 
 The data model is defined as shown below:
 

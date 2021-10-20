@@ -16,10 +16,6 @@ A managed test case resource
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_TestCase.png[Diagram illustrating TestCase]
-
 
 The data model is defined as shown below:
 

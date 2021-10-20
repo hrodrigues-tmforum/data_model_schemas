@@ -16,10 +16,6 @@ Description of a productTerm linked to this product. This represent a commitment
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ProductTerm.png[Diagram illustrating ProductTerm]
-
 
 The data model is defined as shown below:
 

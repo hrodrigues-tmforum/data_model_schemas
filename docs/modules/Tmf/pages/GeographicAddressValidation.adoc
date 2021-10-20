@@ -16,10 +16,6 @@ This resource is used to manage address validation request and response
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_GeographicAddressValidation.png[Diagram illustrating GeographicAddressValidation]
-
 
 The data model is defined as shown below:
 

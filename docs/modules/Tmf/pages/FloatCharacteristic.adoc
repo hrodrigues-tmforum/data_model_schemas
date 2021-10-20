@@ -16,10 +16,6 @@ A characteristic which value is a Float.
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_FloatCharacteristic.png[Diagram illustrating FloatCharacteristic]
-
 
 The data model is defined as shown below:
 

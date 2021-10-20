@@ -16,10 +16,6 @@ A managed test suite resource
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_TestSuite.png[Diagram illustrating TestSuite]
-
 
 The data model is defined as shown below:
 

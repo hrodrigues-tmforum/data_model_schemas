@@ -16,10 +16,6 @@ A productOfferingQualification that has been executed previously
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ProductOfferingQualificationRef.png[Diagram illustrating ProductOfferingQualificationRef]
-
 
 The data model is defined as shown below:
 

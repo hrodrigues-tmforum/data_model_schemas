@@ -16,10 +16,6 @@ A Party Privacy Profile represents the set of Privacy settings defined for a Par
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_PartyPrivacyProfile.png[Diagram illustrating PartyPrivacyProfile]
-
 
 The data model is defined as shown below:
 

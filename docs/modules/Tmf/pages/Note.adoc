@@ -16,10 +16,6 @@ Extra information about a given entity
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_Note.png[Diagram illustrating Note]
-
 
 The data model is defined as shown below:
 

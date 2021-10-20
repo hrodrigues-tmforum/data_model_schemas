@@ -16,10 +16,6 @@ A managed non-functional test result resource
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_NonFunctionalTestResult.png[Diagram illustrating NonFunctionalTestResult]
-
 
 The data model is defined as shown below:
 

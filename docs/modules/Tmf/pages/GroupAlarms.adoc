@@ -16,14 +16,6 @@ Task resource for group alarms operation
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_GroupAlarms.png[Diagram illustrating GroupAlarms]
-
-[#diagram]
-== Diagram
-image::Resource_UnGroupAlarms.png[Diagram illustrating GroupAlarms]
-
 
 The data model is defined as shown below:
 

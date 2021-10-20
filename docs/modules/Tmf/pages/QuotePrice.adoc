@@ -16,10 +16,6 @@ Description of price and discount awarded
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_QuotePrice.png[Diagram illustrating QuotePrice]
-
 
 The data model is defined as shown below:
 

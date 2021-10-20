@@ -17,10 +17,6 @@ measures to be taken.
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ServiceTestSpecification.png[Diagram illustrating ServiceTestSpecification]
-
 
 The data model is defined as shown below:
 

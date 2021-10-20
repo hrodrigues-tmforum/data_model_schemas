@@ -17,10 +17,6 @@ ServiceCandidate and its associated service specification may be published - mad
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ServiceCandidate.png[Diagram illustrating ServiceCandidate]
-
 
 The data model is defined as shown below:
 

@@ -16,10 +16,6 @@ Possible values for the status of the product
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ProductStatusType.png[Diagram illustrating ProductStatusType]
-
 
 The data model is defined as shown below:
 

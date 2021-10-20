@@ -16,10 +16,6 @@ A detailed description of a billing cycle and the various sub steps of a billing
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_BillCycleSpecification.png[Diagram illustrating BillCycleSpecification]
-
 
 The data model is defined as shown below:
 

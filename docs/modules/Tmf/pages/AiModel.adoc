@@ -16,10 +16,6 @@ AiModel is a base class for defining the AiModel hierarchy
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_AiModel.png[Diagram illustrating AiModel]
-
 
 The data model is defined as shown below:
 
