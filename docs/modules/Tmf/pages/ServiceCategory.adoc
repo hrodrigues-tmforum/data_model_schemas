@@ -15,7 +15,7 @@ The (service) category resource is used to group service candidates in logical c
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
             [#diagram]
             == Diagram

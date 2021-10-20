@@ -16,7 +16,7 @@ It is used for addressing within a property in an urban area (country properties
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
             [#diagram]
             == Diagram

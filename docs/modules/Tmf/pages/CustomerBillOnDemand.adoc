@@ -15,7 +15,7 @@ This resource is used to manage the creation request of a customer bill in real-
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
             [#diagram]
             == Diagram

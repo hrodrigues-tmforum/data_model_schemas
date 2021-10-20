@@ -15,7 +15,7 @@ A party account used for settlement purposes. It includes a description of the b
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
             [#diagram]
             == Diagram

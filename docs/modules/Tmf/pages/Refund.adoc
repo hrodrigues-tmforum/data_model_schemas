@@ -15,7 +15,7 @@ The Refund resource represents a performed Refund. It contains both information 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
             [#diagram]
             == Diagram

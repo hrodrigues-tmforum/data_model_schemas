@@ -15,7 +15,7 @@ Shopping Cart resource is used for the temporarily selection and reservation of 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
             [#diagram]
             == Diagram

@@ -16,7 +16,7 @@ ServiceCandidate and its associated service specification may be published - mad
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
             [#diagram]
             == Diagram
