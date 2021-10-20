@@ -18,6 +18,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
+            [#diagram]
+            == Diagram
+            image::Resource_ServiceLevelObjective.png[Diagram illustrating ServiceLevelObjective]
+            
 
 The data model is defined as shown below:
 
