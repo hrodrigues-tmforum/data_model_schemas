@@ -15,6 +15,8 @@ Individual mapping from an abstract resource to a list of concrete resources
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 

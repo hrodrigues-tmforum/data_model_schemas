@@ -15,6 +15,8 @@ PartyAccount reference. A party account is an arrangement that a party has with 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 
