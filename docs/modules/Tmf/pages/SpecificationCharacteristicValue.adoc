@@ -15,6 +15,8 @@ A number or text that can be assigned to a SpecificationCharacteristic
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 

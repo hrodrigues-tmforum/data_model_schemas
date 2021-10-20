@@ -15,6 +15,8 @@ Possible values for the state of the product offering qualification &amp; item
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 

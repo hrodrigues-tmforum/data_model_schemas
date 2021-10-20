@@ -16,6 +16,8 @@ A VertexSpecification is a base class that represents a generic means for implem
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+
+
 The data model is defined as shown below:
 
 
