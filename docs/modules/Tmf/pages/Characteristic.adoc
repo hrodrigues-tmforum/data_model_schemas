@@ -17,58 +17,58 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
 
-            [#diagram]
-            == Diagram
-            image::Resource_BooleanCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_FloatArrayCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_ObjectArrayCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_StringArrayCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_NumberCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_IntegerArrayCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_NumberArrayCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_IntegerCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_ObjectCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_FloatCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_StringCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_BooleanArrayCharacteristic.png[Diagram illustrating Characteristic]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_Characteristic.png[Diagram illustrating Characteristic]
-            
+[#diagram]
+== Diagram
+image::Resource_BooleanCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_FloatArrayCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_ObjectArrayCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_StringArrayCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_NumberCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_IntegerArrayCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_NumberArrayCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_IntegerCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_ObjectCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_FloatCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_StringCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_BooleanArrayCharacteristic.png[Diagram illustrating Characteristic]
+
+[#diagram]
+== Diagram
+image::Resource_Characteristic.png[Diagram illustrating Characteristic]
+
 
 The data model is defined as shown below:
 

@@ -20,10 +20,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
 
-            [#diagram]
-            == Diagram
-            image::Resource_ServiceCatalog.png[Diagram illustrating ServiceCatalog]
-            
+[#diagram]
+== Diagram
+image::Resource_ServiceCatalog.png[Diagram illustrating ServiceCatalog]
+
 
 The data model is defined as shown below:
 

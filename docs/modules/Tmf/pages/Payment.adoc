@@ -17,10 +17,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
 
-            [#diagram]
-            == Diagram
-            image::Resource_Payment.png[Diagram illustrating Payment]
-            
+[#diagram]
+== Diagram
+image::Resource_Payment.png[Diagram illustrating Payment]
+
 
 The data model is defined as shown below:
 

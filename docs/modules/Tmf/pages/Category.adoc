@@ -17,22 +17,22 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
 
-            [#diagram]
-            == Diagram
-            image::Resource_EntityCategory.png[Diagram illustrating Category]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_Category.png[Diagram illustrating Category]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_ServiceCategory.png[Diagram illustrating Category]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_ResourceCategory.png[Diagram illustrating Category]
-            
+[#diagram]
+== Diagram
+image::Resource_EntityCategory.png[Diagram illustrating Category]
+
+[#diagram]
+== Diagram
+image::Resource_Category.png[Diagram illustrating Category]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceCategory.png[Diagram illustrating Category]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceCategory.png[Diagram illustrating Category]
+
 
 The data model is defined as shown below:
 

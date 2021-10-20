@@ -17,14 +17,14 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
 
-            [#diagram]
-            == Diagram
-            image::Resource_PlaceRefOrValue.png[Diagram illustrating PlaceRefOrValue]
-            
-            [#diagram]
-            == Diagram
-            image::Resource_RelatedPlaceRefOrValue.png[Diagram illustrating PlaceRefOrValue]
-            
+[#diagram]
+== Diagram
+image::Resource_PlaceRefOrValue.png[Diagram illustrating PlaceRefOrValue]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedPlaceRefOrValue.png[Diagram illustrating PlaceRefOrValue]
+
 
 The data model is defined as shown below:
 

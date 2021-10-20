@@ -17,10 +17,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
 
-            [#diagram]
-            == Diagram
-            image::Resource_ObjectArrayCharacteristic.png[Diagram illustrating ObjectArrayCharacteristic]
-            
+[#diagram]
+== Diagram
+image::Resource_ObjectArrayCharacteristic.png[Diagram illustrating ObjectArrayCharacteristic]
+
 
 The data model is defined as shown below:
 

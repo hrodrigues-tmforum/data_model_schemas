@@ -17,10 +17,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
 
-            [#diagram]
-            == Diagram
-            image::Resource_QuoteStateType.png[Diagram illustrating QuoteStateType]
-            
+[#diagram]
+== Diagram
+image::Resource_QuoteStateType.png[Diagram illustrating QuoteStateType]
+
 
 The data model is defined as shown below:
 

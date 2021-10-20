@@ -18,10 +18,10 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
 
-            [#diagram]
-            == Diagram
-            image::Resource_ResourceSpecification.png[Diagram illustrating ResourceSpecification]
-            
+[#diagram]
+== Diagram
+image::Resource_ResourceSpecification.png[Diagram illustrating ResourceSpecification]
+
 
 The data model is defined as shown below:
 
