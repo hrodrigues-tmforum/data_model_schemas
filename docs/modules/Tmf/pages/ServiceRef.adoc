@@ -15,7 +15,7 @@ Service reference, for when Service is used by other entities.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

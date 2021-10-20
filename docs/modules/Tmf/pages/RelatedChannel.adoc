@@ -15,7 +15,7 @@ Related channel to another entity. May be online web, mobile app, social ,etc.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

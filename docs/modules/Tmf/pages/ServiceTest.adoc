@@ -17,7 +17,7 @@ applied at execution time, and service test measures that result.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

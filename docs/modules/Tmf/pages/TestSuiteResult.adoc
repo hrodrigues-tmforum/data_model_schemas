@@ -15,7 +15,7 @@ A managed test case result resource
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

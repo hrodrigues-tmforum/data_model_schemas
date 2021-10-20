@@ -15,7 +15,7 @@ This resource is used to manage address validation request and response
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

@@ -15,7 +15,7 @@ The ReserveBalance resource allows adjustments to be made to the original Balanc
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

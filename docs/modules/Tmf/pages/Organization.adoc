@@ -15,7 +15,7 @@ Organization represents a group of people identified by shared interests or purp
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

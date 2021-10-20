@@ -15,7 +15,7 @@ A Product Order is a type of order which  can  be used to place an order between
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

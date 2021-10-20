@@ -15,7 +15,7 @@ Individual represents a single human being (a man, woman or child). The individu
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram

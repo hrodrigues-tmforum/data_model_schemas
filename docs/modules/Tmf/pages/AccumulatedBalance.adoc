@@ -15,7 +15,7 @@ Represents and tracks the aggregated amount remained or owed in certain account 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
             [#diagram]
             == Diagram
