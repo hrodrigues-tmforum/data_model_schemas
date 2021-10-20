@@ -16,7 +16,7 @@ Represents entities that are orderable from the provider of the catalog, this re
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_ProductOffering.png[Diagram illustrating ProductOffering]

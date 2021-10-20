@@ -16,7 +16,7 @@ Indicates the contact medium that could be used to contact the party.
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_ContactMedium.png[Diagram illustrating ContactMedium]

@@ -16,7 +16,7 @@ Is a event channel provided by the Event Streaming API
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_Topic.png[Diagram illustrating Topic]

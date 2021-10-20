@@ -16,7 +16,7 @@ REST resource for test environment allocation lifecycle
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_TestEnvironmentAllocationExecution.png[Diagram illustrating TestEnvironmentAllocationExecution]

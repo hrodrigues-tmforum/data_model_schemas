@@ -16,7 +16,7 @@ Is a detailed description of a tangible or intangible object made available exte
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_ProductSpecification.png[Diagram illustrating ProductSpecification]

@@ -16,7 +16,7 @@ Related channel to another entity. May be online web, mobile app, social ,etc.
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_RelatedChannel.png[Diagram illustrating RelatedChannel]

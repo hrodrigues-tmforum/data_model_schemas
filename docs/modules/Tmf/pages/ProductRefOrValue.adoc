@@ -16,7 +16,7 @@ A product to be created defined by value or existing defined by reference. The p
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_ProductRefOrValue.png[Diagram illustrating ProductRefOrValue]

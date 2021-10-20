@@ -16,7 +16,7 @@ QueryServiceQualification is used to retrieve a list of services that are techni
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_QueryServiceQualification.png[Diagram illustrating QueryServiceQualification]

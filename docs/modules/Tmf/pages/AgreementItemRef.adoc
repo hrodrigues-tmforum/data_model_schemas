@@ -16,7 +16,7 @@ It&#x27;s a Agreement item that has been executed previously.
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_AgreementItemRef.png[Diagram illustrating AgreementItemRef]

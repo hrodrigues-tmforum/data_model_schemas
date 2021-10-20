@@ -16,7 +16,7 @@ This schema is part of Common
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_PerformanceIndicatorGroupSpecification.png[Diagram illustrating PerformanceIndicatorGroupSpecification]

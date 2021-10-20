@@ -16,7 +16,7 @@ Task resource for clear alarms operation
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_ClearAlarms.png[Diagram illustrating ClearAlarms]

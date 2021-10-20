@@ -16,7 +16,7 @@ ProductOffering reference. A product offering represents entities that are order
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_ProductOfferingRef.png[Diagram illustrating ProductOfferingRef]

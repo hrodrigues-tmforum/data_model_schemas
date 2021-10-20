@@ -16,7 +16,7 @@ A specific type of agreement that formalizes the privacy profiles requested for 
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_PartyPrivacyAgreement.png[Diagram illustrating PartyPrivacyAgreement]

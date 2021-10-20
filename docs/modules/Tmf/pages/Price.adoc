@@ -16,7 +16,7 @@ Provides all amounts (tax included, duty free, tax rate), used currency and perc
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_OrderPrice.png[Diagram illustrating Price]

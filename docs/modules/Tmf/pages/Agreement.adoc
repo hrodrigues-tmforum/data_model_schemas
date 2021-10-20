@@ -16,7 +16,7 @@ An agreement represents a contract or arrangement, either written or verbal and 
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_Agreement.png[Diagram illustrating Agreement]

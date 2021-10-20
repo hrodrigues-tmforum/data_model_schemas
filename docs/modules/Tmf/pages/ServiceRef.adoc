@@ -16,7 +16,7 @@ Service reference, for when Service is used by other entities.
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_ServiceRef.png[Diagram illustrating ServiceRef]

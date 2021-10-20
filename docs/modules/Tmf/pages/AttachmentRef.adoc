@@ -16,7 +16,7 @@ Attachment reference. An attachment complements the description of an element (f
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
             [#diagram]
             == Diagram
             image::Resource_AttachmentRef.png[Diagram illustrating AttachmentRef]
