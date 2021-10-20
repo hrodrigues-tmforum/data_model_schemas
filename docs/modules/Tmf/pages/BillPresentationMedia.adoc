@@ -16,7 +16,7 @@ A mean of communicating a bill, supported by the associated bill format. For exa
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

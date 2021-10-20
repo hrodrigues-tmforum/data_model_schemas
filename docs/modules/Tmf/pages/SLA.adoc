@@ -16,7 +16,7 @@ Part of a business agreement between a Service Provider and a Customer, quantita
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

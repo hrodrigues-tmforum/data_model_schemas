@@ -16,7 +16,7 @@ A cash method of payment. It has no additional data, but it could be extended to
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

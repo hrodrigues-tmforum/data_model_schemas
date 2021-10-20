@@ -16,7 +16,7 @@ AdjustProductStock is used to log and execute on or several Product Stock level 
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

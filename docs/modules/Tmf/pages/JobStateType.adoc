@@ -16,7 +16,7 @@ Valid values for the state of a batch job (e.g. catalog import)
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

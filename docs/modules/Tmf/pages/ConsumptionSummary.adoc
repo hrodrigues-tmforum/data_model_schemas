@@ -16,7 +16,7 @@ The consumption counters (called ConsumptionSummary in the SID model) detail for
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

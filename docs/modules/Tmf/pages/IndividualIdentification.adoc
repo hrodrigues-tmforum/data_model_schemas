@@ -16,7 +16,7 @@ Represents our registration of information used as proof of identity by an indiv
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

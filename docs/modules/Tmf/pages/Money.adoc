@@ -16,7 +16,7 @@ A base / value business entity used to represent money
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 
