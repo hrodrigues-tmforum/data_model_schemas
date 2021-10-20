@@ -16,7 +16,7 @@ An Incident is a record of an event that has altered the operational state of a 
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 

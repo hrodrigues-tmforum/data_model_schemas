@@ -16,7 +16,7 @@ A customer bill displays applied billing rates created before or during the bill
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 
