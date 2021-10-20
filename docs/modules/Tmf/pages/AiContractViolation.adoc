@@ -17,10 +17,6 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
-            [#diagram]
-            == Diagram
-            image::Resource_AiContractViolation.png[Diagram illustrating AiContractViolation]
-            
 
 The data model is defined as shown below:
 

@@ -17,10 +17,6 @@ A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
 
-            [#diagram]
-            == Diagram
-            image::Resource_PartyInteraction.png[Diagram illustrating PartyInteraction]
-            
 
 The data model is defined as shown below:
 
