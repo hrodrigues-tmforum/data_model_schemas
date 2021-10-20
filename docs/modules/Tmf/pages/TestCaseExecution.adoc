@@ -16,10 +16,6 @@ REST resource for the test case execution lifecycle
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_TestCaseExecution.png[Diagram illustrating TestCaseExecution]
-
 
 The data model is defined as shown below:
 

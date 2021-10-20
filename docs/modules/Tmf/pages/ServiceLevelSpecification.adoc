@@ -18,10 +18,6 @@ Objectives. Service Level Agreements are expressed in terms of Service Level Spe
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ServiceLevelSpecification.png[Diagram illustrating ServiceLevelSpecification]
-
 
 The data model is defined as shown below:
 

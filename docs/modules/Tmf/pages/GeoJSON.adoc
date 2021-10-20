@@ -16,10 +16,6 @@ No description on schema
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_GeoJSON.png[Diagram illustrating GeoJSON]
-
 
 The data model is defined as shown below:
 

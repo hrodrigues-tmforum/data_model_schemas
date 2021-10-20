@@ -16,10 +16,6 @@ A characteristic which value is an array of Number(s).
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_NumberArrayCharacteristic.png[Diagram illustrating NumberArrayCharacteristic]
-
 
 The data model is defined as shown below:
 

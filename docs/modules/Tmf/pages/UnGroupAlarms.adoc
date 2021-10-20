@@ -16,10 +16,6 @@ Task resource for ungroup alarms operation
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_UnGroupAlarms.png[Diagram illustrating UnGroupAlarms]
-
 
 The data model is defined as shown below:
 

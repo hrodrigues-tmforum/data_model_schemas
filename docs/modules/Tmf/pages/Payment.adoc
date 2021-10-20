@@ -16,10 +16,6 @@ The Payment resource represents a performed payment. It contains both informatio
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_Payment.png[Diagram illustrating Payment]
-
 
 The data model is defined as shown below:
 

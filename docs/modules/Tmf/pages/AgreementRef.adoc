@@ -16,10 +16,6 @@ Agreement reference. An agreement represents a contract or arrangement, either w
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_AgreementRef.png[Diagram illustrating AgreementRef]
-
 
 The data model is defined as shown below:
 

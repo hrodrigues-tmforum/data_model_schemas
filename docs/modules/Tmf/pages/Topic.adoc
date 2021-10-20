@@ -16,10 +16,6 @@ Is a event channel provided by the Event Streaming API
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_Topic.png[Diagram illustrating Topic]
-
 
 The data model is defined as shown below:
 

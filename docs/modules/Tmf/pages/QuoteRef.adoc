@@ -16,10 +16,6 @@ Quote reference. It&#x27;s a Quote that has been executed previously.
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_QuoteRef.png[Diagram illustrating QuoteRef]
-
 
 The data model is defined as shown below:
 

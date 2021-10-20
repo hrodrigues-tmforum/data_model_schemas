@@ -16,10 +16,6 @@ Resource is an abstract entity that describes the common set of attributes share
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_Resource.png[Diagram illustrating Resource]
-
 
 The data model is defined as shown below:
 

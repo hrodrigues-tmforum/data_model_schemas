@@ -16,10 +16,6 @@ An attachment by value or by reference. An attachment complements the descriptio
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_AttachmentRefOrValue.png[Diagram illustrating AttachmentRefOrValue]
-
 
 The data model is defined as shown below:
 

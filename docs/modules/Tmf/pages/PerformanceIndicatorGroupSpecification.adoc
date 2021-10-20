@@ -16,10 +16,6 @@ This schema is part of Common
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_PerformanceIndicatorGroupSpecification.png[Diagram illustrating PerformanceIndicatorGroupSpecification]
-
 
 The data model is defined as shown below:
 

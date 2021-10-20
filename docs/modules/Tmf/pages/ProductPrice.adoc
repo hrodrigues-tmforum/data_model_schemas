@@ -16,10 +16,6 @@ Description of price and discount awarded
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ProductPrice.png[Diagram illustrating ProductPrice]
-
 
 The data model is defined as shown below:
 

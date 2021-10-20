@@ -16,10 +16,6 @@ Holds the definition of the requested Performance indicator including: its name,
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_PerformanceIndicatorSpecification.png[Diagram illustrating PerformanceIndicatorSpecification]
-
 
 The data model is defined as shown below:
 

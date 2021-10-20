@@ -16,14 +16,6 @@ No description on schema
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_CancelServiceOrder.png[Diagram illustrating ServiceOrder]
-
-[#diagram]
-== Diagram
-image::Resource_ServiceOrder.png[Diagram illustrating ServiceOrder]
-
 
 The data model is defined as shown below:
 

@@ -16,10 +16,6 @@ Association is the class that describes a relationship between two or more entit
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_Association.png[Diagram illustrating Association]
-
 
 The data model is defined as shown below:
 

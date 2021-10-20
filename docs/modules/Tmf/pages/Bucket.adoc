@@ -16,10 +16,6 @@ A bucket (called UsageVolumProduct in the SID Model) represents and tracks a qua
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_Bucket.png[Diagram illustrating Bucket]
-
 
 The data model is defined as shown below:
 

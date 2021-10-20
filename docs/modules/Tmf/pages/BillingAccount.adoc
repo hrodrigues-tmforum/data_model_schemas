@@ -16,10 +16,6 @@ A party account used for billing purposes. It includes a description of the bill
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_BillingAccount.png[Diagram illustrating BillingAccount]
-
 
 The data model is defined as shown below:
 

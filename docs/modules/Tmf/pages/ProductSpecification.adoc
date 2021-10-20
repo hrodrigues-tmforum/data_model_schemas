@@ -16,10 +16,6 @@ Is a detailed description of a tangible or intangible object made available exte
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ProductSpecification.png[Diagram illustrating ProductSpecification]
-
 
 The data model is defined as shown below:
 

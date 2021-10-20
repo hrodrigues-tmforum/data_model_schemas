@@ -16,10 +16,6 @@ Party Privacy Profile Specification serves as a template for creating Privacy Pr
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_PartyPrivacyProfileSpecification.png[Diagram illustrating PartyPrivacyProfileSpecification]
-
 
 The data model is defined as shown below:
 

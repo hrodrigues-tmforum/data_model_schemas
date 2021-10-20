@@ -16,10 +16,6 @@ Communication message means a notification approach in the format of a message w
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_CommunicationMessage.png[Diagram illustrating CommunicationMessage]
-
 
 The data model is defined as shown below:
 

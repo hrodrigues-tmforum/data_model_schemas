@@ -16,10 +16,6 @@ The (resource) category resource is used to group resource candidates in logical
 A JSON Schema corresponding to this data model can be found //[here].
 
 
-[#diagram]
-== Diagram
-image::Resource_ResourceCategory.png[Diagram illustrating ResourceCategory]
-
 
 The data model is defined as shown below:
 
