@@ -16,7 +16,7 @@ A partnership type contains all the information for the setup of a partnership o
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

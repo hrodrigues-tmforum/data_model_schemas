@@ -16,7 +16,7 @@ A Consequence can be applied as a result of a threshold crossing or a threshold 
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

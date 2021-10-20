@@ -16,7 +16,7 @@ Connection point specification reference. A connection point provides a service 
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

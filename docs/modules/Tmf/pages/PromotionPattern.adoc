@@ -16,7 +16,7 @@ Detailed pattern of the promotion.The pattern decides the conditions of promotio
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

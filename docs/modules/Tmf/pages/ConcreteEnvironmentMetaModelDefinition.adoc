@@ -16,7 +16,7 @@ Test environment metamodel definition
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

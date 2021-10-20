@@ -16,7 +16,7 @@ Reference to an account in a loyalty system that could be used to perform the pa
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

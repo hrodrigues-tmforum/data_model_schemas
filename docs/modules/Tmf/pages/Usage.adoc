@@ -16,7 +16,7 @@ An occurrence of employing a Product, Service, or Resource for its intended purp
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

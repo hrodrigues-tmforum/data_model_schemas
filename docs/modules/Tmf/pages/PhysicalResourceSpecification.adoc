@@ -16,7 +16,7 @@ This is an example of a derived class of ResourceSpecification, and is used to d
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

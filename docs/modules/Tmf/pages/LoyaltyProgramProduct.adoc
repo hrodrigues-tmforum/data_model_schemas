@@ -16,7 +16,7 @@ An instance of a loyalty program specification, linked to a specified loyalty me
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

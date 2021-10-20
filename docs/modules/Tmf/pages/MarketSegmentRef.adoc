@@ -16,7 +16,7 @@ provides references to the corresponding market segment as target of product off
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 
