@@ -15,7 +15,7 @@ Description of a productTerm linked to this orderItem. This represent a commitme
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

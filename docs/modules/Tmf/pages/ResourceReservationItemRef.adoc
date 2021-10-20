@@ -15,7 +15,7 @@ Reference to a reservation item that can typically be queried with another API.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

@@ -15,7 +15,7 @@ Account reference. A account may be a party account or a financial account.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

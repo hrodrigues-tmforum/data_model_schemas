@@ -15,7 +15,7 @@ QueryShipmentQualification is used to retrieve a list of shipments that are vali
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

@@ -15,7 +15,7 @@ An aggregation, migration, substitution, dependency or exclusivity relationship 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

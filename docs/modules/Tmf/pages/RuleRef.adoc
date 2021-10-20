@@ -15,7 +15,7 @@ Rule reference. Rule is a common pattern or Template for the SLA parameters, met
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

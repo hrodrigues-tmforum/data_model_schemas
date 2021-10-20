@@ -15,7 +15,7 @@ An applied billing rate presented on a bill. It is created before or during the 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

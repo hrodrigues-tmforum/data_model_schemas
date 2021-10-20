@@ -15,7 +15,7 @@ Is an amount, usually of money, that modifies the price charged for an order ite
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

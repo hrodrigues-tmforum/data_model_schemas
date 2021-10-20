@@ -15,7 +15,7 @@ Represents a complementary piece of information to describe the agreement. Could
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

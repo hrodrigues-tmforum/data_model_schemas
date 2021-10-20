@@ -15,7 +15,7 @@ An identified part of the shopping cart. A shopping cart  is decomposed into one
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

@@ -15,7 +15,7 @@ Request for cancellation an existing resource order
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

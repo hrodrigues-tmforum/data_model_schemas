@@ -15,7 +15,7 @@ The Bill entity is used to model a bill (aka an invoice). It represents a total 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

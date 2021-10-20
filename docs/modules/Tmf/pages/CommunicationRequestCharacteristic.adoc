@@ -15,7 +15,7 @@ The values of parameters which are used in the content if the content contains t
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

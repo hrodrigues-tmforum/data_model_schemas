@@ -15,7 +15,7 @@ Concerns a product identified by its catalogue reference. It could also follow a
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

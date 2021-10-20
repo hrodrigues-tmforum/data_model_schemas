@@ -15,7 +15,7 @@ A value that can be assigned to a UsageSpecCharacteristic.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:

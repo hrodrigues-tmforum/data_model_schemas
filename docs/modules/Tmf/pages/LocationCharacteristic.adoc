@@ -16,7 +16,7 @@ code set has been defined for the GeographicArea type, etc.)
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-Diagram:
+== Diagram:
 aaa
 
 The data model is defined as shown below:
