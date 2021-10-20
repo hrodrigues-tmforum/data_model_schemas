@@ -15,7 +15,6 @@ Defines a plan for payment (when a party wants to spread his payments)
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

@@ -15,7 +15,6 @@ A template document that can be used for an agreement between parties on offered
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

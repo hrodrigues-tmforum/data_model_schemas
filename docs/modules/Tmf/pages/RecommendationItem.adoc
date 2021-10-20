@@ -15,7 +15,6 @@ A list of recommendation items. Every item is a product offering and its rank.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

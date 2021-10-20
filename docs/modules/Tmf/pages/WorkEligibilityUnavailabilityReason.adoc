@@ -15,7 +15,6 @@ Reason for eligibility result if the WorkQualification result is no (meaning the
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

@@ -15,7 +15,6 @@ Related Entity reference. A related balance topup defines a relationship via a r
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

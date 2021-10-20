@@ -15,7 +15,6 @@ A trouble ticket represents a record used for reporting and managing the resolut
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

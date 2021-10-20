@@ -15,7 +15,6 @@ Represents an assignment of a particular WorforceEmployeeRole for a particular u
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

@@ -15,7 +15,6 @@ Describes a non-composite relationship between product offering prices. For exam
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

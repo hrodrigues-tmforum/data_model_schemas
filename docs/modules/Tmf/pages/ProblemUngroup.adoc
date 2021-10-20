@@ -15,7 +15,6 @@ Task resource that requests Service Problems to be ungrouped from a parent
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:
