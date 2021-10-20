@@ -16,7 +16,7 @@ A managed test resource API resource
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_TestResourceAPI.png[Diagram illustrating TestResourceAPI]

@@ -16,7 +16,7 @@ Task resource for comment alarms operation
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_CommentAlarms.png[Diagram illustrating CommentAlarms]

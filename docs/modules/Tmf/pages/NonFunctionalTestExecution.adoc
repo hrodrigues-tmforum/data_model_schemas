@@ -16,7 +16,7 @@ REST resource for the non-functional test execution lifecycle
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_NonFunctionalTestExecution.png[Diagram illustrating NonFunctionalTestExecution]

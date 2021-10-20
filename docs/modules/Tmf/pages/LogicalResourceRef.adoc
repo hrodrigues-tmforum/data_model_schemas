@@ -16,7 +16,7 @@ reference to the LogicalResource eg MSISDN.
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_LogicalResourceRef.png[Diagram illustrating LogicalResourceRef]

@@ -16,7 +16,7 @@ A product offering procured by a customer or other interested party playing a pa
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_Product.png[Diagram illustrating Product]

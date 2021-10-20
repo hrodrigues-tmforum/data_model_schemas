@@ -17,7 +17,7 @@ associated with the parameters.
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_ServiceLevelObjective.png[Diagram illustrating ServiceLevelObjective]

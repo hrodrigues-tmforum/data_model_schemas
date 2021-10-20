@@ -16,7 +16,7 @@ Refers an appointment, such as a Customer presentation or internal meeting or si
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_AppointmentRef.png[Diagram illustrating AppointmentRef]

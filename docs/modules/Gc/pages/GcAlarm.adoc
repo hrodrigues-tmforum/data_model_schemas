@@ -16,7 +16,7 @@ This resource represents an alarm supporting the information model defined in IT
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

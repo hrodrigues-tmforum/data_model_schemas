@@ -16,7 +16,7 @@ A characteristic which value is an array of String(s).
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_StringArrayCharacteristic.png[Diagram illustrating StringArrayCharacteristic]

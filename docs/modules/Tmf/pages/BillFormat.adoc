@@ -16,7 +16,7 @@ A detailed description of the way in which a bill is presented.
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_BillFormat.png[Diagram illustrating BillFormat]

@@ -16,7 +16,7 @@ A characteristic which value is a Number.
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
             [#diagram]
             == Diagram
             image::Resource_NumberCharacteristic.png[Diagram illustrating NumberCharacteristic]
