@@ -15,7 +15,7 @@ Association is the class that describes a relationship between two or more entit
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:

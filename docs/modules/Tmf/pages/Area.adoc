@@ -15,7 +15,7 @@ Area corresponds to a geographic area as a city, a locality, a district, etc.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-== Diagram:
+THE DIAGRAM WILL BE IN HERE !!!
 aaa
 
 The data model is defined as shown below:
