@@ -16,7 +16,7 @@ PaymentMethod reference. A payment method defines a specific mean of payment (e.
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

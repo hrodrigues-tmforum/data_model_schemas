@@ -16,7 +16,7 @@ An QueryUsageConsumption allows to manage the calculation request of an usage co
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

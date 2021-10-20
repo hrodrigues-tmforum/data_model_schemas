@@ -16,7 +16,7 @@ The part played by a party in a given context.
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

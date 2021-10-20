@@ -16,7 +16,7 @@ This class defines the characteristic features of an edge specification. Every E
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

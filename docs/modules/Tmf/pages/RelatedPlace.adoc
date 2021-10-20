@@ -16,7 +16,7 @@ A  Place and an associated role as installation adress, delivery address, etc...
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 

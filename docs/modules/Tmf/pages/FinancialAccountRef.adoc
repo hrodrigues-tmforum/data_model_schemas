@@ -16,7 +16,7 @@ AccountReceivable reference. An account of money owed by a party to another enti
 A JSON Schema corresponding to this data model can be found //[here].
 
 Diagram:
-
+aaa
 
 The data model is defined as shown below:
 
