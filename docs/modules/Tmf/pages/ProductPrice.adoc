@@ -7,15 +7,13 @@ This schema is part of Product
 
 [#description]
 == Description
-
 An amount, usually of money, that represents the actual price paid by a Customer for a purchase, a rent or a lease of a Product. The price is valid for a defined period of time.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

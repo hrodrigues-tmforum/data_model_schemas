@@ -7,15 +7,13 @@ This schema is part of Service
 
 [#description]
 == Description
-
 This class represents the key features of this service specification. For example, bandwidth is a characteristic of many different types of services; if bandwidth is a relevant characteristic (e.g., from the point-of-view of a Customer obtaining this Service via a Product) then bandwidth would be a ServiceSpecCharacteristic for that particular Service.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

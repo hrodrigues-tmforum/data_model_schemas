@@ -7,15 +7,13 @@ This schema is part of Resource
 
 [#description]
 == Description
-
 the amount of capacity that is planned to be consumed or has been consumed.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

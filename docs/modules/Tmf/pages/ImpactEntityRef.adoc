@@ -7,16 +7,14 @@ This schema is part of Common
 
 [#description]
 == Description
-
 Defines the entities (product, service, resource, and other related objects) which will be impacted while the change 
 request is executed.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

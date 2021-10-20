@@ -7,15 +7,13 @@ This schema is part of Product
 
 [#description]
 == Description
-
 Promotion Resource is used to provide the additional discount, voucher, bonus or gift to the customer who meets the pre-defined criteria. Using promotion, the enterprise is able to attract the users and encourage more consumption, especially continuous purchases.   Normally Promotion is not regarded as one type of product or product offering. It is often applied when the customer buys the product offerings with the price or amount surpassing the certain limit.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

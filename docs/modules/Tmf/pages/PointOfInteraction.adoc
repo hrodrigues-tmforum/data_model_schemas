@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 POI consists of hardware and software which enables a Cardholder and/or an Acceptor to perform a Local Card transaction. This is also referred to as a Physical/EMV Terminal. It may be Attended or Unattended.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

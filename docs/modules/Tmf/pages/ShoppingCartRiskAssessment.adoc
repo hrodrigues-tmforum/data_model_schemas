@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 This is a task resource allowing assessment of the risks associated with a shopping cart - presumably created by a party role and containing one or more product offerings
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

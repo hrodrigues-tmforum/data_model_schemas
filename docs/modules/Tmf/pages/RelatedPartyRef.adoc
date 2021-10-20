@@ -7,15 +7,13 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
-
 RelatedParty reference. A related party defines party or party role linked to a specific entity.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

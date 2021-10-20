@@ -7,15 +7,13 @@ This schema is part of Common
 
 [#description]
 == Description
-
 An Incident is a record of an event that has altered the operational state of a entity (Resource, Service or Customers Product)
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

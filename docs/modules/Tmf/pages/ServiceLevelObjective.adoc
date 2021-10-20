@@ -7,16 +7,14 @@ This schema is part of Service
 
 [#description]
 == Description
-
 Service level objectives are defined in terms of parameters and metrics, thresholds, and tolerances 
 associated with the parameters.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

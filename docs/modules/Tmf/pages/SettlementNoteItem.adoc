@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 Concerns a product identified by its catalogue reference. It could also follow a period delimited by a start and an end date.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

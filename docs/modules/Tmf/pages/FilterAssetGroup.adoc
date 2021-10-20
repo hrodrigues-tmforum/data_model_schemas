@@ -7,15 +7,13 @@ This schema is part of Common
 
 [#description]
 == Description
-
 Defines a group of assets (entities) to which access can be controlled, using a filter expression. Any entities matching the filter are implicitly included in the group. The embedded example implies all Products owned by a specific customer
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

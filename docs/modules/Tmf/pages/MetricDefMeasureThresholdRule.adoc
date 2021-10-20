@@ -7,17 +7,15 @@ This schema is part of Service
 
 [#description]
 == Description
-
 A MetricDefMeasureThresholdRule is a rule that defines the condition (raise or clear) to achieve to apply 
 consequences when a threshold is crossed or ceased to be crossed. It also defines the severity of the 
 raise or clear of the threshold.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

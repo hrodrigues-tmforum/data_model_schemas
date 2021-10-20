@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 A bucket (called UsageVolumProduct in the SID Model) represents and tracks a quantity of usage (remaining or consumed). It could be either a quantity or an amount in a currency. It can represent a fixed number of SMS,MMS, call minutes, quantity of data and so on
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

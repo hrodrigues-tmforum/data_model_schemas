@@ -7,15 +7,13 @@ This schema is part of Product
 
 [#description]
 == Description
-
 The balance (called UsageVolumeBalance in the SID model) defines the remaining allowed product usage quantity in terms of volume, time, currency or events. It corresponds to the initial allowed usage quantity minus the usage consumed on the bucket.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

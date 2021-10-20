@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 An applied billing rate has dynamic characteristics according to the its type (characteristics are based on the service type, line of business or on others parameters)
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

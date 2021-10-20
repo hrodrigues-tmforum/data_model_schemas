@@ -7,15 +7,13 @@ This schema is part of EngagedParty
 
 [#description]
 == Description
-
 Alternate work proposal is used when the requested unit of work is not valid as specified in the request. An alternate proposal could be a distinct workSpecification close to the requested one or the same specification as requested but with a different parameters.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

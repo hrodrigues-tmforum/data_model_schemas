@@ -7,15 +7,13 @@ This schema is part of Product
 
 [#description]
 == Description
-
 Action of the promotion.When the customer meets the conditions in the promotion pattern, the customer can be given the benefits in the action.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

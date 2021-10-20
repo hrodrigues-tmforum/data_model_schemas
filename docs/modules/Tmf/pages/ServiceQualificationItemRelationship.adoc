@@ -7,15 +7,13 @@ This schema is part of Service
 
 [#description]
 == Description
-
 Structure used to describe relationship between serviceQualification items from the same serviceQualification.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

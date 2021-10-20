@@ -7,15 +7,13 @@ This schema is part of Product
 
 [#description]
 == Description
-
 Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price Alteration.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 
