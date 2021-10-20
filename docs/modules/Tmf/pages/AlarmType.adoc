@@ -15,7 +15,6 @@ Categorizes the alarm (X.733 8.1.1, 3GPP TS 32.111-2 Annex A)
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

@@ -15,7 +15,6 @@ is a list of name value pairs that define the service characteristics
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

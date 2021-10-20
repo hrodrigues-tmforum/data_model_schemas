@@ -15,7 +15,6 @@ This object represents expected quality of service in terms of quality key index
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:

@@ -15,7 +15,6 @@ Structure used to describe relationship between WorkQualification items from the
 
 A JSON Schema corresponding to this data model can be found //[here].
 
-THE DIAGRAM WILL BE IN HERE !!!
 
 
 The data model is defined as shown below:
