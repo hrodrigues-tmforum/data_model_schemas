@@ -16,6 +16,10 @@ A party account used for settlement purposes. It includes a description of the b
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_SettlementAccount.png[Diagram illustrating SettlementAccount]
+
 
 The data model is defined as shown below:
 

@@ -16,6 +16,22 @@ A collection of Product Offerings, intended for a specific DistributionChannel, 
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_ResourceCatalog.png[Diagram illustrating Catalog]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceCatalog.png[Diagram illustrating Catalog]
+
+[#diagram]
+== Diagram
+image::Resource_EntityCatalog.png[Diagram illustrating Catalog]
+
+[#diagram]
+== Diagram
+image::Resource_Catalog.png[Diagram illustrating Catalog]
+
 
 The data model is defined as shown below:
 

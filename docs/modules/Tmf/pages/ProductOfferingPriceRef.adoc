@@ -16,6 +16,10 @@ ProductPriceOffering reference. An amount, usually of money, that is asked for o
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_ProductOfferingPriceRef.png[Diagram illustrating ProductOfferingPriceRef]
+
 
 The data model is defined as shown below:
 

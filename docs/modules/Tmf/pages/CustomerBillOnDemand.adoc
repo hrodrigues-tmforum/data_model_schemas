@@ -16,6 +16,10 @@ This resource is used to manage the creation request of a customer bill in real-
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_CustomerBillOnDemand.png[Diagram illustrating CustomerBillOnDemand]
+
 
 The data model is defined as shown below:
 

@@ -16,6 +16,10 @@ Possible values for the state of the order
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_ProductOrderStateType.png[Diagram illustrating ProductOrderStateType]
+
 
 The data model is defined as shown below:
 

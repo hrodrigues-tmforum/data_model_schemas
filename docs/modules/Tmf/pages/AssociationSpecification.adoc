@@ -16,6 +16,10 @@ AssociationSpecification is an association class that describes a type of relati
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_AssociationSpecification.png[Diagram illustrating AssociationSpecification]
+
 
 The data model is defined as shown below:
 

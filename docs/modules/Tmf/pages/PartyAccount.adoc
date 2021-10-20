@@ -16,6 +16,10 @@ Account used for billing or for settlement purposes concerning a given party (an
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_PartyAccount.png[Diagram illustrating PartyAccount]
+
 
 The data model is defined as shown below:
 

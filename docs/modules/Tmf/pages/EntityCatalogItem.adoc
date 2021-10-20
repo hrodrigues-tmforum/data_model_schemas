@@ -17,6 +17,10 @@ The EntityCatalogItem resource (JSON format) represents a set of characteristics
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_EntityCatalogItem.png[Diagram illustrating EntityCatalogItem]
+
 
 The data model is defined as shown below:
 

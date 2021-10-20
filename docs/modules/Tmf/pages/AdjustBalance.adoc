@@ -16,6 +16,10 @@ The AdjustBalance resource allows adjustments to be made to the original Balance
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_AdjustBalance.png[Diagram illustrating AdjustBalance]
+
 
 The data model is defined as shown below:
 

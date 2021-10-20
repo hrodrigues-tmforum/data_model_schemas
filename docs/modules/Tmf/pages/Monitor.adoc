@@ -16,6 +16,10 @@ Monitoring of resources
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_Monitor.png[Diagram illustrating Monitor]
+
 
 The data model is defined as shown below:
 

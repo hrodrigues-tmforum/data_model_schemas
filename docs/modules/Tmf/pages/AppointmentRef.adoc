@@ -16,6 +16,10 @@ Refers an appointment, such as a Customer presentation or internal meeting or si
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_AppointmentRef.png[Diagram illustrating AppointmentRef]
+
 
 The data model is defined as shown below:
 

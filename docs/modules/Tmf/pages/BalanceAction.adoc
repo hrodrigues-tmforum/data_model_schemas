@@ -16,6 +16,10 @@ an abstract resource. example extensions are TopupBalance, AdjustBalance
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_BalanceAction.png[Diagram illustrating BalanceAction]
+
 
 The data model is defined as shown below:
 

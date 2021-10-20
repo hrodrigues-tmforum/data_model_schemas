@@ -16,6 +16,10 @@ A characteristic which value is an array of Boolean(s).
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_BooleanArrayCharacteristic.png[Diagram illustrating BooleanArrayCharacteristic]
+
 
 The data model is defined as shown below:
 

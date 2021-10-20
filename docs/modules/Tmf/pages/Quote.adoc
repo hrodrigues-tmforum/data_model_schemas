@@ -16,6 +16,10 @@ Quote can be used to negotiate service and product acquisition or modification b
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_Quote.png[Diagram illustrating Quote]
+
 
 The data model is defined as shown below:
 

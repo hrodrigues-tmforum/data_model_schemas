@@ -16,6 +16,10 @@ A managed abstract environment resource
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_AbstractEnvironment.png[Diagram illustrating AbstractEnvironment]
+
 
 The data model is defined as shown below:
 

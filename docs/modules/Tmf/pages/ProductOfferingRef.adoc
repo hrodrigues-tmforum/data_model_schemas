@@ -16,6 +16,10 @@ ProductOffering reference. A product offering represents entities that are order
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_ProductOfferingRef.png[Diagram illustrating ProductOfferingRef]
+
 
 The data model is defined as shown below:
 

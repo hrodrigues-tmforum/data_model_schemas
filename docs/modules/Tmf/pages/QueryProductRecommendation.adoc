@@ -16,6 +16,10 @@ Recommendation API is used to recommend offering quickly based on the history an
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_QueryProductRecommendation.png[Diagram illustrating QueryProductRecommendation]
+
 
 The data model is defined as shown below:
 

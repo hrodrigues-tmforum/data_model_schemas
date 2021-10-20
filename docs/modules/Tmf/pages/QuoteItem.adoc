@@ -16,6 +16,10 @@ A quote items describe an action to be performed on a productOffering or a produ
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_QuoteItem.png[Diagram illustrating QuoteItem]
+
 
 The data model is defined as shown below:
 

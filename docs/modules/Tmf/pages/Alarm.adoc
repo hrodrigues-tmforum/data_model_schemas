@@ -16,6 +16,10 @@ This resource represents an alarm supporting the information model defined in IT
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_Alarm.png[Diagram illustrating Alarm]
+
 
 The data model is defined as shown below:
 

@@ -16,6 +16,10 @@ No description on schema
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_GeographicSiteRelationship.png[Diagram illustrating GeographicSiteRelationship]
+
 
 The data model is defined as shown below:
 

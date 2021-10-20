@@ -17,6 +17,10 @@ Resource IDs for categories are strings and are defined by the catalog applicati
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_EntityCategory.png[Diagram illustrating EntityCategory]
+
 
 The data model is defined as shown below:
 

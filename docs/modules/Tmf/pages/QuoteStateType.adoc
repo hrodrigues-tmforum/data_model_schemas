@@ -16,6 +16,10 @@ Possible values for the state of the quote
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_QuoteStateType.png[Diagram illustrating QuoteStateType]
+
 
 The data model is defined as shown below:
 

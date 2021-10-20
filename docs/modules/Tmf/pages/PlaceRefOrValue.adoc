@@ -16,6 +16,14 @@ A place described by reference or by value. The polymorphic attributes @type, @s
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_PlaceRefOrValue.png[Diagram illustrating PlaceRefOrValue]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedPlaceRefOrValue.png[Diagram illustrating PlaceRefOrValue]
+
 
 The data model is defined as shown below:
 

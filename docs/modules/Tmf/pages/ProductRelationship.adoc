@@ -16,6 +16,10 @@ Used to describe relationship between product.
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_ProductRelationship.png[Diagram illustrating ProductRelationship]
+
 
 The data model is defined as shown below:
 

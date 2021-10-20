@@ -16,6 +16,10 @@ An Ai Contract represents a contract or arrangement, either written or verbal an
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_AiContract.png[Diagram illustrating AiContract]
+
 
 The data model is defined as shown below:
 

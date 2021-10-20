@@ -16,6 +16,10 @@ Represents a detailed description of a recharge operation requested over a bucke
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_TopupBalance.png[Diagram illustrating TopupBalance]
+
 
 The data model is defined as shown below:
 

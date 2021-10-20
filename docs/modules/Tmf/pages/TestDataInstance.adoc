@@ -16,6 +16,10 @@ A managed test data instance resource
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_TestDataInstance.png[Diagram illustrating TestDataInstance]
+
 
 The data model is defined as shown below:
 

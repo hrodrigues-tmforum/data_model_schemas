@@ -16,6 +16,10 @@ A detailed description of a usage event that are of interest to the business and
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_UsageSpecification.png[Diagram illustrating UsageSpecification]
+
 
 The data model is defined as shown below:
 

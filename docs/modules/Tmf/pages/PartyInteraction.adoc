@@ -16,6 +16,10 @@ No description on schema
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_PartyInteraction.png[Diagram illustrating PartyInteraction]
+
 
 The data model is defined as shown below:
 

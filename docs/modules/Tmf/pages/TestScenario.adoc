@@ -16,6 +16,10 @@ A managed test scenario resource
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_TestScenario.png[Diagram illustrating TestScenario]
+
 
 The data model is defined as shown below:
 

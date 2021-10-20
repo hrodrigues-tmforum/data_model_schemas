@@ -16,6 +16,10 @@ The TransferBalance resource is a detailed description of credit transfer operat
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_TransferBalance.png[Diagram illustrating TransferBalance]
+
 
 The data model is defined as shown below:
 

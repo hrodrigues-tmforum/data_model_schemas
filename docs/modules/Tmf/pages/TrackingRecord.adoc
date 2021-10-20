@@ -16,6 +16,10 @@ Tracking records allow the tracking of modifications on the problem. The trackin
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_TrackingRecord.png[Diagram illustrating TrackingRecord]
+
 
 The data model is defined as shown below:
 

@@ -16,6 +16,10 @@ A managed non-functional test model resource
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_NonFunctionalTestModel.png[Diagram illustrating NonFunctionalTestModel]
+
 
 The data model is defined as shown below:
 

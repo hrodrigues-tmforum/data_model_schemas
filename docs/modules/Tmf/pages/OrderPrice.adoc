@@ -16,6 +16,10 @@ An amount, usually of money, that represents the actual price paid by the Custom
 A JSON Schema corresponding to this data model can be found //[here].
 
 
+[#diagram]
+== Diagram
+image::Resource_OrderPrice.png[Diagram illustrating OrderPrice]
+
 
 The data model is defined as shown below:
 
