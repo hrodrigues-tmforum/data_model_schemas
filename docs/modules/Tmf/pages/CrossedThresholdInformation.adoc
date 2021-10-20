@@ -15,6 +15,7 @@ Identifies the details of the threshold that has been crossed.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

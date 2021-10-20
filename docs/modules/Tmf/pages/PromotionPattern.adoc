@@ -15,6 +15,7 @@ Contains the conditions and benefits of the promotion toan eligible party
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

@@ -15,6 +15,7 @@ A characteristic which the value is a number array of format float
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:

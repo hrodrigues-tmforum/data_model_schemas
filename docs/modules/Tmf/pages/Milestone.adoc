@@ -15,6 +15,7 @@ Milestone represents an action or event marking a significant change or stage in
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:
