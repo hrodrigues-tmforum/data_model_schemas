@@ -16,7 +16,7 @@ CheckProductStock is used to log and execute check about product stock availabil
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 

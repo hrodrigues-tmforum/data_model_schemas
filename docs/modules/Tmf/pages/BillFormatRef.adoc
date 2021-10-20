@@ -16,7 +16,7 @@ BillFormat reference. A bill format is a description of the way in which a bill 
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 

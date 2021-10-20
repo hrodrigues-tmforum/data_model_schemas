@@ -16,7 +16,7 @@ A specification for a characteristic for which the value is an integer number
 A JSON Schema corresponding to this data model can be found //[here].
 
 THE DIAGRAM WILL BE IN HERE !!!
-aaa
+
 
 The data model is defined as shown below:
 
