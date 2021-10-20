@@ -17,6 +17,7 @@ An entity catalog comprises of a list of RootEntities made available through Ent
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+Diagram:
 
 
 The data model is defined as shown below:
