@@ -7,15 +7,13 @@ This schema is part of Product
 
 [#description]
 == Description
-
 A product specification or offering procured to a customer or other interested party playing a party role. A product is realized as one or more service(s) and / or resource(s).
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

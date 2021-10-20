@@ -7,15 +7,13 @@ This schema is part of Customer
 
 [#description]
 == Description
-
 If special discount or special product offering price or specific condition need an approval for ISP sale representative it is described here.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 

@@ -7,16 +7,14 @@ This schema is part of Service
 
 [#description]
 == Description
-
 The service test specification describes the service test in terms of parameters to be configured and 
 measures to be taken.
 
-None
 
 [#data_model]
 == Data model
 
-A JSON Schema corresponding to this data model can be found https://tmforum.org[here].
+A JSON Schema corresponding to this data model can be found //[here].
 
 The data model is defined as shown below:
 
