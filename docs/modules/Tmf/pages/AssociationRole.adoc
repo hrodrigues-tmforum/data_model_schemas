@@ -15,6 +15,11 @@ This embedded object represents the role and type of each entity involved in a r
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AssociationRole.png[Diagram illustrating AssociationRole]
 
 
 The data model is defined as shown below:

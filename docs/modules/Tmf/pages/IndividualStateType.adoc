@@ -15,6 +15,11 @@ Valid values for the lifecycle state of the individual
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_IndividualStateType.png[Diagram illustrating IndividualStateType]
 
 
 The data model is defined as shown below:

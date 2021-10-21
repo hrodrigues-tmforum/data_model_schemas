@@ -15,6 +15,11 @@ A TestMeasure specifies a measure of a specific aspect of a product, service, or
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_TestMeasure.png[Diagram illustrating TestMeasure]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,15 @@ ProductStockRef is a reference to a product stock
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ProductStockRef.png[Diagram illustrating ProductStockRef]
+
+[#diagram]
+== Diagram
+image::Resource_ReserveProductStockRef.png[Diagram illustrating ProductStockRef]
 
 
 The data model is defined as shown below:

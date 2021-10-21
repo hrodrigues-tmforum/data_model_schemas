@@ -16,6 +16,11 @@ associated with the parameters.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceLevelObjective.png[Diagram illustrating ServiceLevelObjective]
 
 
 The data model is defined as shown below:

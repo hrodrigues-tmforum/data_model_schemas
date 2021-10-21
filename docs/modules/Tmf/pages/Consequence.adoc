@@ -15,6 +15,27 @@ A threshold crossing or a threshold ceased to be crossing results in a Performan
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Consequence.png[Diagram illustrating Consequence]
+
+[#diagram]
+== Diagram
+image::Resource_PerformanceConsequence.png[Diagram illustrating Consequence]
+
+[#diagram]
+== Diagram
+image::Resource_MetricDefMeasureConsequence.png[Diagram illustrating Consequence]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceLevelSpecConsequence.png[Diagram illustrating Consequence]
+
+[#diagram]
+== Diagram
+image::Resource_AppliedConsequence.png[Diagram illustrating Consequence]
 
 
 The data model is defined as shown below:

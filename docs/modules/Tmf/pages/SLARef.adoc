@@ -15,6 +15,11 @@ ServiceLevelAgreement reference: A service level agreement (SLA) is a type of ag
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_SLARef.png[Diagram illustrating SLARef]
 
 
 The data model is defined as shown below:

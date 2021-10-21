@@ -15,6 +15,11 @@ Detailed information of a check
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CheckDetails.png[Diagram illustrating CheckDetails]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,15 @@ Specification for resource, service or product features
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_FeatureSpecification.png[Diagram illustrating FeatureSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceFeatureSpecification.png[Diagram illustrating FeatureSpecification]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Constraint reference. The Constraint resource represents a policy/rule applied t
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ConstraintRef.png[Diagram illustrating ConstraintRef]
 
 
 The data model is defined as shown below:

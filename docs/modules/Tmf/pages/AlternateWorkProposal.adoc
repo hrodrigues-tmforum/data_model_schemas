@@ -15,6 +15,11 @@ Alternate work proposal is used when the requested unit of work is not valid as 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AlternateWorkProposal.png[Diagram illustrating AlternateWorkProposal]
 
 
 The data model is defined as shown below:

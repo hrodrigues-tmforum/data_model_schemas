@@ -15,6 +15,11 @@ The structure of the bill for party accounts (billing or settlement).
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_BillStructure.png[Diagram illustrating BillStructure]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ A list of shipping order items
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ShippingOrderItem.png[Diagram illustrating ShippingOrderItem]
 
 
 The data model is defined as shown below:

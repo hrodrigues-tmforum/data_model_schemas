@@ -15,6 +15,27 @@ Account reference. A account may be a party account or a financial account.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PartyAccountRef.png[Diagram illustrating AccountRef]
+
+[#diagram]
+== Diagram
+image::Resource_FinancialAccountRef.png[Diagram illustrating AccountRef]
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyAccountRef.png[Diagram illustrating AccountRef]
+
+[#diagram]
+== Diagram
+image::Resource_AccountRef.png[Diagram illustrating AccountRef]
+
+[#diagram]
+== Diagram
+image::Resource_BillingAccountRef.png[Diagram illustrating AccountRef]
 
 
 The data model is defined as shown below:

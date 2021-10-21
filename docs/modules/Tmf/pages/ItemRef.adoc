@@ -15,6 +15,59 @@ Describes a specific item contained in a parent element
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AgreementItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ContainedItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_QuoteItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceOrderItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_CartItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceReservationItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceLevelAgreementItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_OrderItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ProductOfferingQualificationItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ProductOrderItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceOrderItemRef.png[Diagram illustrating ItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_EntityCatalogItemRef.png[Diagram illustrating ItemRef]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Identifies the details of the threshold that has been crossed.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CrossedThresholdInformation.png[Diagram illustrating CrossedThresholdInformation]
 
 
 The data model is defined as shown below:

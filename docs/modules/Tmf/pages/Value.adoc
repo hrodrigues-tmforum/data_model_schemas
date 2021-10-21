@@ -15,6 +15,163 @@ No description on schema
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_EntityValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedGeographicLocationRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_ProductRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedGeographicAddressRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_PaymentRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_ChangeRequestRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_WorkRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_ShipmentSpecificationRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_WorkSpecificationRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_AgreementSpecCharacteristicValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_GeographicLocationRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_ShipmentRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_BaseProductRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_AlarmRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_TestSuiteExecutionRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_EntityRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_UsageSpecCharacteristicValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_Value.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceSpecCharacteristicValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_PartyRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_SpecificationCharacteristicValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_TestCaseExecutionRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_PaymentMethodRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedEntityRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_BucketRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_NonFunctionalTestExecutionRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedExpectationRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_BillPresentationMediaRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedPartyRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_BillFormatRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_PerformanceIndicatorSpecificationRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_RuleRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_SpecCharacteristicValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_BillingCycleSpecificationRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_AttachmentRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_PlaceRefOrValue.png[Diagram illustrating Value]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedPlaceRefOrValue.png[Diagram illustrating Value]
 
 
 The data model is defined as shown below:

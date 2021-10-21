@@ -15,6 +15,11 @@ An edge in a resource graph.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Connection.png[Diagram illustrating Connection]
 
 
 The data model is defined as shown below:

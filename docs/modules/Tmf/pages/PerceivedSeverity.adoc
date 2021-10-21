@@ -16,6 +16,11 @@ Once an alarm has been cleared, its perceived severity is set to &#x27;cleared&#
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PerceivedSeverity.png[Diagram illustrating PerceivedSeverity]
 
 
 The data model is defined as shown below:

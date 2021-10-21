@@ -15,6 +15,11 @@ A characteristic which value is an integer number
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_IntegerCharacteristic.png[Diagram illustrating IntegerCharacteristic]
 
 
 The data model is defined as shown below:

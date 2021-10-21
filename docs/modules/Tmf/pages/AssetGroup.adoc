@@ -15,6 +15,27 @@ Defines a group of assets (entities) to which access can be controlled. Specific
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_SetAssetGroup.png[Diagram illustrating AssetGroup]
+
+[#diagram]
+== Diagram
+image::Resource_ListAssetGroup.png[Diagram illustrating AssetGroup]
+
+[#diagram]
+== Diagram
+image::Resource_FilterAssetGroup.png[Diagram illustrating AssetGroup]
+
+[#diagram]
+== Diagram
+image::Resource_AssetGroup.png[Diagram illustrating AssetGroup]
+
+[#diagram]
+== Diagram
+image::Resource_JSONPathAssetGroup.png[Diagram illustrating AssetGroup]
 
 
 The data model is defined as shown below:

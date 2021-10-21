@@ -15,6 +15,11 @@ A document accompanying an entity
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_FileDocument.png[Diagram illustrating FileDocument]
 
 
 The data model is defined as shown below:

@@ -16,6 +16,11 @@ A VertexSpecification is a base class that represents a generic means for implem
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_VertexSpecification.png[Diagram illustrating VertexSpecification]
 
 
 The data model is defined as shown below:

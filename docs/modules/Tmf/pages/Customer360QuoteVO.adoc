@@ -15,6 +15,11 @@ Quote can be used to negotiate service and product acquisition or modification b
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Customer360QuoteVO.png[Diagram illustrating Customer360QuoteVO]
 
 
 The data model is defined as shown below:

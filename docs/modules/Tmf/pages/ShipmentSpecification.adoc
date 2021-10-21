@@ -15,6 +15,11 @@ Definition of the nature of a Shipment. For example, could be a standard ground 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ShipmentSpecification.png[Diagram illustrating ShipmentSpecification]
 
 
 The data model is defined as shown below:

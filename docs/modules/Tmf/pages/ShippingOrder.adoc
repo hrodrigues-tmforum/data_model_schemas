@@ -15,6 +15,15 @@ A Shipping Order is a document used by a business to specify what items are to b
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ShippingOrder.png[Diagram illustrating ShippingOrder]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedShippingOrder.png[Diagram illustrating ShippingOrder]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Reference an internal account that could be billed directly to perform the payme
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AccountPaymentMethod.png[Diagram illustrating AccountPaymentMethod]
 
 
 The data model is defined as shown below:

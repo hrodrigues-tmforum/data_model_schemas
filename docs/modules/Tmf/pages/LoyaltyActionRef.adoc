@@ -15,6 +15,11 @@ A reference to a loyalty action.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyActionRef.png[Diagram illustrating LoyaltyActionRef]
 
 
 The data model is defined as shown below:

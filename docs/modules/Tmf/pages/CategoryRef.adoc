@@ -15,6 +15,23 @@ The category for grouping recommendations
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceCategoryRef.png[Diagram illustrating CategoryRef]
+
+[#diagram]
+== Diagram
+image::Resource_EntityCategoryRef.png[Diagram illustrating CategoryRef]
+
+[#diagram]
+== Diagram
+image::Resource_CategoryRef.png[Diagram illustrating CategoryRef]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceCategoryRef.png[Diagram illustrating CategoryRef]
 
 
 The data model is defined as shown below:

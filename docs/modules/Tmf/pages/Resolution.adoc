@@ -15,6 +15,11 @@ The way one or more change request has been implementation through a direct reme
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Resolution.png[Diagram illustrating Resolution]
 
 
 The data model is defined as shown below:

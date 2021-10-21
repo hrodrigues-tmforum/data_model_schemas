@@ -17,6 +17,27 @@ Note : Address corresponds to SID UrbanPropertyAddress
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Address.png[Diagram illustrating Address]
+
+[#diagram]
+== Diagram
+image::Resource_GeographicAddress.png[Diagram illustrating Address]
+
+[#diagram]
+== Diagram
+image::Resource_AlternateGeographicAddress.png[Diagram illustrating Address]
+
+[#diagram]
+== Diagram
+image::Resource_SubAddress.png[Diagram illustrating Address]
+
+[#diagram]
+== Diagram
+image::Resource_GeographicSubAddress.png[Diagram illustrating Address]
 
 
 The data model is defined as shown below:

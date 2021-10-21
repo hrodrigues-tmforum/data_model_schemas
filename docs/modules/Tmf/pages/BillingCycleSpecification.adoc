@@ -15,6 +15,11 @@ A detailed description of when to initiate a billing cycle and the various sub s
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_BillingCycleSpecification.png[Diagram illustrating BillingCycleSpecification]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Resource containing a the ID of a action to link to a loyalty rule.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyRuleAction.png[Diagram illustrating LoyaltyRuleAction]
 
 
 The data model is defined as shown below:

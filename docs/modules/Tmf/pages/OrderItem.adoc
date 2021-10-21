@@ -15,6 +15,43 @@ An identified part of the order. A product order is decomposed into one or more 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ResourceOrderItem.png[Diagram illustrating OrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_ProductOrderItem.png[Diagram illustrating OrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedServiceOrderItem.png[Diagram illustrating OrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedWorkOrderItem.png[Diagram illustrating OrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_OrderItem.png[Diagram illustrating OrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedProductOrderItem.png[Diagram illustrating OrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceOrderItem.png[Diagram illustrating OrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_WorkOrderItem.png[Diagram illustrating OrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_ShippingOrderItem.png[Diagram illustrating OrderItem]
 
 
 The data model is defined as shown below:

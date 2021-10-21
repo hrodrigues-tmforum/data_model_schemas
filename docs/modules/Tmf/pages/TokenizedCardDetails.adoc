@@ -15,6 +15,11 @@ Detailed information for a stored tokenized card
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_TokenizedCardDetails.png[Diagram illustrating TokenizedCardDetails]
 
 
 The data model is defined as shown below:

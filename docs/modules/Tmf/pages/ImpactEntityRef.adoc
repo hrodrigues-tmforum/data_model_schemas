@@ -16,6 +16,11 @@ request is executed.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ImpactEntityRef.png[Diagram illustrating ImpactEntityRef]
 
 
 The data model is defined as shown below:

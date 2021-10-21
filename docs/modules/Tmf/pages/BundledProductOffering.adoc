@@ -15,6 +15,11 @@ A type of ProductOffering that belongs to a grouping of ProductOfferings made av
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_BundledProductOffering.png[Diagram illustrating BundledProductOffering]
 
 
 The data model is defined as shown below:

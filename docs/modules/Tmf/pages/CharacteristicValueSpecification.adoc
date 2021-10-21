@@ -15,6 +15,67 @@ specification of a value (number or text or an object) that can be assigned to a
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_StringArrayCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_BooleanCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_FloatCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_ObjectCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_CharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_ObjectArrayCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_StringCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_MapArrayCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_NumberArrayCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_NumberCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_IntegerArrayCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_MapCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_BooleanArrayCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_FloatArrayCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
+
+[#diagram]
+== Diagram
+image::Resource_IntegerCharacteristicValueSpecification.png[Diagram illustrating CharacteristicValueSpecification]
 
 
 The data model is defined as shown below:

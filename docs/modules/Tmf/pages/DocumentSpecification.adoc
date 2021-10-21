@@ -15,6 +15,11 @@ A document specification reference
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_DocumentSpecification.png[Diagram illustrating DocumentSpecification]
 
 
 The data model is defined as shown below:

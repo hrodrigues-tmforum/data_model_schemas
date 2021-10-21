@@ -15,6 +15,11 @@ Possible values for service relationship type
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceRelationshipType.png[Diagram illustrating ServiceRelationshipType]
 
 
 The data model is defined as shown below:

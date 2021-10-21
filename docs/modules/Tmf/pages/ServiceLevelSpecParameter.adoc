@@ -17,6 +17,11 @@ Specification, Product Offering, or Product) or a Service (i.e., Service Specifi
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceLevelSpecParameter.png[Diagram illustrating ServiceLevelSpecParameter]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ A cash method of payment. It has no additional data, but it could be extended to
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Cash.png[Diagram illustrating Cash]
 
 
 The data model is defined as shown below:

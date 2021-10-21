@@ -15,6 +15,11 @@ PerformanceIndicatorSpecification reference: A PerformanceIndicatorSpecification
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PerformanceIndicatorSpecificationRef.png[Diagram illustrating PerformanceIndicatorSpecificationRef]
 
 
 The data model is defined as shown below:

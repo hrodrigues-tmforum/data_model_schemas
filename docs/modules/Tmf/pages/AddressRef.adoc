@@ -15,6 +15,15 @@ No description on schema
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AddressRef.png[Diagram illustrating AddressRef]
+
+[#diagram]
+== Diagram
+image::Resource_GeographicAddressRef.png[Diagram illustrating AddressRef]
 
 
 The data model is defined as shown below:

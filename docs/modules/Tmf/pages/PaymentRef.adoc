@@ -15,6 +15,15 @@ If an immediate payment has been done at the product order submission, the payme
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PaymentRef.png[Diagram illustrating PaymentRef]
+
+[#diagram]
+== Diagram
+image::Resource_AuthorizePaymentRef.png[Diagram illustrating PaymentRef]
 
 
 The data model is defined as shown below:

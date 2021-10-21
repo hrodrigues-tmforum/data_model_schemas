@@ -15,6 +15,11 @@ Is the image of the settlement note
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_SettlementNoteImage.png[Diagram illustrating SettlementNoteImage]
 
 
 The data model is defined as shown below:

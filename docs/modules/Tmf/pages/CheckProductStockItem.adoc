@@ -15,6 +15,11 @@ CheckProductStockItem is used to log and execute query about one product (or con
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CheckProductStockItem.png[Diagram illustrating CheckProductStockItem]
 
 
 The data model is defined as shown below:

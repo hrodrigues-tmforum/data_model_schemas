@@ -15,6 +15,11 @@ A managed general test artifact resource
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_GeneralTestArtifact.png[Diagram illustrating GeneralTestArtifact]
 
 
 The data model is defined as shown below:

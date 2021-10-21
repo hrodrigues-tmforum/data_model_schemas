@@ -15,6 +15,11 @@ Linked resources to the one instantiate, such as [bundled] if the resource is a 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ResourceRelationship.png[Diagram illustrating ResourceRelationship]
 
 
 The data model is defined as shown below:

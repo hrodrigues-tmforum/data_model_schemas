@@ -15,6 +15,15 @@ Organization represents a group of people identified by shared interests or purp
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Organization.png[Diagram illustrating Organization]
+
+[#diagram]
+== Diagram
+image::Resource_OtherNameOrganization.png[Diagram illustrating Organization]
 
 
 The data model is defined as shown below:

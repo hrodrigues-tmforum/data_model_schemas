@@ -15,6 +15,11 @@ A Sales Lead is the identification of a person or organization that has an inter
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_SalesLead.png[Diagram illustrating SalesLead]
 
 
 The data model is defined as shown below:

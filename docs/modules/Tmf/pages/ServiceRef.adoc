@@ -15,6 +15,15 @@ Service reference, for when Service is used by other entities
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceRef.png[Diagram illustrating ServiceRef]
+
+[#diagram]
+== Diagram
+image::Resource_UsageConsumptionServiceRef.png[Diagram illustrating ServiceRef]
 
 
 The data model is defined as shown below:

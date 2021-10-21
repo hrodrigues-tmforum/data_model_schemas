@@ -15,6 +15,11 @@ Enumeration for the supported languages in JADL multilingual support
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_SupportedLanguages.png[Diagram illustrating SupportedLanguages]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,23 @@ ThresholdRule A base entity for concrete definition of thresholds.This datatype 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AlgorithmThresholdRule.png[Diagram illustrating ThresholdRule]
+
+[#diagram]
+== Diagram
+image::Resource_ThresholdRule.png[Diagram illustrating ThresholdRule]
+
+[#diagram]
+== Diagram
+image::Resource_SimpleThresholdRule.png[Diagram illustrating ThresholdRule]
+
+[#diagram]
+== Diagram
+image::Resource_MetricDefMeasureThresholdRule.png[Diagram illustrating ThresholdRule]
 
 
 The data model is defined as shown below:

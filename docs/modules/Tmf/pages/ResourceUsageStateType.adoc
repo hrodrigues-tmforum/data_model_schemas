@@ -15,6 +15,11 @@ ResourceUsageStateType enumerations
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ResourceUsageStateType.png[Diagram illustrating ResourceUsageStateType]
 
 
 The data model is defined as shown below:

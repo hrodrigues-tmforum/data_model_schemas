@@ -15,6 +15,11 @@ Reference to an account in a loyalty system that could be used to perform the pa
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyPaymentMethod.png[Diagram illustrating LoyaltyPaymentMethod]
 
 
 The data model is defined as shown below:

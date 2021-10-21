@@ -15,6 +15,15 @@ An occurrence of employing a Product, Service, or Resource for its intended purp
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_RatedProductUsage.png[Diagram illustrating Usage]
+
+[#diagram]
+== Diagram
+image::Resource_Usage.png[Diagram illustrating Usage]
 
 
 The data model is defined as shown below:

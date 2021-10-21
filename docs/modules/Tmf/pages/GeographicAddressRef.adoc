@@ -15,6 +15,11 @@ The place at which the change request has occurred.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_GeographicAddressRef.png[Diagram illustrating GeographicAddressRef]
 
 
 The data model is defined as shown below:

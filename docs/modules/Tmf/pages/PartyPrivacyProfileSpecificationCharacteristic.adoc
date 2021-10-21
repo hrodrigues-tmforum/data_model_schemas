@@ -15,6 +15,11 @@ A characteristic of the party privacy profile, whose value(s) would be supplied 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PartyPrivacyProfileSpecificationCharacteristic.png[Diagram illustrating PartyPrivacyProfileSpecificationCharacteristic]
 
 
 The data model is defined as shown below:

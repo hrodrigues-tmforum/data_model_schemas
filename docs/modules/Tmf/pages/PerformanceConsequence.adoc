@@ -15,6 +15,11 @@ A Consequence can be applied as a result of a threshold crossing or a threshold 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PerformanceConsequence.png[Diagram illustrating PerformanceConsequence]
 
 
 The data model is defined as shown below:

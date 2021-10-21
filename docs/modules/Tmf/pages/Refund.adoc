@@ -15,6 +15,11 @@ The Refund resource represents a performed Refund. It contains both information 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Refund.png[Diagram illustrating Refund]
 
 
 The data model is defined as shown below:

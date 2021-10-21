@@ -15,6 +15,11 @@ This is enumeration for CollectionType state
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CollectionType.png[Diagram illustrating CollectionType]
 
 
 The data model is defined as shown below:

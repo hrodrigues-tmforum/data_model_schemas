@@ -15,6 +15,11 @@ An existing Change Request that has some form of correlation with the given Chan
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_RelatedChangeRequestRef.png[Diagram illustrating RelatedChangeRequestRef]
 
 
 The data model is defined as shown below:

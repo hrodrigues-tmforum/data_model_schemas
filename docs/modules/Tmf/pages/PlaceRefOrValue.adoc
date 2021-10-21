@@ -15,6 +15,15 @@ A place defines a place described by reference or by value linked to a specific 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PlaceRefOrValue.png[Diagram illustrating PlaceRefOrValue]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedPlaceRefOrValue.png[Diagram illustrating PlaceRefOrValue]
 
 
 The data model is defined as shown below:

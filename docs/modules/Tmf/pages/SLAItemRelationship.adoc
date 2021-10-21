@@ -15,6 +15,11 @@ relationship to another SLA item
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_SLAItemRelationship.png[Diagram illustrating SLAItemRelationship]
 
 
 The data model is defined as shown below:

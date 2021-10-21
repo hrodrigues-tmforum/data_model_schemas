@@ -15,6 +15,11 @@ An event type used to match filter incoming loyalty events.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyEventType.png[Diagram illustrating LoyaltyEventType]
 
 
 The data model is defined as shown below:

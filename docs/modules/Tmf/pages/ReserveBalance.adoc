@@ -15,6 +15,11 @@ The ReserveBalance resource allows adjustments to be made to the original Balanc
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ReserveBalance.png[Diagram illustrating ReserveBalance]
 
 
 The data model is defined as shown below:

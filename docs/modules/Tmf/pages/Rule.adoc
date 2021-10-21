@@ -15,6 +15,31 @@ No description on schema
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AlgorithmThresholdRule.png[Diagram illustrating Rule]
+
+[#diagram]
+== Diagram
+image::Resource_ThresholdRule.png[Diagram illustrating Rule]
+
+[#diagram]
+== Diagram
+image::Resource_Rule.png[Diagram illustrating Rule]
+
+[#diagram]
+== Diagram
+image::Resource_SimpleThresholdRule.png[Diagram illustrating Rule]
+
+[#diagram]
+== Diagram
+image::Resource_MetricDefMeasureThresholdRule.png[Diagram illustrating Rule]
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyRule.png[Diagram illustrating Rule]
 
 
 The data model is defined as shown below:

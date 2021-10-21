@@ -16,6 +16,11 @@ process between a customer and a service provider or between a service provider 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ChangeRequest.png[Diagram illustrating ChangeRequest]
 
 
 The data model is defined as shown below:

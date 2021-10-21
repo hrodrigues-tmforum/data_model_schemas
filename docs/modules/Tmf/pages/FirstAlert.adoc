@@ -15,6 +15,11 @@ Indicates what first alerted the system to the problem. It is not the root cause
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_FirstAlert.png[Diagram illustrating FirstAlert]
 
 
 The data model is defined as shown below:

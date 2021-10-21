@@ -15,6 +15,15 @@ Specific ability of an entity measured in quantity and units of quantity over an
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Capacity.png[Diagram illustrating Capacity]
+
+[#diagram]
+== Diagram
+image::Resource_AppliedResourceCapacity.png[Diagram illustrating Capacity]
 
 
 The data model is defined as shown below:

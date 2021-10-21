@@ -15,6 +15,11 @@ A Unit of Work defined by value or existing defined by reference. The polymorphi
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_WorkRefOrValue.png[Diagram illustrating WorkRefOrValue]
 
 
 The data model is defined as shown below:

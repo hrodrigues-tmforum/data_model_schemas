@@ -15,6 +15,11 @@ Possible values for the signature requirement upon receiving the shipment
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_SignatureRequiredByType.png[Diagram illustrating SignatureRequiredByType]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,31 @@ An aggregation, migration, substitution, dependency or exclusivity relationship 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ResourceSpecificationCharacteristicRelationship.png[Diagram illustrating SpecificationCharacteristicRelationship]
+
+[#diagram]
+== Diagram
+image::Resource_EdgeSpecificationCharacteristicRelationship.png[Diagram illustrating SpecificationCharacteristicRelationship]
+
+[#diagram]
+== Diagram
+image::Resource_ProductSpecificationCharacteristicRelationship.png[Diagram illustrating SpecificationCharacteristicRelationship]
+
+[#diagram]
+== Diagram
+image::Resource_FeatureSpecificationCharacteristicRelationship.png[Diagram illustrating SpecificationCharacteristicRelationship]
+
+[#diagram]
+== Diagram
+image::Resource_VertexSpecificationCharacteristicRelationship.png[Diagram illustrating SpecificationCharacteristicRelationship]
+
+[#diagram]
+== Diagram
+image::Resource_SpecificationCharacteristicRelationship.png[Diagram illustrating SpecificationCharacteristicRelationship]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Describes a specific item contained in a parent element
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ContainedItemRef.png[Diagram illustrating ContainedItemRef]
 
 
 The data model is defined as shown below:

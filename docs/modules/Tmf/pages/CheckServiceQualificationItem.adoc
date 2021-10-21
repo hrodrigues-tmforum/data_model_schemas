@@ -15,6 +15,11 @@ A ServiceQualificationItem relates to a specific service being checked in a qual
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CheckServiceQualificationItem.png[Diagram illustrating CheckServiceQualificationItem]
 
 
 The data model is defined as shown below:

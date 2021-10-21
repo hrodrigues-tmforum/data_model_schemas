@@ -15,6 +15,15 @@ No description on schema
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CancelWorkOrder.png[Diagram illustrating WorkOrder]
+
+[#diagram]
+== Diagram
+image::Resource_WorkOrder.png[Diagram illustrating WorkOrder]
 
 
 The data model is defined as shown below:

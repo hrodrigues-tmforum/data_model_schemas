@@ -15,6 +15,11 @@ Description of  aproduct Term linked to this quoteItem. This represent a commitm
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_QuoteTerm.png[Diagram illustrating QuoteTerm]
 
 
 The data model is defined as shown below:

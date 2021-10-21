@@ -15,6 +15,11 @@ A tax item is created for each tax rate and tax type used in the bill.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_TaxItem.png[Diagram illustrating TaxItem]
 
 
 The data model is defined as shown below:

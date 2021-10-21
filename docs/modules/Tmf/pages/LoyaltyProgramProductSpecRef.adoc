@@ -15,6 +15,11 @@ A reference to a loyalty program specification.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyProgramProductSpecRef.png[Diagram illustrating LoyaltyProgramProductSpecRef]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Describes an email that could be used to contact a party (an individual or an or
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_EmailMedium.png[Diagram illustrating EmailMedium]
 
 
 The data model is defined as shown below:

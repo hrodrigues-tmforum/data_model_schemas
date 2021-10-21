@@ -15,6 +15,11 @@ UsageSpecification reference. UsageSpecification is a detailed description of a 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_UsageSpecificationRef.png[Diagram illustrating UsageSpecificationRef]
 
 
 The data model is defined as shown below:

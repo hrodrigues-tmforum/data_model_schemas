@@ -15,6 +15,11 @@ A migration, substitution, dependency or exclusivity relationship between/among 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_EntitySpecRelationship.png[Diagram illustrating EntitySpecRelationship]
 
 
 The data model is defined as shown below:

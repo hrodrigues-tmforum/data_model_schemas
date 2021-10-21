@@ -15,6 +15,23 @@ ProductOrder (ProductOrder) .The product order which the recommendation is relat
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceOrderItemRef.png[Diagram illustrating OrderItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_OrderItemRef.png[Diagram illustrating OrderItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ProductOrderItemRef.png[Diagram illustrating OrderItemRef]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceOrderItemRef.png[Diagram illustrating OrderItemRef]
 
 
 The data model is defined as shown below:

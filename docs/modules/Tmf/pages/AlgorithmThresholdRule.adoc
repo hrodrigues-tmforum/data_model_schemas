@@ -15,6 +15,11 @@ A threshold rule that is a reference to an algorithm
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AlgorithmThresholdRule.png[Diagram illustrating AlgorithmThresholdRule]
 
 
 The data model is defined as shown below:

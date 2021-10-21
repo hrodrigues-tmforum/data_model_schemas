@@ -15,6 +15,11 @@ Contains the conditions and benefits of the promotion toan eligible party
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PromotionPattern.png[Diagram illustrating PromotionPattern]
 
 
 The data model is defined as shown below:

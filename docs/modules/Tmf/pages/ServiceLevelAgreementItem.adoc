@@ -15,6 +15,11 @@ A part of the Service Level Agreement representing quality aspect of the agrreme
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceLevelAgreementItem.png[Diagram illustrating ServiceLevelAgreementItem]
 
 
 The data model is defined as shown below:

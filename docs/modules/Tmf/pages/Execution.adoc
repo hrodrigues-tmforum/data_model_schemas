@@ -15,6 +15,35 @@ The base for all Execution resources
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_NonFunctionalTestExecution.png[Diagram illustrating Execution]
+
+[#diagram]
+== Diagram
+image::Resource_TestExecution.png[Diagram illustrating Execution]
+
+[#diagram]
+== Diagram
+image::Resource_TestEnvironmentProvisioningExecution.png[Diagram illustrating Execution]
+
+[#diagram]
+== Diagram
+image::Resource_TestEnvironmentAllocationExecution.png[Diagram illustrating Execution]
+
+[#diagram]
+== Diagram
+image::Resource_TestSuiteExecution.png[Diagram illustrating Execution]
+
+[#diagram]
+== Diagram
+image::Resource_TestCaseExecution.png[Diagram illustrating Execution]
+
+[#diagram]
+== Diagram
+image::Resource_Execution.png[Diagram illustrating Execution]
 
 
 The data model is defined as shown below:

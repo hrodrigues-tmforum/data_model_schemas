@@ -15,6 +15,11 @@ An identified part of the shopping cart. A shopping cart  is decomposed into one
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CartItem.png[Diagram illustrating CartItem]
 
 
 The data model is defined as shown below:

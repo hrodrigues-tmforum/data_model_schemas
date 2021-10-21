@@ -15,6 +15,23 @@ Entity reference schema to be use for all entityRef class.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_EntityRef.png[Diagram illustrating EntityRef]
+
+[#diagram]
+== Diagram
+image::Resource_TargetEntityRef.png[Diagram illustrating EntityRef]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedEntityRef.png[Diagram illustrating EntityRef]
+
+[#diagram]
+== Diagram
+image::Resource_ImpactEntityRef.png[Diagram illustrating EntityRef]
 
 
 The data model is defined as shown below:

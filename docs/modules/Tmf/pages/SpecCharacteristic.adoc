@@ -15,6 +15,23 @@ A characteristic quality or distinctive feature of a Specification.  The charact
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_UsageSpecCharacteristic.png[Diagram illustrating SpecCharacteristic]
+
+[#diagram]
+== Diagram
+image::Resource_SpecCharacteristic.png[Diagram illustrating SpecCharacteristic]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceSpecCharacteristic.png[Diagram illustrating SpecCharacteristic]
+
+[#diagram]
+== Diagram
+image::Resource_AgreementSpecCharacteristic.png[Diagram illustrating SpecCharacteristic]
 
 
 The data model is defined as shown below:

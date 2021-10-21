@@ -15,6 +15,15 @@ A GeographicLocation is a pure-virtual super-class to the GeoJSON-aligned geomet
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_RelatedGeographicLocationRefOrValue.png[Diagram illustrating GeographicLocationRefOrValue]
+
+[#diagram]
+== Diagram
+image::Resource_GeographicLocationRefOrValue.png[Diagram illustrating GeographicLocationRefOrValue]
 
 
 The data model is defined as shown below:

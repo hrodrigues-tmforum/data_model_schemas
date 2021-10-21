@@ -15,6 +15,15 @@ Individual represents a single human being (a man, woman or child). The individu
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Individual.png[Diagram illustrating Individual]
+
+[#diagram]
+== Diagram
+image::Resource_OtherNameIndividual.png[Diagram illustrating Individual]
 
 
 The data model is defined as shown below:

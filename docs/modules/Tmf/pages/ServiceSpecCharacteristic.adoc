@@ -15,6 +15,11 @@ This class represents the key features of this service specification. For exampl
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceSpecCharacteristic.png[Diagram illustrating ServiceSpecCharacteristic]
 
 
 The data model is defined as shown below:

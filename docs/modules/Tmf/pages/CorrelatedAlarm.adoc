@@ -15,6 +15,11 @@ Indicates the alarms attached to this alarm as correlated alarms from a correlat
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CorrelatedAlarm.png[Diagram illustrating CorrelatedAlarm]
 
 
 The data model is defined as shown below:

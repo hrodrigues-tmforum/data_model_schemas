@@ -15,6 +15,23 @@ No description on schema
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_RealizingResourceRef.png[Diagram illustrating ResourceRef]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceRef.png[Diagram illustrating ResourceRef]
+
+[#diagram]
+== Diagram
+image::Resource_UsageConsumptionLogicalResourceRef.png[Diagram illustrating ResourceRef]
+
+[#diagram]
+== Diagram
+image::Resource_LogicalResourceRef.png[Diagram illustrating ResourceRef]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Base entity value  schema for use in TMForum Open-APIs
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_EntityValue.png[Diagram illustrating EntityValue]
 
 
 The data model is defined as shown below:

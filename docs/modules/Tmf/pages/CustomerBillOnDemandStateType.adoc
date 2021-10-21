@@ -15,6 +15,11 @@ Recommended Enumeration Type (not formal forced in standard): Valid values for &
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CustomerBillOnDemandStateType.png[Diagram illustrating CustomerBillOnDemandStateType]
 
 
 The data model is defined as shown below:

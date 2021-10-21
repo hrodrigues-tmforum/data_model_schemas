@@ -15,6 +15,11 @@ Represents an assignment of a particular WorforceEmployeeRole for a particular u
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_WorkforceEmployeeAssignment.png[Diagram illustrating WorkforceEmployeeAssignment]
 
 
 The data model is defined as shown below:

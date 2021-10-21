@@ -15,6 +15,23 @@ reservation api resource
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CancelReservation.png[Diagram illustrating Reservation]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceReservation.png[Diagram illustrating Reservation]
+
+[#diagram]
+== Diagram
+image::Resource_CancelResourceReservation.png[Diagram illustrating Reservation]
+
+[#diagram]
+== Diagram
+image::Resource_Reservation.png[Diagram illustrating Reservation]
 
 
 The data model is defined as shown below:

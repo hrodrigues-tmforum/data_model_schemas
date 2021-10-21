@@ -15,6 +15,11 @@ A condition, comprised of a attribute that will be tested against a value.
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyCondition.png[Diagram illustrating LoyaltyCondition]
 
 
 The data model is defined as shown below:

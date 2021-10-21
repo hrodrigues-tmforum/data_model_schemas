@@ -15,6 +15,11 @@ Linked products to the one instantiate, such as [bundled] if the product is a bu
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ProductInventoryRelationship.png[Diagram illustrating ProductInventoryRelationship]
 
 
 The data model is defined as shown below:

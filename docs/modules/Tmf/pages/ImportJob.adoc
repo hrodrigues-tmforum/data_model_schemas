@@ -15,6 +15,11 @@ Represents a task used to import resources from a file
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ImportJob.png[Diagram illustrating ImportJob]
 
 
 The data model is defined as shown below:

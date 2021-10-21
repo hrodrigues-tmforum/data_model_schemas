@@ -15,6 +15,11 @@ TroubleTicket reference, for when a Trouble Ticket is used by other entities
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_TroubleTicketRef.png[Diagram illustrating TroubleTicketRef]
 
 
 The data model is defined as shown below:

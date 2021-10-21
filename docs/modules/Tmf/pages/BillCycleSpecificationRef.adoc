@@ -15,6 +15,11 @@ This schema is part of Customer
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_BillCycleSpecificationRef.png[Diagram illustrating BillCycleSpecificationRef]
 
 
 The data model is defined as shown below:

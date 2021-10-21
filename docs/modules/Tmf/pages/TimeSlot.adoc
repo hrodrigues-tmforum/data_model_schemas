@@ -15,6 +15,15 @@ No description on schema
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_TimeSlot.png[Diagram illustrating TimeSlot]
+
+[#diagram]
+== Diagram
+image::Resource_SearchTimeSlot.png[Diagram illustrating TimeSlot]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Possible values for the status of party privacy profile agreement (for example: 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PartyPrivacyAgreementStatusExampleType.png[Diagram illustrating PartyPrivacyAgreementStatusExampleType]
 
 
 The data model is defined as shown below:

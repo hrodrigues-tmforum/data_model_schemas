@@ -15,6 +15,11 @@ An agreement represents a contract or arrangement, either written or verbal and 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Customer360AgreementVO.png[Diagram illustrating Customer360AgreementVO]
 
 
 The data model is defined as shown below:

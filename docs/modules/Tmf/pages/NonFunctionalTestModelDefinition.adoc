@@ -15,6 +15,11 @@ Non-functional test model definition
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_NonFunctionalTestModelDefinition.png[Diagram illustrating NonFunctionalTestModelDefinition]
 
 
 The data model is defined as shown below:

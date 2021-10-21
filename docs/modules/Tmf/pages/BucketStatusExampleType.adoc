@@ -15,6 +15,11 @@ Possible values for the bucket status are (for example active,suspended,expired)
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_BucketStatusExampleType.png[Diagram illustrating BucketStatusExampleType]
 
 
 The data model is defined as shown below:

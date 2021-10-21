@@ -15,6 +15,15 @@ Party role reference. A party role represents the part played by a party in a gi
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PartyRoleRef.png[Diagram illustrating PartyRoleRef]
+
+[#diagram]
+== Diagram
+image::Resource_PartyOrPartyRoleRef.png[Diagram illustrating PartyRoleRef]
 
 
 The data model is defined as shown below:

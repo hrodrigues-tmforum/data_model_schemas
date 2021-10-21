@@ -15,6 +15,11 @@ The AssetUserRole is the detailed information concerning an individual user role
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AssetUserRole.png[Diagram illustrating AssetUserRole]
 
 
 The data model is defined as shown below:

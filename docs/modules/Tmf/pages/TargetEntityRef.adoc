@@ -15,6 +15,11 @@ The entity which will be changed or configured while the change request is execu
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_TargetEntityRef.png[Diagram illustrating TargetEntityRef]
 
 
 The data model is defined as shown below:

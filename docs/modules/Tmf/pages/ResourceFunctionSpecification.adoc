@@ -15,6 +15,11 @@ Specifies a function as a behavior to transform inputs of any nature into output
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ResourceFunctionSpecification.png[Diagram illustrating ResourceFunctionSpecification]
 
 
 The data model is defined as shown below:

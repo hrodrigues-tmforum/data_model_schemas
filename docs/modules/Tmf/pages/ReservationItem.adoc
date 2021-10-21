@@ -15,6 +15,15 @@ An identified part of the reservation. A reservation is decomposed into one or m
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ReservationItem.png[Diagram illustrating ReservationItem]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceReservationItem.png[Diagram illustrating ReservationItem]
 
 
 The data model is defined as shown below:

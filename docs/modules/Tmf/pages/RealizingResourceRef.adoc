@@ -15,6 +15,11 @@ RealizingResource reference. RealizingResource is a link to the resource that re
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_RealizingResourceRef.png[Diagram illustrating RealizingResourceRef]
 
 
 The data model is defined as shown below:

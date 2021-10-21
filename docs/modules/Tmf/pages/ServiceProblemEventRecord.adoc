@@ -15,6 +15,11 @@ A record of an event (related to a service problem) received from another system
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceProblemEventRecord.png[Diagram illustrating ServiceProblemEventRecord]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ action to be performed on the shipping order item
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ShippingOrderItemActionType.png[Diagram illustrating ShippingOrderItemActionType]
 
 
 The data model is defined as shown below:

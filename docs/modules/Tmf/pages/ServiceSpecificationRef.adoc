@@ -15,6 +15,11 @@ Service specification reference: ServiceSpecification(s) required to realize a P
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceSpecificationRef.png[Diagram illustrating ServiceSpecificationRef]
 
 
 The data model is defined as shown below:

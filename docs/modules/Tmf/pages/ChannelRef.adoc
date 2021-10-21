@@ -15,6 +15,11 @@ The channel to which the resource reference to. e.g. channel for selling product
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ChannelRef.png[Diagram illustrating ChannelRef]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,15 @@ A Resource Order is a request to provision a set of Resources (logical and physi
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_CancelResourceOrder.png[Diagram illustrating ResourceOrder]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceOrder.png[Diagram illustrating ResourceOrder]
 
 
 The data model is defined as shown below:

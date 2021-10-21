@@ -15,6 +15,11 @@ Definition of the nature of a Work Unit. For example, could be wiring, equipment
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_WorkSpecification.png[Diagram illustrating WorkSpecification]
 
 
 The data model is defined as shown below:

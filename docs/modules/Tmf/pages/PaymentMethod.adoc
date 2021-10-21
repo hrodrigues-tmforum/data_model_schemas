@@ -15,6 +15,19 @@ A Payment Method is a pure-virtual super-class that defines a specific method of
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PaymentMethod.png[Diagram illustrating PaymentMethod]
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyPaymentMethod.png[Diagram illustrating PaymentMethod]
+
+[#diagram]
+== Diagram
+image::Resource_AccountPaymentMethod.png[Diagram illustrating PaymentMethod]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ Logic resource is a type of resource that describes the common set of attributes
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LogicalResource.png[Diagram illustrating LogicalResource]
 
 
 The data model is defined as shown below:

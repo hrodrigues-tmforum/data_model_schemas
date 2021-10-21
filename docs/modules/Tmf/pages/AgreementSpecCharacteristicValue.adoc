@@ -15,6 +15,11 @@ A number or text that can be assigned to an agreement specification characterist
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AgreementSpecCharacteristicValue.png[Diagram illustrating AgreementSpecCharacteristicValue]
 
 
 The data model is defined as shown below:

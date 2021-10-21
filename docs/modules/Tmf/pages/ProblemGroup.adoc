@@ -15,6 +15,11 @@ Task resource that requests Service Problems to be grouped together into a paren
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ProblemGroup.png[Diagram illustrating ProblemGroup]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ This resource represents Probable Cause values defined in ITU-T X.733 and 3GPP T
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ProbableCause.png[Diagram illustrating ProbableCause]
 
 
 The data model is defined as shown below:

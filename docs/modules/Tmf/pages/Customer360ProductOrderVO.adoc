@@ -15,6 +15,11 @@ A Product Order is a type of order which  can  be used to place an order between
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Customer360ProductOrderVO.png[Diagram illustrating Customer360ProductOrderVO]
 
 
 The data model is defined as shown below:

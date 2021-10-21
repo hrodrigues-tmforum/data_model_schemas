@@ -15,6 +15,11 @@ MEntity represents an entity that describes the common set of attributes shared 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_MEntity.png[Diagram illustrating MEntity]
 
 
 The data model is defined as shown below:

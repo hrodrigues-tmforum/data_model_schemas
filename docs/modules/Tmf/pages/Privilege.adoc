@@ -15,6 +15,11 @@ A Privilege is a detailed information concerning an individual access entitlemen
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_Privilege.png[Diagram illustrating Privilege]
 
 
 The data model is defined as shown below:

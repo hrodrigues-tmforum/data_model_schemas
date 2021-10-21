@@ -16,6 +16,11 @@ An EdgeSpecification is a base class that represents a generic means for impleme
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_EdgeSpecificationRef.png[Diagram illustrating EdgeSpecificationRef]
 
 
 The data model is defined as shown below:

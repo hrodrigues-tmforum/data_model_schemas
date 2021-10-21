@@ -15,6 +15,19 @@ Used when an API throws an Error, typically with a HTTP error response-code (3xx
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ResponseError.png[Diagram illustrating Error]
+
+[#diagram]
+== Diagram
+image::Resource_Error.png[Diagram illustrating Error]
+
+[#diagram]
+== Diagram
+image::Resource_TerminationError.png[Diagram illustrating Error]
 
 
 The data model is defined as shown below:

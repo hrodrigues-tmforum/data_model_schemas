@@ -15,6 +15,11 @@ RelatedParty reference. A related party defines party or party role linked to a 
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_RelatedPartyRef.png[Diagram illustrating RelatedPartyRef]
 
 
 The data model is defined as shown below:

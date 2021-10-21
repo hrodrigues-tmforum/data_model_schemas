@@ -15,6 +15,15 @@ Product specification reference: A ProductSpecification is a detailed descriptio
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ProductSpecificationRef.png[Diagram illustrating ProductSpecificationRef]
+
+[#diagram]
+== Diagram
+image::Resource_WarrantyProductSpecificationRef.png[Diagram illustrating ProductSpecificationRef]
 
 
 The data model is defined as shown below:

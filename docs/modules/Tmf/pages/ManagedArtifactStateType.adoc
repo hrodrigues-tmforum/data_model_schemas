@@ -15,6 +15,11 @@ Possible values for the state of a managed artifact: &#x27;incomplete&#x27;, &#x
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ManagedArtifactStateType.png[Diagram illustrating ManagedArtifactStateType]
 
 
 The data model is defined as shown below:

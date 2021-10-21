@@ -15,6 +15,11 @@ A uni-directionmal relationship from this agreement to another agreement
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_AgreementRelationship.png[Diagram illustrating AgreementRelationship]
 
 
 The data model is defined as shown below:

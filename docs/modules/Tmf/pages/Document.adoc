@@ -15,6 +15,15 @@ Document is a tangible output from an activity
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_FileDocument.png[Diagram illustrating Document]
+
+[#diagram]
+== Diagram
+image::Resource_Document.png[Diagram illustrating Document]
 
 
 The data model is defined as shown below:

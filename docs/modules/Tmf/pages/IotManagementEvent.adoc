@@ -15,6 +15,11 @@ Generic IotManagementEvent structure used to define commonalities between sub co
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_IotManagementEvent.png[Diagram illustrating IotManagementEvent]
 
 
 The data model is defined as shown below:

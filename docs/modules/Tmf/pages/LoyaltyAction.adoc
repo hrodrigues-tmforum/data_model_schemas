@@ -15,6 +15,11 @@ Contains information on a loyalty action that should be applied should certain c
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LoyaltyAction.png[Diagram illustrating LoyaltyAction]
 
 
 The data model is defined as shown below:

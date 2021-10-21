@@ -15,6 +15,11 @@ Possible values for the usage of the stock level - This is illustrative
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ProductStockUsageType.png[Diagram illustrating ProductStockUsageType]
 
 
 The data model is defined as shown below:

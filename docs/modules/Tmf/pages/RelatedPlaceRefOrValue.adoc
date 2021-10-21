@@ -15,6 +15,11 @@ Related Entity reference. A related place defines a place described by reference
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_RelatedPlaceRefOrValue.png[Diagram illustrating RelatedPlaceRefOrValue]
 
 
 The data model is defined as shown below:

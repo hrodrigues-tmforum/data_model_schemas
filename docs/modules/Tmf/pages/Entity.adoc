@@ -15,6 +15,31 @@ Base entity schema for use in TMForum Open-APIs
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ImpactEntity.png[Diagram illustrating Entity]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceEntity.png[Diagram illustrating Entity]
+
+[#diagram]
+== Diagram
+image::Resource_MEntity.png[Diagram illustrating Entity]
+
+[#diagram]
+== Diagram
+image::Resource_ManagedEntity.png[Diagram illustrating Entity]
+
+[#diagram]
+== Diagram
+image::Resource_RelatedEntity.png[Diagram illustrating Entity]
+
+[#diagram]
+== Diagram
+image::Resource_Entity.png[Diagram illustrating Entity]
 
 
 The data model is defined as shown below:

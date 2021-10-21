@@ -16,6 +16,11 @@ code set has been defined for the GeographicArea type, etc.)
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_LocationCharacteristic.png[Diagram illustrating LocationCharacteristic]
 
 
 The data model is defined as shown below:

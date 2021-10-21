@@ -15,6 +15,11 @@ Is based on both the basic cost to develop and produce products and the enterpri
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ProductOfferingPrice.png[Diagram illustrating ProductOfferingPrice]
 
 
 The data model is defined as shown below:

@@ -15,6 +15,11 @@ The problem information for Middle B which is abstracted in the service layer fr
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_ServiceProblem.png[Diagram illustrating ServiceProblem]
 
 
 The data model is defined as shown below:

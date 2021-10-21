@@ -15,6 +15,15 @@ An identified part of the order. A work order is decomposed into one or more ord
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_RelatedWorkOrderItem.png[Diagram illustrating WorkOrderItem]
+
+[#diagram]
+== Diagram
+image::Resource_WorkOrderItem.png[Diagram illustrating WorkOrderItem]
 
 
 The data model is defined as shown below:

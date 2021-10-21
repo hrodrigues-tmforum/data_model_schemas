@@ -15,6 +15,11 @@ PartnershipType reference. A partnership type contains all the information for t
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_PartnershipTypeRef.png[Diagram illustrating PartnershipTypeRef]
 
 
 The data model is defined as shown below:

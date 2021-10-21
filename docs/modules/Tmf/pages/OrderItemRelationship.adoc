@@ -15,6 +15,19 @@ No description on schema
 
 A JSON Schema corresponding to this data model can be found //[here].
 
+THE DIAGRAM WILL BE IN HERE !!!
+
+[#diagram]
+== Diagram
+image::Resource_OrderItemRelationship.png[Diagram illustrating OrderItemRelationship]
+
+[#diagram]
+== Diagram
+image::Resource_ResourceOrderItemRelationship.png[Diagram illustrating OrderItemRelationship]
+
+[#diagram]
+== Diagram
+image::Resource_ServiceOrderItemRelationship.png[Diagram illustrating OrderItemRelationship]
 
 
 The data model is defined as shown below:
